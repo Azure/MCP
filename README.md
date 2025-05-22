@@ -8,6 +8,8 @@ Welcome to the exciting world of MCP (Microsoft Cloud Platform) for Azure API Ma
 
 Azure API Management empowers organizations to publish, secure, transform, maintain, and monitor APIs. MCP enhances this experience by providing additional tools, integrations, and solutions to make your API journey smooth and delightful.
 
+With MCP, we're building a bridge between the robust capabilities of Azure API Management and the evolving needs of modern API ecosystems. Whether you're managing a handful of APIs or thousands, our platform scales with your ambitions!
+
 ## 🔥 Features That Make Us Awesome
 
 - **API Management Simplified**: Build, deploy, and scale your APIs with ease
@@ -16,6 +18,8 @@ Azure API Management empowers organizations to publish, secure, transform, maint
 - **Developer Portal**: Engage with your developer community through customized developer portals
 - **Seamless Integration**: Connect with other Azure services for a cohesive cloud experience
 - **Automation Tools**: Automate API deployment and management tasks
+- **Policy Management**: Create and apply reusable policies across your API portfolio
+- **Version Control**: Manage API versions and ensure backward compatibility
 
 ## 🚦 Getting Started
 
@@ -68,6 +72,7 @@ For security concerns or vulnerability reports, please see our [SECURITY.md](SEC
 - [API Management Documentation](https://docs.microsoft.com/en-us/azure/api-management/)
 - [Azure API Management Community](https://techcommunity.microsoft.com/t5/azure-paas-blog/bg-p/AzurePaaSBlog)
 - [Microsoft Learn API Management Modules](https://docs.microsoft.com/en-us/learn/browse/?terms=api%20management)
+- [Azure API Management GitHub Samples](https://github.com/Azure/api-management-samples)
 
 ---
 
