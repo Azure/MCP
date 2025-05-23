@@ -64,7 +64,8 @@ Use credential manager to authorize access to your backend MCP servers:
 ### Private MCP Registry for Organizations
 Enable MCP Discovery and Consumption across the Enterprise:
 
-✅[APIC lab](https://aka.ms/apic-lab)
+- ✅[APIC lab](https://aka.ms/apic-lab)
+- ✅[Blog Post](https://aka.ms/build25-apim-mcp)
 
 ## What's Next
 
