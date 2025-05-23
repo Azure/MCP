@@ -27,13 +27,13 @@ Remote **MCP Servers** (using JSON-RPC 2.0) act as an abstraction layer over the
 
 ## Why API Management is Crucial for Remote MCP Servers
 
-Because remote MCP servers are exposed to the internet, they greatly benefit from API Management solutions. This allows teams to apply well-established governance and security practices, ensuring consistency and control across distributed systems. API Management provides crucial features for these remote connections:
+Because remote MCP servers are exposed to the internet, they greatly benefit from API Management solutions. This allows teams to apply well-established governance and security practices, ensuring consistency and control across distributed systems. [Azure API Management](https://aka.ms/apimlove) provides crucial features for these remote connections:
 - **Centralized Security**: Enforcing authentication, authorization, and threat protection for all incoming requests to the MCP server.
 - **Traffic Management**: Handling high volumes of requests from many AI agents, rate limiting, and caching.
 - **Monitoring and Analytics**: Gaining insights into how AI agents are using the MCP server and its underlying API tools.
 - **Discovery and Governance**: Making remote MCP servers discoverable for AI developers and maintaining consistency across multiple MCP server deployments.
 
-## Capabilities of API Management and MCP
+## Capabilities of Azure API Management and MCP
 
 ### Expose Existing APIs as MCP Servers
 Expose any APIM-managed REST API as a remote MCP server (SSE & Streamable HTTP)
