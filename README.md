@@ -27,18 +27,14 @@ Because remote MCP servers are exposed to the internet, they greatly benefit fro
 - **Monitoring and Analytics**: Gaining insights into how AI agents are using the MCP server and its underlying API tools.
 - **Discovery and Governance**: Making remote MCP servers discoverable for AI developers and maintaining consistency across multiple MCP server deployments.
 
-
 ## Capabilities of API Management and MCP
 
-- **Expose Existing APIs as MCP Servers**: Expose any APIM-managed REST API as a remote MCP server (SSE & Streamable HTTP)
-- **Enhancing Security for remote MCP Servers**: API Management as your Auth Gateway for remote MCP Servers
-- **Private MCP Registry for Organizations**: Enable MCP Discovery and Consumption across the Enterprise
-
 ### Expose Existing APIs as MCP Servers
+Expose any APIM-managed REST API as a remote MCP server (SSE & Streamable HTTP)
 
-- 1️⃣**Currently APIM instance must be on a SKUv1 tier**: Premium, Standard, or Basic
-- 2️⃣**Your service must be enrolled in the [AI Gateway release channel] (https://aka.ms/apimdocs/updategroups)** (activation may take up to 2 hours)
-- 3️⃣**Use the Azure Portal with feature flag**: ➤ Append `?Microsoft_Azure_ApiManagement=mcp` to your portal URL to access the MCP server configuration experience
+1️⃣**Currently APIM instance must be on a SKUv1 tier**: Premium, Standard, or Basic
+2️⃣**Your service must be enrolled in the [AI Gateway release channel](https://aka.ms/apimdocs/updategroups)** (activation may take up to 2 hours)
+3️⃣**Use the Azure Portal with feature flag**: ➤ Append `?Microsoft_Azure_ApiManagement=mcp` to your portal URL to access the MCP server configuration experience
 
 > **Note:** We are working on getting this out to SKUv2 tier as well.
 
@@ -48,6 +44,7 @@ Because remote MCP servers are exposed to the internet, they greatly benefit fro
 
 
 ### Enhancing Security for remote MCP Servers
+API Management as your Auth Gateway for remote MCP Servers
 
 Protect your remote MCP servers with OAuth:
 - ✅[Blog Post](https://aka.ms/remote-mcp-apim-auth-blog)
@@ -65,12 +62,9 @@ Use credential manager to authorize access to your backend MCP servers:
 
 
 ### Private MCP Registry for Organizations
-
 Enable MCP Discovery and Consumption across the Enterprise:
 
--✅[APIC lab](https://aka.ms/apic-lab)
-
-
+✅[APIC lab](https://aka.ms/apic-lab)
 
 ## What's Next
 
