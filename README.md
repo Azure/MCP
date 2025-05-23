@@ -35,9 +35,9 @@ Because remote MCP servers are exposed to the internet, they greatly benefit fro
 
 ## Capabilities of Azure API Management and MCP
 
-- Expose Existing APIs as MCP Servers
-- Enhancing Security for remote MCP Servers
-- Private MCP Registry for Organizations
+- [Expose Existing APIs as MCP Servers]()
+- [Enhancing Security for remote MCP Servers]()
+- [Private MCP Registry for Organizations]()
 
 ### Expose Existing APIs as MCP Servers
 Expose any APIM-managed REST API as a remote MCP server (SSE & Streamable HTTP)
