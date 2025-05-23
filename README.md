@@ -32,9 +32,9 @@ Because remote MCP servers are exposed to the internet, they greatly benefit fro
 ### Expose Existing APIs as MCP Servers
 Expose any APIM-managed REST API as a remote MCP server (SSE & Streamable HTTP)
 
-1️⃣**Currently APIM instance must be on a SKUv1 tier**: Premium, Standard, or Basic
-2️⃣**Your service must be enrolled in the [AI Gateway release channel](https://aka.ms/apimdocs/updategroups)** (activation may take up to 2 hours)
-3️⃣**Use the Azure Portal with feature flag**: ➤ Append `?Microsoft_Azure_ApiManagement=mcp` to your portal URL to access the MCP server configuration experience
+- 1️⃣**Currently APIM instance must be on a SKUv1 tier**: Premium, Standard, or Basic
+- 2️⃣**Your service must be enrolled in the [AI Gateway release channel](https://aka.ms/apimdocs/updategroups)** (activation may take up to 2 hours)
+- 3️⃣**Use the Azure Portal with feature flag**: ➤ Append `?Microsoft_Azure_ApiManagement=mcp` to your portal URL to access the MCP server configuration experience
 
 > **Note:** We are working on getting this out to SKUv2 tier as well.
 
