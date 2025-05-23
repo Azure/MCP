@@ -10,14 +10,20 @@ The **Model Context Protocol (MCP)** is an open standard designed to standardize
 
 ## The Relationship between MCP servers and APIs
 
-The relationship between MCP servers and APIs is a hierarchical and complementary one. It's not a case of one replacing the other; rather, MCP servers often use APIs to achieve their purpose, and APIs provide the underlying functionality that MCP servers expose to AI agents.
+The relationship between MCP servers and APIs is hierarchical and complementary. It's not a case of one replacing the other; rather, MCP servers often use APIs to achieve their purpose, and APIs provide the underlying functionality that MCP servers expose to AI agents.
 
 💡APIs are the Backend, Remote MCP Servers are the AI-Friendly Frontend💡
 
-- APIs are the fundamental building blocks of almost all digital services. They define how different software components communicate and interact. For example, a weather service might expose an API to get forecasts, a CRM system has an API to manage customer data, and a payment gateway has an API to process transactions. These APIs are designed for programmatic consumption by developers and applications.
-- Remote MCP Servers (built on JSON-RPC 2.0) act as an abstraction layer on top of these underlying APIs (and other data sources like databases or file systems). Their primary purpose is to expose the capabilities of these backend systems to AI agents (like Large Language Models or AI assistants) in a standardized, "AI-native" way, using the MCP.
+**APIs** are the building blocks of digital services, defining how software components interact. Examples include:
 
-Remote MCP Servers Leverage APIs: "Tools" are often API calls: When an MCP server exposes a "tool" (a callable function for an AI agent), that tool's internal implementation very frequently involves making calls to one or more traditional APIs.
+- A weather service API for forecasts
+- A CRM system API for managing customer data
+- A payment gateway API for processing transactions
+
+Remote **MCP Servers** (using JSON-RPC 2.0) act as an abstraction layer over these APIs and other data sources. They expose backend capabilities to AI agents (like Large Language Models) in an "AI-native" way.
+
+**Remote MCP Servers Leverage APIs:**
+- "Tools" exposed by MCP servers are often API calls. When an MCP server exposes a "tool" for an AI agent, it typically involves calling one or more traditional APIs.
 
 ## Why API Management is Crucial for Remote MCP Servers
 
