@@ -1,6 +1,6 @@
 # 🚀 Azure API Management 💜 MCP (Model Context Protocol)
 
-The Model Context Protocol (MCP) is an open standard designed to standardize how AI applications (specifically Large Language Models or LLMs, often referred to as "agents") interact with external tools and data.
+The **Model Context Protocol (MCP)** is an open standard designed to standardize how AI applications (specifically Large Language Models or LLMs, often referred to as "agents") interact with external tools and data.
 
 ## Understanding Remote MCP Servers
 
@@ -22,62 +22,65 @@ Remote MCP Servers Leverage APIs: "Tools" are often API calls: When an MCP serve
 ## Why API Management is Crucial for Remote MCP Servers
 
 Because remote MCP servers are exposed to the internet, they greatly benefit from API Management solutions. This allows teams to apply well-established governance and security practices, ensuring consistency and control across distributed systems. API Management provides crucial features for these remote connections:
-- Centralized Security: Enforcing authentication, authorization, and threat protection for all incoming requests to the MCP server.
-- Traffic Management: Handling high volumes of requests from many AI agents, rate limiting, and caching.
-- Monitoring and Analytics: Gaining insights into how AI agents are using the MCP server and its underlying API tools.
-- Discovery and Governance: Making remote MCP servers discoverable for AI developers and maintaining consistency across multiple MCP server deployments.
+- **Centralized Security**: Enforcing authentication, authorization, and threat protection for all incoming requests to the MCP server.
+- **Traffic Management**: Handling high volumes of requests from many AI agents, rate limiting, and caching.
+- **Monitoring and Analytics**: Gaining insights into how AI agents are using the MCP server and its underlying API tools.
+- **Discovery and Governance**: Making remote MCP servers discoverable for AI developers and maintaining consistency across multiple MCP server deployments.
 
 
-## Capabilities of API Management and MCP servers
+## Capabilities of API Management and MCP
 
-- **API Management Simplified**: Build, deploy, and scale your APIs with ease
-- **Security First**: Implement robust security policies to protect your APIs
-- **Analytics & Insights**: Gain valuable insights into API performance and usage
-- **Developer Portal**: Engage with your developer community through customized developer portals
-- **Seamless Integration**: Connect with other Azure services for a cohesive cloud experience
-- **Automation Tools**: Automate API deployment and management tasks
-- **Policy Management**: Create and apply reusable policies across your API portfolio
-- **Version Control**: Manage API versions and ensure backward compatibility
+- **Expose Existing APIs as MCP Servers**: Expose any APIM-managed REST API as a remote MCP server (SSE & Streamable HTTP)
+- **Enhancing Security for remote MCP Servers**: API Management as your Auth Gateway for remote MCP Servers
+- **Private MCP Registry for Organizations**: Enable MCP Discovery and Consumption across the Enterprise
 
-## 🚦 Getting Started
+### Expose Existing APIs as MCP Servers
 
-Ready to dive in? Here's how to get started with MCP for Azure API Management:
+- ✅ **Currently APIM instance must be on a SKUv1 tier**: Premium, Standard, or Basic
+- ✅ **Your service must be enrolled in the [AI Gateway release channel] (https://aka.ms/apimdocs/updategroups)** (activation may take up to 2 hours)
+- ✅ **Use the Azure Portal with feature flag**: ➤ Append `?Microsoft_Azure_ApiManagement=mcp` to your portal URL to access the MCP server configuration experience
 
-1. **Prerequisites**:
-   - An Azure subscription
-   - Basic knowledge of API concepts
-   - A love for cloud innovation!
+> **Note:** We are working on getting this out to SKUv2 tier as well.
 
-2. **Setup**:
-   ```bash
-   # Clone this repository
-   git clone https://github.com/Azure/MCP.git
-   ```
+🔗 Useful Links:
+- [Documentation](https://aka.ms/apimdocs/exportmcp)
+- [Blog Post](https://aka.ms/build25-apim-mcp)
 
-3. **Documentation**:
-   Explore our documentation at [Azure API Management docs](https://docs.microsoft.com/en-us/azure/api-management/)
 
-## 💡 Use Cases
+### Enhancing Security for remote MCP Servers
 
-- **API Consolidation**: Unify your API ecosystem under one management platform
-- **API Monetization**: Create subscription tiers and monetize your APIs
-- **Legacy API Modernization**: Wrap existing legacy APIs with modern management capabilities
-- **Multi-cloud API Strategy**: Manage APIs across different cloud providers
+Protect your remote MCP servers with OAuth:
+- ✅[Blog Post](https://aka.ms/remote-mcp-apim-auth-blog)
+- ✅[APIM lab – Client Auth](https://aka.ms/ai-gateway-lab-mcp-client-auth)
+- ✅[Python – azd up](https://aka.ms/mcp-remote-apim-auth)
+- ✅[.NET – azd up](https://aka.ms/mcp-remote-apim-auth-dotnet)
+- ✅[On-Behalf-Of Auth](https://aka.ms/mcp-obo-sample)
+- ✅[Detailed flow chart](https://aka.ms/mcp-remote-apim-auth-diagram)
 
-## 🤝 How to Contribute
+
+Use credential manager to authorize access to your backend MCP servers:
+- ✅[Blog Post](https://aka.ms/remote-mcp-apim-lab-blog)
+- ✅[APIM lab](https://aka.ms/ai-gateway-lab-mcp)
+- ✅[YouTube Demo](https://aka.ms/ai-gateway-lab-demo)
+
+
+### Private MCP Registry for Organizations
+
+Enable MCP Discovery and Consumption across the Enterprise:
+-✅[APIC lab](https://aka.ms/apic-lab)
+
+
+
+## What's Next
+
+- MCP support in SKUv2 tiers
+- MCP passthrough capabilities
+
+  ## 🤝 How to Contribute
 
 We love contributions! Here's how you can help make APIM and MCPs even better:
 
 1. Create an issue or feature request
-
-
-## 🔗 Useful Links
-
-- [Azure API Management Overview](https://azure.microsoft.com/en-us/services/api-management/)
-- [API Management Documentation](https://docs.microsoft.com/en-us/azure/api-management/)
-- [Azure API Management Community](https://techcommunity.microsoft.com/t5/azure-paas-blog/bg-p/AzurePaaSBlog)
-- [Microsoft Learn API Management Modules](https://docs.microsoft.com/en-us/learn/browse/?terms=api%20management)
-- [Azure API Management GitHub Samples](https://github.com/Azure/api-management-samples)
 
 ---
 
