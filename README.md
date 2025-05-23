@@ -1,4 +1,4 @@
-# 🚀 Azure API Management 💜 MCP (Model Context Protocol)
+# 🚀 Azure API Management 💜 MCP
 
 The **Model Context Protocol (MCP)** is an open standard designed to standardize how AI applications (specifically Large Language Models or LLMs, often referred to as "agents") interact with external tools and data.
 
