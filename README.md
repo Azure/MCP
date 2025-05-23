@@ -12,9 +12,9 @@ The **Model Context Protocol (MCP)** is an open standard designed to standardize
 
 The relationship between MCP servers and APIs is a hierarchical and complementary one. It's not a case of one replacing the other; rather, MCP servers often use APIs to achieve their purpose, and APIs provide the underlying functionality that MCP servers expose to AI agents.
 
-APIs are the Backend, Remote MCP Servers are the AI-Friendly Frontend:
+💡APIs are the Backend, Remote MCP Servers are the AI-Friendly Frontend💡
 
-- APIs (Application Programming Interfaces) are the fundamental building blocks of almost all digital services. They define how different software components communicate and interact. For example, a weather service might expose an API to get forecasts, a CRM system has an API to manage customer data, and a payment gateway has an API to process transactions. These APIs are designed for programmatic consumption by developers and applications.
+- APIs are the fundamental building blocks of almost all digital services. They define how different software components communicate and interact. For example, a weather service might expose an API to get forecasts, a CRM system has an API to manage customer data, and a payment gateway has an API to process transactions. These APIs are designed for programmatic consumption by developers and applications.
 - Remote MCP Servers (built on JSON-RPC 2.0) act as an abstraction layer on top of these underlying APIs (and other data sources like databases or file systems). Their primary purpose is to expose the capabilities of these backend systems to AI agents (like Large Language Models or AI assistants) in a standardized, "AI-native" way, using the MCP.
 
 Remote MCP Servers Leverage APIs: "Tools" are often API calls: When an MCP server exposes a "tool" (a callable function for an AI agent), that tool's internal implementation very frequently involves making calls to one or more traditional APIs.
@@ -36,15 +36,15 @@ Because remote MCP servers are exposed to the internet, they greatly benefit fro
 
 ### Expose Existing APIs as MCP Servers
 
-- ✅ **Currently APIM instance must be on a SKUv1 tier**: Premium, Standard, or Basic
-- ✅ **Your service must be enrolled in the [AI Gateway release channel] (https://aka.ms/apimdocs/updategroups)** (activation may take up to 2 hours)
-- ✅ **Use the Azure Portal with feature flag**: ➤ Append `?Microsoft_Azure_ApiManagement=mcp` to your portal URL to access the MCP server configuration experience
+- 1️⃣**Currently APIM instance must be on a SKUv1 tier**: Premium, Standard, or Basic
+- 2️⃣**Your service must be enrolled in the [AI Gateway release channel] (https://aka.ms/apimdocs/updategroups)** (activation may take up to 2 hours)
+- 3️⃣**Use the Azure Portal with feature flag**: ➤ Append `?Microsoft_Azure_ApiManagement=mcp` to your portal URL to access the MCP server configuration experience
 
 > **Note:** We are working on getting this out to SKUv2 tier as well.
 
 🔗 Useful Links:
-- [Documentation](https://aka.ms/apimdocs/exportmcp)
-- [Blog Post](https://aka.ms/build25-apim-mcp)
+✅[Documentation](https://aka.ms/apimdocs/exportmcp)
+✅[Blog Post](https://aka.ms/build25-apim-mcp)
 
 
 ### Enhancing Security for remote MCP Servers
@@ -67,6 +67,7 @@ Use credential manager to authorize access to your backend MCP servers:
 ### Private MCP Registry for Organizations
 
 Enable MCP Discovery and Consumption across the Enterprise:
+
 -✅[APIC lab](https://aka.ms/apic-lab)
 
 
