@@ -80,7 +80,9 @@ Enable MCP Discovery and Consumption across the Enterprise:
 ## What's Next
 
 - MCP support in SKUv2 tiers
-- MCP passthrough capabilities
+- MCP passthrough capabilities in AI Gateway to observe, secure and control 3P MCP servers (built outside the enterprise)
+- MCP feature support - Prompts, Resources, Sampling, Elicitation
+- Solution accelerator samples for enterprise Registry and Gateway setup. 
 
   ## 🤝 How to Contribute
 
