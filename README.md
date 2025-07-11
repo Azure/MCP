@@ -1,95 +1,65 @@
-# 🚀 Azure API Management 💜 MCP
 
-The **Model Context Protocol (MCP)** is an open standard designed to standardize how AI applications (specifically Large Language Models or LLMs, often referred to as "agents") interact with external tools and data.
+# Azure for MCP: Registry & AI Gateway
 
-## Understanding Remote MCP Servers
+This repository provides resources and guidance on leveraging Azure API Center as your enterprise MCP registry and Azure API Management as your AI Gateway for secure and governed remote MCP servers.
 
-- Traditionally, most MCP servers run locally (e.g., on a user's laptop).
-- Remote MCP servers, however, are hosted on cloud platforms or other internet-accessible environments. They allow AI agents to connect to tools and data sources over the internet, enabling more powerful and complex AI applications.
-- These servers essentially expose specific capabilities and provide context, tools, and prompts to AI clients. They can connect to various services, databases, and third-party APIs.
+## 1. Azure API Center: Your Enterprise MCP Registry
 
-## The Relationship between MCP servers and APIs
+Azure API Center empowers organizations to build their own centralized registry for Model Context Protocol (MCP) servers. This means your teams can easily discover, share, and reuse MCP servers across the entire organization. This registry isn't limited to internally-developed MCP servers; you can also register publicly available MCP servers, providing a single, comprehensive source of truth for all MCP servers relevant to your organization.
 
-The relationship between MCP servers and APIs is hierarchical and complementary. It's not a case of one replacing the other; rather, MCP servers often use APIs to achieve their purpose, and APIs provide the underlying functionality that MCP servers expose to AI agents.
+By establishing a private MCP registry, you can:
+* **Centralize Discovery:** Provide a single source of truth for remote MCP servers, whether internally built or publicly available.
+* **Promote Reuse:** Encourage developers to leverage existing MCP servers, accelerating development.
+* **Enhance Governance:** With an AI gateway as a proxy, you can apply organizational standards and policies to your MCP server ecosystem.
 
-💡APIs are the Backend, Remote MCP Servers are the AI-Friendly Frontend💡
+## 2. MCP Discovery Page in Azure (Official Partners)
 
-**APIs** are the building blocks of digital services, defining how software components interact. Examples include:
+Azure API Center is featuring a MCP discovery page within the Azure portal. This page will showcase remote MCP servers from approved, official partners who have successfully completed our verification process.
 
-- A weather service API for forecasts
-- A CRM system API for managing customer data
-- A payment gateway API for processing transactions
+Becoming an official partner and being featured on the Azure MCP discovery page offers significant advantages:
+ * **Expanded Reach & Discoverability:** Your MCP servers will be prominently displayed within the Azure portal, making them easily discoverable by a vast audience of Azure customers and AI developers. 
+ * **Seamless Integration with MCP Hosts:** Every newly created API Center registry will automatically have access to these official partner MCP servers. This allows customers to effortlessly expose your remote MCP servers to popular MCP hosts like **VS Code, Copilot Studio, and Azure AI Foundry (coming soon)**, facilitating rapid integration and adoption of your solutions within their AI workflows. 
+ * **Increased Adoption:** By simplifying the discovery and connection process, you'll drive greater adoption of your MCP servers among organizations leveraging Azure's AI capabilities. 
 
-Remote **MCP Servers** (using JSON-RPC 2.0) act as an abstraction layer over these APIs and other data sources. They expose backend capabilities to AI agents (like Large Language Models) in an "AI-native" way.
+**Interested in becoming an official partner and featured on the Azure MCP discovery page?** 
+We are actively looking for partners to expand Azure's remote MCP server ecosystem. If you're interested in connecting with our business team to explore becoming an officially featured partner, please feel free to create a Pull Request (PR) in this repository. We will review your PR and get in contact with you to discuss the approval process.
 
-**Remote MCP Servers Leverage APIs:**
-- "Tools" exposed by MCP servers are often API calls. When an MCP server exposes a "tool" for an AI agent, it typically involves calling one or more traditional APIs.
+## 3. Azure AI Gateway (Azure API Management) with MCP Support
 
-## Why API Management is Crucial for Remote MCP Servers
+Azure API Management serves as your robust AI Gateway, providing comprehensive support for Model Context Protocol (MCP) servers. It's a critical component for managing and securing your remote MCP server deployments.
 
-Because remote MCP servers are exposed to the internet, they greatly benefit from API Management solutions. This allows teams to apply well-established governance and security practices, ensuring consistency and control across distributed systems. [Azure API Management](https://aka.ms/apimlove) provides crucial features for these remote connections:
-- **Centralized Security**: Enforcing authentication, authorization, and threat protection for all incoming requests to the MCP server.
-- **Traffic Management**: Handling high volumes of requests from many AI agents, rate limiting, and caching.
-- **Monitoring and Analytics**: Gaining insights into how AI agents are using the MCP server and its underlying API tools.
-- **Discovery and Governance**: Making remote MCP servers discoverable for AI developers and maintaining consistency across multiple MCP server deployments.
+### Why API Management is Crucial for Remote MCP Servers
 
-## Capabilities of Azure API Management and MCP
+Remote MCP servers, by their nature, are exposed to the internet, making robust governance and security very critical. Azure API Management provides essential capabilities to ensure consistency and control across these distributed systems:
 
-- [Expose Existing APIs as MCP Servers](#expose-existing-apis-as-mcp-servers)
-- [Enhancing Security for remote MCP Servers](#enhancing-security-for-remote-mcp-servers)
-- [Private MCP Registry for Organizations](#private-mcp-registry-for-organizations)
+* **Centralized Security:** Enforce authentication, authorization, and threat protection for all incoming requests to your MCP servers, safeguarding your valuable AI assets.
+* **Traffic Management:** Efficiently handle high volumes of requests from numerous AI agents, implementing rate limiting to prevent abuse and caching to improve performance and reduce load on your backend.
+* **Monitoring and Analytics:** Gain deep insights into how your AI agents are interacting with the MCP servers and their underlying API tools, enabling performance optimization and usage analysis.
 
-### Expose Existing APIs as MCP Servers
-Expose any APIM-managed REST API as a remote MCP server (SSE & Streamable HTTP)
+### Capabilities of Azure API Management and MCP
 
-- 1️⃣**Currently APIM instance must be on a SKUv1 tier**: Premium, Standard, or Basic
-- 2️⃣**Your service must be enrolled in the [AI Gateway release channel](https://aka.ms/apimdocs/updategroups)** (activation may take up to 2 hours)
-- 3️⃣**Use the Azure Portal with feature flag**: ➤ Append `?Microsoft_Azure_ApiManagement=mcp` to your portal URL to access the MCP server configuration experience
+Azure API Management extends its powerful features to the MCP landscape, enabling:
 
-> **Note:** We are working on getting this out to SKUv2 tier as well.
+#### Expose Existing APIs as MCP Servers
 
-🔗 Useful Links:
-✅[Documentation](https://aka.ms/apimdocs/exportmcp)
-✅[Blog Post](https://aka.ms/build25-apim-mcp)
+Seamlessly expose any APIM-managed REST API as a remote MCP server, supporting both Server-Sent Events (SSE) and Streamable HTTP.
 
+* [✅ Documentation](https://learn.microsoft.com/en-us/azure/api-management/export-rest-mcp-server)
+* [✅ Blog Post](https://devblogs.microsoft.com/blog/connect-once-integrate-anywhere-with-mcps)
 
-### Enhancing Security for remote MCP Servers
-API Management as your Auth Gateway for remote MCP Servers
+#### Enhancing Security for Remote MCP Servers
 
-Protect your remote MCP servers with OAuth:
-- ✅[Blog Post](https://aka.ms/remote-mcp-apim-auth-blog)
-- ✅[APIM lab – Client Auth](https://aka.ms/ai-gateway-lab-mcp-client-auth)
-- ✅[Python – azd up](https://aka.ms/mcp-remote-apim-auth)
-- ✅[.NET – azd up](https://aka.ms/mcp-remote-apim-auth-dotnet)
-- ✅[On-Behalf-Of Auth](https://aka.ms/mcp-obo-sample)
-- ✅[Detailed flow chart](https://aka.ms/mcp-remote-apim-auth-diagram)
+Utilize Azure API Management as your primary authentication gateway for remote MCP servers, ensuring secure access and robust control.
 
+**Protect your remote MCP servers with OAuth:**
+* [✅ Blog Post](https://devblogs.microsoft.com/blog/preventing-confused-deputy-attacks-in-mcp-with-azure-api-management/)
+* [✅ APIM lab – Client Auth](https://github.com/Azure-Samples/remote-mcp-apim-functions-python)
+* [✅ Python – azd up](https://github.com/Azure-Samples/remote-mcp-apim-functions-python)
+* [✅ .NET – azd up](https://github.com/Azure-Samples/remote-mcp-apim-functions-csharp) (Assuming .NET sample exists or will exist)
+* [✅ On-Behalf-Of Auth](https://learn.microsoft.com/en-us/azure/api-management/oauth2-client-credentials-onbehalfof) (General APIM OAuth, can be adapted)
+* [✅ Detailed flow chart](https://github.com/Azure-Samples/remote-mcp-apim-functions-python/blob/main/docs/media/sequence-diagram.png)
 
-Use credential manager to authorize access to your backend MCP servers:
-- ✅[Blog Post](https://aka.ms/remote-mcp-apim-lab-blog)
-- ✅[APIM lab](https://aka.ms/ai-gateway-lab-mcp)
-- ✅[YouTube Demo](https://aka.ms/ai-gateway-lab-demo)
-
-
-### Private MCP Registry for Organizations
-Enable MCP Discovery and Consumption across the Enterprise:
-
-- ✅[APIC lab](https://aka.ms/apic-lab)
-- ✅[Blog Post](https://aka.ms/build25-apim-mcp)
-
-## What's Next
-
-- MCP support in SKUv2 tiers
-- MCP passthrough capabilities in AI Gateway to observe, secure and control 3P MCP servers (built outside the enterprise)
-- MCP feature support - Prompts, Resources, Sampling, Elicitation
-- Solution accelerator samples for enterprise Registry and Gateway setup. 
-
-  ## 🤝 How to Contribute
-
-We love contributions! Here's how you can help make APIM and MCPs even better:
-
-1. Create an issue or feature request
-
----
-
-💻 Made with ❤️ by the API Management Team
+**Use credential manager to authorize access to your backend MCP servers:**
+* [✅ Blog Post](https://learn.microsoft.com/en-us/azure/api-management/credentials-overview)
+* [✅ APIM lab](https://learn.microsoft.com/en-us/azure/api-management/credentials-overview) (Refers to general credential manager overview, specific lab might be needed)
+* [✅ YouTube Demo](https://www.youtube.com/watch?v=kY6g_6oE5jI)
