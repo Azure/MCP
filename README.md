@@ -26,7 +26,7 @@ Becoming an official partner and being featured on the Azure MCP discovery page 
 
 We are actively looking for partners to expand Azure's remote MCP server ecosystem. If you're interested in connecting with our business team to explore becoming an officially featured partner, please feel free to create a Pull Request (PR) in this repository. We will review your PR and get in contact with you to discuss the approval process.
 
-## 3. Azure AI Gateway (Azure API Management) with MCP Support
+## 3. Integration with Azure AI Gateway (Azure API Management)
 
 Azure API Management serves as your robust AI Gateway, providing comprehensive support for Model Context Protocol (MCP) servers. It's a critical component for managing and securing your remote MCP server deployments.
 
