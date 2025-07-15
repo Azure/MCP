@@ -1,18 +1,19 @@
 
-# Azure for MCP: Registry & AI Gateway
+# Azure MCP Server Registry
 
-This repository provides resources and guidance on leveraging Azure API Center as your enterprise MCP registry and Azure API Management as your AI Gateway for secure and governed remote MCP servers.
+This repository provides resources and guidance on leveraging Azure API Center as your customizable enterprise MCP registry.
 
 ## 1. Azure API Center: Your Enterprise MCP Registry
 
 Azure API Center empowers organizations to build their own centralized registry for Model Context Protocol (MCP) servers. This means your teams can easily discover, share, and reuse MCP servers across the entire organization. This registry isn't limited to internally-developed MCP servers; you can also register publicly available MCP servers, providing a single, comprehensive source of truth for all MCP servers relevant to your organization.
 
 By establishing a private MCP registry, you can:
-* **Centralize Discovery:** Provide a single source of truth for remote MCP servers, whether internally built or publicly available.
+* **Centralize Discovery:** Provide a single source of truth for remote MCP servers in your enterprise, whether internally built or publicly available.
 * **Promote Reuse:** Encourage developers to leverage existing MCP servers, accelerating development.
 * **Enhance Governance:** With an AI gateway as a proxy, you can apply organizational standards and policies to your MCP server ecosystem.
+* **Facilitate Exposure and Governance:** Start exposing and governing these remote MCP servers to MCP hosts like Copilot Studio, AI Foundry, and VS Code.
 
-## 2. MCP Discovery Page in Azure (Official Partners)
+## 2. Partner Onboarding Azure MCP Server Registry
 
 Azure API Center is featuring a MCP discovery page within the Azure portal. This page will showcase remote MCP servers from approved, official partners who have successfully completed our verification process.
 
@@ -21,7 +22,8 @@ Becoming an official partner and being featured on the Azure MCP discovery page 
  * **Seamless Integration with MCP Hosts:** Every newly created API Center registry will automatically have access to these official partner MCP servers. This allows customers to effortlessly expose your remote MCP servers to popular MCP hosts like **VS Code, Copilot Studio, and Azure AI Foundry (coming soon)**, facilitating rapid integration and adoption of your solutions within their AI workflows. 
  * **Increased Adoption:** By simplifying the discovery and connection process, you'll drive greater adoption of your MCP servers among organizations leveraging Azure's AI capabilities. 
 
-**Interested in becoming an official partner and featured on the Azure MCP discovery page?** 
+**Interested in becoming an official partner and being featured on the Azure MCP discovery page?** 
+
 We are actively looking for partners to expand Azure's remote MCP server ecosystem. If you're interested in connecting with our business team to explore becoming an officially featured partner, please feel free to create a Pull Request (PR) in this repository. We will review your PR and get in contact with you to discuss the approval process.
 
 ## 3. Azure AI Gateway (Azure API Management) with MCP Support
