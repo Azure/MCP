@@ -1,0 +1,23 @@
+{
+    "name": "box-mcp-server",
+    "title": "Box",
+    "summary": "Use Box to securely store, manage and share your photos, videos, and documents in the cloud.",
+    "description": "Use Box to securely store, manage and share your photos, videos, and documents in the cloud.",
+    "kind": "mcp",
+    "externalDocumentation": {},
+    "contacts": [],
+    "packages": [],
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPHqOTArHna3-t187ktiO-PHfSkoNEDxXKIA&s",
+    "useCases": [
+        {
+            "name": "Cloud and Infrastructure",
+            "description": "Provision, manage, and monitor cloud resources, deployments, and IT infrastructure to ensure scalability, reliability, and security."
+        }
+    ],
+    "tags": [],
+    "vendor": "Partner",
+    "categories": "Cloud and Infrastructure",
+    "visibility": "true",
+    "remote": "https://mcp.box.com/",
+    "versionName": "Original"
+}

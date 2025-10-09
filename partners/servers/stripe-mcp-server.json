@@ -1,0 +1,24 @@
+{
+    "name": "stripe-mcp-server",
+    "title": "Stripe",
+    "summary": "Payment processing and financial infrastructure tools.",
+    "description": "Payment processing and financial infrastructure tools.",
+    "kind": "mcp",
+    "externalDocumentation": {},
+    "contacts": [],
+    "packages": [],
+    "icon": "https://avatars.githubusercontent.com/stripe?s=64",
+    "useCases": [
+        {
+            "name": "Business Services",
+            "description": "Enable organizations to streamline operations, manage customer relationships, and enhance overall business efficiency with integrated service tools."
+        }
+    ],
+    "tags": [],
+    "vendor": "Partner",
+    "endpoint": "Public",
+    "visibility": "true",
+    "categories": "Business Services",
+    "versionName": "Original",
+    "remote": "https://mcp.stripe.com/"
+}

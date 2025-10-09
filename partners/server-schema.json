@@ -1,0 +1,149 @@
+{  
+  "title": "PublicRegistryMcpServerData",
+  "type": "object",
+  "required": [ "name", "title", "summary", "description" ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "kind": {
+      "type": "string",
+      "default": "mcp"
+    },
+    "license": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "url": { "type": "string" }
+      }
+    },
+    "externalDocumentation": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "url": { "type": "string" }
+      }
+    },
+    "icon": {
+      "type": "string"
+    },
+    "repository": {
+      "type": "object",
+      "properties": {
+        "url": { "type": "string" },
+        "source": { "type": "string" }
+      }
+    },
+    "useCases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "description": { "type": "string" }
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "vendor": {
+      "type": "string"
+    },
+    "visibility": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "string"
+    },
+    "connectorName": {
+      "type": "string"
+    },
+    "securitySchemes": {
+      "type": "object",
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "type": "object",
+            "required": [ "type", "description", "scheme" ],
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [ "http" ]
+              },
+              "description": { "type": "string" },
+              "scheme": { "type": "string" },
+              "bearerFormat": { "type": "string" }
+            }
+          },
+          {
+            "type": "object",
+            "required": [ "type", "description", "in", "name" ],
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [ "apiKey" ]
+              },
+              "description": { "type": "string" },
+              "in": { "type": "string" },
+              "name": { "type": "string" }
+            }
+          },
+          {
+            "type": "object",
+            "required": [ "type", "description", "flows" ],
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [ "oauth2" ]
+              },
+              "description": { "type": "string" },
+              "authorizationUrl": { "type": "string" },
+              "tokenUrl": { "type": "string" },
+              "refreshUrl": { "type": "string" },
+              "scopes": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "flows": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [ "authorizationCode", "clientCredentials" ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "packages": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "versionName": {
+      "type": "string",
+      "default": "orginal"
+    },
+    "versionTitle": {
+      "type": "string"
+    },
+    "remote": {
+      "type": "string"
+    },
+    "remoteType": {
+      "type": "string",
+      "default": "sse"
+    }
+  }
+}

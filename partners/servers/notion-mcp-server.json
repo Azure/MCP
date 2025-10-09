@@ -1,0 +1,27 @@
+{
+    "name": "notion-mcp",
+    "title": "Notion MCP",
+    "summary": "Interact with Notion workspaces by searching, reading, creating, and updating pages.",
+    "description": "Create documentation  Generate PRDs, tech specs, and architecture docs from your research and project data\nSearch and find answers � Let AI search across all your Notion and connected workspace content\nManage tasks � Generate code snippets from task descriptions and update project status automatically\nBuild reports � Create release notes, project updates, and performance reports from multiple sources\nPlan campaigns � Generate comprehensive briefs and track progress across marketing channels\n",
+    "kind": "mcp",
+    "license": {
+        "name": "Notion Developer Terms",
+        "url": "https://www.notion.so/notion/Developer-Terms-ba4131408d0844e08330da2cbb225c20"
+    },
+    "externalDocumentation": {},
+    "contacts": [],
+    "packages": [],
+    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/notion.png",
+    "useCases": [
+        {
+            "name": "Productivity",
+            "description": "Boost individual and team efficiency by automating tasks, managing projects, and improving collaboration and communication workflows."
+        }
+    ],
+    "tags": [],
+    "vendor": "Partner",
+    "categories": "Developer Tools",
+    "visibility": "true",
+    "remote": "https://mcp.notion.com/mcp",
+    "versionName": "Original"
+}

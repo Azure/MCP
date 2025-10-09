@@ -1,0 +1,58 @@
+{
+    "name": "tavily-mcp-server",
+    "title": "Tavily MCP",
+    "summary": "The Tavily MCP server offers a suite of tools, including search, extract, map, and crawl.",
+    "description": "The Tavily MCP server offers a suite of tools, including search, extract, map, and crawl. Enabling real-time web search, intelligent content extraction, structured site mapping, and automated crawling. It empowers AI agents to seamlessly retrieve, analyze, and organize live web data for richer, more accurate responses.",
+    "kind": "mcp",
+    "externalDocumentation": {
+        "title": "GitHub",
+        "url": "https://github.com/tavily-ai/tavily-mcp"
+    },
+    "contacts": [],
+    "repository": {
+        "url": "https://github.com/tavily-ai/tavily-mcp",
+        "source": "github"
+    },
+    "packages": [
+        {
+            "registry_name": "npm",
+            "name": "tavily-mcp-server",
+            "version": "latest",
+            "runtime_hint": "npx",
+            "runtime_arguments": [
+                {
+                    "type": "positional",
+                    "value_hint": "tavily_mcp_server_binary",
+                    "is_repeated": false,
+                    "is_required": true,
+                    "format": "string",
+                    "value": "tavily-mcp@latest",
+                    "is_secret": false
+                },
+                {
+                    "type": "named",
+                    "name": "--tavily_api_key",
+                    "is_repeated": false,
+                    "is_required": true,
+                    "format": "string",
+                    "value": "your-api-key-here",
+                    "is_secret": false
+                }
+            ],
+            "package_arguments": [],
+            "environment_variables": []
+        }
+    ],
+    "icon": "https://aws-mp-tavily-v1.s3.us-east-1.amazonaws.com/tavily-logo.png",
+    "useCases": [
+        {
+            "name": "Search Functionality",
+            "description": "Search for code, issues, pull requests, and users with advanced filtering options."
+        }
+    ],
+    "tags": [],
+    "vendor": "Partner",
+    "categories": "Developer Tools",
+    "visibility": "true",
+    "versionName": "Original"
+}

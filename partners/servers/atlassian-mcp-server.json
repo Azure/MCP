@@ -1,0 +1,25 @@
+{
+    "name": "atlassian-mcp-server",
+    "title": "Atlassian",
+    "summary": "Connect to Jira and Confluence for issue tracking and documentation.",
+    "description": "Connect to Jira and Confluence for issue tracking and documentation.",
+    "kind": "mcp",
+    "externalDocumentation": {},
+    "contacts": [],
+    "packages": [],
+    "icon": "https://avatars.githubusercontent.com/atlassian?s=64",
+    "useCases": [
+        {
+            "name": "Productivity",
+            "description": "Boost individual and team efficiency by automating tasks, managing projects, and improving collaboration and communication workflows."
+        }
+    ],
+    "tags": [],
+    "vendor": "Partner",
+    "endpoint": "Public",
+    "type": "remote",
+    "categories": "Productivity",
+    "visibility": "true",
+    "remote": "https://mcp.atlassian.com/v1/sse",
+    "versionName": "Original"
+}

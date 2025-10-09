@@ -1,0 +1,27 @@
+{
+    "name": "pipedream-mcp-server",
+    "title": "Pipedream",
+    "summary": "Securely connect to 10,000+ tools from 3,000+ APIs with Pipedream MCP.",
+    "description": "Pipedream MCP makes it easy to choose add 10,000+ tools from 3,000+ APIs to any AI chatbot or agent. Pipedream handles secure authentication for every API and refreshes tokens to enable authenticated tool calls, while never exposing your credentials to the LLM. Revoke access at anytime.",
+    "kind": "mcp",
+    "license": {
+        "name": "Pipedream Terms",
+        "url": "https://pipedream.com/terms"
+    },
+    "externalDocumentation": {},
+    "contacts": [],
+    "packages": [],
+    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/pipedream.png",
+    "useCases": [
+        {
+            "name": "Productivity",
+            "description": "Boost individual and team efficiency by automating tasks, managing projects, and improving collaboration and communication workflows."
+        }
+    ],
+    "tags": [],
+    "vendor": "Partner",
+    "categories": "Productivity",
+    "visibility": "true",
+    "remote": "https://mcp.pipedream.net/v2",
+    "versionName": "Original"
+}
