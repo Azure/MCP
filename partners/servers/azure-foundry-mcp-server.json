@@ -4,7 +4,6 @@
     "summary": "Foundry model catalog, evaluation and agents.",
     "description": "Connect to this MCP server to use Foundry capabilities like model catalog, evaluation and agents.",
     "kind": "mcp",
-    "lifecycleStage": "production",
     "externalDocumentation": {},
     "contacts": [],
     "packages": [],

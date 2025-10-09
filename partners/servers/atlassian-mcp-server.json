@@ -4,7 +4,6 @@
     "summary": "Connect to Jira and Confluence for issue tracking and documentation.",
     "description": "Connect to Jira and Confluence for issue tracking and documentation.",
     "kind": "mcp",
-    "lifecycleStage": "production",
     "externalDocumentation": {},
     "contacts": [],
     "packages": [],

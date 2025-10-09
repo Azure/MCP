@@ -4,7 +4,6 @@
     "summary": "Manage and query Neon Postgres databases with natural language.",
     "description": "Manage and query Neon Postgres databases with natural language.",
     "kind": "mcp",
-    "lifecycleStage": "production",
     "externalDocumentation": {},
     "contacts": [],
     "packages": [],

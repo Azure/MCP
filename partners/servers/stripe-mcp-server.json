@@ -4,7 +4,6 @@
     "summary": "Payment processing and financial infrastructure tools.",
     "description": "Payment processing and financial infrastructure tools.",
     "kind": "mcp",
-    "lifecycleStage": "production",
     "externalDocumentation": {},
     "contacts": [],
     "packages": [],

@@ -4,7 +4,6 @@
     "summary": "With Vercel MCP, you can explore projects, inspect failed deployments, fetch logs, and more right from your AI client.",
     "description": "Vercel MCP integrates with popular AI assistants to let you search and navigate Vercel documentation, manage projects and deployments, analyze deployment logs, and more. It is often used to debug deployment, search or domain availability, and bypass deployment protection for agents when.",
     "kind": "mcp",
-    "lifecycleStage": "production",
     "license": {
         "name": "Vercel Terms",
         "url": "https://vercel.com/legal/terms"

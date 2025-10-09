@@ -4,7 +4,6 @@
     "summary": "MongoDB MCP Server allows any MCP-aware LLM to connect to MongoDB Atlas for admin tasks and to MongoDB databases for data operations, all through natural language.",
     "description": "MongoDB MCP Server allows any MCP-aware LLM to connect to MongoDB Atlas for admin tasks and to MongoDB databases for data operations, all through natural language.",
     "kind": "mcp",
-    "lifecycleStage": "production",
     "externalDocumentation": {
         "title": "GitHub",
         "url": "https://github.com/mongodb-js/mongodb-mcp-server"

@@ -4,7 +4,6 @@
     "summary": "This TypeScript project provides a local MCP server for Azure DevOps, enabling you to perform a wide range of Azure DevOps tasks directly from your code editor.",
     "description": "This TypeScript project provides a local MCP server for Azure DevOps, enabling you to perform a wide range of Azure DevOps tasks directly from your code editor.",
     "kind": "mcp",
-    "lifecycleStage": "production",
     "externalDocumentation": {
         "title": "GitHub",
         "url": "https://github.com/microsoft/azure-devops-mcp"

@@ -4,7 +4,6 @@
     "summary": "MCP server that provides a seamless connection between AI agents and developers for building apps and agents for Microsoft 365 and Microsoft 365 Copilot.",
     "description": "The Microsoft 365 Agents Toolkit MCP Server is a Model Context Protocol (MCP) server that provides a seamless connection between AI agents and developers for building apps and agents for Microsoft 365 and Microsoft 365 Copilot.",
     "kind": "mcp",
-    "lifecycleStage": "production",
     "externalDocumentation": {
         "title": "GitHub",
         "url": "https://github.com/OfficeDev/microsoft-365-agents-toolkit/"

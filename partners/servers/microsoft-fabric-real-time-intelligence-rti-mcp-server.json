@@ -4,7 +4,6 @@
     "summary": "This server enables AI agents to interact with Fabric RTI services by providing tools through the MCP interface, allowing for seamless data querying and analysis capabilities.",
     "description": "This server enables AI agents to interact with Fabric RTI services by providing tools through the MCP interface, allowing for seamless data querying and analysis capabilities.",
     "kind": "mcp",
-    "lifecycleStage": "production",
     "externalDocumentation": {
         "title": "GitHub",
         "url": "https://github.com/microsoft/fabric-rti-mcp"

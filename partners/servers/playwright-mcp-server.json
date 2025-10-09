@@ -4,7 +4,6 @@
     "summary": "This server enables LLMs to interact with web pages through structured accessibility snapshots, bypassing the need for screenshots or visually-tuned models.",
     "description": "This server enables LLMs to interact with web pages through structured accessibility snapshots, bypassing the need for screenshots or visually-tuned models.",
     "kind": "mcp",
-    "lifecycleStage": "production",
     "externalDocumentation": {
         "title": "GitHub",
         "url": "https://github.com/microsoft/playwright-mcp"
@@ -51,7 +50,7 @@
         },
         {
             "name": "Web Data Extraction & Scraping",
-            "description": "Reading and extracting structured information from pages—like product prices, user reviews, or analytics metrics—for business intelligence or compliance."
+            "description": "Reading and extracting structured information from pagesï¿½like product prices, user reviews, or analytics metricsï¿½for business intelligence or compliance."
         }
     ],
     "tags": [],

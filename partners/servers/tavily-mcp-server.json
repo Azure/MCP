@@ -4,7 +4,6 @@
     "summary": "The Tavily MCP server offers a suite of tools, including search, extract, map, and crawl.",
     "description": "The Tavily MCP server offers a suite of tools, including search, extract, map, and crawl. Enabling real-time web search, intelligent content extraction, structured site mapping, and automated crawling. It empowers AI agents to seamlessly retrieve, analyze, and organize live web data for richer, more accurate responses.",
     "kind": "mcp",
-    "lifecycleStage": "production",
     "externalDocumentation": {
         "title": "GitHub",
         "url": "https://github.com/tavily-ai/tavily-mcp"

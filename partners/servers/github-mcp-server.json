@@ -4,7 +4,6 @@
     "summary": "Access GitHub repositories, issues, and pull requests through secure API integration.",
     "description": "Access GitHub repositories, issues, and pull requests through secure API integration.",
     "kind": "mcp",
-    "lifecycleStage": "production",
     "license": {
         "name": "MIT",
         "url": "https://opensource.org/licenses/MIT"

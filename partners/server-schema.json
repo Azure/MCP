@@ -19,10 +19,6 @@
       "type": "string",
       "default": "mcp"
     },
-    "lifecycleStage": {
-      "type": "string",
-      "default": ""
-    },
     "license": {
       "type": "object",
       "properties": {

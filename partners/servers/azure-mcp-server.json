@@ -4,7 +4,6 @@
     "summary": "All Azure MCP tools in a single server.",
     "description": "All Azure MCP tools in a single server. The Azure MCP Server implements the MCP specification to create a seamless connection between AI agents and Azure services. Azure MCP Server can be used alone or with the GitHub Copilot for Azure extension in VS Code.",
     "kind": "mcp",
-    "lifecycleStage": "production",
     "externalDocumentation": {
         "title": "GitHub",
         "url": "https://github.com/Azure/azure-mcp"
