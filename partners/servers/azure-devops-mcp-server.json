@@ -1,0 +1,72 @@
+{
+    "name": "azure-devops",
+    "title": "Azure DevOps",
+    "summary": "This TypeScript project provides a local MCP server for Azure DevOps, enabling you to perform a wide range of Azure DevOps tasks directly from your code editor.",
+    "description": "This TypeScript project provides a local MCP server for Azure DevOps, enabling you to perform a wide range of Azure DevOps tasks directly from your code editor.",
+    "kind": "mcp",
+    "lifecycleStage": "production",
+    "externalDocumentation": {
+        "title": "GitHub",
+        "url": "https://github.com/microsoft/azure-devops-mcp"
+    },
+    "contacts": [],
+    "repository": {
+        "url": "https://github.com/microsoft/azure-devops-mcp",
+        "source": "github"
+    },
+    "packages": [
+        {
+            "registry_name": "npm",
+            "name": "@azure-devops/mcp",
+            "version": "latest",
+            "runtime_hint": "npx",
+            "runtime_arguments": [
+                {
+                    "type": "positional",
+                    "value_hint": "noninteractive_mode",
+                    "is_repeated": false,
+                    "is_required": true,
+                    "format": "string",
+                    "value": "-y",
+                    "is_secret": false
+                },
+                {
+                    "type": "positional",
+                    "value_hint": "ado_mcp_version",
+                    "is_repeated": false,
+                    "is_required": true,
+                    "format": "string",
+                    "value": "@azure-devops/mcp@latest",
+                    "is_secret": false
+                },
+                {
+                    "type": "positional",
+                    "value_hint": "ado_org",
+                    "is_repeated": false,
+                    "description": "Azure DevOps organization name (e.g. 'contoso')",
+                    "is_required": true,
+                    "format": "string",
+                    "value": "{ado_org}",
+                    "is_secret": false
+                }
+            ],
+            "package_arguments": [],
+            "environment_variables": []
+        }
+    ],
+    "useCases": [
+        {
+            "name": "Developer Tools",
+            "description": "Empower developers with tools for coding, testing, debugging, version control, and automation to accelerate the software development lifecycle."
+        },
+        {
+            "name": "CI/CD & Workflow Intelligence",
+            "description": "Monitor workflow runs in GitHub Actions, analyze build failures, and manage releases."
+        }
+    ],
+    "tags": [],
+    "vendor": "Microsoft",
+    "categories": "Developer Tools",
+    "visibility": "true",
+    "versionName": "Original"
+}

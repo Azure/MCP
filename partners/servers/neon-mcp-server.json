@@ -1,0 +1,25 @@
+{
+    "name": "neon-mcp-server",
+    "title": "Neon",
+    "summary": "Manage and query Neon Postgres databases with natural language.",
+    "description": "Manage and query Neon Postgres databases with natural language.",
+    "kind": "mcp",
+    "lifecycleStage": "production",
+    "externalDocumentation": {},
+    "contacts": [],
+    "packages": [],
+    "icon": "https://avatars.githubusercontent.com/u/183852044?v=4",
+    "useCases": [
+        {
+            "name": "Data and Analytics",
+            "description": "Collect, process, and analyze data to generate insights, detect trends, and support decision-making through visualization and reporting tools."
+        }
+    ],
+    "tags": [],
+    "categories": "Data and Analytics",
+    "vendor": "Partner",
+    "endpoint": "Public",
+    "visibility": "true",
+    "remote": "https://mcp.neon.tech/sse",
+    "versionName": "Original"
+}

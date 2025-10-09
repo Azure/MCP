@@ -1,0 +1,63 @@
+{
+    "name": "microsoft-clarity",
+    "title": "Microsoft Clarity",
+    "summary": "This is a Model Context Protocol (MCP) server for the Microsoft Clarity data export API. It allows you to fetch analytics data from Clarity using Claude for Desktop or other MCP-compatible clients.",
+    "description": "This is a Model Context Protocol (MCP) server for the Microsoft Clarity data export API. It allows you to fetch analytics data from Clarity using Claude for Desktop or other MCP-compatible clients.",
+    "kind": "mcp",
+    "lifecycleStage": "production",
+    "externalDocumentation": {
+        "title": "GitHub",
+        "url": "https://github.com/microsoft/clarity-mcp-server"
+    },
+    "contacts": [],
+    "repository": {
+        "url": "https://github.com/microsoft/clarity-mcp-server",
+        "source": "github"
+    },
+    "packages": [
+        {
+            "registry_name": "npm",
+            "name": "@microsoft/clarity-mcp-server",
+            "version": "latest",
+            "runtime_hint": "npx",
+            "runtime_arguments": [
+                {
+                    "type": "positional",
+                    "value_hint": "clarity_server_binary",
+                    "is_repeated": false,
+                    "is_required": true,
+                    "format": "string",
+                    "value": "@microsoft/clarity-mcp-server@latest",
+                    "is_secret": false
+                },
+                {
+                    "type": "named",
+                    "name": "--clarity_api_token",
+                    "is_repeated": false,
+                    "is_required": true,
+                    "format": "string",
+                    "value": "your-api-token-here",
+                    "is_secret": false
+                }
+            ],
+            "package_arguments": [],
+            "environment_variables": []
+        }
+    ],
+    "icon": "https://store-images.s-microsoft.com/image/apps.29332.512b1d3d-80ec-4aec-83bb-411008d2f7cd.76371b6f-9386-463f-bfb0-b75cffb86a4f.bd99f4b1-b18e-4380-aa79-93768763c90d.png",
+    "useCases": [
+        {
+            "name": "Data and Analytics",
+            "description": "Collect, process, and analyze data to generate insights, detect trends, and support decision-making through visualization and reporting tools."
+        },
+        {
+            "name": "Web",
+            "description": "Tools and services that enable building, deploying, and optimizing websites or web applications, including content delivery, hosting, and web performance."
+        }
+    ],
+    "tags": [],
+    "vendor": "Microsoft",
+    "categories": "Data and Analytics",
+    "visibility": "true",
+    "versionName": "Original"
+}

@@ -1,0 +1,62 @@
+{
+    "name": "playwright",
+    "title": "Playwright",
+    "summary": "This server enables LLMs to interact with web pages through structured accessibility snapshots, bypassing the need for screenshots or visually-tuned models.",
+    "description": "This server enables LLMs to interact with web pages through structured accessibility snapshots, bypassing the need for screenshots or visually-tuned models.",
+    "kind": "mcp",
+    "lifecycleStage": "production",
+    "externalDocumentation": {
+        "title": "GitHub",
+        "url": "https://github.com/microsoft/playwright-mcp"
+    },
+    "contacts": [],
+    "repository": {
+        "url": "https://github.com/microsoft/playwright-mcp",
+        "source": "github"
+    },
+    "packages": [
+        {
+            "registry_name": "npm",
+            "name": "@playwright/mcp",
+            "version": "latest",
+            "runtime_hint": "npx",
+            "runtime_arguments": [
+                {
+                    "type": "positional",
+                    "value_hint": "playwright_mcp_version",
+                    "is_repeated": false,
+                    "is_required": true,
+                    "format": "string",
+                    "value": "@playwright/mcp@latest",
+                    "is_secret": false
+                }
+            ],
+            "package_arguments": [],
+            "environment_variables": []
+        }
+    ],
+    "icon": "https://api.nuget.org/v3-flatcontainer/microsoft.playwright/1.53.0/icon",
+    "useCases": [
+        {
+            "name": "End-to-End Functional Testing",
+            "description": "Automatically generate, execute, and maintain UI test scripts as applications evolve. This allows for continuous validation of site functionality without manual intervention."
+        },
+        {
+            "name": "Exploratory Testing & Bug Discovery",
+            "description": "Agents autonomously navigate web applications, discover hidden functionality, and surface edge cases or regressions that manual testers might miss."
+        },
+        {
+            "name": "UI Regression Testing",
+            "description": "Testing visual changes and ensuring consistency across different environments, browsers, or device emulations (e.g., mobile vs. desktop)."
+        },
+        {
+            "name": "Web Data Extraction & Scraping",
+            "description": "Reading and extracting structured information from pages—like product prices, user reviews, or analytics metrics—for business intelligence or compliance."
+        }
+    ],
+    "tags": [],
+    "categories": "Developer Tools",
+    "vendor": "Microsoft",
+    "visibility": "true",
+    "versionName": "Original"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "msdocs-mcp-server",
+    "title": "Microsoft Learn",
+    "summary": "AI assistant with real-time access to official Microsoft documentation.",
+    "description": "AI assistant with real-time access to official Microsoft documentation.",
+    "kind": "mcp",
+    "lifecycleStage": "production",
+    "externalDocumentation": {},
+    "contacts": [],
+    "packages": [],
+    "icon": "https://avatars.githubusercontent.com/microsoft?s=64",
+    "useCases": [],
+    "tags": [],
+    "categories": "Productivity",
+    "vendor": "Microsoft",
+    "endpoint": "Public",
+    "visibility": "true",
+    "remote": "https://learn.microsoft.com/api/mcp",
+    "versionName": "Original"
+}

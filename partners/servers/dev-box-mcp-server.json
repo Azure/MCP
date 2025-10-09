@@ -1,0 +1,63 @@
+{
+    "name": "dev-box",
+    "title": "Microsoft Dev Box",
+    "summary": "An MCP server for Microsoft Dev Box. Enables natural language interactions for developer-focused operations like managing Dev Boxes, configuring environments, and handling pools.",
+    "description": "An MCP server for Microsoft Dev Box. Enables natural language interactions for developer-focused operations like managing Dev Boxes, configuring environments, and handling pools.",
+    "kind": "mcp",
+    "lifecycleStage": "production",
+    "externalDocumentation": {
+        "title": "GitHub",
+        "url": "https://www.npmjs.com/package/@microsoft/devbox-mcp?activeTab=readme"
+    },
+    "contacts": [],
+    "repository": {
+        "url": "https://www.npmjs.com/package/@microsoft/devbox-mcp?activeTab=readme",
+        "source": "npm"
+    },
+    "packages": [
+        {
+            "registry_name": "npm",
+            "name": "@microsoft/devbox-mcp",
+            "version": "latest",
+            "runtime_hint": "npx",
+            "runtime_arguments": [
+                {
+                    "type": "positional",
+                    "value_hint": "noninteractive_mode",
+                    "is_repeated": false,
+                    "is_required": true,
+                    "format": "string",
+                    "value": "-y",
+                    "is_secret": false
+                },
+                {
+                    "type": "positional",
+                    "value_hint": "devbox_mcp_version",
+                    "is_repeated": false,
+                    "is_required": true,
+                    "format": "string",
+                    "value": "@microsoft/devbox-mcp@latest",
+                    "is_secret": false
+                }
+            ],
+            "package_arguments": [],
+            "environment_variables": []
+        }
+    ],
+    "icon": "https://learn.microsoft.com/en-us/windows-app/media/index/dev-box-icon.svg",
+    "useCases": [
+        {
+            "name": "Developer Tools",
+            "description": "Empower developers with tools for coding, testing, debugging, version control, and automation to accelerate the software development lifecycle."
+        },
+        {
+            "name": "Cloud and Infrastructure",
+            "description": "Provision, manage, and monitor cloud resources, deployments, and IT infrastructure to ensure scalability, reliability, and security."
+        }
+    ],
+    "tags": [],
+    "vendor": "Microsoft",
+    "categories": "Developer Tools",
+    "visibility": "true",
+    "versionName": "Original"
+}
