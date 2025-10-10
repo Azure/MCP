@@ -1,0 +1,22 @@
+{
+    "name": "exa-mcp-server",
+    "title": "Exa Web Search",
+    "summary": "Exa MCP is a powerful web search and web crawling mcp. It lets you do real-time web searches, extract content from any URL, and even run deep research for detailed reports.",
+    "description": "Exa MCP is a powerful web search and web crawling mcp. It lets you do real-time web searches, extract content from any URL, and even run deep research for detailed reports.",
+    "kind": "mcp",
+    "license": {
+        "name": "Terms of Service",
+        "url": "https://exa.ai/assets/Exa_Labs_Terms_of_Service.pdf"
+    },
+    "externalDocumentation": {
+        "title": "Exa",
+        "url": "https://docs.exa.ai/reference/exa-mcp"
+    },
+    "remote": "https://mcp.exa.ai/mcp",
+    "versionName": "Original",
+    "packages": [],
+    "icon": "https://exa.imgix.net/exa-logo.jpg",
+    "categories": "Web",
+    "vendor": "Microsoft",
+    "visibility": "true",
+}
