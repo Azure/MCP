@@ -16,6 +16,6 @@
     "vendor": "Partner",
     "categories": "Cloud and Infrastructure",
     "visibility": "true",
-    "remote": "not-url",
+    "remote": "https://mcp.box.com/",
     "versionName": "Original"
 }
