@@ -9,40 +9,85 @@ jobs:
   validate-json:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install --no-cache-dir check-jsonschema
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install validator
-        run: npm i -D ajv-cli ajv-formats
-
-      - name: Validate JSON files
+      - name: Validate JSON files schema
         run: |
-          shopt -s nullglob globstar
-          files=(partners/servers/*.json)
-          if [ ${#files[@]} -eq 0 ]; then
-            echo "No JSON files found under partners/servers/"
-            exit 0
-          fi
-
-          echo "Found ${#files[@]} JSON files to validate"
+          check-jsonschema \
+            --schemafile partners/server-schema.json \
+            partners/servers/*.json
+      
+      - name: Validate security schema keys are unique
+        run: |
+          python3 -c "
+          import json
+          import sys
+          from pathlib import Path
+          from collections import Counter
           
-          # Loop through each file and validate individually
-          for file in "${files[@]}"; do
-            echo "Validating: $file"
-            if ! npx ajv validate \
-              -s partners/server-schema.json \
-              -d "$file" \
-              --all-errors --errors=line; then
-              echo "❌ Validation failed for: $file"
-              exit 1
-            else
-              echo "✅ Validation passed for: $file"
-            fi
-          done
+          # Check for duplicate security scheme keys within each file
+          duplicates_found = False
+          for json_file in Path('partners/servers').glob('*.json'):
+              with open(json_file) as f:
+                  data = json.load(f)
+              
+              if 'securitySchemes' in data and data['securitySchemes']:
+                  keys = list(data['securitySchemes'].keys())
+                  key_counts = Counter(keys)
+                  
+                  for key, count in key_counts.items():
+                      if count > 1:
+                          print(f'Error: Duplicate security scheme key \"{key}\" found {count} times in file: {json_file}')
+                          duplicates_found = True
           
-          echo "All JSON files validated successfully!"
+          if duplicates_found:
+              sys.exit(1)
+          
+          print('All security scheme keys are unique within their respective files')
+          "
+      
+      - name: Validate server names are unique
+        run: |
+          python3 -c "
+          import json
+          import sys
+          from pathlib import Path
+          from collections import defaultdict
+          
+          # Collect all names and their source files
+          names_to_files = defaultdict(list)
+          
+          for json_file in Path('partners/servers').glob('*.json'):
+              try:
+                  with open(json_file) as f:
+                      data = json.load(f)
+                  
+                  if 'name' in data:
+                      names_to_files[data['name']].append(str(json_file))
+              except json.JSONDecodeError as e:
+                  print(f'Error parsing {json_file}: {e}')
+                  sys.exit(1)
+              except Exception as e:
+                  print(f'Error reading {json_file}: {e}')
+                  sys.exit(1)
+          
+          # Check for duplicates
+          duplicates_found = False
+          for name, files in names_to_files.items():
+              if len(files) > 1:
+                  original_file = files[0]
+                  duplicate_files = files[1:]
+                  print(f'Error: Duplicate server name \"{name}\" found:')
+                  print(f'  Original: {original_file}')
+                  for dup_file in duplicate_files:
+                      print(f'  Duplicate: {dup_file}')
+                  duplicates_found = True
+          
+          if duplicates_found:
+              sys.exit(1)
+          
+          print(f'All {len(names_to_files)} server names are unique across JSON files')
+          "

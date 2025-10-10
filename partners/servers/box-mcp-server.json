@@ -4,7 +4,6 @@
     "summary": "Use Box to securely store, manage and share your photos, videos, and documents in the cloud.",
     "description": "Use Box to securely store, manage and share your photos, videos, and documents in the cloud.",
     "kind": "mcp",
-    "externalDocumentation": {},
     "packages": [],
     "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPHqOTArHna3-t187ktiO-PHfSkoNEDxXKIA&s",
     "useCases": [

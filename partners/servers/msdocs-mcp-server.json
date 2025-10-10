@@ -4,7 +4,6 @@
     "summary": "AI assistant with real-time access to official Microsoft documentation.",
     "description": "AI assistant with real-time access to official Microsoft documentation.",
     "kind": "mcp",
-    "externalDocumentation": {},
     "packages": [],
     "icon": "https://avatars.githubusercontent.com/microsoft?s=64",
     "useCases": [],

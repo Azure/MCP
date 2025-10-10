@@ -4,7 +4,6 @@
     "summary": "Postman's remote MCP server connects AI agents, assistants, and chatbots directly to your APIs on Postman.",
     "description": "Postman's remote MCP server connects AI agents, assistants, and chatbots directly to your APIs on Postman.",
     "kind": "mcp",
-    "externalDocumentation": {},
     "repository": {
         "url": "https://github.com/postmanlabs/postman-mcp-server",
         "source": "github"

@@ -4,7 +4,6 @@
     "summary": "Manage and query Neon Postgres databases with natural language.",
     "description": "Manage and query Neon Postgres databases with natural language.",
     "kind": "mcp",
-    "externalDocumentation": {},
     "packages": [],
     "icon": "https://avatars.githubusercontent.com/u/183852044?v=4",
     "useCases": [
