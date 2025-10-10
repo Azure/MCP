@@ -1,4 +1,4 @@
-name: Validate servers JSON against schema
+﻿name: Validate servers JSON against schema
 
 on:
   pull_request:
@@ -29,10 +29,20 @@ jobs:
             exit 0
           fi
 
-          npx ajv validate \
-            -c ajv-formats \
-            --spec=draft2020 \
-            -s schemas/config.schema.json \
-            -r 'partners/servers/*.json' \
-            --all-errors --errors=line \
-            -d "${files[@]}"
+          echo "Found ${#files[@]} JSON files to validate"
+          
+          # Loop through each file and validate individually
+          for file in "${files[@]}"; do
+            echo "Validating: $file"
+            if ! npx ajv validate \
+              -s schemas/config.schema.json \
+              -d "$file" \
+              --all-errors --errors=line; then
+              echo "❌ Validation failed for: $file"
+              exit 1
+            else
+              echo "✅ Validation passed for: $file"
+            fi
+          done
+          
+          echo "All JSON files validated successfully!"
