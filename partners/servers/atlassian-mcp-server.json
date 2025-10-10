@@ -4,7 +4,6 @@
     "summary": "Connect to Jira and Confluence for issue tracking and documentation.",
     "description": "Connect to Jira and Confluence for issue tracking and documentation.",
     "kind": "mcp",
-    "externalDocumentation": {},
     "packages": [],
     "icon": "https://avatars.githubusercontent.com/atlassian?s=64",
     "useCases": [
