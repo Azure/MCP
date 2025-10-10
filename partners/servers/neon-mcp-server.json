@@ -1,5 +1,5 @@
 {
-    "name": "neon-mcp-server",
+    "name": "github-mcp-server",
     "title": "Neon",
     "summary": "Manage and query Neon Postgres databases with natural language.",
     "description": "Manage and query Neon Postgres databases with natural language.",
