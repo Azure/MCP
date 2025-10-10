@@ -144,6 +144,10 @@
     "remoteType": {
       "type": "string",
       "default": "sse"
+    },
+    "supportContact": {
+      "type": "string"
     }
-  }
+  },
+  "additionalProperties": false
 }

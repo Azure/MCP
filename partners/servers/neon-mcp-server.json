@@ -5,7 +5,6 @@
     "description": "Manage and query Neon Postgres databases with natural language.",
     "kind": "mcp",
     "externalDocumentation": {},
-    "contacts": [],
     "packages": [],
     "icon": "https://avatars.githubusercontent.com/u/183852044?v=4",
     "useCases": [
@@ -17,7 +16,6 @@
     "tags": [],
     "categories": "Data and Analytics",
     "vendor": "Partner",
-    "endpoint": "Public",
     "visibility": "true",
     "remote": "https://mcp.neon.tech/sse",
     "versionName": "Original"

@@ -8,7 +8,6 @@
         "title": "GitHub",
         "url": "https://github.com/microsoft/playwright-mcp"
     },
-    "contacts": [],
     "repository": {
         "url": "https://github.com/microsoft/playwright-mcp",
         "source": "github"
@@ -49,8 +48,8 @@
             "description": "Testing visual changes and ensuring consistency across different environments, browsers, or device emulations (e.g., mobile vs. desktop)."
         },
         {
-            "name": "Web Data Extraction & Scraping",
-            "description": "Reading and extracting structured information from pages�like product prices, user reviews, or analytics metrics�for business intelligence or compliance."
+          "name": "Web Data Extraction & Scraping",
+          "description": "Reading and extracting structured information from pages—like product prices, user reviews, or analytics metrics—for business intelligence or compliance."
         }
     ],
     "tags": [],
