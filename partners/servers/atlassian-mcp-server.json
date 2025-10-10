@@ -5,7 +5,6 @@
     "description": "Connect to Jira and Confluence for issue tracking and documentation.",
     "kind": "mcp",
     "externalDocumentation": {},
-    "contacts": [],
     "packages": [],
     "icon": "https://avatars.githubusercontent.com/atlassian?s=64",
     "useCases": [
@@ -15,9 +14,7 @@
         }
     ],
     "tags": [],
-    "vendor": "Partner",
-    "endpoint": "Public",
-    "type": "remote",
+    "vendor": "Partner",    
     "categories": "Productivity",
     "visibility": "true",
     "remote": "https://mcp.atlassian.com/v1/sse",

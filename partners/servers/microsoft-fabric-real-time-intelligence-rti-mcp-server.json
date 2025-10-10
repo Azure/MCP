@@ -8,7 +8,6 @@
         "title": "GitHub",
         "url": "https://github.com/microsoft/fabric-rti-mcp"
     },
-    "contacts": [],
     "repository": {
         "url": "https://github.com/microsoft/fabric-rti-mcp",
         "source": "github"
@@ -17,8 +16,7 @@
     "icon": "https://omnidata.com/wp-content/uploads/2025/01/omnidata-fabric-700x500-1.png",
     "useCases": [],
     "tags": [],
-    "vendor": "Microsoft",
-    "type": "local",
+    "vendor": "Microsoft",    
     "categories": "Data and Analytics",
     "visibility": "true",
     "versionName": "Original"

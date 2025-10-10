@@ -148,5 +148,6 @@
     "supportContact": {
       "type": "string"
     }
-  }
+  },
+  "additionalProperties": false
 }

@@ -5,7 +5,6 @@
     "description": "Connect to this MCP server to use Foundry capabilities like model catalog, evaluation and agents.",
     "kind": "mcp",
     "externalDocumentation": {},
-    "contacts": [],
     "packages": [],
     "useCases": [
         {

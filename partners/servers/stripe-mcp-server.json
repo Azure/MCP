@@ -5,7 +5,6 @@
     "description": "Payment processing and financial infrastructure tools.",
     "kind": "mcp",
     "externalDocumentation": {},
-    "contacts": [],
     "packages": [],
     "icon": "https://avatars.githubusercontent.com/stripe?s=64",
     "useCases": [
@@ -16,7 +15,6 @@
     ],
     "tags": [],
     "vendor": "Partner",
-    "endpoint": "Public",
     "visibility": "true",
     "categories": "Business Services",
     "versionName": "Original",
