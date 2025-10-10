@@ -51,7 +51,7 @@ jobs:
               if len(files) > 1:
                   original_file = files[0]
                   duplicate_files = files[1:]
-                  print(f'Error: Duplicate server name \"{name}\" found:')
+                  print(f'Error: Duplicate server name \"{name}\" found. Please ensure all server names are unique across all server JSON files.')
                   print(f'  Original: {original_file}')
                   for dup_file in duplicate_files:
                       print(f'  Duplicate: {dup_file}')
@@ -95,7 +95,7 @@ jobs:
               if len(files) > 1:
                   original_file = files[0]
                   duplicate_files = files[1:]
-                  print(f'Error: Duplicate security scheme key \"{key}\" found:')
+                  print(f'Error: Duplicate security scheme key \"{key}\" found. Please ensure all security scheme keys are unique across all server JSON files.')
                   print(f'  Original: {original_file}')
                   for dup_file in duplicate_files:
                       print(f'  Duplicate: {dup_file}')
