@@ -1,0 +1,38 @@
+name: Validate servers JSON against schema
+
+on:
+  pull_request:
+    branches:
+      - main  # Only PRs targeting main branch
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install validator
+        run: npm i -D ajv-cli ajv-formats
+
+      - name: Validate JSON files
+        run: |
+          shopt -s nullglob globstar
+          files=(partners/servers/*.json)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "No JSON files found under partners/servers/"
+            exit 0
+          fi
+
+          npx ajv validate \
+            -c ajv-formats \
+            --spec=draft2020 \
+            -s schemas/config.schema.json \
+            -r 'partners/servers/*.json' \
+            --all-errors --errors=line \
+            -d "${files[@]}"
