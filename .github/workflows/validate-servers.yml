@@ -20,35 +20,6 @@ jobs:
             --schemafile partners/server-schema.json \
             partners/servers/*.json
       
-      - name: Validate security schema keys are unique
-        run: |
-          python3 -c "
-          import json
-          import sys
-          from pathlib import Path
-          from collections import Counter
-          
-          # Check for duplicate security scheme keys within each file
-          duplicates_found = False
-          for json_file in Path('partners/servers').glob('*.json'):
-              with open(json_file) as f:
-                  data = json.load(f)
-              
-              if 'securitySchemes' in data and data['securitySchemes']:
-                  keys = list(data['securitySchemes'].keys())
-                  key_counts = Counter(keys)
-                  
-                  for key, count in key_counts.items():
-                      if count > 1:
-                          print(f'Error: Duplicate security scheme key \"{key}\" found {count} times in file: {json_file}')
-                          duplicates_found = True
-          
-          if duplicates_found:
-              sys.exit(1)
-          
-          print('All security scheme keys are unique within their respective files')
-          "
-      
       - name: Validate server names are unique
         run: |
           python3 -c "
@@ -91,3 +62,49 @@ jobs:
           
           print(f'All {len(names_to_files)} server names are unique across JSON files')
           "
+
+      - name: Validate security schema keys are unique
+        run: |
+          python3 -c "
+          import json
+          import sys
+          from pathlib import Path
+          from collections import defaultdict
+          
+          # Collect all security scheme keys and their source files
+          keys_to_files = defaultdict(list)
+          
+          for json_file in Path('partners/servers').glob('*.json'):
+              try:
+                  with open(json_file) as f:
+                      data = json.load(f)
+                  
+                  if 'securitySchemes' in data and data['securitySchemes']:
+                      for key in data['securitySchemes'].keys():
+                          keys_to_files[key].append(str(json_file))
+              except json.JSONDecodeError as e:
+                  print(f'Error parsing {json_file}: {e}')
+                  sys.exit(1)
+              except Exception as e:
+                  print(f'Error reading {json_file}: {e}')
+                  sys.exit(1)
+          
+          # Check for duplicates
+          duplicates_found = False
+          for key, files in keys_to_files.items():
+              if len(files) > 1:
+                  original_file = files[0]
+                  duplicate_files = files[1:]
+                  print(f'Error: Duplicate security scheme key \"{key}\" found:')
+                  print(f'  Original: {original_file}')
+                  for dup_file in duplicate_files:
+                      print(f'  Duplicate: {dup_file}')
+                  duplicates_found = True
+          
+          if duplicates_found:
+              sys.exit(1)
+          
+          print(f'All {len(keys_to_files)} security scheme keys are unique across JSON files')
+          "
+      
+      
