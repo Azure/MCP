@@ -35,7 +35,7 @@ jobs:
           for file in "${files[@]}"; do
             echo "Validating: $file"
             if ! npx ajv validate \
-              -s schemas/config.schema.json \
+              -s partners/server-schema.json \
               -d "$file" \
               --all-errors --errors=line; then
               echo "❌ Validation failed for: $file"
