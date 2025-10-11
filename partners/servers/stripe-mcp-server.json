@@ -1,21 +1,34 @@
 {
-    "name": "stripe-mcp-server",
-    "title": "Stripe",
-    "summary": "Payment processing and financial infrastructure tools.",
-    "description": "Payment processing and financial infrastructure tools.",
-    "kind": "mcp",
-    "packages": [],
-    "icon": "https://avatars.githubusercontent.com/stripe?s=64",
-    "useCases": [
-        {
-            "name": "Business Services",
-            "description": "Enable organizations to streamline operations, manage customer relationships, and enhance overall business efficiency with integrated service tools."
-        }
-    ],
-    "tags": [],
-    "vendor": "Partner",
-    "visibility": "true",
-    "categories": "Business Services",
-    "versionName": "Original",
-    "remote": "https://mcp.stripe.com/"
+  "name": "stripe-mcp-server",
+  "title": "Stripe",
+  "summary": "Payment processing and financial infrastructure tools.",
+  "description": "Payment processing and financial infrastructure tools.",
+  "kind": "mcp",
+  "packages": [],
+  "icon": "https://avatars.githubusercontent.com/stripe?s=64",
+  "useCases": [
+    {
+      "name": "Business Services",
+      "description": "Enable organizations to streamline operations, manage customer relationships, and enhance overall business efficiency with integrated service tools."
+    }
+  ],
+  "tags": [],
+  "vendor": "Partner",
+  "visibility": "true",
+  "categories": "Business Services",
+  "versionName": "Original",
+  "remote": "https://mcp.stripe.com/",
+  "externalDocumentation": {
+    "title": "Stripe MCP",
+    "url": "https://mcp.stripe.com/"
+  },
+  "securitySchemes": {
+    "stripeOauth": {
+      "type": "oauth2",
+      "description": "OAuth2 (authorization code). Confirm exact endpoints and scopes before merging.",
+      "authorizationUrl": "https://connect.stripe.com/oauth/authorize",
+      "tokenUrl": "https://connect.stripe.com/oauth/token",
+      "scopes": {}
+    }
+  }
 }
