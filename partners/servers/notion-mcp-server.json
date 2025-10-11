@@ -2,7 +2,7 @@
   "name": "notion-mcp",
   "title": "Notion MCP",
   "summary": "Interact with Notion workspaces by searching, reading, creating, and updating pages.",
-  "description": "Create documentation  Generate PRDs, tech specs, and architecture docs from your research and project data\nSearch and find answers — Let AI search across all your Notion and connected workspace content\nManage tasks — Generate code snippets from task descriptions and update project status automatically\nBuild reports — Create release notes, project updates, and performance reports from multiple sources\nPlan campaigns — Generate comprehensive briefs and track progress across marketing channels\n",
+  "description": "Create documentation  Generate PRDs, tech specs, and architecture docs from your research and project data\nSearch and find answers \u2014 Let AI search across all your Notion and connected workspace content\nManage tasks \u2014 Generate code snippets from task descriptions and update project status automatically\nBuild reports \u2014 Create release notes, project updates, and performance reports from multiple sources\nPlan campaigns \u2014 Generate comprehensive briefs and track progress across marketing channels\n",
   "kind": "mcp",
   "license": {
     "name": "Notion Developer Terms",
@@ -21,5 +21,18 @@
   "categories": "Developer Tools",
   "visibility": "true",
   "remote": "https://mcp.notion.com/mcp",
-  "versionName": "Original"
+  "versionName": "Original",
+  "externalDocumentation": {
+    "title": "Notion MCP Docs",
+    "url": "https://developers.notion.com/docs/mcp"
+  },
+  "securitySchemes": {
+    "notionOauth": {
+      "type": "oauth2",
+      "description": "OAuth2 (authorization code) placeholder. Confirm whether DCR (dynamic client registration) applies.",
+      "authorizationUrl": "https://www.notion.com/oauth/authorize",
+      "tokenUrl": "https://www.notion.com/oauth/token",
+      "scopes": {}
+    }
+  }
 }
