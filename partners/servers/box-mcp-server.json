@@ -24,11 +24,7 @@
   },
   "securitySchemes": {
     "boxOauth": {
-      "type": "oauth2",
-      "description": "OAuth2 (authorization code) — placeholder endpoints. Confirm Box OAuth endpoints if you want to include detailed flows.",
-      "authorizationUrl": "https://account.box.com/api/oauth2/authorize",
-      "tokenUrl": "https://api.box.com/oauth2/token",
-      "scopes": {}
+      "type": "oauth2"
     }
   }
 }
