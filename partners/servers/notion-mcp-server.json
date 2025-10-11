@@ -18,7 +18,7 @@
   ],
   "tags": [],
   "vendor": "Partner",
-  "categories": "Developer Tools",
+  "categories": "Productivity",
   "visibility": "true",
   "remote": "https://mcp.notion.com/mcp",
   "versionName": "Original",
@@ -28,11 +28,7 @@
   },
   "securitySchemes": {
     "notionOauth": {
-      "type": "oauth2",
-      "description": "OAuth2 (authorization code) placeholder. Confirm whether DCR (dynamic client registration) applies.",
-      "authorizationUrl": "https://www.notion.com/oauth/authorize",
-      "tokenUrl": "https://www.notion.com/oauth/token",
-      "scopes": {}
+      "type": "oauth2"
     }
   }
 }
