@@ -1,25 +1,38 @@
 {
-    "name": "netlify-mcp-server",
-    "title": "Netlify",
-    "summary": "Deploy, secure, and manage websites with Netlify",
-    "description": "Some key functionalities include:\n\n- Creating, managing, and deploying Netlify projects\n- Configuring access controls and permissions\n- Fetching user and team information\n- Enabling and managing form submissions\n- Creating environment variables and secrets\n\nTypical scenarios where it's used:\n\n- Speeding up development workflows by letting AI agents handle deploys and configuration changes\n- Automating repetitive project setup and management tasks\n- Managing multi-project environments across teams with consistent access controls\n- Integrating Netlify deployment workflows directly into editors like VS Code, Windsurf, Cursor, or Claude\n\nIn short, the Netlify MCP Server provides a standardized, secure way for AI-driven development tools to extend Netlify's full functionality into your daily development environment.",
-    "kind": "mcp",
-    "license": {
-        "name": "Netlify Terms",
-        "url": "https://www.netlify.com/legal/terms-of-use/"
-    },
-    "packages": [],
-    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/netlify.svg",
-    "useCases": [
-        {
-            "name": "Web",
-            "description": "Tools and services that enable building, deploying, and optimizing websites or web applications, including content delivery, hosting, and web performance."
-        }
-    ],
-    "tags": [],
-    "vendor": "Partner",
-    "categories": "Developer Tools",
-    "visibility": "true",
-    "remote": "https://netlify-mcp.netlify.app/mcp",
-    "versionName": "Original"
+  "name": "netlify-mcp-server",
+  "title": "Netlify",
+  "summary": "Deploy, secure, and manage websites with Netlify",
+  "description": "Some key functionalities include:\n\n- Creating, managing, and deploying Netlify projects\n- Configuring access controls and permissions\n- Fetching user and team information\n- Enabling and managing form submissions\n- Creating environment variables and secrets\n\nTypical scenarios where it's used:\n\n- Speeding up development workflows by letting AI agents handle deploys and configuration changes\n- Automating repetitive project setup and management tasks\n- Managing multi-project environments across teams with consistent access controls\n- Integrating Netlify deployment workflows directly into editors like VS Code, Windsurf, Cursor, or Claude\n\nIn short, the Netlify MCP Server provides a standardized, secure way for AI-driven development tools to extend Netlify's full functionality into your daily development environment.",
+  "kind": "mcp",
+  "license": {
+    "name": "Netlify Terms",
+    "url": "https://www.netlify.com/legal/terms-of-use/"
+  },
+  "packages": [],
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/netlify.svg",
+  "useCases": [
+    {
+      "name": "Web",
+      "description": "Tools and services that enable building, deploying, and optimizing websites or web applications, including content delivery, hosting, and web performance."
+    }
+  ],
+  "tags": [],
+  "vendor": "Partner",
+  "categories": "Developer Tools",
+  "visibility": "true",
+  "remote": "https://netlify-mcp.netlify.app/mcp",
+  "versionName": "Original",
+  "externalDocumentation": {
+    "title": "Netlify MCP Docs",
+    "url": "https://docs.netlify.com/build/build-with-ai/netlify-mcp-server/"
+  },
+  "securitySchemes": {
+    "netlifyOauth": {
+      "type": "oauth2",
+      "description": "OAuth2 (authorization code) placeholder. Confirm Netlify endpoints and DCR behavior.",
+      "authorizationUrl": "https://app.netlify.com/authorize",
+      "tokenUrl": "https://api.netlify.com/token",
+      "scopes": {}
+    }
+  }
 }
