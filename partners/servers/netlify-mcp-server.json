@@ -18,7 +18,7 @@
   ],
   "tags": [],
   "vendor": "Partner",
-  "categories": "Developer Tools",
+  "categories": "Web",
   "visibility": "true",
   "remote": "https://netlify-mcp.netlify.app/mcp",
   "versionName": "Original",
@@ -28,11 +28,7 @@
   },
   "securitySchemes": {
     "netlifyOauth": {
-      "type": "oauth2",
-      "description": "OAuth2 (authorization code) placeholder. Confirm Netlify endpoints and DCR behavior.",
-      "authorizationUrl": "https://app.netlify.com/authorize",
-      "tokenUrl": "https://api.netlify.com/token",
-      "scopes": {}
+      "type": "oauth2"
     }
   }
 }
