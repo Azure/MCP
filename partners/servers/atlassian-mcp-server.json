@@ -1,21 +1,34 @@
 {
-    "name": "atlassian-mcp-server",
-    "title": "Atlassian",
-    "summary": "Connect to Jira and Confluence for issue tracking and documentation.",
-    "description": "Connect to Jira and Confluence for issue tracking and documentation.",
-    "kind": "mcp",
-    "packages": [],
-    "icon": "https://avatars.githubusercontent.com/atlassian?s=64",
-    "useCases": [
-        {
-            "name": "Productivity",
-            "description": "Boost individual and team efficiency by automating tasks, managing projects, and improving collaboration and communication workflows."
-        }
-    ],
-    "tags": [],
-    "vendor": "Partner",    
-    "categories": "Productivity",
-    "visibility": "true",
-    "remote": "https://mcp.atlassian.com/v1/sse",
-    "versionName": "Original"
+  "name": "atlassian-mcp-server",
+  "title": "Atlassian",
+  "summary": "Connect to Jira and Confluence for issue tracking and documentation.",
+  "description": "Connect to Jira and Confluence for issue tracking and documentation.",
+  "kind": "mcp",
+  "packages": [],
+  "icon": "https://avatars.githubusercontent.com/atlassian?s=64",
+  "useCases": [
+    {
+      "name": "Productivity",
+      "description": "Boost individual and team efficiency by automating tasks, managing projects, and improving collaboration and communication workflows."
+    }
+  ],
+  "tags": [],
+  "vendor": "Partner",
+  "categories": "Productivity",
+  "visibility": "true",
+  "remote": "https://mcp.atlassian.com/v1/sse",
+  "versionName": "Original",
+  "externalDocumentation": {
+    "title": "Atlassian MCP",
+    "url": "https://mcp.atlassian.com/v1/sse"
+  },
+  "securitySchemes": {
+    "atlassianOauth": {
+      "type": "oauth2",
+      "description": "OAuth2 (authorization code) placeholder. Replace with Atlassian endpoints/scopes as desired.",
+      "authorizationUrl": "https://auth.atlassian.com/authorize",
+      "tokenUrl": "https://auth.atlassian.com/oauth/token",
+      "scopes": {}
+    }
+  }
 }
