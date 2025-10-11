@@ -20,15 +20,11 @@
   "versionName": "Original",
   "externalDocumentation": {
     "title": "Atlassian MCP",
-    "url": "https://mcp.atlassian.com/v1/sse"
+    "url": "https://github.com/atlassian/atlassian-mcp-server"
   },
   "securitySchemes": {
     "atlassianOauth": {
       "type": "oauth2",
-      "description": "OAuth2 (authorization code) placeholder. Replace with Atlassian endpoints/scopes as desired.",
-      "authorizationUrl": "https://auth.atlassian.com/authorize",
-      "tokenUrl": "https://auth.atlassian.com/oauth/token",
-      "scopes": {}
     }
   }
 }
