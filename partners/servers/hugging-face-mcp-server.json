@@ -34,7 +34,7 @@
     "bearerAuth": {
       "type": "http",
       "scheme": "bearer",
-      "bearerFormat": "Bearer",
+      "bearerFormat": "HF_token",
       "description": "Use Bearer tokens (API keys)."
     }
   }
