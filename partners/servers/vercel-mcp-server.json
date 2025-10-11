@@ -1,29 +1,45 @@
 {
-    "name": "vercel-mcp-server",
-    "title": "Vercel",
-    "summary": "With Vercel MCP, you can explore projects, inspect failed deployments, fetch logs, and more right from your AI client.",
-    "description": "Vercel MCP integrates with popular AI assistants to let you search and navigate Vercel documentation, manage projects and deployments, analyze deployment logs, and more. It is often used to debug deployment, search or domain availability, and bypass deployment protection for agents when.",
-    "kind": "mcp",
-    "license": {
-        "name": "Vercel Terms",
-        "url": "https://vercel.com/legal/terms"
+  "name": "vercel-mcp-server",
+  "title": "Vercel",
+  "summary": "With Vercel MCP, you can explore projects, inspect failed deployments, fetch logs, and more right from your AI client.",
+  "description": "Vercel MCP integrates with popular AI assistants to let you search and navigate Vercel documentation, manage projects and deployments, analyze deployment logs, and more. It is often used to debug deployment, search or domain availability, and bypass deployment protection for agents when.",
+  "kind": "mcp",
+  "license": {
+    "name": "Vercel Terms",
+    "url": "https://vercel.com/legal/terms"
+  },
+  "packages": [],
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/vercel.svg",
+  "useCases": [
+    {
+      "name": "Cloud and Infrastructure",
+      "description": "Provision, manage, and monitor cloud resources, deployments, and IT infrastructure to ensure scalability, reliability, and security."
     },
-    "packages": [],
-    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/vercel.svg",
-    "useCases": [
-        {
-            "name": "Cloud and Infrastructure",
-            "description": "Provision, manage, and monitor cloud resources, deployments, and IT infrastructure to ensure scalability, reliability, and security."
-        },
-        {
-            "name": "Web",
-            "description": "Tools and services that enable building, deploying, and optimizing websites or web applications, including content delivery, hosting, and web performance."
-        }
-    ],
-    "tags": [],
-    "vendor": "Partner",
-    "categories": "Developer Tools",
-    "visibility": "true",
-    "remote": "https://mcp.vercel.com",
-    "versionName": "Original"
+    {
+      "name": "Web",
+      "description": "Tools and services that enable building, deploying, and optimizing websites or web applications, including content delivery, hosting, and web performance."
+    }
+  ],
+  "tags": [],
+  "vendor": "Partner",
+  "categories": "Developer Tools",
+  "visibility": "true",
+  "remote": "https://mcp.vercel.com",
+  "versionName": "Original",
+  "externalDocumentation": {
+    "title": "Vercel MCP Docs",
+    "url": "https://vercel.com/docs/mcp/vercel-mcp"
+  },
+  "securitySchemes": {
+    "vercelOauth": {
+      "type": "oauth2",
+      "description": "OAuth2 (authorization code). Endpoints taken from CSV notes — confirm before merging.",
+      "authorizationUrl": "https://vercel.com/oauth/authorize",
+      "tokenUrl": "https://vercel.com/api/login/oauth/token",
+      "scopes": {
+        "openid": "OpenID scope",
+        "offline_access": "Offline access scope"
+      }
+    }
+  }
 }
