@@ -40,9 +40,9 @@
             "description": "Collect, process, and analyze data to generate insights, detect trends, and support decision-making through visualization and reporting tools."
         }
     ],
-    "tags": [],
+    "tags": ["knowledge"],
     "vendor": "Partner",
-    "categories": "Data and Analytics",
+    "categories": "Databases",
     "visibility": "true",
     "versionName": "Original"
 }

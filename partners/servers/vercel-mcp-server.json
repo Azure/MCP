@@ -25,5 +25,25 @@
     "categories": "Developer Tools",
     "visibility": "true",
     "remote": "https://mcp.vercel.com",
-    "versionName": "Original"
+    "versionName": "Original",
+    "externalDocumentation": {
+        "title": "Vercel MCP",
+        "url": "https://vercel.com/docs/mcp/vercel-mcp"
+    },
+    "connectorName": "foundryvercelmcp",
+    "securitySchemes": {
+        "vercelOauth": {
+            "type": "oauth2",
+            "description": "Authenticate with Vercel using OAuth2 authorization code flow with PKCE support.",
+            "authorizationUrl": "https://vercel.com/oauth/authorize",
+            "tokenUrl": "https://vercel.com/api/login/oauth/token",
+            "refreshUrl": "https://vercel.com/api/login/oauth/token",
+            "scopes": [
+                "openid",
+                "offline_access"
+            ],
+            "flows": ["authorizationCode"]
+        }
+    },
+    "supportContact": "https://vercel.com/help"
 }

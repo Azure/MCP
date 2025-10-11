@@ -15,7 +15,18 @@
     "tags": [],
     "vendor": "Partner",
     "visibility": "true",
-    "categories": "Business Services",
+    "categories": "Commerce",
     "versionName": "Original",
-    "remote": "https://mcp.stripe.com/"
+    "remote": "https://mcp.stripe.com/",
+    "externalDocumentation": {
+        "title": "Stripe MCP",
+        "url": "https://docs.stripe.com/mcp"
+    },
+    "securitySchemes": {
+        "stripeOauth": {
+            "type": "oauth2",
+            "description": "Authenticate with Stripe using OAuth2 authorization code flow with PKCE support.",
+            "flows": ["authorizationCode"]
+        }
+    }
 }
