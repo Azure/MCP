@@ -24,11 +24,7 @@
   },
   "securitySchemes": {
     "neonOauth": {
-      "type": "oauth2",
-      "description": "OAuth2 (authorization code) placeholder. Replace with provider-specific endpoints if available.",
-      "authorizationUrl": "https://{neon-host}/oauth/authorize",
-      "tokenUrl": "https://{neon-host}/oauth/token",
-      "scopes": {}
+      "type": "oauth2"
     }
   }
 }
