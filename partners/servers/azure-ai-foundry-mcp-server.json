@@ -1,70 +1,79 @@
 {
-    "name": "azure-ai-foundry",
-    "title": "Azure AI Foundry",
-    "summary": "A Model Context Protocol server for Azure AI Foundry, providing a unified set of tools for models, knowledge, evaluation, and more.",
-    "description": "A Model Context Protocol server for Azure AI Foundry, providing a unified set of tools for models, knowledge, evaluation, and more",
-    "kind": "mcp",
-    "externalDocumentation": {
-        "title": "GitHub",
-        "url": "https://github.com/azure-ai-foundry/mcp-foundry"
-    },
-    "repository": {
-        "url": "https://github.com/azure-ai-foundry/mcp-foundry",
-        "source": "github"
-    },
-    "packages": [
+  "name": "azure-ai-foundry",
+  "title": "Azure AI Foundry",
+  "summary": "A Model Context Protocol server for Azure AI Foundry, providing a unified set of tools for models, knowledge, evaluation, and more.",
+  "description": "A Model Context Protocol server for Azure AI Foundry, providing a unified set of tools for models, knowledge, evaluation, and more",
+  "kind": "mcp",
+  "externalDocumentation": {
+    "title": "GitHub",
+    "url": "https://github.com/azure-ai-foundry/mcp-foundry"
+  },
+  "repository": {
+    "url": "https://github.com/azure-ai-foundry/mcp-foundry",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registry_name": "npm",
+      "name": "azure-ai-foundry/mcp-foundry",
+      "version": "latest",
+      "runtime_hint": "uvx",
+      "runtime_arguments": [
         {
-            "registry_name": "npm",
-            "name": "azure-ai-foundry/mcp-foundry",
-            "version": "latest",
-            "runtime_hint": "uvx",
-            "runtime_arguments": [
-                {
-                    "type": "named",
-                    "name": "--prerelease",
-                    "is_repeated": false,
-                    "is_required": false,
-                    "format": "string",
-                    "value": "allow",
-                    "is_secret": false
-                },
-                {
-                    "type": "named",
-                    "name": "--from",
-                    "is_repeated": false,
-                    "is_required": true,
-                    "format": "string",
-                    "value": "git+https://github.com/azure-ai-foundry/mcp-foundry.git",
-                    "is_secret": false
-                },
-                {
-                    "type": "positional",
-                    "value_hint": "entrypoint",
-                    "is_repeated": false,
-                    "is_required": true,
-                    "format": "string",
-                    "value": "run-azure-ai-foundry-mcp",
-                    "is_secret": false
-                }
-            ],
-            "package_arguments": [],
-            "environment_variables": []
-        }
-    ],
-    "icon": "https://devblogs.microsoft.com/foundry/wp-content/uploads/sites/89/2025/03/ai-foundry.png",
-    "useCases": [
-        {
-            "name": "Data and Analytics",
-            "description": "Collect, process, and analyze data to generate insights, detect trends, and support decision-making through visualization and reporting tools."
+          "type": "named",
+          "name": "--prerelease",
+          "is_repeated": false,
+          "is_required": false,
+          "format": "string",
+          "value": "allow",
+          "is_secret": false
         },
         {
-            "name": "Developer Tools",
-            "description": "Empower developers with tools for coding, testing, debugging, version control, and automation to accelerate the software development lifecycle."
+          "type": "named",
+          "name": "--from",
+          "is_repeated": false,
+          "is_required": true,
+          "format": "string",
+          "value": "git+https://github.com/azure-ai-foundry/mcp-foundry.git",
+          "is_secret": false
+        },
+        {
+          "type": "positional",
+          "value_hint": "entrypoint",
+          "is_repeated": false,
+          "is_required": true,
+          "format": "string",
+          "value": "run-azure-ai-foundry-mcp",
+          "is_secret": false
         }
-    ],
-    "tags": [],
-    "vendor": "Microsoft",
-    "categories": "Cloud and Infrastructure",
-    "visibility": "true",
-    "versionName": "Original"
+      ],
+      "package_arguments": [],
+      "environment_variables": []
+    }
+  ],
+  "icon": "https://devblogs.microsoft.com/foundry/wp-content/uploads/sites/89/2025/03/ai-foundry.png",
+  "useCases": [
+    {
+      "name": "Data and Analytics",
+      "description": "Collect, process, and analyze data to generate insights, detect trends, and support decision-making through visualization and reporting tools."
+    },
+    {
+      "name": "Developer Tools",
+      "description": "Empower developers with tools for coding, testing, debugging, version control, and automation to accelerate the software development lifecycle."
+    }
+  ],
+  "tags": [],
+  "vendor": "Microsoft",
+  "categories": "Cloud and Infrastructure",
+  "visibility": "true",
+  "versionName": "Original",
+  "securitySchemes": {
+    "azureOauth": {
+      "type": "oauth2",
+      "description": "Microsoft Entra / Azure OAuth placeholder. Confirm OIDC endpoints and scopes (Linda to confirm per CSV note).",
+      "authorizationUrl": "https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize",
+      "tokenUrl": "https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token",
+      "scopes": {}
+    }
+  }
 }
