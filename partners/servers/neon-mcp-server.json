@@ -1,21 +1,34 @@
 {
-    "name": "neon-mcp-server",
-    "title": "Neon",
-    "summary": "Manage and query Neon Postgres databases with natural language.",
-    "description": "Manage and query Neon Postgres databases with natural language.",
-    "kind": "mcp",
-    "packages": [],
-    "icon": "https://avatars.githubusercontent.com/u/183852044?v=4",
-    "useCases": [
-        {
-            "name": "Data and Analytics",
-            "description": "Collect, process, and analyze data to generate insights, detect trends, and support decision-making through visualization and reporting tools."
-        }
-    ],
-    "tags": [],
-    "categories": "Data and Analytics",
-    "vendor": "Partner",
-    "visibility": "true",
-    "remote": "https://mcp.neon.tech/sse",
-    "versionName": "Original"
+  "name": "neon-mcp-server",
+  "title": "Neon",
+  "summary": "Manage and query Neon Postgres databases with natural language.",
+  "description": "Manage and query Neon Postgres databases with natural language.",
+  "kind": "mcp",
+  "packages": [],
+  "icon": "https://avatars.githubusercontent.com/u/183852044?v=4",
+  "useCases": [
+    {
+      "name": "Data and Analytics",
+      "description": "Collect, process, and analyze data to generate insights, detect trends, and support decision-making through visualization and reporting tools."
+    }
+  ],
+  "tags": [],
+  "categories": "Data and Analytics",
+  "vendor": "Partner",
+  "visibility": "true",
+  "remote": "https://mcp.neon.tech/sse",
+  "versionName": "Original",
+  "externalDocumentation": {
+    "title": "Neon MCP",
+    "url": "https://mcp.neon.tech/sse"
+  },
+  "securitySchemes": {
+    "neonOauth": {
+      "type": "oauth2",
+      "description": "OAuth2 (authorization code) placeholder. Replace with provider-specific endpoints if available.",
+      "authorizationUrl": "https://{neon-host}/oauth/authorize",
+      "tokenUrl": "https://{neon-host}/oauth/token",
+      "scopes": {}
+    }
+  }
 }
