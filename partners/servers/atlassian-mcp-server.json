@@ -12,10 +12,21 @@
             "description": "Boost individual and team efficiency by automating tasks, managing projects, and improving collaboration and communication workflows."
         }
     ],
+      "externalDocumentation": {
+        "title": "Atlassian MCP Docs",
+        "url": "https://www.atlassian.com/platform/remote-mcp-server"
+    },
     "tags": [],
     "vendor": "Partner",    
     "categories": "Productivity",
     "visibility": "true",
     "remote": "https://mcp.atlassian.com/v1/sse",
-    "versionName": "Original"
+    "versionName": "Original",
+    "securitySchemes": {
+        "atlassianOauth": {
+            "type": "oauth2",
+            "description": "Authenticate with Atlassian using OAuth2 authorization code flow with PKCE support.",
+            "flows": ["authorizationCode"]
+        }
+    }
 }

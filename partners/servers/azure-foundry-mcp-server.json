@@ -1,7 +1,7 @@
 {
-    "name": "azure-foundry-mcp-server",
-    "title": "Azure Foundry Remote MCP server",
-    "summary": "Foundry model catalog, evaluation and agents.",
+    "name": "azure-ai-foundry-mcp-server",
+    "title": "Azure AI Foundry Remote MCP server",
+    "summary": "Azure AI Foundry model catalog, evaluation and agents.",
     "description": "Connect to this MCP server to use Foundry capabilities like model catalog, evaluation and agents.",
     "kind": "mcp",
     "packages": [],
@@ -11,10 +11,23 @@
             "description": "Solutions that track system health, application performance, and infrastructure status, providing insights and alerts to identify, troubleshoot, and resolve issues quickly."
         }
     ],
+    "externalDocumentation": {
+        "title": "Azure AI Foundry",
+        "url": "https://ai.azure.com/"
+    },
     "tags": [],
     "vendor": "Microsoft",
-    "categories": "Cloud and Infrastructure",
+    "categories": "Monitoring & Diagnostics",
     "visibility": "true",
     "remote": "https://mcp.ai.azure.com",
-    "versionName": "Original"
+    "versionName": "Original",
+    "securitySchemes": {
+        "foundryOauth": {
+            "type": "oauth2",
+            "description": "Authenticate with Azure AI Foundry using OAuth2 authorization code flow with PKCE support.",
+            "flows": ["authorizationCode"]
+        }
+    },
+    "icon": "https://devblogs.microsoft.com/foundry/wp-content/uploads/sites/89/2025/03/ai-foundry.png",
+    "supportContact": "https://azure.microsoft.com/en-us/support"
 }

@@ -21,5 +21,17 @@
     "categories": "Developer Tools",
     "visibility": "true",
     "remote": "https://mcp.postman.com/mcp",
-    "versionName": "Original"
+    "versionName": "Original",
+    "externalDocumentation": {
+        "title": "Postman MCP Server",
+        "url": "https://github.com/postmanlabs/postman-mcp-server"
+    },
+    "securitySchemes": {
+        "postmanBearerAuth": {
+            "type": "http",
+            "description": "Authenticate with Postman using an API key.",
+            "scheme": "bearer",
+            "bearerFormat": "Your API Key"
+        }
+    }
 }

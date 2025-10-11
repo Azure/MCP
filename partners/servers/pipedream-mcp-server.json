@@ -21,5 +21,26 @@
     "categories": "Productivity",
     "visibility": "true",
     "remote": "https://mcp.pipedream.net/v2",
-    "versionName": "Original"
+    "versionName": "Original",
+    "externalDocumentation": {
+        "title": "Pipedream MCP",
+        "url": "https://pipedream.com/docs/connect/mcp/users"
+    },
+    "securitySchemes": {
+        "pipedreamOauth": {
+            "type": "oauth2",
+            "description": "Authenticate with Pipedream using OAuth2 authorization code flow with PKCE support.",
+            "authorizationUrl": "https://mcp.pipedream.com/api/oauth/authorize",
+            "tokenUrl": "https://mcp.pipedream.com/api/oauth/token",
+            "refreshUrl": "https://mcp.pipedream.com/api/oauth/token",
+            "scopes": [
+                "openid",
+                "profile",
+                "email",
+                "offline_access"
+            ],
+            "flows": ["authorizationCode"]
+        }
+    },
+    "supportContact": "support@pipedream.com"
 }

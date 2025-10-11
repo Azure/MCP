@@ -13,9 +13,20 @@
         }
     ],
     "tags": [],
-    "categories": "Data and Analytics",
+    "categories": "Analytics",
     "vendor": "Partner",
     "visibility": "true",
     "remote": "https://mcp.neon.tech/sse",
-    "versionName": "Original"
+    "versionName": "Original",
+    "externalDocumentation": {
+        "title": "Neon MCP",
+        "url": "https://github.com/neondatabase/mcp-server-neon"
+    },
+    "securitySchemes": {
+        "neonOauth": {
+            "type": "oauth2",
+            "description": "Authenticate with Neon using OAuth2 authorization code flow with PKCE support.",
+            "flows": ["authorizationCode"]
+        }
+    }
 }

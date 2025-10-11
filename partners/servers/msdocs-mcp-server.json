@@ -6,11 +6,21 @@
     "kind": "mcp",
     "packages": [],
     "icon": "https://avatars.githubusercontent.com/microsoft?s=64",
-    "useCases": [],
+    "useCases": [
+        {
+            "name": "Search Functionality",
+            "description": "Search in official Microsoft documentation."
+        }
+    ],
     "tags": [],
     "categories": "Productivity",
     "vendor": "Microsoft",
     "visibility": "true",
     "remote": "https://learn.microsoft.com/api/mcp",
-    "versionName": "Original"
+    "versionName": "Original",
+    "externalDocumentation": {
+        "title": "Microsoft Learn Docs",
+        "url": "https://learn.microsoft.com/en-us/training/support/mcp"
+    },
+    "supportContact": "https://azure.microsoft.com/en-us/support"
 }
