@@ -1,25 +1,38 @@
 {
-    "name": "postman-mcp-server",
-    "title": "Postman",
-    "summary": "Postman's remote MCP server connects AI agents, assistants, and chatbots directly to your APIs on Postman.",
-    "description": "Postman's remote MCP server connects AI agents, assistants, and chatbots directly to your APIs on Postman.",
-    "kind": "mcp",
-    "repository": {
-        "url": "https://github.com/postmanlabs/postman-mcp-server",
-        "source": "github"
-    },
-    "packages": [],
-    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/postman.svg",
-    "useCases": [
-        {
-            "name": "Developer Tools",
-            "description": "Empower developers with tools for coding, testing, debugging, version control, and automation to accelerate the software development lifecycle."
-        }
-    ],
-    "tags": [],
-    "vendor": "Partner",
-    "categories": "Developer Tools",
-    "visibility": "true",
-    "remote": "https://mcp.postman.com/mcp",
-    "versionName": "Original"
+  "name": "postman-mcp-server",
+  "title": "Postman",
+  "summary": "Postman's remote MCP server connects AI agents, assistants, and chatbots directly to your APIs on Postman.",
+  "description": "Postman's remote MCP server connects AI agents, assistants, and chatbots directly to your APIs on Postman.",
+  "kind": "mcp",
+  "repository": {
+    "url": "https://github.com/postmanlabs/postman-mcp-server",
+    "source": "github"
+  },
+  "packages": [],
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/postman.svg",
+  "useCases": [
+    {
+      "name": "Developer Tools",
+      "description": "Empower developers with tools for coding, testing, debugging, version control, and automation to accelerate the software development lifecycle."
+    }
+  ],
+  "tags": [],
+  "vendor": "Partner",
+  "categories": "Developer Tools",
+  "visibility": "true",
+  "remote": "https://mcp.postman.com/mcp",
+  "versionName": "Original",
+  "externalDocumentation": {
+    "title": "Postman MCP",
+    "url": "https://mcp.postman.com/mcp"
+  },
+  "securitySchemes": {
+    "postmanOauth": {
+      "type": "oauth2",
+      "description": "OAuth2 placeholder. Confirm Postman's auth flow and endpoints if you want full details.",
+      "authorizationUrl": "https://postman.com/oauth/authorize",
+      "tokenUrl": "https://postman.com/oauth/token",
+      "scopes": {}
+    }
+  }
 }
