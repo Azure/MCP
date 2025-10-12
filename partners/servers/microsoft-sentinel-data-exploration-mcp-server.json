@@ -2,7 +2,7 @@
   "name": "microsoft-sentinel-data-exploration-mcp-server",
   "title": "Microsoft Sentinel -- Data Exploration",
   "summary": "Sentinel's data exploration tools let security teams interact and reason over security data in Microsoft Sentinel using natural language, without code-first integration or writing data queries.",
-  "description": "Scenario-focused and natural language security tools: Microsoft Sentinel’s MCP support comes through scenario-focused collections of ready-to-use security tools. These collections help Security teams interact and reason over security data in Microsoft Sentinel data lake using natural language, removing the need for code-first integration, understanding data schema, or writing well-formed data queries.\n\nAccelerated development of effective security agents: Microsoft Sentinel’s collection of security tools automates discovery and retrieval of security data and deliver predictable, actionable responses to customize agents, speeding up efficient security agent creation and delivering better and highly effective security agents.\n\nCost-Effective, Context-Rich Security Data Integration: The data lake lets you bring all your security data into Microsoft Sentinel cost-effectively, removing the need to choose between coverage and cost. Microsoft Sentinel’s collection of tools natively integrates with the security data lake, letting you build comprehensive security context engineering.",
+  "description": "Sentinel's data exploration tools let security teams interact and reason over security data in Microsoft Sentinel using natural language, without code-first integration or writing data queries.",
   "vendor": "Microsoft",
   "kind": "mcp",
   "remote": "https://sentinel.microsoft.com/mcp/data-exploration",
