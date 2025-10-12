@@ -1,0 +1,49 @@
+{
+  "name": "tomtom-mcp-server",
+  "title": "TomTom MCP Server",
+  "summary": "The TomTom MCP Server is a managed service that provides AI systems with essential, real-time geolocation capabilities—including search, multi-modal routing, and real-time traffic and visual context—to overcome spatial and temporal blindness and make reliable, real-world decisions. The TomTom MCP Server is currently available in Beta (Public Preview).",
+  "description": "The TomTom MCP Server is a managed server that acts as a standardized, low-latency conduit, providing AI systems with essential, real-time TomTom geospatial data to overcome spatial and temporal blindness.\n\nKey Functionalities:\n1. Search & Geocoding: Converts addresses/locations into precise coordinates, performs reverse lookups, and executes fuzzy searches for points of interest (POIs) globally.\n2. Multi-Modal Routing: Calculates optimized routes for various transportation methods, including driving, cycling, and walking, enabling complex door-to-door journey planning.\n3. Real-Time Traffic Context: Provides current Traffic Incidents and flow data for making dynamic, effective route decisions, rerouting, and generating predictive Estimated Times of Arrival (ETAs).\n4. Visual Context (Static Maps): Generates visual representations (static map images) of routes or locations for reporting, workflow consumption, or human verification.\n\nTypical Scenarios:\n- Logistics & Delivery Optimization: An AI system plans and adjusts delivery routes in real time based on current traffic to meet promised delivery windows.\n- Ride-Hailing/Mobility Services: An agent calculates optimized, multi-modal travel paths for users, integrating driving, walking, or public transport segments.\n- Emergency Response/Field Service: Automatically locating incident addresses and calculating the quickest route for field agents or first responders.\n- Workflow Automation: Generating static map images for a human reviewer to quickly verify a route or location before a task is executed.\n\nThe TomTom MCP Server is currently available in Beta (Public Preview).",
+  "vendor": "Partner",
+  "visibility": "true",
+  "kind": "mcp",
+  "remote": "http://location.mcp.tomtom.com/",
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/TomTom.png",
+  "externalDocumentation": {
+    "title": "TomTom MCP documentation",
+    "url": "https://developer.tomtom.com/tomtom-mcp/documentation/overview"
+  },
+  "license": {
+    "name": "User License Terms",
+    "url": "https://developer.tomtom.com/terms-and-conditions"
+  },
+  "useCases": [
+    {
+      "name": "Search & Geocoding",
+      "description": "Converts addresses/locations into precise coordinates, performs reverse lookups, and executes fuzzy searches for points of interest (POIs) globally."
+    },
+    {
+      "name": "Multi-Modal Routing",
+      "description": "Calculates optimized routes for various transportation methods, including driving, cycling, and walking, enabling complex door-to-door journey planning."
+    },
+    {
+      "name": "Real-Time Traffic Context",
+      "description": "Provides current Traffic Incidents and flow data for making dynamic, effective route decisions, rerouting, and generating predictive Estimated Times of Arrival (ETAs)."
+    },
+    {
+      "name": "Visual Context (Static Maps)",
+      "description": "Generates visual representations (static map images) of routes or locations for reporting, workflow consumption, or human verification."
+    }
+  ],
+  "categories": "Geolocation",
+  "tags": [],
+  "supportContact": "https://support.tomtom.com/support",
+  "versionName": "original",
+  "securitySchemes": {
+        "tomtomKeyAuth": {
+            "type": "http",
+            "description": "Authenticate with TomTom using a Token.",
+            "scheme": "bearer",
+            "bearerFormat": "TOMTOM_API_KEY"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "azure-database-postgresql",
+  "title": "Azure Database for PostgreSQL",
+  "summary": "The Azure Database for PostgreSQL allows you to manage Azure Database for PostgreSQL resources using natural language prompts.",
+  "description": "The Azure Database for PostgreSQL allows you to manage Azure Database for PostgreSQL resources using natural language prompts. Users can:\n-List all the Azure Database for PostgreSQL flexible servers in your resource group.\n-Retrieve server configurations, including PostgreSQL version, compute, storage and backup settings.\n-Access specific server parameter values.\n-List databases in your server instance.\n-List tables in a database.\n-Obtain schema information for tables in your database.\n-Execute read queries to retrieve data from your database.\n\nUse Cases and Benefits:\n-AI-Driven Insights: Enable AI models to query and analyze business data stored in PostgreSQL using natural language.\n-Streamlined Development: Simplify integration with enterprise applications by using MCP's standardized protocol.\n-Enhanced Security: Leverage Microsoft Entra authentication for secure access to sensitive data.",
+  "vendor": "Microsoft",
+  "kind": "mcp",
+  "remote": "https://aka.ms/pg-mcp-setup",
+  "icon": "https://azure.microsoft.com/svghandler/postgresql/?width=600&height=315",
+  "externalDocumentation": {
+    "title": "Azure PostgreSQL MCP setup",
+    "url": "https://aka.ms/pg-mcp-setup"
+  },
+  "visibility": "true",
+  "license": {
+    "name": "MCP License",
+    "url": "https://github.com/microsoft/mcp/tree/main?tab=MIT-1-ov-file#readme"
+  },
+  "useCases": [
+    {
+      "name": "Manage and query PostgreSQL",
+      "description": "The Azure Database for PostgreSQL allows you to manage Azure Database for PostgreSQL resources using natural language prompts. Users can:\n-List all the Azure Database for PostgreSQL flexible servers in your resource group.\n-Retrieve server configurations, including PostgreSQL version, compute, storage and backup settings.\n-Access specific server parameter values.\n-List databases in your server instance.\n-List tables in a database.\n-Obtain schema information for tables in your database.\n-Execute read queries to retrieve data from your database."
+    }
+  ],
+  "categories": "Databases",
+  "tags": ["knowledge"],
+  "supportContact": "azurepgai@service.microsoft.com",
+  "versionName": "original"
+}

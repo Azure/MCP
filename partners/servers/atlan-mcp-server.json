@@ -1,0 +1,52 @@
+{
+  "name": "atlan",
+  "title": "Atlan",
+  "summary": "The Atlan MCP server provides a set of tools that enable AI agents to work directly with Atlan metadata. These tools supply real-time context to AI environments, making it easier to search, explore, and update metadata without leaving your workflow. Search assets: Find assets in Atlan using flexible filters such as name, type, tags, and domains. This helps AI agents surface the most relevant assets for a given task. Query by DSL: Retrieve specific assets using Atlan's DSL query language. This enables precise lookups that go beyond basic search filters. Explore lineage: Trace upstream or downstream lineage for a given asset. This provides visibility into data dependencies and impact across your environment. Update assets: Modify metadata attributes, including descriptions, certification status, and README content. This enables AI agents to keep metadata current as part of automated workflows. Glossary: Create glossaries, categories, and terms. This supports standardized business definitions and improves consistency across teams and tools.",
+  "description": "The Atlan MCP server provides a set of tools that enable AI agents to work directly with Atlan metadata. These tools supply real-time context to AI environments, making it easier to search, explore, and update metadata without leaving your workflow.\n\nSearch assets: Find assets in Atlan using flexible filters such as name, type, tags, and domains. This helps AI agents surface the most relevant assets for a given task.\n\nQuery by DSL: Retrieve specific assets using Atlan's DSL query language. This enables precise lookups that go beyond basic search filters.\n\nExplore lineage: Trace upstream or downstream lineage for a given asset. This provides visibility into data dependencies and impact across your environment.\n\nUpdate assets: Modify metadata attributes, including descriptions, certification status, and README content. This enables AI agents to keep metadata current as part of automated workflows.\n\nGlossary: Create glossaries, categories, and terms. This supports standardized business definitions and improves consistency across teams and tools.",
+  "vendor": "Partner",
+  "kind": "mcp",
+  "remote": "https://{tenant-name}.atlan.com/mcp",
+  "icon": "https://website-assets.atlan.com/img/logos/atlan-white-in-blue-bg.svg",
+  "externalDocumentation": {
+    "title": "Atlan documentation",
+    "url": "https://docs.atlan.com/product/capabilities/atlan-ai/how-tos/remote-mcp-overview"
+  },
+  "license": {
+    "name": "User License Terms",
+    "url": "https://atln.cm/saas"
+  },
+  "visibility": "true",
+  "useCases": [
+    {
+      "name": "Search assets",
+      "description": "Find assets in Atlan using flexible filters such as name, type, tags, and domains. This helps AI agents surface the most relevant assets for a given task."
+    },
+    {
+      "name": "Query by DSL",
+      "description": "Retrieve specific assets using Atlan's DSL query language. This enables precise lookups that go beyond basic search filters."
+    },
+    {
+      "name": "Explore lineage",
+      "description": "Trace upstream or downstream lineage for a given asset. This provides visibility into data dependencies and impact across your environment."
+    },
+    {
+      "name": "Update assets",
+      "description": "Modify metadata attributes, including descriptions, certification status, and README content. This enables AI agents to keep metadata current as part of automated workflows."
+    },
+    {
+      "name": "Glossary",
+      "description": "Create glossaries, categories, and terms. This supports standardized business definitions and improves consistency across teams and tools."
+    }
+  ],
+  "categories": "Developer Tools",
+  "tags": [],
+  "supportContact": "support@atlan.com",
+  "versionName": "original",
+  "securitySchemes": {
+    "atlanOAuth": {
+        "type": "oauth2",
+        "description": "OAuth2 for user authentication (authorization code flow with PKCE supported).",
+        "flows": ["authorizationCode"]
+        }
+    }
+}
