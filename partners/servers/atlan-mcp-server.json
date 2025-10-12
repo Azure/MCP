@@ -1,7 +1,7 @@
 {
   "name": "atlan",
   "title": "Atlan",
-  "summary": "The Atlan MCP server provides a set of tools that enable AI agents to work directly with Atlan metadata. These tools supply real-time context to AI environments, making it easier to search, explore, and update metadata without leaving your workflow.",
+  "summary": "The Atlan MCP server provides a set of tools that enable AI agents to work directly with Atlan metadata. ",
   "description": "The Atlan MCP server provides a set of tools that enable AI agents to work directly with Atlan metadata. These tools supply real-time context to AI environments, making it easier to search, explore, and update metadata without leaving your workflow.",
   "vendor": "Partner",
   "kind": "mcp",
