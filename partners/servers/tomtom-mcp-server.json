@@ -1,7 +1,7 @@
 {
   "name": "tomtom-mcp-server",
   "title": "TomTom MCP Server",
-  "summary": "The TomTom MCP Server is a managed service that provides AI systems with essential, real-time geolocation capabilities—including search, multi-modal routing, and real-time traffic and visual context—to overcome spatial and temporal blindness.",
+  "summary": "The TomTom MCP Server is a managed service that provides AI systems with essential, real-time geolocation capabilities—including search, multi-modal routing, and more.",
   "description": "The TomTom MCP Server is a managed service that provides AI systems with essential, real-time geolocation capabilities—including search, multi-modal routing, and real-time traffic and visual context—to overcome spatial and temporal blindness and make reliable, real-world decisions.",
   "vendor": "Partner",
   "visibility": "true",
