@@ -31,10 +31,11 @@
   "vendor": "Partner",
   "visibility": "true",
   "securitySchemes": {
-    "oauth2": {
-      "type": "oauth2",
-      "description": "Supports OAuth flows for developer authentication and managed OAuth for onboarding.",
-      "flows": ["authorizationCode"]
+    "wixBearerAuth":{
+      "type": "http",
+      "description": "Authenticate with Wix using a Personal Access Token.",
+      "scheme": "bearer",
+      "bearerFormat": "YOUR API KEY"
     }
   },
   "supportContact": "https://www.wix.com/support-chatbot?nodeId=25a57397-ccf7-4376-8b74-48d51edf7159&referral=devRels"

@@ -30,10 +30,14 @@
     "notionOauth": {
       "type": "oauth2",
       "description": "Authenticate with Notion using OAuth2 authorization code flow with PKCE support.",
+<<<<<<< HEAD
       "flows": ["authorizationCode"],
       "authorizationUrl": "https://api.notion.com/v1/oauth/authorize",
       "tokenUrl": "https://api.notion.com/v1/oauth/token",
       "scopes": []
+=======
+      "flows": ["authorizationCode"]
+>>>>>>> f55f4f8309395a4e954994f446eaaf011533d2ae
     }
   },
   "supportContact": "support@makenotion.com"
