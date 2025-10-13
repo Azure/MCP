@@ -17,6 +17,7 @@ jobs:
       - name: Validate JSON files schema
         run: |
           check-jsonschema \
+            --verbose \
             --schemafile partners/server-schema.json \
             partners/servers/*.json
       

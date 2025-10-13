@@ -1,0 +1,216 @@
+{  
+  "type": "object",
+  "title": "McpPackageContract",
+  "required": ["registry_name", "name", "version"],
+  "properties": {
+    "registry_name": {
+      "type": "string",
+      "description": "Package registry type, e.g. npm, nuget, pypi, etc."
+    },
+    "registry_base_url": {
+      "type": ["string", "null"],
+      "description": "Base URL of the package registry"
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "version": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "runtime_hint": {
+      "type": ["string", "null"]
+    },
+    "runtime_arguments": {
+      "type": ["array", "null"],
+      "items": {
+        "oneOf": [
+          { "$ref": "#/definitions/PositionalArgumentContract" },
+          { "$ref": "#/definitions/NamedArgumentContract" }
+        ]
+      }
+    },
+    "package_arguments": {
+      "type": ["array", "null"],
+      "items": {
+        "oneOf": [
+          { "$ref": "#/definitions/PositionalArgumentContract" },
+          { "$ref": "#/definitions/NamedArgumentContract" }
+        ]
+      }
+    },
+    "environment_variables": {
+      "type": ["array", "null"],
+      "items": {
+        "$ref": "#/definitions/ApiKeyValueInputContract"
+      }
+    }
+  },
+  "definitions": {
+    "PositionalArgumentContract": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "value_hint": {
+          "type": ["string", "null"]
+        },
+        "is_repeated": {
+          "type": ["boolean", "null"]
+        },
+        "description": {
+          "type": ["string", "null"]
+        },
+        "is_required": {
+          "type": ["boolean", "null"]
+        },
+        "format": {
+          "type": ["string", "null"]
+        },
+        "value": {
+          "type": ["string", "null"]
+        },
+        "is_secret": {
+          "type": ["boolean", "null"]
+        },
+        "default": {
+          "type": ["string", "null"]
+        },
+        "choices": {
+          "type": ["array", "null"],
+          "items": {
+            "type": "string"
+          }
+        },
+        "variables": {
+          "type": ["object", "null"],
+          "additionalProperties": {
+            "$ref": "#/definitions/McpInputContract"
+          }
+        }
+      }
+    },
+    "NamedArgumentContract": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": ["string", "null"]
+        },
+        "is_repeated": {
+          "type": ["boolean", "null"]
+        },
+        "description": {
+          "type": ["string", "null"]
+        },
+        "is_required": {
+          "type": ["boolean", "null"]
+        },
+        "format": {
+          "type": ["string", "null"]
+        },
+        "value": {
+          "type": ["string", "null"]
+        },
+        "is_secret": {
+          "type": ["boolean", "null"]
+        },
+        "default": {
+          "type": ["string", "null"]
+        },
+        "choices": {
+          "type": ["array", "null"],
+          "items": {
+            "type": "string"
+          }
+        },
+        "variables": {
+          "type": ["object", "null"],
+          "additionalProperties": {
+            "$ref": "#/definitions/McpInputContract"
+          }
+        }
+      }
+    },
+    "ApiKeyValueInputContract": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": ["string", "null"]
+        },
+        "is_required": {
+          "type": ["boolean", "null"]
+        },
+        "format": {
+          "type": ["string", "null"]
+        },
+        "value": {
+          "type": ["string", "null"]
+        },
+        "is_secret": {
+          "type": ["boolean", "null"]
+        },
+        "default": {
+          "type": ["string", "null"]
+        },
+        "choices": {
+          "type": ["array", "null"],
+          "items": {
+            "type": "string"
+          }
+        },
+        "variables": {
+          "type": ["object", "null"],
+          "additionalProperties": {
+            "$ref": "#/definitions/McpInputContract"
+          }
+        }
+      }
+    },
+    "McpInputContract": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": ["string", "null"]
+        },
+        "is_required": {
+          "type": ["boolean", "null"]
+        },
+        "format": {
+          "type": ["string", "null"]
+        },
+        "value": {
+          "type": ["string", "null"]
+        },
+        "is_secret": {
+          "type": ["boolean", "null"]
+        },
+        "default": {
+          "type": ["string", "null"]
+        },
+        "choices": {
+          "type": ["array", "null"],
+          "items": {
+            "type": "string"
+          }
+        },
+        "variables": {
+          "type": ["object", "null"],
+          "additionalProperties": {
+            "$ref": "#/definitions/McpInputContract"
+          }
+        }
+      }
+    }
+  }
+}
