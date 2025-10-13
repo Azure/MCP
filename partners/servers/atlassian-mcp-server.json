@@ -26,7 +26,10 @@
         "atlassianOauth": {
             "type": "oauth2",
             "description": "Authenticate with Atlassian using OAuth2 authorization code flow with PKCE support.",
-            "flows": ["authorizationCode"]
+            "flows": ["authorizationCode"],
+            "authorizationUrl": "https://auth.atlassian.com/authorize",
+            "tokenUrl": "https://auth.atlassian.com/oauth/token",
+            "scopes":[]
         }
     }
 }

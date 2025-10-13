@@ -43,10 +43,11 @@
   "supportContact": "support@atlan.com",
   "versionName": "original",
   "securitySchemes": {
-    "atlanOAuth": {
-        "type": "oauth2",
-        "description": "OAuth2 for user authentication (authorization code flow with PKCE supported).",
-        "flows": ["authorizationCode"]
-        }
+    "atlanBearerAuth":{
+      "type": "http",
+      "description": "Authenticate with Atlan using an API key.",
+      "scheme": "bearer",
+      "bearerFormat": "API Key"
+    }
     }
 }

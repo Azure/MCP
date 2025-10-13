@@ -25,7 +25,10 @@
         "foundryOauth": {
             "type": "oauth2",
             "description": "Authenticate with Azure AI Foundry using OAuth2 authorization code flow with PKCE support.",
-            "flows": ["authorizationCode"]
+            "flows": ["authorizationCode"],
+            "authorizationUrl": "https://login.microsoftonline.com",
+            "tokenUrl": "https://login.microsoftonline.com",
+            "scopes": []
         }
     },
     "icon": "https://devblogs.microsoft.com/foundry/wp-content/uploads/sites/89/2025/03/ai-foundry.png",

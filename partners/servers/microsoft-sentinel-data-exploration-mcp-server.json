@@ -40,8 +40,11 @@
   "securitySchemes": {
     "sentinelOAuth": {
       "type": "oauth2",
-      "description": "OAuth2 (authorization code) and Microsoft Entra-based methods (managed identity and user context) are supported.",
-      "flows": ["authorizationCode"]
+      "description": "Authenticate with Microsoft Sentinel using OAuth2 authorization code flow with PKCE support.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://login.microsoftonline.com",
+      "tokenUrl": "https://login.microsoftonline.com",
+      "scopes": []
     }
   },
   "visibility": "true"

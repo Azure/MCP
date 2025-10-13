@@ -26,7 +26,10 @@
         "neonOauth": {
             "type": "oauth2",
             "description": "Authenticate with Neon using OAuth2 authorization code flow with PKCE support.",
-            "flows": ["authorizationCode"]
+            "flows": ["authorizationCode"],
+            "authorizationUrl":"https://oauth2.neon.tech/oauth2/auth",
+            "tokenUrl": "https://oauth2.neon.tech/oauth2/token",
+            "scopes": []
         }
     }
 }

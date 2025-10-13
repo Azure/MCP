@@ -41,7 +41,10 @@
     "asanaOAuth": {
       "type": "oauth2",
       "description": "OAuth2 (authorization code) for user authentication. Managed OAuth details may be provided separately.",
-      "flows": ["authorizationCode"]
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://app.asana.com/-/oauth_authorize",
+      "tokenUrl": "https://app.asana.com/-/oauth_token",
+      "scopes": []
     }
   },
     "visibility": "true"
