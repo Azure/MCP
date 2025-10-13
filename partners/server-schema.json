@@ -111,7 +111,8 @@
     "vendor": {
       "type": "string",
       "maxLength": 200,
-      "description": "Name of the organization or individual that created or maintains the MCP server."
+      "description": "Name of the organization or individual that created or maintains the MCP server.",
+      "enum": [ "Microsoft", "Partner", "None" ]
     },
     "visibility": {
       "type": "string",
