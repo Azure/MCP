@@ -53,7 +53,8 @@
       "required": ["type"],
       "properties": {
         "type": {
-          "type": "string"
+          "type": "string",
+          "enum": ["positional"]
         },
         "value_hint": {
           "type": ["string", "null"]
@@ -98,7 +99,8 @@
       "required": ["type"],
       "properties": {
         "type": {
-          "type": "string"
+          "type": "string",
+          "enum": ["named"]
         },
         "name": {
           "type": ["string", "null"]
