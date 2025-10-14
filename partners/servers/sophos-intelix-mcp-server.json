@@ -2,7 +2,7 @@
   "name": "sophos-intelix-mcp-server",
   "title": "Sophos Intelix MCP Server",
   "summary": "Sophos Intelix delivers threat intelligence into analyst workflows, enabling agents to access file, URL, and IP reputation and threat analysis.",
-  "description": "Sophos Intelix delivers powerful threat intelligence directly into the analyst’s workflow. By embedding Intelix data into agents, users gain instant access to file, URL, and IP reputation insights within the tools they already use. This domain-specific knowledge equips AI agents with cybersecurity expertise, allowing them to reason over contextual data and deliver more accurate, actionable results. Whether discussing cases or triaging threats, analysts benefit from smarter, faster decisions without having to switch tools. This solution bridges intelligence and productivity, transforming how security teams collaborate on incidents within the Microsoft ecosystem.",
+  "description": "Sophos Intelix delivers threat intelligence into analyst workflows, enabling agents to access file, URL, and IP reputation and threat analysis.",
   "vendor": "Partner",
   "kind": "mcp",
   "remote": "https://ai.intelix.sophos.com/mcp",

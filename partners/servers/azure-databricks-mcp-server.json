@@ -3,7 +3,7 @@
   "title": "Azure Databricks Genie",
   "summary": "Azure Databricks Genie MCP lets AI agents connect to Genie spaces so users can ask natural language questions and get specialized answers from their data.",
   "description": "Azure Databricks Genie MCP server lets AI agents connect to Genie spaces so users can ask natural language questions and get specialized answers from their data easily. ",
-  "vendor": "Partner",
+  "vendor": "Microsoft",
   "kind": "mcp",
   "remote": "https://{workspace-hostname}/api/2.0/mcp/genie/{genie_space_id}",
   "icon": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/hero-icon-product-azure-databricks-24x24-328736?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85",

@@ -2,7 +2,7 @@
   "name": "supabase-mcp-server",
   "title": "Supabase",
   "summary": "Connect your Supabase projects to AI agents: design tables and migrations; create database branches; build custom APIs with Edge Functions; retrieve logs and more.",
-  "description": "Connect your Supabase projects to AI agents: design tables and migrations; create database branches; build custom APIs with Edge Functions; retrieve logs; generate TypeScript types from schema; search Supabase docs.",
+  "description": "Connect your Supabase projects to AI agents: design tables and migrations; create database branches; build custom APIs with Edge Functions; retrieve logs and more.",
   "kind": "mcp",
   "license": {
     "name": "Supabase Terms",

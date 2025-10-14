@@ -2,7 +2,7 @@
   "name": "azure-managed-redis",
   "title": "Azure Managed Redis",
   "summary": "Azure Managed Redis MCP Server provides a natural language interface for agentic applications to manage and query structured and unstructured data in Azure Managed Redis using MCP clients",
-  "description": "Azure Managed Redis MCP Server is a natural language interface designed for agentic applications to efficiently manage and search data in Redis. It integrates seamlessly with MCP (Model Content Protocol) clients, enabling AI-driven workflows to interact with structured and unstructured data in Redis. Using this MCP Server, you can ask questions like:\n\n\"Store the entire conversation in a stream\"\n\n\"Cache this item\"\n\n\"Store the session with an expiration time\"\n\n\"Index and search this vector\"",
+  "description": "Azure Managed Redis MCP Server is a natural language interface designed for agentic applications to efficiently manage and search data in Redis.",
   "vendor": "Microsoft",
   "kind": "mcp",
   "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Azure-Managed-Redis.svg",
