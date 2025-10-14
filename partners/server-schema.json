@@ -169,9 +169,18 @@
                 "enum": [ "oauth2" ]
               },
               "description": { "type": "string" },
-              "authorizationUrl": { "type": "string" },
-              "tokenUrl": { "type": "string" },
-              "refreshUrl": { "type": "string" },
+              "authorizationUrl": { 
+                "type": "string",
+                "format": "uri"
+              },
+              "tokenUrl": { 
+                "type": "string",
+                "format": "uri"
+              },
+              "refreshUrl": { 
+                "type": "string",
+                "format": "uri"
+              },
               "scopes": {
                 "type": "array",
                 "items": { "type": "string" }
