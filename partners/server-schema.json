@@ -1,5 +1,5 @@
 {  
-  "title": "PublicRegistryMcpServerData",
+  "title": "PublicRegistryMcpServerData",  
   "type": "object",
   "required": [ "name", "title", "summary", "description" ],
   "properties": {
@@ -131,7 +131,7 @@
     },
     "securitySchemes": {
       "type": "object",
-      "description": "Authentication and authorization schemes supported by the MCP server.",
+      "description": "Authentication and authorization schemes supported by the MCP server.",            
       "additionalProperties": {
         "oneOf": [
           {
@@ -139,39 +139,50 @@
             "required": [ "type", "description", "scheme" ],
             "properties": {
               "type": {
-                "type": "string",
-                "enum": [ "http" ]
+                "const": "http"                
               },
               "description": { "type": "string" },
               "scheme": { "type": "string" },
               "bearerFormat": { "type": "string" }
-            }
+            },
+            "additionalProperties": false
           },
           {
             "type": "object",
             "required": [ "type", "description", "in", "name" ],
             "properties": {
               "type": {
-                "type": "string",
-                "enum": [ "apiKey" ]
+                "const": "apiKey"
               },
               "description": { "type": "string" },
               "in": { "type": "string" },
               "name": { "type": "string" }
-            }
+            },
+            "additionalProperties": false
           },
           {
             "type": "object",
             "required": [ "type", "description", "flows", "tokenUrl", "scopes" ],
             "properties": {
               "type": {
-                "type": "string",
-                "enum": [ "oauth2" ]
+                "const": "oauth2"                              
               },
-              "description": { "type": "string" },
-              "authorizationUrl": { "type": "string" },
-              "tokenUrl": { "type": "string" },
-              "refreshUrl": { "type": "string" },
+              "description": { 
+                "type": "string",
+                "maxLength": 100
+              },
+              "authorizationUrl": { 
+                "type": "string",
+                "pattern": "^[a-zA-Z][a-zA-Z0-9+.-]*://[a-zA-Z0-9.-]+(/[^\\s]*)?$"
+              },
+              "tokenUrl": { 
+                "type": "string",
+                "pattern": "^[a-zA-Z][a-zA-Z0-9+.-]*://[a-zA-Z0-9.-]+(/[^\\s]*)?$"
+              },
+              "refreshUrl": { 
+                "type": "string",                
+                "pattern": "^[a-zA-Z][a-zA-Z0-9+.-]*://[a-zA-Z0-9.-]+(/[^\\s]*)?$"              
+              },
               "scopes": {
                 "type": "array",
                 "items": { "type": "string" }
@@ -183,7 +194,8 @@
                   "enum": [ "authorizationCode", "clientCredentials" ]
                 }
               }
-            }
+            },
+            "additionalProperties": false
           }
         ]
       }
