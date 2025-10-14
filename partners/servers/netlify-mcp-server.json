@@ -17,9 +17,24 @@
         }
     ],
     "tags": [],
+    "externalDocumentation": {
+        "title": "Netlify MCP Server",
+        "url": "https://docs.netlify.com/build/build-with-ai/netlify-mcp-server/"
+    },
     "vendor": "Partner",
-    "categories": "Developer Tools",
+    "categories": "Web",
     "visibility": "true",
     "remote": "https://netlify-mcp.netlify.app/mcp",
-    "versionName": "Original"
+    "versionName": "Original",
+    "securitySchemes": {
+        "netlifyOauth": {
+            "type": "oauth2",
+            "description": "Authenticate with Netlify using OAuth2 authorization code flow with PKCE support.",
+            "tokenUrl": "https://api.netlify.com/oauth/token",
+            "authorizationUrl": "https://app.netlify.com/authorize",
+            "scopes": ["public"],
+            "flows": ["authorizationCode"]
+        }
+    },
+    "supportContact": "support@netlify.com"
 }

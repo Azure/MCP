@@ -1,0 +1,56 @@
+{
+  "name": "supabase-mcp-server",
+  "title": "Supabase",
+  "summary": "Connect your Supabase projects to AI agents: design tables and migrations; create database branches; build custom APIs with Edge Functions; retrieve logs and more.",
+  "description": "Connect your Supabase projects to AI agents: design tables and migrations; create database branches; build custom APIs with Edge Functions; retrieve logs; generate TypeScript types from schema; search Supabase docs.",
+  "kind": "mcp",
+  "license": {
+    "name": "Supabase Terms",
+    "url": "https://supabase.com/terms"
+  },
+  "externalDocumentation": {
+    "title": "Supabase MCP Documentation",
+    "url": "https://supabase.com/mcp"
+  },
+  "remote": "https://mcp.supabase.com/mcp",
+  "versionName": "original",
+  "packages": [],
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/supabase.svg",
+  "useCases": [
+    {
+      "name": "Schema & migrations",
+      "description": "Design database tables and track them using migrations."
+    },
+    {
+      "name": "Development branches",
+      "description": "Create and manage database branches for development workflows."
+    },
+    {
+      "name": "Edge Functions APIs",
+      "description": "Build custom APIs using Supabase Edge Functions and invoke them via MCP."
+    },
+    {
+      "name": "Logs & debugging",
+      "description": "Retrieve logs to debug issues."
+    },
+    {
+      "name": "Code generation",
+      "description": "Generate TypeScript types and code snippets from database schema."
+    }
+  ],
+  "tags": [],
+  "categories": "Developer Tools",
+  "vendor": "Partner",
+  "visibility": "true",
+  "securitySchemes": {
+    "supabaseOAuth": {
+      "type": "oauth2",
+      "description": "OAuth2 for user authentication (authorization code flow with PKCE supported).",
+      "flows": ["authorizationCode"],
+      "tokenUrl": "https://api.supabase.com/api/v1#tag/oauth/POST/v1/oauth/token",
+      "authorizationUrl": "https://api.supabase.com/api/v1#tag/oauth/GET/v1/oauth/authorize",
+      "scopes": []
+    }
+  },
+  "supportContact": "support@supabase.com"
+}

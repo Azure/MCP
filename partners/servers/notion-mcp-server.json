@@ -18,8 +18,23 @@
   ],
   "tags": [],
   "vendor": "Partner",
-  "categories": "Developer Tools",
+  "categories": "Productivity",
   "visibility": "true",
   "remote": "https://mcp.notion.com/mcp",
-  "versionName": "Original"
+  "versionName": "Original",
+  "externalDocumentation": {
+    "title": "Notion MCP",
+    "url": "https://developers.notion.com/docs/mcp"
+  },
+  "securitySchemes": {
+    "notionOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with Notion using OAuth2 authorization code flow with PKCE support.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://api.notion.com/v1/oauth/authorize",
+      "tokenUrl": "https://api.notion.com/v1/oauth/token",
+      "scopes": []
+    }
+  },
+  "supportContact": "support@makenotion.com"
 }

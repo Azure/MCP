@@ -22,8 +22,17 @@
     ],
     "tags": [],
     "vendor": "Partner",
-    "categories": "Developer Tools",
+    "categories": "Machine Learning",
     "visibility": "true",
     "remote": "https://huggingface.co/mcp",
-    "versionName": "Original"
+    "versionName": "Original",
+    "securitySchemes": {
+        "huggingfaceBearerAuth": {
+            "type": "http",
+            "description": "Authenticate with Hugging Face using a Token.",
+            "scheme": "bearer",
+            "bearerFormat": "HF_Token"
+        }
+    },
+    "supportContact": "shaun.smith@huggingface.co"
 }

@@ -1,0 +1,45 @@
+{
+  "name": "intercom-mcp-server",
+  "title": "Intercom MCP Server",
+  "summary": "Secure, read-only access to Intercom conversations and contacts for MCP-compatible AI tools.",
+  "description": "The Intercom Model Context Protocol (MCP) Server gives you secure, read‑only, permission‑aware access to Intercom conversations and contacts from any MCP‑compatible AI tool, so your teams can use real customer context in real time.\n\nKey capabilities:\n• Search conversations or contacts with a flexible query language (field filters, free text, pagination).\n• Fetch full records including conversation parts, metadata, and custom attributes, with deep links back to Intercom.\n• Respects your Intercom workspace permissions; sign in with OAuth (recommended) or API token.\n\nTypical uses:\n• Power AI sidekicks that summarize history, spot patterns, and speed triage and Q&A.\n• Bring real conversations into developer tools to debug incidents faster and validate fixes.\n• Enrich Jira or Linear tickets and internal analytics with customer context—no custom integration work.",
+  "vendor": "Partner",
+  "kind": "mcp",
+  "remote": "https://mcp.intercom.com/mcp",
+  "icon": "https://github.com/intercom/intercom-mcp-server/raw/main/Intercom_Squinge_Black.svg",
+  "externalDocumentation": {
+    "title": "Intercom MCP docs",
+    "url": "https://developers.intercom.com/docs/guides/mcp"
+  },
+  "license": {
+    "name": "Intercom Terms",
+    "url": "https://www.intercom.com/legal/terms-and-policies"
+  },
+  "useCases": [
+    {
+      "name": "search and retrieval",
+      "description": "Search conversations or contacts with a flexible query language (field filters, free text, pagination)."
+    },
+    {
+      "name": "fetch full records",
+      "description": "Fetch full records including conversation parts, metadata, and custom attributes, with deep links back to Intercom."
+    },
+    {
+      "name": "permission-aware access",
+      "description": "Respects your Intercom workspace permissions; sign in with OAuth (recommended) or API token."
+    }
+  ],
+  "categories": "Customer Service",
+  "tags": [],
+  "supportContact": "team@intercom.io",
+  "versionName": "original",
+  "securitySchemes": {
+    "intercom": {
+        "type": "http",
+        "description": "Authenticate with Intercom using a Bearer token.",
+        "scheme": "bearer",
+        "bearerFormat": "Auth header"
+    }
+  },
+  "visibility": "true"
+}

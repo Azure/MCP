@@ -17,5 +17,19 @@
     "categories": "Cloud and Infrastructure",
     "visibility": "true",
     "remote": "https://mcp.box.com/",
-    "versionName": "Original"
+    "versionName": "Original",
+    "externalDocumentation": {
+        "title": "Box MCP Server",
+        "url": "https://developer.box.com/guides/box-mcp/"
+    },
+    "securitySchemes": {
+        "boxOauth": {
+            "type": "oauth2",
+            "description": "Authenticate with Box using OAuth2 authorization code flow with PKCE support.",
+            "flows": ["authorizationCode"],
+            "authorizationUrl": "https://account.box.com/api/oauth2/authorize",
+            "tokenUrl": "https://api.box.com/oauth2/token",
+            "scopes":[]
+        }
+    }
 }

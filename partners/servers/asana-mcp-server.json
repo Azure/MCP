@@ -1,0 +1,51 @@
+{
+  "name": "asana-mcp-server",
+  "title": "Asana MCP Server",
+  "summary": "Asana MCP Server allows AI assistants and applications to access the Asana Work Graph from outside the Asana platform.",
+  "description": "Asana offers a Model Context Protocol (MCP) server, accessible via app integration, which allows AI assistants and other applications to access the Asana Work Graph from beyond the Asana platform. This server provides a way to interact with your Asana workspace through various AI platforms and tools that support MCP.\n\nWith this server, Asana customers can:\n- Access Asana data from compatible AI applications\n- Create and manage tasks and projects through natural language\n- Generate reports and summaries based on Asana data\n- Analyze project data and get AI-powered suggestions\n\nExample requests users could make from outside Asana using the MCP:\n- \"Find all my incomplete tasks due this week\"\n- \"Create a new task in the Conference Planning project assigned to me\"\n- \"List all sections in the Conference Planning project\"\n- \"Show me the status of the Q2 Planning project\"",
+  "vendor": "Partner",
+  "kind": "mcp",
+  "remote": "https://mcp.asana.com/sse",
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Asana.svg",
+  "externalDocumentation": {
+    "title": "Asana MCP documentation",
+    "url": "https://developers.asana.com/docs/integrating-with-asanas-mcp-server#/"
+  },
+  "license": {
+    "name": "API Terms",
+    "url": "https://asana.com/terms/api-terms"
+  },
+  "useCases": [
+    {
+      "name": "Access Asana data from compatible AI applications",
+      "description": "Access Asana data from compatible AI applications"
+    },
+    {
+      "name": "Create and manage tasks and projects",
+      "description": "Create and manage tasks and projects through natural language"
+    },
+    {
+      "name": "Generate reports and summaries",
+      "description": "Generate reports and summaries based on Asana data"
+    },
+    {
+      "name": "Analyze project data",
+      "description": "Analyze project data and get AI-powered suggestions"
+    }
+  ],
+  "categories": "Project Management",
+  "tags": [],
+  "supportContact": "https://help.asana.com/",
+  "versionName": "original",
+  "securitySchemes": {
+    "asanaOAuth": {
+      "type": "oauth2",
+      "description": "OAuth2 (authorization code) for user authentication. Managed OAuth details may be provided separately.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://app.asana.com/-/oauth_authorize",
+      "tokenUrl": "https://app.asana.com/-/oauth_token",
+      "scopes": []
+    }
+  },
+    "visibility": "true"
+}
