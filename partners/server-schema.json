@@ -162,7 +162,7 @@
           },
           {
             "type": "object",
-            "required": [ "type", "description", "flows" ],
+            "required": [ "type", "description", "flows", "tokenUrl", "scopes" ],
             "properties": {
               "type": {
                 "type": "string",
@@ -192,8 +192,7 @@
       "type": "array",
       "description": "List of software packages, dependencies, or installation artifacts for the MCP server.",
       "items": { 
-        "type": "object",
-        "description": "Package information including name, version, and installation details."
+        "$ref": "package-schema.json"
       }
     },
     "versionName": {
