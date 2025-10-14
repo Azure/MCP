@@ -30,8 +30,8 @@
     "databricksOauth": {
       "type": "oauth2",
       "description": "Managed Microsoft Entra OAuth (user context) for Azure DatabricksGenie MCP",
-      "authorizationUrl": "<workspaceurl>/oidc/v1/authorize",
-      "tokenUrl": "<workspaceurl>/oidc/v1/token",
+      "authorizationUrl": "http://workspaceurl/oidc/v1/authorize",
+      "tokenUrl": "http://workspaceurl/oidc/v1/token",
       "scopes": [
         "2ff814a6-3304-4ab8-85cb-cd0e6f879c1d/user_impersonation",
         "2ff814a6-3304-4ab8-85cb-cd0e6f879c1d/.default"
