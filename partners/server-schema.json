@@ -169,7 +169,7 @@
               },
               "description": { 
                 "type": "string",
-                "maxLength": 100
+                "maxLength": 200
               },
               "authorizationUrl": { 
                 "type": "string",
