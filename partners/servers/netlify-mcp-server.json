@@ -32,7 +32,7 @@
             "description": "Authenticate with Netlify using OAuth2 authorization code flow with PKCE support.",
             "tokenUrl": "https://api.netlify.com/oauth/token",
             "authorizationUrl": "https://app.netlify.com/authorize",
-            "scopes": [],
+            "scopes": ["public"],
             "flows": ["authorizationCode"]
         }
     },

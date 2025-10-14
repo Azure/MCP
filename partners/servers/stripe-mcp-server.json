@@ -29,7 +29,7 @@
             "flows": ["authorizationCode"],
             "authorizationUrl": "https://connect.stripe.com/oauth/authorize",
             "tokenUrl": "https://connect.stripe.com/oauth/token",
-            "scopes": []
+            "scopes": ["read_only"]
         }
     }
 }
