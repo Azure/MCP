@@ -106,5 +106,19 @@
         "url": "https://mcp.postman.com/mcp"
       }
     ]
+  },
+  {
+    "id": "infobip-mcp-server",
+    "name": "Infobip",
+    "description": "Infobip MCP servers enable seamless integration with our communication platform that allows you to reach your customers globally across any channel.",
+    "version": "1.0.0",
+    "x-ms-icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/infobip.png",
+    "x-ms-partner": true,
+    "remotes": [
+      {
+        "transport_type": "sse",
+        "url": "https://mcp.infobip.com/sms"
+      }
+    ]
   }
 ]
