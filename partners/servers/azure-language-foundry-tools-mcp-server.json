@@ -22,7 +22,7 @@
       "description": "The MCP server enables AI agents to seamlessly access the capabilities of Azure Language in Foundry Tools through standardized MCP endpoints to achieve more accurate, explainable and compliant outcomes with PII redaction, language detection, custom question answering and more."
     }
   ],
-  "categories": ["Machine Learning"],
+  "categories": "Machine Learning",
   "tags": [],
   "supportContact": "https://azure.microsoft.com/support/",
   "versionName": "original",
