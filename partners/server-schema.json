@@ -234,6 +234,15 @@
       "type": "string",
       "pattern": "^([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}|[a-zA-Z][a-zA-Z0-9+.-]*://[^\\s]+)$",
       "description": "Contact information for support or questions about the MCP server. Must be either a valid email address or URL."
+    },
+    "authSchemas": {
+      "type": "array",
+      "description": "List of authentication schemas supported by the MCP server.",
+      "items": { 
+        "type": "string",        
+        "description": "Authentication schemas. Turned into x-ms-auth-schemas.",
+        "enum": [ "OAuth2", "ManagedIdentity" ]
+      }
     }
   },
   "additionalProperties": false
