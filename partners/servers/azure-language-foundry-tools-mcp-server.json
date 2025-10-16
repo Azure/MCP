@@ -5,7 +5,6 @@
   "description": "The MCP server enables AI agents to access Azure Language Foundry Tools for accurate, explainable and compliant NLP capabilities",
   "vendor": "Microsoft",
   "kind": "mcp",
-  "runtimeUrl": "https://{foundry-resource-name}.cognitiveservices.azure.com/language/mcp",
   "remote": "https://{foundry-resource-name}.cognitiveservices.azure.com/language/mcp",
   "icon": "https://devblogs.microsoft.com/foundry/wp-content/uploads/sites/89/2025/03/ai-foundry.png",
   "externalDocumentation": {
