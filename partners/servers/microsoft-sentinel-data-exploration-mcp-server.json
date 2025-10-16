@@ -47,5 +47,6 @@
       "scopes": []
     }
   },
+  "authSchemas": ["OAuth2"],
   "visibility": "true"
 }
