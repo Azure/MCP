@@ -2,7 +2,7 @@
   "name": "wix-mcp-server",
   "title": "Wix MCP",
   "summary": "Unified access to Wix's development ecosystem for documentation, implementation, and site management.",
-  "description": "The Wix MCP server provides a development assistant that unifies access to Wix's documentation, design system resources, and site management APIs. It enables developers to search docs, make authenticated API calls, manage sites programmatically, and receive contextual guidance for building Wix apps and integrations.",
+  "description": "Unified access to Wix's development ecosystem for documentation, implementation, and site management.",
   "kind": "mcp",
   "license": {
     "name": "Wix Terms of Use",

@@ -2,7 +2,7 @@
     "name": "pipedream-mcp-server",
     "title": "Pipedream",
     "summary": "Securely connect to 10,000+ tools from 3,000+ APIs with Pipedream MCP.",
-    "description": "Pipedream MCP makes it easy to choose add 10,000+ tools from 3,000+ APIs to any AI chatbot or agent. Pipedream handles secure authentication for every API and refreshes tokens to enable authenticated tool calls, while never exposing your credentials to the LLM. Revoke access at anytime.",
+    "description": "Securely connect to 10,000+ tools from 3,000+ APIs with Pipedream MCP.",
     "kind": "mcp",
     "license": {
         "name": "Pipedream Terms",
@@ -42,5 +42,6 @@
             "flows": ["authorizationCode"]
         }
     },
-    "supportContact": "support@pipedream.com"
+    "supportContact": "support@pipedream.com",
+    "connectorName": "foundrypipedreammcp"
 }

@@ -2,7 +2,7 @@
   "name": "asana-mcp-server",
   "title": "Asana MCP Server",
   "summary": "Asana MCP Server allows AI assistants and applications to access the Asana Work Graph from outside the Asana platform.",
-  "description": "Asana offers a Model Context Protocol (MCP) server, accessible via app integration, which allows AI assistants and other applications to access the Asana Work Graph from beyond the Asana platform. This server provides a way to interact with your Asana workspace through various AI platforms and tools that support MCP.\n\nWith this server, Asana customers can:\n- Access Asana data from compatible AI applications\n- Create and manage tasks and projects through natural language\n- Generate reports and summaries based on Asana data\n- Analyze project data and get AI-powered suggestions\n\nExample requests users could make from outside Asana using the MCP:\n- \"Find all my incomplete tasks due this week\"\n- \"Create a new task in the Conference Planning project assigned to me\"\n- \"List all sections in the Conference Planning project\"\n- \"Show me the status of the Q2 Planning project\"",
+  "description": "Asana MCP Server allows AI assistants and applications to access the Asana Work Graph from outside the Asana platform.",
   "vendor": "Partner",
   "kind": "mcp",
   "remote": "https://mcp.asana.com/sse",

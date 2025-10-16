@@ -2,7 +2,7 @@
   "name": "notion-mcp",
   "title": "Notion MCP",
   "summary": "Interact with Notion workspaces by searching, reading, creating, and updating pages.",
-  "description": "Create documentation  Generate PRDs, tech specs, and architecture docs from your research and project data\nSearch and find answers — Let AI search across all your Notion and connected workspace content\nManage tasks — Generate code snippets from task descriptions and update project status automatically\nBuild reports — Create release notes, project updates, and performance reports from multiple sources\nPlan campaigns — Generate comprehensive briefs and track progress across marketing channels\n",
+  "description": "Interact with Notion workspaces by searching, reading, creating, and updating pages.",
   "kind": "mcp",
   "license": {
     "name": "Notion Developer Terms",

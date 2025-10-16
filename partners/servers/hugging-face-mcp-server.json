@@ -2,7 +2,7 @@
     "name": "hugging-face-mcp-server",
     "title": "Hugging Face MCP Server",
     "summary": "Search through millions of Hugging Face models, datasets, applications and research papers, and use the Spaces applications you've selected.",
-    "description": "Connect your LLM or agent to the Hugging Face MCP Server so it can:\n- do semantic search on over 3 million models, datasets, Spaces applications and research papers hosted on Hugging Face\n- retrieve detailed information about a specific model or dataset hosted on Hugging Face\n- do semantic search in Hugging Face technical documentation to provide code examples\n- use Hugging Face Spaces Tools you (as a Hugging Face user) have explicitly given access to via the HF MCP Server (e.g. to create an image or video, remove background for image, and >100k more Spaces apps)",
+    "description": "Search through millions of Hugging Face models, datasets, applications and research papers, and use the Spaces applications you've selected.",
     "kind": "mcp",
     "license": {
         "name": "Hugging Face Terms",

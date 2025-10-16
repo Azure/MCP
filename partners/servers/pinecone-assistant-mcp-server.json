@@ -2,7 +2,7 @@
   "name": "pinecone-assistant",
   "title": "Pinecone Assistant MCP Server",
   "summary": "Pinecone Assistant MCP server helps prototype and deploy assistants that retrieve context-aware answers grounded in proprietary data.",
-  "description": "Pinecone Assistant is useful for a variety of tasks, especially for the following:\n- Prototyping and deploying an AI assistant quickly.\n- Providing context-aware answers about your proprietary data without training an LLM.\n- Retrieving answers grounded in your data, with references.",
+  "description": "Pinecone Assistant MCP server helps prototype and deploy assistants that retrieve context-aware answers grounded in proprietary data.",
   "vendor": "Partner",
   "kind": "mcp",
   "remote": "https://prod-1-data.ke.pinecone.io/mcp/assistants/{assistant_name}",
