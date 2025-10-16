@@ -41,5 +41,6 @@
         "scopes": []
         }
     },
-  "visibility": "true"
+  "visibility": "true",
+  "authSchemas":["ManagedIdentity"]
 }
