@@ -32,7 +32,7 @@
       "name": "Ocp-Apim-Subscription-Key",
       "description": "Key-based authentication for Cognitive Services or use Azure AD credentials; see external documentation."
     },
-    "foundryOauth": {
+    "azureLanguageOauth": {
         "type": "oauth2",
         "description": "Authenticate with Azure AI Foundry using OAuth2 authorization code flow with PKCE support.",
         "flows": ["authorizationCode"],
