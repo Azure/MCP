@@ -31,5 +31,6 @@
             "tokenUrl": "https://oauth2.neon.tech/oauth2/token",
             "scopes": []
         }
-    }
+    },
+    "connectorName": "foundryneonmcp"
 }

@@ -58,7 +58,7 @@
     "categories": "Developer Tools",
     "vendor": "Microsoft",
     "visibility": "true",
-    "connectorName": "githubmcp",
+    "connectorName": "foundrygithubmcp",
     "securitySchemes": {
         "githubOauth": {
             "type": "oauth2",
