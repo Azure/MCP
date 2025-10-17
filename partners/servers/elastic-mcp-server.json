@@ -1,0 +1,46 @@
+{
+  "name": "elasticsearch-mcp-server",
+  "title": "Elasticsearch",
+  "summary": "Search, retrieve, and analyze Elasticsearch data in developer and agentic workflows.",
+  "description": "Search, retrieve, and analyze Elasticsearch data in developer and agentic workflows.",
+  "kind": "mcp",
+  "vendor": "partner",
+  "license": {
+    "name": "User License Terms",
+    "url": "https://www.elastic.co/licensing/elastic-license"
+  },
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/elastic.png",
+  "externalDocumentation": {
+    "url": "https://www.elastic.co/docs/solutions/search/agent-builder/mcp",
+    "name": "Elasticsearch MCP Server documentation"
+  },
+
+  "remote": "https://{KIBANA_URL}/api/agent_builder/mcp",
+  "supportContact": "gregory.crist@elastic.co",
+  "visibility": "true",
+  "categories": "Databases",
+  "tags": ["Knowledge"],
+  "useCases": [
+    {
+      "title": "Search and retrieval",
+      "description": "Perform searches across Elasticsearch indices and return ranked results for developer and agent workflows."
+    },
+    {
+      "title": "Data analysis",
+      "description": "Run aggregation and analytics queries to summarize and analyze datasets for decision support."
+    },
+    {
+      "title": "Tooling & automation",
+      "description": "Use the Elastic Agent Builder tools to automate ingestion, enrichment, and retrieval workflows within agentic applications."
+    }
+  ],
+  "securitySchemes": {
+    "elasticBearerAuth":{
+        "type": "http",
+        "description": "Authenticate with Elastic using API Key.",
+        "scheme": "ApiKey",
+        "bearerFormat": "API_KEY"
+    }
+  },
+  "versionName": "original"
+}
