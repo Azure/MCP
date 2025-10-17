@@ -38,5 +38,6 @@
       ],
       "flows": ["authorizationCode"]
     }
-  }
+  },
+  "authSchemas":[ "OAuth2"]
 }
