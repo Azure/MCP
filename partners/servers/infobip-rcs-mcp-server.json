@@ -1,0 +1,47 @@
+{
+  "name": "infobip-rcs-mcp-server",
+  "title": "Infobip RCS MCP server",
+  "summary": "Infobip RCS MCP server enables seamless integration with our communication platform that allows you to reach your customers globally through RCS.",
+  "description": "Infobip RCS MCP server enables seamless integration with our communication platform that allows you to reach your customers globally through RCS.",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "license": {
+    "name": "Infobip Service Terms and Conditions",
+    "url": "https://www.infobip.com/policies/service-terms-conditions"
+  },
+  "icon": "https://cdn-web.infobip.com/uploads/2025/05/infobip-symbol-orange.png",
+  "externalDocumentation": {
+    "url": "https://www.infobip.com/docs/mcp",
+    "name": "Infobip MCP documentation"
+  },
+  "remote": "https://mcp.infobip.com/rcs",
+  "supportContact": "devrel@infobip.com",
+  "visibility": "true",
+  "categories":"Customer Service",
+  "useCases": [
+        {
+      "title": "Capability checks",
+      "description": "Check whether a given phone number supports RCS messaging and retrieve capability metadata."
+    },
+    {
+      "title": "Sender management",
+      "description": "List and manage available RCS senders associated with an account for message sending."
+    }
+  ],
+  "connectorName": "foundryinfobiprcsmcp",
+  "securitySchemes": {
+    "infobipOAuth": {
+      "type": "oauth2",
+      "description": "OAuth 2.1 PKCE supported for delegated auth. See the managed OAuth link provided by Infobip for client and endpoint details.",
+        "authorizationUrl": "https://auth.infobip.com/realms/infobip/protocol/openid-connect/auth",
+        "tokenUrl": "https://auth.infobip.com/realms/infobip/protocol/openid-connect/token",
+        "refreshUrl": "https://auth.infobip.com/realms/infobip/protocol/openid-connect/token",
+        "scopes": [
+            "profile",
+            "rcs:manage"
+        ],
+        "flows": ["authorizationCode"]                
+    }
+  },
+  "versionName": "original"
+}

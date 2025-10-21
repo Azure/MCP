@@ -4,7 +4,7 @@
   "summary": "Search, retrieve, and analyze Elasticsearch data in developer and agentic workflows.",
   "description": "Search, retrieve, and analyze Elasticsearch data in developer and agentic workflows.",
   "kind": "mcp",
-  "vendor": "partner",
+  "vendor": "Partner",
   "license": {
     "name": "User License Terms",
     "url": "https://www.elastic.co/licensing/elastic-license"
