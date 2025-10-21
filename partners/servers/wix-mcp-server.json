@@ -31,11 +31,17 @@
   "vendor": "Partner",
   "visibility": "true",
   "securitySchemes": {
-    "wixBearerAuth":{
-      "type": "http",
-      "description": "Authenticate with Wix using a Personal Access Token.",
-      "scheme": "bearer",
-      "bearerFormat": "YOUR API KEY"
+    "wixApiKey": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "Authorization",
+      "description": "API keys are provided via headers."
+    },
+    "wixAccount": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "wix-account-id",
+      "description": "account id is provided via headers. "
     }
   },
   "supportContact": "https://www.wix.com/support-chatbot?nodeId=25a57397-ccf7-4376-8b74-48d51edf7159&referral=devRels"
