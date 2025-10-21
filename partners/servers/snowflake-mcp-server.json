@@ -6,13 +6,13 @@
   "kind": "mcp",
   "vendor": "Partner",
   "license": {
-    "name": "Terms of User",
+    "tiot": "Terms of User",
     "url": "https://www.snowflake.com/en/legal/terms-of-service/"
   },
   "icon": "https://drive.google.com/file/d/1El0eoHBorj8D9myjC-pj1F8hqR6dnKf8/view?usp=sharing",
   "externalDocumentation": {
     "url": "https://www.snowflake.com/en/product/features/cortex/",
-    "name": "Snowflake Cortex product documentation"
+    "title": "Snowflake Cortex product documentation"
   },
   "remote": "https://{account_url}/api/v2/databases/{database}/schemas/{schema}/mcp-servers/{name}",
   "supportContact": "https://www.snowflake.com/en/support/",
@@ -20,15 +20,15 @@
   "categories": "Analytics",
   "useCases": [
     {
-      "title": "Secure data retrieval for agents",
+      "name": "Secure data retrieval for agents",
       "description": "Allow agents to query and retrieve data from Snowflake accounts via a standards-based MCP interface."
     },
     {
-      "title": "Search and analysis",
+      "name": "Search and analysis",
       "description": "Provide search and analytics tools (e.g., Snowflake Cortex Search/Cortex Analyst) to support agent workflows that require ranked results and aggregations."
     },
     {
-      "title": "Managed agent tooling",
+      "name": "Managed agent tooling",
       "description": "Enable Snowflake-managed tools so customers don't need to deploy extra infrastructure to support agentic access to data."
     }
   ],
@@ -39,12 +39,12 @@
         "scheme": "bearer",
         "bearerFormat": "Your API Key"
     },
-    "snowflakeOAuth2": {
+    "snowflakeOAuth": {
         "type": "oauth2",
         "description": "Authenticate using OAuth 2.0.",
-        "authorizationUrl": "",
-        "tokenUrl": "",
-        "refreshUrl": "",
+        "authorizationUrl": "https://account-url/oauth/authorize",
+        "tokenUrl": "https://account-url/oauth/token-request",
+        "refreshUrl": "https://account-url/oauth/token-request",
         "scopes": [],
         "flows": ["authorizationCode"]
   }
