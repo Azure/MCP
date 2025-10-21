@@ -30,7 +30,7 @@
   ],
   "connectorName": "foundryinfobiprcsmcp",
   "securitySchemes": {
-    "infobipOAuth": {
+    "infobipRCSOAuth": {
       "type": "oauth2",
       "description": "OAuth 2.1 PKCE supported for delegated auth. See the managed OAuth link provided by Infobip for client and endpoint details.",
         "authorizationUrl": "https://auth.infobip.com/realms/infobip/protocol/openid-connect/auth",
