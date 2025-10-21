@@ -30,6 +30,12 @@
             "authorizationUrl":"https://oauth2.neon.tech/oauth2/auth",
             "tokenUrl": "https://oauth2.neon.tech/oauth2/token",
             "scopes": []
+        },
+        "neonBearerAuth":{
+            "type": "http",
+            "description": "Authenticate with Neon using a Personal Access Token.",
+            "scheme": "bearer",
+            "bearerFormat": "NEON_API_KEY"
         }
     },
     "connectorName": "foundryneonmcp"

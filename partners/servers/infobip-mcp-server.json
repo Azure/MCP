@@ -1,0 +1,47 @@
+{
+  "name": "infobip-whatsapp-mcp-server",
+  "title": "Infobip WhatsApp MCP server",
+  "summary": "Send WhatsApp messages via Infobip's MCP interface.",
+  "description": "Send WhatsApp messages via Infobip's MCP interface.",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "license": {
+    "name": "Infobip Service Terms and Conditions",
+    "url": "https://www.infobip.com/policies/service-terms-conditions"
+  },
+  "icon": "https://cdn-web.infobip.com/uploads/2025/05/infobip-symbol-orange.png",
+  "externalDocumentation": {
+    "url": "https://www.infobip.com/docs/mcp",
+    "title": "Infobip MCP and WhatsApp documentation"
+  },
+  "remote": "https://mcp.infobip.com/whatsapp",
+  "supportContact": "devrel@infobip.com",
+  "visibility": "true",
+  "categories":"Customer Service",
+  "useCases": [
+    {
+      "name": "Send WhatsApp messages",
+      "description": "Send text, template or media messages to end users via WhatsApp using pre-approved templates where required."
+    },
+    {
+      "name": "List and reuse WhatsApp templates",
+      "description": "Query available WhatsApp message templates for a configured sender and select templates for message sending."
+    }
+  ],
+  "connectorName": "foundryinfobipmcp",
+  "securitySchemes": {
+    "infobipOAuth": {
+      "type": "oauth2",
+      "description": "OAuth 2.1 PKCE supported for delegated auth. See the managed OAuth link provided by Infobip for client and endpoint details.",
+        "authorizationUrl": "https://auth.infobip.com/realms/infobip/protocol/openid-connect/auth",
+        "tokenUrl": "https://auth.infobip.com/realms/infobip/protocol/openid-connect/token",
+        "refreshUrl": "https://auth.infobip.com/realms/infobip/protocol/openid-connect/token",
+        "scopes": [
+            "profile",
+            "whatsapp:manage"
+        ],
+        "flows": ["authorizationCode"]                
+    }
+  },
+  "versionName": "original"
+}

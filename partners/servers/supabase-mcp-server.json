@@ -47,8 +47,8 @@
       "type": "oauth2",
       "description": "OAuth2 for user authentication (authorization code flow with PKCE supported).",
       "flows": ["authorizationCode"],
-      "tokenUrl": "https://api.supabase.com/api/v1#tag/oauth/POST/v1/oauth/token",
-      "authorizationUrl": "https://api.supabase.com/api/v1#tag/oauth/GET/v1/oauth/authorize",
+      "tokenUrl": "https://api.supabase.com/v1/oauth/token",
+      "authorizationUrl": "https://api.supabase.com/v1/oauth/authorize",
       "scopes": []
     }
   },
