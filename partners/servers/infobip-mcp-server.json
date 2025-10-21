@@ -12,7 +12,7 @@
   "icon": "https://cdn-web.infobip.com/uploads/2025/05/infobip-symbol-orange.png",
   "externalDocumentation": {
     "url": "https://www.infobip.com/docs/mcp",
-    "name": "Infobip MCP and WhatsApp documentation"
+    "title": "Infobip MCP and WhatsApp documentation"
   },
   "remote": "https://mcp.infobip.com/whatsapp",
   "supportContact": "devrel@infobip.com",
@@ -20,11 +20,11 @@
   "categories":"Customer Service",
   "useCases": [
     {
-      "title": "Send WhatsApp messages",
+      "name": "Send WhatsApp messages",
       "description": "Send text, template or media messages to end users via WhatsApp using pre-approved templates where required."
     },
     {
-      "title": "List and reuse WhatsApp templates",
+      "name": "List and reuse WhatsApp templates",
       "description": "Query available WhatsApp message templates for a configured sender and select templates for message sending."
     }
   ],

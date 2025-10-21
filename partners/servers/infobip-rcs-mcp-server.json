@@ -12,19 +12,19 @@
   "icon": "https://cdn-web.infobip.com/uploads/2025/05/infobip-symbol-orange.png",
   "externalDocumentation": {
     "url": "https://www.infobip.com/docs/mcp",
-    "name": "Infobip MCP documentation"
+    "title": "Infobip MCP documentation"
   },
   "remote": "https://mcp.infobip.com/rcs",
   "supportContact": "devrel@infobip.com",
   "visibility": "true",
   "categories":"Customer Service",
   "useCases": [
-        {
-      "title": "Capability checks",
+    {
+      "name": "Capability checks",
       "description": "Check whether a given phone number supports RCS messaging and retrieve capability metadata."
     },
     {
-      "title": "Sender management",
+      "name": "Sender management",
       "description": "List and manage available RCS senders associated with an account for message sending."
     }
   ],

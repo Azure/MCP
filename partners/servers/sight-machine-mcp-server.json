@@ -12,7 +12,7 @@
   "icon": "https://store-images.s-microsoft.com/image/apps.47954.3f751143-b1a4-4ea8-95ce-4192c13234f4.c2e18b75-3bc9-4f6d-a9c0-53ddbacf2b45.f9c79f99-0685-4c52-b5d5-26e375ed98c4",
   "externalDocumentation": {
     "url": "https://factoryrca.sightmachine.io/static/mcp_tools.html",
-    "name": "Factory RCA MCP tools documentation and onboarding"
+    "title": "Factory RCA MCP tools documentation and onboarding"
   },
   "remote": "https://factoryrca.sightmachine.io/",
   "supportContact": "support+mcp@sightmachine.com",
@@ -20,19 +20,19 @@
   "categories": "Analytics",
   "useCases": [
     {
-      "title": "Translate manufacturing questions to data tasks",
+      "name": "Translate manufacturing questions to data tasks",
       "description": "Convert colloquial operator/engineer questions into data queries and tool invocations."
     },
     {
-      "title": "Anomaly detection and monitoring",
+      "name": "Anomaly detection and monitoring",
       "description": "Search manufacturing telemetry for anomalies to detect issues earlier in the process."
     },
     {
-      "title": "Root cause analysis (RCA)",
+      "name": "Root cause analysis (RCA)",
       "description": "Analyze downtime, microstops, slow running, yield and energy issues to surface likely root causes."
     },
     {
-      "title": "What‑if analysis and recommendations",
+      "name": "What‑if analysis and recommendations",
       "description": "Run simulations and suggest setpoint changes to optimize performance, quality, and energy efficiency."
     }
   ],
