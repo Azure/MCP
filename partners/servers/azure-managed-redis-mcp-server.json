@@ -24,5 +24,6 @@
   "tags": ["knowledge"],
   "supportContact": "https://github.com/redis/mcp-redis/issues",
   "versionName": "original",
-  "visibility": "true"
+  "visibility": "true",
+  "packages":[]
 }

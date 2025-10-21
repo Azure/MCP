@@ -1,0 +1,53 @@
+{
+  "name": "snowflake-mcp-server",
+  "title": "Snowflake MCP Server",
+  "summary": "Snowflake-managed MCP server that gives AI agents an open-standards interface to query and retrieve AI-ready data from Snowflake.",
+  "description": "Snowflake-managed MCP server that gives AI agents an open-standards interface to query and retrieve AI-ready data from Snowflake.",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "license": {
+    "name": "Terms of User",
+    "url": "https://www.snowflake.com/en/legal/terms-of-service/"
+  },
+  "icon": "https://drive.google.com/file/d/1El0eoHBorj8D9myjC-pj1F8hqR6dnKf8/view?usp=sharing",
+  "externalDocumentation": {
+    "url": "https://www.snowflake.com/en/product/features/cortex/",
+    "name": "Snowflake Cortex product documentation"
+  },
+  "remote": "https://{account_url}/api/v2/databases/{database}/schemas/{schema}/mcp-servers/{name}",
+  "supportContact": "https://www.snowflake.com/en/support/",
+  "visibility": "true",
+  "categories": "Analytics",
+  "useCases": [
+    {
+      "title": "Secure data retrieval for agents",
+      "description": "Allow agents to query and retrieve data from Snowflake accounts via a standards-based MCP interface."
+    },
+    {
+      "title": "Search and analysis",
+      "description": "Provide search and analytics tools (e.g., Snowflake Cortex Search/Cortex Analyst) to support agent workflows that require ranked results and aggregations."
+    },
+    {
+      "title": "Managed agent tooling",
+      "description": "Enable Snowflake-managed tools so customers don't need to deploy extra infrastructure to support agentic access to data."
+    }
+  ],
+  "securitySchemes": {
+    "snowflakeBearer": {
+        "type": "http",
+        "description": "Authenticate with Postman using an API key.",
+        "scheme": "bearer",
+        "bearerFormat": "Your API Key"
+    },
+    "snowflakeOAuth2": {
+        "type": "oauth2",
+        "description": "Authenticate using OAuth 2.0.",
+        "authorizationUrl": "",
+        "tokenUrl": "",
+        "refreshUrl": "",
+        "scopes": [],
+        "flows": ["authorizationCode"]
+  }
+},
+  "versionName": "original"
+}
