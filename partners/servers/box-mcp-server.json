@@ -31,5 +31,6 @@
             "tokenUrl": "https://api.box.com/oauth2/token",
             "scopes":[]
         }
-    }
+    },
+    "connectorName": "foundryboxmcp"
 }
