@@ -1,7 +1,12 @@
-{  
-  "title": "PublicRegistryMcpServerData",  
+{
+  "title": "PublicRegistryMcpServerData",
   "type": "object",
-  "required": [ "name", "title", "summary", "description" ],
+  "required": [
+    "name",
+    "title",
+    "summary",
+    "description"
+  ],
   "properties": {
     "name": {
       "type": "string",
@@ -27,20 +32,26 @@
     },
     "kind": {
       "type": "string",
-      "enum": ["rest", "mcp"],
+      "enum": [
+        "rest",
+        "mcp"
+      ],
       "default": "mcp",
       "description": "Type of server implementation. 'mcp' for Model Context Protocol servers, 'rest' for REST API servers."
     },
     "license": {
       "type": "object",
       "description": "Licensing information for the MCP server.",
-      "required": [ "name", "url" ],
+      "required": [
+        "name",
+        "url"
+      ],
       "properties": {
-        "name": { 
+        "name": {
           "type": "string",
           "description": "Name of the license (e.g., 'MIT', 'Apache-2.0', 'GPL-3.0')."
         },
-        "url": { 
+        "url": {
           "type": "string",
           "description": "URL to the full license text."
         }
@@ -54,13 +65,16 @@
     "externalDocumentation": {
       "type": "object",
       "description": "Links to external documentation for the MCP server.",
-      "required": [ "title", "url" ],
+      "required": [
+        "title",
+        "url"
+      ],
       "properties": {
-        "title": { 
+        "title": {
           "type": "string",
           "description": "Title or name of the documentation."
         },
-        "url": { 
+        "url": {
           "type": "string",
           "description": "URL to the external documentation."
         }
@@ -69,13 +83,16 @@
     "repository": {
       "type": "object",
       "description": "Source code repository information.",
-      "required": [ "url", "source" ],
+      "required": [
+        "url",
+        "source"
+      ],
       "properties": {
-        "url": { 
+        "url": {
           "type": "string",
           "description": "URL to the source code repository."
         },
-        "source": { 
+        "source": {
           "type": "string",
           "description": "Path or reference to specific source files within the repository."
         }
@@ -86,13 +103,16 @@
       "description": "List of specific use cases or scenarios where this MCP server is applicable.",
       "items": {
         "type": "object",
-        "required": [ "name", "description" ],
+        "required": [
+          "name",
+          "description"
+        ],
         "properties": {
-          "name": { 
+          "name": {
             "type": "string",
             "description": "Name or title of the use case."
           },
-          "description": { 
+          "description": {
             "type": "string",
             "description": "Detailed description of the use case scenario."
           }
@@ -102,7 +122,7 @@
     "tags": {
       "type": "array",
       "description": "Keywords or labels for categorizing and discovering the MCP server.",
-      "items": { 
+      "items": {
         "type": "string",
         "maxLength": 50,
         "description": "A single tag or keyword."
@@ -112,7 +132,11 @@
       "type": "string",
       "maxLength": 200,
       "description": "Name of the organization or individual that created or maintains the MCP server.",
-      "enum": [ "Microsoft", "Partner", "None" ]
+      "enum": [
+        "Microsoft",
+        "Partner",
+        "None"
+      ]
     },
     "visibility": {
       "type": "string",
@@ -131,79 +155,130 @@
     },
     "securitySchemes": {
       "type": "object",
-      "description": "Authentication and authorization schemes supported by the MCP server.",            
-      "additionalProperties": {
-        "oneOf": [
-          {
-            "type": "object",
-            "required": [ "type", "description", "scheme" ],
-            "properties": {
-              "type": {
-                "const": "http"                
-              },
-              "description": { "type": "string" },
-              "scheme": { "type": "string" },
-              "bearerFormat": { "type": "string" }
-            },
-            "additionalProperties": false
-          },
-          {
-            "type": "object",
-            "required": [ "type", "description", "in", "name" ],
-            "properties": {
-              "type": {
-                "const": "apiKey"
-              },
-              "description": { "type": "string" },
-              "in": { "type": "string" },
-              "name": { "type": "string" }
-            },
-            "additionalProperties": false
-          },
-          {
-            "type": "object",
-            "required": [ "type", "description", "flows", "tokenUrl", "scopes" ],
-            "properties": {
-              "type": {
-                "const": "oauth2"                              
-              },
-              "description": { 
-                "type": "string",
-                "maxLength": 200
-              },
-              "authorizationUrl": { 
-                "type": "string",
-                "pattern": "^[a-zA-Z][a-zA-Z0-9+.-]*://[a-zA-Z0-9.-]+(/[^\\s]*)?$"
-              },
-              "tokenUrl": { 
-                "type": "string",
-                "pattern": "^[a-zA-Z][a-zA-Z0-9+.-]*://[a-zA-Z0-9.-]+(/[^\\s]*)?$"
-              },
-              "refreshUrl": { 
-                "type": "string",                
-                "pattern": "^[a-zA-Z][a-zA-Z0-9+.-]*://[a-zA-Z0-9.-]+(/[^\\s]*)?$"              
-              },
-              "scopes": {
-                "type": "array",
-                "items": { "type": "string" }
-              },
-              "flows": {
-                "type": "array",
-                "items": {
+      "description": "Authentication and authorization schemes supported by the MCP server.",
+      "patternProperties": {
+        "^.*$": {
+          "oneOf": [
+            {
+              "type": "object",
+              "required": [
+                "type",
+                "description",
+                "scheme"
+              ],
+              "properties": {
+                "type": {
+                  "const": "http"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "scheme": {
                   "type": "string",
-                  "enum": [ "authorizationCode", "clientCredentials" ]
+                  "enum": [                    		
+                    "basic",
+                    "bearer",
+                    "digest",
+                    "hoba",
+                    "mutual",
+                    "negotiate",
+                    "oauth",
+                    "scram-sha-1",
+                    "scram-sha-256",
+                    "vapid"
+                  ]
+                },
+                "bearerFormat": {
+                  "type": "string"
                 }
-              }
+              },
+              "additionalProperties": false
             },
-            "additionalProperties": false
-          }
-        ]
+            {
+              "type": "object",
+              "required": [
+                "type",
+                "description",
+                "in",
+                "name"
+              ],
+              "properties": {
+                "type": {
+                  "const": "apiKey"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "in": {
+                  "type": "string",
+                  "enum": [
+                    "header",
+                    "query",                    
+                    "cookie"
+                  ]
+                },
+                "name": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "required": [
+                "type",
+                "description",
+                "flows",
+                "tokenUrl",
+                "scopes"
+              ],
+              "properties": {
+                "type": {
+                  "const": "oauth2"
+                },
+                "description": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "authorizationUrl": {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z][a-zA-Z0-9+.-]*://[a-zA-Z0-9.-]+(/[^\\s]*)?$"
+                },
+                "tokenUrl": {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z][a-zA-Z0-9+.-]*://[a-zA-Z0-9.-]+(/[^\\s]*)?$"
+                },
+                "refreshUrl": {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z][a-zA-Z0-9+.-]*://[a-zA-Z0-9.-]+(/[^\\s]*)?$"
+                },
+                "scopes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "flows": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "authorizationCode",
+                      "clientCredentials"
+                    ]
+                  }
+                }
+              },
+              "additionalProperties": false
+            }
+          ]
+        }
       }
     },
     "packages": {
       "type": "array",
       "description": "List of software packages, dependencies, or installation artifacts for the MCP server.",
-      "items": { 
+      "items": {
         "$ref": "package-schema.json"
       }
     },
@@ -226,7 +301,10 @@
     },
     "remoteType": {
       "type": "string",
-      "enum": [ "sse", "streamable-http" ],
+      "enum": [
+        "sse",
+        "streamable-http"
+      ],
       "default": "sse",
       "description": "Type of remote connection protocol used by the MCP server. 'sse' for Server-Sent Events, 'streamable-http' for streaming HTTP."
     },
@@ -238,10 +316,13 @@
     "authSchemas": {
       "type": "array",
       "description": "List of authentication schemas supported by the MCP server.",
-      "items": { 
-        "type": "string",        
+      "items": {
+        "type": "string",
         "description": "Authentication schemas. Turned into x-ms-auth-schemas.",
-        "enum": [ "OAuth2", "ManagedIdentity" ]
+        "enum": [
+          "OAuth2",
+          "ManagedIdentity"
+        ]
       }
     }
   },
