@@ -38,7 +38,7 @@
     "elasticApiKeyAuth": {      
       "type": "apiKey",
       "in": "header",
-      "name": "API_KEY",
+      "name": "Authorization",
       "description": "Authenticate with Elastic using API Key."    
     }
   },
