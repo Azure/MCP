@@ -42,9 +42,9 @@
     "snowflakeOAuth": {
         "type": "oauth2",
         "description": "Authenticate using OAuth 2.0.",
-        "authorizationUrl": "https://account-url/oauth/authorize",
-        "tokenUrl": "https://account-url/oauth/token-request",
-        "refreshUrl": "https://account-url/oauth/token-request",
+        "authorizationUrl": "https://YOUR_ACCOUNT_URL/oauth/authorize",
+        "tokenUrl": "https://YOUR_ACCOUNT_URL/oauth/token-request",
+        "refreshUrl": "https://YOUR_ACCOUNT_URL/oauth/token-request",
         "scopes": [],
         "flows": ["authorizationCode"]
   }
