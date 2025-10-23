@@ -50,7 +50,13 @@
       "tokenUrl": "https://api.supabase.com/v1/oauth/token",
       "authorizationUrl": "https://api.supabase.com/v1/oauth/authorize",
       "scopes": []
-    }
+    },
+    "supabaseBearerAuth": {
+          "type": "http",
+          "description": "Authenticate with Supabase using a Personal Access Token.",
+          "scheme": "bearer",
+          "bearerFormat": "Your authorization token"
+      }
   },
   "supportContact": "support@supabase.com"
 }
