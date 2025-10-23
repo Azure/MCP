@@ -10,7 +10,7 @@
   },
   "externalDocumentation": {
     "title": "MCPToolKit Deploy Guide",
-    "url": "https://github.com/AzureCosmosDB/MCPToolKit/blob/main/docs/deploy-to-azure-guide.md"
+    "url": "http://aka.ms/CosmosDB/MCPToolKit"
   },
   "repository": {
     "url": "https://github.com/AzureCosmosDB/MCPToolKit",
