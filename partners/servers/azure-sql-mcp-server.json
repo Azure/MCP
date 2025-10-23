@@ -21,7 +21,7 @@
   "supportContact": "sql-mcp-server@service.microsoft.com",
   "visibility": "public",
   "categories": "Databases",
-  "tag":["knowledge"],
+  "tags":["knowledge"],
   "packages":[],
   "useCases": [
     {
