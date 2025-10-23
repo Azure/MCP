@@ -58,25 +58,5 @@
     "categories": "Developer Tools",
     "vendor": "Microsoft",
     "visibility": "false",
-    "connectorName": "foundrygithubmcp",
-    "securitySchemes": {
-        "githubOauth": {
-            "type": "oauth2",
-            "description": "Authenticate with GitHub using OAuth2 authorization code flow with PKCE support.",
-            "authorizationUrl": "https://github.com/login/oauth/authorize",
-            "tokenUrl": "https://github.com/login/oauth/access_token",
-            "refreshUrl": "https://github.com/login/oauth/access_token",
-            "scopes": [
-                "repo",
-                "read:user"
-            ],
-            "flows": ["authorizationCode"]                
-        },
-        "githubBearerAuth": {
-            "type": "http",
-            "description": "Authenticate with GitHub using a Personal Access Token.",
-            "scheme": "bearer",
-            "bearerFormat": "Personal Access Token"
-        }
-    }
+    "connectorName": "foundrygithubmcp"
 }
