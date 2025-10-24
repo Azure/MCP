@@ -1,8 +1,8 @@
 {
   "name": "infobip-whatsapp-mcp-server",
   "title": "Infobip WhatsApp MCP server",
-  "summary": "Send WhatsApp messages via Infobip's MCP interface.",
-  "description": "Send WhatsApp messages via Infobip's MCP interface.",
+  "summary": "Infobip WhatsApp MCP server enables seamless integration with our communication platform that allows you to reach your customers globally through WhatsApp.",
+  "description": "Infobip WhatsApp MCP server enables seamless integration with our communication platform that allows you to reach your customers globally through WhatsApp.",
   "kind": "mcp",
   "vendor": "Partner",
   "license": {
@@ -14,7 +14,7 @@
     "url": "https://www.infobip.com/docs/mcp",
     "title": "Infobip MCP and WhatsApp documentation"
   },
-  "remote": "https://mcp.infobip.com/whatsapp",
+  "remote": "https://azure-mcp.infobip.com/whatsapp",
   "supportContact": "devrel@infobip.com",
   "visibility": "true",
   "categories":"Customer Service",
