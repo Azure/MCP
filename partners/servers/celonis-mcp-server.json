@@ -1,0 +1,44 @@
+{
+  "name": "celonis-pi-graph-mcp-server",
+  "title": "Celonis PI Graph MCP Server",
+  "summary": "Agent toolkit that provides process intelligence context, action triggering, and write-back capabilities into Celonis.",
+  "description": "Agent toolkit that provides process intelligence context, action triggering, and write-back capabilities into Celonis.",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "license": {
+    "name": "Celonis Terms",
+    "url": "https://www.celonis.com/legal/terms-and-conditions"
+  },
+  "icon": "https://www.dropbox.com/scl/fo/ggukcvo845ibi2pyxuqy8/AGW7HOTY3USpaomg7R5ks7Q?dl=0&e=1&preview=Celonis_Logo.jpg&rlkey=8ssxqvhthwbov9ktg678iwwtx",
+  "externalDocumentation": {
+    "title": "Celonis docs",
+    "url": "https://docs.celonis.com/"
+  },
+  "remote": "https://{team_and_realm}.celonis.cloud/studio-copilot/api/v1/mcp-servers/mcp/{mcp_server_url}",
+  "supportContact": "servicedesk@celonis.com",
+  "visibility": "true",
+  "categories": "Analytics",
+  "useCases": [
+    {
+      "name": "Process Context for AI Agents",
+      "description": "Provide an AI agent with real-time process status, KPIs and business rule context to answer process questions and surface remediation steps."
+    },
+    {
+      "name": "Process-driven Action Triggering",
+      "description": "Allow an agent to trigger actions in external systems (e.g., ERP, CRM) based on discovered process insights to remediate issues."
+    },
+    {
+      "name": "Decision Write-Back",
+      "description": "Record agent decisions and actions back to Celonis for a complete audit trail and further process analysis."
+    }
+  ],
+  "securitySchemes": {
+    "celonisBearerAuth": {
+        "type": "http",
+        "description": "Authenticate with Celonis using a Personal Access Token.",
+        "scheme": "bearer",
+        "bearerFormat": "Personal Access Token"
+    }
+  },
+  "versionName": "Original"
+}

@@ -1,0 +1,50 @@
+{
+  "name": "bria-ai-mcp-server",
+  "title": "bria.ai",
+  "summary": "Equip AI agents with Bria.ai image generation and editing tools (generation, editing, background removal, enhancement).",
+  "description": "Equip AI agents with Bria.ai image generation and editing tools (generation, editing, background removal, enhancement).",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "license": {
+    "name": "Bria Terms",
+    "url": "https://bria.ai/legal-lobby"
+  },
+  "icon": "https://platform.bria.ai/assets/Bria-logo-5e0c53b1.svg",
+  "externalDocumentation": {
+    "title": "Bria MCP docs",
+    "url": "https://docs.bria.ai/mcp-authentication"
+  },
+  "remote": "https://mcp.prod.bria-api.com/mcp",
+  "supportContact": "support@bria.ai",
+  "visibility": "true",
+  "categories": "Developer Tools",
+  "useCases": [
+    {
+      "name": "Image generation",
+      "description": "Generate images from text prompts using Bria's latest generation models."
+    },
+    {
+      "name": "Image editing & enhancement",
+      "description": "Edit images (background removal, foreground crop, blur/replace background, reimagine, increase resolution)."
+    },
+    {
+      "name": "Prompt enhancement",
+      "description": "Enhance and refine prompts for better image outputs and composition."
+    }
+  ],
+  "securitySchemes": {
+    "briaApiKey": {
+      "type": "apiKey",
+      "description": "API token authentication. Provide the token in a header named 'api_token' as documented by Bria.",
+      "in": "header",
+      "name": "api_token"
+    },
+    "briaBearerAuth":{
+        "type": "http",
+        "description": "Authenticate with Bria.ai using a token.",
+        "scheme": "bearer",
+        "bearerFormat": "Authorization Token"
+    }
+  },
+  "versionName": "original"
+}
