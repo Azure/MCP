@@ -11,7 +11,7 @@
   },
   "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/elastic.png",
   "externalDocumentation": {
-    "url": "https://www.elastic.co/docs/solutions/search/agent-builder/mcp",
+    "url": "https://www.elastic.co/docs/solutions/search/agent-builder/mcp-server",
     "title": "Elasticsearch MCP Server documentation"
   },
 
@@ -35,11 +35,11 @@
     }
   ],
   "securitySchemes": {
-    "elasticApiKeyAuth": {      
+      "elasticSecret": {
       "type": "apiKey",
       "in": "header",
       "name": "Authorization",
-      "description": "Authenticate with Elastic using API Key."    
+      "description": "ApiKey <Your API Key>"
     }
   },
   "versionName": "original"

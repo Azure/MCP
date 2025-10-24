@@ -14,7 +14,7 @@
     "url": "https://www.infobip.com/docs/mcp",
     "title": "Infobip MCP documentation"
   },
-  "remote": "https://mcp.infobip.com/rcs",
+  "remote": "https://azure-mcp.infobip.com/rcs",
   "supportContact": "devrel@infobip.com",
   "visibility": "true",
   "categories":"Customer Service",

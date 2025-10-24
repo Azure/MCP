@@ -1,57 +1,48 @@
 {
-    "name": "tavily-mcp-server",
-    "title": "Tavily MCP",
-    "summary": "The Tavily MCP server offers a suite of tools, including search, extract, map, and crawl.",
-    "description": "The Tavily MCP server offers a suite of tools, including search, extract, map, and crawl. ",
-    "kind": "mcp",
-    "externalDocumentation": {
-        "title": "GitHub",
-        "url": "https://github.com/tavily-ai/tavily-mcp"
+  "name": "tavily-mcp",
+  "title": "Tavily MCP",
+  "summary": "Real-time web search, extraction, crawling and mapping tools for agentic workflows with source citations.",
+  "description": "Real-time web search, extraction, crawling and mapping tools for agentic workflows with source citations.",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "license": {
+    "name": "Tavily Terms",
+    "url": "https://www.tavily.com/terms"
+  },
+  "icon": "https://tavily-logo.s3.us-east-1.amazonaws.com/tavily-32.PNG",
+  "externalDocumentation": {
+    "title": "Tavily MCP docs",
+    "url": "https://github.com/tavily-ai/tavily-mcp"
+  },
+  "remote": "https://mcp.tavily.com/mcp",
+  "supportContact": "support@tavily.com",
+  "visibility": "true",
+  "categories": "Web",
+  "useCases": [
+    {
+      "name": "Real-time search",
+      "description": "Perform live web searches and return result lists with source URLs, snippets and scores for agent responses."
     },
-    "repository": {
-        "url": "https://github.com/tavily-ai/tavily-mcp",
-        "source": "github"
+    {
+      "name": "Extraction",
+      "description": "Extract structured data and entities from web pages (tavily-extract) for downstream processing."
     },
-    "packages": [
-        {
-            "registry_name": "npm",
-            "name": "tavily-mcp-server",
-            "version": "latest",
-            "runtime_hint": "npx",
-            "runtime_arguments": [
-                {
-                    "type": "positional",
-                    "value_hint": "tavily_mcp_server_binary",
-                    "is_repeated": false,
-                    "is_required": true,
-                    "format": "string",
-                    "value": "tavily-mcp@latest",
-                    "is_secret": false
-                },
-                {
-                    "type": "named",
-                    "name": "--tavily_api_key",
-                    "is_repeated": false,
-                    "is_required": true,
-                    "format": "string",
-                    "value": "your-api-key-here",
-                    "is_secret": false
-                }
-            ],
-            "package_arguments": [],
-            "environment_variables": []
-        }
-    ],
-    "icon": "https://aws-mp-tavily-v1.s3.us-east-1.amazonaws.com/tavily-logo.png",
-    "useCases": [
-        {
-            "name": "Search Functionality",
-            "description": "Search for code, issues, pull requests, and users with advanced filtering options."
-        }
-    ],
-    "tags": [],
-    "vendor": "Partner",
-    "categories": "Developer Tools",
-    "visibility": "true",
-    "versionName": "Original"
+    {
+      "name": "Site mapping",
+      "description": "Create structured maps of websites to improve navigation, discovery and provenance for agents."
+    },
+    {
+      "name": "Crawling",
+      "description": "Crawl sites systematically to build up-to-date corpora for search and extraction tools."
+    }
+  ],
+  "securitySchemes": {
+    "tavilyBearerAuth": {
+        "type": "http",
+        "description": "Authenticate with Tavily using a Personal Access Token.",
+        "scheme": "bearer",
+        "bearerFormat": "your api key"
+    }
+  },
+  "versionName": "original"
 }
