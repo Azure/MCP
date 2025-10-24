@@ -35,11 +35,11 @@
     }
   ],
   "securitySchemes": {
-    "elasticBearerAuth": {
-        "type": "http",
-        "description": "Authenticate with Elastic using a Personal Access Token.",
-        "scheme": "ApiKey",
-        "bearerFormat": "your API key"
+      "elasticSecret": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "Authorization",
+      "description": "ApiKey <Your API Key>"
     }
   },
   "versionName": "original"
