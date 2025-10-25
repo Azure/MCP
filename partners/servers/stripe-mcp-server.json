@@ -17,7 +17,7 @@
     "visibility": "true",
     "categories": "Commerce",
     "versionName": "Original",
-    "remote": "https://mcp.stripe.com/",
+    "remote": "https://mcp.stripe.com",
     "externalDocumentation": {
         "title": "Stripe MCP",
         "url": "https://docs.stripe.com/mcp"
