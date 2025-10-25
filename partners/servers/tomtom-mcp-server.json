@@ -39,11 +39,11 @@
   "supportContact": "https://support.tomtom.com/support",
   "versionName": "original",
   "securitySchemes": {
-        "tomtomKeyAuth": {
-            "type": "http",
-            "description": "Authenticate with TomTom using a Token.",
-            "scheme": "bearer",
-            "bearerFormat": "TOMTOM_API_KEY"
-        }
+      "tomtomSecret": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "tomtom-api-key",
+      "description": "Secret is provided via headers. "
+    }
     }
 }
