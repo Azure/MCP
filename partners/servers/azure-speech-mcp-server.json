@@ -1,0 +1,44 @@
+{
+  "name": "azure-speech-mcp-server",
+  "title": "Azure Speech MCP Server",
+  "summary": "A hosted MCP server that exposes Azure Speech capabilities (speech-to-text, text-to-speech and streaming speech I/O) to agents and LLM workflows.",
+  "description": "A hosted MCP server that exposes Azure Speech capabilities (speech-to-text, text-to-speech and streaming speech I/O) to agents and LLM workflows.",
+  "kind": "mcp",
+  "vendor": "Microsoft",
+  "license": {
+    "name": "Azure Service Terms",
+    "url": "https://azure.microsoft.com/support/legal/"
+  },
+  "icon": "https://learn.microsoft.com/en-us/azure/media/index/speech.svg",
+  "externalDocumentation": {
+    "title": "Azure Speech Service docs",
+    "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/overview"
+  },
+  "remote": "https://{foundry-resource-name}.cognitiveservices.azure.com/speech/mcp",
+  "supportContact": "https://azure.microsoft.com/support/",
+  "visibility": "true",
+  "categories": "Machine Learning",
+  "useCases": [
+    {
+      "name": "Speech to text",
+      "description": "Transcribe spoken audio into text for downstream agent processing and summarization."
+    },
+    {
+      "name": "Text to speech",
+      "description": "Synthesize spoken responses from text for agent outputs and voice interfaces."
+    },
+    {
+      "name": "Streaming audio I/O",
+      "description": "Support real-time streaming interactions where agents exchange audio with the MCP server."
+    }
+  ],
+  "securitySchemes": {
+    "speechApiKey": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "API Key",
+      "description": "Key-based authentication for Cognitive Services or use Azure AD credentials; see external documentation."
+    }
+  },
+  "versionName": "original"
+}
