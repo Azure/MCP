@@ -33,12 +33,12 @@
     }
   ],
   "securitySchemes": {
-    "speechApiKey": {
-      "type": "apiKey",
-      "in": "header",
-      "name": "API Key",
-      "description": "Key-based authentication for Cognitive Services or use Azure AD credentials; see external documentation."
-    }
+    "speechBearerAuth": {
+            "type": "http",
+            "description": "Authenticate with GitHub using a Personal Access Token.",
+            "scheme": "bearer",
+            "bearerFormat": "API Key"
+        }
   },
   "versionName": "original"
 }
