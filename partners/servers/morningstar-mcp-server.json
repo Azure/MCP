@@ -1,0 +1,56 @@
+{
+  "name": "morningstar-mcp-server",
+  "title": "Morningstar MCP Server",
+  "summary": "Access Morningstar data, research, and capabilities through specialized MCP tools for global securities",
+  "description": "Access Morningstar data, research, and capabilities through specialized MCP tools for global securities",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "license": {
+    "name": "Morningstar Terms",
+    "url": "https://www.morningstar.com/company/privacy-policy"
+  },
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Morningstar.svg",
+  "externalDocumentation": {
+    "title": "Morningstar MCP docs",
+    "url": "https://developer.morningstar.com/direct-web-services/documentation/morningstar-mcp-server/about"
+  },
+  "remote": "https://mcp.morningstar.com/mcp",
+  "supportContact": "https://www.morningstar.com/views/contact-us",
+  "visibility": "true",
+  "categories": "Finance",
+  "connectorName": "foundrymorningstarmcp",
+  "useCases": [
+    {
+      "name": "Analyst research retrieval",
+      "description": "Fetch Morningstar analyst research summaries and forward-looking insights for a security."
+    },
+    {
+      "name": "Fund and ETF metrics",
+      "description": "Retrieve up-to-date metrics, performance and holdings for funds and ETFs."
+    },
+    {
+      "name": "Screening and lists",
+      "description": "Run screens to generate lists of investments based on filters and criteria."
+    },
+    {
+      "name": "Holdings and portfolio detail",
+      "description": "Query top holdings and portfolio composition for funds and ETFs."
+    }
+  ],
+  "securitySchemes": {
+    "morningstarOauth": {
+      "type": "oauth2",
+      "description": "OAuth 2.0 (authorization code with PKCE) for delegated user authentication. ",
+      "authorizationUrl": "https://login-prod.morningstar.com/authorize",
+      "tokenUrl": "https://login-prod.morningstar.com/oauth2/token",
+      "refreshUrl": "https://login-prod.morningstar.com/oauth2/token",
+      "scopes": [
+        "offline_access"
+      ],
+      "flows": [
+        "authorizationCode"
+      ]
+    }
+  },
+  "versionName": "original"
+}

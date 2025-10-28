@@ -23,19 +23,16 @@
         "url": "https://docs.stripe.com/mcp"
     },
     "securitySchemes": {
-        "stripeOauth": {
-            "type": "oauth2",
-            "description": "Authenticate with Stripe using OAuth2 authorization code flow with PKCE support.",
-            "flows": ["authorizationCode"],
-            "authorizationUrl": "https://connect.stripe.com/oauth/authorize",
-            "tokenUrl": "https://connect.stripe.com/oauth/token",
-            "scopes": ["read_only"]
-        },
         "stripeBearerAuth": {
             "type": "http",
             "description": "Authenticate with Stripe using an API key.",
             "scheme": "bearer",
             "bearerFormat": "API key"
         }
-    }
+    },
+    "license": {
+        "name": "Stripe Services Agreement",
+        "url": "https://stripe.com/legal/ssa"
+    },
+    "supportContact": "mcp@stripe.com"
 }

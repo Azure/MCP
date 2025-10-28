@@ -1,0 +1,44 @@
+{
+  "name": "azure-databricks",
+  "title": "Azure Databricks Genie",
+  "summary": "Azure Databricks Genie MCP lets AI agents connect to Genie spaces so users can ask natural language questions and get specialized answers from their data.",
+  "description": "Azure Databricks Genie MCP server lets AI agents connect to Genie spaces so users can ask natural language questions and get specialized answers from their data easily. ",
+  "vendor": "Microsoft",
+  "kind": "mcp",
+  "remote": "https://{workspace-hostname}/api/2.0/mcp/genie/{genie_space_id}",
+  "icon": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/hero-icon-product-azure-databricks-24x24-328736?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85",
+  "externalDocumentation": {
+    "title": "Azure Databricks Genie MCP docs",
+    "url": "https://learn.microsoft.com/en-us/azure/databricks/generative-ai/mcp/managed-mcp"
+  },
+  "license": {
+    "name": "User License Terms",
+    "url": "https://azure.microsoft.com/en-us/support/legal"
+  },
+  "useCases": [
+    {
+      "name": "Genie Q&A",
+      "description": "The Genie MCP server lets AI agents connect to Genie spaces so users can ask natural language questions and get specialized answers from their data easily. For example, say a user wants to understand the average monthly revenue. They can ask the question of their Genie space, the space will translate the question into SQL and return the response."
+    }
+  ],
+  "categories": "Productivity",
+  "tags": ["knowledge"],
+  "supportContact": "https://azure.microsoft.com/en-us/support",
+  "versionName": "original",
+  "visibility": "true",
+  "securitySchemes": {
+    "databricksOauth": {
+      "type": "oauth2",
+      "description": "Managed Microsoft Entra OAuth (user context) for Azure DatabricksGenie MCP",
+      "authorizationUrl": "http://workspaceurl/oidc/v1/authorize",
+      "tokenUrl": "http://workspaceurl/oidc/v1/token",
+      "scopes": [
+        "2ff814a6-3304-4ab8-85cb-cd0e6f879c1d/user_impersonation",
+        "2ff814a6-3304-4ab8-85cb-cd0e6f879c1d/.default"
+      ],
+      "flows": ["authorizationCode"]
+    }
+  },
+  "authSchemas":[ "OAuth2"],
+  "connectorName": "foundrydatabricksmcp"
+}
