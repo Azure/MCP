@@ -6,6 +6,10 @@
     "kind": "mcp",
     "packages": [],
     "icon": "https://avatars.githubusercontent.com/atlassian?s=64",
+    "license": {
+        "name": "Atlassian Terms of Service",
+        "url": "https://www.atlassian.com/legal/atlassian-customer-agreement#intro"
+    },
     "useCases": [
         {
             "name": "Productivity",
