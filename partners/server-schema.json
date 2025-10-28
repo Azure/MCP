@@ -324,6 +324,10 @@
           "ManagedIdentity"
         ]
       }
+    },
+    "audience": {
+      "type": "string",
+      "description": "Audience for the MCP server. This will be transformed to x-ms-audience."
     }
   },
   "additionalProperties": false
