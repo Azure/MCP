@@ -38,9 +38,9 @@
     }
   ],
   "securitySchemes": {
-    "morningstarOauth2": {
+    "morningstarOauth": {
       "type": "oauth2",
-      "description": "OAuth 2.0 (authorization code with PKCE) for delegated user authentication. The authorization and token endpoints below are placeholders — Morningstar should provide final endpoints and suggested scopes for Foundry-managed OAuth.",
+      "description": "OAuth 2.0 (authorization code with PKCE) for delegated user authentication. ",
       "authorizationUrl": "https://login-prod.morningstar.com/authorize",
       "tokenUrl": "https://login-prod.morningstar.com/oauth2/token",
       "refreshUrl": "https://login-prod.morningstar.com/oauth2/token",
