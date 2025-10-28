@@ -1,8 +1,8 @@
 {
   "name": "morningstar-mcp-server",
   "title": "Morningstar MCP Server",
-  "summary": "Access Morningstar data, research, and capabilities through specialized MCP tools for global securities.",
-  "description": "Access Morningstar data, research, and capabilities through specialized MCP tools for global securities.",
+  "summary": "Access Morningstar data, research, and capabilities through specialized MCP tools for global securities",
+  "description": "Access Morningstar data, research, and capabilities through specialized MCP tools for global securities",
   "kind": "mcp",
   "vendor": "Partner",
   "license": {
