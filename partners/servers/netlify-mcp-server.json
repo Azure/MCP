@@ -36,5 +36,6 @@
             "flows": ["authorizationCode"]
         }
     },
+    "connectorName": "foundrynetlifymcp",
     "supportContact": "support@netlify.com"
 }
