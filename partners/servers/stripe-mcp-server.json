@@ -17,7 +17,7 @@
     "visibility": "true",
     "categories": "Commerce",
     "versionName": "Original",
-    "remote": "https://mcp.stripe.com/",
+    "remote": "https://mcp.stripe.com",
     "externalDocumentation": {
         "title": "Stripe MCP",
         "url": "https://docs.stripe.com/mcp"
@@ -30,6 +30,12 @@
             "authorizationUrl": "https://connect.stripe.com/oauth/authorize",
             "tokenUrl": "https://connect.stripe.com/oauth/token",
             "scopes": ["read_only"]
+        },
+        "stripeBearerAuth": {
+            "type": "http",
+            "description": "Authenticate with Stripe using an API key.",
+            "scheme": "bearer",
+            "bearerFormat": "API key"
         }
     }
 }

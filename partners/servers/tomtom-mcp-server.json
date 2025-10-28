@@ -6,7 +6,7 @@
   "vendor": "Partner",
   "visibility": "true",
   "kind": "mcp",
-  "remote": "http://location.mcp.tomtom.com/",
+  "remote": "https://api.tomtom.com/mcp/maps",
   "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/TomTom.png",
   "externalDocumentation": {
     "title": "TomTom MCP documentation",
@@ -39,11 +39,11 @@
   "supportContact": "https://support.tomtom.com/support",
   "versionName": "original",
   "securitySchemes": {
-        "tomtomKeyAuth": {
-            "type": "http",
-            "description": "Authenticate with TomTom using a Token.",
-            "scheme": "bearer",
-            "bearerFormat": "TOMTOM_API_KEY"
-        }
+      "tomtomSecret": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "tomtom-api-key",
+      "description": "Secret is provided via headers. "
+    }
     }
 }

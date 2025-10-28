@@ -38,12 +38,6 @@
       "description": "API token authentication. Provide the token in a header named 'api_token' as documented by Bria.",
       "in": "header",
       "name": "api_token"
-    },
-    "briaBearerAuth":{
-        "type": "http",
-        "description": "Authenticate with Bria.ai using a token.",
-        "scheme": "bearer",
-        "bearerFormat": "Authorization Token"
     }
   },
   "versionName": "original"
