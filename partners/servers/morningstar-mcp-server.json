@@ -18,7 +18,6 @@
   "supportContact": "https://www.morningstar.com/views/contact-us",
   "visibility": "true",
   "categories": "Finance",
-  "connectorName": "foundrymorningstarmcp",
   "useCases": [
     {
       "name": "Analyst research retrieval",

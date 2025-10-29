@@ -32,7 +32,6 @@
     }
   ],
   "vendor": "Partner",
-  "connectorName": "foundryamplitudemcp",
   "securitySchemes": {
     "amplitudeOauth2": {
       "type": "oauth2",

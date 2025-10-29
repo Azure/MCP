@@ -38,5 +38,10 @@
             "bearerFormat": "NEON_API_KEY"
         }
     },
-    "connectorName": "foundryneonmcp"
+    "connectorName": "foundryneonmcp",
+    "license": {
+        "name": "Neon Terms",
+        "url": "https://github.com/neondatabase/mcp-server-neon?tab=MIT-1-ov-file#readme"
+    },
+    "supportContact": "https://neon.com/docs/introduction/support"
 }
