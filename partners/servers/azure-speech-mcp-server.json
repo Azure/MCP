@@ -26,10 +26,6 @@
     {
       "name": "Text to speech",
       "description": "Synthesize spoken responses from text for agent outputs and voice interfaces."
-    },
-    {
-      "name": "Streaming audio I/O",
-      "description": "Support real-time streaming interactions where agents exchange audio with the MCP server."
     }
   ],
   "securitySchemes": {

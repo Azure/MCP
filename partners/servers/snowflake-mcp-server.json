@@ -9,7 +9,7 @@
     "name": "Terms of User",
     "url": "https://www.snowflake.com/en/legal/terms-of-service/"
   },
-  "icon": "https://drive.google.com/file/d/1El0eoHBorj8D9myjC-pj1F8hqR6dnKf8/view?usp=sharing",
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Snowflake.png",
   "externalDocumentation": {
     "url": "https://www.snowflake.com/en/product/features/cortex/",
     "title": "Snowflake Cortex product documentation"
