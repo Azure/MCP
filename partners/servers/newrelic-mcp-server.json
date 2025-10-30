@@ -1,0 +1,53 @@
+{
+  "name": "newrelic-mcp-server",
+  "title": "New Relic MCP",
+  "summary": "Bring New Relic observability data (metrics, logs, traces, alerts, entities) into agentic workflows.",
+  "description": "Bring New Relic observability data (metrics, logs, traces, alerts, entities) into agentic workflows.",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "license": {
+    "name": "New Relic Terms",
+    "url": "https://newrelic.com/termsandconditions/terms"
+  },
+  "icon": "https://newrelic.com/themes/custom/erno/assets/mediakit/new_relic_logo_horizontal.svg",
+  "externalDocumentation": {
+    "title": "New Relic MCP docs",
+    "url": "https://docs.newrelic.com/docs/agentic-ai/mcp/overview"
+  },
+  "remote": "https://mcp.newrelic.com/mcp/",
+  "supportContact": "https://support.newrelic.com/s/",
+  "visibility": "true",
+  "categories": "Monitoring & Diagnostics",
+  "useCases": [
+    {
+      "name": "NRQL queries & metrics",
+      "description": "Run NRQL queries to fetch metrics, charts, and aggregated telemetry for agent responses."
+    },
+    {
+      "name": "Alert & incident analysis",
+      "description": "List open alerts, retrieve incident details and analyze root-cause signals for remediation."
+    },
+    {
+      "name": "Entity discovery",
+      "description": "Discover and explore applications, services, hosts, and other monitored entities and their relationships."
+    },
+    {
+      "name": "Performance & AI insights",
+      "description": "Surface golden signals, logs and AI-assisted insights for performance and root cause analysis."
+    }
+  ],
+  "securitySchemes": {
+    "newrelicOauth2": {
+      "type": "oauth2",
+      "description": "OAuth 2.1 (authorization code with PKCE) for delegated user authentication. Vendor to provide final auth/token endpoints for managed OAuth.",
+      "authorizationUrl": "https://mcp.newrelic.com/authorize",
+      "tokenUrl": "https://mcp.newrelic.com/token",
+      "refreshUrl": "https://mcp.newrelic.com/token",
+      "scopes": [],
+      "flows": [
+        "authorizationCode"
+      ]
+    }
+  },
+  "versionName": "original"
+}
