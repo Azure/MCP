@@ -1,5 +1,5 @@
 {
-  "name": "sql-mcp-server",
+  "name": "azure-sql-mcp-server",
   "title": "Azure SQL MCP Server",
   "summary": "A secure, self-hosted MCP for interacting with SQL data (Azure SQL, SQL MI, SQL DW, SQL Server).",
   "description": "A secure, self-hosted MCP for interacting with SQL data (Azure SQL, SQL MI, SQL DW, SQL Server).",
