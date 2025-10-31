@@ -29,12 +29,18 @@
     }
   ],
   "securitySchemes": {
-    "speechBearerAuth": {
-            "type": "http",
-            "description": "Authenticate with GitHub using a Personal Access Token.",
-            "scheme": "bearer",
-            "bearerFormat": "API Key"
-        }
+    "speechSecret": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "Authorization",
+      "description": "Secret is provided via headers. "
+    },
+    "speechBlobUrl": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "X-Blob-Container-Url",
+      "description": "provide blob container url"
+    }
   },
   "versionName": "original"
 }
