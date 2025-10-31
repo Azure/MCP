@@ -35,5 +35,6 @@
             "tokenUrl": "https://auth.atlassian.com/oauth/token",
             "scopes":[]
         }
-    }
+    },
+    "supportContact": "https://support.atlassian.com/contact/"
 }
