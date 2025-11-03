@@ -323,7 +323,7 @@
         "name": {
           "type": "string",
           "maxLength": 100,
-          "pattern": "^[a-zA-Z0-9\\s.'-]+$",
+          "pattern": "^[a-zA-Z0-9\\s.,()':/-]+$",
           "description": "Name of the contact person or support team."
         },
         "email": {
@@ -335,7 +335,7 @@
         "url": {
           "type": "string",
           "maxLength": 2048,
-          "pattern": "^[a-zA-Z][a-zA-Z0-9+.-]*://[a-zA-Z0-9.-]+(/[^\\s]*)?$",
+          "pattern": "^https?://[^\\s]+$",
           "description": "URL to support page or documentation."
         }
       },
