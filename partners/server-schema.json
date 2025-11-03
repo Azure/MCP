@@ -313,6 +313,34 @@
       "pattern": "^([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}|[a-zA-Z][a-zA-Z0-9+.-]*://[^\\s]+)$",
       "description": "Contact information for support or questions about the MCP server. Must be either a valid email address or URL."
     },
+    "supportContactInfo": {
+      "type": "object",
+      "description": "Detailed contact information for support or questions about the MCP server.",
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "maxLength": 100,
+          "pattern": "^[a-zA-Z0-9\\s.'-]+$",
+          "description": "Name of the contact person or support team."
+        },
+        "email": {
+          "type": "string",
+          "maxLength": 254,
+          "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+          "description": "Email address for support contact."
+        },
+        "url": {
+          "type": "string",
+          "maxLength": 2048,
+          "pattern": "^[a-zA-Z][a-zA-Z0-9+.-]*://[a-zA-Z0-9.-]+(/[^\\s]*)?$",
+          "description": "URL to support page or documentation."
+        }
+      },
+      "additionalProperties": false
+    },
     "authSchemas": {
       "type": "array",
       "description": "List of authentication schemas supported by the MCP server.",
