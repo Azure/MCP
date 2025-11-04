@@ -23,7 +23,7 @@
   ],
   "categories": "Machine Learning",
   "tags": [],
-  "supportContact": {"url": "https://azure.microsoft.com/support/"},
+  "supportContactInfo": {"url": "https://azure.microsoft.com/support/"},
   "versionName": "original",
   "securitySchemes": {
     "languageApiKey": {

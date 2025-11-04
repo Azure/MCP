@@ -34,7 +34,7 @@
   ],
   "categories": "Databases",
   "tags": ["Knowledge"],
-  "supportContact": {"email": "azurepgai@service.microsoft.com"},
+  "supportContactInfo": {"email": "azurepgai@service.microsoft.com"},
   "versionName": "original",
   "packages":[]
 }

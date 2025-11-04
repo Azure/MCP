@@ -19,5 +19,5 @@
   "vendor": "Partner",
   "visibility": "true",
   "versionName": "Original",
-  "supportContact": {"email": "hello@exa.ai"}
+  "supportContactInfo": {"email": "hello@exa.ai"}
 }

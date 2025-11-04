@@ -32,7 +32,7 @@
         }
     },
     "icon": "https://devblogs.microsoft.com/foundry/wp-content/uploads/sites/89/2025/03/ai-foundry.png",
-    "supportContact": {"url": "https://azure.microsoft.com/en-us/support/"},
+    "supportContactInfo": {"url": "https://azure.microsoft.com/en-us/support/"},
     "authSchemas":[ "OAuth2"],
     "audience": "https://mcp.ai.azure.com/.default"
 }
