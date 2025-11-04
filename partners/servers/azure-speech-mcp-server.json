@@ -23,11 +23,11 @@
   "useCases": [
     {
       "name": "Speech to text",
-      "description": "Transcribe spoken audio into text for downstream agent processing and summarization."
+      "description": "Convert audio speech files into written text"
     },
     {
       "name": "Text to speech",
-      "description": "Synthesize spoken responses from text for agent outputs and voice interfaces."
+      "description": "Convert written text into natural-sounding audio"
     }
   ],
   "securitySchemes": {
