@@ -42,7 +42,7 @@
             "flows": ["authorizationCode"]
         }
     },
-    "supportContactInfoInfo": {
+    "supportContactInfo": {
         "name": "customer support contact",
         "email": "support@pipedream.com"},
     "connectorName": "foundrypipedreammcp"
