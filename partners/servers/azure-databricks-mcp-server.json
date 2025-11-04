@@ -23,7 +23,9 @@
   ],
   "categories": "Productivity",
   "tags": ["knowledge"],
-  "supportContactInfo": {"url": "https://azure.microsoft.com/en-us/support/"},
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://azure.microsoft.com/en-us/support/"},
   "versionName": "original",
   "visibility": "true",
   "securitySchemes": {

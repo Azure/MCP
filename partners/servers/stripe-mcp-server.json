@@ -34,5 +34,7 @@
         "name": "Stripe Services Agreement",
         "url": "https://stripe.com/legal/ssa"
     },
-    "supportContactInfoInfo": {"email": "mcp@stripe.com"}
+    "supportContactInfoInfo": {
+        "name": "customer support contact",
+        "email": "mcp@stripe.com"}
 }

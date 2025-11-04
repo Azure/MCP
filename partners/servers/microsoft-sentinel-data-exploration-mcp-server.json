@@ -35,7 +35,9 @@
   ],
   "categories": "Security",
   "tags": [],
-  "supportContactInfoInfo": {"email": "support@microsoft.com"},
+  "supportContactInfoInfo": {
+    "name": "customer support contact",
+    "email": "support@microsoft.com"},
   "versionName": "original",
   "securitySchemes": {
     "sentinelOAuth": {

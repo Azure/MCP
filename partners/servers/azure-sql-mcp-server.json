@@ -18,7 +18,9 @@
     "url": "https://github.com/Azure/data-api-builder",
     "source": "github"
   },
-  "supportContactInfo": {"email": "sql-mcp-server@service.microsoft.com"},
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "email": "sql-mcp-server@service.microsoft.com"},
   "visibility": "public",
   "categories": "Databases",
   "tags":["knowledge"],

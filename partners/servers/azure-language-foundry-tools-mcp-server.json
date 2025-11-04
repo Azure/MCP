@@ -23,7 +23,9 @@
   ],
   "categories": "Machine Learning",
   "tags": [],
-  "supportContactInfo": {"url": "https://azure.microsoft.com/support/"},
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://azure.microsoft.com/support/"},
   "versionName": "original",
   "securitySchemes": {
     "languageApiKey": {

@@ -31,7 +31,9 @@
   ],
   "categories": "Security",
   "tags": [],
-  "supportContactInfoInfo": {"email": "ace@sophos.com"},
+  "supportContactInfoInfo": {
+    "name": "customer support contact",
+    "email": "ace@sophos.com"},
   "versionName": "original",
   "securitySchemes": {
     "intelixApiKey": {

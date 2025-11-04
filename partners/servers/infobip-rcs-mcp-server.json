@@ -15,7 +15,9 @@
     "title": "Infobip MCP documentation"
   },
   "remote": "https://azure-mcp.infobip.com/rcs",
-  "supportContactInfo": {"email": "devrel@infobip.com"},
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "email": "devrel@infobip.com"},
   "visibility": "true",
   "categories":"Customer Service",
   "useCases": [

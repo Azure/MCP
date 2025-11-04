@@ -79,5 +79,7 @@
             "bearerFormat": "Personal Access Token"
         }
     },
-    "supportContactInfoInfo": {"url": "https://github.com/github/github-mcp-server/blob/main/SUPPORT.md"}
+    "supportContactInfoInfo": {
+        "name": "customer support contact",
+        "url": "https://github.com/github/github-mcp-server/blob/main/SUPPORT.md"}
 }

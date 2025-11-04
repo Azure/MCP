@@ -16,7 +16,9 @@
   },
 
   "remote": "https://{KIBANA_URL}/api/agent_builder/mcp",
-  "supportContactInfo": {"email": "gregory.crist@elastic.co"},
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "email": "gregory.crist@elastic.co"},
   "visibility": "true",
   "categories": "Databases",
   "tags": ["Knowledge"],

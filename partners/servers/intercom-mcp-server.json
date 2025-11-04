@@ -31,7 +31,9 @@
   ],
   "categories": "Customer Service",
   "tags": [],
-  "supportContactInfoInfo": {"email": "team@intercom.io"},
+  "supportContactInfoInfo": {
+    "name": "customer support contact",
+    "email": "team@intercom.io"},
   "versionName": "original",
   "securitySchemes": {
     "intercom": {

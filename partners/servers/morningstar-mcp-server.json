@@ -15,7 +15,9 @@
     "url": "https://developer.morningstar.com/direct-web-services/documentation/morningstar-mcp-server/about"
   },
   "remote": "https://mcp.morningstar.com/mcp",
-  "supportContactInfoInfo": {"url": "https://www.morningstar.com/views/contact-us"},
+  "supportContactInfoInfo": {
+    "name": "customer support contact",
+    "url": "https://www.morningstar.com/views/contact-us"},
   "visibility": "true",
   "categories": "Finance",
   "useCases": [

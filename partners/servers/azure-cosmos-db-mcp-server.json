@@ -41,5 +41,8 @@
   "categories": "Databases",
   "vendor": "Microsoft",
   "visibility": "true",
-  "supportContactInfo": {"email": "CosmosDBMCPToolKit@Microsoft.com"}
+  "supportContactInfo": {
+    "name":"Azure Cosmos DB Support",
+    "email": "CosmosDBMCPToolKit@Microsoft.com"
+  }
 }
