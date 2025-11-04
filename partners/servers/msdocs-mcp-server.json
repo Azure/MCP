@@ -22,7 +22,7 @@
         "title": "Microsoft Learn Docs",
         "url": "https://learn.microsoft.com/en-us/training/support/mcp"
     },
-    "supportContactInfoInfo": {
+    "supportContactInfo": {
         "name": "customer support contact",
         "url": "https://azure.microsoft.com/en-us/support"}
 }

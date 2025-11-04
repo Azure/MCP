@@ -43,7 +43,7 @@
         "name": "Neon Terms",
         "url": "https://github.com/neondatabase/mcp-server-neon?tab=MIT-1-ov-file#readme"
     },
-    "supportContactInfoInfo": {
+    "supportContactInfo": {
         "name": "customer support contact",
         "url": "https://neon.com/docs/introduction/support"}
 }
