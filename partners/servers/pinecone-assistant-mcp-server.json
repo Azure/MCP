@@ -32,7 +32,9 @@
   ],
   "categories": "Developer Tools",
   "tags": ["knowledge"],
-  "supportContact": "https://app.pinecone.io/-/settings/support",
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://app.pinecone.io/-/settings/support"},
   "versionName": "original",
   "securitySchemes": {
         "pineconeBearerAuth": {

@@ -22,7 +22,9 @@
   ],
   "categories": "Databases",
   "tags": ["knowledge"],
-  "supportContact": "https://github.com/redis/mcp-redis/issues",
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://github.com/redis/mcp-redis/issues"},
   "versionName": "original",
   "visibility": "true",
   "packages":[]

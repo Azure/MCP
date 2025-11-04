@@ -44,5 +44,8 @@
     "vendor": "Partner",
     "categories": "Databases",
     "visibility": "true",
-    "versionName": "Original"
+    "versionName": "Original",
+    "supportContactInfo": {
+        "name": "customer support contact",
+        "url": "https://www.mongodb.com/company/contact"}
 }

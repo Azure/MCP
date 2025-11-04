@@ -18,5 +18,8 @@
   "categories": "Web",
   "vendor": "Partner",
   "visibility": "true",
-  "versionName": "Original"
+  "versionName": "Original",
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "email": "hello@exa.ai"}
 }

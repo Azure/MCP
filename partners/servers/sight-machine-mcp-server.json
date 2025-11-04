@@ -15,7 +15,9 @@
     "title": "Factory RCA MCP tools documentation and onboarding"
   },
   "remote": "https://factoryrca.sightmachine.io/",
-  "supportContact": "support+mcp@sightmachine.com",
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "email": "support+mcp@sightmachine.com"},
   "visibility": "true",
   "categories": "Analytics",
   "useCases": [

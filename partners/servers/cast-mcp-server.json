@@ -15,7 +15,9 @@
     "url": "https://doc.castsoftware.com/imagingoncloud/how-to/mcp-server/"
   },
   "remote": "https://castimaging.io/imaging/mcp/",
-  "supportContact": "help@castsoftware.com",
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "email": "help@castsoftware.com"},
   "visibility": "true",
   "categories": "Monitoring & Diagnostics",
   "useCases": [

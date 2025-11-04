@@ -15,7 +15,9 @@
     "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/overview"
   },
   "remote": "https://{foundry-resource-name}.cognitiveservices.azure.com/speech/mcp",
-  "supportContact": "https://azure.microsoft.com/support/",
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://azure.microsoft.com/support/"},
   "visibility": "true",
   "categories": "Machine Learning",
   "useCases": [

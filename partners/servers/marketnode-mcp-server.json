@@ -43,5 +43,7 @@
   },
   "versionName": "original",
   "remote": "https://mcp.marketnode.com/mcp",
-  "supportContact": "https://support.marketnode.com/"
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://support.marketnode.com/"}
 }

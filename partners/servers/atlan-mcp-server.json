@@ -40,7 +40,10 @@
   ],
   "categories": "Developer Tools",
   "tags": [],
-  "supportContact": "support@atlan.com",
+  "supportContactInfo": {
+    "name": "Atlan Support",
+    "email": "support@atlan.com"
+  },
   "versionName": "original",
   "securitySchemes": {
     "atlanBearerAuth":{
