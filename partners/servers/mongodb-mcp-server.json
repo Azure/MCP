@@ -45,5 +45,5 @@
     "categories": "Databases",
     "visibility": "true",
     "versionName": "Original",
-    "supportContact": {"url": "https://www.mongodb.com/company/contact"}
+    "supportContactInfoInfo": {"url": "https://www.mongodb.com/company/contact"}
 }

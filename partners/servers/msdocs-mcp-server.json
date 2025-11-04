@@ -22,5 +22,5 @@
         "title": "Microsoft Learn Docs",
         "url": "https://learn.microsoft.com/en-us/training/support/mcp"
     },
-    "supportContact": {"url": "https://azure.microsoft.com/en-us/support"}
+    "supportContactInfo": {"url": "https://azure.microsoft.com/en-us/support"}
 }

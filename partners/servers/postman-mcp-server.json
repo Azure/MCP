@@ -38,5 +38,5 @@
         "name": "Terms of Use",
         "url": "https://www.postman.com/legal/terms/"
     },
-    "supportContact": {"url": "https://github.com/postmanlabs/postman-mcp-server/issues"}
+    "supportContactInfo": {"url": "https://github.com/postmanlabs/postman-mcp-server/issues"}
 }
