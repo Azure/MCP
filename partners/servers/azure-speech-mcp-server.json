@@ -30,10 +30,10 @@
   ],
   "securitySchemes": {
     "speechSecret": {
-      "type": "apiKey",
-      "in": "header",
-      "name": "Authorization",
-      "description": "Secret is provided via headers. "
+        "type": "http",
+        "description": "Authenticate with bearer token.",
+        "scheme": "bearer",
+        "bearerFormat": "Personal Access Token"
     },
     "speechBlobUrl": {
       "type": "apiKey",
