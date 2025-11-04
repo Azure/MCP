@@ -14,7 +14,7 @@
     "url": "https://amplitude.com/docs/analytics/amplitude-mcp"
   },
   "remote": "https://mcp.amplitude.com/mcp",
-  "supportContactInfoInfo": {
+  "supportContactInfo": {
     "name": "amplitude support",
     "url": "http://support.amplitude.com/"
   },
