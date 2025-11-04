@@ -45,7 +45,7 @@
             "flows": ["authorizationCode"]
         }
     },
-    "supportContactInfoInfo": {
+    "supportContactInfo": {
         "name": "customer support contact",
         "url": "https://vercel.com/help"}
 }

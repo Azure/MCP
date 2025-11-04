@@ -15,7 +15,7 @@
     "url": "https://www.infobip.com/docs/mcp"
   },
   "remote": "https://azure-mcp.infobip.com/sms",
-  "supportContactInfoInfo": {
+  "supportContactInfo": {
     "name": "customer support contact",
     "email": "devrel@infobip.com"},
   "visibility": "true",

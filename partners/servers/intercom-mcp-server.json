@@ -31,7 +31,7 @@
   ],
   "categories": "Customer Service",
   "tags": [],
-  "supportContactInfoInfo": {
+  "supportContactInfo": {
     "name": "customer support contact",
     "email": "team@intercom.io"},
   "versionName": "original",
