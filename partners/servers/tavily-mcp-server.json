@@ -15,7 +15,7 @@
     "url": "https://github.com/tavily-ai/tavily-mcp"
   },
   "remote": "https://mcp.tavily.com/mcp",
-  "supportContact": "support@tavily.com",
+  "supportContact": {"email": "support@tavily.com"},
   "visibility": "true",
   "categories": "Web",
   "useCases": [

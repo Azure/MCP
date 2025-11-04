@@ -36,5 +36,5 @@
             "scopes":[]
         }
     },
-    "supportContact": "https://support.atlassian.com/contact/"
+    "supportContact": {"url": "https://support.atlassian.com/contact/"}
 }

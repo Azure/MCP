@@ -15,7 +15,7 @@
     "url": "https://docs.bria.ai/mcp-authentication"
   },
   "remote": "https://mcp.prod.bria-api.com/mcp",
-  "supportContact": "support@bria.ai",
+  "supportContact": {"email": "support@bria.ai"},
   "visibility": "true",
   "categories": "Developer Tools",
   "useCases": [

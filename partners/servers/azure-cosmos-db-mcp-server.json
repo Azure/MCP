@@ -41,5 +41,5 @@
   "categories": "Databases",
   "vendor": "Microsoft",
   "visibility": "true",
-  "supportContact": "CosmosDBMCPToolKit@Microsoft.com"
+  "supportContact": {"email": "CosmosDBMCPToolKit@Microsoft.com"}
 }

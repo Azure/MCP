@@ -78,5 +78,6 @@
             "scheme": "bearer",
             "bearerFormat": "Personal Access Token"
         }
-    }
+    },
+    "supportContact": {"url": "https://github.com/github/github-mcp-server/blob/main/SUPPORT.md"}
 }

@@ -36,7 +36,7 @@
   ],
   "categories": "Geolocation",
   "tags": [],
-  "supportContact": "https://support.tomtom.com/support",
+  "supportContact": {"url": "https://support.tomtom.com/support"},
   "versionName": "original",
   "securitySchemes": {
       "tomtomSecret": {

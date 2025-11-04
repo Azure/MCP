@@ -34,5 +34,5 @@
             "bearerFormat": "HF_Token"
         }
     },
-    "supportContact": "shaun.smith@huggingface.co"
+    "supportContact": {"email": "shaun.smith@huggingface.co"}
 }

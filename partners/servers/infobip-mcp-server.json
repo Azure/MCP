@@ -15,7 +15,7 @@
     "title": "Infobip MCP and WhatsApp documentation"
   },
   "remote": "https://azure-mcp.infobip.com/whatsapp",
-  "supportContact": "devrel@infobip.com",
+  "supportContact": {"email": "devrel@infobip.com"},
   "visibility": "true",
   "categories":"Customer Service",
   "useCases": [

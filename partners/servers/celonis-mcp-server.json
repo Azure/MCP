@@ -15,7 +15,7 @@
     "url": "https://docs.celonis.com/"
   },
   "remote": "https://{team_and_realm}.celonis.cloud/studio-copilot/api/v1/mcp-servers/mcp/{mcp_server_url}",
-  "supportContact": "servicedesk@celonis.com",
+  "supportContact": {"email": "servicedesk@celonis.com"},
   "visibility": "true",
   "categories": "Analytics",
   "useCases": [

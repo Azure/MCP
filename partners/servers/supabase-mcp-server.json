@@ -58,5 +58,5 @@
           "bearerFormat": "Your authorization token"
       }
   },
-  "supportContact": "support@supabase.com"
+  "supportContact": {"email": "support@supabase.com"}
 }
