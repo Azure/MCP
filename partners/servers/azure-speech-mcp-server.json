@@ -35,7 +35,7 @@
         "type": "http",
         "description": "Authenticate with bearer token.",
         "scheme": "bearer",
-        "bearerFormat": "Personal Access Token"
+        "bearerFormat": "API Key"
     },
     "speechBlobUrl": {
       "type": "apiKey",
