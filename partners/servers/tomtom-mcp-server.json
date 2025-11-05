@@ -1,8 +1,8 @@
 {
-  "name": "tomtom-mcp-server",
-  "title": "TomTom MCP Server",
-  "summary": "The TomTom MCP Server is a managed service that provides AI systems with essential, real-time geolocation capabilities—including search, multi-modal routing, and more.",
-  "description": "The TomTom MCP Server is a managed service that provides AI systems with essential, real-time geolocation capabilities—including search, multi-modal routing, and more.",
+  "name": "tomtom-maps-mcp-server",
+  "title": "TomTom Maps",
+  "summary": "Give your application real-time geospatial context from TomTom —  including maps, routing, search, geocoding and traffic.",
+  "description": "Give your application real-time geospatial context from TomTom —  including maps, routing, search, geocoding and traffic.",
   "vendor": "Partner",
   "visibility": "true",
   "kind": "mcp",
@@ -23,7 +23,7 @@
     },
     {
       "name": "Multi-Modal Routing",
-      "description": "Calculates optimized routes for various transportation methods, including driving, cycling, and walking, enabling complex door-to-door journey planning."
+      "description": " Calculate optimized routes, travel times, travel distances, and reachable ranges – all considering TomTom’s high-quality real-time traffic."
     },
     {
       "name": "Real-Time Traffic Context",
@@ -31,7 +31,7 @@
     },
     {
       "name": "Visual Context (Static Maps)",
-      "description": "Generates visual representations (static map images) of routes or locations for reporting, workflow consumption, or human verification."
+      "description": "Generate maps with overlays: routes, location markers and range polygons."
     }
   ],
   "categories": "Geolocation",
