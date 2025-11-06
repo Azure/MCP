@@ -41,6 +41,5 @@
       "flows": ["authorizationCode"]
     }
   },
-  "authSchemas":[ "OAuth2"],
   "connectorName": "foundrydatabricksmcp"
 }
