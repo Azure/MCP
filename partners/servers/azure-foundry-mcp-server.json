@@ -35,6 +35,6 @@
     "supportContactInfo": {
         "name": "customer support contact",
         "url": "https://azure.microsoft.com/en-us/support/"},
-    "authSchemas":[ "OAuth2"],
+    "authSchemas":["OAuth2"],
     "audience": "https://mcp.ai.azure.com/.default"
 }
