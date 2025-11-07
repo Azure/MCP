@@ -14,7 +14,7 @@
     "title": "Azure Speech Service docs",
     "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/overview"
   },
-  "remote": "https://{foundry-resource-name}.cognitiveservices.azure.com/speech/mcp",
+  "remote": "https://{foundry-resource-name}.cognitiveservices.azure.com/speech/mcp?api-version={api-version}",
   "supportContactInfo": {
     "name": "customer support contact",
     "url": "https://azure.microsoft.com/support/"},
