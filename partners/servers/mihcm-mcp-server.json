@@ -17,7 +17,7 @@
   "visibility": "true",
   "categories": "Human Resources",
   "icon": "https://raw.githubusercontent.com/MiHCM/azure-ai-agent-services/refs/heads/main/logo.svg",
-  "licensing": {
+  "license": {
     "name": "MiHCM MCP Server License Terms",
     "url": "https://mihcmglobal.blob.core.windows.net/public/MiHCM%20MCP%20Server%20License%20Terms.pdf"
   },
