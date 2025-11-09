@@ -11,6 +11,7 @@
   },
   "remote": "https://mcp.mihcm.com/mcp",
   "supportContactInfo": {
+    "name": "support contact",
     "email": "ai-support@mihcm.com"
   },
   "visibility": "true",
