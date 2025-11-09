@@ -10,7 +10,7 @@
     "url": "https://mihcm-mcp.apidocumentation.com/"
   },
   "remote": "https://mcp.mihcm.com/mcp",
-  "supportContact": {
+  "supportContactInfo": {
     "email": "ai-support@mihcm.com"
   },
   "visibility": "true",
