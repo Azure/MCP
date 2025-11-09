@@ -1,0 +1,67 @@
+{
+  "name": "mihcm-mcp-server",
+  "title": "MiHCM MCP Server",
+  "summary": "Provides secure access to employee and leave management data from the MiHCM HR platform through standardized MCP server.",
+  "description": "Provides secure access to employee and leave management data from the MiHCM HR platform through standardized MCP server.",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "externalDocumentation": {
+    "title": "MiHCM MCP Server API Documentation",
+    "url": "https://mihcm-mcp.apidocumentation.com/"
+  },
+  "remote": "https://mcp.mihcm.com/mcp",
+  "supportContact": {
+    "email": "ai-support@mihcm.com"
+  },
+  "visibility": "true",
+  "categories": "Human Resources",
+  "icon": "https://raw.githubusercontent.com/MiHCM/azure-ai-agent-services/refs/heads/main/logo.svg",
+  "licensing": {
+    "name": "MiHCM MCP Server License Terms",
+    "url": "https://mihcmglobal.blob.core.windows.net/public/MiHCM%20MCP%20Server%20License%20Terms.pdf"
+  },
+  "useCases": [
+    {
+      "name": "Employee Leave Management",
+      "description": "Retrieve and manage employee leave details, including leave type, status, and duration for automated leave workflows."
+    },
+    {
+      "name": "Team Leave Calendar",
+      "description": "View and analyze team-wide leave schedules to support planning and workload distribution across departments."
+    },
+    {
+      "name": "Personal Leave Calendar",
+      "description": "Display an individual employee's upcoming and past leave records for personal planning and status tracking."
+    },
+    {
+      "name": "Employee Directory Access",
+      "description": "Fetch employee profiles, job roles, and department details for quick reference and organizational lookups."
+    },
+    {
+      "name": "Job Category Insights",
+      "description": "Access job categories or designations defined within the organization's HR system for reporting and analytics."
+    }
+  ],
+  "securitySchemes": {
+    "mihcmoauth2": {
+      "type": "oauth2",
+      "description": "OAuth 2.1 with PKCE for secure authentication to MiHCM platform. Managed OAuth is available for developer onboarding.",
+      "authorizationUrl": "https://login.mihcm.com/connect/authorize",
+      "tokenUrl": "https://login.mihcm.com/connect/token",
+      "refreshUrl": "https://login.mihcm.com/connect/token",
+      "scopes": [
+        "openid",
+        "profile", 
+        "email",
+        "tenant_code",
+        "employee_code",
+        "webapi",
+        "offline_access"
+      ],
+      "flows": [
+        "authorizationCode"
+      ]
+    }
+  },
+  "versionName": "original"
+}
