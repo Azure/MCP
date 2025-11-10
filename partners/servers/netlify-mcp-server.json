@@ -24,19 +24,16 @@
     "vendor": "Partner",
     "categories": "Web",
     "visibility": "true",
-    "remote": "https://netlify-mcp.netlify.app/mcp",
+    "remote": "https://netlify-mcp.netlify.app/mcp?verbose=true",
     "versionName": "Original",
     "securitySchemes": {
-        "netlifyOauth": {
-            "type": "oauth2",
-            "description": "Authenticate with Netlify using OAuth2 authorization code flow with PKCE support.",
-            "tokenUrl": "https://api.netlify.com/oauth/token",
-            "authorizationUrl": "https://app.netlify.com/authorize",
-            "scopes": ["public"],
-            "flows": ["authorizationCode"]
+        "netlifyBearer": {
+            "type": "http",
+            "description": "Authenticate with Netlify using a Personal Access Token.",
+            "scheme": "bearer",
+            "bearerFormat": "Personal Access Token"
         }
     },
-    "connectorName": "foundrynetlifymcp",
     "supportContactInfo": {
         "name": "customer support contact",
         "email": "support@netlify.com"}
