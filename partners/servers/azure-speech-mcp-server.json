@@ -12,9 +12,9 @@
   "icon": "https://learn.microsoft.com/en-us/azure/media/index/speech.svg",
   "externalDocumentation": {
     "title": "Azure Speech Service docs",
-    "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/overview"
+    "url": "https://learn.microsoft.com/azure/ai-foundry/agents/how-to/tools/azure-ai-speech?view=foundry"
   },
-  "remote": "https://{foundry-resource-name}.cognitiveservices.azure.com/speech/mcp",
+  "remote": "https://{foundry-resource-name}.cognitiveservices.azure.com/speech/mcp?api-version=2025-11-07-preview",
   "supportContactInfo": {
     "name": "customer support contact",
     "url": "https://azure.microsoft.com/support/"},
@@ -41,7 +41,7 @@
       "type": "apiKey",
       "in": "header",
       "name": "X-Blob-Container-Url",
-      "description": "provide blob container url"
+      "description": "provide blob container SAS URL"
     }
   },
   "versionName": "original"
