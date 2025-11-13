@@ -51,6 +51,12 @@
       "flows": [
         "authorizationCode"
       ]
+    },
+    "morningstarBearerToken": {
+      "type": "http",
+      "description": "Authenticate with Morningstar using a Bearer Token.",
+      "scheme": "bearer",
+      "bearerFormat": "Bearer Token"
     }
   },
   "versionName": "original"

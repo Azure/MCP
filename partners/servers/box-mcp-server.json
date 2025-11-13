@@ -1,0 +1,47 @@
+{
+  "name": "box-mcp-server",
+  "title": "Box MCP Server",
+  "summary": "Access and manage your Box content with AI-powered tools for file operations, collaboration, and metadata extraction.",
+  "description": "Access and manage your Box content with AI-powered tools for file operations, collaboration, and metadata extraction.",
+  "kind": "mcp",
+  "license": {
+    "name": "Box Terms of Service",
+    "url": "https://www.box.com/legal/termsofservice/"
+  },
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Box.svg",
+  "externalDocumentation": {
+    "title": "Box MCP Server Documentation",
+    "url": "https://developer.box.com/guides/mcp/"
+  },
+  "remote": "https://mcp.box.com",
+  "supportContactInfo": {
+    "name": "Box Developer Support",
+    "url": "https://developer.box.com/support/"
+  },
+  "visibility": "true",
+  "categories": "Storage",
+  "useCases": [
+    {
+      "name": "Content Management",
+      "description": "Perform file and folder operations including upload, download, create, delete, move, and organize content."
+    },
+    {
+      "name": "AI Tools",
+      "description": "Leverage AI-powered Q&A capabilities and automated metadata extraction for enhanced content insights."
+    },
+    {
+      "name": "Collaboration",
+      "description": "Enable team collaboration features including sharing, commenting, and workflow management."
+    }
+  ],
+  "vendor": "Partner",
+  "securitySchemes": {
+    "boxKey": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "authorization_token",
+      "description": "bearer_token"
+    }
+  },
+  "versionName": "original"
+}
