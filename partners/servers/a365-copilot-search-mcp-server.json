@@ -10,7 +10,10 @@
     "url": "https://aka.ms/AboutAgent365"
   },
   "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_M365Copilot",
-  "supportContactInfo": "https://aka.ms/a365mcpsupport",
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://aka.ms/a365mcpsupport"
+  },
   "visibility": "false",
   "categories": "Productivity",
   "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Microsoft365UserProfile.png",
