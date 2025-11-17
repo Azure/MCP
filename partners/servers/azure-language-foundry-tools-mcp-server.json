@@ -1,12 +1,12 @@
 {
   "name": "azure-language-foundry-tools",
   "title": "Azure Language in Foundry Tools",
-  "summary": "The MCP server enables AI agents to access Azure Language Foundry Tools for accurate, explainable and compliant NLP capabilities",
-  "description": "The MCP server enables AI agents to access Azure Language Foundry Tools for accurate, explainable and compliant NLP capabilities",
+  "summary": "The MCP server enables AI agents to access Azure Language in Foundry Tools for accurate, explainable and compliant NLP capabilities",
+  "description": "The MCP server enables AI agents to access Azure Language in Foundry Tools for accurate, explainable and compliant NLP capabilities",
   "vendor": "Microsoft",
   "kind": "mcp",
   "remote": "https://{foundry-resource-name}.cognitiveservices.azure.com/language/mcp?api-version=2025-11-15-preview",
-  "icon": "https://devblogs.microsoft.com/foundry/wp-content/uploads/sites/89/2025/03/ai-foundry.png",
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/FoundryTools.svg",
   "externalDocumentation": {
     "url": "https://learn.microsoft.com/azure/ai-services/language-service/overview",
     "title": "Azure Language Foundry Tools documentation"
@@ -32,7 +32,7 @@
       "type": "apiKey",
       "in": "header",
       "name": "Ocp-Apim-Subscription-Key",
-      "description": "Key-based authentication for Cognitive Services or use Azure AD credentials; see external documentation."
+      "description": "Key-based authentication for Cognitive Services or use Microsoft Entra credentials; see external documentation."
     },
     "azureLanguageOauth": {
         "type": "oauth2",

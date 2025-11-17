@@ -6,7 +6,7 @@
   "vendor": "Partner",
   "visibility": "true",
   "kind": "mcp",
-  "remote": "https://api.tomtom.com/mcp/maps",
+  "remote": "https://mcp.tomtom.com/maps",
   "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/TomTom.png",
   "externalDocumentation": {
     "title": "TomTom MCP documentation",
