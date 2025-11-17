@@ -9,7 +9,7 @@
   "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/FoundryTools.svg",
   "externalDocumentation": {
     "url": "https://learn.microsoft.com/azure/ai-services/language-service/overview",
-    "title": "Azure Language Foundry Tools documentation"
+    "title": "Azure Language in Foundry Tools documentation"
   },
   "license": {
     "name": "Terms of Use",
@@ -17,7 +17,7 @@
   },
   "useCases": [
     {
-      "name": "Azure Language Foundry capabilities",
+      "name": "Azure Language in Foundry capabilities",
       "description": "The MCP server enables AI agents to seamlessly access the capabilities of Azure Language in Foundry Tools through standardized MCP endpoints to achieve more accurate, explainable and compliant outcomes with PII redaction, language detection, custom question answering and more."
     }
   ],
