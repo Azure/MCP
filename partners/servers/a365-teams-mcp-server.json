@@ -1,0 +1,53 @@
+{
+  "name": "microsoft-teams-mcp-frontier",
+  "title": "Microsoft Teams (Frontier)",
+  "summary": "Enables core Microsoft Teams actions, including chat, channel, and team management, and message creation/retrieval.",
+  "description": "Enables core Microsoft Teams actions, including chat, channel, and team management, and message creation/retrieval.",
+  "kind": "mcp",
+  "vendor": "Microsoft",
+  "externalDocumentation": {
+    "title": "Agent 365 MCP Servers",
+    "url": "https://aka.ms/AboutAgent365"
+  },
+  "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_TeamsServer",
+  "supportContactInfo": "https://aka.ms/a365mcpsupport",
+  "visibility": "false",
+  "categories": "Productivity",
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/MicrosoftTeamsMcp.png",
+  "useCases": [
+    {
+      "name": "Chat Operations",
+      "description": "Create one-on-one or group chats, send and edit messages, and manage chat members."
+    },
+    {
+      "name": "Channel Management",
+      "description": "Create and update channels, post or reply to channel messages, and manage membership and permissions."
+    },
+    {
+      "name": "Team Overview",
+      "description": "Retrieve details for a team, list teams for a user, and obtain team metadata."
+    },
+    {
+      "name": "Message Access",
+      "description": "Search, list, and retrieve message content and metadata across chats and channels."
+    },
+    {
+      "name": "Workspace Organization",
+      "description": "Maintain team and channel structures for better collaboration and communication flow."
+    }
+  ],
+  "securitySchemes": {
+    "a365teamsoauth2": {
+      "type": "oauth2",
+      "description": "Authenticate with A365 using OAuth2 authorization code flow with PKCE support.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://login.microsoftonline.com",
+      "tokenUrl": "https://login.microsoftonline.com",
+      "refreshUrl": "https://login.microsoftonline.com",
+      "scopes": ["ea9ffc3e-8a23-4a7d-836d-234d7c7565c1"]
+    }
+  },
+  "authSchemas":["OAuth2"],
+  "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
+  "versionName": "original"
+}

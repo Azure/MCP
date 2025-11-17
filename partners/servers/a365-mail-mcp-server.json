@@ -1,0 +1,53 @@
+{
+  "name": "microsoft-outlook-mail-mcp-frontier",
+  "title": "Microsoft Outlook Mail (Frontier)",
+  "summary": "Enables core Outlook email actions (create, send, reply, search) for agentic workflows.",
+  "description": "Enables core Outlook email actions (create, send, reply, search) for agentic workflows.",
+  "kind": "mcp",
+  "vendor": "Microsoft",
+  "externalDocumentation": {
+    "title": "Agent 365 MCP Servers",
+    "url": "https://aka.ms/AboutAgent365"
+  },
+  "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_MailTools",
+  "supportContactInfo": "https://aka.ms/a365mcpsupport",
+  "visibility": "false",
+  "categories": "Productivity",
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/MicrosoftOutlookMailMCPServer.png",
+  "useCases": [
+    {
+      "name": "Create and send messages",
+      "description": "Create new email messages and send them programmatically on behalf of the authenticated user or service account."
+    },
+    {
+      "name": "Draft management",
+      "description": "Create or edit draft messages prior to sending to support multi-step workflows."
+    },
+    {
+      "name": "Reply and reply-all",
+      "description": "Reply to existing conversations (reply/reply-all) and maintain conversation threading."
+    },
+    {
+      "name": "Search and retrieve messages",
+      "description": "Search messages by queries, folders, or metadata and retrieve message content and metadata."
+    },
+    {
+      "name": "Delete messages",
+      "description": "Delete messages and clean up mailboxes programmatically when authorized."
+    }
+  ],
+  "securitySchemes": {
+    "a365mailoauth2": {
+      "type": "oauth2",
+      "description": "Authenticate with A365 using OAuth2 authorization code flow with PKCE support.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://login.microsoftonline.com",
+      "tokenUrl": "https://login.microsoftonline.com",
+      "refreshUrl": "https://login.microsoftonline.com",
+      "scopes": ["ea9ffc3e-8a23-4a7d-836d-234d7c7565c1"]
+    }
+  },
+  "authSchemas":["OAuth2"],
+  "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
+  "versionName": "original"
+}

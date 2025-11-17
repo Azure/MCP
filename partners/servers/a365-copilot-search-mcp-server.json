@@ -1,0 +1,57 @@
+{
+  "name": "microsoft-copilot-chat-frontier",
+  "title": "Microsoft 365 Copilot (Search) (Frontier)",
+  "summary": "Enables core Microsoft Copilot chat actions, including starting conversations and sending messages with contextual grounding.",
+  "description": "Enables core Microsoft Copilot chat actions, including starting conversations and sending messages with contextual grounding.",
+  "kind": "mcp",
+  "vendor": "Microsoft",
+  "externalDocumentation": {
+    "title": "Agent 365 MCP Servers",
+    "url": "https://aka.ms/AboutAgent365"
+  },
+  "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_M365Copilot",
+  "supportContactInfo": "https://aka.ms/a365mcpsupport",
+  "visibility": "false",
+  "categories": "Productivity",
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Microsoft365UserProfile.png",
+  "useCases": [
+  {
+    "name": "Start a Copilot conversation",
+    "description": "Initialize a new Copilot chat session for a user or agent-driven workflow, returning a conversation identifier and initial system state."
+  },
+  {
+    "name": "Send chat message",
+    "description": "Send a user or agent message into an active Copilot conversation and receive Copilot's reply, supporting rich text and attachments where applicable."
+  },
+  {
+    "name": "Continue multi-turn conversation",
+    "description": "Continue an existing conversation using the conversation identifier, preserving context and dialogue history to enable coherent multi-turn interactions."
+  },
+  {
+    "name": "Provide contextual resources",
+    "description": "Attach files, documents, or structured context (links, knowledge snippets) to a conversation so Copilot can ground its responses in the provided resources."
+  },
+  {
+    "name": "Include user & time context",
+    "description": "Supply user-specific metadata (profile, locale, time zone) and session context to ensure responses respect local time, personalization, and regional formatting."
+  },
+  {
+    "name": "Conversation summarization & retrieval",
+    "description": "Request concise summaries or extractable action items from a conversation, and retrieve past conversation transcripts for auditing or follow‑up tasks."
+  }
+],
+  "securitySchemes": {
+    "a365copilotsearchoauth2": {
+      "type": "oauth2",
+      "description": "Authenticate with A365 using OAuth2 authorization code flow with PKCE support.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://login.microsoftonline.com",
+      "tokenUrl": "https://login.microsoftonline.com",
+      "refreshUrl": "https://login.microsoftonline.com",
+      "scopes": ["ea9ffc3e-8a23-4a7d-836d-234d7c7565c1"]
+    }
+  },
+  "authSchemas":["OAuth2"],
+  "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
+  "versionName": "original"
+}
