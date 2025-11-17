@@ -1,8 +1,8 @@
 {
   "name": "ms-sentinel-data-explorer",
   "title": "Microsoft Sentinel Data Exploration",
-  "summary": "The data exploration tool collection in the Microsoft Sentinel Model Context Protocol (MCP) server lets you search for relevant tables and retrieve data from Microsoft Sentinel's data lake using natural language.",
-  "description": "The data exploration tool collection in the Microsoft Sentinel Model Context Protocol (MCP) server lets you search for relevant tables and retrieve data from Microsoft Sentinel's data lake using natural language. Learn more: https://aka.ms/mcp/data-exploration",
+  "summary": "The data exploration tool collection in the Microsoft Sentinel MCP server lets you search for relevant tables and retrieve data from Microsoft Sentinel's data lake using natural language.",
+  "description": "The data exploration tool collection in the Microsoft Sentinel MCP server lets you search for relevant tables and retrieve data from Microsoft Sentinel's data lake using natural language. Learn more: https://aka.ms/mcp/data-exploration",
   "vendor": "Microsoft",
   "kind": "mcp",
   "remote": "https://sentinel.microsoft.com/mcp/data-exploration",
