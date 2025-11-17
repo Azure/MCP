@@ -1,0 +1,56 @@
+{
+  "name": "microsoft-dataverse-mcp-frontier",
+  "title": "Microsoft Dataverse (Frontier)",
+  "summary": "Enables Dataverse data and schema operations (query, table & record management, API invocation).",
+  "description": "Enables Dataverse data and schema operations (query, table & record management, API invocation).",
+  "kind": "mcp",
+  "vendor": "Microsoft",
+  "externalDocumentation": {
+    "title": "Agent 365 MCP Servers",
+    "url": "https://aka.ms/AboutAgent365"
+  },
+  "remote": "https://agent365.svc.cloud.microsoft/agents/servers/Dataverse/{DataverseMCPServerId}",
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://aka.ms/a365mcpsupport"
+  },
+  "visibility": "false",
+  "categories": "Productivity",
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/MicrosoftDataverseMCPServer.png",
+  "useCases": [
+    {
+      "name": "List tables & inspect schemas",
+      "description": "List Dataverse tables and inspect fields/schema to drive downstream queries and UI selection."
+    },
+    {
+      "name": "Query data",
+      "description": "Run SELECT-style queries to retrieve rows and perform filtering, sorting, and paging for agent workflows."
+    },
+    {
+      "name": "Invoke Dataverse APIs",
+      "description": "Enumerate available Dataverse APIs and invoke a named API with provided inputs."
+    },
+    {
+      "name": "Table and record management",
+      "description": "Create, update, and delete tables and records as part of automation or data ingestion flows."
+    },
+    {
+      "name": "List prompts & knowledge sources",
+      "description": "List available prompts and knowledge sources in the environment for guided agent interactions or retrieval augmentation."
+    }
+  ],
+  "securitySchemes": {
+      "a365dataverseoauth2": {
+      "type": "oauth2",
+      "description": "Authenticate with A365 using OAuth2 authorization code flow with PKCE support.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://login.microsoftonline.com",
+      "tokenUrl": "https://login.microsoftonline.com",
+      "refreshUrl": "https://login.microsoftonline.com",
+      "scopes": ["ea9ffc3e-8a23-4a7d-836d-234d7c7565c1"]
+    }
+  },
+  "authSchemas":["OAuth2"],
+  "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
+  "versionName": "original"
+}
