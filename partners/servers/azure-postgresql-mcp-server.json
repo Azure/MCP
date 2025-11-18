@@ -9,6 +9,7 @@
     "title": "Azure PostgreSQL MCP setup",
     "url": "https://aka.ms/pg-mcp-setup"
   },
+  "vendor": "Microsoft",
   "visibility": "true",
   "license": {
     "name": "MIT",

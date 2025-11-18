@@ -9,7 +9,7 @@
     "name": "Azure Service Terms",
     "url": "https://azure.microsoft.com/support/legal/"
   },
-  "icon": "https://learn.microsoft.com/en-us/azure/media/index/speech.svg",
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/FoundryTools.svg",
   "externalDocumentation": {
     "title": "Azure Speech Service docs",
     "url": "https://learn.microsoft.com/azure/ai-foundry/agents/how-to/tools/azure-ai-speech?view=foundry"
