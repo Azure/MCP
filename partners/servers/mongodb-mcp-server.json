@@ -12,6 +12,10 @@
         "url": "https://github.com/mongodb-js/mongodb-mcp-server",
         "source": "github"
     },
+    "license": {
+        "name": "MongoDB terms of service",
+        "url": "https://github.com/mongodb-js/mongodb-mcp-server/blob/main/LICENSE"
+    },
     "packages": [
         {
             "registry_name": "npm",
