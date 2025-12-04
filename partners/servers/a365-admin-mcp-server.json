@@ -14,6 +14,10 @@
     "name": "customer support contact",
     "url": "https://aka.ms/a365mcpsupport"
   },
+  "license": {
+        "name": "Agent 365",
+        "url": "https://aka.ms/AboutAgent365"
+  },
   "visibility": "false",
   "categories": "IT & Management Tools",
   "icon": "",
@@ -61,4 +65,5 @@
   "authSchemas":["OAuth2"],
   "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
   "versionName": "original"
+
 }
