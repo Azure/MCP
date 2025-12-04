@@ -18,7 +18,7 @@
         "name": "Agent 365",
         "url": "https://aka.ms/AboutAgent365"
   },
-  "visibility": "false",
+  "visibility": "true",
   "categories": "IT & Management Tools",
   "icon": "",
   "useCases": [
@@ -67,3 +67,4 @@
   "versionName": "original"
 
 }
+
