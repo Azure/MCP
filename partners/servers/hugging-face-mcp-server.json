@@ -20,6 +20,10 @@
             "description": "Search for code, issues, pull requests, and users with advanced filtering options."
         }
     ],
+    "externalDocumentation": {
+        "title": "Hugging Face MCP Server",
+        "url": "https://huggingface.co/docs/hub/hf-mcp-server"
+    },
     "tags": [],
     "vendor": "Partner",
     "categories": "Machine Learning",
