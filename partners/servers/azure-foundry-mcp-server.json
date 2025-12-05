@@ -15,6 +15,10 @@
         "title": "Foundry MCP Server",
         "url": "https://aka.ms/foundry-mcp-server-docs"
     },
+    "license": {
+        "name": "Foundry MCP Server",
+        "url": "https://aka.ms/foundry-mcp-server-docs"
+    },
     "tags": [],
     "vendor": "Microsoft",
     "categories": "Developer Tools",
