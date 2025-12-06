@@ -8,7 +8,7 @@
         "name": "Microsoft APIs Terms of Use",
         "url": "https://learn.microsoft.com/legal/microsoft-apis/terms-of-use"
     },
-    "icon": " https://microsoft.sharepoint-df.com/:u:/t/IdentityCopilotCoalition/IQDjCIm0--qSSalPnGpK0J4lAVNV9DaffZKiRzDSrA3_tEs?e=te1lik",
+    "icon": " https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/MicrosoftMcpServerForEnterprise.svg",
     "externalDocumentation": {
         "title": "Microsoft MCP Server for Enterprise",
         "url": "https://github.com/mcp/microsoft/EnterpriseMCP"
