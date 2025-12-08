@@ -14,7 +14,6 @@
         "url": "https://github.com/mcp/microsoft/EnterpriseMCP"
     },
     "remote": "https://mcp.svc.cloud.microsoft/enterprise",
-    "remoteType": "streamable-http",
     "useCases": [
         {
             "name": "Security posture",
