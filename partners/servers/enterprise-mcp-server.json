@@ -52,9 +52,9 @@
         "enterpriseMcpOauth": {
             "type": "oauth2",
             "description": "Authenticate with Microsoft Mcp Server for Enterprise using OAuth2 authorization code flow",
-            "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
-            "tokenUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
-            "refreshUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+            "authorizationUrl": "https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize",
+            "tokenUrl": "https://login.microsoftonline.com/organizations/oauth2/v2.0/token",
+            "refreshUrl": "https://login.microsoftonline.com/organizations/oauth2/v2.0/token",
             "scopes": ["api://e8c77dc2-69b3-43f4-bc51-3213c9d915b4/.default"],
             "flows": ["authorizationCode"]                
         }
