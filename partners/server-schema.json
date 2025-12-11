@@ -155,7 +155,7 @@
     "categories": {
       "type": "string",
       "maxLength": 200,
-      "description": "Functional categories or domains that the MCP server belongs to (e.g., 'database', 'api', 'analytics')."
+      "description": "Functional categories or domains that the MCP server belongs to. Supported values: Analytics, Collaboration, Commerce, Compliance & Legal, Compute, Containers, Customer Service, Databases, Developer Tools, DevOps, Finance, Geolocation, Human Resources, Identity, Integration, Internet of Things, IT & Management Tools, Machine Learning, Media, Migration, Mixed Reality, Monitoring & Diagnostics, Networking, Operations & Supply Chain, Productivity, Project Management, Sales, Security, Storage, Web"
     },
     "connectorName": {
       "type": "string",
