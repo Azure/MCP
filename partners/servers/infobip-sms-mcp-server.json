@@ -38,8 +38,21 @@
       "description": "Query delivery and reporting information for sent messages to track status and errors."
     }
   ],
+  "connectorName": "foundryinfobipsmsmcp",
   "securitySchemes": {
-    "infobipSMSOAuth": {
+      "infobipSmsOauth": {
+          "type": "oauth2",
+          "description": "Authenticate with infobip using OAuth2 authorization code flow with PKCE support.",
+          "authorizationUrl": "https://auth.infobip.com/realms/infobip/protocol/openid-connect/auth",
+          "tokenUrl": "https://auth.infobip.com/realms/infobip/protocol/openid-connect/token",
+          "refreshUrl": "https://auth.infobip.com/realms/infobip/protocol/openid-connect/token",
+          "scopes": [
+              "profile",
+              "sms:manage"
+          ],
+          "flows": ["authorizationCode"]                
+      },
+    "infobipKey": {
       "type": "apiKey",
       "in": "header",
       "name": "Authorization",
