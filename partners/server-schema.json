@@ -5,7 +5,16 @@
     "name",
     "title",
     "summary",
-    "description"
+    "description",
+    "kind",
+    "license",
+    "icon",
+    "externalDocumentation",
+    "useCases",
+    "vendor",
+    "categories",
+    "versionName",
+    "supportContactInfo"
   ],
   "properties": {
     "name": {

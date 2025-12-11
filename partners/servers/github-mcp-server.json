@@ -2,7 +2,7 @@
     "name": "github-mcp-server",
     "title": "GitHub",
     "summary": "Access GitHub repositories, issues, and pull requests through secure API integration.",
-    "description": "Access GitHub repositories, issues, and pull requests through secure API integration.",
+    "description": "Access GitHub repositories, issues, and pull requests through secure API integration. If you need the GitHub MCP server to access your private repo, make sure you have installed the GitHub app: https://github.com/apps/microsoft-foundry-agent-service",
     "kind": "mcp",
     "license": {
         "name": "MIT",

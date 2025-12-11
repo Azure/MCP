@@ -14,7 +14,11 @@
     "name": "customer support contact",
     "url": "https://aka.ms/a365mcpsupport"
   },
-  "visibility": "false",
+  "license": {
+        "name": "Agent 365",
+        "url": "https://aka.ms/AboutAgent365"
+  },
+  "visibility": "true",
   "categories": "Productivity",
   "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/MicrosoftSharepointLists.png",
   "useCases": [
@@ -53,4 +57,5 @@
   "authSchemas":["OAuth2"],
   "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
   "versionName": "original"
+
 }
