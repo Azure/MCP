@@ -52,7 +52,7 @@
           ],
           "flows": ["authorizationCode"]                
       },
-    "infobipKey": {
+    "infobipSmsKey": {
       "type": "apiKey",
       "in": "header",
       "name": "Authorization",
