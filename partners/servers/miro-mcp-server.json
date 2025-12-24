@@ -1,0 +1,70 @@
+{
+    "name": "miro-mcp-server",
+    "title": "Miro MCP Server",
+    "summary": "Connect AI assistants to Miro boards for reading visual context and generating diagrams.",
+    "description": "The official Miro Model Context Protocol (MCP) server. It bridges AI assistants directly with Miro boards, enabling them to read visual context (wireframes, diagrams, sticky notes), generate code from board content, and visualize complex logic by creating diagrams on the fly.",
+    "kind": "mcp",
+    "license": {
+        "name": "Miro MCP Server Beta Acknowledgement",
+        "url": "https://help.miro.com/hc/en-us/articles/31621611644306-Miro-MCP-Server-Beta-Acknowledgement"
+    },
+    "icon": "https://asset.brandfetch.io/idAnDTFapY/idYC5f2L1X.png",
+    "externalDocumentation": {
+        "title": "Miro MCP Documentation",
+        "url": "https://developers.miro.com/docs/mcp-intro"
+    },
+    "repository": {
+        "url": "https://github.com/miroapp/miro-ai",
+        "source": "github"
+    },
+    "remote": "https://mcp.miro.com",
+    "remoteType": "streamable-http",
+    "versionName": "Original",
+    "useCases": [
+        {
+            "name": "Generate Diagrams from Code",
+            "description": "Create system architecture diagrams, flowcharts, and sequence diagrams directly on Miro boards from code repositories or text descriptions."
+        },
+        {
+            "name": "Generate Code from Board Content",
+            "description": "Convert PRDs, wireframes, diagrams, and prototypes on Miro boards into working code implementations."
+        },
+        {
+            "name": "Read and Summarize Board Context",
+            "description": "Retrieve and analyze content from sticky notes, text, shapes, and images to understand project requirements or architecture."
+        },
+        {
+            "name": "Visual Documentation",
+            "description": "Explain complex code logic or system architecture by generating visual diagrams directly onto Miro boards."
+        }
+    ],
+    "tags": [
+        "productivity",
+        "design",
+        "visualization",
+        "collaboration",
+        "diagramming"
+    ],
+    "categories": "Collaboration",
+    "vendor": "Partner",
+    "visibility": "true",
+    "packages": [],
+    "securitySchemes": {
+        "miroOauth": {
+            "type": "oauth2",
+            "description": "Authenticate with Miro using OAuth2 authorization code flow.",
+            "authorizationUrl": "https://miro.com/oauth/authorize",
+            "tokenUrl": "https://api.miro.com/v1/oauth/token",
+            "scopes": [
+                "boards:read",
+                "boards:write"
+            ],
+            "flows": ["authorizationCode"]
+        }
+    },
+    "supportContactInfo": {
+        "name": "Miro Developer Support",
+        "email": "devrel@miro.com"
+    }
+}
+
