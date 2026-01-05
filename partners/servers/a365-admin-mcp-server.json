@@ -62,9 +62,10 @@
       "scopes": ["ea9ffc3e-8a23-4a7d-836d-234d7c7565c1"]
     }
   },
-  "authSchemas":["OAuth2"],
+  "authSchemas":["OAuth2", "UserImpersonation"],
   "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
   "versionName": "original"
 
 }
+
 
