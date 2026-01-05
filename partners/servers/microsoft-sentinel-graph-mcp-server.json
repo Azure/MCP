@@ -1,8 +1,8 @@
 {
   "name": "ms-sentinel-graph",
   "title": "Microsoft Sentinel Graph",
-  "summary": "The graph MCP tool enables natural-language graph analysis across Microsoft Sentinel graphs, allowing users to explore relationships, traverse entities, and extract actionable security insights from first-party and custom graph data.",
-  "description": "The graph MCP tool enables natural-language graph analysis across Microsoft Sentinel graphs, allowing users to explore relationships, traverse entities, and extract actionable security insights from first-party and custom graph data. Learn more: https://aka.ms/mcp/data-exploration",
+  "summary": "The Graph MCP tool enables natural-language analysis of Microsoft Sentinel graphs to explore relationships and uncover security insights.",
+  "description": "The Graph MCP tool enables natural-language analysis of Microsoft Sentinel graphs to explore relationships and uncover security insights. Learn more: https://aka.ms/mcp/data-exploration",
   "vendor": "Microsoft",
   "kind": "mcp",
   "remote": "https://sentinel.microsoft.com/mcp/graph",
