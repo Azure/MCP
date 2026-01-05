@@ -32,7 +32,7 @@
     "email": "support@microsoft.com"},
   "versionName": "original",
   "securitySchemes": {
-    "sentinelOAuth": {
+    "sentinelGraphOAuth": {
       "type": "oauth2",
       "description": "Authenticate with Microsoft Sentinel using OAuth2 authorization code flow with PKCE support.",
       "flows": ["authorizationCode"],
