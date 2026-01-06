@@ -49,7 +49,6 @@
     "visibility": "true",
     "categories": "Security",
     "versionName": "Original",
-    "version": "1.0.0",
     "remote": "https://{instance}.brightsec.com/mcp",
     "remoteType": "streamable-http",
     "externalDocumentation": {
