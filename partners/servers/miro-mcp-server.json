@@ -13,16 +13,7 @@
         "title": "Miro MCP Documentation",
         "url": "https://developers.miro.com/docs/mcp-intro"
     },
-    "repository": {
-        "url": "https://github.com/miroapp/miro-ai",
-        "source": "github"
-    },
-    "remotes": [
-        {
-            "type": "streamable-http",
-            "url": "https://mcp.miro.com"
-        }
-    ],
+    "remote": "https://mcp.miro.com",
     "versionName": "Original",
     "useCases": [
         {
