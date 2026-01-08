@@ -23,6 +23,10 @@
     {
       "name": "Compromised Entity Blast Radius Analysis",
       "description": "Build security agents that assess the potential impact of a compromised user, managed identity, or virtual machine by traversing connected permissions, identities, and resources to determine how far an attacker could move and which assets could be affected."
+    },
+    {
+      "name": "Exposure Perimeter Mapping",
+      "description": "Build security agents that identify the exposure perimeter of a resource, identity, or service by finding all incoming access paths from external or less-trusted entities, highlighting how attackers could reach the target and where defensive controls can be applied."
     }
   ],
   "categories": "Security",
