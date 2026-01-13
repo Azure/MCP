@@ -1,0 +1,51 @@
+{
+  "name": "ms-sentinel-graph",
+  "title": "Microsoft Sentinel Graph",
+  "summary": "The Graph MCP tool enables natural-language analysis of Microsoft Sentinel graphs to explore relationships and uncover security insights.",
+  "description": "The Graph MCP tool enables natural-language analysis of Microsoft Sentinel graphs to explore relationships and uncover security insights. Learn more: https://aka.ms/mcp/sentinel-graph",
+  "vendor": "Microsoft",
+  "kind": "mcp",
+  "remote": "https://sentinel.microsoft.com/mcp/graph",
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Sentinel.svg",
+  "externalDocumentation": {
+    "title": "Microsoft Sentinel Graph documentation",
+    "url": "https://aka.ms/mcp/sentinel-graph"
+  },
+  "license": {
+    "name": "Microsoft License",
+    "url": "https://www.microsoft.com/licensing/terms/welcome/welcomepage"
+  },
+  "useCases": [
+    {
+      "name": "Exposure-to-Critical Asset Path Analysis",
+      "description": "Build security agents that discover and enumerate realistic attack paths from exposed or vulnerable entry points—such as internet-facing virtual machines or compromised identities—to critical assets like databases, Key Vaults, or sensitive storage accounts, using walkable paths to focus on reachable risks."
+    },
+    {
+      "name": "Compromised Entity Blast Radius Analysis",
+      "description": "Build security agents that assess the potential impact of a compromised user, managed identity, or virtual machine by traversing connected permissions, identities, and resources to determine how far an attacker could move and which assets could be affected."
+    },
+    {
+      "name": "Exposure Perimeter Mapping",
+      "description": "Build security agents that identify the exposure perimeter of a resource, identity, or service by finding all incoming access paths from external or less-trusted entities, highlighting how attackers could reach the target and where defensive controls can be applied."
+    }
+  ],
+  "categories": "Security",
+  "tags": ["security", "sentinel", "graph"],
+  "supportContactInfo": {
+    "name": "Microsoft Customer Support",
+    "email": "support@microsoft.com"},
+  "versionName": "original",
+  "securitySchemes": {
+    "sentinelGraphOAuth": {
+      "type": "oauth2",
+      "description": "Authenticate with Microsoft Sentinel using OAuth2 authorization code flow with PKCE support.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://login.microsoftonline.com",
+      "tokenUrl": "https://login.microsoftonline.com",
+      "scopes": []
+    }
+  },
+  "visibility": "true",
+  "authSchemas":["OAuth2"],
+  "audience": "4500ebfb-89b6-4b14-a480-7f749797bfcd"
+}
