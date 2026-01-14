@@ -59,12 +59,13 @@
       "authorizationUrl": "https://login.microsoftonline.com",
       "tokenUrl": "https://login.microsoftonline.com",
       "refreshUrl": "https://login.microsoftonline.com",
-      "scopes": ["ea9ffc3e-8a23-4a7d-836d-234d7c7565c1"]
+      "scopes": ["ea9ffc3e-8a23-4a7d-836d-234d7c7565c1/McpServers.Calendar.All"]
     }
   },
   "authSchemas":["OAuth2"],
-  "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1/McpServers.Calendar.All",
+  "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
   "versionName": "original"
 
 }
+
 
