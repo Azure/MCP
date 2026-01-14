@@ -46,7 +46,7 @@
       "flows": ["authorizationCode"],
       "authorizationUrl": "https://login.microsoftonline.com",
       "tokenUrl": "https://login.microsoftonline.com",
-      "scopes": []
+      "scopes": ["4500ebfb-89b6-4b14-a480-7f749797bfcd"]
     }
   },
   "visibility": "true",
