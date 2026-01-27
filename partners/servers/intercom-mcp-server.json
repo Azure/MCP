@@ -1,47 +1,49 @@
 {
-  "name": "intercom-mcp-server",
-  "title": "Intercom MCP Server",
-  "summary": "Secure, read-only access to Intercom conversations and contacts for MCP-compatible AI tools.",
-  "description": "Secure, read-only access to Intercom conversations and contacts for MCP-compatible AI tools.",
-  "vendor": "Partner",
-  "kind": "mcp",
-  "remote": "https://mcp.intercom.com/mcp",
-  "icon": "https://github.com/intercom/intercom-mcp-server/raw/main/Intercom_Squinge_Black.svg",
-  "externalDocumentation": {
-    "title": "Intercom MCP docs",
-    "url": "https://developers.intercom.com/docs/guides/mcp"
-  },
-  "license": {
-    "name": "Intercom Terms",
-    "url": "https://www.intercom.com/legal/terms-and-policies"
-  },
-  "useCases": [
-    {
-      "name": "search and retrieval",
-      "description": "Search conversations or contacts with a flexible query language (field filters, free text, pagination)."
+    "name": "intercom-mcp-server",
+    "title": "Intercom MCP Server",
+    "summary": "Secure, read-only access to Intercom conversations and contacts for MCP-compatible AI tools.",
+    "description": "Secure, read-only access to Intercom conversations and contacts for MCP-compatible AI tools.",
+    "vendor": "Partner",
+    "kind": "mcp",
+    "remote": "https://mcp.intercom.com/mcp",
+    "icon": "https://github.com/intercom/intercom-mcp-server/raw/main/Intercom_Squinge_Black.svg",
+    "externalDocumentation": {
+        "title": "Intercom MCP docs",
+        "url": "https://developers.intercom.com/docs/guides/mcp"
     },
-    {
-      "name": "fetch full records",
-      "description": "Fetch full records including conversation parts, metadata, and custom attributes, with deep links back to Intercom."
+    "license": {
+        "name": "Intercom Terms",
+        "url": "https://www.intercom.com/legal/terms-and-policies"
     },
-    {
-      "name": "permission-aware access",
-      "description": "Respects your Intercom workspace permissions; sign in with OAuth (recommended) or API token."
-    }
-  ],
-  "categories": "Customer Service",
-  "tags": [],
-  "supportContactInfo": {
-    "name": "customer support contact",
-    "email": "team@intercom.io"},
-  "versionName": "original",
-  "securitySchemes": {
-    "intercom": {
-        "type": "http",
-        "description": "Authenticate with Intercom using a Bearer token.",
-        "scheme": "bearer",
-        "bearerFormat": "Auth header"
-    }
-  },
-  "visibility": "true"
+    "useCases": [
+        {
+            "name": "search and retrieval",
+            "description": "Search conversations or contacts with a flexible query language (field filters, free text, pagination)."
+        },
+        {
+            "name": "fetch full records",
+            "description": "Fetch full records including conversation parts, metadata, and custom attributes, with deep links back to Intercom."
+        },
+        {
+            "name": "permission-aware access",
+            "description": "Respects your Intercom workspace permissions; sign in with OAuth (recommended) or API token."
+        }
+    ],
+    "categories": "Customer Service",
+    "tags": [],
+    "supportContactInfo": {
+        "name": "customer support contact",
+        "email": "team@intercom.io"
+    },
+    "versionName": "original",
+    "securitySchemes": {
+        "intercom": {
+            "type": "http",
+            "description": "Authenticate with Intercom using a Bearer token.",
+            "scheme": "bearer",
+            "bearerFormat": "Auth header"
+        }
+    },
+    "visibility": "true",
+    "preview": true
 }

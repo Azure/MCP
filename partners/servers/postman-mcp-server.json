@@ -34,11 +34,13 @@
             "bearerFormat": "Your API Key"
         }
     },
-    "license":{
+    "license": {
         "name": "Terms of Use",
         "url": "https://www.postman.com/legal/terms/"
     },
     "supportContactInfo": {
         "name": "customer support contact",
-        "url": "https://github.com/postmanlabs/postman-mcp-server/issues"}
+        "url": "https://github.com/postmanlabs/postman-mcp-server/issues"
+    },
+    "preview": true
 }

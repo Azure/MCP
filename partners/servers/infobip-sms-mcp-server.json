@@ -1,63 +1,67 @@
 {
-  "name": "infobip-sms-mcp-server",
-  "title": "Infobip SMS MCP server",
-  "summary": "The Infobip SMS MCP server enables agentic and developer workflows to send and manage SMS messages through Infobip's platform.",
-  "description": "The Infobip SMS MCP server enables agentic and developer workflows to send and manage SMS messages through Infobip's platform.",
-  "kind": "mcp",
-  "vendor": "Partner",
-  "license": {
-    "name": "Infobip Terms",
-    "url": "https://www.infobip.com/policies/service-terms-conditions"
-  },
-  "icon": "https://cdn-web.infobip.com/uploads/2025/05/infobip-symbol-orange.png",
-  "externalDocumentation": {
-    "title": "Infobip MCP docs",
-    "url": "https://www.infobip.com/docs/mcp"
-  },
-  "remote": "https://azure-mcp.infobip.com/sms",
-  "supportContactInfo": {
-    "name": "customer support contact",
-    "email": "devrel@infobip.com"},
-  "visibility": "true",
-  "categories": "Customer Service",
-  "useCases": [
-    {
-      "name": "Send SMS messages",
-      "description": "Send text and templated SMS messages to end users, including PINs and transactional notifications."
+    "name": "infobip-sms-mcp-server",
+    "title": "Infobip SMS MCP server",
+    "summary": "The Infobip SMS MCP server enables agentic and developer workflows to send and manage SMS messages through Infobip's platform.",
+    "description": "The Infobip SMS MCP server enables agentic and developer workflows to send and manage SMS messages through Infobip's platform.",
+    "kind": "mcp",
+    "vendor": "Partner",
+    "license": {
+        "name": "Infobip Terms",
+        "url": "https://www.infobip.com/policies/service-terms-conditions"
     },
-    {
-      "name": "Sender management",
-      "description": "List and manage available SMS senders and short codes associated with an account."
+    "icon": "https://cdn-web.infobip.com/uploads/2025/05/infobip-symbol-orange.png",
+    "externalDocumentation": {
+        "title": "Infobip MCP docs",
+        "url": "https://www.infobip.com/docs/mcp"
     },
-    {
-      "name": "Campaigns & bulk messaging",
-      "description": "Prepare and launch marketing or notification campaigns to contact lists using templates and scheduled delivery."
+    "remote": "https://azure-mcp.infobip.com/sms",
+    "supportContactInfo": {
+        "name": "customer support contact",
+        "email": "devrel@infobip.com"
     },
-    {
-      "name": "Delivery reporting",
-      "description": "Query delivery and reporting information for sent messages to track status and errors."
-    }
-  ],
-  "connectorName": "foundryinfobipsmsmcp",
-  "securitySchemes": {
-      "infobipSmsOauth": {
-          "type": "oauth2",
-          "description": "Authenticate with infobip using OAuth2 authorization code flow with PKCE support.",
-          "authorizationUrl": "https://auth.infobip.com/realms/infobip/protocol/openid-connect/auth",
-          "tokenUrl": "https://auth.infobip.com/realms/infobip/protocol/openid-connect/token",
-          "refreshUrl": "https://auth.infobip.com/realms/infobip/protocol/openid-connect/token",
-          "scopes": [
-              "profile",
-              "sms:manage"
-          ],
-          "flows": ["authorizationCode"]                
-      },
-    "infobipSmsKey": {
-      "type": "apiKey",
-      "in": "header",
-      "name": "Authorization",
-      "description": "App <Your API Key>"              
-    }
-  },
-  "versionName": "original"
+    "visibility": "true",
+    "categories": "Customer Service",
+    "useCases": [
+        {
+            "name": "Send SMS messages",
+            "description": "Send text and templated SMS messages to end users, including PINs and transactional notifications."
+        },
+        {
+            "name": "Sender management",
+            "description": "List and manage available SMS senders and short codes associated with an account."
+        },
+        {
+            "name": "Campaigns & bulk messaging",
+            "description": "Prepare and launch marketing or notification campaigns to contact lists using templates and scheduled delivery."
+        },
+        {
+            "name": "Delivery reporting",
+            "description": "Query delivery and reporting information for sent messages to track status and errors."
+        }
+    ],
+    "connectorName": "foundryinfobipsmsmcp",
+    "securitySchemes": {
+        "infobipSmsOauth": {
+            "type": "oauth2",
+            "description": "Authenticate with infobip using OAuth2 authorization code flow with PKCE support.",
+            "authorizationUrl": "https://auth.infobip.com/realms/infobip/protocol/openid-connect/auth",
+            "tokenUrl": "https://auth.infobip.com/realms/infobip/protocol/openid-connect/token",
+            "refreshUrl": "https://auth.infobip.com/realms/infobip/protocol/openid-connect/token",
+            "scopes": [
+                "profile",
+                "sms:manage"
+            ],
+            "flows": [
+                "authorizationCode"
+            ]
+        },
+        "infobipSmsKey": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "Authorization",
+            "description": "App <Your API Key>"
+        }
+    },
+    "versionName": "original",
+    "preview": true
 }

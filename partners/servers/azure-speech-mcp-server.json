@@ -1,48 +1,50 @@
 {
-  "name": "azure-speech-mcp-server",
-  "title": "Azure Speech MCP Server",
-  "summary": "A hosted MCP server that exposes Azure Speech capabilities (speech-to-text, text-to-speech and streaming speech I/O) to agents and LLM workflows.",
-  "description": "A hosted MCP server that exposes Azure Speech capabilities (speech-to-text, text-to-speech and streaming speech I/O) to agents and LLM workflows.",
-  "kind": "mcp",
-  "vendor": "Microsoft",
-  "license": {
-    "name": "Azure Service Terms",
-    "url": "https://azure.microsoft.com/support/legal/"
-  },
-  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/FoundryTools.svg",
-  "externalDocumentation": {
-    "title": "Azure Speech Service docs",
-    "url": "https://learn.microsoft.com/azure/ai-foundry/agents/how-to/tools/azure-ai-speech?view=foundry"
-  },
-  "remote": "https://{foundry-resource-name}.cognitiveservices.azure.com/speech/mcp?api-version=2025-11-07-preview",
-  "supportContactInfo": {
-    "name": "customer support contact",
-    "url": "https://azure.microsoft.com/support/"},
-  "visibility": "true",
-  "categories": "Machine Learning",
-  "useCases": [
-    {
-      "name": "Speech to text",
-      "description": "Convert audio speech files into written text"
+    "name": "azure-speech-mcp-server",
+    "title": "Azure Speech MCP Server",
+    "summary": "A hosted MCP server that exposes Azure Speech capabilities (speech-to-text, text-to-speech and streaming speech I/O) to agents and LLM workflows.",
+    "description": "A hosted MCP server that exposes Azure Speech capabilities (speech-to-text, text-to-speech and streaming speech I/O) to agents and LLM workflows.",
+    "kind": "mcp",
+    "vendor": "Microsoft",
+    "license": {
+        "name": "Azure Service Terms",
+        "url": "https://azure.microsoft.com/support/legal/"
     },
-    {
-      "name": "Text to speech",
-      "description": "Convert written text into natural-sounding audio"
-    }
-  ],
-  "securitySchemes": {
-    "speechSecret": {
-        "type": "http",
-        "description": "Authenticate with bearer token.",
-        "scheme": "bearer",
-        "bearerFormat": "API Key"
+    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/FoundryTools.svg",
+    "externalDocumentation": {
+        "title": "Azure Speech Service docs",
+        "url": "https://learn.microsoft.com/azure/ai-foundry/agents/how-to/tools/azure-ai-speech?view=foundry"
     },
-    "speechBlobUrl": {
-      "type": "apiKey",
-      "in": "header",
-      "name": "X-Blob-Container-Url",
-      "description": "provide blob container SAS URL"
-    }
-  },
-  "versionName": "original"
+    "remote": "https://{foundry-resource-name}.cognitiveservices.azure.com/speech/mcp?api-version=2025-11-07-preview",
+    "supportContactInfo": {
+        "name": "customer support contact",
+        "url": "https://azure.microsoft.com/support/"
+    },
+    "visibility": "true",
+    "categories": "Machine Learning",
+    "useCases": [
+        {
+            "name": "Speech to text",
+            "description": "Convert audio speech files into written text"
+        },
+        {
+            "name": "Text to speech",
+            "description": "Convert written text into natural-sounding audio"
+        }
+    ],
+    "securitySchemes": {
+        "speechSecret": {
+            "type": "http",
+            "description": "Authenticate with bearer token.",
+            "scheme": "bearer",
+            "bearerFormat": "API Key"
+        },
+        "speechBlobUrl": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "X-Blob-Container-Url",
+            "description": "provide blob container SAS URL"
+        }
+    },
+    "versionName": "original",
+    "preview": true
 }

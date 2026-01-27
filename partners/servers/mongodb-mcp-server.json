@@ -44,12 +44,16 @@
             "description": "Collect, process, and analyze data to generate insights, detect trends, and support decision-making through visualization and reporting tools."
         }
     ],
-    "tags": ["knowledge"],
+    "tags": [
+        "knowledge"
+    ],
     "vendor": "Partner",
     "categories": "Databases",
     "visibility": "true",
     "versionName": "Original",
     "supportContactInfo": {
         "name": "customer support contact",
-        "url": "https://www.mongodb.com/company/contact"}
+        "url": "https://www.mongodb.com/company/contact"
+    },
+    "preview": true
 }

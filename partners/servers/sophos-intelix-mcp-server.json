@@ -1,47 +1,49 @@
 {
-  "name": "sophos-intelix-mcp-server",
-  "title": "Sophos Intelix MCP Server",
-  "summary": "Sophos Intelix delivers threat intelligence into analyst workflows, enabling agents to access file, URL, and IP reputation and threat analysis.",
-  "description": "Sophos Intelix delivers threat intelligence into analyst workflows, enabling agents to access file, URL, and IP reputation and threat analysis.",
-  "vendor": "Partner",
-  "kind": "mcp",
-  "remote": "https://solam.ai.intelix.sophos.com/mcp",
-  "icon": "https://www.sophos.com/favicon.ico",
-  "externalDocumentation": {
-    "title": "Intelix docs",
-    "url": "https://ai.intelix.sophos.com/docs"
-  },
-  "license": {
-    "name": "Sophos Terms",
-    "url": "https://www.sophos.com/en-us/legal/sophos-end-user-terms-of-use"
-  },
-  "useCases": [
-    {
-      "name": "Threat intelligence in analyst workflows",
-      "description": "Sophos Intelix delivers powerful threat intelligence directly into the analyst’s workflow, enabling faster, more accurate decisions."
+    "name": "sophos-intelix-mcp-server",
+    "title": "Sophos Intelix MCP Server",
+    "summary": "Sophos Intelix delivers threat intelligence into analyst workflows, enabling agents to access file, URL, and IP reputation and threat analysis.",
+    "description": "Sophos Intelix delivers threat intelligence into analyst workflows, enabling agents to access file, URL, and IP reputation and threat analysis.",
+    "vendor": "Partner",
+    "kind": "mcp",
+    "remote": "https://solam.ai.intelix.sophos.com/mcp",
+    "icon": "https://www.sophos.com/favicon.ico",
+    "externalDocumentation": {
+        "title": "Intelix docs",
+        "url": "https://ai.intelix.sophos.com/docs"
     },
-    {
-      "name": "File reputation and static analysis",
-      "description": "Lookup file reputation, run static analysis, and summarize results for triage and investigation."
+    "license": {
+        "name": "Sophos Terms",
+        "url": "https://www.sophos.com/en-us/legal/sophos-end-user-terms-of-use"
     },
-    {
-      "name": "Web site and URL analysis",
-      "description": "Perform static URL reports and summarise findings for phishing and fraud investigations."
-    }
-  ],
-  "categories": "Security",
-  "tags": [],
-  "supportContactInfo": {
-    "name": "customer support contact",
-    "email": "ace@sophos.com"},
-  "versionName": "original",
-  "securitySchemes": {
-    "intelixApiKey": {
-      "type": "apiKey",
-      "in": "header",
-      "name": "x-api-key",
-      "description": "x-api-key header required for authentication."
-    }
-  },
-  "visibility": "true"
+    "useCases": [
+        {
+            "name": "Threat intelligence in analyst workflows",
+            "description": "Sophos Intelix delivers powerful threat intelligence directly into the analyst’s workflow, enabling faster, more accurate decisions."
+        },
+        {
+            "name": "File reputation and static analysis",
+            "description": "Lookup file reputation, run static analysis, and summarize results for triage and investigation."
+        },
+        {
+            "name": "Web site and URL analysis",
+            "description": "Perform static URL reports and summarise findings for phishing and fraud investigations."
+        }
+    ],
+    "categories": "Security",
+    "tags": [],
+    "supportContactInfo": {
+        "name": "customer support contact",
+        "email": "ace@sophos.com"
+    },
+    "versionName": "original",
+    "securitySchemes": {
+        "intelixApiKey": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "x-api-key",
+            "description": "x-api-key header required for authentication."
+        }
+    },
+    "visibility": "true",
+    "preview": true
 }

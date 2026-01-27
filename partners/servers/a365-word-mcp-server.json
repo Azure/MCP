@@ -1,58 +1,63 @@
 {
-  "name": "microsoft-word-mcp-frontier",
-  "title": "Microsoft Word (Frontier)",
-  "summary": "Enables core Word document creation, retrieval, and commenting actions for agentic workflows.",
-  "description": "Enables core Word document creation, retrieval, and commenting actions for agentic workflows.",
-  "kind": "mcp",
-  "vendor": "Microsoft",
-  "externalDocumentation": {
-    "title": "Agent 365 MCP Servers",
-    "url": "https://aka.ms/AboutAgent365"
-  },
-  "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_WordServer",
-  "supportContactInfo": {
-    "name": "customer support contact",
-    "url": "https://aka.ms/a365mcpsupport"
-  },
-  "license": {
+    "name": "microsoft-word-mcp-frontier",
+    "title": "Microsoft Word (Frontier)",
+    "summary": "Enables core Word document creation, retrieval, and commenting actions for agentic workflows.",
+    "description": "Enables core Word document creation, retrieval, and commenting actions for agentic workflows.",
+    "kind": "mcp",
+    "vendor": "Microsoft",
+    "externalDocumentation": {
+        "title": "Agent 365 MCP Servers",
+        "url": "https://aka.ms/AboutAgent365"
+    },
+    "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_WordServer",
+    "supportContactInfo": {
+        "name": "customer support contact",
+        "url": "https://aka.ms/a365mcpsupport"
+    },
+    "license": {
         "name": "Agent 365",
         "url": "https://aka.ms/AboutAgent365"
-  },
-  "visibility": "true",
-  "categories": "Productivity",
-  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/MicrosoftWordMCPServer.png",
-  "useCases": [
-    {
-      "name": "Create documents",
-      "description": "Create a new Word document with text or HTML content in OneDrive or a SharePoint library."
     },
-    {
-      "name": "Retrieve document content",
-      "description": "Fetch document content and metadata using a sharing link or drive/item identifier for agents to read or process."
+    "visibility": "true",
+    "categories": "Productivity",
+    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/MicrosoftWordMCPServer.png",
+    "useCases": [
+        {
+            "name": "Create documents",
+            "description": "Create a new Word document with text or HTML content in OneDrive or a SharePoint library."
+        },
+        {
+            "name": "Retrieve document content",
+            "description": "Fetch document content and metadata using a sharing link or drive/item identifier for agents to read or process."
+        },
+        {
+            "name": "Add comments",
+            "description": "Programmatically add comments to a document to support review and collaboration flows."
+        },
+        {
+            "name": "Reply to comments",
+            "description": "Post replies to existing comments to automate review responses or moderation workflows."
+        }
+    ],
+    "securitySchemes": {
+        "a365wordoauth2": {
+            "type": "oauth2",
+            "description": "Authenticate with A365 using OAuth2 authorization code flow with PKCE support.",
+            "flows": [
+                "authorizationCode"
+            ],
+            "authorizationUrl": "https://login.microsoftonline.com",
+            "tokenUrl": "https://login.microsoftonline.com",
+            "refreshUrl": "https://login.microsoftonline.com",
+            "scopes": [
+                "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1"
+            ]
+        }
     },
-    {
-      "name": "Add comments",
-      "description": "Programmatically add comments to a document to support review and collaboration flows."
-    },
-    {
-      "name": "Reply to comments",
-      "description": "Post replies to existing comments to automate review responses or moderation workflows."
-    }
-  ],
-  "securitySchemes": {
-    "a365wordoauth2": {
-      "type": "oauth2",
-      "description": "Authenticate with A365 using OAuth2 authorization code flow with PKCE support.",
-      "flows": ["authorizationCode"],
-      "authorizationUrl": "https://login.microsoftonline.com",
-      "tokenUrl": "https://login.microsoftonline.com",
-      "refreshUrl": "https://login.microsoftonline.com",
-      "scopes": ["ea9ffc3e-8a23-4a7d-836d-234d7c7565c1"]
-    }
-  },
-  "authSchemas":["OAuth2"],
-  "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
-  "versionName": "original"
-
+    "authSchemas": [
+        "OAuth2"
+    ],
+    "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
+    "versionName": "original",
+    "preview": true
 }
-

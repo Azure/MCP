@@ -1,47 +1,51 @@
 {
-  "name": "azure-sql-mcp-server",
-  "title": "Azure SQL MCP Server",
-  "summary": "A secure, self-hosted MCP for interacting with SQL data (Azure SQL, SQL MI, SQL DW, SQL Server).",
-  "description": "A secure, self-hosted MCP for interacting with SQL data (Azure SQL, SQL MI, SQL DW, SQL Server).",
-  "kind": "mcp",
-  "vendor": "Microsoft",
-  "license": {
-    "name": "Data API Builder License",
-    "url": "https://github.com/Azure/data-api-builder/blob/main/LICENSE.txt"
-  },
-  "icon": "https://cdn.freelogovectors.net/wp-content/uploads/2022/03/azure_sql_database_logo_freelogovectors.net_.png",
-  "externalDocumentation": {
-    "title": "SQL MCP docs",
-    "url": "https://aka.ms/sql/mcp"
-  },
-  "repository": {
-    "url": "https://github.com/Azure/data-api-builder",
-    "source": "github"
-  },
-  "supportContactInfo": {
-    "name": "customer support contact",
-    "email": "sql-mcp-server@service.microsoft.com"},
-  "visibility": "public",
-  "categories": "Databases",
-  "tags":["knowledge"],
-  "packages":[],
-  "useCases": [
-    {
-      "name": "Describe and discover schema",
-      "description": "Inspect schema, table and column metadata to build safe, deterministic queries for agent workflows."
+    "name": "azure-sql-mcp-server",
+    "title": "Azure SQL MCP Server",
+    "summary": "A secure, self-hosted MCP for interacting with SQL data (Azure SQL, SQL MI, SQL DW, SQL Server).",
+    "description": "A secure, self-hosted MCP for interacting with SQL data (Azure SQL, SQL MI, SQL DW, SQL Server).",
+    "kind": "mcp",
+    "vendor": "Microsoft",
+    "license": {
+        "name": "Data API Builder License",
+        "url": "https://github.com/Azure/data-api-builder/blob/main/LICENSE.txt"
     },
-    {
-      "name": "Safe query execution",
-      "description": "Run read and aggregate queries with hardened abstractions that enforce safety and determinism."
+    "icon": "https://cdn.freelogovectors.net/wp-content/uploads/2022/03/azure_sql_database_logo_freelogovectors.net_.png",
+    "externalDocumentation": {
+        "title": "SQL MCP docs",
+        "url": "https://aka.ms/sql/mcp"
     },
-    {
-      "name": "Data mutation operations",
-      "description": "Controlled Create/Update/Delete tool invocations for authenticated agent workflows where permitted."
+    "repository": {
+        "url": "https://github.com/Azure/data-api-builder",
+        "source": "github"
     },
-    {
-      "name": "Stored procedure & execution",
-      "description": "Execute stored procedures and server-side logic through configured tools while maintaining auditability."
-    }
-  ],
-  "versionName": "original"
+    "supportContactInfo": {
+        "name": "customer support contact",
+        "email": "sql-mcp-server@service.microsoft.com"
+    },
+    "visibility": "public",
+    "categories": "Databases",
+    "tags": [
+        "knowledge"
+    ],
+    "packages": [],
+    "useCases": [
+        {
+            "name": "Describe and discover schema",
+            "description": "Inspect schema, table and column metadata to build safe, deterministic queries for agent workflows."
+        },
+        {
+            "name": "Safe query execution",
+            "description": "Run read and aggregate queries with hardened abstractions that enforce safety and determinism."
+        },
+        {
+            "name": "Data mutation operations",
+            "description": "Controlled Create/Update/Delete tool invocations for authenticated agent workflows where permitted."
+        },
+        {
+            "name": "Stored procedure & execution",
+            "description": "Execute stored procedures and server-side logic through configured tools while maintaining auditability."
+        }
+    ],
+    "versionName": "original",
+    "preview": true
 }

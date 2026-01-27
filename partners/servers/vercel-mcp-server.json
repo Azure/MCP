@@ -42,10 +42,14 @@
                 "openid",
                 "offline_access"
             ],
-            "flows": ["authorizationCode"]
+            "flows": [
+                "authorizationCode"
+            ]
         }
     },
     "supportContactInfo": {
         "name": "customer support contact",
-        "url": "https://vercel.com/help"}
+        "url": "https://vercel.com/help"
+    },
+    "preview": true
 }

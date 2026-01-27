@@ -1,55 +1,64 @@
 {
-  "name": "ms-sentinel-data-explorer",
-  "title": "Microsoft Sentinel Data Exploration",
-  "summary": "The data exploration tool collection in the Microsoft Sentinel MCP server lets you search for relevant tables and retrieve data from Microsoft Sentinel's data lake using natural language.",
-  "description": "The data exploration tool collection in the Microsoft Sentinel MCP server lets you search for relevant tables and retrieve data from Microsoft Sentinel's data lake using natural language. Learn more: https://aka.ms/mcp/data-exploration",
-  "vendor": "Microsoft",
-  "kind": "mcp",
-  "remote": "https://sentinel.microsoft.com/mcp/data-exploration",
-  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Sentinel.svg",
-  "externalDocumentation": {
-    "title": "Microsoft Sentinel Data Exploration documentation",
-    "url": "https://aka.ms/mcp/data-exploration"
-  },
-  "license": {
-    "name": "Microsoft License",
-    "url": "https://www.microsoft.com/licensing/terms/welcome/welcomepage"
-  },
-  "useCases": [
-    {
-      "name": "Password-Spray Hunt",
-      "description": "Build security agents that autonomously select relevant sign-in tables, aggregates login attempts by user and IP, and flags patterns consistent with password-spray behavior—like low-frequency attempts over several months across many accounts."
+    "name": "ms-sentinel-data-explorer",
+    "title": "Microsoft Sentinel Data Exploration",
+    "summary": "The data exploration tool collection in the Microsoft Sentinel MCP server lets you search for relevant tables and retrieve data from Microsoft Sentinel's data lake using natural language.",
+    "description": "The data exploration tool collection in the Microsoft Sentinel MCP server lets you search for relevant tables and retrieve data from Microsoft Sentinel's data lake using natural language. Learn more: https://aka.ms/mcp/data-exploration",
+    "vendor": "Microsoft",
+    "kind": "mcp",
+    "remote": "https://sentinel.microsoft.com/mcp/data-exploration",
+    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Sentinel.svg",
+    "externalDocumentation": {
+        "title": "Microsoft Sentinel Data Exploration documentation",
+        "url": "https://aka.ms/mcp/data-exploration"
     },
-    {
-      "name": "Impossible Travel Check",
-      "description": "Build security agents that correlate sign-in events by user, calculates geodistance and time gaps between logins, and flags cases where travel speed exceeds realistic thresholds, suggesting credential compromise."
+    "license": {
+        "name": "Microsoft License",
+        "url": "https://www.microsoft.com/licensing/terms/welcome/welcomepage"
     },
-    {
-      "name": "Multi-factor authorization failures",
-      "description": "Build security agents that analyzes multi-factor auth logs to detect spikes in failure rates, clustering by user, IP, or time window, and surfaces anomalies that deviate from baseline behavior over long periods."
+    "useCases": [
+        {
+            "name": "Password-Spray Hunt",
+            "description": "Build security agents that autonomously select relevant sign-in tables, aggregates login attempts by user and IP, and flags patterns consistent with password-spray behavior—like low-frequency attempts over several months across many accounts."
+        },
+        {
+            "name": "Impossible Travel Check",
+            "description": "Build security agents that correlate sign-in events by user, calculates geodistance and time gaps between logins, and flags cases where travel speed exceeds realistic thresholds, suggesting credential compromise."
+        },
+        {
+            "name": "Multi-factor authorization failures",
+            "description": "Build security agents that analyzes multi-factor auth logs to detect spikes in failure rates, clustering by user, IP, or time window, and surfaces anomalies that deviate from baseline behavior over long periods."
+        },
+        {
+            "name": "Dormant Account wake-up",
+            "description": "Build security agents that based on inactivity thresholds, scans for accounts with long silence followed by recent activity, and builds a timeline showing when and how these accounts re-engaged."
+        }
+    ],
+    "categories": "Security",
+    "tags": [
+        "security",
+        "sentinel"
+    ],
+    "supportContactInfo": {
+        "name": "Microsoft Customer Support",
+        "email": "support@microsoft.com"
     },
-    {
-      "name": "Dormant Account wake-up",
-      "description": "Build security agents that based on inactivity thresholds, scans for accounts with long silence followed by recent activity, and builds a timeline showing when and how these accounts re-engaged."
-    }
-  ],
-  "categories": "Security",
-  "tags": ["security", "sentinel"],
-  "supportContactInfo": {
-    "name": "Microsoft Customer Support",
-    "email": "support@microsoft.com"},
-  "versionName": "original",
-  "securitySchemes": {
-    "sentinelOAuth": {
-      "type": "oauth2",
-      "description": "Authenticate with Microsoft Sentinel using OAuth2 authorization code flow with PKCE support.",
-      "flows": ["authorizationCode"],
-      "authorizationUrl": "https://login.microsoftonline.com",
-      "tokenUrl": "https://login.microsoftonline.com",
-      "scopes": []
-    }
-  },
-  "visibility": "true",
-  "authSchemas":["OAuth2"],
-  "audience": "4500ebfb-89b6-4b14-a480-7f749797bfcd"
+    "versionName": "original",
+    "securitySchemes": {
+        "sentinelOAuth": {
+            "type": "oauth2",
+            "description": "Authenticate with Microsoft Sentinel using OAuth2 authorization code flow with PKCE support.",
+            "flows": [
+                "authorizationCode"
+            ],
+            "authorizationUrl": "https://login.microsoftonline.com",
+            "tokenUrl": "https://login.microsoftonline.com",
+            "scopes": []
+        }
+    },
+    "visibility": "true",
+    "authSchemas": [
+        "OAuth2"
+    ],
+    "audience": "4500ebfb-89b6-4b14-a480-7f749797bfcd",
+    "preview": true
 }

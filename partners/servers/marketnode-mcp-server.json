@@ -1,49 +1,53 @@
 {
-  "name": "marketnode-mcp-server",
-  "title": "Marketnode MCP Server",
-  "summary": "AI-powered document data extraction, workflow automation, transaction management and tokenization for financial institutions and enterprises.",
-  "description": "AI-powered document data extraction, workflow automation, transaction management and tokenization for financial institutions and enterprises.",
-  "kind": "mcp",
-  "license": {
-    "name": "Marketnode Terms",
-    "url": "https://terms.marketnode.com/"
-  },
-  "icon": "https://images.squarespace-cdn.com/content/v1/614aa620d02d691d52511fdc/30e62866-8c74-49e3-9df6-42314cd2f63b/android-chrome-512x512.png",
-  "externalDocumentation": {
-    "title": "Marketnode Documentation",
-    "url": "https://support.marketnode.com/"
-  },
-  "useCases": [
-    {
-      "name": "Financial Document Processing",
-      "description": "Process structured financial documents (credit agreements, fund fact sheets, term sheets) and extract key data points like ISIN codes, currency codes, nominal values, and regulatory information automatically."
+    "name": "marketnode-mcp-server",
+    "title": "Marketnode MCP Server",
+    "summary": "AI-powered document data extraction, workflow automation, transaction management and tokenization for financial institutions and enterprises.",
+    "description": "AI-powered document data extraction, workflow automation, transaction management and tokenization for financial institutions and enterprises.",
+    "kind": "mcp",
+    "license": {
+        "name": "Marketnode Terms",
+        "url": "https://terms.marketnode.com/"
     },
-    {
-      "name": "Workflow Management",
-      "description": "Enterprise clients can manage separate document processing workflows for different teams and organizations, with role-based access control."
+    "icon": "https://images.squarespace-cdn.com/content/v1/614aa620d02d691d52511fdc/30e62866-8c74-49e3-9df6-42314cd2f63b/android-chrome-512x512.png",
+    "externalDocumentation": {
+        "title": "Marketnode Documentation",
+        "url": "https://support.marketnode.com/"
     },
-    {
-      "name": "Document Intelligence Pipeline Setup",
-      "description": "Configure AI extraction workflows that specify which fields to extract, which AI models to use, and how to deliver results to downstream systems."
-    }
-  ],
-  "tags": [],
-  "vendor": "Partner",
-  "visibility": "true",
-  "categories": "Finance",
-  "securitySchemes": {
-    "oauth2": {
-      "type": "oauth2",
-      "description": "OAuth 2.1",
-      "flows": ["authorizationCode"],
-      "tokenUrl": "https://mcp.marketnode.com/token",
-      "authorizationUrl":"https://mcp.marketnode.com/authorize",
-      "scopes": []
-    }
-  },
-  "versionName": "original",
-  "remote": "https://mcp.marketnode.com/mcp",
-  "supportContactInfo": {
-    "name": "customer support contact",
-    "url": "https://support.marketnode.com/"}
+    "useCases": [
+        {
+            "name": "Financial Document Processing",
+            "description": "Process structured financial documents (credit agreements, fund fact sheets, term sheets) and extract key data points like ISIN codes, currency codes, nominal values, and regulatory information automatically."
+        },
+        {
+            "name": "Workflow Management",
+            "description": "Enterprise clients can manage separate document processing workflows for different teams and organizations, with role-based access control."
+        },
+        {
+            "name": "Document Intelligence Pipeline Setup",
+            "description": "Configure AI extraction workflows that specify which fields to extract, which AI models to use, and how to deliver results to downstream systems."
+        }
+    ],
+    "tags": [],
+    "vendor": "Partner",
+    "visibility": "true",
+    "categories": "Finance",
+    "securitySchemes": {
+        "oauth2": {
+            "type": "oauth2",
+            "description": "OAuth 2.1",
+            "flows": [
+                "authorizationCode"
+            ],
+            "tokenUrl": "https://mcp.marketnode.com/token",
+            "authorizationUrl": "https://mcp.marketnode.com/authorize",
+            "scopes": []
+        }
+    },
+    "versionName": "original",
+    "remote": "https://mcp.marketnode.com/mcp",
+    "supportContactInfo": {
+        "name": "customer support contact",
+        "url": "https://support.marketnode.com/"
+    },
+    "preview": true
 }

@@ -1,64 +1,68 @@
 {
-  "name": "supabase-mcp-server",
-  "title": "Supabase",
-  "summary": "Connect your Supabase projects to AI agents: design tables and migrations; create database branches; build custom APIs with Edge Functions; retrieve logs and more.",
-  "description": "Connect your Supabase projects to AI agents: design tables and migrations; create database branches; build custom APIs with Edge Functions; retrieve logs and more.",
-  "kind": "mcp",
-  "license": {
-    "name": "Supabase Terms",
-    "url": "https://supabase.com/terms"
-  },
-  "externalDocumentation": {
-    "title": "Supabase MCP Documentation",
-    "url": "https://supabase.com/mcp"
-  },
-  "remote": "https://mcp.supabase.com/mcp",
-  "versionName": "original",
-  "packages": [],
-  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/supabase.svg",
-  "useCases": [
-    {
-      "name": "Schema & migrations",
-      "description": "Design database tables and track them using migrations."
+    "name": "supabase-mcp-server",
+    "title": "Supabase",
+    "summary": "Connect your Supabase projects to AI agents: design tables and migrations; create database branches; build custom APIs with Edge Functions; retrieve logs and more.",
+    "description": "Connect your Supabase projects to AI agents: design tables and migrations; create database branches; build custom APIs with Edge Functions; retrieve logs and more.",
+    "kind": "mcp",
+    "license": {
+        "name": "Supabase Terms",
+        "url": "https://supabase.com/terms"
     },
-    {
-      "name": "Development branches",
-      "description": "Create and manage database branches for development workflows."
+    "externalDocumentation": {
+        "title": "Supabase MCP Documentation",
+        "url": "https://supabase.com/mcp"
     },
-    {
-      "name": "Edge Functions APIs",
-      "description": "Build custom APIs using Supabase Edge Functions and invoke them via MCP."
+    "remote": "https://mcp.supabase.com/mcp",
+    "versionName": "original",
+    "packages": [],
+    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/supabase.svg",
+    "useCases": [
+        {
+            "name": "Schema & migrations",
+            "description": "Design database tables and track them using migrations."
+        },
+        {
+            "name": "Development branches",
+            "description": "Create and manage database branches for development workflows."
+        },
+        {
+            "name": "Edge Functions APIs",
+            "description": "Build custom APIs using Supabase Edge Functions and invoke them via MCP."
+        },
+        {
+            "name": "Logs & debugging",
+            "description": "Retrieve logs to debug issues."
+        },
+        {
+            "name": "Code generation",
+            "description": "Generate TypeScript types and code snippets from database schema."
+        }
+    ],
+    "tags": [],
+    "categories": "Developer Tools",
+    "vendor": "Partner",
+    "visibility": "true",
+    "securitySchemes": {
+        "supabaseOAuth": {
+            "type": "oauth2",
+            "description": "OAuth2 for user authentication (authorization code flow with PKCE supported).",
+            "flows": [
+                "authorizationCode"
+            ],
+            "tokenUrl": "https://api.supabase.com/v1/oauth/token",
+            "authorizationUrl": "https://api.supabase.com/v1/oauth/authorize",
+            "scopes": []
+        },
+        "supabaseBearerAuth": {
+            "type": "http",
+            "description": "Authenticate with Supabase using a Personal Access Token.",
+            "scheme": "bearer",
+            "bearerFormat": "Your authorization token"
+        }
     },
-    {
-      "name": "Logs & debugging",
-      "description": "Retrieve logs to debug issues."
+    "supportContactInfo": {
+        "name": "customer support contact",
+        "email": "support@supabase.com"
     },
-    {
-      "name": "Code generation",
-      "description": "Generate TypeScript types and code snippets from database schema."
-    }
-  ],
-  "tags": [],
-  "categories": "Developer Tools",
-  "vendor": "Partner",
-  "visibility": "true",
-  "securitySchemes": {
-    "supabaseOAuth": {
-      "type": "oauth2",
-      "description": "OAuth2 for user authentication (authorization code flow with PKCE supported).",
-      "flows": ["authorizationCode"],
-      "tokenUrl": "https://api.supabase.com/v1/oauth/token",
-      "authorizationUrl": "https://api.supabase.com/v1/oauth/authorize",
-      "scopes": []
-    },
-    "supabaseBearerAuth": {
-          "type": "http",
-          "description": "Authenticate with Supabase using a Personal Access Token.",
-          "scheme": "bearer",
-          "bearerFormat": "Your authorization token"
-      }
-  },
-  "supportContactInfo": {
-    "name": "customer support contact",
-    "email": "support@supabase.com"}
+    "preview": true
 }

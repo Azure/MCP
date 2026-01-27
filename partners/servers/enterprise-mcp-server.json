@@ -55,11 +55,17 @@
             "authorizationUrl": "https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize",
             "tokenUrl": "https://login.microsoftonline.com/organizations/oauth2/v2.0/token",
             "refreshUrl": "https://login.microsoftonline.com/organizations/oauth2/v2.0/token",
-            "scopes": ["api://e8c77dc2-69b3-43f4-bc51-3213c9d915b4/.default"],
-            "flows": ["authorizationCode"]                
+            "scopes": [
+                "api://e8c77dc2-69b3-43f4-bc51-3213c9d915b4/.default"
+            ],
+            "flows": [
+                "authorizationCode"
+            ]
         }
     },
     "supportContactInfo": {
         "name": "Luca Spolidoro",
-        "email": "lucaspol@microsoft.com"}
+        "email": "lucaspol@microsoft.com"
+    },
+    "preview": true
 }

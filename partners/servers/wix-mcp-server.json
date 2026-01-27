@@ -1,50 +1,52 @@
 {
-  "name": "wix-mcp-server",
-  "title": "Wix MCP",
-  "summary": "Unified access to Wix's development ecosystem for documentation, implementation, and site management.",
-  "description": "Unified access to Wix's development ecosystem for documentation, implementation, and site management.",
-  "kind": "mcp",
-  "license": {
-    "name": "Wix Terms of Use",
-    "url": "https://www.wix.com/about/terms-of-use"
-  },
-  "externalDocumentation": {
-    "title": "Wix MCP Documentation",
-    "url": "https://dev.wix.com/docs/api-reference/articles/wix-mcp/about-the-wix-mcp"
-  },
-  "remote": "https://mcp.wix.com/mcp",
-  "versionName": "original",
-  "packages": [],
-  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Wix.svg",
-  "useCases": [
-    {
-      "name": "Documentation search",
-      "description": "Search and retrieve relevant Wix API documentation and code samples."
+    "name": "wix-mcp-server",
+    "title": "Wix MCP",
+    "summary": "Unified access to Wix's development ecosystem for documentation, implementation, and site management.",
+    "description": "Unified access to Wix's development ecosystem for documentation, implementation, and site management.",
+    "kind": "mcp",
+    "license": {
+        "name": "Wix Terms of Use",
+        "url": "https://www.wix.com/about/terms-of-use"
     },
-    {
-      "name": "Site management",
-      "description": "Get contextual guidance for building Wix apps, headless implementations, and enterprise integrations, eliminating the need to switch between multiple resources."
-    }
-  ],
-  "tags": [],
-  "categories": "Web",
-  "vendor": "Partner",
-  "visibility": "true",
-  "securitySchemes": {
-    "wixApiKey": {
-      "type": "apiKey",
-      "in": "header",
-      "name": "Authorization",
-      "description": "API keys are provided via headers."
+    "externalDocumentation": {
+        "title": "Wix MCP Documentation",
+        "url": "https://dev.wix.com/docs/api-reference/articles/wix-mcp/about-the-wix-mcp"
     },
-    "wixAccount": {
-      "type": "apiKey",
-      "in": "header",
-      "name": "wix-account-id",
-      "description": "account id is provided via headers. "
-    }
-  },
-  "supportContactInfo": {
-    "name": "customer support contact",
-    "url": "https://www.wix.com/support-chatbot?nodeId=25a57397-ccf7-4376-8b74-48d51edf7159&referral=devRels"}
+    "remote": "https://mcp.wix.com/mcp",
+    "versionName": "original",
+    "packages": [],
+    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Wix.svg",
+    "useCases": [
+        {
+            "name": "Documentation search",
+            "description": "Search and retrieve relevant Wix API documentation and code samples."
+        },
+        {
+            "name": "Site management",
+            "description": "Get contextual guidance for building Wix apps, headless implementations, and enterprise integrations, eliminating the need to switch between multiple resources."
+        }
+    ],
+    "tags": [],
+    "categories": "Web",
+    "vendor": "Partner",
+    "visibility": "true",
+    "securitySchemes": {
+        "wixApiKey": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "Authorization",
+            "description": "API keys are provided via headers."
+        },
+        "wixAccount": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "wix-account-id",
+            "description": "account id is provided via headers. "
+        }
+    },
+    "supportContactInfo": {
+        "name": "customer support contact",
+        "url": "https://www.wix.com/support-chatbot?nodeId=25a57397-ccf7-4376-8b74-48d51edf7159&referral=devRels"
+    },
+    "preview": true
 }

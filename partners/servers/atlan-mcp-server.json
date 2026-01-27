@@ -1,56 +1,57 @@
 {
-  "name": "atlan",
-  "title": "Atlan",
-  "summary": "The Atlan MCP server provides a set of tools that enable AI agents to work directly with Atlan metadata. ",
-  "description": "The Atlan MCP server provides a set of tools that enable AI agents to work directly with Atlan metadata. These tools supply real-time context to AI environments, making it easier to search, explore, and update metadata without leaving your workflow.",
-  "vendor": "Partner",
-  "kind": "mcp",
-  "remote": "https://{tenant-name}.atlan.com/mcp",
-  "icon": "https://website-assets.atlan.com/img/logos/atlan-white-in-blue-bg.svg",
-  "externalDocumentation": {
-    "title": "Atlan documentation",
-    "url": "https://docs.atlan.com/product/capabilities/atlan-ai/how-tos/remote-mcp-overview"
-  },
-  "license": {
-    "name": "User License Terms",
-    "url": "https://atln.cm/saas"
-  },
-  "visibility": "true",
-  "useCases": [
-    {
-      "name": "Search assets",
-      "description": "Find assets in Atlan using flexible filters such as name, type, tags, and domains. This helps AI agents surface the most relevant assets for a given task."
+    "name": "atlan",
+    "title": "Atlan",
+    "summary": "The Atlan MCP server provides a set of tools that enable AI agents to work directly with Atlan metadata. ",
+    "description": "The Atlan MCP server provides a set of tools that enable AI agents to work directly with Atlan metadata. These tools supply real-time context to AI environments, making it easier to search, explore, and update metadata without leaving your workflow.",
+    "vendor": "Partner",
+    "kind": "mcp",
+    "remote": "https://{tenant-name}.atlan.com/mcp",
+    "icon": "https://website-assets.atlan.com/img/logos/atlan-white-in-blue-bg.svg",
+    "externalDocumentation": {
+        "title": "Atlan documentation",
+        "url": "https://docs.atlan.com/product/capabilities/atlan-ai/how-tos/remote-mcp-overview"
     },
-    {
-      "name": "Query by DSL",
-      "description": "Retrieve specific assets using Atlan's DSL query language. This enables precise lookups that go beyond basic search filters."
+    "license": {
+        "name": "User License Terms",
+        "url": "https://atln.cm/saas"
     },
-    {
-      "name": "Explore lineage",
-      "description": "Trace upstream or downstream lineage for a given asset. This provides visibility into data dependencies and impact across your environment."
+    "visibility": "true",
+    "useCases": [
+        {
+            "name": "Search assets",
+            "description": "Find assets in Atlan using flexible filters such as name, type, tags, and domains. This helps AI agents surface the most relevant assets for a given task."
+        },
+        {
+            "name": "Query by DSL",
+            "description": "Retrieve specific assets using Atlan's DSL query language. This enables precise lookups that go beyond basic search filters."
+        },
+        {
+            "name": "Explore lineage",
+            "description": "Trace upstream or downstream lineage for a given asset. This provides visibility into data dependencies and impact across your environment."
+        },
+        {
+            "name": "Update assets",
+            "description": "Modify metadata attributes, including descriptions, certification status, and README content. This enables AI agents to keep metadata current as part of automated workflows."
+        },
+        {
+            "name": "Glossary",
+            "description": "Create glossaries, categories, and terms. This supports standardized business definitions and improves consistency across teams and tools."
+        }
+    ],
+    "categories": "Developer Tools",
+    "tags": [],
+    "supportContactInfo": {
+        "name": "Atlan Support",
+        "email": "support@atlan.com"
     },
-    {
-      "name": "Update assets",
-      "description": "Modify metadata attributes, including descriptions, certification status, and README content. This enables AI agents to keep metadata current as part of automated workflows."
+    "versionName": "original",
+    "securitySchemes": {
+        "atlanBearerAuth": {
+            "type": "http",
+            "description": "Authenticate with Atlan using an API key.",
+            "scheme": "bearer",
+            "bearerFormat": "API Key"
+        }
     },
-    {
-      "name": "Glossary",
-      "description": "Create glossaries, categories, and terms. This supports standardized business definitions and improves consistency across teams and tools."
-    }
-  ],
-  "categories": "Developer Tools",
-  "tags": [],
-  "supportContactInfo": {
-    "name": "Atlan Support",
-    "email": "support@atlan.com"
-  },
-  "versionName": "original",
-  "securitySchemes": {
-    "atlanBearerAuth":{
-      "type": "http",
-      "description": "Authenticate with Atlan using an API key.",
-      "scheme": "bearer",
-      "bearerFormat": "API Key"
-    }
-    }
+    "preview": true
 }

@@ -1,56 +1,57 @@
 {
-  "name": "amplitude-mcp-server",
-  "title": "Amplitude MCP Server",
-  "summary": "Search, access, and get insights on your Amplitude product analytics data.",
-  "description": "Search, access, and get insights on your Amplitude product analytics data.",
-  "kind": "mcp",
-  "license": {
-    "name": "Amplitude Terms",
-    "url": "https://amplitude.com/terms"
-  },
-  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/amplitude.svg",
-  "externalDocumentation": {
-    "title": "Amplitude MCP docs",
-    "url": "https://amplitude.com/docs/analytics/amplitude-mcp"
-  },
-  "remote": "https://mcp.amplitude.com/mcp",
-  "supportContactInfo": {
-    "name": "amplitude support",
-    "url": "http://support.amplitude.com/"
-  },
-  "visibility": "true",
-  "categories": "Analytics",
-  "useCases": [
-    {
-      "name": "Chart & dashboard queries",
-      "description": "Query charts and dashboards to fetch precomputed metrics and visual summaries for agent responses."
+    "name": "amplitude-mcp-server",
+    "title": "Amplitude MCP Server",
+    "summary": "Search, access, and get insights on your Amplitude product analytics data.",
+    "description": "Search, access, and get insights on your Amplitude product analytics data.",
+    "kind": "mcp",
+    "license": {
+        "name": "Amplitude Terms",
+        "url": "https://amplitude.com/terms"
     },
-    {
-      "name": "Experiment insights",
-      "description": "Access experimentation results and feature-flag analysis to inform agent-driven decisions."
+    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/amplitude.svg",
+    "externalDocumentation": {
+        "title": "Amplitude MCP docs",
+        "url": "https://amplitude.com/docs/analytics/amplitude-mcp"
     },
-    {
-      "name": "Behavioral analytics",
-      "description": "Search and analyze user behavior, cohorts and retention metrics for product and research workflows."
-    }
-  ],
-  "vendor": "Partner",
-  "securitySchemes": {
-    "amplitudeOauth2": {
-      "type": "oauth2",
-      "description": "OAuth 2.1 (authorization code with PKCE) for delegated user authentication. Provided client ID and endpoints below are for managed-OAuth onboarding.",
-      "authorizationUrl": "https://mcp.amplitude.com/authorize",
-      "tokenUrl": "https://mcp.amplitude.com/token",
-      "refreshUrl": "https://mcp.amplitude.com/token",
-      "scopes": [
-        "mcp:read",
-        "mcp:write",
-        "offline_access"
-      ],
-      "flows": [
-        "authorizationCode"
-      ]
-    }
-  },
-  "versionName": "original"
+    "remote": "https://mcp.amplitude.com/mcp",
+    "supportContactInfo": {
+        "name": "amplitude support",
+        "url": "http://support.amplitude.com/"
+    },
+    "visibility": "true",
+    "categories": "Analytics",
+    "useCases": [
+        {
+            "name": "Chart & dashboard queries",
+            "description": "Query charts and dashboards to fetch precomputed metrics and visual summaries for agent responses."
+        },
+        {
+            "name": "Experiment insights",
+            "description": "Access experimentation results and feature-flag analysis to inform agent-driven decisions."
+        },
+        {
+            "name": "Behavioral analytics",
+            "description": "Search and analyze user behavior, cohorts and retention metrics for product and research workflows."
+        }
+    ],
+    "vendor": "Partner",
+    "securitySchemes": {
+        "amplitudeOauth2": {
+            "type": "oauth2",
+            "description": "OAuth 2.1 (authorization code with PKCE) for delegated user authentication. Provided client ID and endpoints below are for managed-OAuth onboarding.",
+            "authorizationUrl": "https://mcp.amplitude.com/authorize",
+            "tokenUrl": "https://mcp.amplitude.com/token",
+            "refreshUrl": "https://mcp.amplitude.com/token",
+            "scopes": [
+                "mcp:read",
+                "mcp:write",
+                "offline_access"
+            ],
+            "flows": [
+                "authorizationCode"
+            ]
+        }
+    },
+    "versionName": "original",
+    "preview": true
 }

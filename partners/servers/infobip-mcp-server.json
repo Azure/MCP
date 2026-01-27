@@ -1,36 +1,37 @@
 {
-  "name": "infobip-whatsapp-mcp-server",
-  "title": "Infobip WhatsApp MCP server",
-  "summary": "Infobip WhatsApp MCP server enables seamless integration with our communication platform that allows you to reach your customers globally through WhatsApp.",
-  "description": "Infobip WhatsApp MCP server enables seamless integration with our communication platform that allows you to reach your customers globally through WhatsApp.",
-  "kind": "mcp",
-  "vendor": "Partner",
-  "license": {
-    "name": "Infobip Service Terms and Conditions",
-    "url": "https://www.infobip.com/policies/service-terms-conditions"
-  },
-  "icon": "https://cdn-web.infobip.com/uploads/2025/05/infobip-symbol-orange.png",
-  "externalDocumentation": {
-    "url": "https://www.infobip.com/docs/mcp",
-    "title": "Infobip MCP and WhatsApp documentation"
-  },
-  "remote": "https://azure-mcp.infobip.com/whatsapp",
-  "supportContactInfo": {
-    "name": "customer support contact",
-    "email": "devrel@infobip.com"},
-  "visibility": "true",
-  "categories":"Customer Service",
-  "useCases": [
-    {
-      "name": "Send WhatsApp messages",
-      "description": "Send text, template or media messages to end users via WhatsApp using pre-approved templates where required."
+    "name": "infobip-whatsapp-mcp-server",
+    "title": "Infobip WhatsApp MCP server",
+    "summary": "Infobip WhatsApp MCP server enables seamless integration with our communication platform that allows you to reach your customers globally through WhatsApp.",
+    "description": "Infobip WhatsApp MCP server enables seamless integration with our communication platform that allows you to reach your customers globally through WhatsApp.",
+    "kind": "mcp",
+    "vendor": "Partner",
+    "license": {
+        "name": "Infobip Service Terms and Conditions",
+        "url": "https://www.infobip.com/policies/service-terms-conditions"
     },
-    {
-      "name": "List and reuse WhatsApp templates",
-      "description": "Query available WhatsApp message templates for a configured sender and select templates for message sending."
-    }
-  ],
-  "connectorName": "foundryinfobipmcp",
+    "icon": "https://cdn-web.infobip.com/uploads/2025/05/infobip-symbol-orange.png",
+    "externalDocumentation": {
+        "url": "https://www.infobip.com/docs/mcp",
+        "title": "Infobip MCP and WhatsApp documentation"
+    },
+    "remote": "https://azure-mcp.infobip.com/whatsapp",
+    "supportContactInfo": {
+        "name": "customer support contact",
+        "email": "devrel@infobip.com"
+    },
+    "visibility": "true",
+    "categories": "Customer Service",
+    "useCases": [
+        {
+            "name": "Send WhatsApp messages",
+            "description": "Send text, template or media messages to end users via WhatsApp using pre-approved templates where required."
+        },
+        {
+            "name": "List and reuse WhatsApp templates",
+            "description": "Query available WhatsApp message templates for a configured sender and select templates for message sending."
+        }
+    ],
+    "connectorName": "foundryinfobipmcp",
     "securitySchemes": {
         "infobipOauth": {
             "type": "oauth2",
@@ -42,14 +43,17 @@
                 "profile",
                 "whatsapp:manage"
             ],
-            "flows": ["authorizationCode"]                
+            "flows": [
+                "authorizationCode"
+            ]
         },
-    "infobipKey": {
-      "type": "apiKey",
-      "in": "header",
-      "name": "Authorization",
-      "description": "App <Your API Key>"
-    }
-  },
-  "versionName": "original"
+        "infobipKey": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "Authorization",
+            "description": "App <Your API Key>"
+        }
+    },
+    "versionName": "original",
+    "preview": true
 }

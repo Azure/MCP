@@ -26,12 +26,14 @@
         "neonOauth": {
             "type": "oauth2",
             "description": "Authenticate with Neon using OAuth2 authorization code flow with PKCE support.",
-            "flows": ["authorizationCode"],
-            "authorizationUrl":"https://oauth2.neon.tech/oauth2/auth",
+            "flows": [
+                "authorizationCode"
+            ],
+            "authorizationUrl": "https://oauth2.neon.tech/oauth2/auth",
             "tokenUrl": "https://oauth2.neon.tech/oauth2/token",
             "scopes": []
         },
-        "neonBearerAuth":{
+        "neonBearerAuth": {
             "type": "http",
             "description": "Authenticate with Neon using a Personal Access Token.",
             "scheme": "bearer",
@@ -45,5 +47,7 @@
     },
     "supportContactInfo": {
         "name": "customer support contact",
-        "url": "https://neon.com/docs/introduction/support"}
+        "url": "https://neon.com/docs/introduction/support"
+    },
+    "preview": true
 }

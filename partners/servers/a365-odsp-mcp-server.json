@@ -1,65 +1,71 @@
 {
-  "name": "microsoft-sharepoint-onedrive-mcp-frontier",
-  "title": "Microsoft SharePoint and OneDrive (Frontier)",
-  "summary": "Enables core SharePoint and OneDrive file and folder actions (create, read, update, move, share, delete) and site/library discovery.",
-  "description": "Enables core SharePoint and OneDrive file and folder actions (create, read, update, move, share, delete) and site/library discovery.",
-  "kind": "mcp",
-  "vendor": "Microsoft",
-  "externalDocumentation": {
-    "title": "Agent 365 MCP Servers",
-    "url": "https://aka.ms/AboutAgent365"
-  },
-  "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_ODSPRemoteServer",
-  "supportContactInfo": {
-    "name": "customer support contact",
-    "url": "https://aka.ms/a365mcpsupport"
-  },
-  "license": {
+    "name": "microsoft-sharepoint-onedrive-mcp-frontier",
+    "title": "Microsoft SharePoint and OneDrive (Frontier)",
+    "summary": "Enables core SharePoint and OneDrive file and folder actions (create, read, update, move, share, delete) and site/library discovery.",
+    "description": "Enables core SharePoint and OneDrive file and folder actions (create, read, update, move, share, delete) and site/library discovery.",
+    "kind": "mcp",
+    "vendor": "Microsoft",
+    "externalDocumentation": {
+        "title": "Agent 365 MCP Servers",
+        "url": "https://aka.ms/AboutAgent365"
+    },
+    "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_ODSPRemoteServer",
+    "supportContactInfo": {
+        "name": "customer support contact",
+        "url": "https://aka.ms/a365mcpsupport"
+    },
+    "license": {
         "name": "Agent 365",
         "url": "https://aka.ms/AboutAgent365"
-  },
-  "visibility": "true",
-  "categories": "Productivity",
-  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/MicrosoftSharepointAndOneDrive.png",
-  "useCases": [
-    {
-      "name": "Create folders",
-      "description": "Create folders in SharePoint sites or a user's OneDrive to organize content for workflows or apps."
     },
-    {
-      "name": "Upload or create files",
-      "description": "Upload small files or create text files in a library or OneDrive location on behalf of a user or service."
+    "visibility": "true",
+    "categories": "Productivity",
+    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/MicrosoftSharepointAndOneDrive.png",
+    "useCases": [
+        {
+            "name": "Create folders",
+            "description": "Create folders in SharePoint sites or a user's OneDrive to organize content for workflows or apps."
+        },
+        {
+            "name": "Upload or create files",
+            "description": "Upload small files or create text files in a library or OneDrive location on behalf of a user or service."
+        },
+        {
+            "name": "Retrieve metadata",
+            "description": "Get file/folder metadata such as size, lastModified, content type, and location for indexing or processing."
+        },
+        {
+            "name": "Move, rename, and delete",
+            "description": "Move or rename files and folders and delete items when no longer needed as part of automated workflows."
+        },
+        {
+            "name": "List and search",
+            "description": "List files and folders within a location, search across sites or drives, and discover document libraries available in a site."
+        },
+        {
+            "name": "Share and manage permissions",
+            "description": "Share files and assign or revoke access permissions programmatically to support collaboration scenarios."
+        }
+    ],
+    "securitySchemes": {
+        "a365odspoauth2": {
+            "type": "oauth2",
+            "description": "Authenticate with A365 using OAuth2 authorization code flow with PKCE support.",
+            "flows": [
+                "authorizationCode"
+            ],
+            "authorizationUrl": "https://login.microsoftonline.com",
+            "tokenUrl": "https://login.microsoftonline.com",
+            "refreshUrl": "https://login.microsoftonline.com",
+            "scopes": [
+                "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1"
+            ]
+        }
     },
-    {
-      "name": "Retrieve metadata",
-      "description": "Get file/folder metadata such as size, lastModified, content type, and location for indexing or processing."
-    },
-    {
-      "name": "Move, rename, and delete",
-      "description": "Move or rename files and folders and delete items when no longer needed as part of automated workflows."
-    },
-    {
-      "name": "List and search",
-      "description": "List files and folders within a location, search across sites or drives, and discover document libraries available in a site."
-    },
-    {
-      "name": "Share and manage permissions",
-      "description": "Share files and assign or revoke access permissions programmatically to support collaboration scenarios."
-    }
-  ],
-  "securitySchemes": {
-    "a365odspoauth2": {
-      "type": "oauth2",
-      "description": "Authenticate with A365 using OAuth2 authorization code flow with PKCE support.",
-      "flows": ["authorizationCode"],
-      "authorizationUrl": "https://login.microsoftonline.com",
-      "tokenUrl": "https://login.microsoftonline.com",
-      "refreshUrl": "https://login.microsoftonline.com",
-      "scopes": ["ea9ffc3e-8a23-4a7d-836d-234d7c7565c1"]
-    }
-  },
-  "authSchemas":["OAuth2"],
-  "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
-  "versionName": "original"
-
+    "authSchemas": [
+        "OAuth2"
+    ],
+    "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
+    "versionName": "original",
+    "preview": true
 }

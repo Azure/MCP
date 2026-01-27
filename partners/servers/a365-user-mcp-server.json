@@ -1,61 +1,67 @@
 {
-  "name": "microsoft-365-user-profile-mcp-frontier",
-  "title": "Microsoft 365 User Profile (Frontier)",
-  "summary": "Enables Microsoft 365 user profile and directory lookups (user details, managers, direct reports, and org listings).",
-  "description": "Enables Microsoft 365 user profile and directory lookups (user details, managers, direct reports, and org listings).",
-  "kind": "mcp",
-  "vendor": "Microsoft",
-  "externalDocumentation": {
-    "title": "Agent 365 MCP Servers",
-    "url": "https://aka.ms/AboutAgent365"
-  },
-  "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_MeServer",
-  "supportContactInfo": {
-    "name": "customer support contact",
-    "url": "https://aka.ms/a365mcpsupport"
-  },
-  "license": {
+    "name": "microsoft-365-user-profile-mcp-frontier",
+    "title": "Microsoft 365 User Profile (Frontier)",
+    "summary": "Enables Microsoft 365 user profile and directory lookups (user details, managers, direct reports, and org listings).",
+    "description": "Enables Microsoft 365 user profile and directory lookups (user details, managers, direct reports, and org listings).",
+    "kind": "mcp",
+    "vendor": "Microsoft",
+    "externalDocumentation": {
+        "title": "Agent 365 MCP Servers",
+        "url": "https://aka.ms/AboutAgent365"
+    },
+    "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_MeServer",
+    "supportContactInfo": {
+        "name": "customer support contact",
+        "url": "https://aka.ms/a365mcpsupport"
+    },
+    "license": {
         "name": "Agent 365",
         "url": "https://aka.ms/AboutAgent365"
-  },
-  "visibility": "true",
-  "categories": "Productivity",
-  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Microsoft365UserProfile.png",
-  "useCases": [
-    {
-      "name": "Retrieve signed-in user profile",
-      "description": "Return profile fields (displayName, email, id, jobTitle, officeLocation, mobilePhone) for the authenticated user."
     },
-    {
-      "name": "Manager and direct reports",
-      "description": "Get a user's manager and list direct reports to support org-chart lookups and workflow routing."
+    "visibility": "true",
+    "categories": "Productivity",
+    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Microsoft365UserProfile.png",
+    "useCases": [
+        {
+            "name": "Retrieve signed-in user profile",
+            "description": "Return profile fields (displayName, email, id, jobTitle, officeLocation, mobilePhone) for the authenticated user."
+        },
+        {
+            "name": "Manager and direct reports",
+            "description": "Get a user's manager and list direct reports to support org-chart lookups and workflow routing."
+        },
+        {
+            "name": "Lookup other users",
+            "description": "Query profile details for other users by UPN, id, or display name for directory-driven scenarios."
+        },
+        {
+            "name": "Organization information",
+            "description": "Retrieve basic tenant/organization metadata useful for admin or tenant-aware agents."
+        },
+        {
+            "name": "List directory users",
+            "description": "Enumerate users in the directory with optional filters/paging for synchronization or bulk lookup tasks."
+        }
+    ],
+    "securitySchemes": {
+        "a365userprofileoauth2": {
+            "type": "oauth2",
+            "description": "Authenticate with A365 using OAuth2 authorization code flow with PKCE support.",
+            "flows": [
+                "authorizationCode"
+            ],
+            "authorizationUrl": "https://login.microsoftonline.com",
+            "tokenUrl": "https://login.microsoftonline.com",
+            "refreshUrl": "https://login.microsoftonline.com",
+            "scopes": [
+                "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1"
+            ]
+        }
     },
-    {
-      "name": "Lookup other users",
-      "description": "Query profile details for other users by UPN, id, or display name for directory-driven scenarios."
-    },
-    {
-      "name": "Organization information",
-      "description": "Retrieve basic tenant/organization metadata useful for admin or tenant-aware agents."
-    },
-    {
-      "name": "List directory users",
-      "description": "Enumerate users in the directory with optional filters/paging for synchronization or bulk lookup tasks."
-    }
-  ],
-  "securitySchemes": {
-    "a365userprofileoauth2": {
-      "type": "oauth2",
-      "description": "Authenticate with A365 using OAuth2 authorization code flow with PKCE support.",
-      "flows": ["authorizationCode"],
-      "authorizationUrl": "https://login.microsoftonline.com",
-      "tokenUrl": "https://login.microsoftonline.com",
-      "refreshUrl": "https://login.microsoftonline.com",
-      "scopes": ["ea9ffc3e-8a23-4a7d-836d-234d7c7565c1"]
-    }
-  },
-  "authSchemas":["OAuth2"],
-  "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
-  "versionName": "original"
-
+    "authSchemas": [
+        "OAuth2"
+    ],
+    "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
+    "versionName": "original",
+    "preview": true
 }

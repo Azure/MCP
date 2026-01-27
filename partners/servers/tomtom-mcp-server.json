@@ -1,51 +1,53 @@
 {
-  "name": "tomtom-maps-mcp-server",
-  "title": "TomTom Maps",
-  "summary": "Give your application real-time geospatial context from TomTom —  including maps, routing, search, geocoding and traffic.",
-  "description": "Give your application real-time geospatial context from TomTom —  including maps, routing, search, geocoding and traffic.",
-  "vendor": "Partner",
-  "visibility": "true",
-  "kind": "mcp",
-  "remote": "https://mcp.tomtom.com/maps",
-  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/TomTom.png",
-  "externalDocumentation": {
-    "title": "TomTom MCP documentation",
-    "url": "https://developer.tomtom.com/tomtom-mcp/documentation/overview"
-  },
-  "license": {
-    "name": "User License Terms",
-    "url": "https://developer.tomtom.com/terms-and-conditions"
-  },
-  "useCases": [
-    {
-      "name": "Search & Geocoding",
-      "description": "Converts addresses/locations into precise coordinates, performs reverse lookups, and executes fuzzy searches for points of interest (POIs) globally."
+    "name": "tomtom-maps-mcp-server",
+    "title": "TomTom Maps",
+    "summary": "Give your application real-time geospatial context from TomTom —  including maps, routing, search, geocoding and traffic.",
+    "description": "Give your application real-time geospatial context from TomTom —  including maps, routing, search, geocoding and traffic.",
+    "vendor": "Partner",
+    "visibility": "true",
+    "kind": "mcp",
+    "remote": "https://mcp.tomtom.com/maps",
+    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/TomTom.png",
+    "externalDocumentation": {
+        "title": "TomTom MCP documentation",
+        "url": "https://developer.tomtom.com/tomtom-mcp/documentation/overview"
     },
-    {
-      "name": "Multi-Modal Routing",
-      "description": " Calculate optimized routes, travel times, travel distances, and reachable ranges – all considering TomTom’s high-quality real-time traffic."
+    "license": {
+        "name": "User License Terms",
+        "url": "https://developer.tomtom.com/terms-and-conditions"
     },
-    {
-      "name": "Real-Time Traffic Context",
-      "description": "Provides current Traffic Incidents and flow data for making dynamic, effective route decisions, rerouting, and generating predictive Estimated Times of Arrival (ETAs)."
+    "useCases": [
+        {
+            "name": "Search & Geocoding",
+            "description": "Converts addresses/locations into precise coordinates, performs reverse lookups, and executes fuzzy searches for points of interest (POIs) globally."
+        },
+        {
+            "name": "Multi-Modal Routing",
+            "description": " Calculate optimized routes, travel times, travel distances, and reachable ranges – all considering TomTom’s high-quality real-time traffic."
+        },
+        {
+            "name": "Real-Time Traffic Context",
+            "description": "Provides current Traffic Incidents and flow data for making dynamic, effective route decisions, rerouting, and generating predictive Estimated Times of Arrival (ETAs)."
+        },
+        {
+            "name": "Visual Context (Static Maps)",
+            "description": "Generate maps with overlays: routes, location markers and range polygons."
+        }
+    ],
+    "categories": "Geolocation",
+    "tags": [],
+    "supportContactInfo": {
+        "name": "customer support contact",
+        "url": "https://support.tomtom.com/support"
     },
-    {
-      "name": "Visual Context (Static Maps)",
-      "description": "Generate maps with overlays: routes, location markers and range polygons."
-    }
-  ],
-  "categories": "Geolocation",
-  "tags": [],
-  "supportContactInfo": {
-    "name": "customer support contact",
-    "url": "https://support.tomtom.com/support"},
-  "versionName": "original",
-  "securitySchemes": {
-      "tomtomSecret": {
-      "type": "apiKey",
-      "in": "header",
-      "name": "tomtom-api-key",
-      "description": "Secret is provided via headers. "
-    }
-    }
-  }
+    "versionName": "original",
+    "securitySchemes": {
+        "tomtomSecret": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "tomtom-api-key",
+            "description": "Secret is provided via headers. "
+        }
+    },
+    "preview": true
+}

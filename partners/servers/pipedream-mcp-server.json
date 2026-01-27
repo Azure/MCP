@@ -39,11 +39,15 @@
                 "email",
                 "offline_access"
             ],
-            "flows": ["authorizationCode"]
+            "flows": [
+                "authorizationCode"
+            ]
         }
     },
     "supportContactInfo": {
         "name": "customer support contact",
-        "email": "support@pipedream.com"},
-    "connectorName": "foundrypipedreammcp"
+        "email": "support@pipedream.com"
+    },
+    "connectorName": "foundrypipedreammcp",
+    "preview": true
 }

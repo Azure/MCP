@@ -1,61 +1,67 @@
 {
-  "name": "microsoft-sharepoint-lists-mcp-frontier",
-  "title": "Microsoft SharePoint Lists (Frontier)",
-  "summary": "Enables SharePoint site and list operations (retrieve sites, list/inspect lists, and CRUD list items) for agentic workflows.",
-  "description": "Provides programmatic access to SharePoint site and list features for agentic workflows: discover SharePoint sites, list available lists/document libraries, retrieve list metadata and list items, create/update/delete list items, and perform list queries and searches. Typical scenarios include data collection via lists, automation that manages item lifecycle, conversational agents that read/write list items, and admin workflows that enumerate or update lists across sites.",
-  "kind": "mcp",
-  "vendor": "Microsoft",
-  "externalDocumentation": {
-    "title": "Agent 365 MCP Servers",
-    "url": "https://aka.ms/AboutAgent365"
-  },
-  "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_SharepointListsTools",
-  "supportContactInfo": {
-    "name": "customer support contact",
-    "url": "https://aka.ms/a365mcpsupport"
-  },
-  "license": {
+    "name": "microsoft-sharepoint-lists-mcp-frontier",
+    "title": "Microsoft SharePoint Lists (Frontier)",
+    "summary": "Enables SharePoint site and list operations (retrieve sites, list/inspect lists, and CRUD list items) for agentic workflows.",
+    "description": "Provides programmatic access to SharePoint site and list features for agentic workflows: discover SharePoint sites, list available lists/document libraries, retrieve list metadata and list items, create/update/delete list items, and perform list queries and searches. Typical scenarios include data collection via lists, automation that manages item lifecycle, conversational agents that read/write list items, and admin workflows that enumerate or update lists across sites.",
+    "kind": "mcp",
+    "vendor": "Microsoft",
+    "externalDocumentation": {
+        "title": "Agent 365 MCP Servers",
+        "url": "https://aka.ms/AboutAgent365"
+    },
+    "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_SharepointListsTools",
+    "supportContactInfo": {
+        "name": "customer support contact",
+        "url": "https://aka.ms/a365mcpsupport"
+    },
+    "license": {
         "name": "Agent 365",
         "url": "https://aka.ms/AboutAgent365"
-  },
-  "visibility": "true",
-  "categories": "Productivity",
-  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/MicrosoftSharepointLists.png",
-  "useCases": [
-    {
-      "name": "Retrieve site information",
-      "description": "Get metadata about SharePoint sites and discovery of site resources to find lists and libraries."
     },
-    {
-      "name": "List available lists",
-      "description": "Enumerate lists and document libraries in a site with metadata for selection and processing."
+    "visibility": "true",
+    "categories": "Productivity",
+    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/MicrosoftSharepointLists.png",
+    "useCases": [
+        {
+            "name": "Retrieve site information",
+            "description": "Get metadata about SharePoint sites and discovery of site resources to find lists and libraries."
+        },
+        {
+            "name": "List available lists",
+            "description": "Enumerate lists and document libraries in a site with metadata for selection and processing."
+        },
+        {
+            "name": "View list items",
+            "description": "Read and search list items with optional filters, paging, and query parameters."
+        },
+        {
+            "name": "Create and update list items",
+            "description": "Create new list items and update existing items as part of automation or conversational flows."
+        },
+        {
+            "name": "Delete list items",
+            "description": "Remove list items that are no longer needed as part of lifecycle management tasks."
+        }
+    ],
+    "securitySchemes": {
+        "a365sharepointlistsoauth2": {
+            "type": "oauth2",
+            "description": "Authenticate with A365 using OAuth2 authorization code flow with PKCE support.",
+            "flows": [
+                "authorizationCode"
+            ],
+            "authorizationUrl": "https://login.microsoftonline.com",
+            "tokenUrl": "https://login.microsoftonline.com",
+            "refreshUrl": "https://login.microsoftonline.com",
+            "scopes": [
+                "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1"
+            ]
+        }
     },
-    {
-      "name": "View list items",
-      "description": "Read and search list items with optional filters, paging, and query parameters."
-    },
-    {
-      "name": "Create and update list items",
-      "description": "Create new list items and update existing items as part of automation or conversational flows."
-    },
-    {
-      "name": "Delete list items",
-      "description": "Remove list items that are no longer needed as part of lifecycle management tasks."
-    }
-  ],
-  "securitySchemes": {
-    "a365sharepointlistsoauth2": {
-      "type": "oauth2",
-      "description": "Authenticate with A365 using OAuth2 authorization code flow with PKCE support.",
-      "flows": ["authorizationCode"],
-      "authorizationUrl": "https://login.microsoftonline.com",
-      "tokenUrl": "https://login.microsoftonline.com",
-      "refreshUrl": "https://login.microsoftonline.com",
-      "scopes": ["ea9ffc3e-8a23-4a7d-836d-234d7c7565c1"]
-    }
-  },
-  "authSchemas":["OAuth2"],
-  "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
-  "versionName": "original"
-
+    "authSchemas": [
+        "OAuth2"
+    ],
+    "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
+    "versionName": "original",
+    "preview": true
 }

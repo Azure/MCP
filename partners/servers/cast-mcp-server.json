@@ -1,50 +1,52 @@
 {
-  "name": "cast-imaging-mcp-server",
-  "title": "CAST Imaging MCP Server",
-  "summary": "Deterministic mapping of application architecture and code objects to support discovery, impact analysis, and technical debt remediation.",
-  "description": "Deterministic mapping of application architecture and code objects to support discovery, impact analysis, and technical debt remediation.",
-  "kind": "mcp",
-  "vendor": "Partner",
-  "license": {
-    "name": "CAST Imaging Terms",
-    "url": "https://doc.castsoftware.com/imagingoncloud/legal/termsconditions_20240704.pdf"
-  },
-  "icon": "https://www.castsoftware.com/hubfs/CAST-Logo-Indigo.png",
-  "externalDocumentation": {
-    "title": "CAST Imaging MCP docs",
-    "url": "https://doc.castsoftware.com/imagingoncloud/how-to/mcp-server/"
-  },
-  "remote": "https://castimaging.io/imaging/mcp/",
-  "supportContactInfo": {
-    "name": "customer support contact",
-    "email": "help@castsoftware.com"},
-  "visibility": "true",
-  "categories": "Monitoring & Diagnostics",
-  "useCases": [
-    {
-      "name": "Application discovery",
-      "description": "Discover and enumerate applications and high-level statistics available within the platform."
+    "name": "cast-imaging-mcp-server",
+    "title": "CAST Imaging MCP Server",
+    "summary": "Deterministic mapping of application architecture and code objects to support discovery, impact analysis, and technical debt remediation.",
+    "description": "Deterministic mapping of application architecture and code objects to support discovery, impact analysis, and technical debt remediation.",
+    "kind": "mcp",
+    "vendor": "Partner",
+    "license": {
+        "name": "CAST Imaging Terms",
+        "url": "https://doc.castsoftware.com/imagingoncloud/legal/termsconditions_20240704.pdf"
     },
-    {
-      "name": "Impact analysis",
-      "description": "Analyze cross-application and cross-layer dependencies to assess impact of changes."
+    "icon": "https://www.castsoftware.com/hubfs/CAST-Logo-Indigo.png",
+    "externalDocumentation": {
+        "title": "CAST Imaging MCP docs",
+        "url": "https://doc.castsoftware.com/imagingoncloud/how-to/mcp-server/"
     },
-    {
-      "name": "Root cause & technical debt remediation",
-      "description": "Provide structural quality insights and remediation guidance for performance, security, and maintainability issues."
+    "remote": "https://castimaging.io/imaging/mcp/",
+    "supportContactInfo": {
+        "name": "customer support contact",
+        "email": "help@castsoftware.com"
     },
-    {
-      "name": "Transactions & call graph exploration",
-      "description": "Query transactions, end-to-end call graphs, data-access paths and object details for diagnostics and modernization planning."
-    }
-  ],
-  "securitySchemes": {
-    "x-api-key": {
-      "type": "apiKey",
-      "description": "API key provided in the request header named 'x-api-key'. Do NOT store secrets in the public registry file.",
-      "in": "header",
-      "name": "x-api-key"
-    }
-  },
-  "versionName": "original"
+    "visibility": "true",
+    "categories": "Monitoring & Diagnostics",
+    "useCases": [
+        {
+            "name": "Application discovery",
+            "description": "Discover and enumerate applications and high-level statistics available within the platform."
+        },
+        {
+            "name": "Impact analysis",
+            "description": "Analyze cross-application and cross-layer dependencies to assess impact of changes."
+        },
+        {
+            "name": "Root cause & technical debt remediation",
+            "description": "Provide structural quality insights and remediation guidance for performance, security, and maintainability issues."
+        },
+        {
+            "name": "Transactions & call graph exploration",
+            "description": "Query transactions, end-to-end call graphs, data-access paths and object details for diagnostics and modernization planning."
+        }
+    ],
+    "securitySchemes": {
+        "x-api-key": {
+            "type": "apiKey",
+            "description": "API key provided in the request header named 'x-api-key'. Do NOT store secrets in the public registry file.",
+            "in": "header",
+            "name": "x-api-key"
+        }
+    },
+    "versionName": "original",
+    "preview": true
 }

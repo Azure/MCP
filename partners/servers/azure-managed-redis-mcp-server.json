@@ -1,31 +1,35 @@
 {
-  "name": "azure-managed-redis",
-  "title": "Azure Managed Redis",
-  "summary": "Azure Managed Redis MCP Server provides a natural language interface for agentic apps to interact with Azure Managed Redis",
-  "description": "Azure Managed Redis MCP Server provides a natural language interface for agentic apps to interact with Azure Managed Redis—a high-speed, in-memory datastore that is ideal for low-latency use cases like agent memory, vector data store and semantic caching.",
-  "vendor": "Microsoft",
-  "kind": "mcp",
-  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Azure-Managed-Redis.svg",
-  "externalDocumentation": {
-    "title": "Azure Managed Redis MCP repo",
-    "url": "https://github.com/AzureManagedRedis/MCPToolkit"
-  },
-  "license": {
-    "name": "LICENSE",
-    "url": "https://github.com/redis/mcp-redis/blob/main/LICENSE"
-  },
-  "useCases": [
-    {
-      "name": "Manage and search data",
-      "description": "Azure Managed Redis MCP Server provides a natural language interface for agentic apps to interact with Azure Managed Redis—a high-speed, in-memory datastore that is ideal for low-latency use cases like agent memory and vector data store. Using this MCP Server, you can ask questions like:\n\n\"Store the entire conversation in a stream\"\n\n\"Cache this item\"\n\n\"Store the session with an expiration time\"\n\n\"Index and search this vector\""
-    }
-  ],
-  "categories": "Databases",
-  "tags": ["knowledge"],
-  "supportContactInfo": {
-    "name": "customer support contact",
-    "url": "https://github.com/redis/mcp-redis/issues"},
-  "versionName": "original",
-  "visibility": "true",
-  "packages":[]
+    "name": "azure-managed-redis",
+    "title": "Azure Managed Redis",
+    "summary": "Azure Managed Redis MCP Server provides a natural language interface for agentic apps to interact with Azure Managed Redis",
+    "description": "Azure Managed Redis MCP Server provides a natural language interface for agentic apps to interact with Azure Managed Redis—a high-speed, in-memory datastore that is ideal for low-latency use cases like agent memory, vector data store and semantic caching.",
+    "vendor": "Microsoft",
+    "kind": "mcp",
+    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Azure-Managed-Redis.svg",
+    "externalDocumentation": {
+        "title": "Azure Managed Redis MCP repo",
+        "url": "https://github.com/AzureManagedRedis/MCPToolkit"
+    },
+    "license": {
+        "name": "LICENSE",
+        "url": "https://github.com/redis/mcp-redis/blob/main/LICENSE"
+    },
+    "useCases": [
+        {
+            "name": "Manage and search data",
+            "description": "Azure Managed Redis MCP Server provides a natural language interface for agentic apps to interact with Azure Managed Redis—a high-speed, in-memory datastore that is ideal for low-latency use cases like agent memory and vector data store. Using this MCP Server, you can ask questions like:\n\n\"Store the entire conversation in a stream\"\n\n\"Cache this item\"\n\n\"Store the session with an expiration time\"\n\n\"Index and search this vector\""
+        }
+    ],
+    "categories": "Databases",
+    "tags": [
+        "knowledge"
+    ],
+    "supportContactInfo": {
+        "name": "customer support contact",
+        "url": "https://github.com/redis/mcp-redis/issues"
+    },
+    "versionName": "original",
+    "visibility": "true",
+    "packages": [],
+    "preview": true
 }

@@ -1,43 +1,47 @@
 {
-  "name": "azure-database-postgresql",
-  "title": "Azure Database for PostgreSQL",
-  "summary": "The Azure Database for PostgreSQL allows you to manage Azure Database for PostgreSQL resources using natural language prompts.",
-  "description": "Enables Agents to interact with and retrieve data from Azure Database for PostgreSQL resources using natural language prompts.",
-  "kind": "mcp",
-  "icon": "https://azure.microsoft.com/svghandler/postgresql/?width=600&height=315",
-  "externalDocumentation": {
-    "title": "Azure PostgreSQL MCP setup",
-    "url": "https://aka.ms/pg-mcp-setup"
-  },
-  "vendor": "Microsoft",
-  "visibility": "true",
-  "license": {
-    "name": "MIT",
-    "url": "https://github.com/microsoft/mcp/tree/main?tab=MIT-1-ov-file#readme"
-  },
-  "useCases": [
-    {
-    "name": "Data querying and search",
-     "description": "Efficiently query and retrieve data across PostgreSQL databases to enable fast insights and analytics."
-   },
-   {
-     "name": "Semantic Search with Vector Similarity",
-     "description": "Leverage AI-powered embeddings for semantic retrieval, enabling context-aware search across enterprise datasets."
-   },
-   {
-     "name": "Table schema Discovery",
-     "description": "Automatically discover and analyze PostgreSQL table schemas and data structures to support agent-driven data access and intelligent query generation."
-   },
-   {
-     "name": "Identity-Driven Secure Authentication",
-     "description": "Use Entra ID authentication with Managed Identity for seamless, secure, and role-based access to PostgreSQL resources."
-   }
-  ],
-  "categories": "Databases",
-  "tags": ["Knowledge"],
-  "supportContactInfo": {
-    "name": "customer support contact",
-    "email": "azurepgai@service.microsoft.com"},
-  "versionName": "original",
-  "packages":[]
+    "name": "azure-database-postgresql",
+    "title": "Azure Database for PostgreSQL",
+    "summary": "The Azure Database for PostgreSQL allows you to manage Azure Database for PostgreSQL resources using natural language prompts.",
+    "description": "Enables Agents to interact with and retrieve data from Azure Database for PostgreSQL resources using natural language prompts.",
+    "kind": "mcp",
+    "icon": "https://azure.microsoft.com/svghandler/postgresql/?width=600&height=315",
+    "externalDocumentation": {
+        "title": "Azure PostgreSQL MCP setup",
+        "url": "https://aka.ms/pg-mcp-setup"
+    },
+    "vendor": "Microsoft",
+    "visibility": "true",
+    "license": {
+        "name": "MIT",
+        "url": "https://github.com/microsoft/mcp/tree/main?tab=MIT-1-ov-file#readme"
+    },
+    "useCases": [
+        {
+            "name": "Data querying and search",
+            "description": "Efficiently query and retrieve data across PostgreSQL databases to enable fast insights and analytics."
+        },
+        {
+            "name": "Semantic Search with Vector Similarity",
+            "description": "Leverage AI-powered embeddings for semantic retrieval, enabling context-aware search across enterprise datasets."
+        },
+        {
+            "name": "Table schema Discovery",
+            "description": "Automatically discover and analyze PostgreSQL table schemas and data structures to support agent-driven data access and intelligent query generation."
+        },
+        {
+            "name": "Identity-Driven Secure Authentication",
+            "description": "Use Entra ID authentication with Managed Identity for seamless, secure, and role-based access to PostgreSQL resources."
+        }
+    ],
+    "categories": "Databases",
+    "tags": [
+        "Knowledge"
+    ],
+    "supportContactInfo": {
+        "name": "customer support contact",
+        "email": "azurepgai@service.microsoft.com"
+    },
+    "versionName": "original",
+    "packages": [],
+    "preview": true
 }

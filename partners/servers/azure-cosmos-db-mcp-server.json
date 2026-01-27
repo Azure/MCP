@@ -1,48 +1,51 @@
 {
-  "name": "azure-cosmos-db",
-  "title": "Azure Cosmos DB",
-  "summary": "Enables Agents to interact with and retrieve data from Azure Cosmos DB accounts.",
-  "description": "Enables Agents to interact with and retrieve data from Azure Cosmos DB accounts.",
-  "kind": "mcp",
-  "license": {
-    "name": "MIT",
-    "url": "https://github.com/AzureCosmosDB/MCPToolKit/blob/main/LICENSE"
-  },
-  "externalDocumentation": {
-    "title": "MCPToolKit Deploy Guide",
-    "url": "http://aka.ms/CosmosDB/MCPToolKit"
-  },
-  "repository": {
-    "url": "https://github.com/AzureCosmosDB/MCPToolKit",
-    "source": "github"
-  },
-  "versionName": "original",
-  "packages": [],
-  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Azure-Cosmos-DB.svg",
-  "useCases": [
-    {
-      "name": "Document querying and search",
-      "description": "Query document stores and perform full-text search across Cosmos DB containers."
+    "name": "azure-cosmos-db",
+    "title": "Azure Cosmos DB",
+    "summary": "Enables Agents to interact with and retrieve data from Azure Cosmos DB accounts.",
+    "description": "Enables Agents to interact with and retrieve data from Azure Cosmos DB accounts.",
+    "kind": "mcp",
+    "license": {
+        "name": "MIT",
+        "url": "https://github.com/AzureCosmosDB/MCPToolKit/blob/main/LICENSE"
     },
-    {
-      "name": "Vector similarity search",
-      "description": "AI-powered vector similarity search using Azure OpenAI embeddings for semantic retrieval."
+    "externalDocumentation": {
+        "title": "MCPToolKit Deploy Guide",
+        "url": "http://aka.ms/CosmosDB/MCPToolKit"
     },
-    {
-      "name": "Container schema discovery",
-      "description": "Discover and analyze container schema and data layout to support agent-driven data access."
+    "repository": {
+        "url": "https://github.com/AzureCosmosDB/MCPToolKit",
+        "source": "github"
     },
-    {
-      "name": "Secure authentication",
-      "description": "Secure Entra ID authentication with Managed Identity support for seamless, identity-driven access."
-    }
-  ],
-  "tags": ["Knowledge"],
-  "categories": "Databases",
-  "vendor": "Microsoft",
-  "visibility": "true",
-  "supportContactInfo": {
-    "name":"Azure Cosmos DB Support",
-    "email": "CosmosDBMCPToolKit@Microsoft.com"
-  }
+    "versionName": "original",
+    "packages": [],
+    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Azure-Cosmos-DB.svg",
+    "useCases": [
+        {
+            "name": "Document querying and search",
+            "description": "Query document stores and perform full-text search across Cosmos DB containers."
+        },
+        {
+            "name": "Vector similarity search",
+            "description": "AI-powered vector similarity search using Azure OpenAI embeddings for semantic retrieval."
+        },
+        {
+            "name": "Container schema discovery",
+            "description": "Discover and analyze container schema and data layout to support agent-driven data access."
+        },
+        {
+            "name": "Secure authentication",
+            "description": "Secure Entra ID authentication with Managed Identity support for seamless, identity-driven access."
+        }
+    ],
+    "tags": [
+        "Knowledge"
+    ],
+    "categories": "Databases",
+    "vendor": "Microsoft",
+    "visibility": "true",
+    "supportContactInfo": {
+        "name": "Azure Cosmos DB Support",
+        "email": "CosmosDBMCPToolKit@Microsoft.com"
+    },
+    "preview": true
 }

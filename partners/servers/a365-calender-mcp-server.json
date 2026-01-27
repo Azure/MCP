@@ -1,69 +1,75 @@
 {
-  "name": "microsoft-outlook-calendar-mcp-frontier",
-  "title": "Microsoft Outlook Calendar (Frontier)",
-  "summary": "Enables core Outlook calendar actions (create, update, manage, and schedule events) for agentic workflows.",
-  "description": "Enables core Outlook calendar actions (create, update, manage, and schedule events) for agentic workflows.",
-  "kind": "mcp",
-  "vendor": "Microsoft",
-  "externalDocumentation": {
-    "title": "Agent 365 MCP Servers",
-    "url": "https://aka.ms/AboutAgent365"
-  },
-  "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_CalendarTools",
-  "supportContactInfo": {
-    "name": "customer support contact",
-    "url": "https://aka.ms/a365mcpsupport"
-  },
-  "license": {
+    "name": "microsoft-outlook-calendar-mcp-frontier",
+    "title": "Microsoft Outlook Calendar (Frontier)",
+    "summary": "Enables core Outlook calendar actions (create, update, manage, and schedule events) for agentic workflows.",
+    "description": "Enables core Outlook calendar actions (create, update, manage, and schedule events) for agentic workflows.",
+    "kind": "mcp",
+    "vendor": "Microsoft",
+    "externalDocumentation": {
+        "title": "Agent 365 MCP Servers",
+        "url": "https://aka.ms/AboutAgent365"
+    },
+    "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_CalendarTools",
+    "supportContactInfo": {
+        "name": "customer support contact",
+        "url": "https://aka.ms/a365mcpsupport"
+    },
+    "license": {
         "name": "Agent 365",
         "url": "https://aka.ms/AboutAgent365"
-  },
-  "visibility": "true",
-  "categories": "Productivity",
-  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/MicrosoftCalendarMCPServer.png",
-  "useCases": [
-    {
-      "name": "Create and edit events",
-      "description": "Create new calendar events or update existing ones with title, time, location, attendees, reminders, and notes."
     },
-    {
-      "name": "Manage invitations",
-      "description": "Accept, decline, or propose new times for event invitations and update attendee responses."
+    "visibility": "true",
+    "categories": "Productivity",
+    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/MicrosoftCalendarMCPServer.png",
+    "useCases": [
+        {
+            "name": "Create and edit events",
+            "description": "Create new calendar events or update existing ones with title, time, location, attendees, reminders, and notes."
+        },
+        {
+            "name": "Manage invitations",
+            "description": "Accept, decline, or propose new times for event invitations and update attendee responses."
+        },
+        {
+            "name": "View event details",
+            "description": "Retrieve event metadata and attendee information, including location, agenda, and participation status."
+        },
+        {
+            "name": "Cancel and delete events",
+            "description": "Cancel or remove scheduled events and notify affected attendees when appropriate."
+        },
+        {
+            "name": "Check availability",
+            "description": "Query free/busy information for one or more users to determine availability windows."
+        },
+        {
+            "name": "Find meeting times",
+            "description": "Compute suitable meeting slots across attendees and calendars, respecting time zones and working hours."
+        },
+        {
+            "name": "List events and views",
+            "description": "List upcoming events, query calendar ranges, and return calendar views (day/week/month) for user or resource calendars."
+        }
+    ],
+    "securitySchemes": {
+        "a365calendaroauth2": {
+            "type": "oauth2",
+            "description": "Authenticate with A365 using OAuth2 authorization code flow with PKCE support.",
+            "flows": [
+                "authorizationCode"
+            ],
+            "authorizationUrl": "https://login.microsoftonline.com",
+            "tokenUrl": "https://login.microsoftonline.com",
+            "refreshUrl": "https://login.microsoftonline.com",
+            "scopes": [
+                "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1"
+            ]
+        }
     },
-    {
-      "name": "View event details",
-      "description": "Retrieve event metadata and attendee information, including location, agenda, and participation status."
-    },
-    {
-      "name": "Cancel and delete events",
-      "description": "Cancel or remove scheduled events and notify affected attendees when appropriate."
-    },
-    {
-      "name": "Check availability",
-      "description": "Query free/busy information for one or more users to determine availability windows."
-    },
-    {
-      "name": "Find meeting times",
-      "description": "Compute suitable meeting slots across attendees and calendars, respecting time zones and working hours."
-    },
-    {
-      "name": "List events and views",
-      "description": "List upcoming events, query calendar ranges, and return calendar views (day/week/month) for user or resource calendars."
-    }
-  ],
-  "securitySchemes": {
-    "a365calendaroauth2": {
-      "type": "oauth2",
-      "description": "Authenticate with A365 using OAuth2 authorization code flow with PKCE support.",
-      "flows": ["authorizationCode"],
-      "authorizationUrl": "https://login.microsoftonline.com",
-      "tokenUrl": "https://login.microsoftonline.com",
-      "refreshUrl": "https://login.microsoftonline.com",
-      "scopes": ["ea9ffc3e-8a23-4a7d-836d-234d7c7565c1"]
-    }
-  },
-  "authSchemas":["OAuth2"],
-  "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
-  "versionName": "original"
-
+    "authSchemas": [
+        "OAuth2"
+    ],
+    "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
+    "versionName": "original",
+    "preview": true
 }
