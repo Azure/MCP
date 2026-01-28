@@ -43,5 +43,6 @@
       "description": "x-api-key header required for authentication."
     }
   },
-  "visibility": "true"
+  "visibility": "true",
+  "preview": true
 }
