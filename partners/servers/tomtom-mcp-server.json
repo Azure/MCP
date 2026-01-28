@@ -38,14 +38,16 @@
   "tags": [],
   "supportContactInfo": {
     "name": "customer support contact",
-    "url": "https://support.tomtom.com/support"},
+    "url": "https://support.tomtom.com/support"
+  },
   "versionName": "original",
   "securitySchemes": {
-      "tomtomSecret": {
+    "tomtomSecret": {
       "type": "apiKey",
       "in": "header",
       "name": "tomtom-api-key",
       "description": "Secret is provided via headers. "
     }
-    }
-  }
+  },
+  "preview": true
+}

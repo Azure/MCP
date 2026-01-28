@@ -52,5 +52,6 @@
       ]
     }
   },
-  "versionName": "original"
+  "versionName": "original",
+  "preview": true
 }

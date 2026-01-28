@@ -25,7 +25,8 @@
   "tags": [],
   "supportContactInfo": {
     "name": "customer support contact",
-    "url": "https://azure.microsoft.com/support/"},
+    "url": "https://azure.microsoft.com/support/"
+  },
   "versionName": "original",
   "securitySchemes": {
     "languageApiKey": {
@@ -35,15 +36,20 @@
       "description": "Key-based authentication for Cognitive Services or use Microsoft Entra credentials; see external documentation."
     },
     "azureLanguageOauth": {
-        "type": "oauth2",
-        "description": "Authenticate with Azure AI Foundry using OAuth2 authorization code flow with PKCE support.",
-        "flows": ["authorizationCode"],
-        "authorizationUrl": "https://login.microsoftonline.com",
-        "tokenUrl": "https://login.microsoftonline.com",
-        "scopes": []
-        }
-    },
+      "type": "oauth2",
+      "description": "Authenticate with Azure AI Foundry using OAuth2 authorization code flow with PKCE support.",
+      "flows": [
+        "authorizationCode"
+      ],
+      "authorizationUrl": "https://login.microsoftonline.com",
+      "tokenUrl": "https://login.microsoftonline.com",
+      "scopes": []
+    }
+  },
   "visibility": "true",
-  "authSchemas":["ManagedIdentity"],
-  "audience": "https://cognitiveservices.azure.com/"
+  "authSchemas": [
+    "ManagedIdentity"
+  ],
+  "audience": "https://cognitiveservices.azure.com/",
+  "preview": true
 }

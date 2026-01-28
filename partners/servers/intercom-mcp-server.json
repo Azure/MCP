@@ -33,15 +33,17 @@
   "tags": [],
   "supportContactInfo": {
     "name": "customer support contact",
-    "email": "team@intercom.io"},
+    "email": "team@intercom.io"
+  },
   "versionName": "original",
   "securitySchemes": {
     "intercom": {
-        "type": "http",
-        "description": "Authenticate with Intercom using a Bearer token.",
-        "scheme": "bearer",
-        "bearerFormat": "Auth header"
+      "type": "http",
+      "description": "Authenticate with Intercom using a Bearer token.",
+      "scheme": "bearer",
+      "bearerFormat": "Auth header"
     }
   },
-  "visibility": "true"
+  "visibility": "true",
+  "preview": true
 }

@@ -14,7 +14,8 @@
     "vendor",
     "categories",
     "versionName",
-    "supportContactInfo"
+    "supportContactInfo",
+    "preview"
   ],
   "properties": {
     "name": {
@@ -365,6 +366,10 @@
     "audience": {
       "type": "string",
       "description": "Audience for the MCP server. This will be transformed to x-ms-audience."
+    },
+    "preview": {
+      "type": "boolean",
+      "description": "Indicates whether the MCP server is in preview mode or generally available."
     }
   },
   "additionalProperties": false

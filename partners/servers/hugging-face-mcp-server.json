@@ -1,44 +1,46 @@
 {
-    "name": "hugging-face-mcp-server",
+  "name": "hugging-face-mcp-server",
+  "title": "Hugging Face MCP Server",
+  "summary": "Search through millions of Hugging Face models, datasets, applications and research papers, and use the Spaces applications you've selected.",
+  "description": "Search through millions of Hugging Face models, datasets, applications and research papers, and use the Spaces applications you've selected.",
+  "kind": "mcp",
+  "license": {
+    "name": "Hugging Face Terms",
+    "url": "https://huggingface.co/terms-of-service"
+  },
+  "packages": [],
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/huggingface.svg",
+  "useCases": [
+    {
+      "name": "Data and Analytics",
+      "description": "Collect, process, and analyze data to generate insights, detect trends, and support decision-making through visualization and reporting tools."
+    },
+    {
+      "name": "Search Functionality",
+      "description": "Search for code, issues, pull requests, and users with advanced filtering options."
+    }
+  ],
+  "externalDocumentation": {
     "title": "Hugging Face MCP Server",
-    "summary": "Search through millions of Hugging Face models, datasets, applications and research papers, and use the Spaces applications you've selected.",
-    "description": "Search through millions of Hugging Face models, datasets, applications and research papers, and use the Spaces applications you've selected.",
-    "kind": "mcp",
-    "license": {
-        "name": "Hugging Face Terms",
-        "url": "https://huggingface.co/terms-of-service"
-    },
-    "packages": [],
-    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/huggingface.svg",
-    "useCases": [
-        {
-            "name": "Data and Analytics",
-            "description": "Collect, process, and analyze data to generate insights, detect trends, and support decision-making through visualization and reporting tools."
-        },
-        {
-            "name": "Search Functionality",
-            "description": "Search for code, issues, pull requests, and users with advanced filtering options."
-        }
-    ],
-    "externalDocumentation": {
-        "title": "Hugging Face MCP Server",
-        "url": "https://huggingface.co/docs/hub/hf-mcp-server"
-    },
-    "tags": [],
-    "vendor": "Partner",
-    "categories": "Machine Learning",
-    "visibility": "true",
-    "remote": "https://huggingface.co/mcp",
-    "versionName": "Original",
-    "securitySchemes": {
-        "huggingfaceBearerAuth": {
-            "type": "http",
-            "description": "Authenticate with Hugging Face using a Token.",
-            "scheme": "bearer",
-            "bearerFormat": "HF_Token"
-        }
-    },
-    "supportContactInfo": {
-        "name": "customer support contact",
-        "email": "shaun.smith@huggingface.co"}
+    "url": "https://huggingface.co/docs/hub/hf-mcp-server"
+  },
+  "tags": [],
+  "vendor": "Partner",
+  "categories": "Machine Learning",
+  "visibility": "true",
+  "remote": "https://huggingface.co/mcp",
+  "versionName": "Original",
+  "securitySchemes": {
+    "huggingfaceBearerAuth": {
+      "type": "http",
+      "description": "Authenticate with Hugging Face using a Token.",
+      "scheme": "bearer",
+      "bearerFormat": "HF_Token"
+    }
+  },
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "email": "shaun.smith@huggingface.co"
+  },
+  "preview": true
 }
