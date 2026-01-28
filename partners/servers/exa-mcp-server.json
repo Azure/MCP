@@ -27,5 +27,6 @@
       "name": "web search",
       "description": "do real-time web searches, extract content from any URL, and even run deep research for detailed reports."
     }
-  ]
+  ],
+  "preview": false
 }

@@ -60,5 +60,6 @@
       "bearerFormat": "Bearer Token"
     }
   },
-  "versionName": "original"
+  "versionName": "original",
+  "preview": false
 }

@@ -43,5 +43,6 @@
       "description": "Execute stored procedures and server-side logic through configured tools while maintaining auditability."
     }
   ],
-  "versionName": "original"
+  "versionName": "original",
+  "preview": true
 }

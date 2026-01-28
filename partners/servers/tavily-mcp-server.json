@@ -46,5 +46,6 @@
         "bearerFormat": "your api key"
     }
   },
-  "versionName": "original"
+  "versionName": "original",
+  "preview": false
 }

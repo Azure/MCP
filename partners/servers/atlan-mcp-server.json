@@ -52,5 +52,6 @@
       "scheme": "bearer",
       "bearerFormat": "API Key"
     }
-    }
+    },
+  "preview": true
 }

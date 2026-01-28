@@ -40,5 +40,6 @@
     },
     "supportContactInfo": {
         "name": "customer support contact",
-        "url": "https://github.com/postmanlabs/postman-mcp-server/issues"}
+        "url": "https://github.com/postmanlabs/postman-mcp-server/issues"},
+  "preview": false
 }
