@@ -1,32 +1,34 @@
 {
-    "name": "msdocs-mcp-server",
-    "title": "Microsoft Learn",
-    "summary": "AI assistant with real-time access to official Microsoft documentation.",
-    "description": "AI assistant with real-time access to official Microsoft documentation.",
-    "kind": "mcp",
-    "packages": [],
-    "icon": "https://avatars.githubusercontent.com/microsoft?s=64",
-    "useCases": [
-        {
-            "name": "Search Functionality",
-            "description": "Search in official Microsoft documentation."
-        }
-    ],
-    "tags": [],
-    "categories": "Productivity",
-    "vendor": "Microsoft",
-    "visibility": "true",
-    "remote": "https://learn.microsoft.com/api/mcp",
-    "versionName": "Original",
-    "externalDocumentation": {
-        "title": "Microsoft Learn Docs",
-        "url": "https://learn.microsoft.com/en-us/training/support/mcp"
-    },
-    "license": {
-        "name": "Microsoft Learn Docs",
-        "url": "https://learn.microsoft.com/en-us/training/support/mcp"
-    },
-    "supportContactInfo": {
-        "name": "customer support contact",
-        "url": "https://azure.microsoft.com/en-us/support"}
+  "name": "msdocs-mcp-server",
+  "title": "Microsoft Learn",
+  "summary": "AI assistant with real-time access to official Microsoft documentation.",
+  "description": "AI assistant with real-time access to official Microsoft documentation.",
+  "kind": "mcp",
+  "packages": [],
+  "icon": "https://avatars.githubusercontent.com/microsoft?s=64",
+  "useCases": [
+    {
+      "name": "Search Functionality",
+      "description": "Search in official Microsoft documentation."
+    }
+  ],
+  "tags": [],
+  "categories": "Productivity",
+  "vendor": "Microsoft",
+  "visibility": "true",
+  "remote": "https://learn.microsoft.com/api/mcp",
+  "versionName": "Original",
+  "externalDocumentation": {
+    "title": "Microsoft Learn Docs",
+    "url": "https://learn.microsoft.com/en-us/training/support/mcp"
+  },
+  "license": {
+    "name": "Microsoft Learn Docs",
+    "url": "https://learn.microsoft.com/en-us/training/support/mcp"
+  },
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://azure.microsoft.com/en-us/support"
+  },
+  "preview": true
 }

@@ -37,12 +37,15 @@
       "description": "Secure Entra ID authentication with Managed Identity support for seamless, identity-driven access."
     }
   ],
-  "tags": ["Knowledge"],
+  "tags": [
+    "Knowledge"
+  ],
   "categories": "Databases",
   "vendor": "Microsoft",
   "visibility": "true",
   "supportContactInfo": {
-    "name":"Azure Cosmos DB Support",
+    "name": "Azure Cosmos DB Support",
     "email": "CosmosDBMCPToolKit@Microsoft.com"
-  }
+  },
+  "preview": true
 }

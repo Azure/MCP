@@ -1,49 +1,53 @@
 {
-    "name": "neon-mcp-server",
-    "title": "Neon",
-    "summary": "Manage and query Neon Postgres databases with natural language.",
-    "description": "Manage and query Neon Postgres databases with natural language.",
-    "kind": "mcp",
-    "packages": [],
-    "icon": "https://avatars.githubusercontent.com/u/183852044?v=4",
-    "useCases": [
-        {
-            "name": "Data and Analytics",
-            "description": "Collect, process, and analyze data to generate insights, detect trends, and support decision-making through visualization and reporting tools."
-        }
-    ],
-    "tags": [],
-    "categories": "Analytics",
-    "vendor": "Partner",
-    "visibility": "true",
-    "remote": "https://mcp.neon.tech/sse",
-    "versionName": "Original",
-    "externalDocumentation": {
-        "title": "Neon MCP",
-        "url": "https://github.com/neondatabase/mcp-server-neon"
+  "name": "neon-mcp-server",
+  "title": "Neon",
+  "summary": "Manage and query Neon Postgres databases with natural language.",
+  "description": "Manage and query Neon Postgres databases with natural language.",
+  "kind": "mcp",
+  "packages": [],
+  "icon": "https://avatars.githubusercontent.com/u/183852044?v=4",
+  "useCases": [
+    {
+      "name": "Data and Analytics",
+      "description": "Collect, process, and analyze data to generate insights, detect trends, and support decision-making through visualization and reporting tools."
+    }
+  ],
+  "tags": [],
+  "categories": "Analytics",
+  "vendor": "Partner",
+  "visibility": "true",
+  "remote": "https://mcp.neon.tech/sse",
+  "versionName": "Original",
+  "externalDocumentation": {
+    "title": "Neon MCP",
+    "url": "https://github.com/neondatabase/mcp-server-neon"
+  },
+  "securitySchemes": {
+    "neonOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with Neon using OAuth2 authorization code flow with PKCE support.",
+      "flows": [
+        "authorizationCode"
+      ],
+      "authorizationUrl": "https://oauth2.neon.tech/oauth2/auth",
+      "tokenUrl": "https://oauth2.neon.tech/oauth2/token",
+      "scopes": []
     },
-    "securitySchemes": {
-        "neonOauth": {
-            "type": "oauth2",
-            "description": "Authenticate with Neon using OAuth2 authorization code flow with PKCE support.",
-            "flows": ["authorizationCode"],
-            "authorizationUrl":"https://oauth2.neon.tech/oauth2/auth",
-            "tokenUrl": "https://oauth2.neon.tech/oauth2/token",
-            "scopes": []
-        },
-        "neonBearerAuth":{
-            "type": "http",
-            "description": "Authenticate with Neon using a Personal Access Token.",
-            "scheme": "bearer",
-            "bearerFormat": "NEON_API_KEY"
-        }
-    },
-    "connectorName": "foundryneonmcp",
-    "license": {
-        "name": "Neon Terms",
-        "url": "https://github.com/neondatabase/mcp-server-neon?tab=MIT-1-ov-file#readme"
-    },
-    "supportContactInfo": {
-        "name": "customer support contact",
-        "url": "https://neon.com/docs/introduction/support"}
+    "neonBearerAuth": {
+      "type": "http",
+      "description": "Authenticate with Neon using a Personal Access Token.",
+      "scheme": "bearer",
+      "bearerFormat": "NEON_API_KEY"
+    }
+  },
+  "connectorName": "foundryneonmcp",
+  "license": {
+    "name": "Neon Terms",
+    "url": "https://github.com/neondatabase/mcp-server-neon?tab=MIT-1-ov-file#readme"
+  },
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://neon.com/docs/introduction/support"
+  },
+  "preview": true
 }

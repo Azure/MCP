@@ -17,7 +17,8 @@
   "remote": "https://factoryrca.sightmachine.io/",
   "supportContactInfo": {
     "name": "customer support contact",
-    "email": "support+mcp@sightmachine.com"},
+    "email": "support+mcp@sightmachine.com"
+  },
   "visibility": "true",
   "categories": "Analytics",
   "useCases": [
@@ -58,5 +59,6 @@
       "description": "Secret is provided via headers. "
     }
   },
-  "versionName": "original"
+  "versionName": "original",
+  "preview": true
 }

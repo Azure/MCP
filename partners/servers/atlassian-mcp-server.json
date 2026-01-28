@@ -1,43 +1,46 @@
 {
-    "name": "atlassian-mcp-server",
-    "title": "Atlassian",
-    "summary": "Connect to Jira and Confluence for issue tracking and documentation.",
-    "description": "Connect to Jira and Confluence for issue tracking and documentation.",
-    "kind": "mcp",
-    "packages": [],
-    "icon": "https://avatars.githubusercontent.com/atlassian?s=64",
-    "license": {
-        "name": "Atlassian Terms of Service",
-        "url": "https://www.atlassian.com/legal/atlassian-customer-agreement#intro"
-    },
-    "useCases": [
-        {
-            "name": "Productivity",
-            "description": "Boost individual and team efficiency by automating tasks, managing projects, and improving collaboration and communication workflows."
-        }
-    ],
-      "externalDocumentation": {
-        "title": "Atlassian MCP Docs",
-        "url": "https://www.atlassian.com/platform/remote-mcp-server"
-    },
-    "tags": [],
-    "vendor": "Partner",    
-    "categories": "Productivity",
-    "visibility": "true",
-    "remote": "https://mcp.atlassian.com/v1/sse",
-    "versionName": "Original",
-    "securitySchemes": {
-        "atlassianOauth": {
-            "type": "oauth2",
-            "description": "Authenticate with Atlassian using OAuth2 authorization code flow with PKCE support.",
-            "flows": ["authorizationCode"],
-            "authorizationUrl": "https://auth.atlassian.com/authorize",
-            "tokenUrl": "https://auth.atlassian.com/oauth/token",
-            "scopes":[]
-        }
-    },
-    "supportContactInfo": {    
-        "name": "Atlassian Support",
-        "url": "https://support.atlassian.com/contact/"
+  "name": "atlassian-mcp-server",
+  "title": "Atlassian",
+  "summary": "Connect to Jira and Confluence for issue tracking and documentation.",
+  "description": "Connect to Jira and Confluence for issue tracking and documentation.",
+  "kind": "mcp",
+  "packages": [],
+  "icon": "https://avatars.githubusercontent.com/atlassian?s=64",
+  "license": {
+    "name": "Atlassian Terms of Service",
+    "url": "https://www.atlassian.com/legal/atlassian-customer-agreement#intro"
+  },
+  "useCases": [
+    {
+      "name": "Productivity",
+      "description": "Boost individual and team efficiency by automating tasks, managing projects, and improving collaboration and communication workflows."
     }
+  ],
+  "externalDocumentation": {
+    "title": "Atlassian MCP Docs",
+    "url": "https://www.atlassian.com/platform/remote-mcp-server"
+  },
+  "tags": [],
+  "vendor": "Partner",
+  "categories": "Productivity",
+  "visibility": "true",
+  "remote": "https://mcp.atlassian.com/v1/sse",
+  "versionName": "Original",
+  "securitySchemes": {
+    "atlassianOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with Atlassian using OAuth2 authorization code flow with PKCE support.",
+      "flows": [
+        "authorizationCode"
+      ],
+      "authorizationUrl": "https://auth.atlassian.com/authorize",
+      "tokenUrl": "https://auth.atlassian.com/oauth/token",
+      "scopes": []
+    }
+  },
+  "supportContactInfo": {
+    "name": "Atlassian Support",
+    "url": "https://support.atlassian.com/contact/"
+  },
+  "preview": true
 }

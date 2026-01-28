@@ -1,44 +1,46 @@
 {
-    "name": "postman-mcp-server",
-    "title": "Postman",
-    "summary": "Postman's remote MCP server connects AI agents, assistants, and chatbots directly to your APIs on Postman.",
-    "description": "Postman's remote MCP server connects AI agents, assistants, and chatbots directly to your APIs on Postman.",
-    "kind": "mcp",
-    "repository": {
-        "url": "https://github.com/postmanlabs/postman-mcp-server",
-        "source": "github"
-    },
-    "packages": [],
-    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/postman.svg",
-    "useCases": [
-        {
-            "name": "Developer Tools",
-            "description": "Empower developers with tools for coding, testing, debugging, version control, and automation to accelerate the software development lifecycle."
-        }
-    ],
-    "tags": [],
-    "vendor": "Partner",
-    "categories": "Developer Tools",
-    "visibility": "true",
-    "remote": "https://mcp.postman.com/mcp",
-    "versionName": "Original",
-    "externalDocumentation": {
-        "title": "Postman MCP Server",
-        "url": "https://github.com/postmanlabs/postman-mcp-server"
-    },
-    "securitySchemes": {
-        "postmanBearerAuth": {
-            "type": "http",
-            "description": "Authenticate with Postman using an API key.",
-            "scheme": "bearer",
-            "bearerFormat": "Your API Key"
-        }
-    },
-    "license":{
-        "name": "Terms of Use",
-        "url": "https://www.postman.com/legal/terms/"
-    },
-    "supportContactInfo": {
-        "name": "customer support contact",
-        "url": "https://github.com/postmanlabs/postman-mcp-server/issues"}
+  "name": "postman-mcp-server",
+  "title": "Postman",
+  "summary": "Postman's remote MCP server connects AI agents, assistants, and chatbots directly to your APIs on Postman.",
+  "description": "Postman's remote MCP server connects AI agents, assistants, and chatbots directly to your APIs on Postman.",
+  "kind": "mcp",
+  "repository": {
+    "url": "https://github.com/postmanlabs/postman-mcp-server",
+    "source": "github"
+  },
+  "packages": [],
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/postman.svg",
+  "useCases": [
+    {
+      "name": "Developer Tools",
+      "description": "Empower developers with tools for coding, testing, debugging, version control, and automation to accelerate the software development lifecycle."
+    }
+  ],
+  "tags": [],
+  "vendor": "Partner",
+  "categories": "Developer Tools",
+  "visibility": "true",
+  "remote": "https://mcp.postman.com/mcp",
+  "versionName": "Original",
+  "externalDocumentation": {
+    "title": "Postman MCP Server",
+    "url": "https://github.com/postmanlabs/postman-mcp-server"
+  },
+  "securitySchemes": {
+    "postmanBearerAuth": {
+      "type": "http",
+      "description": "Authenticate with Postman using an API key.",
+      "scheme": "bearer",
+      "bearerFormat": "Your API Key"
+    }
+  },
+  "license": {
+    "name": "Terms of Use",
+    "url": "https://www.postman.com/legal/terms/"
+  },
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://github.com/postmanlabs/postman-mcp-server/issues"
+  },
+  "preview": true
 }

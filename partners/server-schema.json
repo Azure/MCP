@@ -14,7 +14,8 @@
     "vendor",
     "categories",
     "versionName",
-    "supportContactInfo"
+    "supportContactInfo",
+    "preview"
   ],
   "properties": {
     "name": {

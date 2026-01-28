@@ -1,40 +1,42 @@
 {
-    "name": "netlify-mcp-server",
-    "title": "Netlify",
-    "summary": "Deploy, secure, and manage websites with Netlify",
-    "description": "Deploy, secure, and manage websites with Netlify",
-    "kind": "mcp",
-    "license": {
-        "name": "Netlify Terms",
-        "url": "https://www.netlify.com/legal/terms-of-use/"
-    },
-    "packages": [],
-    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/netlify.svg",
-    "useCases": [
-        {
-            "name": "Web",
-            "description": "Tools and services that enable building, deploying, and optimizing websites or web applications, including content delivery, hosting, and web performance."
-        }
-    ],
-    "tags": [],
-    "externalDocumentation": {
-        "title": "Netlify MCP Server",
-        "url": "https://docs.netlify.com/build/build-with-ai/netlify-mcp-server/"
-    },
-    "vendor": "Partner",
-    "categories": "Web",
-    "visibility": "true",
-    "remote": "https://netlify-mcp.netlify.app/mcp?verbose=true",
-    "versionName": "Original",
-    "securitySchemes": {
-        "netlifyBearer": {
-            "type": "http",
-            "description": "Authenticate with Netlify using a Personal Access Token.",
-            "scheme": "bearer",
-            "bearerFormat": "Personal Access Token"
-        }
-    },
-    "supportContactInfo": {
-        "name": "customer support contact",
-        "email": "support@netlify.com"}
+  "name": "netlify-mcp-server",
+  "title": "Netlify",
+  "summary": "Deploy, secure, and manage websites with Netlify",
+  "description": "Deploy, secure, and manage websites with Netlify",
+  "kind": "mcp",
+  "license": {
+    "name": "Netlify Terms",
+    "url": "https://www.netlify.com/legal/terms-of-use/"
+  },
+  "packages": [],
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/netlify.svg",
+  "useCases": [
+    {
+      "name": "Web",
+      "description": "Tools and services that enable building, deploying, and optimizing websites or web applications, including content delivery, hosting, and web performance."
+    }
+  ],
+  "tags": [],
+  "externalDocumentation": {
+    "title": "Netlify MCP Server",
+    "url": "https://docs.netlify.com/build/build-with-ai/netlify-mcp-server/"
+  },
+  "vendor": "Partner",
+  "categories": "Web",
+  "visibility": "true",
+  "remote": "https://netlify-mcp.netlify.app/mcp?verbose=true",
+  "versionName": "Original",
+  "securitySchemes": {
+    "netlifyBearer": {
+      "type": "http",
+      "description": "Authenticate with Netlify using a Personal Access Token.",
+      "scheme": "bearer",
+      "bearerFormat": "Personal Access Token"
+    }
+  },
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "email": "support@netlify.com"
+  },
+  "preview": true
 }

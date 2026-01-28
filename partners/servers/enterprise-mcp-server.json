@@ -1,65 +1,71 @@
 {
-    "name": "microsoft-mcp-server-for-enterprise",
+  "name": "microsoft-mcp-server-for-enterprise",
+  "title": "Microsoft MCP Server for Enterprise",
+  "summary": " Get natural language access to Microsoft Entra data",
+  "description": "Official Microsoft MCP Server to query Microsoft Entra data using natural language.",
+  "kind": "mcp",
+  "license": {
+    "name": "Microsoft APIs Terms of Use",
+    "url": "https://learn.microsoft.com/legal/microsoft-apis/terms-of-use"
+  },
+  "icon": " https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/MicrosoftMcpServerForEnterprise.svg",
+  "externalDocumentation": {
     "title": "Microsoft MCP Server for Enterprise",
-    "summary": " Get natural language access to Microsoft Entra data",
-    "description": "Official Microsoft MCP Server to query Microsoft Entra data using natural language.",
-    "kind": "mcp",
-    "license": {
-        "name": "Microsoft APIs Terms of Use",
-        "url": "https://learn.microsoft.com/legal/microsoft-apis/terms-of-use"
+    "url": "https://github.com/mcp/microsoft/EnterpriseMCP"
+  },
+  "remote": "https://mcp.svc.cloud.microsoft/enterprise",
+  "useCases": [
+    {
+      "name": "Security posture",
+      "description": "Authentication methods/strengths, Conditional Access, Security Defaults."
     },
-    "icon": " https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/MicrosoftMcpServerForEnterprise.svg",
-    "externalDocumentation": {
-        "title": "Microsoft MCP Server for Enterprise",
-        "url": "https://github.com/mcp/microsoft/EnterpriseMCP"
+    {
+      "name": "Privileged access",
+      "description": "Who has which directory roles, how assigned (direct vs group), and PIM status."
     },
-    "remote": "https://mcp.svc.cloud.microsoft/enterprise",
-    "useCases": [
-        {
-            "name": "Security posture",
-            "description": "Authentication methods/strengths, Conditional Access, Security Defaults."
-        },
-        {
-            "name": "Privileged access",
-            "description": "Who has which directory roles, how assigned (direct vs group), and PIM status."
-        },
-        {
-            "name": "Application risk",
-            "description": "Which Apps / Service Principals exist, who owns them, what permissions/SSO they use, and which are ownerless or external."
-        },
-        {
-            "name": " Access governance",
-            "description": "Who has access to what (users, groups, packages); review decisions, automate joiner/mover/leaver."
-        },
-        {
-            "name": "Device readiness",
-            "description": "Managed/compliant status, join state, OS/version distribution, and stale or inactive devices."
-        },
-        {
-            "name": "Provenance and investigation",
-            "description": "End‑to‑end telemetry (sign‑in, audit, provisioning, network), health alerts, and SLA/availability."
-        },
-        {
-            "name": "Optimize spending & hygiene",
-            "description": "License counts/usage, unused or stale apps/groups, domain configuration and contacts."
-        }
-    ],
-    "vendor": "Microsoft",
-    "visibility": "public",
-    "categories": "IT & Management Tools",
-    "versionName": "original",
-    "securitySchemes": {
-        "enterpriseMcpOauth": {
-            "type": "oauth2",
-            "description": "Authenticate with Microsoft Mcp Server for Enterprise using OAuth2 authorization code flow",
-            "authorizationUrl": "https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize",
-            "tokenUrl": "https://login.microsoftonline.com/organizations/oauth2/v2.0/token",
-            "refreshUrl": "https://login.microsoftonline.com/organizations/oauth2/v2.0/token",
-            "scopes": ["api://e8c77dc2-69b3-43f4-bc51-3213c9d915b4/.default"],
-            "flows": ["authorizationCode"]                
-        }
+    {
+      "name": "Application risk",
+      "description": "Which Apps / Service Principals exist, who owns them, what permissions/SSO they use, and which are ownerless or external."
     },
-    "supportContactInfo": {
-        "name": "Luca Spolidoro",
-        "email": "lucaspol@microsoft.com"}
+    {
+      "name": " Access governance",
+      "description": "Who has access to what (users, groups, packages); review decisions, automate joiner/mover/leaver."
+    },
+    {
+      "name": "Device readiness",
+      "description": "Managed/compliant status, join state, OS/version distribution, and stale or inactive devices."
+    },
+    {
+      "name": "Provenance and investigation",
+      "description": "End‑to‑end telemetry (sign‑in, audit, provisioning, network), health alerts, and SLA/availability."
+    },
+    {
+      "name": "Optimize spending & hygiene",
+      "description": "License counts/usage, unused or stale apps/groups, domain configuration and contacts."
+    }
+  ],
+  "vendor": "Microsoft",
+  "visibility": "public",
+  "categories": "IT & Management Tools",
+  "versionName": "original",
+  "securitySchemes": {
+    "enterpriseMcpOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with Microsoft Mcp Server for Enterprise using OAuth2 authorization code flow",
+      "authorizationUrl": "https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize",
+      "tokenUrl": "https://login.microsoftonline.com/organizations/oauth2/v2.0/token",
+      "refreshUrl": "https://login.microsoftonline.com/organizations/oauth2/v2.0/token",
+      "scopes": [
+        "api://e8c77dc2-69b3-43f4-bc51-3213c9d915b4/.default"
+      ],
+      "flows": [
+        "authorizationCode"
+      ]
+    }
+  },
+  "supportContactInfo": {
+    "name": "Luca Spolidoro",
+    "email": "lucaspol@microsoft.com"
+  },
+  "preview": true
 }

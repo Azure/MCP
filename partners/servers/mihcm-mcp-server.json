@@ -52,7 +52,7 @@
       "refreshUrl": "https://login.mihcm.com/connect/token",
       "scopes": [
         "openid",
-        "profile", 
+        "profile",
         "email",
         "tenant_code",
         "employee_code",
@@ -64,5 +64,6 @@
       ]
     }
   },
-  "versionName": "original"
+  "versionName": "original",
+  "preview": true
 }
