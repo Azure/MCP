@@ -1,49 +1,50 @@
 {
-    "name": "microsoft-foundry-mcp-server",
-    "title": "Foundry MCP Server (preview)",
-    "summary": "Use Foundry MCP Server to securely and instantly interact with Microsoft Foundry.",
-    "description": "Foundry MCP Server (preview) offers instant access to model exploration, deployment of models and agents, and performance evaluation. This fully cloud-native MCP server is integrated with Visual Studio Code and Foundry agents, and secured by Microsoft Entra ID, RBAC, and tenant-level conditional access with Azure Policy for enterprise control.",
-    "kind": "mcp",
-    "packages": [],
-    "useCases": [
-        {
-            "name": "Developer Tools",
-            "description": "Foundry MCP Server allows users to (1) upload and manage datasets, (2) run and compare model evaluations, (3) browse model catalogs and retrieve details, (4) deploy and monitor models with optimization recommendations, and (5) handle resource management tasks like quota checks and cleanup, all without writing API calls."
-        }
-    ],
-    "externalDocumentation": {
-        "title": "Foundry MCP Server",
-        "url": "https://aka.ms/foundry-mcp-server-docs"
-    },
-    "license": {
-        "name": "Foundry MCP Server",
-        "url": "https://aka.ms/foundry-mcp-server-docs"
-    },
-    "tags": [],
-    "vendor": "Microsoft",
-    "categories": "Developer Tools",
-    "visibility": "true",
-    "remote": "https://mcp.ai.azure.com",
-    "versionName": "Original",
-    "securitySchemes": {
-        "foundryOauth": {
-            "type": "oauth2",
-            "description": "Authenticate with Foundry MCP Server using OAuth2 authorization code flow with PKCE support.",
-            "flows": [
-                "authorizationCode"
-            ],
-            "authorizationUrl": "https://login.microsoftonline.com",
-            "tokenUrl": "https://login.microsoftonline.com",
-            "scopes": []
-        }
-    },
-    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/MicrosoftFoundry.svg",
-    "supportContactInfo": {
-        "name": "customer support contact",
-        "url": "https://azure.microsoft.com/en-us/support/"
-    },
-    "authSchemas": [
-        "OAuth2"
-    ],
-    "audience": "https://mcp.ai.azure.com"
+  "name": "microsoft-foundry-mcp-server",
+  "title": "Foundry MCP Server (preview)",
+  "summary": "Use Foundry MCP Server to securely and instantly interact with Microsoft Foundry.",
+  "description": "Foundry MCP Server (preview) offers instant access to model exploration, deployment of models and agents, and performance evaluation. This fully cloud-native MCP server is integrated with Visual Studio Code and Foundry agents, and secured by Microsoft Entra ID, RBAC, and tenant-level conditional access with Azure Policy for enterprise control.",
+  "kind": "mcp",
+  "packages": [],
+  "useCases": [
+    {
+      "name": "Developer Tools",
+      "description": "Foundry MCP Server allows users to (1) upload and manage datasets, (2) run and compare model evaluations, (3) browse model catalogs and retrieve details, (4) deploy and monitor models with optimization recommendations, and (5) handle resource management tasks like quota checks and cleanup, all without writing API calls."
+    }
+  ],
+  "externalDocumentation": {
+    "title": "Foundry MCP Server",
+    "url": "https://aka.ms/foundry-mcp-server-docs"
+  },
+  "license": {
+    "name": "Foundry MCP Server",
+    "url": "https://aka.ms/foundry-mcp-server-docs"
+  },
+  "tags": [],
+  "vendor": "Microsoft",
+  "categories": "Developer Tools",
+  "visibility": "true",
+  "remote": "https://mcp.ai.azure.com",
+  "versionName": "Original",
+  "securitySchemes": {
+    "foundryOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with Foundry MCP Server using OAuth2 authorization code flow with PKCE support.",
+      "flows": [
+        "authorizationCode"
+      ],
+      "authorizationUrl": "https://login.microsoftonline.com",
+      "tokenUrl": "https://login.microsoftonline.com",
+      "scopes": []
+    }
+  },
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/MicrosoftFoundry.svg",
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://azure.microsoft.com/en-us/support/"
+  },
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "audience": "https://mcp.ai.azure.com",
+  "preview": true
 }

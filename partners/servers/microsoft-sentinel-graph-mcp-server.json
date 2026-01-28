@@ -30,22 +30,32 @@
     }
   ],
   "categories": "Security",
-  "tags": ["security", "sentinel", "graph"],
+  "tags": [
+    "security",
+    "sentinel",
+    "graph"
+  ],
   "supportContactInfo": {
     "name": "Microsoft Customer Support",
-    "email": "support@microsoft.com"},
+    "email": "support@microsoft.com"
+  },
   "versionName": "original",
   "securitySchemes": {
     "sentinelGraphOAuth": {
       "type": "oauth2",
       "description": "Authenticate with Microsoft Sentinel using OAuth2 authorization code flow with PKCE support.",
-      "flows": ["authorizationCode"],
+      "flows": [
+        "authorizationCode"
+      ],
       "authorizationUrl": "https://login.microsoftonline.com",
       "tokenUrl": "https://login.microsoftonline.com",
       "scopes": []
     }
   },
   "visibility": "true",
-  "authSchemas":["OAuth2"],
-  "audience": "4500ebfb-89b6-4b14-a480-7f749797bfcd"
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "audience": "4500ebfb-89b6-4b14-a480-7f749797bfcd",
+  "preview": true
 }
