@@ -17,8 +17,7 @@
   "remote": "https://{foundry-resource-name}.cognitiveservices.azure.com/speech/mcp?api-version=2025-11-07-preview",
   "supportContactInfo": {
     "name": "customer support contact",
-    "url": "https://azure.microsoft.com/support/"
-  },
+    "url": "https://azure.microsoft.com/support/"},
   "visibility": "true",
   "categories": "Machine Learning",
   "useCases": [
@@ -33,10 +32,10 @@
   ],
   "securitySchemes": {
     "speechSecret": {
-      "type": "http",
-      "description": "Authenticate with bearer token.",
-      "scheme": "bearer",
-      "bearerFormat": "API Key"
+        "type": "http",
+        "description": "Authenticate with bearer token.",
+        "scheme": "bearer",
+        "bearerFormat": "API Key"
     },
     "speechBlobUrl": {
       "type": "apiKey",
@@ -45,6 +44,5 @@
       "description": "provide blob container SAS URL"
     }
   },
-  "versionName": "original",
-  "preview": true
+  "versionName": "original"
 }

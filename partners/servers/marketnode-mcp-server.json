@@ -35,11 +35,9 @@
     "oauth2": {
       "type": "oauth2",
       "description": "OAuth 2.1",
-      "flows": [
-        "authorizationCode"
-      ],
+      "flows": ["authorizationCode"],
       "tokenUrl": "https://mcp.marketnode.com/token",
-      "authorizationUrl": "https://mcp.marketnode.com/authorize",
+      "authorizationUrl":"https://mcp.marketnode.com/authorize",
       "scopes": []
     }
   },
@@ -47,7 +45,5 @@
   "remote": "https://mcp.marketnode.com/mcp",
   "supportContactInfo": {
     "name": "customer support contact",
-    "url": "https://support.marketnode.com/"
-  },
-  "preview": true
+    "url": "https://support.marketnode.com/"}
 }

@@ -17,10 +17,9 @@
   "remote": "https://azure-mcp.infobip.com/rcs",
   "supportContactInfo": {
     "name": "customer support contact",
-    "email": "devrel@infobip.com"
-  },
+    "email": "devrel@infobip.com"},
   "visibility": "true",
-  "categories": "Customer Service",
+  "categories":"Customer Service",
   "useCases": [
     {
       "name": "Capability checks",
@@ -33,27 +32,24 @@
   ],
   "connectorName": "foundryinfobiprcsmcp",
   "securitySchemes": {
-    "infobipRcsOauth": {
-      "type": "oauth2",
-      "description": "Authenticate with infobip using OAuth2 authorization code flow with PKCE support.",
-      "authorizationUrl": "https://auth.infobip.com/realms/infobip/protocol/openid-connect/auth",
-      "tokenUrl": "https://auth.infobip.com/realms/infobip/protocol/openid-connect/token",
-      "refreshUrl": "https://auth.infobip.com/realms/infobip/protocol/openid-connect/token",
-      "scopes": [
-        "profile",
-        "rcs:manage"
-      ],
-      "flows": [
-        "authorizationCode"
-      ]
-    },
+      "infobipRcsOauth": {
+          "type": "oauth2",
+          "description": "Authenticate with infobip using OAuth2 authorization code flow with PKCE support.",
+          "authorizationUrl": "https://auth.infobip.com/realms/infobip/protocol/openid-connect/auth",
+          "tokenUrl": "https://auth.infobip.com/realms/infobip/protocol/openid-connect/token",
+          "refreshUrl": "https://auth.infobip.com/realms/infobip/protocol/openid-connect/token",
+          "scopes": [
+              "profile",
+              "rcs:manage"
+          ],
+          "flows": ["authorizationCode"]                
+      },
     "infobipRCSKey": {
       "type": "apiKey",
       "in": "header",
       "name": "Authorization",
-      "description": "App <Your API Key>"
+      "description": "App <Your API Key>"            
     }
   },
-  "versionName": "original",
-  "preview": true
+  "versionName": "original"
 }

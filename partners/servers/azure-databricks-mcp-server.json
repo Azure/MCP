@@ -22,13 +22,10 @@
     }
   ],
   "categories": "Productivity",
-  "tags": [
-    "knowledge"
-  ],
+  "tags": ["knowledge"],
   "supportContactInfo": {
     "name": "customer support contact",
-    "url": "https://azure.microsoft.com/en-us/support/"
-  },
+    "url": "https://azure.microsoft.com/en-us/support/"},
   "versionName": "original",
   "visibility": "true",
   "securitySchemes": {
@@ -41,11 +38,8 @@
         "2ff814a6-3304-4ab8-85cb-cd0e6f879c1d/user_impersonation",
         "2ff814a6-3304-4ab8-85cb-cd0e6f879c1d/.default"
       ],
-      "flows": [
-        "authorizationCode"
-      ]
+      "flows": ["authorizationCode"]
     }
   },
-  "connectorName": "foundrydatabricksmcp",
-  "preview": true
+  "connectorName": "foundrydatabricksmcp"
 }

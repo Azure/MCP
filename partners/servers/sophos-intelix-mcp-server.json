@@ -33,8 +33,7 @@
   "tags": [],
   "supportContactInfo": {
     "name": "customer support contact",
-    "email": "ace@sophos.com"
-  },
+    "email": "ace@sophos.com"},
   "versionName": "original",
   "securitySchemes": {
     "intelixApiKey": {
@@ -44,6 +43,5 @@
       "description": "x-api-key header required for authentication."
     }
   },
-  "visibility": "true",
-  "preview": true
+  "visibility": "true"
 }

@@ -17,31 +17,27 @@
   },
   "useCases": [
     {
-      "name": "Data querying and search",
-      "description": "Efficiently query and retrieve data across PostgreSQL databases to enable fast insights and analytics."
-    },
-    {
-      "name": "Semantic Search with Vector Similarity",
-      "description": "Leverage AI-powered embeddings for semantic retrieval, enabling context-aware search across enterprise datasets."
-    },
-    {
-      "name": "Table schema Discovery",
-      "description": "Automatically discover and analyze PostgreSQL table schemas and data structures to support agent-driven data access and intelligent query generation."
-    },
-    {
-      "name": "Identity-Driven Secure Authentication",
-      "description": "Use Entra ID authentication with Managed Identity for seamless, secure, and role-based access to PostgreSQL resources."
-    }
+    "name": "Data querying and search",
+     "description": "Efficiently query and retrieve data across PostgreSQL databases to enable fast insights and analytics."
+   },
+   {
+     "name": "Semantic Search with Vector Similarity",
+     "description": "Leverage AI-powered embeddings for semantic retrieval, enabling context-aware search across enterprise datasets."
+   },
+   {
+     "name": "Table schema Discovery",
+     "description": "Automatically discover and analyze PostgreSQL table schemas and data structures to support agent-driven data access and intelligent query generation."
+   },
+   {
+     "name": "Identity-Driven Secure Authentication",
+     "description": "Use Entra ID authentication with Managed Identity for seamless, secure, and role-based access to PostgreSQL resources."
+   }
   ],
   "categories": "Databases",
-  "tags": [
-    "Knowledge"
-  ],
+  "tags": ["Knowledge"],
   "supportContactInfo": {
     "name": "customer support contact",
-    "email": "azurepgai@service.microsoft.com"
-  },
+    "email": "azurepgai@service.microsoft.com"},
   "versionName": "original",
-  "packages": [],
-  "preview": true
+  "packages":[]
 }

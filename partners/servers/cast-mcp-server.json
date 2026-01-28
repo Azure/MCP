@@ -17,8 +17,7 @@
   "remote": "https://castimaging.io/imaging/mcp/",
   "supportContactInfo": {
     "name": "customer support contact",
-    "email": "help@castsoftware.com"
-  },
+    "email": "help@castsoftware.com"},
   "visibility": "true",
   "categories": "Monitoring & Diagnostics",
   "useCases": [
@@ -47,6 +46,5 @@
       "name": "x-api-key"
     }
   },
-  "versionName": "original",
-  "preview": true
+  "versionName": "original"
 }

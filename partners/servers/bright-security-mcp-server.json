@@ -1,75 +1,74 @@
 {
-  "name": "bright-security-mcp-server",
-  "title": "Bright Security",
-  "summary": "Enables AI agents to access Bright Security tools for app discovery and security testing.",
-  "description": "Bright Security MCP server enables AI agents to access Bright Security tools for application discovery and security testing. It provides seamless integration with Bright Security's platform to help developers and security teams identify vulnerabilities, perform automated security scans, and enhance application security workflows.",
-  "kind": "mcp",
-  "packages": [],
-  "icon": "https://avatars.githubusercontent.com/NeuraLegion?s=64",
-  "useCases": [
-    {
-      "name": "API Endpoint Discovery",
-      "description": "Discover API endpoints automatically using web crawling or by uploading OpenAPI/Swagger API definitions."
+    "name": "bright-security-mcp-server",
+    "title": "Bright Security",
+    "summary": "Enables AI agents to access Bright Security tools for app discovery and security testing.",
+    "description": "Bright Security MCP server enables AI agents to access Bright Security tools for application discovery and security testing. It provides seamless integration with Bright Security's platform to help developers and security teams identify vulnerabilities, perform automated security scans, and enhance application security workflows.",
+    "kind": "mcp",
+    "packages": [],
+    "icon": "https://avatars.githubusercontent.com/NeuraLegion?s=64",
+    "useCases": [
+        {
+            "name": "API Endpoint Discovery",
+            "description": "Discover API endpoints automatically using web crawling or by uploading OpenAPI/Swagger API definitions."
+        },
+        {
+            "name": "Automated Security Scanning",
+            "description": "Run comprehensive security scans against discovered entrypoints to detect vulnerabilities like SQL injection, XSS, and other OWASP Top 10 issues."
+        },
+        {
+            "name": "Private Application Testing",
+            "description": "Set up repeaters to enable security testing of private, internal, or locally-hosted applications that are not publicly accessible."
+        },
+        {
+            "name": "Vulnerability Assessment",
+            "description": "Review and analyze security issues found during scans, including severity levels and remediation guidance."
+        },
+        {
+            "name": "Attack Surface Management",
+            "description": "Manage and organize entrypoints across projects to understand and monitor your application's attack surface."
+        },
+        {
+            "name": "Authenticated Endpoint Testing",
+            "description": "Configure authentication settings to test protected endpoints that require authorization."
+        },
+        {
+            "name": "CI/CD Security Integration",
+            "description": "Monitor scan progress and results programmatically to integrate security testing into development workflows."
+        }
+    ],
+    "tags": [
+        "security",
+        "vulnerability",
+        "appsec",
+        "dast",
+        "api-security",
+        "owasp",
+        "ai-security"
+    ],
+    "vendor": "Partner",
+    "visibility": "true",
+    "categories": "Security",
+    "versionName": "Original",
+    "remote": "https://{instance}.brightsec.com/mcp",
+    "remoteType": "streamable-http",
+    "externalDocumentation": {
+        "title": "Bright Security MCP Documentation",
+        "url": "https://docs.brightsec.com"
     },
-    {
-      "name": "Automated Security Scanning",
-      "description": "Run comprehensive security scans against discovered entrypoints to detect vulnerabilities like SQL injection, XSS, and other OWASP Top 10 issues."
+    "securitySchemes": {
+        "apiKeyAuth": {
+            "type": "apiKey",
+            "description": "Bright Security API key for authentication prefixed by 'Api-Key '",
+            "in": "header",
+            "name": "Authorization"
+        }
     },
-    {
-      "name": "Private Application Testing",
-      "description": "Set up repeaters to enable security testing of private, internal, or locally-hosted applications that are not publicly accessible."
+    "license": {
+        "name": "Proprietary",
+        "url": "https://brightsec.com/terms-of-use"
     },
-    {
-      "name": "Vulnerability Assessment",
-      "description": "Review and analyze security issues found during scans, including severity levels and remediation guidance."
-    },
-    {
-      "name": "Attack Surface Management",
-      "description": "Manage and organize entrypoints across projects to understand and monitor your application's attack surface."
-    },
-    {
-      "name": "Authenticated Endpoint Testing",
-      "description": "Configure authentication settings to test protected endpoints that require authorization."
-    },
-    {
-      "name": "CI/CD Security Integration",
-      "description": "Monitor scan progress and results programmatically to integrate security testing into development workflows."
+    "supportContactInfo": {
+        "name": "Bright Security Support",
+        "email": "support@brightsec.com"
     }
-  ],
-  "tags": [
-    "security",
-    "vulnerability",
-    "appsec",
-    "dast",
-    "api-security",
-    "owasp",
-    "ai-security"
-  ],
-  "vendor": "Partner",
-  "visibility": "true",
-  "categories": "Security",
-  "versionName": "Original",
-  "remote": "https://{instance}.brightsec.com/mcp",
-  "remoteType": "streamable-http",
-  "externalDocumentation": {
-    "title": "Bright Security MCP Documentation",
-    "url": "https://docs.brightsec.com"
-  },
-  "securitySchemes": {
-    "apiKeyAuth": {
-      "type": "apiKey",
-      "description": "Bright Security API key for authentication prefixed by 'Api-Key '",
-      "in": "header",
-      "name": "Authorization"
-    }
-  },
-  "license": {
-    "name": "Proprietary",
-    "url": "https://brightsec.com/terms-of-use"
-  },
-  "supportContactInfo": {
-    "name": "Bright Security Support",
-    "email": "support@brightsec.com"
-  },
-  "preview": true
 }

@@ -15,8 +15,8 @@
     "url": "https://aka.ms/a365mcpsupport"
   },
   "license": {
-    "name": "Agent 365",
-    "url": "https://aka.ms/AboutAgent365"
+        "name": "Agent 365",
+        "url": "https://aka.ms/AboutAgent365"
   },
   "visibility": "true",
   "categories": "Productivity",
@@ -43,21 +43,16 @@
     "a365wordoauth2": {
       "type": "oauth2",
       "description": "Authenticate with A365 using OAuth2 authorization code flow with PKCE support.",
-      "flows": [
-        "authorizationCode"
-      ],
+      "flows": ["authorizationCode"],
       "authorizationUrl": "https://login.microsoftonline.com",
       "tokenUrl": "https://login.microsoftonline.com",
       "refreshUrl": "https://login.microsoftonline.com",
-      "scopes": [
-        "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1"
-      ]
+      "scopes": ["ea9ffc3e-8a23-4a7d-836d-234d7c7565c1"]
     }
   },
-  "authSchemas": [
-    "OAuth2"
-  ],
+  "authSchemas":["OAuth2"],
   "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
-  "versionName": "original",
-  "preview": true
+  "versionName": "original"
+
 }
+

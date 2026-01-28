@@ -17,8 +17,7 @@
   "remote": "https://mcp.morningstar.com/mcp",
   "supportContactInfo": {
     "name": "customer support contact",
-    "url": "https://www.morningstar.com/views/contact-us"
-  },
+    "url": "https://www.morningstar.com/views/contact-us"},
   "visibility": "true",
   "connectorName": "foundrymorningstarmcp",
   "categories": "Finance",
@@ -61,6 +60,5 @@
       "bearerFormat": "Bearer Token"
     }
   },
-  "versionName": "original",
-  "preview": true
+  "versionName": "original"
 }

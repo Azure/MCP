@@ -46,12 +46,11 @@
   },
   "versionName": "original",
   "securitySchemes": {
-    "atlanBearerAuth": {
+    "atlanBearerAuth":{
       "type": "http",
       "description": "Authenticate with Atlan using an API key.",
       "scheme": "bearer",
       "bearerFormat": "API Key"
     }
-  },
-  "preview": true
+    }
 }

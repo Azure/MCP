@@ -31,21 +31,17 @@
     }
   ],
   "categories": "Developer Tools",
-  "tags": [
-    "knowledge"
-  ],
+  "tags": ["knowledge"],
   "supportContactInfo": {
     "name": "customer support contact",
-    "url": "https://app.pinecone.io/-/settings/support"
-  },
+    "url": "https://app.pinecone.io/-/settings/support"},
   "versionName": "original",
   "securitySchemes": {
-    "pineconeBearerAuth": {
-      "type": "http",
-      "description": "Authenticate with Pinecone using a Token.",
-      "scheme": "bearer",
-      "bearerFormat": "PINECONE_API_KEY"
+        "pineconeBearerAuth": {
+            "type": "http",
+            "description": "Authenticate with Pinecone using a Token.",
+            "scheme": "bearer",
+            "bearerFormat": "PINECONE_API_KEY"
+        }
     }
-  },
-  "preview": true
 }

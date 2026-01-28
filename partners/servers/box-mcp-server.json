@@ -43,6 +43,5 @@
       "description": "bearer_token"
     }
   },
-  "versionName": "original",
-  "preview": true
+  "versionName": "original"
 }
