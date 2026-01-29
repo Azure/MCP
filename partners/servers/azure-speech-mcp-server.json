@@ -45,5 +45,5 @@
     }
   },
   "versionName": "original",
-  "preview": true
+  "x-ms-preview": true
 }

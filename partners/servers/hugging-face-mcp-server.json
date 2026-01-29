@@ -41,5 +41,5 @@
     "supportContactInfo": {
         "name": "customer support contact",
         "email": "shaun.smith@huggingface.co"},
-  "preview": false
+  "x-ms-preview": false
 }

@@ -42,5 +42,5 @@
     }
   },
   "connectorName": "foundrydatabricksmcp",
-  "preview": true
+  "x-ms-preview": true
 }
