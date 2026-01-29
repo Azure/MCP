@@ -41,5 +41,6 @@
       "flows": ["authorizationCode"]
     }
   },
-  "connectorName": "foundrydatabricksmcp"
+  "connectorName": "foundrydatabricksmcp",
+  "preview": true
 }

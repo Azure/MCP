@@ -44,5 +44,6 @@
       "description": "provide blob container SAS URL"
     }
   },
-  "versionName": "original"
+  "versionName": "original",
+  "preview": true
 }

@@ -43,5 +43,6 @@
             "scheme": "bearer",
             "bearerFormat": "PINECONE_API_KEY"
         }
-    }
+    },
+  "preview": false
 }

@@ -45,5 +45,6 @@
     },
     "supportContactInfo": {
         "name": "customer support contact",
-        "url": "https://neon.com/docs/introduction/support"}
+        "url": "https://neon.com/docs/introduction/support"},
+  "preview": true
 }

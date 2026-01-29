@@ -51,5 +51,6 @@
       "description": "App <Your API Key>"            
     }
   },
-  "versionName": "original"
+  "versionName": "original",
+  "preview": false
 }

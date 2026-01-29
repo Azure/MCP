@@ -19,6 +19,7 @@
     "name": "customer support contact",
     "url": "https://www.morningstar.com/views/contact-us"},
   "visibility": "true",
+  "connectorName": "foundrymorningstarmcp",
   "categories": "Finance",
   "useCases": [
     {
@@ -59,5 +60,6 @@
       "bearerFormat": "Bearer Token"
     }
   },
-  "versionName": "original"
+  "versionName": "original",
+  "preview": false
 }

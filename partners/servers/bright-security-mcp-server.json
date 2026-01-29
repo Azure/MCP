@@ -70,5 +70,6 @@
     "supportContactInfo": {
         "name": "Bright Security Support",
         "email": "support@brightsec.com"
-    }
+    },
+  "preview": false
 }

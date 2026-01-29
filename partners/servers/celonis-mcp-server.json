@@ -42,5 +42,6 @@
         "bearerFormat": "Personal Access Token"
     }
   },
-  "versionName": "Original"
+  "versionName": "Original",
+  "preview": false
 }

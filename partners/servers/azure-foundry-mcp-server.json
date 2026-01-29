@@ -45,5 +45,6 @@
     "authSchemas": [
         "OAuth2"
     ],
-    "audience": "https://mcp.ai.azure.com"
+    "audience": "https://mcp.ai.azure.com",
+    "preview": true
 }

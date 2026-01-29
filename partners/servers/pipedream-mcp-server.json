@@ -45,5 +45,6 @@
     "supportContactInfo": {
         "name": "customer support contact",
         "email": "support@pipedream.com"},
-    "connectorName": "foundrypipedreammcp"
+    "connectorName": "foundrypipedreammcp",
+  "preview": false
 }
