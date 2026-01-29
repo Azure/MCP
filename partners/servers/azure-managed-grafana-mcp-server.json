@@ -1,7 +1,7 @@
 {
   "name": "amg-mcp",
   "title": "Azure Managed Grafana",
-  "summary": "Azure Managed Grafana MCP enables AI agents to access Grafana data, including querying data sources and reading dashboards. With Grafana's connectivity to hundreds of data sources, AI agents can query Azure Monitor Logs, Metrics, and more through a unified interface.",
+  "summary": "Azure Managed Grafana MCP enables AI agents to access Grafana data, including querying data sources and reading dashboards.",
   "description": "Azure Managed Grafana MCP enables AI agents to access Grafana data, including querying data sources and reading dashboards. With Grafana's connectivity to hundreds of data sources, AI agents can query Azure Monitor Logs, Metrics, and more through a unified interface.",
   "vendor": "Microsoft",
   "kind": "mcp",
@@ -22,21 +22,36 @@
     }
   ],
   "categories": "Productivity",
-  "tags": ["knowledge"],
+  "tags": [
+    "knowledge"
+  ],
   "supportContactInfo": {
     "name": "customer support contact",
-    "url": "https://azure.microsoft.com/en-us/support/"},
+    "url": "https://azure.microsoft.com/en-us/support/"
+  },
   "versionName": "original",
   "visibility": "true",
   "securitySchemes": {
     "grafanaServiceAccount": {
-        "type": "http",
-        "description": "Authenticate with Tavily using a Personal Access Token.",
-        "scheme": "bearer",
-        "bearerFormat": "your api key"
+      "type": "http",
+      "description": "Authenticate with Azure Managed Grafana using a Service Account access token.",
+      "scheme": "bearer",
+      "bearerFormat": "Service Account Token"
+    },
+    "grafanaOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with Azure Managed Grafana using OAuth2 authorization code flow with PKCE support.",
+      "flows": [
+        "authorizationCode"
+      ],
+      "authorizationUrl": "https://login.microsoftonline.com",
+      "tokenUrl": "https://login.microsoftonline.com",
+      "scopes": []
     }
   },
-  "authSchemas": ["ManagedIdentity"],
+  "authSchemas": [
+    "ManagedIdentity"
+  ],
   "audience": "ce34e7e5-485f-4d76-964f-b3d2b16d1e4f",
   "preview": true
 }
