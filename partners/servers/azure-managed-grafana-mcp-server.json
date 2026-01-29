@@ -1,15 +1,15 @@
 {
   "name": "amg-mcp",
   "title": "Azure Managed Grafana",
-  "summary": "Azure Managed Grafana Remote MCP lets AI agents access Grafana data, e.g. query data sources, read dashboards. Grafana can connect to hundreds of data sources. e.g. through this MCP, AI agent can query Azure Monitor Logs and Metrics via Grafana.",
-  "description": "Azure Managed Grafana MCP server lets AI agents connect to Grafana dashboards so users can ask natural language questions and get specialized answers from their data easily. ",
+  "summary": "Azure Managed Grafana MCP enables AI agents to access Grafana data, including querying data sources and reading dashboards. With Grafana's connectivity to hundreds of data sources, AI agents can query Azure Monitor Logs, Metrics, and more through a unified interface.",
+  "description": "Azure Managed Grafana MCP enables AI agents to access Grafana data, including querying data sources and reading dashboards. With Grafana's connectivity to hundreds of data sources, AI agents can query Azure Monitor Logs, Metrics, and more through a unified interface.",
   "vendor": "Microsoft",
   "kind": "mcp",
-  "remote": "https://{workspace-hostname}/api/2.0/mcp/genie/{genie_space_id}",
-  "icon": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/hero-icon-product-azure-databricks-24x24-328736?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85",
+  "remote": "https://{workspace-hostname}/api/azure-mcp",
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Azure-Managed-Grafana.svg",
   "externalDocumentation": {
-    "title": "Azure Databricks Genie MCP docs",
-    "url": "https://learn.microsoft.com/en-us/azure/databricks/generative-ai/mcp/managed-mcp"
+    "title": "Azure Managed Grafana MCP docs",
+    "url": "https://aka.ms/amg-mcp"
   },
   "license": {
     "name": "User License Terms",
@@ -17,8 +17,8 @@
   },
   "useCases": [
     {
-      "name": "Genie Q&A",
-      "description": "The Genie MCP server lets AI agents connect to Genie spaces so users can ask natural language questions and get specialized answers from their data easily. For example, say a user wants to understand the average monthly revenue. They can ask the question of their Genie space, the space will translate the question into SQL and return the response."
+      "name": "Query data and read dashboards",
+      "description": "Azure Managed Grafana MCP enables AI agents to access Grafana data, including querying data sources and reading dashboards. For example, say a user wants to understand the average monthly revenue. They can ask the question of their Grafana instance, and the MCP server will translate the question into the appropriate query and return the response."
     }
   ],
   "categories": "Productivity",
@@ -29,18 +29,12 @@
   "versionName": "original",
   "visibility": "true",
   "securitySchemes": {
-    "databricksOauth": {
-      "type": "oauth2",
-      "description": "Managed Microsoft Entra OAuth (user context) for Azure DatabricksGenie MCP",
-      "authorizationUrl": "http://workspaceurl/oidc/v1/authorize",
-      "tokenUrl": "http://workspaceurl/oidc/v1/token",
-      "scopes": [
-        "2ff814a6-3304-4ab8-85cb-cd0e6f879c1d/user_impersonation",
-        "2ff814a6-3304-4ab8-85cb-cd0e6f879c1d/.default"
-      ],
-      "flows": ["authorizationCode"]
+    "grafanaServiceAccount": {
+        "type": "http",
+        "description": "Authenticate with Tavily using a Personal Access Token.",
+        "scheme": "bearer",
+        "bearerFormat": "your api key"
     }
   },
-  "connectorName": "foundrydatabricksmcp",
   "preview": true
 }
