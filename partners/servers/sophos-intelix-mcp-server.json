@@ -44,5 +44,5 @@
     }
   },
   "visibility": "true",
-  "preview": true
+  "x-ms-preview": true
 }
