@@ -61,5 +61,5 @@
     }
   },
   "versionName": "original",
-  "preview": false
+  "x-ms-preview": false
 }

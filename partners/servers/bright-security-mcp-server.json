@@ -71,5 +71,5 @@
         "name": "Bright Security Support",
         "email": "support@brightsec.com"
     },
-  "preview": false
+  "x-ms-preview": false
 }

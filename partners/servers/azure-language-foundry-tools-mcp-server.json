@@ -46,5 +46,5 @@
   "visibility": "true",
   "authSchemas":["ManagedIdentity"],
   "audience": "https://cognitiveservices.azure.com/",
-  "preview": true
+  "x-ms-preview": true
 }

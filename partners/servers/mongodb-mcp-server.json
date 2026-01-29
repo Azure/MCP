@@ -52,5 +52,5 @@
     "supportContactInfo": {
         "name": "customer support contact",
         "url": "https://www.mongodb.com/company/contact"},
-  "preview": false
+  "x-ms-preview": false
 }
