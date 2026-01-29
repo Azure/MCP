@@ -36,5 +36,7 @@
         "bearerFormat": "your api key"
     }
   },
+  "authSchemas": ["ManagedIdentity"],
+  "audience": "ce34e7e5-485f-4d76-964f-b3d2b16d1e4f",
   "preview": true
 }
