@@ -1,8 +1,8 @@
 {
   "name": "amg-mcp",
-  "title": "Azure Managed Grafana",
-  "summary": "Azure Managed Grafana MCP enables AI agents to access Grafana data, including querying data sources and reading dashboards.",
-  "description": "Azure Managed Grafana MCP enables AI agents to access Grafana data, including querying data sources and reading dashboards. With Grafana's connectivity to hundreds of data sources, AI agents can query Azure Monitor Logs, Metrics, and more through a unified interface.",
+  "title": "Azure Grafana",
+  "summary": "Query ANY data that Grafana has access to, e.g. Azure Monitor Logs, Metrics, and more.",
+  "description": "Query ANY data that Grafana has access to, e.g. Azure Monitor Logs, Metrics, and more.",
   "vendor": "Microsoft",
   "kind": "mcp",
   "remote": "https://{workspace-hostname}/api/azure-mcp",
