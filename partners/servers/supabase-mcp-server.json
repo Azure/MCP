@@ -60,5 +60,6 @@
   },
   "supportContactInfo": {
     "name": "customer support contact",
-    "email": "support@supabase.com"}
+    "email": "support@supabase.com"},
+  "customProperties": { "x-ms-preview": false }
 }

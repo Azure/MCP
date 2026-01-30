@@ -64,5 +64,6 @@
       ]
     }
   },
-  "versionName": "original"
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": false }
 }

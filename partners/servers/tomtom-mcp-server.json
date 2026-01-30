@@ -47,5 +47,6 @@
       "name": "tomtom-api-key",
       "description": "Secret is provided via headers. "
     }
-    }
+    },
+  "customProperties": { "x-ms-preview": true }
   }

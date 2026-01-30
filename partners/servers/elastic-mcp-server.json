@@ -44,5 +44,6 @@
       "description": "ApiKey <Your API Key>"
     }
   },
-  "versionName": "original"
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": true }
 }

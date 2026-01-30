@@ -51,5 +51,6 @@
     "versionName": "Original",
     "supportContactInfo": {
         "name": "customer support contact",
-        "url": "https://www.mongodb.com/company/contact"}
+        "url": "https://www.mongodb.com/company/contact"},
+  "customProperties": { "x-ms-preview": false }
 }

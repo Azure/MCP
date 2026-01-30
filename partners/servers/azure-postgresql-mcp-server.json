@@ -39,5 +39,6 @@
     "name": "customer support contact",
     "email": "azurepgai@service.microsoft.com"},
   "versionName": "original",
-  "packages":[]
+  "packages":[],
+  "customProperties": { "x-ms-preview": false }
 }

@@ -36,5 +36,6 @@
     },
     "supportContactInfo": {
         "name": "customer support contact",
-        "email": "support@netlify.com"}
+        "email": "support@netlify.com"},
+  "customProperties": { "x-ms-preview": false }
 }

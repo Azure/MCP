@@ -47,5 +47,6 @@
     },
     "supportContactInfo": {
         "name": "customer support contact",
-        "url": "https://vercel.com/help"}
+        "url": "https://vercel.com/help"},
+  "customProperties": { "x-ms-preview": true }
 }

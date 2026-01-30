@@ -27,5 +27,6 @@
     "url": "https://github.com/redis/mcp-redis/issues"},
   "versionName": "original",
   "visibility": "true",
-  "packages":[]
+  "packages":[],
+  "customProperties": { "x-ms-preview": true }
 }
