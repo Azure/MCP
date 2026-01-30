@@ -46,5 +46,5 @@
         "OAuth2"
     ],
     "audience": "https://mcp.ai.azure.com",
-    "customProperties": { "x-ms-preview": false }
+    "customProperties": { "x-ms-preview": true }
 }
