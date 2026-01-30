@@ -376,7 +376,7 @@
           "description": "Indicates whether the MCP server is in preview mode. True means it's preview or beta. False means it's generally available."
         }
       },
-      "additionalProperties": false
+      "required": ["x-ms-preview"]
     }
   },
   "additionalProperties": false
