@@ -48,5 +48,5 @@
   "visibility": "true",
   "authSchemas":["OAuth2"],
   "audience": "4500ebfb-89b6-4b14-a480-7f749797bfcd",
-  "x-ms-preview": true
+  "customProperties": { "x-ms-preview": false }
 }

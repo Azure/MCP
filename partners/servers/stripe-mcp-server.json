@@ -37,5 +37,5 @@
     "supportContactInfo": {
         "name": "customer support contact",
         "email": "mcp@stripe.com"},
-  "x-ms-preview": true
+  "customProperties": { "x-ms-preview": false }
 }
