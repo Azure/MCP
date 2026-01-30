@@ -1,8 +1,8 @@
 {
   "name": "tomtom-maps-mcp-server",
   "title": "TomTom Maps",
-  "summary": "Give your application real-time geospatial context from TomTom —  including maps, routing, search, geocoding and traffic.",
-  "description": "Give your application real-time geospatial context from TomTom —  including maps, routing, search, geocoding and traffic.",
+  "summary": "Give your application real-time geospatial context from TomTom \u2014 \u202fincluding maps, routing, search, geocoding and traffic.",
+  "description": "Give your application real-time geospatial context from TomTom \u2014 \u202fincluding maps, routing, search, geocoding and traffic.",
   "vendor": "Partner",
   "visibility": "true",
   "kind": "mcp",
@@ -23,7 +23,7 @@
     },
     {
       "name": "Multi-Modal Routing",
-      "description": " Calculate optimized routes, travel times, travel distances, and reachable ranges – all considering TomTom’s high-quality real-time traffic."
+      "description": " Calculate optimized routes, travel times, travel distances, and reachable ranges \u2013 all considering TomTom\u2019s high-quality real-time traffic."
     },
     {
       "name": "Real-Time Traffic Context",
@@ -38,15 +38,18 @@
   "tags": [],
   "supportContactInfo": {
     "name": "customer support contact",
-    "url": "https://support.tomtom.com/support"},
+    "url": "https://support.tomtom.com/support"
+  },
   "versionName": "original",
   "securitySchemes": {
-      "tomtomSecret": {
+    "tomtomSecret": {
       "type": "apiKey",
       "in": "header",
       "name": "tomtom-api-key",
       "description": "Secret is provided via headers. "
     }
-    },
-  "x-ms-preview": true
+  },
+  "customProperties": {
+    "x-ms-preview": false
   }
+}

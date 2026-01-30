@@ -18,7 +18,7 @@
   "useCases": [
     {
       "name": "Password-Spray Hunt",
-      "description": "Build security agents that autonomously select relevant sign-in tables, aggregates login attempts by user and IP, and flags patterns consistent with password-spray behavior—like low-frequency attempts over several months across many accounts."
+      "description": "Build security agents that autonomously select relevant sign-in tables, aggregates login attempts by user and IP, and flags patterns consistent with password-spray behavior\u2014like low-frequency attempts over several months across many accounts."
     },
     {
       "name": "Impossible Travel Check",
@@ -34,23 +34,35 @@
     }
   ],
   "categories": "Security",
-  "tags": ["security", "sentinel"],
+  "tags": [
+    "security",
+    "sentinel"
+  ],
   "supportContactInfo": {
     "name": "Microsoft Customer Support",
-    "email": "support@microsoft.com"},
+    "email": "support@microsoft.com"
+  },
   "versionName": "original",
   "securitySchemes": {
     "sentinelOAuth": {
       "type": "oauth2",
       "description": "Authenticate with Microsoft Sentinel using OAuth2 authorization code flow with PKCE support.",
-      "flows": ["authorizationCode"],
+      "flows": [
+        "authorizationCode"
+      ],
       "authorizationUrl": "https://login.microsoftonline.com",
       "tokenUrl": "https://login.microsoftonline.com",
-      "scopes": ["4500ebfb-89b6-4b14-a480-7f749797bfcd"]
+      "scopes": [
+        "4500ebfb-89b6-4b14-a480-7f749797bfcd"
+      ]
     }
   },
   "visibility": "true",
-  "authSchemas":["OAuth2"],
+  "authSchemas": [
+    "OAuth2"
+  ],
   "audience": "4500ebfb-89b6-4b14-a480-7f749797bfcd",
-  "x-ms-preview": true
+  "customProperties": {
+    "x-ms-preview": false
+  }
 }

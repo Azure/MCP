@@ -1,52 +1,57 @@
 {
-    "name": "vercel-mcp-server",
-    "title": "Vercel",
-    "summary": "With Vercel MCP, you can explore projects, inspect failed deployments, fetch logs, and more right from your AI client.",
-    "description": "With Vercel MCP, you can explore projects, inspect failed deployments, fetch logs, and more right from your AI client.",
-    "kind": "mcp",
-    "license": {
-        "name": "Vercel Terms",
-        "url": "https://vercel.com/legal/terms"
+  "name": "vercel-mcp-server",
+  "title": "Vercel",
+  "summary": "With Vercel MCP, you can explore projects, inspect failed deployments, fetch logs, and more right from your AI client.",
+  "description": "With Vercel MCP, you can explore projects, inspect failed deployments, fetch logs, and more right from your AI client.",
+  "kind": "mcp",
+  "license": {
+    "name": "Vercel Terms",
+    "url": "https://vercel.com/legal/terms"
+  },
+  "packages": [],
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/vercel.svg",
+  "useCases": [
+    {
+      "name": "Cloud and Infrastructure",
+      "description": "Provision, manage, and monitor cloud resources, deployments, and IT infrastructure to ensure scalability, reliability, and security."
     },
-    "packages": [],
-    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/vercel.svg",
-    "useCases": [
-        {
-            "name": "Cloud and Infrastructure",
-            "description": "Provision, manage, and monitor cloud resources, deployments, and IT infrastructure to ensure scalability, reliability, and security."
-        },
-        {
-            "name": "Web",
-            "description": "Tools and services that enable building, deploying, and optimizing websites or web applications, including content delivery, hosting, and web performance."
-        }
-    ],
-    "tags": [],
-    "vendor": "Partner",
-    "categories": "Developer Tools",
-    "visibility": "true",
-    "remote": "https://mcp.vercel.com",
-    "versionName": "Original",
-    "externalDocumentation": {
-        "title": "Vercel MCP",
-        "url": "https://vercel.com/docs/mcp/vercel-mcp"
-    },
-    "connectorName": "foundryvercelmcp",
-    "securitySchemes": {
-        "vercelOauth": {
-            "type": "oauth2",
-            "description": "Authenticate with Vercel using OAuth2 authorization code flow with PKCE support.",
-            "authorizationUrl": "https://vercel.com/oauth/authorize",
-            "tokenUrl": "https://vercel.com/api/login/oauth/token",
-            "refreshUrl": "https://vercel.com/api/login/oauth/token",
-            "scopes": [
-                "openid",
-                "offline_access"
-            ],
-            "flows": ["authorizationCode"]
-        }
-    },
-    "supportContactInfo": {
-        "name": "customer support contact",
-        "url": "https://vercel.com/help"},
-  "x-ms-preview": true
+    {
+      "name": "Web",
+      "description": "Tools and services that enable building, deploying, and optimizing websites or web applications, including content delivery, hosting, and web performance."
+    }
+  ],
+  "tags": [],
+  "vendor": "Partner",
+  "categories": "Developer Tools",
+  "visibility": "true",
+  "remote": "https://mcp.vercel.com",
+  "versionName": "Original",
+  "externalDocumentation": {
+    "title": "Vercel MCP",
+    "url": "https://vercel.com/docs/mcp/vercel-mcp"
+  },
+  "connectorName": "foundryvercelmcp",
+  "securitySchemes": {
+    "vercelOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with Vercel using OAuth2 authorization code flow with PKCE support.",
+      "authorizationUrl": "https://vercel.com/oauth/authorize",
+      "tokenUrl": "https://vercel.com/api/login/oauth/token",
+      "refreshUrl": "https://vercel.com/api/login/oauth/token",
+      "scopes": [
+        "openid",
+        "offline_access"
+      ],
+      "flows": [
+        "authorizationCode"
+      ]
+    }
+  },
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://vercel.com/help"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
 }

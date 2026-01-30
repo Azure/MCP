@@ -1,50 +1,55 @@
 {
-    "name": "pipedream-mcp-server",
-    "title": "Pipedream",
-    "summary": "Securely connect to 10,000+ tools from 3,000+ APIs with Pipedream MCP.",
-    "description": "Securely connect to 10,000+ tools from 3,000+ APIs with Pipedream MCP.",
-    "kind": "mcp",
-    "license": {
-        "name": "Pipedream Terms",
-        "url": "https://pipedream.com/terms"
-    },
-    "packages": [],
-    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/pipedream.png",
-    "useCases": [
-        {
-            "name": "Productivity",
-            "description": "Boost individual and team efficiency by automating tasks, managing projects, and improving collaboration and communication workflows."
-        }
-    ],
-    "tags": [],
-    "vendor": "Partner",
-    "categories": "Productivity",
-    "visibility": "true",
-    "remote": "https://mcp.pipedream.net/v2",
-    "versionName": "Original",
-    "externalDocumentation": {
-        "title": "Pipedream MCP",
-        "url": "https://pipedream.com/docs/connect/mcp/users"
-    },
-    "securitySchemes": {
-        "pipedreamOauth": {
-            "type": "oauth2",
-            "description": "Authenticate with Pipedream using OAuth2 authorization code flow with PKCE support.",
-            "authorizationUrl": "https://mcp.pipedream.com/api/oauth/authorize",
-            "tokenUrl": "https://mcp.pipedream.com/api/oauth/token",
-            "refreshUrl": "https://mcp.pipedream.com/api/oauth/token",
-            "scopes": [
-                "openid",
-                "profile",
-                "email",
-                "offline_access"
-            ],
-            "flows": ["authorizationCode"]
-        }
-    },
-    "supportContactInfo": {
-        "name": "customer support contact",
-        "email": "support@pipedream.com"},
-    "connectorName": "foundrypipedreammcp",
-  "x-ms-preview": false
+  "name": "pipedream-mcp-server",
+  "title": "Pipedream",
+  "summary": "Securely connect to 10,000+ tools from 3,000+ APIs with Pipedream MCP.",
+  "description": "Securely connect to 10,000+ tools from 3,000+ APIs with Pipedream MCP.",
+  "kind": "mcp",
+  "license": {
+    "name": "Pipedream Terms",
+    "url": "https://pipedream.com/terms"
+  },
+  "packages": [],
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/pipedream.png",
+  "useCases": [
+    {
+      "name": "Productivity",
+      "description": "Boost individual and team efficiency by automating tasks, managing projects, and improving collaboration and communication workflows."
+    }
+  ],
+  "tags": [],
+  "vendor": "Partner",
+  "categories": "Productivity",
+  "visibility": "true",
+  "remote": "https://mcp.pipedream.net/v2",
+  "versionName": "Original",
+  "externalDocumentation": {
+    "title": "Pipedream MCP",
+    "url": "https://pipedream.com/docs/connect/mcp/users"
+  },
+  "securitySchemes": {
+    "pipedreamOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with Pipedream using OAuth2 authorization code flow with PKCE support.",
+      "authorizationUrl": "https://mcp.pipedream.com/api/oauth/authorize",
+      "tokenUrl": "https://mcp.pipedream.com/api/oauth/token",
+      "refreshUrl": "https://mcp.pipedream.com/api/oauth/token",
+      "scopes": [
+        "openid",
+        "profile",
+        "email",
+        "offline_access"
+      ],
+      "flows": [
+        "authorizationCode"
+      ]
+    }
+  },
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "email": "support@pipedream.com"
+  },
+  "connectorName": "foundrypipedreammcp",
+  "customProperties": {
+    "x-ms-preview": false
+  }
 }

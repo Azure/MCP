@@ -1,56 +1,61 @@
 {
-    "name": "mongodb-mcp-server",
-    "title": "MongoDB MCP Server",
-    "summary": "MongoDB MCP Server allows any MCP-aware LLM to connect to MongoDB Atlas for admin tasks and to MongoDB databases for data operations, all through natural language.",
-    "description": "MongoDB MCP Server allows any MCP-aware LLM to connect to MongoDB Atlas for admin tasks and to MongoDB databases for data operations, all through natural language.",
-    "kind": "mcp",
-    "externalDocumentation": {
-        "title": "GitHub",
-        "url": "https://github.com/mongodb-js/mongodb-mcp-server?tab=readme-ov-file#azure"
-    },
-    "repository": {
-        "url": "https://github.com/mongodb-js/mongodb-mcp-server",
-        "source": "github"
-    },
-    "license": {
-        "name": "MongoDB terms of service",
-        "url": "https://github.com/mongodb-js/mongodb-mcp-server/blob/main/LICENSE"
-    },
-    "packages": [
+  "name": "mongodb-mcp-server",
+  "title": "MongoDB MCP Server",
+  "summary": "MongoDB MCP Server allows any MCP-aware LLM to connect to MongoDB Atlas for admin tasks and to MongoDB databases for data operations, all through natural language.",
+  "description": "MongoDB MCP Server allows any MCP-aware LLM to connect to MongoDB Atlas for admin tasks and to MongoDB databases for data operations, all through natural language.",
+  "kind": "mcp",
+  "externalDocumentation": {
+    "title": "GitHub",
+    "url": "https://github.com/mongodb-js/mongodb-mcp-server?tab=readme-ov-file#azure"
+  },
+  "repository": {
+    "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+    "source": "github"
+  },
+  "license": {
+    "name": "MongoDB terms of service",
+    "url": "https://github.com/mongodb-js/mongodb-mcp-server/blob/main/LICENSE"
+  },
+  "packages": [
+    {
+      "registry_name": "npm",
+      "name": "mongodb-mcp-server",
+      "version": "latest",
+      "runtime_hint": "npx",
+      "runtime_arguments": [
         {
-            "registry_name": "npm",
-            "name": "mongodb-mcp-server",
-            "version": "latest",
-            "runtime_hint": "npx",
-            "runtime_arguments": [
-                {
-                    "type": "positional",
-                    "value_hint": "mongodb_server_binary",
-                    "is_repeated": false,
-                    "is_required": true,
-                    "format": "string",
-                    "value": "mongodb-mcp-server@latest",
-                    "is_secret": false
-                }
-            ],
-            "package_arguments": [],
-            "environment_variables": []
+          "type": "positional",
+          "value_hint": "mongodb_server_binary",
+          "is_repeated": false,
+          "is_required": true,
+          "format": "string",
+          "value": "mongodb-mcp-server@latest",
+          "is_secret": false
         }
-    ],
-    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/mongodb.svg",
-    "useCases": [
-        {
-            "name": "Data and Analytics",
-            "description": "Collect, process, and analyze data to generate insights, detect trends, and support decision-making through visualization and reporting tools."
-        }
-    ],
-    "tags": ["knowledge"],
-    "vendor": "Partner",
-    "categories": "Databases",
-    "visibility": "true",
-    "versionName": "Original",
-    "supportContactInfo": {
-        "name": "customer support contact",
-        "url": "https://www.mongodb.com/company/contact"},
-  "x-ms-preview": false
+      ],
+      "package_arguments": [],
+      "environment_variables": []
+    }
+  ],
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/mongodb.svg",
+  "useCases": [
+    {
+      "name": "Data and Analytics",
+      "description": "Collect, process, and analyze data to generate insights, detect trends, and support decision-making through visualization and reporting tools."
+    }
+  ],
+  "tags": [
+    "knowledge"
+  ],
+  "vendor": "Partner",
+  "categories": "Databases",
+  "visibility": "true",
+  "versionName": "Original",
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://www.mongodb.com/company/contact"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
 }

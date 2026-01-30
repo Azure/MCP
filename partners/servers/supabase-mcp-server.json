@@ -46,20 +46,25 @@
     "supabaseOAuth": {
       "type": "oauth2",
       "description": "OAuth2 for user authentication (authorization code flow with PKCE supported).",
-      "flows": ["authorizationCode"],
+      "flows": [
+        "authorizationCode"
+      ],
       "tokenUrl": "https://api.supabase.com/v1/oauth/token",
       "authorizationUrl": "https://api.supabase.com/v1/oauth/authorize",
       "scopes": []
     },
     "supabaseBearerAuth": {
-          "type": "http",
-          "description": "Authenticate with Supabase using a Personal Access Token.",
-          "scheme": "bearer",
-          "bearerFormat": "Your authorization token"
-      }
+      "type": "http",
+      "description": "Authenticate with Supabase using a Personal Access Token.",
+      "scheme": "bearer",
+      "bearerFormat": "Your authorization token"
+    }
   },
   "supportContactInfo": {
     "name": "customer support contact",
-    "email": "support@supabase.com"},
-  "x-ms-preview": false
+    "email": "support@supabase.com"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
 }

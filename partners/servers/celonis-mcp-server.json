@@ -17,7 +17,8 @@
   "remote": "https://{team_and_realm}.celonis.cloud/studio-copilot/api/v1/mcp-servers/mcp/{mcp_server_url}",
   "supportContactInfo": {
     "name": "customer support contact",
-    "email": "servicedesk@celonis.com"},
+    "email": "servicedesk@celonis.com"
+  },
   "visibility": "true",
   "categories": "Analytics",
   "useCases": [
@@ -36,12 +37,14 @@
   ],
   "securitySchemes": {
     "celonisBearerAuth": {
-        "type": "http",
-        "description": "Authenticate with Celonis using a Personal Access Token.",
-        "scheme": "bearer",
-        "bearerFormat": "Personal Access Token"
+      "type": "http",
+      "description": "Authenticate with Celonis using a Personal Access Token.",
+      "scheme": "bearer",
+      "bearerFormat": "Personal Access Token"
     }
   },
   "versionName": "Original",
-  "x-ms-preview": false
+  "customProperties": {
+    "x-ms-preview": false
+  }
 }

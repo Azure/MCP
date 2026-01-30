@@ -17,7 +17,8 @@
   "remote": "https://mcp.tavily.com/mcp",
   "supportContactInfo": {
     "name": "customer support contact",
-    "email": "support@tavily.com"},
+    "email": "support@tavily.com"
+  },
   "visibility": "true",
   "categories": "Web",
   "useCases": [
@@ -40,12 +41,14 @@
   ],
   "securitySchemes": {
     "tavilyBearerAuth": {
-        "type": "http",
-        "description": "Authenticate with Tavily using a Personal Access Token.",
-        "scheme": "bearer",
-        "bearerFormat": "your api key"
+      "type": "http",
+      "description": "Authenticate with Tavily using a Personal Access Token.",
+      "scheme": "bearer",
+      "bearerFormat": "your api key"
     }
   },
   "versionName": "original",
-  "x-ms-preview": false
+  "customProperties": {
+    "x-ms-preview": false
+  }
 }

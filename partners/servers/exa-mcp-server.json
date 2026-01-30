@@ -21,12 +21,15 @@
   "versionName": "Original",
   "supportContactInfo": {
     "name": "customer support contact",
-    "email": "hello@exa.ai"},
+    "email": "hello@exa.ai"
+  },
   "useCases": [
     {
       "name": "web search",
       "description": "do real-time web searches, extract content from any URL, and even run deep research for detailed reports."
     }
   ],
-  "x-ms-preview": false
+  "customProperties": {
+    "x-ms-preview": false
+  }
 }

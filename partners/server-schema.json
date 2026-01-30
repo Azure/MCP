@@ -15,7 +15,7 @@
     "categories",
     "versionName",
     "supportContactInfo",
-    "x-ms-preview"
+    "customProperties"
   ],
   "properties": {
     "name": {
@@ -367,9 +367,16 @@
       "type": "string",
       "description": "Audience for the MCP server. This will be transformed to x-ms-audience."
     },
-    "x-ms-preview": {
-      "type": "boolean",
-      "description": "Indicates whether the MCP server is in preview mode. True means it's preview or beta. False means it's generally available."
+    "customProperties": {
+      "type": "object",
+      "description": "Custom properties for the MCP server.",
+      "properties": {
+        "x-ms-preview": {
+          "type": "boolean",
+          "description": "Indicates whether the MCP server is in preview mode. True means it's preview or beta. False means it's generally available."
+        }
+      },
+      "additionalProperties": false
     }
   },
   "additionalProperties": false

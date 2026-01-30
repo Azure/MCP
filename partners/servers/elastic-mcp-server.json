@@ -14,14 +14,16 @@
     "url": "https://www.elastic.co/docs/solutions/search/agent-builder/mcp-server",
     "title": "Elasticsearch MCP Server documentation"
   },
-
   "remote": "https://{KIBANA_URL}/api/agent_builder/mcp",
   "supportContactInfo": {
     "name": "customer support contact",
-    "email": "gregory.crist@elastic.co"},
+    "email": "gregory.crist@elastic.co"
+  },
   "visibility": "true",
   "categories": "Databases",
-  "tags": ["Knowledge"],
+  "tags": [
+    "Knowledge"
+  ],
   "useCases": [
     {
       "name": "Search and retrieval",
@@ -37,7 +39,7 @@
     }
   ],
   "securitySchemes": {
-      "elasticSecret": {
+    "elasticSecret": {
       "type": "apiKey",
       "in": "header",
       "name": "Authorization",
@@ -45,5 +47,7 @@
     }
   },
   "versionName": "original",
-  "x-ms-preview": true
+  "customProperties": {
+    "x-ms-preview": false
+  }
 }

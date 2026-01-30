@@ -2,7 +2,7 @@
   "name": "azure-managed-redis",
   "title": "Azure Managed Redis",
   "summary": "Azure Managed Redis MCP Server provides a natural language interface for agentic apps to interact with Azure Managed Redis",
-  "description": "Azure Managed Redis MCP Server provides a natural language interface for agentic apps to interact with Azure Managed Redis—a high-speed, in-memory datastore that is ideal for low-latency use cases like agent memory, vector data store and semantic caching.",
+  "description": "Azure Managed Redis MCP Server provides a natural language interface for agentic apps to interact with Azure Managed Redis\u2014a high-speed, in-memory datastore that is ideal for low-latency use cases like agent memory, vector data store and semantic caching.",
   "vendor": "Microsoft",
   "kind": "mcp",
   "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Azure-Managed-Redis.svg",
@@ -17,16 +17,21 @@
   "useCases": [
     {
       "name": "Manage and search data",
-      "description": "Azure Managed Redis MCP Server provides a natural language interface for agentic apps to interact with Azure Managed Redis—a high-speed, in-memory datastore that is ideal for low-latency use cases like agent memory and vector data store. Using this MCP Server, you can ask questions like:\n\n\"Store the entire conversation in a stream\"\n\n\"Cache this item\"\n\n\"Store the session with an expiration time\"\n\n\"Index and search this vector\""
+      "description": "Azure Managed Redis MCP Server provides a natural language interface for agentic apps to interact with Azure Managed Redis\u2014a high-speed, in-memory datastore that is ideal for low-latency use cases like agent memory and vector data store. Using this MCP Server, you can ask questions like:\n\n\"Store the entire conversation in a stream\"\n\n\"Cache this item\"\n\n\"Store the session with an expiration time\"\n\n\"Index and search this vector\""
     }
   ],
   "categories": "Databases",
-  "tags": ["knowledge"],
+  "tags": [
+    "knowledge"
+  ],
   "supportContactInfo": {
     "name": "customer support contact",
-    "url": "https://github.com/redis/mcp-redis/issues"},
+    "url": "https://github.com/redis/mcp-redis/issues"
+  },
   "versionName": "original",
   "visibility": "true",
-  "packages":[],
-  "x-ms-preview": true
+  "packages": [],
+  "customProperties": {
+    "x-ms-preview": false
+  }
 }

@@ -20,11 +20,14 @@
   },
   "supportContactInfo": {
     "name": "customer support contact",
-    "email": "sql-mcp-server@service.microsoft.com"},
+    "email": "sql-mcp-server@service.microsoft.com"
+  },
   "visibility": "public",
   "categories": "Databases",
-  "tags":["knowledge"],
-  "packages":[],
+  "tags": [
+    "knowledge"
+  ],
+  "packages": [],
   "useCases": [
     {
       "name": "Describe and discover schema",
@@ -44,5 +47,7 @@
     }
   ],
   "versionName": "original",
-  "x-ms-preview": true
+  "customProperties": {
+    "x-ms-preview": false
+  }
 }

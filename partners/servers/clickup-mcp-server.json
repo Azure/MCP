@@ -1,79 +1,86 @@
 {
-    "name": "clickup-mcp-server",
-    "title": "ClickUp",
-    "summary": "Connect to ClickUp for project management and collaboration for teams & agents.",
-    "description": "Connect to ClickUp for comprehensive project and task management. Search across your entire workspace to find tasks, documents, chat messages, and more. Manage tasks with custom fields, comments, file attachments, and tags. Create and organize documents with pages. Track time with timers and manual entries. Collaborate via chat channels and manage workspace members. Organize projects with spaces, folders, and lists.",
-    "kind": "mcp",
-    "license": {
-        "name": "ClickUp Terms of Service",
-        "url": "https://clickup.com/terms"
+  "name": "clickup-mcp-server",
+  "title": "ClickUp",
+  "summary": "Connect to ClickUp for project management and collaboration for teams & agents.",
+  "description": "Connect to ClickUp for comprehensive project and task management. Search across your entire workspace to find tasks, documents, chat messages, and more. Manage tasks with custom fields, comments, file attachments, and tags. Create and organize documents with pages. Track time with timers and manual entries. Collaborate via chat channels and manage workspace members. Organize projects with spaces, folders, and lists.",
+  "kind": "mcp",
+  "license": {
+    "name": "ClickUp Terms of Service",
+    "url": "https://clickup.com/terms"
+  },
+  "icon": "https://clickup.com/assets/brand/v4/Logomark-gradient.svg",
+  "externalDocumentation": {
+    "title": "ClickUp MCP Docs",
+    "url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP"
+  },
+  "useCases": [
+    {
+      "name": "Universal Search",
+      "description": "Search across your entire workspace to find tasks, documents, dashboards, attachments, whiteboards, chat messages, and forms with advanced filtering."
     },
-    "icon": "https://clickup.com/assets/brand/v4/Logomark-gradient.svg",
-    "externalDocumentation": {
-        "title": "ClickUp MCP Docs",
-        "url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP"
+    {
+      "name": "Task Management",
+      "description": "Create, update, and organize tasks with custom fields, priorities, assignees, comments, file attachments, and tags."
     },
-    "useCases": [
-        {
-            "name": "Universal Search",
-            "description": "Search across your entire workspace to find tasks, documents, dashboards, attachments, whiteboards, chat messages, and forms with advanced filtering."
-        },
-        {
-            "name": "Task Management",
-            "description": "Create, update, and organize tasks with custom fields, priorities, assignees, comments, file attachments, and tags."
-        },
-        {
-            "name": "Document Management",
-            "description": "Create and manage documents with multiple pages for team knowledge bases and project documentation."
-        },
-        {
-            "name": "Time Tracking",
-            "description": "Track time with start/stop timers, add manual time entries, and retrieve time entry history for tasks."
-        },
-        {
-            "name": "Team Collaboration",
-            "description": "Send chat messages to channels, manage workspace members, and resolve team member names to IDs."
-        },
-        {
-            "name": "Project Organization",
-            "description": "Manage spaces, folders, and lists to structure your workspace hierarchy and organize projects."
-        }
-    ],
-    "tags": [
-        "Task management",
-        "Project management",
-        "Time tracking",
-        "Collaboration",
-        "Search",
-        "Documents"
-    ],
-    "vendor": "Partner",
-    "categories": "Productivity",
-    "visibility": "true",
-    "remote": "https://mcp.clickup.com/mcp",
-    "remoteType": "streamable-http",
-    "versionName": "Original",
-    "packages": [],
-    "securitySchemes": {
-        "clickupOauth": {
-            "type": "oauth2",
-            "description": "Authenticate with ClickUp using OAuth2 authorization code flow with PKCE support.",
-            "flows": ["authorizationCode"],
-            "authorizationUrl": "https://mcp.clickup.com/oauth/authorize",
-            "tokenUrl": "https://mcp.clickup.com/oauth/token",
-            "scopes": ["read", "write"]
-        },
-        "clickupBearerAuth": {
-            "type": "http",
-            "description": "Authenticate with ClickUp using an API Key.",
-            "scheme": "bearer",
-            "bearerFormat": "API Key"
-        }
+    {
+      "name": "Document Management",
+      "description": "Create and manage documents with multiple pages for team knowledge bases and project documentation."
     },
-    "supportContactInfo": {
-        "name": "ClickUp Support",
-        "email": "support@clickup.com",
-        "url": "https://help.clickup.com"
+    {
+      "name": "Time Tracking",
+      "description": "Track time with start/stop timers, add manual time entries, and retrieve time entry history for tasks."
     },
-  "x-ms-preview": false
+    {
+      "name": "Team Collaboration",
+      "description": "Send chat messages to channels, manage workspace members, and resolve team member names to IDs."
+    },
+    {
+      "name": "Project Organization",
+      "description": "Manage spaces, folders, and lists to structure your workspace hierarchy and organize projects."
+    }
+  ],
+  "tags": [
+    "Task management",
+    "Project management",
+    "Time tracking",
+    "Collaboration",
+    "Search",
+    "Documents"
+  ],
+  "vendor": "Partner",
+  "categories": "Productivity",
+  "visibility": "true",
+  "remote": "https://mcp.clickup.com/mcp",
+  "remoteType": "streamable-http",
+  "versionName": "Original",
+  "packages": [],
+  "securitySchemes": {
+    "clickupOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with ClickUp using OAuth2 authorization code flow with PKCE support.",
+      "flows": [
+        "authorizationCode"
+      ],
+      "authorizationUrl": "https://mcp.clickup.com/oauth/authorize",
+      "tokenUrl": "https://mcp.clickup.com/oauth/token",
+      "scopes": [
+        "read",
+        "write"
+      ]
+    },
+    "clickupBearerAuth": {
+      "type": "http",
+      "description": "Authenticate with ClickUp using an API Key.",
+      "scheme": "bearer",
+      "bearerFormat": "API Key"
+    }
+  },
+  "supportContactInfo": {
+    "name": "ClickUp Support",
+    "email": "support@clickup.com",
+    "url": "https://help.clickup.com"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
 }

@@ -17,7 +17,8 @@
   "remote": "https://factoryrca.sightmachine.io/",
   "supportContactInfo": {
     "name": "customer support contact",
-    "email": "support+mcp@sightmachine.com"},
+    "email": "support+mcp@sightmachine.com"
+  },
   "visibility": "true",
   "categories": "Analytics",
   "useCases": [
@@ -34,7 +35,7 @@
       "description": "Analyze downtime, microstops, slow running, yield and energy issues to surface likely root causes."
     },
     {
-      "name": "What‑if analysis and recommendations",
+      "name": "What\u2011if analysis and recommendations",
       "description": "Run simulations and suggest setpoint changes to optimize performance, quality, and energy efficiency."
     }
   ],
@@ -59,5 +60,7 @@
     }
   },
   "versionName": "original",
-  "x-ms-preview": false
+  "customProperties": {
+    "x-ms-preview": false
+  }
 }
