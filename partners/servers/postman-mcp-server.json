@@ -41,7 +41,5 @@
     "supportContactInfo": {
         "name": "customer support contact",
         "url": "https://github.com/postmanlabs/postman-mcp-server/issues"},
-  "customProperties": {
-    "x-ms-preview": false
-  }
+  "customProperties": { "x-ms-preview": false }
 }

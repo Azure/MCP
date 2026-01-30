@@ -28,7 +28,5 @@
       "description": "do real-time web searches, extract content from any URL, and even run deep research for detailed reports."
     }
   ],
-  "customProperties": {
-    "x-ms-preview": false
-  }
+  "customProperties": { "x-ms-preview": false }
 }

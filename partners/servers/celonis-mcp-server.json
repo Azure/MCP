@@ -43,7 +43,5 @@
     }
   },
   "versionName": "Original",
-  "customProperties": {
-    "x-ms-preview": false
-  }
+  "customProperties": { "x-ms-preview": false }
 }

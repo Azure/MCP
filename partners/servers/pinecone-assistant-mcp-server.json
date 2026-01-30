@@ -44,7 +44,5 @@
             "bearerFormat": "PINECONE_API_KEY"
         }
     },
-  "customProperties": {
-    "x-ms-preview": false
-  }
+  "customProperties": { "x-ms-preview": false }
 }

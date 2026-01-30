@@ -28,7 +28,5 @@
   "versionName": "original",
   "visibility": "true",
   "packages":[],
-  "customProperties": {
-    "x-ms-preview": true
-  }
+  "customProperties": { "x-ms-preview": false }
 }
