@@ -45,5 +45,5 @@
     "name":"Azure Cosmos DB Support",
     "email": "CosmosDBMCPToolKit@Microsoft.com"
   },
-  "x-ms-preview": false
+  "customProperties": { "x-ms-preview": false }
 }

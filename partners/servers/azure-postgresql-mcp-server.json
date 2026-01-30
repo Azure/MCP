@@ -40,5 +40,5 @@
     "email": "azurepgai@service.microsoft.com"},
   "versionName": "original",
   "packages":[],
-  "x-ms-preview": false
+  "customProperties": { "x-ms-preview": false }
 }

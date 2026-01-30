@@ -29,5 +29,5 @@
     "supportContactInfo": {
         "name": "customer support contact",
         "url": "https://azure.microsoft.com/en-us/support"},
-  "x-ms-preview": false
+  "customProperties": { "x-ms-preview": false }
 }

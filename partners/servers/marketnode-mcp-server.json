@@ -46,5 +46,5 @@
   "supportContactInfo": {
     "name": "customer support contact",
     "url": "https://support.marketnode.com/"},
-  "x-ms-preview": true
+  "customProperties": { "x-ms-preview": true }
 }
