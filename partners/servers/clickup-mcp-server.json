@@ -75,5 +75,5 @@
         "email": "support@clickup.com",
         "url": "https://help.clickup.com"
     },
-  "x-ms-preview": false
+  "customProperties": { "x-ms-preview": false }
 }
