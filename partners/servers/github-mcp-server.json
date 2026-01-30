@@ -82,5 +82,7 @@
     "supportContactInfo": {
         "name": "customer support contact",
         "url": "https://github.com/github/github-mcp-server/blob/main/SUPPORT.md"},
-  "customProperties": { "x-ms-preview": false }
+  "customProperties": {
+    "x-ms-preview": false
+  }
 }

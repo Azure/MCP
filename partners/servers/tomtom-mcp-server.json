@@ -48,5 +48,7 @@
       "description": "Secret is provided via headers. "
     }
     },
-  "customProperties": { "x-ms-preview": false }
+  "customProperties": {
+    "x-ms-preview": true
+  }
   }

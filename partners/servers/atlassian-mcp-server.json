@@ -40,5 +40,7 @@
         "name": "Atlassian Support",
         "url": "https://support.atlassian.com/contact/"
     },
-  "customProperties": { "x-ms-preview": false }
+  "customProperties": {
+    "x-ms-preview": false
+  }
 }

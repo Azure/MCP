@@ -53,5 +53,7 @@
       "bearerFormat": "API Key"
     }
     },
-  "customProperties": { "x-ms-preview": false }
+  "customProperties": {
+    "x-ms-preview": true
+  }
 }
