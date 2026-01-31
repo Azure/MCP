@@ -1,6 +1,6 @@
 {
   "name": "amg-mcp",
-  "title": "Azure Grafana",
+  "title": "Azure Managed Grafana",
   "summary": "Query ANY data that Grafana has access to, e.g. Azure Monitor Logs, Metrics, and more.",
   "description": "Query ANY data that Grafana has access to, e.g. Azure Monitor Logs, Metrics, and more.",
   "vendor": "Microsoft",
