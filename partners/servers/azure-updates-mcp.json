@@ -1,0 +1,55 @@
+{
+  "name": "azure-updates-mcp",
+  "title": "Azure Updates MCP Server",
+  "summary": "A Python-based MCP server that provides tools for querying and searching Azure Updates.",
+  "description": "Azure Updates MCP Server enables AI assistants to search and filter Azure service updates, announcements, and feature releases. Query by keyword, category, status (GA, Preview, Retirement), date range, or GUID. Includes faceted search to discover available products, categories, and tags. Built for developers and IT professionals who need to stay current with Azure platform changes, feature deprecations, and new service announcements through natural language queries.",
+  "kind": "mcp",
+  "vendor": "None",
+  "externalDocumentation": {
+    "title": "Azure Updates MCP Server Documentation",
+    "url": "https://github.com/jonnybottles/azure-updates-mcp#readme"
+  },
+  "repository": {
+    "url": "https://github.com/jonnybottles/azure-updates-mcp",
+    "source": "github"
+  },
+  "supportContactInfo": {
+    "name": "Jonathan Butler",
+    "email": "jonbutler@microsoft.com",
+    "url": "https://github.com/jonnybottles/azure-updates-mcp/issues"
+  },
+  "license": {
+    "name": "MIT",
+    "url": "https://github.com/jonnybottles/azure-updates-mcp/blob/main/LICENSE"
+  },
+  "visibility": "true",
+  "categories": "Developer Tools",
+  "icon": "https://raw.githubusercontent.com/jonnybottles/azure-updates-mcp/main/icon.png",
+  "tags": ["azure", "updates", "announcements", "search", "python"],
+  "useCases": [
+    {
+      "name": "Get recent Azure updates",
+      "description": "Retrieve the most recent Azure service updates, announcements, and feature releases to stay current with platform changes."
+    },
+    {
+      "name": "Search updates by keyword",
+      "description": "Find all Azure updates related to specific technologies, services, or features (e.g., Kubernetes, AKS, Storage) using natural language queries."
+    },
+    {
+      "name": "Filter by status",
+      "description": "Query Azure features by status (Generally Available, Preview, Retirement) to track service lifecycle and plan migrations."
+    },
+    {
+      "name": "Track service retirements",
+      "description": "Identify upcoming Azure service deprecations and retirements to plan infrastructure changes and avoid disruptions."
+    },
+    {
+      "name": "Discover available categories",
+      "description": "Use faceted search to explore available Azure product categories, services, and tags to understand the update taxonomy and refine queries."
+    }
+  ],
+  "versionName": "original",
+  "customProperties": {
+    "x-ms-preview": true
+  }
+}
