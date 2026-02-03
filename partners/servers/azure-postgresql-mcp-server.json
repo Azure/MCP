@@ -40,5 +40,16 @@
     "email": "azurepgai@service.microsoft.com"},
   "versionName": "original",
   "packages":[],
-  "customProperties": { "x-ms-preview": false }
+  "customProperties": { "x-ms-preview": false },
+  "securitySchemes": {
+    "postgresqlOauth": {
+        "type": "oauth2",
+        "description": "Authenticate with Microsoft Foundry using OAuth2 authorization code flow with PKCE support.",
+        "flows": ["authorizationCode"],
+        "authorizationUrl": "https://login.microsoftonline.com",
+        "tokenUrl": "https://login.microsoftonline.com",
+        "scopes": []
+        }
+    },
+  "authSchemas":["ManagedIdentity"]
 }
