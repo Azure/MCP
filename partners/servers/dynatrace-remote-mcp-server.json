@@ -62,18 +62,17 @@
   "categories": "Monitoring & Diagnostics",
   "vendor": "Partner",
   "visibility": "true",
-  "securitySchemes": {
-    "dynatraceoauth2": {
-      "type": "oauth2",
-      "description": "Authenticate with Dynatrace using OAuth2 client credentials flow.",
-      "flows": ["clientCredentials"],
-      "tokenUrl": "https://sso.dynatrace.com/sso/oauth2/token",
-      "scopes": ["mcp-gateway:servers:invoke", "mcp-gateway:servers:read"]
+  "securitySchemes": {    
+    "dynatraceplatformtoken": {
+      "type": "http",
+      "description": "Authenticate with Dynatrace using a Platform Token.",      
+      "name": "Authorization",
+      "scheme": "bearer"
     }
   },
-  "authSchemas": ["OAuth2"],
   "supportContactInfo": {
     "name": "Dynatrace Support",
     "url": "https://support.dynatrace.com/"
-  }
+  },
+  "customProperties": { "x-ms-preview": false }
 }
