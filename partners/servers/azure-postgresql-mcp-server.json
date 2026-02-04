@@ -40,7 +40,7 @@
     "email": "azurepgai@service.microsoft.com"},
   "versionName": "original",
   "packages":[],
-  "customProperties": { "x-ms-preview": false },
+  "customProperties": { "x-ms-preview": true },
   "securitySchemes": {
     "postgresqlOauth": {
         "type": "oauth2",
