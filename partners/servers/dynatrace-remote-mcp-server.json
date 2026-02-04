@@ -62,12 +62,12 @@
   "categories": "Monitoring & Diagnostics",
   "vendor": "Partner",
   "visibility": "true",
-  "securitySchemes": {    
+  "securitySchemes": {
     "dynatraceplatformtoken": {
       "type": "http",
-      "description": "Authenticate with Dynatrace using a Platform Token.",      
-      "name": "Authorization",
-      "scheme": "bearer"
+      "description": "Authenticate with Dynatrace using a Platform Token.",
+      "scheme": "bearer",
+      "bearerFormat": "Dynatrace Platform Token"
     }
   },
   "supportContactInfo": {
