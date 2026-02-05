@@ -44,7 +44,7 @@
         }
     },
   "visibility": "true",
-  "authSchemas":["ManagedIdentity"],
+  "authSchemas":["ManagedIdentity","AgentIdentity"],
   "audience": "https://cognitiveservices.azure.com/",
   "customProperties": { "x-ms-preview": true }
 }
