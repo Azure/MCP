@@ -28,5 +28,23 @@
   "versionName": "original",
   "visibility": "true",
   "packages":[],
-  "customProperties": { "x-ms-preview": true }
+  "customProperties": { "x-ms-preview": true },
+  "securitySchemes": {
+    "redisApiKey": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "x-api-key",
+      "description": "Key-based authentication."
+    },
+    "redisOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with Azure Managed Redis using OAuth2 authorization code flow with PKCE support.",
+      "flows": [
+        "authorizationCode"
+      ],
+      "authorizationUrl": "https://login.microsoftonline.com",
+      "tokenUrl": "https://login.microsoftonline.com",
+      "scopes": []
+    }
+  }
 }
