@@ -1,0 +1,66 @@
+{
+  "name": "merge-agent-handler",
+  "title": "Merge Agent Handler",
+  "summary": "Securely connect AI agents to third-party tools via MCP with centralized access control, logs, and security alerts.",
+  "description": "Merge Agent Handler is an MCP gateway that sits between your AI agent and third-party tools. Use one MCP connection to expose exactly the connectors and tools you want (via Tool Packs), bind the session to an end user or service account (via Registered Users), and monitor every tool interaction with searchable logs, custom header-based grouping, and configurable security rules/alerts.",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "visibility": "public",
+  "categories": "Integration",
+  "versionName": "original",
+  "remote": "https://ah-api.merge.dev/api/v1/tool-packs/{tool_pack_id}/registered-users/{registered_user_id}/mcp",
+  "remoteType": "streamable-http",
+  "externalDocumentation": {
+    "title": "Agent Handler MCP integration",
+    "url": "https://docs.ah.merge.dev/get-started/connect-mcp"
+  },
+  "icon": "https://cdn.prod.website-files.com/624b192df0b0151225c10026/67b5ed56e63b65409a3f0fa6_merge-logo_bbl.svg",
+  "useCases": [
+  {
+    "name": "Unified connector surface for agents",
+    "description": "Expose many third-party apps behind a single MCP endpoint so agents can integrate with new tools without changing runtime wiring—just update the Tool Pack."
+  },
+  {
+    "name": "Agent tool governance",
+    "description": "Use Tool Packs to restrict an agent to the exact third-party tools it can invoke, and swap permissions per agent/use case without changing the agent code."
+  },
+  {
+    "name": "Multi-app workflow orchestration",
+    "description": "Enable cross-app workflows (e.g., create a ticket, notify a channel, update a CRM) using one MCP connection while keeping consistent tool boundaries."
+  },
+  {
+    "name": "Monitoring & auditability",
+    "description": "Track tool calls with detailed, searchable logs and group calls by workflow/chat using custom X-* headers."
+  },
+  {
+    "name": "Environment & tenant portability",
+    "description": "Promote the same agent from dev to prod by switching Tool Pack and user context identifiers while keeping the MCP client configuration stable."
+  },
+  {
+    "name": "Security controls & alerts",
+    "description": "Apply inbound/outbound security rules to warn, redact, or block sensitive data from moving through tool calls, and generate alerts on violations."
+  }
+],
+  "tags": ["MCP", "Access control", "Audit logs", "DLP", "Tool routing"],
+  "securitySchemes": {
+    "mergeAgentHandlerBearerAuth": {
+      "type": "http",
+      "description": "Authenticate with a Merge Agent Handler access key using the Authorization header (Bearer token).",
+      "scheme": "bearer",
+      "bearerFormat": "API key"
+    }
+  },
+  "packages": [],
+  "license": {
+    "name": "Merge Terms of Use",
+    "url": "https://www.merge.dev/legal/terms"
+  },
+  "supportContactInfo": {
+    "name": "Merge Support",
+    "email": "support@merge.dev",
+    "url": "https://docs.ah.merge.dev/"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
