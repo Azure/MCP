@@ -1,0 +1,61 @@
+{
+  "name": "neo4j-mcp-server",
+  "title": "Neo4j MCP Server",
+  "summary": "Official MCP server for Neo4j enabling AI agents to query, explore, and manage Neo4j graph databases.",
+  "description": "Official Model Context Protocol server for Neo4j, deployed by the customer to Azure Container Apps. Provides tools for graph schema introspection, Cypher read and write queries, and GDS procedure discovery. Connects to the customer's Neo4j database via streamable HTTP with bearer token authentication (e.g., Microsoft Entra ID). Supports read-only mode and adaptive operation for optional features like Graph Data Science.",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "license": {
+    "name": "GPL-3.0",
+    "url": "https://github.com/neo4j/mcp/blob/main/LICENSE.txt"
+  },
+  "icon": "https://go.neo4j.com/rs/710-RRC-335/images/neo4j_logo_globe.png",
+  "externalDocumentation": {
+    "title": "Neo4j MCP Server Documentation",
+    "url": "https://neo4j.com/docs/mcp/current/"
+  },
+  "repository": {
+    "url": "https://github.com/neo4j/mcp",
+    "source": "github"
+  },
+  "remote": "https://{deployment-name}.azurecontainerapps.io/mcp",
+  "remoteType": "streamable-http",
+  "securitySchemes": {
+    "neo4jBearerAuth": {
+      "type": "http",
+      "description": "Authenticate with a JWT bearer token from an OIDC identity provider (e.g., Microsoft Entra ID).",
+      "scheme": "bearer",
+      "bearerFormat": "JWT"
+    }
+  },
+  "useCases": [
+    {
+      "name": "Graph schema discovery",
+      "description": "Introspect node labels, relationship types, and property keys to understand graph structure and inform query generation."
+    },
+    {
+      "name": "Cypher query execution",
+      "description": "Execute read-only or write Cypher queries against Neo4j databases with query classification and safety enforcement."
+    },
+    {
+      "name": "Knowledge graph exploration",
+      "description": "Navigate connected data, traverse relationships, and extract insights from knowledge graphs using natural language."
+    },
+    {
+      "name": "Graph data science",
+      "description": "Discover and leverage Graph Data Science library procedures for analytics like community detection, pathfinding, and similarity."
+    }
+  ],
+  "tags": ["Knowledge", "Graph", "Cypher"],
+  "categories": "Databases",
+  "visibility": "true",
+  "packages": [],
+  "versionName": "Original",
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://github.com/neo4j/mcp/issues"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
