@@ -46,7 +46,7 @@
     }
   ],
   "securitySchemes": {
-    "oauth2": {
+    "fabricOAuth2": {
       "type": "oauth2",
       "description": "Authenticate using Microsoft Entra ID OAuth2 with Fabric permissions.",
       "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",

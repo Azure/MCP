@@ -42,7 +42,7 @@
     }
   ],
   "securitySchemes": {
-    "apiKeyAuth": {
+    "bingSearchApiKey": {
       "type": "apiKey",
       "description": "Authenticate using a Bing Search API key.",
       "name": "Ocp-Apim-Subscription-Key",

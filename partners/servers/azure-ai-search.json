@@ -46,13 +46,13 @@
     }
   ],
   "securitySchemes": {
-    "apiKeyAuth": {
+    "azureAiSearchApiKey": {
       "type": "apiKey",
       "description": "Authenticate using an Azure AI Search API key.",
       "name": "api-key",
       "in": "header"
     },
-    "oauth2": {
+    "azureAiSearchOAuth2": {
       "type": "oauth2",
       "description": "Authenticate using Microsoft Entra ID OAuth2.",
       "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",

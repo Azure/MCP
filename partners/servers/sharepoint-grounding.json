@@ -38,7 +38,7 @@
     }
   ],
   "securitySchemes": {
-    "oauth2": {
+    "sharepointOAuth2": {
       "type": "oauth2",
       "description": "Authenticate using Microsoft Entra ID OAuth2 with SharePoint permissions.",
       "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
