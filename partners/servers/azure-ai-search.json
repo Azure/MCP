@@ -1,0 +1,67 @@
+{
+  "name": "azure-ai-search",
+  "title": "Azure AI Search",
+  "summary": "Use an existing Azure AI Search index to ground agents with data in the index, and chat with your data.",
+  "description": "Use an existing Azure AI Search index to ground agents with data in the index, and chat with your data.",
+  "kind": "mcp",
+  "vendor": "Microsoft",
+  "license": {
+    "name": "Microsoft Software License",
+    "url": "https://www.microsoft.com/licensing"
+  },
+  "icon": "https://placeholder.example.com/icons/azure-ai-search.png",
+  "externalDocumentation": {
+    "title": "Azure AI Search Tool Documentation",
+    "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/agents/how-to/tools/ai-search?view=foundry"
+  },
+  "remote": "https://placeholder.mcp.microsoft.com/azure-ai-search",
+  "supportContactInfo": {
+    "name": "Microsoft Support",
+    "url": "https://support.microsoft.com"
+  },
+  "visibility": "public",
+  "categories": "Databases",
+  "tags": ["built-in"],
+  "packages": [],
+  "useCases": [
+    {
+      "name": "Vector Search",
+      "description": "Perform similarity searches using vector embeddings for semantic matching of content."
+    },
+    {
+      "name": "Semantic Search",
+      "description": "Use AI-powered semantic ranking to find the most relevant documents for natural language queries."
+    },
+    {
+      "name": "Hybrid Search",
+      "description": "Combine keyword and vector search for comprehensive results that leverage both exact and semantic matching."
+    },
+    {
+      "name": "Enterprise Document Search",
+      "description": "Search across large collections of enterprise documents with filters, facets, and scoring profiles."
+    },
+    {
+      "name": "Knowledge Retrieval",
+      "description": "Retrieve relevant knowledge from indexed content for retrieval-augmented generation (RAG) scenarios."
+    }
+  ],
+  "securitySchemes": {
+    "apiKeyAuth": {
+      "type": "apiKey",
+      "description": "Authenticate using an Azure AI Search API key.",
+      "name": "api-key",
+      "in": "header"
+    },
+    "oauth2": {
+      "type": "oauth2",
+      "description": "Authenticate using Microsoft Entra ID OAuth2.",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
+      "tokenUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+      "scopes": ["https://search.azure.com/.default"],
+      "flows": ["authorizationCode"]
+    }
+  },
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": false },
+  "authSchemas":["ManagedIdentity"]
+}

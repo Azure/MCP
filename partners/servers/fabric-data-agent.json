@@ -1,0 +1,61 @@
+{
+  "name": "fabric-data-agent",
+  "title": "Fabric Data Agent",
+  "summary": "Integrate your agent with the Fabric Data Agent to unlock powerful data analysis capabilities.",
+  "description": "Integrate your agent with the Fabric Data Agent to unlock powerful data analysis capabilities.",
+  "kind": "mcp",
+  "vendor": "Microsoft",
+  "license": {
+    "name": "Microsoft Software License",
+    "url": "https://www.microsoft.com/licensing"
+  },
+  "icon": "https://placeholder.example.com/icons/fabric-data-agent.png",
+  "externalDocumentation": {
+    "title": "Microsoft Fabric Data Agent Tool Documentation",
+    "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/agents/how-to/tools/fabric?view=foundry"
+  },
+  "remote": "https://placeholder.mcp.microsoft.com/fabric-data-agent",
+  "supportContactInfo": {
+    "name": "Microsoft Support",
+    "url": "https://support.microsoft.com"
+  },
+  "visibility": "public",
+  "categories": "Analytics",
+  "tags": ["built-in"],
+  "packages": [],
+  "useCases": [
+    {
+      "name": "Data Querying",
+      "description": "Query data from Fabric lakehouses and warehouses using natural language or SQL."
+    },
+    {
+      "name": "Schema Exploration",
+      "description": "Explore data schemas, tables, and columns across Fabric data assets."
+    },
+    {
+      "name": "Semantic Model Access",
+      "description": "Query semantic models and retrieve measures, dimensions, and calculated values."
+    },
+    {
+      "name": "Analytics Insights",
+      "description": "Generate insights and summaries from enterprise analytics data in Fabric."
+    },
+    {
+      "name": "Data Grounding",
+      "description": "Ground AI responses in real enterprise data from Fabric workspaces for accurate, data-driven answers."
+    }
+  ],
+  "securitySchemes": {
+    "oauth2": {
+      "type": "oauth2",
+      "description": "Authenticate using Microsoft Entra ID OAuth2 with Fabric permissions.",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
+      "tokenUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+      "scopes": ["https://api.fabric.microsoft.com/.default"],
+      "flows": ["authorizationCode"]
+    }
+  },
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": true },
+  "authSchemas":["OAuth2"]
+}

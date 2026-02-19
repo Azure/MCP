@@ -1,0 +1,53 @@
+{
+  "name": "sharepoint-grounding",
+  "title": "SharePoint",
+  "summary": "Securely integrate and manage internal data.",
+  "description": "Securely integrate and manage internal data.",
+  "kind": "mcp",
+  "vendor": "Microsoft",
+  "license": {
+    "name": "Microsoft Software License",
+    "url": "https://www.microsoft.com/licensing"
+  },
+  "icon": "https://placeholder.example.com/icons/sharepoint-grounding.png",
+  "externalDocumentation": {
+    "title": "SharePoint Tool Documentation",
+    "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/agents/how-to/tools/sharepoint?view=foundry"
+  },
+  "remote": "https://placeholder.mcp.microsoft.com/sharepoint-grounding",
+  "supportContactInfo": {
+    "name": "Microsoft Support",
+    "url": "https://support.microsoft.com"
+  },
+  "visibility": "public",
+  "categories": "Collaboration",
+  "tags": ["built-in"],
+  "packages": [],
+  "useCases": [
+    {
+      "name": "Document Search",
+      "description": "Search across SharePoint document libraries to find relevant files and content."
+    },
+    {
+      "name": "Knowledge Grounding",
+      "description": "Ground AI responses in organizational knowledge stored in SharePoint sites and pages."
+    },
+    {
+      "name": "Content Discovery",
+      "description": "Discover and navigate SharePoint content including sites, libraries, and folders."
+    }
+  ],
+  "securitySchemes": {
+    "oauth2": {
+      "type": "oauth2",
+      "description": "Authenticate using Microsoft Entra ID OAuth2 with SharePoint permissions.",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
+      "tokenUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+      "scopes": ["Sites.Read.All", "Sites.ReadWrite.All", "Files.Read.All"],
+      "flows": ["authorizationCode"]
+    }
+  },
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": true },
+  "authSchemas":["OAuth2"]
+}

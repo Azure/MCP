@@ -1,0 +1,46 @@
+{
+  "name": "file-search",
+  "title": "File Search",
+  "summary": "Augment agents with knowledge from outside its model, such as proprietary product information or documents provided by your users.",
+  "description": "Augment agents with knowledge from outside its model, such as proprietary product information or documents provided by your users.",
+  "kind": "mcp",
+  "vendor": "Microsoft",
+  "license": {
+    "name": "Microsoft Software License",
+    "url": "https://www.microsoft.com/licensing"
+  },
+  "icon": "https://placeholder.example.com/icons/file-search.png",
+  "externalDocumentation": {
+    "title": "File Search Tool Documentation",
+    "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/agents/how-to/tools/file-search?view=foundry"
+  },
+  "remote": "https://placeholder.mcp.microsoft.com/file-search",
+  "supportContactInfo": {
+    "name": "Microsoft Support",
+    "url": "https://support.microsoft.com"
+  },
+  "visibility": "public",
+  "categories": "Developer Tools",
+  "tags": ["built-in"],
+  "packages": [],
+  "useCases": [
+    {
+      "name": "Document Search",
+      "description": "Search through uploaded documents to find relevant information based on semantic queries and keywords."
+    },
+    {
+      "name": "Content Extraction",
+      "description": "Extract specific content, data, or sections from uploaded files for analysis or response generation."
+    },
+    {
+      "name": "Question Answering",
+      "description": "Answer questions based on the content of uploaded files using retrieval-augmented generation."
+    },
+    {
+      "name": "File Analysis",
+      "description": "Analyze file contents to provide summaries, insights, and structured information extraction."
+    }
+  ],
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": false }
+}
