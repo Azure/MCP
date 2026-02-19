@@ -1,0 +1,46 @@
+{
+  "name": "web-search",
+  "title": "Web Search",
+  "summary": "Search the Internet for sources related to the prompt.",
+  "description": "Search the Internet for sources related to the prompt.",
+  "kind": "mcp",
+  "vendor": "Microsoft",
+  "license": {
+    "name": "Microsoft Software License",
+    "url": "https://www.microsoft.com/licensing"
+  },
+  "icon": "https://placeholder.example.com/icons/web-search.png",
+  "externalDocumentation": {
+    "title": "Web Search Tool Documentation",
+    "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/agents/how-to/tools/web-search?view=foundry"
+  },
+  "remote": "https://placeholder.mcp.microsoft.com/web-search",
+  "supportContactInfo": {
+    "name": "Microsoft Support",
+    "url": "https://support.microsoft.com"
+  },
+  "visibility": "public",
+  "categories": "Web",
+  "tags": ["built-in"],
+  "packages": [],
+  "useCases": [
+    {
+      "name": "Real-time Information Retrieval",
+      "description": "Search the web for current information, news, and updates to provide accurate, timely responses."
+    },
+    {
+      "name": "Fact Verification",
+      "description": "Verify facts and claims by searching authoritative sources on the web."
+    },
+    {
+      "name": "Research Assistance",
+      "description": "Help users research topics by finding relevant web pages, articles, and resources."
+    },
+    {
+      "name": "News and Events",
+      "description": "Retrieve the latest news and current events from across the web."
+    }
+  ],
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": true }
+}
