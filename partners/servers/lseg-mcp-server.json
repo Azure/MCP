@@ -1,0 +1,114 @@
+{
+  "name": "lseg",
+  "title": "LSEG Pricing & Analytics MCP Server",
+  "summary": "MCP server providing LSEG pricing, curves, volatility surfaces, QA macro and fundamentals, news, and time-series analytics for capital markets workflows.",
+  "description": "This MCP server exposes LSEG analytics and market data for capital markets workflows, including FX spot and forward pricing, bond and bond futures valuation, options and interest rate swaps, interest rate, credit, inflation and FX forward curves, FX and equity volatility surfaces, QA IBES consensus and actuals, QA macroeconomic time series, QA company fundamentals, Insight news headlines, and TSCC interday pricing summaries, enabling valuation, risk, research, and reporting use cases directly from Azure-hosted AI agents.",
+  "kind": "mcp",
+  "license": {
+    "name": "Proprietary",
+    "url": "https://www.lseg.com/en/policies"
+  },
+  "icon": "https://app-office-addin.analytics.lseg.com/public/lseg-logo",
+  "externalDocumentation": {
+    "title": "LSEG Data & Analytics",
+    "url": "https://www.lseg.com/en/data-analytics"
+  },
+  "useCases": [
+    {
+      "name": "FX spot pricer",
+      "description": "Calculates FX spot prices, valuation and analytics."
+    },
+    {
+      "name": "FX forward pricer",
+      "description": "Calculates FX forward price, valuation and analytics."
+    },
+    {
+      "name": "Bond pricer",
+      "description": "Calculates bond price, valuation and analytics from an existing bond (ISIN, RIC, CUSIP or AssetId)."
+    },
+    {
+      "name": "Bond future pricer",
+      "description": "Calculates bond future pricing, valuation and analytics from an existing bond future (RIC or other identifier)."
+    },
+    {
+      "name": "Option pricer",
+      "description": "Calculates option valuation and analytics. Provides detailed risk metrics including Delta (price sensitivity), Gamma (delta sensitivity), Theta (time decay), Vega (volatility sensitivity), and Rho (interest rate sensitivity). Supports vanilla options (European, American, Bermudan), exotic barrier options (knock-in/knock-out with rebates), binary options for FX (OneTouch, NoTouch, Digital with fixed payouts), and Asian options (price/strike averaging with arithmetic/geometric calculation). Calculates market values, intrinsic values, time premiums, implied volatility, hedge ratios, leverage, moneyness ratios, premium over cash, and annualized yields."
+    },
+    {
+      "name": "Interest rate swap pricer",
+      "description": "Price swaps using LSEG predefined swap templates. Returns template info or pricing results with risk metrics."
+    },
+    {
+      "name": "Interest rate curve",
+      "description": "Calculate the curve points for a XXXX using LSEG predefined curve as reference."
+    },
+    {
+      "name": "Credit curve",
+      "description": "Calculate the curve points using LSEG predefined curve as reference based on country and issuer type."
+    },
+    {
+      "name": "Inflation curve",
+      "description": "Calculate the curve points using LSEG predefined curve as reference."
+    },
+    {
+      "name": "FX forward curve",
+      "description": "Calculate the curve points for a XXXX using LSEG predefined curve as reference."
+    },
+    {
+      "name": "Equity Consensus",
+      "description": "Access IBES consensus estimates, actuals, and measure metadata."
+    },
+    {
+      "name": "QA Macroeconomic",
+      "description": "Access LSEG QA macroeconomic database for historical economic indicators worldwide."
+    },
+    {
+      "name": "QA company fundamentals",
+      "description": "Access QA company fundamentals and measure metadata."
+    },
+    {
+      "name": "FX volatility surface",
+      "description": "Generate the FX Volatility surfaces for the definitions provided."
+    },
+    {
+      "name": "Equity volatility surface",
+      "description": "Generate the equity volatility surfaces for the definitions provided."
+    },
+    {
+      "name": "News Insight Headlines",
+      "description": "Give the news headlines."
+    },
+    {
+      "name": "Time series interday summaries",
+      "description": "Give the time series pricing interday summaries data."
+    }
+  ],
+  "tags": [
+    "FX data",
+    "Analytics",
+    "Market Data",
+    "Curves",
+    "Volatility Surface",
+    "QA Data",
+    "News",
+    "Time series",
+    "Fixed Income Data"
+  ],
+  "vendor": "Partner",
+  "visibility": "public",
+  "categories": "Finance",
+  "connectorName": "lseg-mcp-server",
+  "packages": [],
+  "versionName": "1-0-347",
+  "versionTitle": "LSEG 1.0.347",
+  "supportContact": "https://www.lseg.com/en/contact-us",
+  "supportContactInfo": {
+    "name": "LSEG MCP Support",
+    "email": "support-mcp@lseg.com",
+    "url": "https://www.lseg.com/en/contact-us"
+  },
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "preview": true
+}
