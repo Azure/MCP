@@ -1,0 +1,206 @@
+{
+    "name": "azure-mcp-server",
+    "title": "Azure MCP Server",
+    "summary": "All Azure MCP tools in a single server, providing seamless connection between AI agents and 40+ Azure services.",
+    "description": "Azure MCP Server implements the MCP specification to create a seamless connection between AI agents and Azure services. It supercharges your agents with Azure context across 40+ different Azure service areas, enabling natural language interaction with Azure resources. Secured by Azure Identity SDK, it supports NuGet, NPM, PyPI, and Docker installations, and works with VS Code, Visual Studio, and other MCP-compatible clients. For a deployment sample showing how to run Azure MCP Server on Azure Container Apps with Managed Identity and connect it to Foundry, see https://github.com/Azure-Samples/azmcp-foundry-aca-mi",
+    "kind": "mcp",
+    "packages": [
+        {
+            "registry_name": "npm",
+            "name": "@azure/mcp",
+            "version": "latest",
+            "runtime_hint": "npx",
+            "runtime_arguments": [
+                {
+                    "type": "positional",
+                    "value_hint": "azure_mcp_binary",
+                    "is_repeated": false,
+                    "is_required": true,
+                    "format": "string",
+                    "value": "-y",
+                    "is_secret": false
+                },
+                {
+                    "type": "positional",
+                    "value_hint": "azure_mcp_package",
+                    "is_repeated": false,
+                    "is_required": true,
+                    "format": "string",
+                    "value": "@azure/mcp@latest",
+                    "is_secret": false
+                }
+            ],
+            "package_arguments": [
+                {
+                    "type": "positional",
+                    "value": "server"
+                },
+                {
+                    "type": "positional",
+                    "value": "start"
+                }
+            ],
+            "environment_variables": []
+        },
+        {
+            "registry_name": "nuget",
+            "name": "Azure.Mcp",
+            "version": "latest",
+            "runtime_hint": "dnx",
+            "runtime_arguments": [
+                {
+                    "type": "positional",
+                    "value_hint": "nuget_package",
+                    "is_repeated": false,
+                    "is_required": true,
+                    "format": "string",
+                    "value": "Azure.Mcp",
+                    "is_secret": false
+                },
+                {
+                    "type": "named",
+                    "name": "--source",
+                    "is_required": false,
+                    "format": "string",
+                    "value": "https://api.nuget.org/v3/index.json",
+                    "is_secret": false
+                },
+                {
+                    "type": "named",
+                    "name": "--yes",
+                    "is_required": false,
+                    "format": "string",
+                    "is_secret": false
+                }
+            ],
+            "package_arguments": [
+                {
+                    "type": "positional",
+                    "value": "azmcp"
+                },
+                {
+                    "type": "positional",
+                    "value": "server"
+                },
+                {
+                    "type": "positional",
+                    "value": "start"
+                }
+            ],
+            "environment_variables": []
+        },
+        {
+            "registry_name": "pypi",
+            "name": "msmcp-azure",
+            "version": "latest",
+            "runtime_hint": "uvx",
+            "runtime_arguments": [
+                {
+                    "type": "named",
+                    "name": "--from",
+                    "is_required": true,
+                    "format": "string",
+                    "value": "msmcp-azure",
+                    "is_secret": false
+                }
+            ],
+            "package_arguments": [
+                {
+                    "type": "positional",
+                    "value": "azmcp"
+                },
+                {
+                    "type": "positional",
+                    "value": "server"
+                },
+                {
+                    "type": "positional",
+                    "value": "start"
+                }
+            ],
+            "environment_variables": []
+        }
+    ],
+    "useCases": [
+        {
+            "name": "Azure Services",
+            "description": "Interact with 40+ Azure service namespaces through natural language — spanning control plane, data plane, and best practices guidance: Microsoft Foundry (AI models, agents, deployments), Azure AI Search, Azure AI Services Speech, Azure App Configuration, Azure App Service, Azure CLI Generate, Azure Communication Services, Azure Compute, Azure Confidential Ledger, Azure Container Apps, Azure Container Registry, Azure Cosmos DB, Azure Data Explorer, Azure Database for MySQL, Azure Database for PostgreSQL, Azure Event Grid, Azure File Shares, Azure Functions, Azure Key Vault, Azure Kubernetes Service, Azure Load Testing, Azure Managed Grafana, Azure Managed Lustre, Azure Marketplace, Azure Migrate, Azure Monitor, Azure Policy, Azure Quota, Azure RBAC, Azure Redis Cache, Azure Resource Groups, Azure Service Bus, Azure Service Health, Azure SQL Database, Azure Storage, Azure Subscription, Azure Virtual Desktop, Azure Workbooks, Bicep, Cloud Architect, and Terraform Best Practices — with more services being added continuously."
+        }
+    ],
+    "externalDocumentation": {
+        "title": "Azure MCP Server Documentation",
+        "url": "https://learn.microsoft.com/azure/developer/azure-mcp-server/"
+    },
+    "repository": {
+        "url": "https://github.com/microsoft/mcp",
+        "source": "github"
+    },
+    "license": {
+        "name": "MIT",
+        "url": "https://github.com/microsoft/mcp/blob/main/LICENSE"
+    },
+    "tags": [
+        "foundry",
+        "ai search",
+        "ai services speech",
+        "app configuration",
+        "app service",
+        "cli generate",
+        "communication services",
+        "compute",
+        "confidential ledger",
+        "container apps",
+        "container registry",
+        "cosmos db",
+        "data explorer",
+        "database for mysql",
+        "database for postgresql",
+        "event grid",
+        "file shares",
+        "functions",
+        "key vault",
+        "kubernetes service",
+        "load testing",
+        "managed grafana",
+        "managed lustre",
+        "marketplace",
+        "migrate",
+        "monitor",
+        "policy",
+        "quota",
+        "rbac",
+        "redis cache",
+        "resource groups",
+        "service bus",
+        "service health",
+        "sql database",
+        "storage",
+        "subscription",
+        "virtual desktop",
+        "workbooks",
+        "bicep",
+        "cloud architect",
+        "terraform"
+    ],
+    "vendor": "Microsoft",
+    "categories": "Developer Tools",
+    "visibility": "true",
+    "versionName": "Original",
+    "icon": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/acom_social_icon_azure",
+    "supportContactInfo": {
+        "name": "customer support contact",
+        "url": "https://github.com/microsoft/mcp/issues"
+    },
+    "securitySchemes": {
+        "azureMcpOauth": {
+            "type": "oauth2",
+            "description": "Authenticate with Microsoft Foundry using OAuth2 authorization code flow with PKCE support.",
+            "flows": ["authorizationCode"],
+            "authorizationUrl": "https://login.microsoftonline.com",
+            "tokenUrl": "https://login.microsoftonline.com",
+            "scopes": []
+        }
+    },
+    "authSchemas": ["ManagedIdentity"],
+    "customProperties": { "x-ms-preview": false }
+}
