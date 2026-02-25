@@ -108,14 +108,14 @@
     "url": "https://www.lseg.com/en/contact-us"
   },
   "securitySchemes": {
-   "a365adminoauth2": {
+   "LSEGOAuth": {
      "type": "oauth2",
-     "description": "Authenticate with A365 using OAuth2 authorization code flow with PKCE support.",
+     "description": "OAuth2 for user LSEG MCP authentication (authorization code flow with PKCE supported).",
      "flows": ["authorizationCode"],
-     "authorizationUrl": "https://login.microsoftonline.com",
-     "tokenUrl": "https://login.microsoftonline.com",
-     "refreshUrl": "https://login.microsoftonline.com",
-    "scopes": ["ea9ffc3e-8a23-4a7d-836d-234d7c7565c1/McpServers.M365Admin.All"]
+     "authorizationUrl": "https://login.ciam.refinitiv.com/as/authorization.oauth2",
+     "tokenUrl": "https://login.ciam.refinitiv.com/as/token.oauth2",
+     "refreshUrl": "https://login.ciam.refinitiv.com/as/token.oauth2",
+     "scopes": []
    }
   },
   "authSchemas": [
