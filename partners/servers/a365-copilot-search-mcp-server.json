@@ -1,6 +1,6 @@
 {
   "name": "microsoft-copilot-chat-frontier",
-  "title": "Microsoft 365 Copilot (Search) (Frontier)",
+  "title": "Microsoft 365 Copilot (Search)",
   "summary": "Enables core Microsoft Copilot chat actions, including starting conversations and sending messages with contextual grounding.",
   "description": "Enables core Microsoft Copilot chat actions, including starting conversations and sending messages with contextual grounding.",
   "kind": "mcp",
