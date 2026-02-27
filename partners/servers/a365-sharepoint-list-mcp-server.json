@@ -1,6 +1,6 @@
 {
   "name": "microsoft-sharepoint-lists-mcp-frontier",
-  "title": "Microsoft SharePoint Lists (Frontier)",
+  "title": "Microsoft SharePoint Lists",
   "summary": "Enables SharePoint site and list operations (retrieve sites, list/inspect lists, and CRUD list items) for agentic workflows.",
   "description": "Provides programmatic access to SharePoint site and list features for agentic workflows: discover SharePoint sites, list available lists/document libraries, retrieve list metadata and list items, create/update/delete list items, and perform list queries and searches. Typical scenarios include data collection via lists, automation that manages item lifecycle, conversational agents that read/write list items, and admin workflows that enumerate or update lists across sites.",
   "kind": "mcp",
