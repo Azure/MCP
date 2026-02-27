@@ -1,6 +1,6 @@
 {
   "name": "microsoft-dataverse-mcp-frontier",
-  "title": "Microsoft Dataverse (Frontier)",
+  "title": "Microsoft Dataverse",
   "summary": "Enables Dataverse data and schema operations (query, table & record management, API invocation).",
   "description": "Enables Dataverse data and schema operations (query, table & record management, API invocation).",
   "kind": "mcp",

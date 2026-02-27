@@ -1,6 +1,6 @@
 {
   "name": "microsoft-365-user-profile-mcp-frontier",
-  "title": "Microsoft 365 User Profile (Frontier)",
+  "title": "Microsoft 365 User Profile",
   "summary": "Enables Microsoft 365 user profile and directory lookups (user details, managers, direct reports, and org listings).",
   "description": "Enables Microsoft 365 user profile and directory lookups (user details, managers, direct reports, and org listings).",
   "kind": "mcp",
