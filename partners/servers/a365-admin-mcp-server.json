@@ -1,6 +1,6 @@
 {
   "name": "microsoft-365-admin-center-mcp-frontier",
-  "title": "Microsoft 365 Admin Center",
+  "title": "Microsoft 365 Admin Center (Frontier)",
   "summary": "AI-powered toolbox to accelerate Microsoft 365 administration (bulk CSV user onboarding, validation, and reporting).",
   "description": "Admin MCP Server is a secure toolkit that connects agents and automated workflows to common Microsoft 365 administrative tasks. It currently supports bulk user onboarding via CSV (validation, preview, and provisioning) and a set of single-user profile operations. The server validates input rows, reports row-level errors with suggested corrections, and returns a preview before provisioning. It intentionally does not handle license purchase/assignment or role/group assignment. Typical scenarios include HR-driven new-hire provisioning, IT bulk onboarding, and admin automation that needs robust CSV validation and traceable operation reports.",
   "kind": "mcp",

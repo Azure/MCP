@@ -1,6 +1,6 @@
 {
   "name": "microsoft-teams-mcp-frontier",
-  "title": "Microsoft Teams",
+  "title": "Microsoft Teams (Frontier)",
   "summary": "Enables core Microsoft Teams actions, including chat, channel, and team management, and message creation/retrieval.",
   "description": "Enables core Microsoft Teams actions, including chat, channel, and team management, and message creation/retrieval.",
   "kind": "mcp",
