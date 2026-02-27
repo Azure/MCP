@@ -1,6 +1,6 @@
 {
   "name": "microsoft-outlook-calendar-mcp-frontier",
-  "title": "Microsoft Outlook Calendar",
+  "title": "Microsoft Outlook Calendar (Frontier)",
   "summary": "Enables core Outlook calendar actions (create, update, manage, and schedule events) for agentic workflows.",
   "description": "Enables core Outlook calendar actions (create, update, manage, and schedule events) for agentic workflows.",
   "kind": "mcp",

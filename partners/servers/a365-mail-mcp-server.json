@@ -1,6 +1,6 @@
 {
   "name": "microsoft-outlook-mail-mcp-frontier",
-  "title": "Microsoft Outlook Mail",
+  "title": "Microsoft Outlook Mail (Frontier)",
   "summary": "Enables core Outlook email actions (create, send, reply, search) for agentic workflows.",
   "description": "Enables core Outlook email actions (create, send, reply, search) for agentic workflows.",
   "kind": "mcp",

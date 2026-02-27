@@ -1,6 +1,6 @@
 {
   "name": "microsoft-word-mcp-frontier",
-  "title": "Microsoft Word",
+  "title": "Microsoft Word (Frontier)",
   "summary": "Enables core Word document creation, retrieval, and commenting actions for agentic workflows.",
   "description": "Enables core Word document creation, retrieval, and commenting actions for agentic workflows.",
   "kind": "mcp",

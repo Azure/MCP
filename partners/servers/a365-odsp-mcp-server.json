@@ -1,6 +1,6 @@
 {
   "name": "microsoft-sharepoint-onedrive-mcp-frontier",
-  "title": "Microsoft SharePoint and OneDrive",
+  "title": "Microsoft SharePoint and OneDrive (Frontier)",
   "summary": "Enables core SharePoint and OneDrive file and folder actions (create, read, update, move, share, delete) and site/library discovery.",
   "description": "Enables core SharePoint and OneDrive file and folder actions (create, read, update, move, share, delete) and site/library discovery.",
   "kind": "mcp",
