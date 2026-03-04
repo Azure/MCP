@@ -1,0 +1,66 @@
+{
+    "name": "agentrails-mcp-server",
+    "title": "AgentRails",
+    "summary": "x402 payment infrastructure for AI agents — pricing, payments, agent management, billing, and spending policies.",
+    "description": "AgentRails provides x402 payment tools for AI agents. Enables autonomous agent-to-agent and agent-to-API payments using the x402 HTTP payment protocol with USDC on blockchain. Tools include x402 payment execution and history, agent lifecycle management, billing usage tracking, and spending policy enforcement. Built for enterprise AI agent workflows that require programmatic payment capabilities.",
+    "kind": "mcp",
+    "packages": [],
+    "icon": "https://avatars.githubusercontent.com/u/161180041?s=64",
+    "useCases": [
+        {
+            "name": "Autonomous Agent Payments",
+            "description": "Enable AI agents to autonomously execute x402 USDC payments to access paid API endpoints without human intervention."
+        },
+        {
+            "name": "Agent Lifecycle Management",
+            "description": "Create, configure, and manage AI agents with spending budgets and run tasks through a unified API."
+        },
+        {
+            "name": "Spending Policy Enforcement",
+            "description": "Define and enforce organization-wide spending policies with transaction limits, daily caps, and approval workflows for AI agents."
+        },
+        {
+            "name": "Payment Analytics and Billing",
+            "description": "Track x402 payment history, aggregate statistics, and billing usage across all agents in an organization."
+        }
+    ],
+    "tags": [
+        "x402",
+        "payments",
+        "USDC",
+        "blockchain",
+        "AI agents",
+        "fintech"
+    ],
+    "vendor": "Partner",
+    "visibility": "true",
+    "categories": "Finance",
+    "versionName": "1-0-0",
+    "remote": "https://agentrails-mcp.azurewebsites.net/runtime/webhooks/mcp",
+    "remoteType": "streamable-http",
+    "externalDocumentation": {
+        "title": "AgentRails Documentation",
+        "url": "https://www.agentrails.io"
+    },
+    "securitySchemes": {
+        "agentrailsApiKey": {
+            "type": "apiKey",
+            "description": "Azure Functions system key for MCP endpoint authentication.",
+            "in": "header",
+            "name": "x-functions-key"
+        }
+    },
+    "license": {
+        "name": "AgentRails Terms of Service",
+        "url": "https://www.agentrails.io/terms.html"
+    },
+    "supportContactInfo": {
+        "name": "AgentRails Support",
+        "email": "kevin.matthews@agentrails.io",
+        "url": "https://www.agentrails.io"
+    },
+    "supportContact": "kevin.matthews@agentrails.io",
+    "customProperties": {
+        "x-ms-preview": true
+    }
+}
