@@ -44,7 +44,7 @@
     }
   ],
   "securitySchemes": {
-    "a365odspoauth2": {
+    "fabriciqmcp": {
       "type": "oauth2",
       "description": "Authenticate with A365 using OAuth2 authorization code flow with PKCE support.",
       "flows": ["authorizationCode"],
