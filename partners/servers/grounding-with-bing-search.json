@@ -1,0 +1,54 @@
+{
+  "name": "grounding-with-bing-search",
+  "title": "Grounding with Bing Search",
+  "summary": "Enable your agent to use Grounding with Bing Search to access and return information from the internet.",
+  "description": "Enable your agent to use Grounding with Bing Search to access and return information from the internet.",
+  "kind": "mcp",
+  "vendor": "Microsoft",
+  "license": {
+    "name": "Microsoft Software License",
+    "url": "https://www.microsoft.com/licensing"
+  },
+  "icon": "https://placeholder.example.com/icons/bing-search.png",
+  "externalDocumentation": {
+    "title": "Grounding with Bing Search Tool Documentation",
+    "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/agents/how-to/tools/bing-tools?view=foundry"
+  },
+  "remote": "https://placeholder.mcp.microsoft.com/grounding-bing-search",
+  "supportContactInfo": {
+    "name": "Microsoft Support",
+    "url": "https://support.microsoft.com"
+  },
+  "visibility": "public",
+  "categories": "Web",
+  "tags": ["built-in"],
+  "packages": [],
+  "useCases": [
+    {
+      "name": "Response Grounding",
+      "description": "Ground AI responses with verifiable information from Bing Search results to ensure accuracy."
+    },
+    {
+      "name": "Current Events",
+      "description": "Access up-to-date news and current events through Bing News Search."
+    },
+    {
+      "name": "Entity Information",
+      "description": "Retrieve structured information about entities including people, places, and organizations."
+    },
+    {
+      "name": "Content Verification",
+      "description": "Verify facts and claims by cross-referencing with authoritative web sources through Bing."
+    }
+  ],
+  "securitySchemes": {
+    "bingSearchApiKey": {
+      "type": "apiKey",
+      "description": "Authenticate using a Bing Search API key.",
+      "name": "Ocp-Apim-Subscription-Key",
+      "in": "header"
+    }
+  },
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": false }
+}

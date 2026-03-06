@@ -1,0 +1,54 @@
+{
+  "name": "grounding-with-bing-custom-search",
+  "title": "Grounding with Bing Custom Search",
+  "summary": "Enhance model output with data from selected web domains.",
+  "description": "Enhance model output with data from selected web domains.",
+  "kind": "mcp",
+  "vendor": "Microsoft",
+  "license": {
+    "name": "Microsoft Software License",
+    "url": "https://www.microsoft.com/licensing"
+  },
+  "icon": "https://placeholder.example.com/icons/bing-custom-search.png",
+  "externalDocumentation": {
+    "title": "Grounding with Bing Custom Search Tool Documentation",
+    "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/agents/how-to/tools/bing-tools?view=foundry"
+  },
+  "remote": "https://placeholder.mcp.microsoft.com/grounding-bing-custom-search",
+  "supportContactInfo": {
+    "name": "Microsoft Support",
+    "url": "https://support.microsoft.com"
+  },
+  "visibility": "public",
+  "categories": "Web",
+  "tags": ["built-in"],
+  "packages": [],
+  "useCases": [
+    {
+      "name": "Domain-Specific Search",
+      "description": "Search within a curated set of websites and domains relevant to your organization or use case."
+    },
+    {
+      "name": "Controlled Grounding",
+      "description": "Ground AI responses using only approved, trusted sources defined in your custom search instance."
+    },
+    {
+      "name": "Enterprise Knowledge",
+      "description": "Enable agents to search and reference content from organization-approved external websites."
+    },
+    {
+      "name": "Branded Experience",
+      "description": "Create search experiences focused on specific products, services, or industry verticals."
+    }
+  ],
+  "securitySchemes": {
+    "bingCustomSearchApiKey": {
+      "type": "apiKey",
+      "description": "Authenticate using a Bing Custom Search API key.",
+      "name": "Ocp-Apim-Subscription-Key",
+      "in": "header"
+    }
+  },
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": true }
+}
