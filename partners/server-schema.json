@@ -120,10 +120,12 @@
         "properties": {
           "name": {
             "type": "string",
+            "maxLength": 500,
             "description": "Name or title of the use case."
           },
           "description": {
             "type": "string",
+            "maxLength": 1000,
             "description": "Detailed description of the use case scenario."
           }
         }
