@@ -21,7 +21,7 @@
   },
   "visibility": "public",
   "categories": "Web",
-  "tags": ["built-in"，"knowledge"],
+  "tags": ["built-in","knowledge"],
   "packages": [],
   "useCases": [
     {
