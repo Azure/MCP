@@ -1,26 +1,26 @@
 {
   "name": "microsoft-365-admin-center-mcp-frontier",
-  "title": "Microsoft 365 Admin Center (Frontier)",
+  "title": "Microsoft 365 Admin Center",
   "summary": "AI-powered toolbox to accelerate Microsoft 365 administration (bulk CSV user onboarding, validation, and reporting).",
   "description": "Admin MCP Server is a secure toolkit that connects agents and automated workflows to common Microsoft 365 administrative tasks. It currently supports bulk user onboarding via CSV (validation, preview, and provisioning) and a set of single-user profile operations. The server validates input rows, reports row-level errors with suggested corrections, and returns a preview before provisioning. It intentionally does not handle license purchase/assignment or role/group assignment. Typical scenarios include HR-driven new-hire provisioning, IT bulk onboarding, and admin automation that needs robust CSV validation and traceable operation reports.",
   "kind": "mcp",
   "vendor": "Microsoft",
   "externalDocumentation": {
-    "title": "Agent 365 MCP Servers",
-    "url": "https://aka.ms/AboutAgent365"
+    "title": "Work IQ MCP Servers",
+    "url": "https://aka.ms/AboutWorkIQ"
   },
   "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_AdminTools",
   "supportContactInfo": {
     "name": "customer support contact",
-    "url": "https://aka.ms/a365mcpsupport"
+    "url": "https://aka.ms/WorkIQToolsSupport"
   },
   "license": {
-        "name": "Agent 365",
-        "url": "https://aka.ms/AboutAgent365"
+        "name": "Work IQ",
+        "url": "https://aka.ms/AboutWorkIQ"
   },
   "visibility": "true",
   "categories": "IT & Management Tools",
-  "icon": "",
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Microsoft365AdminCenterMCPServer.png",
   "useCases": [
     {
       "name": "Bulk add users (CSV)",
@@ -54,7 +54,7 @@
   "securitySchemes": {
     "a365adminoauth2": {
       "type": "oauth2",
-      "description": "Authenticate with A365 using OAuth2 authorization code flow with PKCE support.",
+      "description": "Authenticate to Microsoft 365 Admin MCP Server using OAuth2 authorization code flow with PKCE support.",
       "flows": ["authorizationCode"],
       "authorizationUrl": "https://login.microsoftonline.com",
       "tokenUrl": "https://login.microsoftonline.com",
