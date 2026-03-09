@@ -1,22 +1,22 @@
 {
   "name": "microsoft-365-user-profile-mcp-frontier",
-  "title": "Microsoft 365 User Profile (Frontier)",
-  "summary": "Enables Microsoft 365 user profile and directory lookups (user details, managers, direct reports, and org listings).",
-  "description": "Enables Microsoft 365 user profile and directory lookups (user details, managers, direct reports, and org listings).",
+  "title": "Work IQ User",
+  "summary": "Work IQ MCP server for Microsoft 365 User operations. Learn more at https://aka.ms/AboutWorkIQ",
+  "description": "Work IQ User MCP Server which enables Microsoft 365 user profile and directory lookups (user details, managers, direct reports, and org listings). This feature is in preview and is part of the Work IQ tools, providing shared work intelligence and actions for agents. Availability and capabilities are subject to change. Learn more: https://aka.ms/AboutWorkIQ",
   "kind": "mcp",
   "vendor": "Microsoft",
   "externalDocumentation": {
-    "title": "Agent 365 MCP Servers",
-    "url": "https://aka.ms/AboutAgent365"
+    "title": "Work IQ MCP Servers",
+    "url": "https://aka.ms/AboutWorkIQ"
   },
   "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_MeServer",
   "supportContactInfo": {
     "name": "customer support contact",
-    "url": "https://aka.ms/a365mcpsupport"
+    "url": "https://aka.ms/WorkIQToolsSupport"
   },
   "license": {
-        "name": "Agent 365",
-        "url": "https://aka.ms/AboutAgent365"
+        "name": "Work IQ",
+        "url": "https://aka.ms/AboutWorkIQ"
   },
   "visibility": "true",
   "categories": "Productivity",
@@ -46,7 +46,7 @@
   "securitySchemes": {
     "a365userprofileoauth2": {
       "type": "oauth2",
-      "description": "Authenticate with A365 using OAuth2 authorization code flow with PKCE support.",
+      "description": "Authenticate with Work IQ using OAuth2 authorization code flow with PKCE support.",
       "flows": ["authorizationCode"],
       "authorizationUrl": "https://login.microsoftonline.com",
       "tokenUrl": "https://login.microsoftonline.com",
