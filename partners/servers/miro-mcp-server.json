@@ -56,7 +56,7 @@
       "type": "oauth2",
       "description": "Authenticate with Miro using OAuth2 authorization code flow.",
       "flows": ["authorizationCode"],
-      "authorizationUrl": "https://mcp.miro.com/auth",
+      "authorizationUrl": "https://mcp.miro.com/authorize",
       "tokenUrl": "https://mcp.miro.com/token",
       "scopes": ["boards:read", "boards:write"]
     }
