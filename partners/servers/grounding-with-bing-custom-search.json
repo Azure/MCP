@@ -11,7 +11,7 @@
   },
   "icon": "https://placeholder.example.com/icons/bing-custom-search.png",
   "externalDocumentation": {
-    "title": "Grounding with Bing Custom Search Tool Documentation",
+    "title": "Bing Custom Search Tool Documentation",
     "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/agents/how-to/tools/bing-tools?view=foundry"
   },
   "remote": "https://placeholder.mcp.microsoft.com/grounding-bing-custom-search",
