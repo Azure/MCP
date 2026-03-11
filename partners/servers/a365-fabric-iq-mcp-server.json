@@ -1,0 +1,61 @@
+{
+  "name": "microsoft-fabric-iq-mcp",
+  "title": "Microsoft Fabric IQ",
+  "summary": "Enables ontology discovery and entity type exploration for agentic workflows powered by Fabric IQ.",
+  "description": "Provides programmatic access to the Fabric IQ ontology layer for agentic workflows: search the business ontology to discover entities, relationships, and properties, and enumerate available entity types with their schemas and metadata. Typical scenarios include data discovery for multi-agent orchestration, mapping business concepts to underlying data models, identifying relevant entity types before querying or acting on enterprise data, and validating ontology coverage for integration and reporting workflows.",
+  "kind": "mcp",
+  "vendor": "Microsoft",
+  "externalDocumentation": {
+    "title": "Agent 365 MCP Servers",
+    "url": "https://aka.ms/AboutAgent365"
+  },
+  "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_fabriciqontology",
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://aka.ms/a365mcpsupport"
+  },
+  "license": {
+        "name": "Agent 365",
+        "url": "https://aka.ms/AboutAgent365"
+  },
+  "visibility": "true",
+  "categories": "Data & Analytics",
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/MicrosoftFabricIQ.png",
+  "useCases": [
+    {
+      "name": "Discover entity types",
+      "description": "Enumerate available entity types in the Fabric IQ ontology to understand the data model and identify relevant business entities for querying."
+    },
+    {
+      "name": "Explore ontology structure",
+      "description": "Search the ontology to understand relationships, properties, and hierarchies across business entities for data-driven decision making."
+    },
+    {
+      "name": "Find domain-specific entities",
+      "description": "Search the ontology with domain keywords to locate relevant entity types such as customers, products, or transactions for targeted analysis."
+    },
+    {
+      "name": "Map data for agent workflows",
+      "description": "Use entity type discovery and ontology search to identify the right data sources and schemas before orchestrating downstream agent actions."
+    },
+    {
+      "name": "Validate data model coverage",
+      "description": "List all entity types and search ontology definitions to verify that required business concepts are modeled and accessible for integration scenarios."
+    }
+  ],
+  "securitySchemes": {
+    "fabriciqmcp": {
+      "type": "oauth2",
+      "description": "Authenticate with A365 using OAuth2 authorization code flow with PKCE support.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://login.microsoftonline.com",
+      "tokenUrl": "https://login.microsoftonline.com",
+      "refreshUrl": "https://login.microsoftonline.com",
+      "scopes": ["ea9ffc3e-8a23-4a7d-836d-234d7c7565c1/McpServers.FabricIQOntology.All"]
+    }
+  },
+  "authSchemas":["OAuth2"],
+  "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": true }
+}
