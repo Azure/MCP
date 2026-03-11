@@ -1,0 +1,93 @@
+{
+  "name": "microsoft-onedrive-mcp-frontier",
+  "title": "Work IQ OneDrive",
+  "summary": "Work IQ MCP server for Microsoft OneDrive operations. Learn more at https://aka.ms/AboutWorkIQ",
+  "description": "Work IQ MCP server for Microsoft OneDrive operations. This feature is in preview and is part of the Work IQ tools, providing shared work intelligence and actions for agents. Availability and capabilities are subject to change. Learn more: https://aka.ms/AboutWorkIQ",
+  "kind": "mcp",
+  "vendor": "Microsoft",
+  "externalDocumentation": {
+    "title": "Work IQ MCP Servers",
+    "url": "https://aka.ms/AboutWorkIQ"
+  },
+  "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_OneDriveRemoteServer",
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://aka.ms/WorkIQToolsSupport"
+  },
+  "license": {
+        "name": "Work IQ",
+        "url": "https://aka.ms/AboutWorkIQ"
+  },
+  "visibility": "true",
+  "categories": "Productivity",
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/MicrosoftOneDriveMCPServer.png",
+  "useCases": [
+    {
+      "name": "Get OneDrive",
+      "description": "Get OneDrive information, including quota and owner details."
+    },
+    {
+      "name": "Get File or Folder Metadata",
+      "description": "Get file or folder metadata from the user's OneDrive."
+    },
+    {
+      "name": "Get File or Folder",
+      "description": "Get a file or folder with minimal metadata from the user's OneDrive."
+    },
+    {
+      "name": "Get File or Folder ID",
+      "description": "Get the ID of a file or folder."
+    },
+    {
+      "name": "Get Folder Children",
+      "description": "List up to 20 items in a folder from the user's OneDrive."
+    },
+    {
+      "name": "Create Folder",
+      "description": "Create a new folder in the user's OneDrive."
+    },
+    {
+      "name": "Create Small Text File",
+      "description": "Create a text file that is 5 MB or smaller in the user's OneDrive."
+    },
+    {
+      "name": "Read Small Text File",
+      "description": "Download a text file from the user's OneDrive."
+    },
+    {
+      "name": "Delete File or Folder",
+      "description": "Delete a file or folder from the user's OneDrive."
+    },
+    {
+      "name": "Rename File or Folder",
+      "description": "Rename a file or folder in the user's OneDrive."
+    },
+    {
+      "name": "Move Small File or Folder",
+      "description": "Move a file or folder that is 5 MB or smaller in the user's OneDrive."
+    },
+    {
+      "name": "Share File or Folder",
+      "description": "Share a file or folder from the user's OneDrive with specific users. Can specify access type."
+    },
+    {
+      "name": "Set Sensitivity Label on File",
+      "description": "Apply or remove a sensitivity label on a file in the user's OneDrive."
+    }
+  ],
+  "securitySchemes": {
+    "a365onedriveoauth2": {
+      "type": "oauth2",
+      "description": "Authenticate with Work IQ using OAuth2 authorization code flow with PKCE support.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://login.microsoftonline.com",
+      "tokenUrl": "https://login.microsoftonline.com",
+      "refreshUrl": "https://login.microsoftonline.com",
+      "scopes": ["ea9ffc3e-8a23-4a7d-836d-234d7c7565c1/McpServers.OneDrive.All"]
+    }
+  },
+  "authSchemas":["OAuth2"],
+  "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": true }
+}

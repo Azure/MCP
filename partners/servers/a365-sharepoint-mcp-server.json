@@ -1,0 +1,164 @@
+{
+  "name": "microsoft-sharepoint-mcp-frontier",
+  "title": "Work IQ SharePoint",
+  "summary": "Work IQ MCP server for Microsoft SharePoint operations. Learn more at https://aka.ms/AboutWorkIQ",
+  "description": "Work IQ MCP server for Microsoft SharePoint operations. This feature is in preview and is part of the Work IQ tools, providing shared work intelligence and actions for agents. Availability and capabilities are subject to change. Learn more: https://aka.ms/AboutWorkIQ",
+  "kind": "mcp",
+  "vendor": "Microsoft",
+  "externalDocumentation": {
+    "title": "Work IQ MCP Servers",
+    "url": "https://aka.ms/AboutWorkIQ"
+  },
+  "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_SharePointRemoteServer",
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://aka.ms/WorkIQToolsSupport"
+  },
+  "license": {
+        "name": "Work IQ",
+        "url": "https://aka.ms/AboutWorkIQ"
+  },
+  "visibility": "true",
+  "categories": "Productivity",
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/MicrosoftSharePointMCPServer.png",
+  "useCases": [
+    {
+      "name": "Find Site",
+      "description": "Find SharePoint sites accessible to the user by name or list the top 20 sites."
+    },
+    {
+      "name": "Get Site By Path",
+      "description": "Get a site using exact URL components. Use Find Site for name-based search."
+    },
+    {
+      "name": "List Subsites",
+      "description": "List all child sites of a parent site."
+    },
+    {
+      "name": "Create List",
+      "description": "Create a new list in a site with the first Name column. You can specify the list type."
+    },
+    {
+      "name": "List Lists",
+      "description": "Get all lists in a site."
+    },
+    {
+      "name": "Delete List",
+      "description": "Delete a list and all its items. This action cannot be undone."
+    },
+    {
+      "name": "Send Invites For List",
+      "description": "Share a list with users with specified permissions."
+    },
+    {
+      "name": "Create List Item",
+      "description": "Create a new item in a list. You can specify values for each column."
+    },
+    {
+      "name": "Update List Item",
+      "description": "Update an item in a list. You can specify values for each column."
+    },
+    {
+      "name": "List List Items",
+      "description": "Get all items from a list."
+    },
+    {
+      "name": "Delete List Item",
+      "description": "Delete an item from a list. This action cannot be undone."
+    },
+    {
+      "name": "Create Column",
+      "description": "Create a new column in a list with a specified type and properties."
+    },
+    {
+      "name": "Update Column",
+      "description": "Update column properties or metadata."
+    },
+    {
+      "name": "List Columns",
+      "description": "Get all columns from a list."
+    },
+    {
+      "name": "Delete Column",
+      "description": "Delete a column from a list. This action removes all data in that column."
+    },
+    {
+      "name": "Find File or Folder",
+      "description": "Search for files or folders by name."
+    },
+    {
+      "name": "Get Default Document Library In Site",
+      "description": "Get the default document library for a site."
+    },
+    {
+      "name": "Get Folder Children",
+      "description": "List items in a folder (up to 20 items)."
+    },
+    {
+      "name": "Create Folder",
+      "description": "Create a new folder. Automatically renames the folder if one with the same name already exists."
+    },
+    {
+      "name": "Create Small Text File",
+      "description": "Create or upload a text file that is 5 MB or smaller."
+    },
+    {
+      "name": "Create Small Binary File",
+      "description": "Create a binary file from base64 content that is 5 MB or smaller."
+    },
+    {
+      "name": "Read Small Text File",
+      "description": "Download a text file that is 5 MB or smaller."
+    },
+    {
+      "name": "Read Small Binary File",
+      "description": "Download a binary file ≤5 MB as base64-encoded content."
+    },
+    {
+      "name": "Get File or Folder Metadata",
+      "description": "Get file or folder metadata by ID."
+    },
+    {
+      "name": "Get File or Folder Metadata by URL",
+      "description": "Get file or folder metadata by sharing URL."
+    },
+    {
+      "name": "Delete File or Folder",
+      "description": "Delete a file or folder."
+    },
+    {
+      "name": "Rename File or Folder",
+      "description": "Rename a file or folder."
+    },
+    {
+      "name": "Move Small File",
+      "description": "Move a file that is 5 MB or smaller within the same document library."
+    },
+    {
+      "name": "Share File or Folder",
+      "description": "Share a file or folder with specified users and permissions."
+    },
+    {
+      "name": "Set Sensitivity Label on File",
+      "description": "Apply or remove a sensitivity label on a file."
+    }
+  ],
+  "securitySchemes": {
+    "a365sharepointoauth2": {
+      "type": "oauth2",
+      "description": "Authenticate with Work IQ using OAuth2 authorization code flow with PKCE support.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://login.microsoftonline.com",
+      "tokenUrl": "https://login.microsoftonline.com",
+      "refreshUrl": "https://login.microsoftonline.com",
+      "scopes": ["ea9ffc3e-8a23-4a7d-836d-234d7c7565c1/McpServers.SharePoint.All"]
+    }
+  },
+  "authSchemas":["OAuth2"],
+  "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": true }
+}
+
+
+
