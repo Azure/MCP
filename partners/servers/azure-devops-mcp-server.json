@@ -1,0 +1,65 @@
+{
+  "name": "azure-devops-mcp",
+  "title": "Azure DevOps MCP Server (preview)",
+  "summary": "Use Azure DevOps MCP Server to interact with Azure DevOps Work Items, Wiki, Repos and Pipelines.",
+  "description": "Enables core Azre DevOps actions for work items, wiki, repos and piplines, enabling agentic workflows for your DevOps needs.",
+  "kind": "mcp",
+  "vendor": "Microsoft",
+  "externalDocumentation": {
+    "title": "Azure DevOps MCP Servers",
+    "url": "https://aka.ms/AzureDevOpsMCP"
+  },
+  "remote": "https://mcp.dev.azure.com/{orgName}",
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://developercommunity.visualstudio.com/AzureDevOps"
+  },
+  "license": {
+        "name": "Azure DevOps",
+        "url": "https://aka.ms/AzureDevOpsMCP"
+  },
+  "visibility": "true",
+  "categories": "DevOps",
+  "icon": "https://cdn.vsassets.io/content/icons/favicon.ico",
+  "useCases": [
+    {
+      "name": "Core and work",
+      "description": "Provides foundational organization and planning capabilities including projects, teams, iterations, and team capacities."
+    },
+    {
+      "name": "Manage work items",
+      "description": "Focused specifically on backlog and task management operations. Supports querying, creating, updating, linking, and commenting on work items to enable structured, conversational interaction with Azure Boards data."
+    },
+    {
+      "name": "Repositories",
+      "description": "Exposes repository, branch, commit, and pull request operations. Supports listing repositories, retrieving branch and commit metadata, inspecting pull request details and status, and associating work items with pull requests to enable AI-assisted code review workflows and repository analysis."
+    },
+    {
+      "name": "Pipelines",
+      "description": "Provides access to build and pipeline definitions and runs. Supports retrieving pipeline runs, build results, logs, artifacts, and status information to enable CI/CD monitoring, diagnostics, and deployment validation scenarios."
+    },
+    {
+      "name": "Wiki",
+      "description": "Enables structured access to Azure DevOps wiki content. Supports listing pages, retrieving page content, and creating or updating wiki entries programmatically to enable documentation automation and knowledge management workflows."
+    },
+    {
+      "name": "Test Plans",
+      "description": "Provides access to test plans, test suites, and test cases. Supports retrieving test structures and results to enable quality reporting, traceability analysis, and validation workflows."
+    }
+  ],
+  "securitySchemes": {
+    "adooauth2": {
+      "type": "oauth2",
+      "description": "Authenticate with Azure DevOps using OAuth2 authorization code flow with PKCE support.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://login.microsoftonline.com",
+      "tokenUrl": "https://login.microsoftonline.com",
+      "refreshUrl": "https://login.microsoftonline.com",
+      "scopes": ["2a72489c-aab2-4b65-b93a-a91edccf33b8/Ado.Mcp.Tools"]
+    }
+  },
+  "authSchemas":["OAuth2"],
+  "audience": "api://2a72489c-aab2-4b65-b93a-a91edccf33b8",
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": true }
+}
