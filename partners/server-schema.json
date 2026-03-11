@@ -59,10 +59,13 @@
       "properties": {
         "name": {
           "type": "string",
+          "maxLength": 50,
           "description": "Name of the license (e.g., 'MIT', 'Apache-2.0', 'GPL-3.0')."
         },
         "url": {
           "type": "string",
+          "maxLength": 200,
+          "format": "uri",
           "description": "URL to the full license text."
         }
       }
@@ -82,10 +85,13 @@
       "properties": {
         "title": {
           "type": "string",
+          "maxLength": 50,
           "description": "Title or name of the documentation."
         },
         "url": {
           "type": "string",
+          "maxLength": 200,
+          "format": "uri",
           "description": "URL to the external documentation."
         }
       }
@@ -100,10 +106,13 @@
       "properties": {
         "url": {
           "type": "string",
+          "maxLength": 200,
+          "format": "uri",
           "description": "URL to the source code repository."
         },
         "source": {
           "type": "string",
+          "maxLength": 100,
           "description": "Path or reference to specific source files within the repository."
         }
       }
