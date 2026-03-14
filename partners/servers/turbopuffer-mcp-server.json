@@ -48,6 +48,6 @@
         "url": "https://turbopuffer.com/contact/support"
     },
     "customProperties": {
-        "x-ms-preview": false
+        "x-ms-preview": true
     }
 }
