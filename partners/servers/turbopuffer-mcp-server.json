@@ -2,7 +2,7 @@
     "name": "turbopuffer-mcp-server",
     "title": "turbopuffer",
     "summary": "Connect to turbopuffer for serverless vector and full-text search over your data.",
-    "description": "The turbopuffer MCP server connects AI agents to turbopuffer, a serverless search engine built on object storage. Query namespaces using vector similarity search, BM25 full-text search, hybrid search, and attribute filtering. Upsert, delete, and manage documents across namespaces. Fast, 10x cheaper, and extremely scalable.",
+    "description": "The turbopuffer MCP server connects AI tools to turbopuffer, a serverless search engine built on object storage. Query namespaces using vector similarity search, BM25 full-text search, hybrid search, and attribute filtering. Upsert, delete, and manage documents across namespaces. Fast, 10x cheaper, and extremely scalable.",
     "kind": "mcp",
     "packages": [],
     "icon": "https://avatars.githubusercontent.com/turbopuffer?s=64",
