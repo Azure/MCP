@@ -12,16 +12,16 @@
     },
     "useCases": [
         {
-            "name": "Semantic Search",
-            "description": "Query your data using vector similarity, BM25 full-text search, or hybrid search with attribute filtering to find the most relevant documents."
-        },
-        {
-            "name": "Data Management",
-            "description": "Upsert, delete, and manage documents stored in turbopuffer namespaces directly from AI agent workflows."
+            "name": "Search Infrastructure",
+            "description": "Power semantic search, BM25 full-text search, and hybrid search over billions of documents with sub-10ms cached latency, backed by object storage for cost-efficient scaling."
         },
         {
             "name": "RAG Pipelines",
-            "description": "Build retrieval-augmented generation pipelines by connecting AI agents to turbopuffer for context retrieval over large document collections."
+            "description": "Build retrieval-augmented generation pipelines by connecting AI agents to turbopuffer for fast, scalable context retrieval over large document collections."
+        },
+        {
+            "name": "Retrieval",
+            "description": "Efficiently narrow millions of documents down to tens or hundreds for downstream processing, reranking, or generation using vector similarity and attribute filtering."
         }
     ],
     "externalDocumentation": {
