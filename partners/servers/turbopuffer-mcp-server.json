@@ -1,11 +1,11 @@
 {
     "name": "turbopuffer-mcp-server",
     "title": "turbopuffer",
-    "summary": "Connect to turbopuffer for serverless vector and full-text search over your data.",
+    "summary": "Connect to turbopuffer for fast, scalable vector and full-text search over your data \u2014 serverless, built on object storage, and 10x cheaper.",
     "description": "The turbopuffer MCP server connects AI agents to turbopuffer, a serverless search engine built on object storage. Query namespaces using vector similarity search, BM25 full-text search, hybrid search, and attribute filtering. Upsert, delete, and manage documents across namespaces. Fast, 10x cheaper, and extremely scalable.",
     "kind": "mcp",
     "packages": [],
-    "icon": "https://avatars.githubusercontent.com/turbopuffer?s=64",
+    "icon": "https://turbopuffer.com/_next/static/media/logo_header_darkbg.435dd040.svg",
     "license": {
         "name": "turbopuffer Terms of Service",
         "url": "https://turbopuffer.com/terms"
@@ -28,7 +28,15 @@
         "title": "turbopuffer Documentation",
         "url": "https://turbopuffer.com/docs"
     },
-    "tags": ["search", "embeddings", "rag", "full-text-search", "vector-search", "hybrid-search", "vector-database"],
+    "tags": [
+        "search",
+        "embeddings",
+        "rag",
+        "full-text-search",
+        "vector-search",
+        "hybrid-search",
+        "vector-database"
+    ],
     "vendor": "Partner",
     "categories": "Databases",
     "visibility": "true",
