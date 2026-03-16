@@ -2,7 +2,7 @@
     "name": "turbopuffer-mcp-server",
     "title": "turbopuffer",
     "summary": "Connect to turbopuffer for fast, scalable vector and full-text search over your data \u2014 serverless, built on object storage, and 10x cheaper.",
-    "description": "Lets AI query and manage data in turbopuffer, a serverless search engine built on object storage. Supports vector similarity search, BM25 full-text search, hybrid search, and attribute filtering across namespaces.",
+    "description": "Perform vector, full-text, and hybrid search over your data with turbopuffer, a serverless search engine built on object storage.",
     "kind": "mcp",
     "packages": [],
     "icon": "https://turbopuffer.com/_next/static/media/logo_header_darkbg.435dd040.svg",
