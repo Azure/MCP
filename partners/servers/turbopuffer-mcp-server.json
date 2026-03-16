@@ -2,7 +2,7 @@
     "name": "turbopuffer-mcp-server",
     "title": "turbopuffer",
     "summary": "Connect to turbopuffer for fast, scalable vector and full-text search over your data \u2014 serverless, built on object storage, and 10x cheaper.",
-    "description": "The turbopuffer MCP server connects AI agents to turbopuffer, a serverless search engine built on object storage. Query namespaces using vector similarity search, BM25 full-text search, hybrid search, and attribute filtering. Upsert, delete, and manage documents across namespaces. Fast, 10x cheaper, and extremely scalable.",
+    "description": "Lets AI query and manage data in turbopuffer, a serverless search engine built on object storage. Supports vector similarity search, BM25 full-text search, hybrid search, and attribute filtering across namespaces.",
     "kind": "mcp",
     "packages": [],
     "icon": "https://turbopuffer.com/_next/static/media/logo_header_darkbg.435dd040.svg",
@@ -12,16 +12,16 @@
     },
     "useCases": [
         {
-            "name": "Search Infrastructure",
-            "description": "Power semantic search, BM25 full-text search, and hybrid search over billions of documents with sub-10ms cached latency, backed by object storage for cost-efficient scaling."
+            "name": "Search and retrieval",
+            "description": "Perform vector, full-text, and hybrid searches across namespaces and return ranked results for developer and agentic workflows."
         },
         {
-            "name": "RAG Pipelines",
-            "description": "Build retrieval-augmented generation pipelines by connecting AI agents to turbopuffer for fast, scalable context retrieval over large document collections."
+            "name": "Context-aware generation",
+            "description": "Give AI agents fast, scalable access to your data for retrieval-augmented generation without managing infrastructure."
         },
         {
-            "name": "Retrieval",
-            "description": "Efficiently narrow millions of documents down to tens or hundreds for downstream processing, reranking, or generation using vector similarity and attribute filtering."
+            "name": "Data ingestion and management",
+            "description": "Upsert, update, and delete documents across namespaces to keep your search index current from within agentic workflows."
         }
     ],
     "externalDocumentation": {
