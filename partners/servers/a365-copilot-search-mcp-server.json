@@ -1,26 +1,26 @@
 {
   "name": "microsoft-copilot-chat-frontier",
-  "title": "Microsoft 365 Copilot (Search) (Frontier)",
-  "summary": "Enables core Microsoft Copilot chat actions, including starting conversations and sending messages with contextual grounding.",
-  "description": "Enables core Microsoft Copilot chat actions, including starting conversations and sending messages with contextual grounding.",
+  "title": "Work IQ Copilot",
+  "summary": "Work IQ MCP server for Microsoft Copilot Search operations. Learn more at https://aka.ms/AboutWorkIQ",
+  "description": "Work IQ Copilot MCP Server which enables core Microsoft Copilot chat actions, including starting conversations and sending messages with contextual grounding. This feature is in preview and is part of the Work IQ tools, providing shared work intelligence and actions for agents. Availability and capabilities are subject to change. Learn more: https://aka.ms/AboutWorkIQ",
   "kind": "mcp",
   "vendor": "Microsoft",
   "externalDocumentation": {
-    "title": "Agent 365 MCP Servers",
-    "url": "https://aka.ms/AboutAgent365"
+    "title": "Work IQ MCP Servers",
+    "url": "https://aka.ms/AboutWorkIQ"
   },
   "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_M365Copilot",
   "supportContactInfo": {
     "name": "customer support contact",
-    "url": "https://aka.ms/a365mcpsupport"
+    "url": "https://aka.ms/WorkIQToolsSupport"
   },
   "license": {
-        "name": "Agent 365",
-        "url": "https://aka.ms/AboutAgent365"
+        "name": "Work IQ",
+        "url": "https://aka.ms/AboutWorkIQ"
   },
   "visibility": "true",
   "categories": "Productivity",
-  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Microsoft365UserProfile.png",
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Microsoft365Copilot.png",
   "useCases": [
   {
     "name": "Start a Copilot conversation",
@@ -50,7 +50,7 @@
   "securitySchemes": {
     "a365copilotsearchoauth2": {
       "type": "oauth2",
-      "description": "Authenticate with A365 using OAuth2 authorization code flow with PKCE support.",
+      "description": "Authenticate with Work IQ using OAuth2 authorization code flow with PKCE support.",
       "flows": ["authorizationCode"],
       "authorizationUrl": "https://login.microsoftonline.com",
       "tokenUrl": "https://login.microsoftonline.com",

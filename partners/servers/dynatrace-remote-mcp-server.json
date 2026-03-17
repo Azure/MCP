@@ -1,8 +1,8 @@
 {
   "name": "dynatrace-remote-mcp",
   "title": "Dynatrace",
-  "summary": "Dynatrace MCP server allows AI Assistants to interact with the Dynatrace observability platform, bringing real-time observability data directly into your development workflow.",
-  "description": "Dynatrace MCP server allows AI Assistants to interact with the Dynatrace observability platform, bringing real-time observability data directly into your development workflow.",
+  "summary": "Connect AI assistants to Dynatrace to interact with real-time observability and production data, and enhance reliability through autonomous operations",
+  "description": "Benefit from the best observability insights available. LLM-powered agents are only as smart as their data. Without deep observability data, agents are often unable to detect root causes and resolve issues. Connect them to Dynatrace using MCP to securely access and interact with real-time data in context. Enhance accuracy, minimize hallucinations, and ensure AI decisions are grounded in real-time production data for faster, more informed remediation. Automate fixes, accelerate MTTR, and scale insights across your agent ecosystem, while supporting enterprise-grade security for Dynatrace AI agents with built-in authentication and session isolation.",
   "kind": "mcp",
   "license": {
     "name": "User License Terms",
@@ -11,10 +11,6 @@
   "externalDocumentation": {
     "title": "Dynatrace MCP Documentation",
     "url": "https://docs.dynatrace.com/docs/discover-dynatrace/platform/davis-ai/dynatrace-mcp"
-  },
-  "repository": {
-    "url": "https://github.com/dynatrace-oss/dynatrace-mcp",
-    "source": "github"
   },
   "remote": "https://{tenant-name}.apps.dynatrace.com/platform-reserved/mcp-gateway/v0.1/servers/dynatrace-mcp/mcp",
   "versionName": "original",
@@ -26,24 +22,12 @@
       "description": "Fetch production-level data for early detection and proactive monitoring."
     },
     {
-      "name": "Contextual debugging",
-      "description": "Fix issues with full context from monitored exceptions, logs, and anomalies."
-    },
-    {
       "name": "Security insights",
       "description": "Get detailed vulnerability analysis and security problem tracking."
     },
     {
       "name": "Natural language queries",
       "description": "Use AI-powered DQL generation and explanation."
-    },
-    {
-      "name": "Multi-phase incident investigation",
-      "description": "Systematic 4-phase approach with automated impact assessment."
-    },
-    {
-      "name": "Advanced transaction analysis",
-      "description": "Precise root cause identification with file/line-level accuracy."
     },
     {
       "name": "Cross-data source correlation",
@@ -67,7 +51,7 @@
       "type": "http",
       "description": "Authenticate with Dynatrace using a Platform Token.",
       "scheme": "bearer",
-      "bearerFormat": "Dynatrace Platform Token"
+      "bearerFormat": "Dynatrace Platform Token - dt0s16.23456789.abc123462defghijklmnopqrstuvwxyz"
     }
   },
   "supportContactInfo": {

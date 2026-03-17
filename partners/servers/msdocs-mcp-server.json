@@ -1,15 +1,15 @@
 {
     "name": "msdocs-mcp-server",
-    "title": "Microsoft Learn",
-    "summary": "AI assistant with real-time access to official Microsoft documentation.",
-    "description": "AI assistant with real-time access to official Microsoft documentation.",
+    "title": "Microsoft Learn MCP server",
+    "summary": "Learn MCP server is a remote MCP server that connects Copilots and AI agents to Microsoft’s official, up-to-date documentation",
+    "description": "The Microsoft Learn MCP server is a remote Model Context Protocol (MCP) server that enables Copilots and AI agents to securely access trusted, up-to-date knowledge from Microsoft’s official documentation via streamable HTTP—allowing them to search content, retrieve complete articles, and surface relevant code samples to deliver accurate, grounded responses.",
     "kind": "mcp",
     "packages": [],
     "icon": "https://avatars.githubusercontent.com/microsoft?s=64",
     "useCases": [
         {
             "name": "Search Functionality",
-            "description": "Search in official Microsoft documentation."
+            "description": "Search and fetch official Microsoft documentation and code samples."
         }
     ],
     "tags": [],
@@ -28,6 +28,6 @@
     },
     "supportContactInfo": {
         "name": "customer support contact",
-        "url": "https://azure.microsoft.com/en-us/support"},
+        "url": "https://github.com/microsoftdocs/mcp"},
   "customProperties": { "x-ms-preview": false }
 }
