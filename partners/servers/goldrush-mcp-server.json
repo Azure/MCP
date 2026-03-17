@@ -1,0 +1,67 @@
+{
+  "name": "goldrush-mcp-server",
+  "title": "GoldRush by Covalent",
+  "summary": "Blockchain data across 100+ chains — wallet balances, token prices, transactions, DEX pairs, and more.",
+  "description": "GoldRush by Covalent is an MCP server providing unified blockchain data across 100+ chains. Query wallet balances, token prices, transaction history, DEX pairs, NFT holdings, and real-time OHLCV price feeds via WebSocket. Supports REST API, CLI, and x402 pay-per-request. Ideal for AI agents needing on-chain context, portfolio analysis, DeFi research, and multi-chain data aggregation.",
+  "kind": "mcp",
+  "license": {
+    "name": "MIT",
+    "url": "https://github.com/covalenthq/goldrush-mcp-server/blob/main/LICENSE"
+  },
+  "icon": "https://avatars.githubusercontent.com/covalenthq?s=64",
+  "externalDocumentation": {
+    "title": "GoldRush Docs",
+    "url": "https://goldrush.dev/docs"
+  },
+  "repository": {
+    "url": "https://github.com/covalenthq/goldrush-mcp-server",
+    "source": "https://github.com/covalenthq/goldrush-mcp-server"
+  },
+  "packages": [
+    {
+      "registry_name": "npm",
+      "name": "@covalenthq/goldrush-mcp-server",
+      "version": "latest"
+    }
+  ],
+  "useCases": [
+    {
+      "name": "Multi-chain wallet analysis",
+      "description": "Retrieve token balances, transaction history, and net worth across 100+ EVM and non-EVM chains for any wallet address."
+    },
+    {
+      "name": "Real-time token price feeds",
+      "description": "Access live and historical token prices with OHLCV data via REST or real-time WebSocket streams for DeFi and trading workflows."
+    },
+    {
+      "name": "DEX and liquidity data",
+      "description": "Query decentralized exchange pairs, pool liquidity, and swap history to power DeFi research and analytics agents."
+    },
+    {
+      "name": "NFT portfolio tracking",
+      "description": "Fetch NFT holdings, metadata, and transfer history across chains for collectors, marketplaces, and portfolio tools."
+    },
+    {
+      "name": "On-chain context for AI agents",
+      "description": "Provide AI agents with structured, normalized blockchain data as context for financial analysis, user profiling, and smart contract interactions."
+    }
+  ],
+  "tags": ["blockchain", "crypto", "defi", "web3", "wallet", "token-prices", "nft", "multichain"],
+  "vendor": "Partner",
+  "visibility": "true",
+  "categories": "Finance",
+  "supportContactInfo": {
+    "name": "Covalent Support",
+    "url": "https://goldrush.dev/docs"
+  },
+  "securitySchemes": {
+    "goldrushApiKey": {
+      "type": "apiKey",
+      "description": "Authenticate with GoldRush using an API key in the Authorization header.",
+      "in": "header",
+      "name": "Authorization"
+    }
+  },
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": true }
+}
