@@ -12,7 +12,7 @@
   "remote": "https://mcp.dev.azure.com/{orgName}",
   "supportContactInfo": {
     "name": "customer support contact",
-    "url": "https://developercommunity.visualstudio.com/AzureDevOps"
+    "url": "https://github.com/microsoft/azure-devops-mcp/issues"
   },
   "license": {
         "name": "Azure DevOps",
