@@ -1,0 +1,61 @@
+{
+    "name": "turbopuffer-mcp-server",
+    "title": "turbopuffer",
+    "summary": "Connect to turbopuffer for fast, scalable vector and full-text search over your data \u2014 serverless, built on object storage, and 10x cheaper.",
+    "description": "Perform vector, full-text, and hybrid search over your data with turbopuffer, a serverless search engine built on object storage.",
+    "kind": "mcp",
+    "packages": [],
+    "icon": "https://turbopuffer.com/_next/static/media/logo_header_darkbg.435dd040.svg",
+    "license": {
+        "name": "turbopuffer Terms of Service",
+        "url": "https://turbopuffer.com/terms"
+    },
+    "useCases": [
+        {
+            "name": "Search and retrieval",
+            "description": "Perform vector, full-text, and hybrid searches across namespaces and return ranked results for developer and agentic workflows."
+        },
+        {
+            "name": "Context-aware generation",
+            "description": "Give AI agents fast, scalable access to your data for retrieval-augmented generation without managing infrastructure."
+        },
+        {
+            "name": "Data ingestion and management",
+            "description": "Upsert, update, and delete documents across namespaces to keep your search index current from within agentic workflows."
+        }
+    ],
+    "externalDocumentation": {
+        "title": "turbopuffer Documentation",
+        "url": "https://turbopuffer.com/docs"
+    },
+    "tags": [
+        "search",
+        "embeddings",
+        "rag",
+        "full-text-search",
+        "vector-search",
+        "hybrid-search",
+        "vector-database"
+    ],
+    "vendor": "Partner",
+    "categories": "Databases",
+    "visibility": "true",
+    "remote": "https://turbopuffer.stlmcp.com/",
+    "remoteType": "streamable-http",
+    "versionName": "original",
+    "securitySchemes": {
+        "apiKeyAuth": {
+            "type": "apiKey",
+            "description": "Authenticate with your turbopuffer API key.",
+            "in": "header",
+            "name": "Authorization"
+        }
+    },
+    "supportContactInfo": {
+        "name": "turbopuffer Support",
+        "url": "https://turbopuffer.com/contact/support"
+    },
+    "customProperties": {
+        "x-ms-preview": true
+    }
+}
