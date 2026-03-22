@@ -36,7 +36,7 @@
     "remoteType": "streamable-http",
     "versionName": "original",
     "securitySchemes": {
-        "apiKeyAuth": {
+        "turbopufferApiKey": {
             "type": "apiKey",
             "description": "Authenticate with your turbopuffer API key.",
             "in": "header",
