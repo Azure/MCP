@@ -1,0 +1,103 @@
+{
+  "name": "carbone-mcp-server",
+  "title": "Carbone",
+  "summary": "Generate and convert documents (PDF, DOCX, XLSX, PPTX, 100+ formats) from templates and JSON data using the Carbone API.",
+  "description": "Carbone MCP Server connects AI agents to the Carbone document generation and conversion API. Agents can generate production-ready documents in 100+ formats (PDF, DOCX, XLSX, PPTX, ODT, ODS, HTML, CSV, and more) by merging templates with JSON data, convert existing files between formats, and manage templates (upload, list, delete). It supports multi-language output, custom formatters for dates, numbers and currencies, and bulk generation. Open-source (Apache 2.0), supports the hosted endpoint and self-hosted deployments. Free API key at https://account.carbone.io.",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "categories": "Developer Tools",
+  "license": {
+    "name": "Apache 2.0",
+    "url": "https://github.com/carboneio/carbone-mcp/blob/master/LICENSE"
+  },
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Carbone.svg",
+  "externalDocumentation": {
+    "title": "Carbone MCP Documentation",
+    "url": "https://carbone.io/documentation"
+  },
+  "repository": {
+    "url": "https://github.com/carboneio/carbone-mcp",
+    "source": "https://github.com/carboneio/carbone-mcp"
+  },
+  "remote": "https://mcp.carbone.io",
+  "remoteType": "streamable-http",
+  "supportContactInfo": {
+    "name": "Carbone support",
+    "email": "contact@carbone.io",
+    "url": "https://help.carbone.io"
+  },
+  "visibility": "true",
+  "useCases": [
+    {
+      "name": "Invoice and financial report generation",
+      "description": "Merge structured JSON billing data with a Carbone template to produce PDF or DOCX invoices and financial reports ready for distribution."
+    },
+    {
+      "name": "Legal contract drafting",
+      "description": "Populate contract templates with client and deal data to generate signed-ready PDF or Word legal documents at scale."
+    },
+    {
+      "name": "HR and onboarding documents",
+      "description": "Automate creation of offer letters, onboarding packs, and HR forms by injecting employee data into predefined templates."
+    },
+    {
+      "name": "Multi-language document export",
+      "description": "Generate localized documents in multiple languages from a single template using Carbone's built-in translation layer."
+    },
+    {
+      "name": "Report automation",
+      "description": "Transform raw JSON data into formatted XLSX, PDF, or HTML reports for analytics and business intelligence workflows."
+    },
+    {
+      "name": "Document format conversion",
+      "description": "Convert existing documents between 100+ format combinations (e.g. DOCX to PDF, XLSX to CSV, ODT to HTML) without a template."
+    },
+    {
+      "name": "Data-driven spreadsheet generation",
+      "description": "Generate XLSX spreadsheets with dynamic rows, computed columns, and formatting by injecting JSON datasets into Excel templates."
+    },
+    {
+      "name": "Presentation generation",
+      "description": "Produce data-driven PPTX slide decks from structured JSON and PowerPoint templates for automated business presentations."
+    },
+    {
+      "name": "Template management",
+      "description": "Upload, list, and delete Carbone templates programmatically to keep the document template library up to date within agent workflows."
+    },
+    {
+      "name": "Bulk document generation",
+      "description": "Generate large batches of personalized documents (contracts, certificates, statements) by iterating over JSON datasets and reusing a single template."
+    }
+  ],
+  "securitySchemes": {
+    "carboneBearerAuth": {
+      "type": "http",
+      "description": "Authenticate to the Carbone MCP Server using a Bearer API key. Obtain your free API key at https://account.carbone.io.",
+      "scheme": "bearer"
+    }
+  },
+  "tags": [
+    "document-generation",
+    "document-conversion",
+    "pdf",
+    "docx",
+    "xlsx",
+    "pptx",
+    "odt",
+    "html",
+    "csv",
+    "templates",
+    "template-engine",
+    "reporting",
+    "invoice-generation",
+    "office-documents",
+    "spreadsheet-generation",
+    "json-to-pdf",
+    "automation",
+    "carbone",
+    "open-source",
+    "typescript"
+  ],
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": true }
+}
