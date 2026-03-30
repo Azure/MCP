@@ -18,7 +18,7 @@
     "name": "Work IQ",
     "url": "https://aka.ms/AboutWorkIQ"
   },
-  "visibility": "true",
+  "visibility": "false",
   "categories": "Project Management",
   "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/MicrosoftPlannerMCPServer.png",
   "useCases": [
