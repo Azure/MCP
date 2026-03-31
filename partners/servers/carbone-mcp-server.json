@@ -55,43 +55,43 @@
   "useCases": [
     {
       "name": "Invoice and financial report generation",
-      "description": "Merge structured JSON billing data with a Carbone template to produce PDF or DOCX invoices and financial reports ready for distribution."
+      "description": "Automatically generate branded PDF or DOCX invoices and financial reports by combining your billing data with a reusable template. Line items, totals, taxes, and currency formatting are resolved automatically — no manual editing required."
     },
     {
       "name": "Legal contract drafting",
-      "description": "Populate contract templates with client and deal data to generate signed-ready PDF or Word legal documents at scale."
+      "description": "Produce ready-to-sign PDF or Word contracts at scale by merging party details, dates, and custom clauses into a standard contract template. Each document is uniquely personalised while maintaining a consistent, professional layout."
     },
     {
       "name": "HR and onboarding documents",
-      "description": "Automate creation of offer letters, onboarding packs, and HR forms by injecting employee data into predefined templates."
+      "description": "Generate personalised offer letters, onboarding packs, and payslips for every employee by combining HR records with a shared template. Supports PDF, DOCX, and ODT output, making it easy to integrate into any HR workflow."
     },
     {
       "name": "Multi-language document export",
-      "description": "Generate localized documents in multiple languages from a single template using Carbone's built-in translation layer."
+      "description": "Deliver documents in any language from a single template by specifying the target locale at generation time. The same invoice, contract, or report can be rendered in French, German, Spanish, or any other language without maintaining separate templates."
     },
     {
       "name": "Report automation",
-      "description": "Transform raw JSON data into formatted XLSX, PDF, or HTML reports for analytics and business intelligence workflows."
+      "description": "Turn raw business data into formatted XLSX, ODS, PDF, or HTML reports for finance, operations, or analytics teams. Tables expand automatically based on the data, and number or date formatting is applied consistently across every report."
     },
     {
       "name": "Document format conversion",
-      "description": "Convert existing documents between 100+ format combinations (e.g. DOCX to PDF, XLSX to CSV, ODT to HTML) without a template."
+      "description": "Convert any existing document to a different format — DOCX to PDF, XLSX to CSV, PPTX to ODP, and 100+ other combinations — without needing a template. Useful for standardising document formats across systems or preparing files for archiving."
     },
     {
       "name": "Data-driven spreadsheet generation",
-      "description": "Generate XLSX spreadsheets with dynamic rows, computed columns, and formatting by injecting JSON datasets into Excel templates."
+      "description": "Generate fully formatted XLSX or ODS spreadsheets from structured data. Rows expand dynamically based on the dataset, making it straightforward to produce financial models, inventory reports, or export files for downstream tools."
     },
     {
       "name": "Presentation generation",
-      "description": "Produce data-driven PPTX slide decks from structured JSON and PowerPoint templates for automated business presentations."
+      "description": "Automatically populate PPTX or ODP slide decks with live data — KPIs, charts labels, and narrative text — from a master template. Ideal for recurring business reviews, client reports, or automated dashboards that need a polished output."
     },
     {
       "name": "Template management",
-      "description": "Upload, list, and delete Carbone templates programmatically to keep the document template library up to date within agent workflows."
+      "description": "Maintain a centralised library of document templates — upload new versions, browse available templates, update metadata, and retire outdated ones — keeping the document generation pipeline consistent and up to date across teams."
     },
     {
       "name": "Bulk document generation",
-      "description": "Generate large batches of personalized documents (contracts, certificates, statements) by iterating over JSON datasets and reusing a single template."
+      "description": "Generate thousands of personalised documents — certificates, statements, contracts — from a single template and a list of records. Each output is uniquely populated with the recipient's data, with no infrastructure to manage beyond the API call."
     }
   ],
   "securitySchemes": {
