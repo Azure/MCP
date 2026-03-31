@@ -2,7 +2,7 @@
   "name": "carbone-mcp-server",
   "title": "Carbone",
   "summary": "Generate and convert documents (PDF, DOCX, XLSX, PPTX, 100+ formats) from templates and JSON data using the Carbone API.",
-  "description": "Carbone MCP Server connects AI agents to the Carbone document generation and conversion API. Agents can generate production-ready documents in 100+ formats (PDF, DOCX, XLSX, PPTX, ODT, ODS, HTML, CSV, and more) by merging templates with JSON data, convert existing files between formats, and manage templates (upload, list, delete). It supports multi-language output, custom formatters for dates, numbers and currencies, and bulk generation. Open-source (Apache 2.0), supports the hosted endpoint and self-hosted deployments. Free API key at https://account.carbone.io.",
+  "description": "Carbone MCP Server connects AI agents to the Carbone document generation and conversion API. Agents can generate production-ready documents in 100+ formats (PDF, DOCX, XLSX, PPTX, ODT, ODS, ODP, ODG, HTML, MD, CSV, and more) by merging templates with JSON data, convert existing files between formats, and manage templates (upload, list, delete). It supports multi-language output, custom formatters for dates, numbers and currencies, and bulk generation. Open-source (Apache 2.0), supports the hosted endpoint and self-hosted deployments. Free API key at https://account.carbone.io.",
   "kind": "mcp",
   "vendor": "Partner",
   "categories": "Developer Tools",
@@ -13,12 +13,37 @@
   "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Carbone.svg",
   "externalDocumentation": {
     "title": "Carbone MCP Documentation",
-    "url": "https://carbone.io/documentation"
+    "url": "https://carbone.io/documentation/developer/ai/mcp.html"
   },
   "repository": {
     "url": "https://github.com/carboneio/carbone-mcp",
     "source": "https://github.com/carboneio/carbone-mcp"
   },
+  "packages": [
+    {
+      "registry_name": "npm",
+      "name": "carbone-mcp",
+      "version": "latest",
+      "runtime_hint": "npx",
+      "runtime_arguments": [
+        {
+          "type": "positional",
+          "value": "carbone-mcp@latest",
+          "is_required": true,
+          "is_secret": false,
+          "format": "string"
+        }
+      ],
+      "environment_variables": [
+        {
+          "name": "CARBONE_API_KEY",
+          "description": "Your Carbone API key, obtainable for free at https://account.carbone.io",
+          "is_required": true,
+          "is_secret": true
+        }
+      ]
+    }
+  ],
   "remote": "https://mcp.carbone.io",
   "remoteType": "streamable-http",
   "supportContactInfo": {
@@ -73,7 +98,8 @@
     "carboneBearerAuth": {
       "type": "http",
       "description": "Authenticate to the Carbone MCP Server using a Bearer API key. Obtain your free API key at https://account.carbone.io.",
-      "scheme": "bearer"
+      "scheme": "bearer",
+      "bearerFormat": "API key"
     }
   },
   "tags": [
@@ -84,6 +110,10 @@
     "xlsx",
     "pptx",
     "odt",
+    "ods",
+    "odp",
+    "odg",
+    "markdown",
     "html",
     "csv",
     "templates",
