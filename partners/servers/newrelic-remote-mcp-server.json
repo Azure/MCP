@@ -21,8 +21,8 @@
   "remoteType": "streamable-http",
   "packages": [],
   "icon": "https://github.com/newrelic/mcp-server/blob/main/New_Relic_Logo.svg",
-  "tags": ["discovery", "data-access", "alerting", "incident-response", "performance-analytics", "advanced-analysis"],
-  "categories": ["Entity and Account Management", "Data Access", "Alerts and Monitoring", "Alert event Response", "Performance analytics", "Advanced Analysis"],
+  "tags": ["Entity and Account Management", "Data Access", "Alerts and Monitoring", "Alert event Response", "Performance analytics", "Advanced Analysis", "discovery", "data-access", "alerting", "incident-response", "performance-analytics", "advanced-analysis"],
+  "categories": "Monitoring & Diagnostics",
   "useCases": [
      {
       "name": "Natural language queries",
