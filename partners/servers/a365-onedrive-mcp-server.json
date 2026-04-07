@@ -2,7 +2,7 @@
   "name": "microsoft-onedrive-mcp-frontier",
   "title": "Work IQ OneDrive",
   "summary": "Work IQ MCP server for Microsoft OneDrive operations. Learn more at https://aka.ms/AboutWorkIQ",
-  "description": "Work IQ MCP server for Microsoft OneDrive operations. This feature is in preview and is part of the Work IQ tools, providing shared work intelligence and actions for agents. Availability and capabilities are subject to change. Learn more: https://aka.ms/AboutWorkIQ",
+  "description": "Work IQ MCP server for Microsoft OneDrive operations. This feature is part of the Work IQ tools, providing shared work intelligence and actions for agents. Availability and capabilities are subject to change. Learn more: https://aka.ms/AboutWorkIQ",
   "kind": "mcp",
   "vendor": "Microsoft",
   "externalDocumentation": {

@@ -2,7 +2,7 @@
   "name": "microsoft-365-user-profile-mcp-frontier",
   "title": "Work IQ User",
   "summary": "Work IQ MCP server for Microsoft 365 User operations. Learn more at https://aka.ms/AboutWorkIQ",
-  "description": "Work IQ User MCP Server which enables Microsoft 365 user profile and directory lookups (user details, managers, direct reports, and org listings). This feature is in preview and is part of the Work IQ tools, providing shared work intelligence and actions for agents. Availability and capabilities are subject to change. Learn more: https://aka.ms/AboutWorkIQ",
+  "description": "Work IQ User MCP Server which enables Microsoft 365 user profile and directory lookups (user details, managers, direct reports, and org listings). This feature is part of the Work IQ tools, providing shared work intelligence and actions for agents. Availability and capabilities are subject to change. Learn more: https://aka.ms/AboutWorkIQ",
   "kind": "mcp",
   "vendor": "Microsoft",
   "externalDocumentation": {

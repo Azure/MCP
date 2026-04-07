@@ -2,7 +2,7 @@
   "name": "microsoft-word-mcp-frontier",
   "title": "Work IQ Word",
   "summary": "Work IQ MCP server for Microsoft Word operations. Learn more at https://aka.ms/AboutWorkIQ",
-  "description": "Work IQ Word MCP Server which enables Microsoft Word document creation, retrieval, and commenting actions for agentic workflows. This feature is in preview and is part of the Work IQ tools, providing shared work intelligence and actions for agents. Availability and capabilities are subject to change. Learn more: https://aka.ms/AboutWorkIQ",
+  "description": "Work IQ Word MCP Server which enables Microsoft Word document creation, retrieval, and commenting actions for agentic workflows. This feature is part of the Work IQ tools, providing shared work intelligence and actions for agents. Availability and capabilities are subject to change. Learn more: https://aka.ms/AboutWorkIQ",
   "kind": "mcp",
   "vendor": "Microsoft",
   "externalDocumentation": {

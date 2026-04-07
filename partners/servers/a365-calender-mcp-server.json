@@ -2,7 +2,7 @@
   "name": "microsoft-outlook-calendar-mcp-frontier",
   "title": "Work IQ Calendar",
   "summary": "Work IQ MCP server for Microsoft Outlook Calendar operations. Learn more at https://aka.ms/AboutWorkIQ",
-  "description": "Work IQ Calendar MCP Server which enables core Outlook calendar actions (create, update, manage, and schedule events) for agentic workflows. This feature is in preview and is part of the Work IQ tools, providing shared work intelligence and actions for agents. Availability and capabilities are subject to change. Learn more: https://aka.ms/AboutWorkIQ",
+  "description": "Work IQ Calendar MCP Server which enables core Outlook calendar actions (create, update, manage, and schedule events) for agentic workflows. This feature is part of the Work IQ tools, providing shared work intelligence and actions for agents. Availability and capabilities are subject to change. Learn more: https://aka.ms/AboutWorkIQ",
   "kind": "mcp",
   "vendor": "Microsoft",
   "externalDocumentation": {

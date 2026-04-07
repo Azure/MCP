@@ -2,7 +2,7 @@
   "name": "microsoft-teams-mcp-frontier",
   "title": "Work IQ Teams",
   "summary": "Work IQ MCP server for Microsoft Teams operations. Learn more at https://aka.ms/AboutWorkIQ",
-  "description": "Work IQ Teams MCP Server which enables core Microsoft Teams actions, including chat, channel, and team management, and message creation/retrieval. This feature is in preview and is part of the Work IQ tools, providing shared work intelligence and actions for agents. Availability and capabilities are subject to change. Learn more: https://aka.ms/AboutWorkIQ",
+  "description": "Work IQ Teams MCP Server which enables core Microsoft Teams actions, including chat, channel, and team management, and message creation/retrieval. This feature is part of the Work IQ tools, providing shared work intelligence and actions for agents. Availability and capabilities are subject to change. Learn more: https://aka.ms/AboutWorkIQ",
   "kind": "mcp",
   "vendor": "Microsoft",
   "externalDocumentation": {
