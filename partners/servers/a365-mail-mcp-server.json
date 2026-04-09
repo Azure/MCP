@@ -55,7 +55,7 @@
     }
   },
   "authSchemas":["OAuth2"],
-  "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
+  "audience": "16b1878d-62c7-4009-aa25-68989d63bbad",
   "versionName": "original",
   "customProperties": { "x-ms-preview": true },
   "tags": ["workiq"]

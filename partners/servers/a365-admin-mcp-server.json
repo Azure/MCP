@@ -63,7 +63,7 @@
     }
   },
   "authSchemas":["OAuth2"],
-  "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
+  "audience": "2dbeefeb-6462-48a4-abe6-1c4989699319",
   "versionName": "original",
   "customProperties": { "x-ms-preview": true }
 }
