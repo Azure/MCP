@@ -6,17 +6,17 @@
   "kind": "mcp",
   "vendor": "Microsoft",
   "externalDocumentation": {
-    "title": "Agent 365 MCP Servers",
-    "url": "https://aka.ms/AboutAgent365"
+    "title": "Work IQ MCP Servers",
+    "url": "https://aka.ms/AboutWorkIQ"
   },
-  "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_fabriciqontology",
+  "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_FabricIQOntology/workspaces/{workspaceId}/ontologies/{ontologyId}",
   "supportContactInfo": {
     "name": "customer support contact",
-    "url": "https://aka.ms/a365mcpsupport"
+    "url": "https://aka.ms/WorkIQToolsSupport"
   },
   "license": {
-        "name": "Agent 365",
-        "url": "https://aka.ms/AboutAgent365"
+        "name": "Work IQ",
+        "url": "https://aka.ms/AboutWorkIQ"
   },
   "visibility": "true",
   "categories": "Data & Analytics",
