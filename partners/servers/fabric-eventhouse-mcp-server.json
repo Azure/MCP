@@ -1,0 +1,61 @@
+{
+  "name": "fabric-eventhouse-mcp-server",
+  "title": "Fabric Eventhouse",
+  "summary": "Query, analyze, and explore real-time and historical data in Fabric Eventhouse using natural language.",
+  "description": "The Eventhouse remote MCP server enables AI agents to query Eventhouse using natural language. Through the Model Context Protocol, AI assistants can discover KQL database schemas and metadata dynamically, generate and execute KQL queries, translate natural language to KQL, return insights over real-time and historical data, and sample data.",
+  "kind": "mcp",
+  "vendor": "Microsoft",
+  "license": {
+    "name": "Microsoft Software License",
+    "url": "https://www.microsoft.com/licensing"
+  },
+  "icon": "https://placeholder.example.com/icons/fabric-eventhouse.png",
+  "externalDocumentation": {
+    "title": "Eventhouse Remote MCP Server Documentation",
+    "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/mcp-remote-eventhouse"
+  },
+  "remote": "https://api.fabric.microsoft.com/v1/mcp/dataPlane/kqlEndpoint",
+  "supportContactInfo": {
+    "name": "Microsoft Support",
+    "url": "https://support.microsoft.com"
+  },
+  "visibility": "public",
+  "categories": "Analytics",
+  "tags": ["built-in", "knowledge", "real-time-intelligence", "kql", "eventhouse", "fabric", "kusto"],
+  "packages": [],
+  "useCases": [
+    {
+      "name": "Real-Time Data Querying",
+      "description": "Query real-time and historical data in Eventhouse KQL databases using natural language that gets translated to KQL."
+    },
+    {
+      "name": "Schema Discovery",
+      "description": "Discover KQL database schemas and metadata dynamically, including tables, columns, and data types."
+    },
+    {
+      "name": "KQL Query Generation",
+      "description": "Generate and execute KQL queries to analyze data in Eventhouse databases."
+    },
+    {
+      "name": "Data Sampling",
+      "description": "Sample data from Eventhouse tables to understand data structure and content."
+    },
+    {
+      "name": "Real-Time Analytics Insights",
+      "description": "Return insights and summaries over real-time and historical data stored in Eventhouse."
+    }
+  ],
+  "securitySchemes": {
+    "fabricOAuth2": {
+      "type": "oauth2",
+      "description": "Authenticate using Microsoft Entra ID OAuth2 with Fabric permissions.",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
+      "tokenUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+      "scopes": ["https://api.fabric.microsoft.com/.default"],
+      "flows": ["authorizationCode"]
+    }
+  },
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": true },
+  "authSchemas": ["OAuth2"]
+}
