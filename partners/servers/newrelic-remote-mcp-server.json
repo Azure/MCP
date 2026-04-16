@@ -1,7 +1,7 @@
 {
   "name": "newrelic-remote-mcp",
   "title": "New Relic",
-  "summary": "New Relic MCP server allows your AI agents within supported development tools to have one consistent way to connect to and retrieve rich context and powerful tools from New Relic's observability platform.",
+  "summary": "New Relic MCP server provides rich context and powerful tools from New Relic's observability platform",
   "description": "New Relic MCP server allows your AI agents within supported development tools to have one consistent way to connect to and retrieve rich context and powerful tools from New Relic's observability platform.",
   "kind": "mcp",
   "license": {
