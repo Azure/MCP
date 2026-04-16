@@ -1,0 +1,45 @@
+{
+  "name": "ms-sentinel-knowledge-objects",
+  "title": "Microsoft Sentinel Knowledge Objects",
+  "summary": "The Knowledge Objects MCP tool enables natural-language analysis of Microsoft Sentinel knowledge objects to explore relationships and uncover security insights.",
+  "description": "The Knowledge Objects MCP tool enables natural-language analysis of Microsoft Sentinel knowledge objects to explore relationships and uncover security insights.",
+  "vendor": "Microsoft",
+  "kind": "mcp",
+  "remote": "https://sentinel.microsoft.com/mcp/knowledge-objects",
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Sentinel.svg",
+  "externalDocumentation": {
+    "title": "Microsoft Sentinel Knowledge Objects documentation",
+    "url": "https://aka.ms/mcp/sentinel-knowledge-objects"
+  },
+  "license": {
+    "name": "Microsoft License",
+    "url": "https://www.microsoft.com/licensing/terms/welcome/welcomepage"
+  },
+  "useCases": [
+    {
+      "name": "Improve Agent Performance",
+      "description": "Introduces new capability to agents, allowing them to store security 'knowledge' objects. This allows users and agents to upload and transform data into vector embeddings. This then allows the agent to search and access knowledge using natural language, giving the agent access to contextually relevant information."
+    }
+  ],
+  "categories": "Security",
+  "tags": ["security", "sentinel", "knowledge objects", "knowledge"],
+  "supportContactInfo": {
+    "name": "Microsoft Customer Support",
+    "email": "support@microsoft.com"},
+  "versionName": "original",
+  "securitySchemes": {
+    "sentinelKnowledgeObjectsOAuth": {
+      "type": "oauth2",
+      "description": "Authenticate with Microsoft Sentinel using OAuth2 authorization code flow with PKCE support.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://login.microsoftonline.com",
+      "tokenUrl": "https://login.microsoftonline.com",
+      "refreshUrl": "https://login.microsoftonline.com",
+      "scopes": ["4500ebfb-89b6-4b14-a480-7f749797bfcd"]
+    }
+  },
+  "visibility": "true",
+  "authSchemas":["OAuth2"],
+  "audience": "4500ebfb-89b6-4b14-a480-7f749797bfcd",
+  "customProperties": { "x-ms-preview": true }
+}
