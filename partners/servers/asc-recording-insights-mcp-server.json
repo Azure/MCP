@@ -1,0 +1,51 @@
+{
+    "name": "asc-recording-insights-mcp-server",
+    "title": "ASC Recording Insights MCP Server",
+    "summary": "MCP server for compliant Teams recordings.",
+    "description": "Legally compliant recording, archiving and AI data analytics with Recording Insights from ASC. Recording Insights offers users a compliant recording and analytics solution for their entire communications. Recording Insights helps to record communication in compliance with the law as well as to analyze its content, to evaluate internal processes, and to identify market trends. We provide compliant recordings of all Microsoft Teams communications (audio internal/external, chats, meetings, video, screen share, content, etc.), no third-party application required for streamlined user experience and user matching via Microsoft Entra ID. Our MCP server implements the “Search for recordings” use case which enables clients to reliably discover and retrieve recordings in a secure manner. In order to use the MCP server, users need an active ASC recording license. For more information, visit us at https://www.asctechnologies.com/contact/ and select your request.",
+    "kind": "mcp",
+    "vendor": "Partner",
+    "externalDocumentation":{
+        "title":"ASC Recording Insights MCP Server",
+        "url": "https://www.asctechnologies.com/fileadmin/static/ASC_MCP_Server_Documentation_v2.pdf"
+    },
+    "remote": "https://mcp.asc-recording.app/mcp",
+    "supportContactInfo": {
+        "name": "ASC Support Team",
+        "email": "customerservice@asctechnologies.com",
+        "url": "https://www.asctechnologies.com/contact/"
+    },
+    "categories": "Analytics",
+    "license": {
+        "name": "ASC Recording Insights",
+        "url": "https://insights.asc-recording.app/Terms%20of%20Use_ASC%20Cloud%20Services.pdf"
+    },
+    "icon": "https://asctech.sharepoint.com/:i:/r/sites/TEAM-SalesBizDevMarketing/Freigegebene%20Dokumente/Global%20Marketing%20Information/Brand%20Guidelines%20and%20CI/Logos/ASC/PNG/Blue/ASC_02_Logo%20without%20claim_blue.png?csf=1&web=1&e=p1tJDd",
+    "useCases": [
+        {
+            "name": "Search for recordings",
+            "description": "List recordings according to a timeframe specified in the user's prompt. Should the user desire, recordings could be returned along with their transcript."
+        }
+    ],
+    "visibility": "true",
+    "securitySchemes": {
+        "ascRIAuth": {
+            "type": "oauth2",
+            "description": "Authenticate with the user used to query recordings.",
+            "flows": ["authorizationCode"],
+            "authorizationUrl": "https://login.microsoftonline.com/CUSTOMER_TENANT_ID/oauth2/v2.0/authorize",
+            "tokenUrl": "https://login.microsoftonline.com/CUSTOMER_TENANT_ID/oauth2/v2.0/token",
+            "refreshUrl": "https://login.microsoftonline.com/CUSTOMER_TENANT_ID/oauth2/v2.0/token",
+            "scopes": ["api://teams.asc-recording.app/a22e0150-3615-46aa-b0a7-086c87a9f38d/user_impersonation"]
+        }
+    },
+    "authSchemas": ["OAuth2"],
+    "tags": [
+        "asc",
+        "recording-insights",
+        "compliance",
+        "recording"
+    ],
+    "versionName": "original",
+    "customProperties": { "x-ms-preview": false }
+}
