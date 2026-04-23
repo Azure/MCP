@@ -1,0 +1,50 @@
+{
+  "name": "infa-cdgc-mcp-server",
+  "title": "Informatica CDGC Metadata Search MCP Server",
+  "summary": "Informatica's MCP server exposing CLAIRE-powered CDGC metadata for AI agents to perform semantic asset search, lineage, and compliance checks via standardized MCP tools and natural language prompts",
+  "description": "Informatica's MCP server exposing CLAIRE-powered CDGC metadata for AI agents to perform semantic asset search, lineage, and compliance checks via standardized MCP tools and natural language prompts.",
+  "vendor": "Partner",
+  "kind": "mcp",
+  "remote": "https://{pod-name}/mcp-servers/public/cdgcsearchmetadata",
+  "icon": "https://www.informatica.com/content/dam/informatica-com/en/image/misc/informatica-logo.png",
+  "externalDocumentation": {
+    "title": "Informatica documentation",
+    "url": "https://onlinehelp.informatica.com/IICS/prod/agentic-ui/en/index.htm#page/dd-aiae-mcp-servers/Available_MCP_servers.html"
+  },
+  "license": {
+    "name": "User License Terms",
+    "url": "https://www.informatica.com/legal/informatica-license-services-agreement.html"
+  },
+  "visibility": "true",
+  "useCases": [
+    {
+      "name": "Discover Enterprise Assets",
+      "description": "Search the Informatica Data Catalog for tables, files, and reports based on business terms or technical names."
+    },
+    {
+      "name": "Retrieve Asset Details",
+      "description": "Fetch comprehensive metadata including physical paths, system types, and detailed business descriptions."
+    },
+    {
+      "name": "Governance Auditing",
+      "description": "Quickly identify the business owner, classification (PII, Sensitive), and certification status of any data asset before it is used."
+    }
+  ],
+  "categories": "Integration",
+  "tags": ["Metadata", "CDGC", "Catalog"],
+  "supportContactInfo": {
+    "name": "Informatica Support",
+    "email": "support@informatica.com"
+  },
+  "versionName": "original",
+  "securitySchemes": {
+    "idmcOauth":{
+      "type": "oauth2",
+      "description": "Authenticate with Informatica OAuth2 authorization server. The client credential flow is intended for Machine to Machine communication and there is no separate Authorization URL required. The same token url can be used for both first time token generation and refreshing token.",
+      "flows": ["clientCredentials"],
+      "tokenUrl": "https://{pod-name}/authz-service/oauth/token",
+      "authorizationUrl": "https://{pod-name}/authz-service/oauth/token",
+      "scopes":[]
+      }
+    }
+}
