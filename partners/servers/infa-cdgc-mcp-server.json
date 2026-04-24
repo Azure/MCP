@@ -41,7 +41,7 @@
     "x-ms-preview": false
   },
   "securitySchemes": {
-    "idmcOauth": {
+    "idmcOauthCdgc": {
       "type": "oauth2",
       "description": "Authenticate with Informatica OAuth2 authorization server using the client credentials flow.",
       "flows": ["clientCredentials"],
