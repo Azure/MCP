@@ -37,14 +37,17 @@
     "email": "support@informatica.com"
   },
   "versionName": "original",
+  "customProperties": {
+    "x-ms-preview": false
+  },
   "securitySchemes": {
-    "idmcOauth":{
+    "idmcOauth": {
       "type": "oauth2",
-      "description": "Authenticate with Informatica OAuth2 authorization server. The client credential flow is intended for Machine to Machine communication and there is no separate Authorization URL required. The same token url can be used for both first time token generation and refreshing token.",
+      "description": "Authenticate with Informatica OAuth2 authorization server using the client credentials flow.",
       "flows": ["clientCredentials"],
-      "tokenUrl": "https://{pod-name}/authz-service/oauth/token",
-      "authorizationUrl": "https://{pod-name}/authz-service/oauth/token",
-      "scopes":[]
-      }
+      "tokenUrl": "https://dm-us.informaticacloud.com/authz-service/oauth/token",
+      "authorizationUrl": "https://dm-us.informaticacloud.com/authz-service/oauth/token",
+      "scopes": []
     }
+  }
 }
