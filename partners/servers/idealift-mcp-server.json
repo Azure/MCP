@@ -1,0 +1,84 @@
+{
+  "name": "idealift-mcp-server",
+  "title": "IdeaLift",
+  "summary": "Decision intelligence for product teams: capture ideas, attach external signals, log decisions, and trace outcomes over time.",
+  "description": "IdeaLift is a decision intelligence platform for product and engineering teams. It captures ideas and feedback from across your stack (Slack, Discord, Teams, Jira, Linear, email, meetings), correlates them with external signals, and logs the decisions your team makes so you can trace outcomes and learn from past calls. The MCP server lets agents query ideas, signals, and decision history, log new decisions with per-user attribution, and create relationships between ideas. Write operations respect the calling user's workspace role; decision log entries populate actorEmail from the OBO token so every agent action is auditable alongside human-driven decisions.",
+  "kind": "mcp",
+  "license": {
+    "name": "Proprietary",
+    "url": "https://idealift.app/terms"
+  },
+  "icon": "https://avatars.githubusercontent.com/Startvest-LLC?s=64",
+  "externalDocumentation": {
+    "title": "IdeaLift MCP Integration Guide",
+    "url": "https://idealift.app/blog/microsoft-foundry-entra-obo-mcp-integration"
+  },
+  "useCases": [
+    {
+      "name": "Per-user decision audit",
+      "description": "Foundry agents log decisions on behalf of the signed-in user. actorEmail and actorName populate from the OBO token so agent-driven decisions appear in the same audit UI as human-driven ones, attributed to the specific person who triggered the action."
+    },
+    {
+      "name": "Idea triage from natural language",
+      "description": "Agents can query the workspace's idea backlog with natural language (query_ideas) or structured filters (list_ideas, search_ideas). Useful for weekly planning conversations, ad-hoc stakeholder questions, and feeding other agents with prioritized context."
+    },
+    {
+      "name": "External signal correlation",
+      "description": "list_signals and get_signal_analytics expose customer feedback aggregated from Slack, Discord, Twitter, support tickets, and meeting notes. Agents can attach relevant signals to ideas (attach_signal) to strengthen the evidence behind a decision."
+    },
+    {
+      "name": "Decision history traceability",
+      "description": "get_decision_history returns the full lifecycle of an idea including who decided what, when, and why. Useful for agent-driven retros and for answering 'why did we decide X' questions without digging through Slack."
+    },
+    {
+      "name": "Cross-team relationship mapping",
+      "description": "create_relationship and list_relationships let agents build and query links between ideas (related_to, alternative_to, superseded_by, merged_into). Supports agents that need to reason about how initiatives connect across teams."
+    }
+  ],
+  "tags": [
+    "decision-intelligence",
+    "product-management",
+    "idea-management",
+    "customer-feedback",
+    "audit-log",
+    "product-analytics"
+  ],
+  "vendor": "Partner",
+  "categories": "Project Management, Productivity",
+  "remote": "https://idealift-app.azurewebsites.net/api/mcp",
+  "remoteType": "streamable-http",
+  "securitySchemes": {
+    "entra_obo": {
+      "type": "oauth2",
+      "description": "Microsoft Entra ID On-Behalf-Of for per-user scope. Recommended.",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
+      "tokenUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+      "scopes": [
+        "api://7734d6d3-8257-4a2b-a35e-1702ddbeeb6f/mcp.workspace"
+      ],
+      "flows": [
+        "authorizationCode"
+      ]
+    },
+    "bearer_api_key": {
+      "type": "http",
+      "description": "IdeaLift API key issued from the workspace settings. Workspace-wide scope.",
+      "scheme": "bearer",
+      "bearerFormat": "il_live_..."
+    }
+  },
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "audience": "api://7734d6d3-8257-4a2b-a35e-1702ddbeeb6f",
+  "versionName": "v1",
+  "versionTitle": "IdeaLift MCP v1 (Foundry OBO GA)",
+  "supportContactInfo": {
+    "name": "IdeaLift Support",
+    "email": "tom@startvest.ai",
+    "url": "https://idealift.app/support"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
