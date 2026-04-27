@@ -1,0 +1,53 @@
+{
+  "name": "infa-cav-mcp-server",
+  "title": "Informatica Cloud Address Verification MCP Server",
+  "summary": "Informatica's MCP server providing data quality assurance tools for AI agents to validate, standardize, and enrich global addresses in real-time",
+  "description": "Informatica's MCP server providing data quality assurance tools for AI agents to validate, standardize, and enrich global addresses in real-time",
+  "vendor": "Partner",
+  "kind": "mcp",
+  "remote": "https://{pod-name}/mcp-servers/public/dqverifyaddress",
+  "icon": "https://www.informatica.com/content/dam/informatica-com/en/image/misc/informatica-logo.png",
+  "externalDocumentation": {
+    "title": "Informatica documentation",
+    "url": "https://onlinehelp.informatica.com/IICS/prod/agentic-ui/en/index.htm#page/dd-aiae-mcp-servers/Available_MCP_servers.html"
+  },
+  "license": {
+    "name": "User License Terms",
+    "url": "https://www.informatica.com/legal/informatica-license-services-agreement.html"
+  },
+  "visibility": "true",
+  "useCases": [
+    {
+      "name": "Validate Real-Time Input",
+      "description": "Verify and standardize physical addresses instantly during customer onboarding or data entry workflows."
+    },
+    {
+      "name": "Convert Incomplete Strings",
+      "description": "Transform messy or fragmented address inputs into clean, professional postal formats."
+    },
+    {
+      "name": "Standardize Global Formats",
+      "description": "Automatically apply correct international postal rules for country-specific formatting (e.g., ZIP codes, provinces)."
+    }
+  ],
+  "categories": "Integration",
+  "tags": ["Address", "Data quality"],
+  "supportContactInfo": {
+    "name": "Informatica Support",
+    "email": "support@informatica.com"
+  },
+  "versionName": "original",
+  "customProperties": {
+    "x-ms-preview": false
+  },
+  "securitySchemes": {
+    "idmcOauthCav": {
+      "type": "oauth2",
+      "description": "Authenticate with Informatica OAuth2 authorization server using the client credentials flow.",
+      "flows": ["clientCredentials"],
+      "tokenUrl": "https://dm-us.informaticacloud.com/authz-service/oauth/token",
+      "authorizationUrl": "https://dm-us.informaticacloud.com/authz-service/oauth/token",
+      "scopes": []
+    }
+  }
+}
