@@ -60,7 +60,7 @@
         "authorizationCode"
       ]
     },
-    "bearer_api_key": {
+    "bearer-api-key": {
       "type": "http",
       "description": "IdeaLift API key issued from the workspace settings. Workspace-wide scope.",
       "scheme": "bearer",
