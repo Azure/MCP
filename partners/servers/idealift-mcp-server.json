@@ -48,7 +48,7 @@
   "remote": "https://idealift-app.azurewebsites.net/api/mcp",
   "remoteType": "streamable-http",
   "securitySchemes": {
-    "entra_obo": {
+    "entra-obo": {
       "type": "oauth2",
       "description": "Microsoft Entra ID On-Behalf-Of for per-user scope. Recommended.",
       "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
