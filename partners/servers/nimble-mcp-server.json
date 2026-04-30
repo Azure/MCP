@@ -1,0 +1,75 @@
+{
+  "name": "nimble-mcp",
+  "title": "Nimble MCP",
+  "summary": "Nimble MCP connects AI agents to the live web. 18 tools across search, extract, map, crawl, and autonomous Web Search Agents. The public web as a queryable data source for AI workflows.",
+  "description": "Nimble MCP connects your AI agents to the live web. Rather than trusting search algorithms blindly, engineers use Nimble to customize how their agents autonomously search the web, pinpoint the precise data they need, and extract it in structured form. Under the hood, Nimble orchestrates specialized Web Search Agents across five layers: browsing, parsing, data processing, validation, and delivery. Every result is cross-checked before it reaches your agent. The output is structured JSON, not raw text that needs parsing. One install. 18 tools. The entire public web as a queryable data source for AI workflows. Six capabilities: Search (multi-engine with focus modes for news, shopping, social, and more), Extract (clean content from any URL as markdown, plain text, or HTML), Map (URL discovery via links and sitemaps), Crawl (filtered multi-page with progress tracking), Agents (pre-built and custom Web Search Agents), Tasks (async polling for long-running jobs).",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "categories": "Web",
+  "license": {
+    "name": "Nimble Terms of Use",
+    "url": "https://www.nimbleway.com/terms-of-use"
+  },
+  "icon": "https://avatars.githubusercontent.com/u/94446617?s=200&v=4",
+  "externalDocumentation": {
+    "title": "Nimble MCP Docs",
+    "url": "https://docs.nimbleway.com/integrations/mcp-server/mcp-server"
+  },
+  "remote": "https://mcp.nimbleway.com/mcp",
+  "remoteType": "streamable-http",
+  "visibility": "true",
+  "tags": [
+    "web-search",
+    "web-extraction",
+    "web-crawl",
+    "url-extract",
+    "site-map",
+    "agentic",
+    "web-data",
+    "rag",
+    "real-time"
+  ],
+  "useCases": [
+    {
+      "name": "Competitive pricing intelligence",
+      "description": "Monitor competitor prices across thousands of product pages in real time. Feed structured price and availability data directly into your data pipelines."
+    },
+    {
+      "name": "Digital shelf analytics",
+      "description": "Track product placement, reviews, ratings, and content changes across major retailers. Build dashboards that refresh with live data."
+    },
+    {
+      "name": "Brand monitoring",
+      "description": "Search news, social media, and review sites for brand mentions. Get structured sentiment and source data, not just links."
+    },
+    {
+      "name": "Alternative data for finance",
+      "description": "Extract SEC filings, job postings, company signals, and market indicators from the live web. Ground financial models in current data."
+    },
+    {
+      "name": "Deep research for RAG",
+      "description": "Give retrieval-augmented generation pipelines access to fresh web content. Search, extract full pages, and feed clean markdown into vector stores."
+    },
+    {
+      "name": "AI agent grounding",
+      "description": "Any agent that needs to answer questions about the real world can search the web, extract pages, or crawl entire sites, all through standard MCP tool calls."
+    }
+  ],
+  "securitySchemes": {
+    "nimbleOauth2": {
+      "type": "oauth2",
+      "description": "OAuth 2.1 (authorization code with PKCE) for delegated user authentication.",
+      "authorizationUrl": "https://api.nimbleway.com/authorize",
+      "tokenUrl": "https://api.nimbleway.com/oauth/token",
+      "refreshUrl": "https://api.nimbleway.com/oauth/token",
+      "scopes": ["openid", "nimble:read", "offline_access"],
+      "flows": ["authorizationCode"]
+    }
+  },
+  "versionName": "Original",
+  "supportContactInfo": {
+    "name": "Nimble Support",
+    "email": "support@nimbleway.com"
+  },
+  "customProperties": { "x-ms-preview": false }
+}
