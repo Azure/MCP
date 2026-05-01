@@ -18,7 +18,7 @@
   "useCases": [
     {
       "name": "Genie Q&A",
-      "description": "The Genie MCP server lets AI agents connect to Genie spaces so users can ask natural language questions and get specialized answers from their data easily. For example, say a user wants to understand the average monthly revenue. They can ask the question of their Genie space, the space will translate the question into SQL and return the response."
+      "description": "The Genie MCP server lets AI agents connect to Genie spaces so users can ask natural language questions and get specialized answers from their data easily. For example, say a user wants to understand the average monthly revenue. They can ask the question of their Genie space, the space will translate the question into SQL and return the response"
     }
   ],
   "categories": "Productivity",
