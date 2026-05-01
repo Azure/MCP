@@ -19,7 +19,7 @@
   "useCases": [
     {
       "name": "Validate Real-Time Input",
-      "description": "Verify and standardize physical addresses instantly during customer onboarding or data entry workflows."
+      "description": "Verify and standardize physical addresses instantly during customer onboarding or data entry workflows"
     },
     {
       "name": "Convert Incomplete Strings",
