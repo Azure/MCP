@@ -39,7 +39,6 @@
             "scopes": ["api://teams.asc-recording.app/a22e0150-3615-46aa-b0a7-086c87a9f38d/user_impersonation"]
         }
     },
-    "authSchemas": ["OAuth2"],
     "tags": [
         "asc",
         "recording-insights",
