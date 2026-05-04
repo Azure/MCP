@@ -19,7 +19,7 @@
   "useCases": [
     {
       "name": "Discover Enterprise Assets",
-      "description": "Search the Informatica Data Catalog for tables, files, and reports based on business terms or technical names."
+      "description": "Search the Informatica Data Catalog for tables, files, and reports based on business terms or technical names"
     },
     {
       "name": "Retrieve Asset Details",
