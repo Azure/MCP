@@ -1,0 +1,106 @@
+{
+  "name": "browserbase-mcp-server",
+  "title": "Browserbase MCP Server",
+  "summary": "Cloud browser automation for AI agents with hosted MCP access for navigation, actions, observation, and extraction.",
+  "description": "Browserbase MCP Server gives AI agents a hosted browser through Model Context Protocol. It lets agents start or reuse Browserbase sessions, navigate pages, perform natural-language actions, observe actionable elements, and extract structured information from the web. The hosted Browserbase endpoint uses Streamable HTTP and Browserbase also provides an open-source npm package for self-hosted deployments.",
+  "kind": "mcp",
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://github.com/browserbase/mcp-server-browserbase/blob/main/LICENSE"
+  },
+  "icon": "https://avatars.githubusercontent.com/browserbase?s=64",
+  "externalDocumentation": {
+    "title": "Browserbase MCP Docs",
+    "url": "https://docs.browserbase.com/integrations/mcp/introduction"
+  },
+  "repository": {
+    "url": "https://github.com/browserbase/mcp-server-browserbase",
+    "source": "https://github.com/browserbase/mcp-server-browserbase"
+  },
+  "packages": [
+    {
+      "registry_name": "npm",
+      "registry_base_url": "https://www.npmjs.com",
+      "name": "@browserbasehq/mcp",
+      "version": "latest",
+      "runtime_hint": "npx",
+      "runtime_arguments": [
+        {
+          "type": "positional",
+          "value": "@browserbasehq/mcp@latest",
+          "is_required": true,
+          "is_secret": false,
+          "format": "string"
+        }
+      ],
+      "environment_variables": [
+        {
+          "name": "BROWSERBASE_API_KEY",
+          "description": "Browserbase API key used by the self-hosted MCP server.",
+          "is_required": true,
+          "is_secret": true
+        },
+        {
+          "name": "BROWSERBASE_PROJECT_ID",
+          "description": "Optional Browserbase project ID for self-hosted usage.",
+          "is_required": false,
+          "is_secret": false
+        },
+        {
+          "name": "GEMINI_API_KEY",
+          "description": "Optional Gemini API key when configuring the self-hosted server with Gemini directly.",
+          "is_required": false,
+          "is_secret": true
+        }
+      ]
+    }
+  ],
+  "remote": "https://mcp.browserbase.com/mcp",
+  "remoteType": "streamable-http",
+  "useCases": [
+    {
+      "name": "Website navigation and interaction",
+      "description": "Drive a real browser to open pages, click UI elements, fill forms, and complete multi-step website workflows from an MCP client."
+    },
+    {
+      "name": "Structured web extraction",
+      "description": "Extract page content and structured data from websites for research, QA, and downstream agent workflows."
+    },
+    {
+      "name": "Session-based browser automation",
+      "description": "Create or reuse Browserbase sessions so agents can maintain state across navigation and action sequences."
+    },
+    {
+      "name": "Remote browser tools for AI agents",
+      "description": "Provide hosted browser automation over Streamable HTTP without requiring users to run local browser infrastructure."
+    }
+  ],
+  "tags": [
+    "browser-automation",
+    "web",
+    "streamable-http",
+    "stagehand",
+    "remote-browser",
+    "data-extraction"
+  ],
+  "vendor": "Partner",
+  "visibility": "true",
+  "categories": "Web",
+  "securitySchemes": {
+    "browserbaseApiKey": {
+      "type": "apiKey",
+      "description": "Authenticate to the hosted Browserbase MCP endpoint with a Browserbase API key passed as the browserbaseApiKey query parameter.",
+      "in": "query",
+      "name": "browserbaseApiKey"
+    }
+  },
+  "versionName": "original",
+  "supportContactInfo": {
+    "name": "Browserbase Support",
+    "email": "support@browserbase.com",
+    "url": "https://portal.usepylon.com/browserbase"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
