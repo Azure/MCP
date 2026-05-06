@@ -1,0 +1,42 @@
+{
+  "name": "browser-automation",
+  "title": "Browser Automation",
+  "summary": "Automate browser-based workflows such as searching, navigating, filling forms, and booking.",
+  "description": "Automate browser-based workflows such as searching, navigating, filling forms, and booking.",
+  "kind": "mcp",
+  "vendor": "Microsoft",
+  "license": {
+    "name": "Microsoft Software License",
+    "url": "https://www.microsoft.com/licensing"
+  },
+  "icon": "https://placeholder.example.com/icons/browser-automation.png",
+  "externalDocumentation": {
+    "title": "Browser Automation Tool Documentation",
+    "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/agents/how-to/tools/browser-automation?view=foundry"
+  },
+  "remote": "https://placeholder.mcp.microsoft.com/browser-automation",
+  "supportContactInfo": {
+    "name": "Microsoft Support",
+    "url": "https://support.microsoft.com"
+  },
+  "visibility": "public",
+  "categories": "Developer Tools",
+  "tags": ["built-in"],
+  "packages": [],
+  "useCases": [
+    {
+      "name": "Browser Interaction",
+      "description": "Perform real-world browser tasks through natural language prompts."
+    }
+  ],
+  "securitySchemes": {
+    "storedCredentials": {
+      "type": "http",
+      "description": "Authenticate using stored credentials.",
+      "scheme": "bearer",
+      "bearerFormat": "Stored Credentials"
+    }
+  },
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": true }
+}
