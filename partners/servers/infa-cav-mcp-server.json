@@ -1,12 +1,12 @@
 {
   "name": "infa-cav-mcp-server",
   "title": "Informatica Cloud Address Verification MCP Server",
-  "summary": "Informatica's MCP server providing data quality assurance tools for AI agents to validate, standardize, and enrich global addresses in real-time",
-  "description": "Informatica's MCP server providing data quality assurance tools for AI agents to validate, standardize, and enrich global addresses in real-time",
+  "summary": "Informatica (A Salesforce company)'s MCP server providing data quality assurance tools for AI agents to validate, standardize, and enrich global addresses in real-time",
+  "description": "Informatica (A Salesforce company)'s MCP server providing data quality assurance tools for AI agents to validate, standardize, and enrich global addresses in real-time",
   "vendor": "Partner",
   "kind": "mcp",
   "remote": "https://{pod-name}/mcp-servers/public/dqverifyaddress",
-  "icon": "https://www.informatica.com/content/dam/informatica-com/en/image/misc/informatica-logo.png",
+  "icon": "https://www.informatica.com/content/dam/informatica-com/en/informatica-logo.svg",
   "externalDocumentation": {
     "title": "Informatica documentation",
     "url": "https://onlinehelp.informatica.com/IICS/prod/agentic-ui/en/index.htm#page/dd-aiae-mcp-servers/Available_MCP_servers.html"
@@ -19,7 +19,7 @@
   "useCases": [
     {
       "name": "Validate Real-Time Input",
-      "description": "Verify and standardize physical addresses instantly during customer onboarding or data entry workflows"
+      "description": "Verify and standardize physical addresses instantly during customer onboarding or data entry workflows."
     },
     {
       "name": "Convert Incomplete Strings",
