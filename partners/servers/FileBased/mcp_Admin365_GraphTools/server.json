@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.microsoft/workiq-admin365_graphtools",
+  "title": "Admin365GraphTools",
+  "description": "MCP server providing M365 Admin Tools through Graph API\u0027s",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agent365.svc.cloud.microsoft/agents/tenants/{tenant_id}/servers/mcp_Admin365_GraphTools",
+      "variables": {
+        "tenant_id": {
+          "description": "Microsoft Entra tenant ID",
+          "isRequired": true
+        }
+      }
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/bap-microsoft/MCP-Platform/",
+    "source": "github"
+  }
+}
