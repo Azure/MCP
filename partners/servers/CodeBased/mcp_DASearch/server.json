@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.microsoft/workiq-dasearch",
+  "title": "M365 Copilot Agent Directory",
+  "description": "MCP Server containing a tool to discover Microsoft 365 Copilot agents",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agent365.svc.cloud.microsoft/agents/tenants/{tenant_id}/servers/mcp_DASearch",
+      "variables": {
+        "tenant_id": {
+          "description": "Microsoft Entra tenant ID",
+          "isRequired": true
+        }
+      }
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/bap-microsoft/MCP-Platform/",
+    "source": "github"
+  }
+}
