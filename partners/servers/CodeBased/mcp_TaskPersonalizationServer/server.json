@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.microsoft/workiq-taskpersonalizationserver",
+  "title": "Task Personalization MCP Server",
+  "description": "MCP Server for managing Trigger Definitions that filter and enrich events (Email, Document...",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agent365.svc.cloud.microsoft/agents/tenants/{tenant_id}/servers/mcp_TaskPersonalizationServer",
+      "variables": {
+        "tenant_id": {
+          "description": "Microsoft Entra tenant ID",
+          "isRequired": true
+        }
+      }
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/bap-microsoft/MCP-Platform/",
+    "source": "github"
+  }
+}
