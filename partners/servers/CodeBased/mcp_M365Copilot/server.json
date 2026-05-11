@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.microsoft/workiq-m365copilot",
+  "title": "Work IQ Copilot MCP Server",
+  "description": "Microsoft 365 content search server for internal company resources (documents, PDFs,...",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agent365.svc.cloud.microsoft/agents/tenants/{tenant_id}/servers/mcp_M365Copilot",
+      "variables": {
+        "tenant_id": {
+          "description": "Microsoft Entra tenant ID",
+          "isRequired": true
+        }
+      }
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/bap-microsoft/MCP-Platform/",
+    "source": "github"
+  }
+}
