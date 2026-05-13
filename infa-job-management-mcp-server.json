@@ -1,0 +1,63 @@
+{
+  "name": "infa-job-management-mcp-server",
+  "title": "Informatica Job Management MCP Server",
+  "summary": "Provides the capability to orchestrate, monitor, and manage the lifecycle of data integration tasks leveraging IDMC runtime APIs",
+  "description": "Provides the capability to orchestrate, monitor, and manage the lifecycle of data integration tasks leveraging IDMC runtime APIs.",
+  "vendor": "Partner",
+  "kind": "mcp",
+  "remote": "https://{pod-name}/mcp-servers/public/jobmanagement",
+  "icon": "https://www.informatica.com/content/dam/informatica-com/en/informatica-logo.svg",
+  "externalDocumentation": {
+    "title": "Informatica documentation",
+    "url": "https://onlinehelp.informatica.com/IICS/prod/agentic-ui/en/index.htm#page/dd-aiae-mcp-servers/Available_MCP_servers.html"
+  },
+  "license": {
+    "name": "User License Terms",
+    "url": "https://www.informatica.com/legal/informatica-license-services-agreement.html"
+  },
+  "visibility": "true",
+  "useCases": [
+    {
+      "name": "Self-Healing Pipelines",
+      "description": "Allows AI agents to monitor a failed job and automatically attempt a restart or trigger a notification based on the error log."
+    },
+    {
+      "name": "Event-Driven Integration",
+      "description": "Enables AI agents to trigger specific data loads automatically when a business event (like a new file arrival) is detected."
+    },
+    {
+      "name": "Workflow Monitoring",
+      "description": "Allows users to ask the AI for a 'status report' on their daily data loads without logging into the IDMC console."
+    },
+    {
+      "name": "Resource Optimization",
+      "description": "Enables AI agents to identify and stop long-running or stalled jobs that are consuming excessive Secure Agent resources."
+    }
+  ],
+  "categories": "Integration",
+  "tags": [
+    "Jobs",
+    "CDI",
+    "Runtime"
+  ],
+  "supportContactInfo": {
+    "name": "Informatica Support",
+    "email": "support@informatica.com"
+  },
+  "versionName": "original",
+  "customProperties": {
+    "x-ms-preview": false
+  },
+  "securitySchemes": {
+    "idmcOauthJobManagement": {
+      "type": "oauth2",
+      "description": "Authenticate with Informatica OAuth2 authorization server using the client credentials flow.",
+      "flows": [
+        "clientCredentials"
+      ],
+      "tokenUrl": "https://dm-us.informaticacloud.com/authz-service/oauth/token",
+      "authorizationUrl": "https://dm-us.informaticacloud.com/authz-service/oauth/token",
+      "scopes": []
+    }
+  }
+}
