@@ -1,7 +1,7 @@
 {
   "name": "ms-sentinel-triagev2",
   "title": "Microsoft Sentinel Triage",
-  "summary": "The Triage tool collection in the Microsoft Sentinel MCP server provides security analysts and AI agents with direct access to Microsoft Defender for Endpoint and Microsoft Graph Security APIs for incident triage, investigation, and threat hunting.",
+  "summary": "Triage tools that expose Defender for Endpoint and Graph Security APIs for investigation and threat hunting.",
   "description": "The Triage tool collection in the Microsoft Sentinel MCP server provides security analysts and AI agents with direct access to Microsoft Defender for Endpoint and Microsoft Graph Security APIs for incident triage, investigation, and threat hunting. Retrieve machine details, file intelligence, IP reputation, user-related alerts, vulnerability data, investigation status, remediation activities, threat indicators, and run advanced hunting queries — all from a single managed MCP endpoint. Learn more: https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-triage-tool",
   "vendor": "Microsoft",
   "kind": "mcp",
