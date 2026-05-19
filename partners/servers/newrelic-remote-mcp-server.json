@@ -1,0 +1,75 @@
+{
+  "name": "newrelic-remote-mcp",
+  "title": "New Relic",
+  "summary": "New Relic MCP server provides one consistent way to get rich context and powerful tools from New Relic's observability platform.",
+  "description": "New Relic MCP server allows your AI agents within supported development tools to have one consistent way to connect to and retrieve rich context and powerful tools from New Relic's observability platform.",
+  "kind": "mcp",
+  "license": {
+    "name": "Terms of Service Agreeement",
+    "url": "https://newrelic.com/termsandconditions/terms"
+  },
+  "externalDocumentation": {
+    "title": "New Relic MCP Documentation",
+    "url": "https://docs.newrelic.com/docs/agentic-ai/mcp/overview/"
+  },
+  "repository": {
+    "url": "https://github.com/newrelic/mcp-server",
+    "source": "github"
+  },
+  "remote": "https://mcp.newrelic.com/mcp/",
+  "versionName": "original",
+  "remoteType": "streamable-http",
+  "packages": [],
+  "icon": "https://github.com/newrelic/mcp-server/blob/main/New_Relic_Logo.svg",
+  "tags": ["Entity and Account Management", "Data Access", "Alerts and Monitoring", "Alert Event Response", "Performance Analytics", "Advanced Analysis"],
+  "categories": "Monitoring & Diagnostics",
+  "useCases": [
+     {
+      "name": "Natural language queries",
+      "description": "Convert a natural language request into an NRQL query, execute it, and return results."
+    },
+    {
+      "name": "Deployment Impact Analysis",
+      "description": "Analyze the performance impact of a deployment on a specific entity"
+    },
+    {
+      "name": "Alert Insights Analysis",
+      "description": "Generate an alert intelligence analysis report for a specific issue."
+    },
+    {
+      "name": "End-user Impact Analysis",
+      "description": "Generate an end-user impact analysis report for a specific issue."
+    },
+    {
+      "name": "Application Log Analysis",
+      "description": "Analyze application logs to identify error patterns, anomalous behavior, and recurring issues."
+    },
+    {
+      "name": "Golden Metrics Analysis",
+      "description": "Analyze golden metrics (key health indicators: throughput, response time, error rate, and saturation)."
+    },
+    {
+      "name": "Transactions Analysis",
+      "description": "Analyze transactions for a specific entity within a time window, identifying slow and error-prone transactions."
+    },
+    {
+      "name": "Get/List/Search for something",
+      "description": "Get a specific entity or dashboard, list a variety of data (accounts, alerts, dashboards, entities, events, logs, etc.) or search for entities or incidents based on a key word."
+    }
+  ],
+  "vendor": "Partner",
+  "visibility": "true",
+  "securitySchemes": {
+    "newrelic-api-key": {
+      "type": "http",
+      "description": "Authenticate with New Relic using a User API Key.",
+      "scheme": "bearer",
+      "bearerFormat": "NEW_RELIC_API_KEY"
+    }
+  },
+  "supportContactInfo": {
+    "name": "New Relic Support",
+    "url": "https://support.newrelic.com/s/"
+  },
+  "customProperties": { "x-ms-preview": true }
+}
