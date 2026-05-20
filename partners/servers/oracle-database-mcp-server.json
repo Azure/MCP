@@ -1,0 +1,62 @@
+{
+  "name": "oraclecloud-database-mcp-server",
+  "title": "Oracle",
+  "summary": "Securely access Oracle AI Database through the Model Context Protocol (MCP).  Provides built-in tools for running SQL and PL/SQL against the database, also support custom Tools, and ability to access and execute pre-defined SQL Reports. Access to each tool is managed through application roles assigned to users and groups.",
+  "description": "Securely access Oracle AI Database through the Model Context Protocol (MCP).  Provides built-in tools for running SQL and PL/SQL against the database, also support custom Tools, and ability to access and execute pre-defined SQL Reports. Access to each tool is managed through application roles assigned to users and groups.",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "license": {
+    "name": "User License Terms",
+    "url": "https://www.oracle.com/contracts/docs/cloud_csa_online_v062223_us_eng.pdf"
+  },
+  "icon": "https://www.oracle.com/img/tech/dbcs-logo.png",
+  "externalDocumentation": {
+    "url": "https://docs.oracle.com/en-us/iaas/database-tools/doc/working-database-tools-mcp-server.html",
+    "title": "Working With the Database Tools Model Context Protocol (MCP) Server"
+  },
+
+  "remote": "https://mcp.dbtools.{CLOUD-REGION}.oci.oraclecloud.com/20250830/databaseToolsMcpServers/{OCID}/actions/invoke",
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "email": "jeff.d.smith@oracle.com"},
+  "visibility": "true",
+  "categories": "Databases",
+  "tags": ["Knowledge"],
+  "useCases": [
+  {
+    "name": "Business analytics & reporting",
+    "description": "Run pre-defined SQL Reports, plus NL2SQL and ad-hoc SQL, so business users get answers from Oracle AI Database without writing queries themselves."
+  },
+  {
+    "name": "Application development",
+    "description": "Help developers design, write, and test SQL and PL/SQL against Oracle AI Database, and expose reusable database logic as custom Tools for AI agents."
+  },
+  {
+    "name": "Database operations & administration",
+    "description": "Let DBAs and DevOps engineers inspect schema, check sessions, diagnose performance, and run controlled administrative SQL through role-managed tool access."
+  }
+],
+"securitySchemes": {
+  "oauthIam": {
+    "type": "oauth2",
+    "description": "OAuth 2.0 via OCI Identity and Access Management (IAM) Identity Domains. MCP clients obtain a short-lived access token from the customer's Identity Domain and pass it to the MCP Server as `Authorization: Bearer <token>`. Per-tool and per-report authorization is enforced through application roles assigned to users and groups in IAM.",
+    "flows": {
+      "authorizationCode": {
+        "authorizationUrl": "https://{IDENTITY_DOMAIN_URL}/oauth2/v1/authorize",
+        "tokenUrl": "https://{IDENTITY_DOMAIN_URL}/oauth2/v1/token",
+        "scopes": {
+          "{MCP_SERVER_SCOPE}": "Invoke tools and run SQL Reports on the OCI Database Tools MCP Server on behalf of the signed-in user"
+        }
+      },
+      "clientCredentials": {
+        "tokenUrl": "https://{IDENTITY_DOMAIN_URL}/oauth2/v1/token",
+        "scopes": {
+          "{MCP_SERVER_SCOPE}": "Invoke tools and run SQL Reports on the OCI Database Tools MCP Server for service-to-service callers"
+        }
+      }
+    }
+  }
+},
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": true }
+}
