@@ -1,0 +1,136 @@
+{
+  "name": "microsoft-mailtools-mcp-foundry",
+  "title": "Work IQ Mail MCP Server",
+  "summary": "Comprehensive tools for email operations including create, send, reply, update, delete, and...",
+  "description": "Comprehensive tools for email operations including create, send, reply, update, delete, and search messages with optional file attachments.",
+  "kind": "mcp",
+  "vendor": "Microsoft",
+  "externalDocumentation": {
+    "title": "Work IQ MCP Servers",
+    "url": "https://aka.ms/AboutWorkIQ"
+  },
+  "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_MailTools",
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://aka.ms/WorkIQToolsSupport"
+  },
+  "license": {
+    "name": "Work IQ",
+    "url": "https://aka.ms/AboutWorkIQ"
+  },
+  "visibility": "true",
+  "categories": "Mail",
+  "useCases": [
+    {
+      "name": "AddDraftAttachments",
+      "description": "Add attachments (URI) to an existing draft message."
+    },
+    {
+      "name": "UpdateDraft",
+      "description": "Update a draft\u0027s recipients, subject, body, sensitivity, and attachments. Supports both file URIs (OneDrive/SharePoint) and direct file uploads (base64-encoded). Recipients can be provided as names or email addresses - names will be automatically resolved to email addresses using Microsoft Graph."
+    },
+    {
+      "name": "SendEmailWithAttachments",
+      "description": "Create and send an email with optional attachments. Supports both file URIs (OneDrive/SharePoint) and direct file uploads (base64-encoded). Recipients can be provided as names or email addresses - names will be automatically resolved to email addresses using Microsoft Graph."
+    },
+    {
+      "name": "CreateDraftMessage",
+      "description": "Create a draft email in the signed-in user\u0027s mailbox without sending it. Recipients can be provided as names or email addresses - names will be automatically resolved to email addresses using Microsoft Graph."
+    },
+    {
+      "name": "GetMessage",
+      "description": "Get a message by ID from the signed-in user\u0027s mailbox."
+    },
+    {
+      "name": "UpdateMessage",
+      "description": "Update a message\u0027s mutable properties (subject, body, categories, importance, sensitivity)."
+    },
+    {
+      "name": "FlagEmail",
+      "description": "Update the flag status on an email message. Supports flagging, completing, or clearing a flag."
+    },
+    {
+      "name": "DeleteMessage",
+      "description": "Delete a message from the signed-in user\u0027s mailbox."
+    },
+    {
+      "name": "ReplyToMessage",
+      "description": "Reply to an existing message. By default creates a reply draft. Set sendImmediately=true to send the reply immediately instead of creating a draft. Recipients can be provided as names or email addresses - names will be automatically resolved using Microsoft Graph."
+    },
+    {
+      "name": "ReplyAllToMessage",
+      "description": "Reply-all to an existing message. By default creates a reply-all draft. Set sendImmediately=true to send the reply-all immediately instead of creating a draft. Recipients can be provided as names or email addresses - names will be automatically resolved using Microsoft Graph."
+    },
+    {
+      "name": "SendDraftMessage",
+      "description": "Send an existing draft message by ID."
+    },
+    {
+      "name": "SearchMessages",
+      "description": "If the user\u0027s prompt can be deterministically expressed as OData filters or using KQL search syntax, always try SearchMessagesQueryParameters first as it is faster and does not have indexing delays. Use SearchMessages only when the query requires interpretation, relevance ranking, or intent understanding that cannot be expressed deterministically using OData filters (e.g., \u0027most urgent emails from last week\u0027, \u0027messages needing my response\u0027). SearchMessages uses natural language powered by Microsoft 365 Copilot. Can be slow (up to 30 seconds) and recent messages may not appear immediately due to indexing delay."
+    },
+    {
+      "name": "SearchMessagesQueryParameters",
+      "description": "Searches the current user\u0027s mailbox for email messages by passing OData query parameters directly to https://graph.microsoft.com/v1.0/me/messages. This tool does not interpret, rank, or infer intent. IMPORTANT RESTRICTIONS: (1) $search performs keyword matching and supports KQL syntax (from:, to:, subject:, cc:, bcc:). It CANNOT be combined with $filter, $orderBy, or $skip. Use $search alone: \u0027?$search=\u0022from:alice subject:budget\u0022\u0027. (2) $filter supported properties: subject, from/emailAddress/address, sender/emailAddress/address, receivedDateTime, isRead, isDraft, hasAttachments, importance, parentFolderId, categories. NOT filterable: body, bodyPreview, displayName, folder. COLLECTION PROPERTIES NOT FILTERABLE: toRecipients, ccRecipients, bccRecipients are collections and cannot be used in $filter (neither direct path nor any()/all()). To search by recipient, use $search instead: \u0027?$search=\u0022to:user@example.com\u0022\u0027. (3) Combining $filter with $orderby may fail with \u0027InefficientFilter\u0027. Prefer $filter alone and sort results client-side. EXAMPLES: \u0027?$filter=isRead eq false\u0027, \u0027?$filter=receivedDateTime ge 2025-01-01T00:00:00Z\u0026$top=25\u0027. PAGING: When the response contains hasMoreResults: true, call this tool again passing the nextLink value as the nextLink parameter to retrieve the next page. "
+    },
+    {
+      "name": "GetAttachments",
+      "description": "Get all attachments from a message, returning attachment metadata (ID, name, size, type)."
+    },
+    {
+      "name": "DownloadAttachment",
+      "description": "Download attachment content from a message. Returns the content as base64-encoded string."
+    },
+    {
+      "name": "UploadAttachment",
+      "description": "Upload a small file attachment (less than 3 MB) to a message. File content must be base64-encoded."
+    },
+    {
+      "name": "UploadLargeAttachment",
+      "description": "Upload a large file attachment (3-150 MB) to a message using chunked upload. File content must be base64-encoded."
+    },
+    {
+      "name": "DeleteAttachment",
+      "description": "Delete an attachment from a message."
+    },
+    {
+      "name": "ReplyWithFullThread",
+      "description": "Reply (or reply-all) adding new recipients while preserving full quoted thread and optionally re-attaching original files. By default creates a reply draft. Set sendImmediately=true to send the reply immediately instead of creating a draft. Recipients can be provided as names or email addresses - names will be automatically resolved using Microsoft Graph."
+    },
+    {
+      "name": "ReplyAllWithFullThread",
+      "description": "Reply-all adding new recipients while preserving full quoted thread and optionally re-attaching original files. By default creates a reply-all draft. Set sendImmediately=true to send immediately."
+    },
+    {
+      "name": "ForwardMessageWithFullThread",
+      "description": "Forward a message adding new recipients and an optional intro comment while preserving full quoted thread; returns sensitivity label. Recipients can be provided as names or email addresses - names will be automatically resolved using Microsoft Graph."
+    },
+    {
+      "name": "ForwardMessage",
+      "description": "Forward an existing message, optionally adding a comment, recipients, and new attachments while preserving the quoted thread. Recipients can be provided as names or email addresses - names will be automatically resolved using Microsoft Graph."
+    }
+  ],
+  "securitySchemes": {
+    "mcpMailToolsOAuth2": {
+      "type": "oauth2",
+      "description": "Authenticate with Work IQ using OAuth2 authorization code flow with PKCE support.",
+      "flows": [
+        "authorizationCode"
+      ],
+      "authorizationUrl": "https://login.microsoftonline.com",
+      "tokenUrl": "https://login.microsoftonline.com",
+      "refreshUrl": "https://login.microsoftonline.com",
+      "scopes": [
+        "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1/McpServers.Mail.All"
+      ]
+    }
+  },
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
+  "versionName": "original",
+  "customProperties": {
+    "x-ms-preview": true
+  }
+}
