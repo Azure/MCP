@@ -71,7 +71,7 @@
       "authorizationUrl": "https://login.microsoftonline.com",
       "tokenUrl": "https://login.microsoftonline.com",
       "refreshUrl": "https://login.microsoftonline.com",
-      "scopes": ["fdcc1f02-fc51-4226-8753-f668596af7f7/.default"]
+      "scopes": ["fdcc1f02-fc51-4226-8753-f668596af7f7/WorkIQSettings.ReadWrite.All"]
     }
   },
   "authSchemas": ["OAuth2"],
