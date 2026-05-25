@@ -1,0 +1,82 @@
+{
+  "name": "microsoft-work-iq-mcp-frontier",
+  "title": "Work IQ MCP",
+  "summary": "Work IQ MCP Server exposes Microsoft Graph as MCP tools for AI agents. Learn more at https://aka.ms/AboutWorkIQ",
+  "description": "The Work IQ MCP Server exposes Microsoft Graph as a set of tools for AI agents — read, create, update, and delete M365 entities (mail, calendar, files, chats, and more), search and retrieve OpenAPI schemas, list available agents, and ask M365 Copilot or route requests to specific A2A agents. This feature is in preview and is part of the Work IQ tools, providing shared work intelligence and actions for agents. Availability and capabilities are subject to change. Learn more: https://aka.ms/AboutWorkIQ",
+  "kind": "mcp",
+  "vendor": "Microsoft",
+  "externalDocumentation": {
+    "title": "Work IQ MCP Servers",
+    "url": "https://aka.ms/AboutWorkIQ"
+  },
+  "remote": "https://workiq.svc.cloud.microsoft/mcp",
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://aka.ms/WorkIQToolsSupport"
+  },
+  "license": {
+    "name": "Work IQ",
+    "url": "https://aka.ms/AboutWorkIQ"
+  },
+  "visibility": "true",
+  "categories": "Productivity",
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/WorkIQMCPServer.png",
+  "useCases": [
+    {
+      "name": "Chat with M365 Copilot",
+      "description": "Send a question or request to Microsoft 365 Copilot, or trigger a specific A2A agent via agentId, and get its response. Supports multi-turn conversations with context preservation via conversationId, and accepts OneDrive or SharePoint file URLs as grounding context."
+    },
+    {
+      "name": "List Available Agents",
+      "description": "List available A2A agents that can be targeted via ask_work_iq. Returns agent identifiers, names, and providers so orchestrators can discover and route requests to specific agents."
+    },
+    {
+      "name": "Fetch M365 Entities",
+      "description": "Fetch one or more Microsoft Graph entities by relative path (e.g., /me/messages, /me/events/{id}). Returns JSON results for each requested path, enabling agents to read mail, calendar events, files, chats, and other M365 data."
+    },
+    {
+      "name": "Create M365 Entities",
+      "description": "Create new Microsoft Graph entities by POSTing JSON to a parent collection path (e.g., /me/messages, /me/events). Use get_schema_work_iq first to discover required fields. Returns the created entity JSON."
+    },
+    {
+      "name": "Update M365 Entities",
+      "description": "Update existing Microsoft Graph entities by PATCHing JSON to an entity path (e.g., /me/messages/{id}, /me/events/{id}). Only include fields you want to change. Returns the updated entity JSON."
+    },
+    {
+      "name": "Delete M365 Entities",
+      "description": "Delete a Microsoft Graph entity by relative path. Sends HTTP DELETE and returns confirmation with status code on success, enabling agents to clean up mail, events, or other M365 resources."
+    },
+    {
+      "name": "Execute M365 Actions",
+      "description": "Execute Microsoft Graph actions via HTTP POST (e.g., /me/sendMail, /me/messages/{id}/copy). Actions perform complex operations like sending mail, copying or moving items. Use get_schema_work_iq first to discover required parameters."
+    },
+    {
+      "name": "Call M365 Functions",
+      "description": "Call Microsoft Graph functions via HTTP GET (e.g., /me/calendar/getSchedule, /me/calendarView/delta). Functions compute or synthesize data rather than simply reading entities, such as getting schedules, running delta queries, or retrieving reminders."
+    },
+    {
+      "name": "Get OpenAPI Schema",
+      "description": "Get the OpenAPI schema for a Microsoft Graph operation, returning a self-contained YAML schema with request/response schemas inlined. Use to discover required fields before creating or updating entities. Supports graph-v1, SharePoint REST, and Dataverse backends."
+    },
+    {
+      "name": "Search API Paths",
+      "description": "Search for available Microsoft Graph API paths using a regex filter. Use to discover what entity paths are available before calling fetch, create, update, or delete operations. Supports graph-v1, SharePoint REST, and Dataverse backends."
+    }
+  ],
+  "securitySchemes": {
+    "workiqoauth2": {
+      "type": "oauth2",
+      "description": "Authenticate with Work IQ using OAuth2 authorization code flow with PKCE support.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://login.microsoftonline.com",
+      "tokenUrl": "https://login.microsoftonline.com",
+      "refreshUrl": "https://login.microsoftonline.com",
+      "scopes": ["ea9ffc3e-8a23-4a7d-836d-234d7c7565c1/McpServers.WorkIQ.All"]
+    }
+  },
+  "authSchemas": ["OAuth2"],
+  "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": true },
+  "tags": ["workiq"]
+}
