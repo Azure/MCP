@@ -71,11 +71,11 @@
       "authorizationUrl": "https://login.microsoftonline.com",
       "tokenUrl": "https://login.microsoftonline.com",
       "refreshUrl": "https://login.microsoftonline.com",
-      "scopes": ["ea9ffc3e-8a23-4a7d-836d-234d7c7565c1/McpServers.WorkIQ.All"]
+      "scopes": ["fdcc1f02-fc51-4226-8753-f668596af7f7/.default"]
     }
   },
   "authSchemas": ["OAuth2"],
-  "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
+  "audience": "fdcc1f02-fc51-4226-8753-f668596af7f7",
   "versionName": "original",
   "customProperties": { "x-ms-preview": true },
   "tags": ["workiq"]
