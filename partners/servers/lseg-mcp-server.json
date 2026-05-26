@@ -99,8 +99,7 @@
   "visibility": "public",
   "categories": "Finance",
   "packages": [],
-  "versionName": "1.0",
-  "versionTitle": "LSEG 1.0.347",
+  "versionName": "1",
   "supportContact": "https://www.lseg.com/en/contact-us",
   "supportContactInfo": {
     "name": "LSEG MCP Support",
