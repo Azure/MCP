@@ -1,8 +1,8 @@
 {
   "name": "oraclecloud-database-mcp-server",
   "title": "Oracle",
-  "summary": "Securely access Oracle AI Database via MCP. Run SQL/PL-SQL, custom Tools, and SQL Reports with per-tool access controlled by application roles.",
-  "description": "Securely access Oracle AI Database through the Model Context Protocol (MCP). Provides built-in tools for running SQL and PL/SQL against the database, also supports custom Tools, and the ability to access and execute pre-defined SQL Reports. Access to each tool is managed through application roles assigned to users and groups.",
+  "summary": "Securely access Oracle AI Database (in OCI or Oracle Database@Azure) via MCP. Run SQL/PL-SQL, custom Tools, and SQL Reports with role-based access.",
+  "description": "Securely access Oracle AI Database — running in Oracle Cloud Infrastructure (OCI) or Oracle Database@Azure — through the Model Context Protocol (MCP). Provides built-in tools for running SQL and PL/SQL against the database, also supports custom Tools, and the ability to access and execute pre-defined SQL Reports. Access to each tool is managed through application roles assigned to users and groups.",
   "kind": "mcp",
   "vendor": "Partner",
   "license": {
@@ -42,6 +42,14 @@
       "description": "Bearer access token issued by the customer's OCI IAM Identity Domain. Per-tool and per-report authorization is enforced through application roles assigned to users and groups in IAM.",
       "scheme": "bearer",
       "bearerFormat": "JWT"
+    },
+    "oauthIam": {
+      "type": "oauth2",
+      "description": "OAuth 2.0 via OCI IAM Identity Domains. Customers configure their own Identity Domain endpoints. Per-tool authorization is enforced through application roles.",
+      "flows": ["authorizationCode", "clientCredentials"],
+      "authorizationUrl": "https://identity.oraclecloud.com/YOUR_IDENTITY_DOMAIN/oauth2/v1/authorize",
+      "tokenUrl": "https://identity.oraclecloud.com/YOUR_IDENTITY_DOMAIN/oauth2/v1/token",
+      "scopes": []
     }
   },
   "versionName": "original",
