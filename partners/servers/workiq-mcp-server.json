@@ -1,13 +1,13 @@
 {
   "name": "microsoft-work-iq-mcp-frontier",
   "title": "Work IQ MCP",
-  "summary": "Work IQ MCP Server exposes Microsoft Graph as MCP tools for AI agents. Learn more at https://aka.ms/AboutWorkIQ",
-  "description": "The Work IQ MCP Server exposes Microsoft Graph as a set of tools for AI agents — read, create, update, and delete M365 entities (mail, calendar, files, chats, and more), search and retrieve OpenAPI schemas, list available agents, and ask M365 Copilot or route requests to specific A2A agents. This feature is in preview and is part of the Work IQ tools, providing shared work intelligence and actions for agents. Availability and capabilities are subject to change. Learn more: https://aka.ms/AboutWorkIQ",
+  "summary": "Work IQ MCP Server exposes Microsoft Graph as MCP tools for AI agents. Learn more at https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/work-iq-api-overview",
+  "description": "The Work IQ MCP Server exposes Microsoft Graph as a set of tools for AI agents — read, create, update, and delete M365 entities (mail, calendar, files, chats, and more), search and retrieve OpenAPI schemas, list available agents, and ask M365 Copilot or route requests to specific A2A agents. This feature is in preview and is part of the Work IQ tools, providing shared work intelligence and actions for agents. Availability and capabilities are subject to change. Learn more: https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/work-iq-api-overview",
   "kind": "mcp",
   "vendor": "Microsoft",
   "externalDocumentation": {
     "title": "Work IQ MCP Servers",
-    "url": "https://aka.ms/AboutWorkIQ"
+    "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/work-iq-api-overview"
   },
   "remote": "https://substrate-sdf.office.com/workiq-mcp-server",
   "supportContactInfo": {
@@ -16,7 +16,7 @@
   },
   "license": {
     "name": "Work IQ",
-    "url": "https://aka.ms/AboutWorkIQ"
+    "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/work-iq-api-overview"
   },
   "visibility": "true",
   "categories": "Productivity",
