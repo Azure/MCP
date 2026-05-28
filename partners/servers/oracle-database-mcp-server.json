@@ -45,11 +45,14 @@
     },
     "oauthIam": {
       "type": "oauth2",
-      "description": "OAuth 2.0 via OCI IAM Identity Domains. Customers configure their own Identity Domain endpoints. Per-tool authorization is enforced through application roles.",
+      "description": "OAuth 2.0 via OCI IAM Identity Domains. Customers configure their own Identity Domain endpoints and MCP server scope. Per-tool authorization is enforced through application roles.",
       "flows": ["authorizationCode", "clientCredentials"],
-      "authorizationUrl": "https://identity.oraclecloud.com/YOUR_IDENTITY_DOMAIN/oauth2/v1/authorize",
-      "tokenUrl": "https://identity.oraclecloud.com/YOUR_IDENTITY_DOMAIN/oauth2/v1/token",
-      "scopes": []
+      "authorizationUrl": "https://idcsGuid.identity.oraclecloud.com/oauth2/v1/authorize",
+      "tokenUrl": "https://idcsGuid.identity.oraclecloud.com/oauth2/v1/token",
+      "scopes": [
+        "urn:opc:dbtools:mcpserver:ocid1.yourmcpserverid.:all",
+        "offline_access"
+      ]
     }
   },
   "versionName": "original",
