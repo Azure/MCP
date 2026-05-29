@@ -9,7 +9,7 @@
     "title": "Work IQ MCP Servers",
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/work-iq-api-overview"
   },
-  "remote": "https://substrate-sdf.office.com/workiq-mcp-server",
+  "remote": "https://workiq.svc.cloud.microsoft",
   "supportContactInfo": {
     "name": "customer support contact",
     "url": "https://aka.ms/WorkIQToolsSupport"
