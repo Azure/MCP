@@ -1,8 +1,8 @@
 {
   "name": "ms-sentinel-data-explorer",
   "title": "Microsoft Sentinel Data Exploration",
-  "summary": "The data exploration tool collection in the Microsoft Sentinel MCP server lets you search for relevant tables and retrieve data from Microsoft Sentinel's data lake using natural language.",
-  "description": "The data exploration tool collection in the Microsoft Sentinel MCP server lets you search for relevant tables and retrieve data from Microsoft Sentinel's data lake using natural language. Learn more: https://aka.ms/mcp/data-exploration",
+  "summary": "The data exploration tool collection in the Microsoft Sentinel MCP server lets you search for relevant tables and retrieve data from Microsoft Sentinel's data lake as well as perform detailed graph analysis using natural language.",
+  "description": "The data exploration tool collection in the Microsoft Sentinel MCP server lets you search for relevant tables and retrieve data from Microsoft Sentinel's data lake as well as perform detailed graph analysis using natural language. Learn more: https://aka.ms/mcp/data-exploration",
   "vendor": "Microsoft",
   "kind": "mcp",
   "remote": "https://sentinel.microsoft.com/mcp/data-exploration",
@@ -31,6 +31,26 @@
     {
       "name": "Dormant Account wake-up",
       "description": "Build security agents that based on inactivity thresholds, scans for accounts with long silence followed by recent activity, and builds a timeline showing when and how these accounts re-engaged."
+    },
+    {
+      "name": "Exposure-to-Critical Asset Path Analysis",
+      "description": "Build security agents that discover and enumerate realistic attack paths from exposed or vulnerable entry points—such as internet-facing virtual machines or compromised identities—to critical assets like databases, Key Vaults, or sensitive storage accounts, using walkable paths to focus on reachable risks."
+    },
+    {
+      "name": "Compromised Entity Blast Radius Analysis",
+      "description": "Build security agents that assess the potential impact of a compromised user, managed identity, or virtual machine by traversing connected permissions, identities, and resources to determine how far an attacker could move and which assets could be affected."
+    },
+    {
+      "name": "Exposure Perimeter Mapping",
+      "description": "Build security agents that identify the exposure perimeter of a resource, identity, or service by finding all incoming access paths from external or less-trusted entities, highlighting how attackers could reach the target and where defensive controls can be applied."
+    },
+    {
+    "name": "Critical Asset Discovery",
+    "description": "Build security agents that scan for critical assets matching specific vulnerability or exposure criteria—such as internet-facing servers running outdated operating systems, storage accounts lacking encryption, or databases with sensitive data classification - to identify and prioritize remediation of high-risk infrastructure."
+    },
+    {
+    "name": "Privileged Access and Connection Analysis",
+    "description": "Build security agents that map privileged access pathways by discovering which identities hold admin roles to critical systems, which service principals can escalate privileges, and which users can delegate permissions to sensitive resources, enabling better visibility into permission hierarchies and access control risks."
     }
   ],
   "categories": "Security",
