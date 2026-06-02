@@ -1,7 +1,7 @@
 {
   "name": "ms-sentinel-graph",
   "title": "Microsoft Sentinel Graph",
-  "summary": "Sentinel Graph MCP tool collection enables natural-language analysis of entities relationships to uncover security insights through graph exploration. This collection is in testing mode. Official version is consolidated into the Microsoft Sentinel MCP server (data-exploration). Official support to this version is ending 06-15-2026.",
+  "summary": "Sentinel Graph MCP tool collection enables natural-language analysis of entities relationships to uncover security insights through graph exploration. This collection is in testing mode.",
   "description": "Sentinel Graph MCP tool collection enables natural-language analysis of entities relationships to uncover security insights through graph exploration. This collection is in testing mode. Official version is consolidated into the Microsoft Sentinel MCP server (data-exploration). Official support to this version is ending 06-15-2026. Learn more: https://aka.ms/mcp/sentinel-graph",
   "vendor": "Microsoft",
   "kind": "mcp",
