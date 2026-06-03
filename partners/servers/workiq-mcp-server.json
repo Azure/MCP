@@ -20,7 +20,7 @@
   },
   "visibility": "true",
   "categories": "Productivity",
-  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/WorkIQMCPServer.png",
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/WorkIQMCPServer.svg",
   "useCases": [
     {
       "name": "Chat with M365 Copilot",
