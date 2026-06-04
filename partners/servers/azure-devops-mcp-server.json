@@ -58,7 +58,7 @@
       "scopes": ["2a72489c-aab2-4b65-b93a-a91edccf33b8/Ado.Mcp.Tools"]
     }
   },
-  "authSchemas":["OAuth2"],
+  "authSchemas":["OAuth2", "ManagedIdentity"],
   "audience": "api://2a72489c-aab2-4b65-b93a-a91edccf33b8",
   "versionName": "original",
   "customProperties": { "x-ms-preview": true }
