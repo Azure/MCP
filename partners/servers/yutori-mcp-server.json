@@ -1,0 +1,102 @@
+{
+    "name": "yutori-mcp-server",
+    "title": "Yutori MCP",
+    "summary": "Web monitoring, deep research, and browser automation tools powered by Yutori.",
+    "description": "Yutori MCP gives AI agents access to Yutori's web automation platform through a single MCP server. It supports continuous web monitoring with Scouts, one-time deep web research tasks, and browser automation for websites that require clicking, typing, scrolling, or extracting structured results. The server is installed locally from PyPI and supports API-key or managed OAuth authentication to Yutori.",
+    "kind": "mcp",
+    "license": {
+        "name": "Apache-2.0",
+        "url": "https://github.com/yutori-ai/yutori-mcp/blob/main/LICENSE"
+    },
+    "icon": "https://yutori.com/logo.svg",
+    "externalDocumentation": {
+        "title": "Yutori MCP Docs",
+        "url": "https://github.com/yutori-ai/yutori-mcp"
+    },
+    "repository": {
+        "url": "https://github.com/yutori-ai/yutori-mcp",
+        "source": "github"
+    },
+    "packages": [
+        {
+            "registry_name": "pypi",
+            "name": "yutori-mcp",
+            "version": "latest",
+            "runtime_hint": "uvx",
+            "runtime_arguments": [
+                {
+                    "type": "named",
+                    "name": "--from",
+                    "is_required": true,
+                    "format": "string",
+                    "value": "yutori-mcp",
+                    "is_secret": false
+                }
+            ],
+            "package_arguments": [
+                {
+                    "type": "positional",
+                    "value": "yutori-mcp"
+                }
+            ],
+            "environment_variables": [
+                {
+                    "name": "YUTORI_API_KEY",
+                    "description": "Optional Yutori API key for API-key based authentication. Can be omitted when the local client already has credentials saved by uvx yutori-mcp login or when the host manages Yutori authentication separately.",
+                    "is_required": false,
+                    "format": "string",
+                    "is_secret": true
+                }
+            ]
+        }
+    ],
+    "useCases": [
+        {
+            "name": "Continuous web monitoring",
+            "description": "Create and manage Yutori Scouts that repeatedly monitor the web for product updates, competitor news, changelogs, pricing changes, funding announcements, and other recurring signals."
+        },
+        {
+            "name": "Deep web research",
+            "description": "Run one-time research tasks that search, read, and synthesize information from across the web, with optional structured output and webhook delivery."
+        },
+        {
+            "name": "Browser automation",
+            "description": "Automate browser tasks on websites, including data extraction, form workflows, logged-in desktop sessions through Yutori Local, and structured result collection."
+        }
+    ],
+    "tags": [
+        "web-monitoring",
+        "research",
+        "browser-automation",
+        "scouts"
+    ],
+    "vendor": "Partner",
+    "visibility": "true",
+    "categories": "Web",
+    "securitySchemes": {
+        "yutoriOAuth": {
+            "type": "oauth2",
+            "description": "Authenticate with Yutori using OAuth2 authorization code flow with PKCE support.",
+            "authorizationUrl": "https://clerk.yutori.com/oauth/authorize",
+            "tokenUrl": "https://clerk.yutori.com/oauth/token",
+            "refreshUrl": "https://clerk.yutori.com/oauth/token",
+            "scopes": [
+                "openid",
+                "profile",
+                "email",
+                "offline_access"
+            ],
+            "flows": [
+                "authorizationCode"
+            ]
+        }
+    },
+    "versionName": "original",
+    "supportContactInfo": {
+        "name": "Yutori Support",
+        "email": "support@yutori.com"
+    },
+    "customProperties": {
+        "x-ms-preview": true
+    }
+}
