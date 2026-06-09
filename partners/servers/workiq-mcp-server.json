@@ -74,7 +74,6 @@
       "scopes": []
     }
   },
-  "authSchemas": ["AgentIdentity"],
   "audience": "fdcc1f02-fc51-4226-8753-f668596af7f7",
   "versionName": "original",
   "customProperties": { "x-ms-preview": true },
