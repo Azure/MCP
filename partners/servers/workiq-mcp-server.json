@@ -71,7 +71,7 @@
       "authorizationUrl": "https://login.microsoftonline.com",
       "tokenUrl": "https://login.microsoftonline.com",
       "refreshUrl": "https://login.microsoftonline.com",
-      "scopes": []
+      "scopes": ["fdcc1f02-fc51-4226-8753-f668596af7f7/WorkIQAgent.Ask"]
     }
   },
   "audience": "fdcc1f02-fc51-4226-8753-f668596af7f7",
