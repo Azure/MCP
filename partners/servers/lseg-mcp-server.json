@@ -117,9 +117,6 @@
      "scopes": []
    }
   },
-  "authSchemas": [
-    "OAuth2"
-  ],
   "customProperties": { "x-ms-preview": true },
   "connectorName": "foundrylsegmcp"
 }
