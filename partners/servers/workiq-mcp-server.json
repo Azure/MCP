@@ -63,18 +63,7 @@
       "description": "Search for available Microsoft Graph API paths using a regex filter. Use to discover what entity paths are available before calling fetch, create, update, or delete operations. Supports graph-v1, SharePoint REST, and Dataverse backends."
     }
   ],
-  "securitySchemes": {
-    "workiqoauth2": {
-      "type": "oauth2",
-      "description": "Authenticate with Work IQ using OAuth2 authorization code flow with PKCE support.",
-      "flows": ["authorizationCode"],
-      "authorizationUrl": "https://login.microsoftonline.com",
-      "tokenUrl": "https://login.microsoftonline.com",
-      "refreshUrl": "https://login.microsoftonline.com",
-      "scopes": ["fdcc1f02-fc51-4226-8753-f668596af7f7/WorkIQAgent.Ask"]
-    }
-  },
-  "authSchemas": ["OAuth2"],
+  "authSchemas": ["AgentIdentity"],
   "audience": "fdcc1f02-fc51-4226-8753-f668596af7f7",
   "versionName": "original",
   "customProperties": { "x-ms-preview": true },
