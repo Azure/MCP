@@ -2,7 +2,7 @@
     "name": "yutori-mcp-server",
     "title": "Yutori MCP",
     "summary": "Web monitoring, deep research, and browser automation tools powered by Yutori.",
-    "description": "Yutori MCP gives AI agents access to Yutori's web automation platform through a single MCP server. It supports continuous web monitoring with Scouts, one-time deep web research tasks, and browser automation for websites that require clicking, typing, scrolling, or extracting structured results. The server is installed locally from PyPI and supports API-key or managed OAuth authentication to Yutori.",
+    "description": "Yutori MCP gives AI agents access to Yutori's web automation platform through a single MCP server. It supports continuous web monitoring with Scouts, one-time deep web research tasks, and browser automation for websites that require clicking, typing, scrolling, or extracting structured results. The hosted server is available over streamable HTTP and supports OAuth authentication to Yutori. A local PyPI package is also available for API-key or saved-credential based authentication.",
     "kind": "mcp",
     "license": {
         "name": "Apache-2.0",
@@ -50,6 +50,8 @@
             ]
         }
     ],
+    "remote": "https://mcp.yutori.com/mcp",
+    "remoteType": "streamable-http",
     "useCases": [
         {
             "name": "Continuous web monitoring",
