@@ -1,7 +1,7 @@
 {
   "name": "microsoft-work-iq-mcp-frontier",
   "title": "Work IQ MCP",
-  "summary": "Work IQ MCP Server exposes Microsoft Graph as MCP tools for AI agents. Learn more at https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/work-iq-api-overview",
+  "summary": "The Work IQ MCP Server exposes a set of tools for AI agents, IDEs, and CLIs. Learn more at https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/work-iq-api-overview",
   "description": "The Work IQ MCP Server exposes a set of tools for AI agents, IDEs, and CLIs — read, create, update, and delete M365 entities (mail, calendar, files, chats, and more), search and retrieve OpenAPI entity schemas, list available agents, ask M365 Copilot natural language questions, or route requests to specific declarative agents. This is part of the Work IQ tools, providing shared work intelligence and actions for agents. Learn more: https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/work-iq-api-overview",
   "kind": "mcp",
   "vendor": "Microsoft",
