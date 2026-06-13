@@ -1,0 +1,53 @@
+{
+  "name": "ontoramp-graph-query",
+  "title": "OntoRamp Graph Query",
+  "summary": "Query your organization's architecture and governance constraints from any agent - evidence-grounded answers about systems, dependencies, and controls. Free tier available.",
+  "description": "OntoRamp Graph Query lets AI agents query an organization's architecture and governance knowledge graph: search governance and compliance knowledge by meaning or keyword, find systems and their dependencies, surface constraint signals, and retrieve the evidence behind any claim. Built for enterprise architects, CIOs/CTOs, and GRC teams - use it for SOC 2 readiness research, ISO 27001 control mapping, architecture maturity analysis, and technology due diligence. Remote streamable-http MCP server with Bearer API-key authentication; free self-serve keys at https://ontoramp.com/mcp.",
+  "vendor": "Partner",
+  "kind": "mcp",
+  "remote": "https://ontoramp-graph-query.fly.dev/mcp",
+  "icon": "https://raw.githubusercontent.com/MatthewDavisAIArchitect/ontoramp-graph-query/main/logo.png",
+  "externalDocumentation": {
+    "title": "OntoRamp connect documentation",
+    "url": "https://ontoramp.com/docs/connect"
+  },
+  "license": {
+    "name": "MIT",
+    "url": "https://github.com/MatthewDavisAIArchitect/ontoramp-graph-query/blob/main/LICENSE"
+  },
+  "visibility": "true",
+  "useCases": [
+    {
+      "name": "Compliance research",
+      "description": "Search governance and compliance knowledge by meaning or keyword for SOC 2 readiness research, ISO 27001 control mapping, and audit preparation."
+    },
+    {
+      "name": "Dependency tracing",
+      "description": "Find systems and trace their dependencies to answer change-impact and technology due-diligence questions."
+    },
+    {
+      "name": "Evidence retrieval",
+      "description": "Retrieve the structural evidence behind a governance claim so agent answers stay grounded in documented artifacts."
+    },
+    {
+      "name": "Assessment intake",
+      "description": "Request a full organizational governance assessment directly from an agent conversation."
+    }
+  ],
+  "categories": "Compliance & Legal",
+  "tags": [],
+  "supportContactInfo": {
+    "name": "OntoRamp Support",
+    "email": "m@ontoramp.com"
+  },
+  "versionName": "1.0.1",
+  "securitySchemes": {
+    "ontorampBearerAuth": {
+      "type": "http",
+      "description": "Authenticate with an OntoRamp API key. Free self-serve keys at https://ontoramp.com/mcp.",
+      "scheme": "bearer",
+      "bearerFormat": "API Key"
+    }
+  },
+  "customProperties": { "x-ms-preview": false }
+}
