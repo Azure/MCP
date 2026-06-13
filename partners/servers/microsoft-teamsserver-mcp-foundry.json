@@ -1,0 +1,191 @@
+{
+  "name": "microsoft-teamsserver-mcp-foundry",
+  "title": "Work IQ Teams MCP Server",
+  "summary": "Microsoft Teams Graph MCP server to manage chats, channels and users or messages within them. Use for Teams operations like creating, updating, retrieval of chats and chat messages, managing teams and channels.",
+  "description": "Microsoft Teams Graph MCP server to manage chats, channels and users or messages within them. Use for Teams operations like creating, updating, retrieval of chats and chat messages, managing teams and channels.",
+  "kind": "mcp",
+  "vendor": "Microsoft",
+  "externalDocumentation": {
+    "title": "Work IQ MCP Servers",
+    "url": "https://aka.ms/AboutWorkIQ"
+  },
+  "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_TeamsServer",
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://aka.ms/WorkIQToolsSupport"
+  },
+  "license": {
+    "name": "Work IQ",
+    "url": "https://aka.ms/AboutWorkIQ"
+  },
+  "visibility": "true",
+  "categories": "Productivity",
+  "useCases": [
+    {
+      "name": "ListTeams",
+      "description": "List Teams workspaces the signed-in user is a member of. Returns each team\u0027s id (GUID), displayName, description, and webUrl. Use as a prerequisite before channel operations."
+    },
+    {
+      "name": "ListChats",
+      "description": "Get the signed-in user\u0027s recent Teams chats, or filter by topic or member UPNs. Without filters, returns recent chats with hasUnreadMessages and lastMessagePreview \u2014 use for \u0027catch me up\u0027 or \u0027any new messages\u0027. With filters, returns matching chats. To message a specific person, prefer SendMessageToUser (pass their UPN directly)."
+    },
+    {
+      "name": "ListChannels",
+      "description": "Lists all channels in a Microsoft Teams team. Returns each channel\u0027s id, displayName, description, membershipType (standard/private/shared), createdDateTime, and webUrl. Prerequisite: Call ListTeams first to obtain a valid teamId GUID \u2014 this tool requires a system-retrieved teamId and cannot accept team names or fabricated IDs."
+    },
+    {
+      "name": "GetTeam",
+      "description": "Get detailed information about a specific Microsoft Teams workspace. Returns the team\u0027s id, displayName, description, createdDateTime, and webUrl. Prerequisite: Call ListTeams first to obtain a valid teamId GUID \u2014 this tool requires a system-retrieved teamId and cannot accept team names or fabricated IDs."
+    },
+    {
+      "name": "GetChat",
+      "description": "Get details of a specific Teams chat by ID. Returns the chat\u0027s id, topic, chatType (oneOnOne/group), createdDateTime, and lastUpdatedDateTime. Prerequisite: Obtain chatId from ListChats if unknown."
+    },
+    {
+      "name": "CreateChat",
+      "description": "Create or retrieve a chat. To send a message to a person, prefer SendMessageToUser \u2014 it is simpler and handles chat creation internally. Use CreateChat for group chats (pass multiple UPNs and optionally a topic) or when you only need the chatId without sending a message. For oneOnOne: pass the other person\u0027s UPN in members_upns \u2014 you are auto-added, and if the chat already exists it is returned (no duplicate). Returns the chat\u0027s id, chatType, topic, and createdDateTime."
+    },
+    {
+      "name": "DeleteChat",
+      "description": "Delete a Teams chat by ID. This action is irreversible. Returns confirmation with the chatId. Prerequisite: Obtain chatId from ListChats if unknown."
+    },
+    {
+      "name": "UpdateChat",
+      "description": "Update a Teams chat: rename it or change its view-state for the signed-in user. To rename: pass \u0027topic\u0027 (group chats only \u2014 oneOnOne chats cannot have topics). To change view-state: pass \u0027action\u0027 with one of: \u0027markRead\u0027 (clear unread badge), \u0027markUnread\u0027 (restore unread badge \u2014 optionally pass lastMessageReadDateTime to mark only messages after that time as unread), \u0027hide\u0027 (remove from your chat list \u2014 personal view only, does not delete), \u0027unhide\u0027 (restore a hidden chat to your chat list). View-state actions are personal \u2014 they affect only the calling user, not other chat members. Provide either topic or action (not both). Prerequisite: Obtain chatId from ListChats if unknown."
+    },
+    {
+      "name": "GetChannel",
+      "description": "Get details of a specific channel within a team. Returns the channel\u0027s id, displayName, description, membershipType, createdDateTime, and webUrl. Prerequisites: Call ListTeams then ListChannels to obtain required teamId and channelId."
+    },
+    {
+      "name": "CreateChannel",
+      "description": "Create a new channel in a Teams team. Use membershipType to control access: \u0027standard\u0027 (default, visible to all team members), \u0027private\u0027 (restricted to invited members \u2014 calling user is set as owner), or \u0027shared\u0027 (cross-team collaboration \u2014 calling user is set as owner). Returns the channel\u0027s id, displayName, membershipType, and createdDateTime. Prerequisite: Call ListTeams first to obtain the teamId GUID \u2014 do not pass team names."
+    },
+    {
+      "name": "UpdateChannel",
+      "description": "Update a channel\u0027s display name, description, or both. Returns the updated channel\u0027s id, displayName, and description. Prerequisites: Call ListTeams then ListChannels to obtain required IDs."
+    },
+    {
+      "name": "ListChatMembers",
+      "description": "List all members of a Teams chat. Returns each member\u0027s id, displayName, email, userId, and roles (owner/guest). Prerequisite: Obtain chatId from ListChats if unknown."
+    },
+    {
+      "name": "ListChannelMembers",
+      "description": "List all members of a Teams channel. Returns each member\u0027s id, displayName, email, userId, and roles. Prerequisites: Call ListTeams then ListChannels to obtain required teamId and channelId."
+    },
+    {
+      "name": "AddChatMember",
+      "description": "Add a member to an existing Teams chat. Returns confirmation with the member\u0027s id and chatId. Prerequisite: Obtain chatId from ListChats and resolve the user via a lookup tool."
+    },
+    {
+      "name": "AddChannelMember",
+      "description": "Add a member to a Teams channel. Supports \u0027owner\u0027 (default) or \u0027member\u0027 role. Standard channels inherit team membership and do not support adding members directly. Private and shared channels support both roles. Returns confirmation with the member and channel details. Prerequisites: Call ListTeams then ListChannels for the IDs, and resolve the userId via a user lookup tool."
+    },
+    {
+      "name": "UpdateChannelMember",
+      "description": "Update a channel member\u0027s role to \u0027owner\u0027 or \u0027member\u0027. Returns confirmation with the updated member details. Prerequisites: Call ListTeams, ListChannels, and ListChannelMembers to obtain required IDs."
+    },
+    {
+      "name": "SendFileToChat",
+      "description": "Send a file to a Teams chat by chatId. Best for group chats or when you already have the chatId. To send a file to a specific person by UPN/email, prefer SendFileToUser instead \u2014 it is simpler and does not require a chatId. Provide either fileUrl (existing SharePoint/OneDrive file) or fileContentBase64 \u002B fileName (upload and send). Max 4 MB for direct upload. Uploaded files are stored in the sender\u0027s OneDrive and shared with an organization-scoped link (accessible only to people in the same tenant). An optional text message can accompany the file. REQUIRED CHAIN: If chatId is unknown, call ListChats first. DO NOT fabricate chatIds."
+    },
+    {
+      "name": "SendFileToUser",
+      "description": "Send a file directly to a specific user by their UPN (email) or GUID \u2014 no need to call ListChats or CreateChat first. The 1:1 chat is created or retrieved automatically (idempotent). Provide either fileUrl (existing SharePoint/OneDrive file) or fileContentBase64 \u002B fileName (upload and send). Max 4 MB for direct upload. Uploaded files are stored in the sender\u0027s OneDrive and shared with an organization-scoped link (accessible only to people in the same tenant). An optional text message can accompany the file. Prefer this for sending files to a person; use SendFileToChat when you already have a chatId."
+    },
+    {
+      "name": "SendFileToChannel",
+      "description": "Send a file to a Teams channel. Provide either fileUrl (existing SharePoint/OneDrive file) or fileContentBase64 \u002B fileName (upload to channel folder and send). Max 4 MB for direct upload. Uploaded files are stored in the channel\u0027s SharePoint folder (or the sender\u0027s OneDrive as fallback) and shared with an organization-scoped link (accessible only to people in the same tenant). An optional text message can accompany the file. REQUIRED CHAIN: ListTeams -\u003E ListChannels -\u003E this tool."
+    },
+    {
+      "name": "ListChannelFiles",
+      "description": "List files shared in a Teams channel. Returns each file\u0027s name, size, webUrl, lastModifiedDateTime, and lastModifiedBy. PAGING: When the response contains hasMoreResults: true, call this tool again passing the nextLink value as the nextLink parameter to retrieve the next page. REQUIRED CHAIN: ListTeams -\u003E ListChannels -\u003E this tool."
+    },
+    {
+      "name": "SendMessageToUser",
+      "description": "Send a message directly to a specific user by their UPN (email) or GUID \u2014 no need to call CreateChat first. The chat is created or retrieved automatically (idempotent \u2014 no duplicate). Supports plain text, HTML formatting, @mentions, Adaptive Cards, and importance. Call GetRichMessageFormats for formatting options. Returns the sent message\u0027s id, chatId, and createdDateTime. Prefer this for direct 1:1 messages; use SendMessageToChat when you already have a chatId."
+    },
+    {
+      "name": "ListChatMessages",
+      "description": "List messages in a Teams chat. Returns messages ordered by most recent first, each containing: id, createdDateTime, sender (displayName, id), and body (contentType, content). Optionally include attachments and/or reactions via the include parameter. PAGING: When the response contains hasMoreResults: true, call this tool again passing the nextLink value as the nextLink parameter to retrieve the next page. Prerequisite: If the chatId is unknown, call ListChats first to find the target chat."
+    },
+    {
+      "name": "ListChannelMessages",
+      "description": "List root messages in a Teams channel (without replies). Returns messages ordered by most recent first, each containing: id, timestamps, sender (displayName, id), and body content. Optionally include attachments and/or reactions via the include parameter. PAGING: When the response contains hasMoreResults: true, call this tool again passing the nextLink value as the nextLink parameter to retrieve the next page. To read a specific thread\u0027s replies, use ListChannelMessageReplies. Prerequisites: Call ListTeams then ListChannels to obtain required IDs."
+    },
+    {
+      "name": "SendMessageToChat",
+      "description": "Send a message to an existing Teams chat by chatId. Best for group chats, replying in an ongoing conversation, or when you already have the chatId. To message a specific person by UPN/email, prefer SendMessageToUser instead \u2014 it is simpler and does not require a chatId. Supports plain text, HTML formatting, @mentions, Adaptive Cards, and importance. Call GetRichMessageFormats for formatting options."
+    },
+    {
+      "name": "SendMessageToSelf",
+      "description": "Send a note or reminder to yourself in Teams (the \u0027Notes to Self\u0027 chat). No chatId needed. Supports plain text, HTML, @mentions, Adaptive Cards, and importance. Call GetRichMessageFormats for formatting options. Prefer this over SendMessageToChat for self-directed messages."
+    },
+    {
+      "name": "SendMessageToChannel",
+      "description": "Send a message to a team channel. Supports plain text, HTML formatting, @mentions (users/teams/channels/apps via mentions param), Adaptive Cards, and message importance. Call GetRichMessageFormats for formatting options and templates. Returns the message id, teamId, channelId, and createdDateTime. Prerequisites: Call ListTeams then ListChannels to obtain required IDs."
+    },
+    {
+      "name": "GetChatMessage",
+      "description": "Get a specific message from a Teams chat by ID. Returns the message\u0027s id, timestamps, sender (displayName, id), and body (contentType, content). Optionally include attachments and/or reactions via the include parameter. Prerequisites: Obtain chatId from ListChats and messageId from ListChatMessages."
+    },
+    {
+      "name": "UpdateChatMessage",
+      "description": "Update the content of a message in a Teams chat. Supports plain text (default), HTML, and @mentions. Only the message sender can update their own messages. Returns confirmation with the message id. Prerequisites: Obtain chatId from ListChats and messageId from ListChatMessages."
+    },
+    {
+      "name": "DeleteChatMessage",
+      "description": "Delete a message from a Teams chat. This action is irreversible. Returns confirmation with chatId and messageId. Prerequisites: Obtain chatId from ListChats and messageId from ListChatMessages."
+    },
+    {
+      "name": "ReplyToChannelMessage",
+      "description": "Reply to a specific message in a Teams channel (creates a threaded reply). Supports plain text, HTML formatting, @mentions, Adaptive Cards, and importance. Returns the reply\u0027s id, parentMessageId, and createdDateTime. For rich formatting, call GetRichMessageFormats first \u2014 it has HTML tags, mention syntax, and card examples. Prerequisites: Call ListTeams, ListChannels, and ListChannelMessages to obtain required IDs."
+    },
+    {
+      "name": "ListChannelMessageReplies",
+      "description": "Get replies to a specific channel message thread. Returns each reply\u0027s id, sender (displayName, id), body, and timestamp. Optionally include attachments and/or reactions via the include parameter. PAGING: When the response contains hasMoreResults: true, call this tool again passing the nextLink value as the nextLink parameter to retrieve the next page. Use after ListChannelMessages to read a specific thread. Prerequisites: Obtain teamId, channelId, and messageId from prior tool calls."
+    },
+    {
+      "name": "GetRichMessageFormats",
+      "description": "Reference guide for composing rich Teams messages. Returns supported HTML tags, @mention syntax for users/teams/channels/apps, Adaptive Card templates, and importance levels. Call before composing formatted messages."
+    },
+    {
+      "name": "GetUserPresence",
+      "description": "Get the real-time Teams presence of a single user \u2014 i.e. whether they are currently available, busy, in a meeting, away, etc. Returns two distinct fields: (1) availability \u2014 the high-level state (Available, AvailableIdle, Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown); (2) activity \u2014 what they are doing right now (Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive, InAMeeting, Offline, OffWork, OutOfOffice, Presenting, UrgentInterruptionsOnly, PresenceUnknown). Use this tool to answer questions like \u0027is John online\u0027, \u0027is Sarah in a meeting right now\u0027, \u0027who\u0027s available\u0027, \u0027should I ping X now or wait\u0027. If the caller is about to send a Teams message, call this FIRST so you can advise whether it\u0027s a good time \u2014 then proceed to SendMessageToUser. Do NOT use this tool to find time for a future meeting; use FindMeetingTimes (calendar server) for scheduling. The user parameter accepts a UPN (\u0027jdoe@contoso.com\u0027) or an Entra object ID (GUID). Display names are not supported \u2014 resolve the UPN first. Omit the user parameter to return the signed-in user\u0027s own presence."
+    },
+    {
+      "name": "SearchTeamsMessages",
+      "description": "Search Teams message content using natural language. Use for broad or exploratory queries (e.g., \u0027messages about the deploy\u0027, \u0027what did Sarah say about the budget\u0027, \u0027discussions from last week\u0027). Returns a summary of matching messages, a conversationId for follow-up queries, and chatIds that can be used with ListChatMessages to read full history. For precise keyword/sender/date searches, prefer SearchTeamMessagesQueryParameters \u2014 it is faster and more precise. To find chats by name or member, use ListChats."
+    },
+    {
+      "name": "SearchTeamMessagesQueryParameters",
+      "description": "Search Teams messages using structured KQL (Keyword Query Language) queries. Best for precise searches with exact keywords, sender names/emails, or date ranges (e.g., \u0027from:jane@contoso.com AND budget\u0027, \u0027sent\u003E=2025-01-01\u0027). Searches across 1:1 chats and channel messages. Max 25 results per request. For natural language queries where exact terms are unknown, use SearchTeamsMessages instead."
+    }
+  ],
+  "securitySchemes": {
+    "mcpTeamsServerOAuth2": {
+      "type": "oauth2",
+      "description": "Authenticate with Work IQ using OAuth2 authorization code flow with PKCE support.",
+      "flows": [
+        "authorizationCode"
+      ],
+      "authorizationUrl": "https://login.microsoftonline.com",
+      "tokenUrl": "https://login.microsoftonline.com",
+      "refreshUrl": "https://login.microsoftonline.com",
+      "scopes": [
+        "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1/McpServers.Teams.All"
+      ]
+    }
+  },
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
+  "versionName": "original",
+  "customProperties": {
+    "x-ms-preview": true
+  },
+  "tags": [
+    "workiq"
+  ]
+}
