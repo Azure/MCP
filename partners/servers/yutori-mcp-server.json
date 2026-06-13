@@ -2,7 +2,7 @@
     "name": "yutori-mcp-server",
     "title": "Yutori MCP",
     "summary": "Web monitoring, deep research, and browser automation tools powered by Yutori.",
-    "description": "Yutori MCP gives AI agents access to Yutori's web automation platform through a single MCP server. It supports continuous web monitoring with Scouts, one-time deep web research tasks, and browser automation for websites that require clicking, typing, scrolling, or extracting structured results. The hosted server is available over streamable HTTP and supports OAuth authentication to Yutori. A local PyPI package is also available for API-key or saved-credential based authentication.",
+    "description": "Yutori MCP gives AI agents access to Yutori's web automation platform through a hosted MCP server. It supports continuous web monitoring with Scouts, one-time deep web research tasks, and browser automation for websites that require clicking, typing, scrolling, or extracting structured results. The hosted server is available over streamable HTTP and supports OAuth authentication to Yutori.",
     "kind": "mcp",
     "license": {
         "name": "Apache-2.0",
@@ -17,39 +17,7 @@
         "url": "https://github.com/yutori-ai/yutori-mcp",
         "source": "github"
     },
-    "packages": [
-        {
-            "registry_name": "pypi",
-            "name": "yutori-mcp",
-            "version": "latest",
-            "runtime_hint": "uvx",
-            "runtime_arguments": [
-                {
-                    "type": "named",
-                    "name": "--from",
-                    "is_required": true,
-                    "format": "string",
-                    "value": "yutori-mcp",
-                    "is_secret": false
-                }
-            ],
-            "package_arguments": [
-                {
-                    "type": "positional",
-                    "value": "yutori-mcp"
-                }
-            ],
-            "environment_variables": [
-                {
-                    "name": "YUTORI_API_KEY",
-                    "description": "Optional Yutori API key for API-key based authentication. Can be omitted when the local client already has credentials saved by uvx yutori-mcp login or when the host manages Yutori authentication separately.",
-                    "is_required": false,
-                    "format": "string",
-                    "is_secret": true
-                }
-            ]
-        }
-    ],
+    "packages": [],
     "remote": "https://mcp.yutori.com/mcp",
     "remoteType": "streamable-http",
     "useCases": [
