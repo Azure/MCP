@@ -1,6 +1,6 @@
 {
   "name": "ms-sentinel-memory",
-  "title": "Microsoft Sentinel Memory",
+  "title": "Microsoft Sentinel Memory (PrPr)",
   "summary": "Sentinel Memory MCP tool collection lets agents store, search, retrieve, and delete security memories using natural language to recall prior investigations. This collection is in testing mode.",
   "description": "Sentinel Memory MCP tool collection lets security agents persist and recall knowledge across investigations. Agents can search memory with natural language, retrieve or delete a memory by its identifier, and upsert observations that are automatically summarized and embedded for future recall. Memories span categories such as Incidents, Alerts, Cases, AnalystNotes, StandardOperatingProcedures, and AgentArtifacts. This collection is in testing mode. Learn more: https://aka.ms/mcp/sentinel-memory",
   "vendor": "Microsoft",
