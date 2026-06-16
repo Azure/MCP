@@ -62,8 +62,7 @@
     }
   },
   "authSchemas": [],
-  "versionName": "v3",
-  "versionTitle": "Web IQ v3",
+  "versionName": "original",
   "customProperties": {
     "x-ms-preview": true
   }
