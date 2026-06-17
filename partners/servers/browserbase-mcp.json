@@ -1,0 +1,63 @@
+{
+  "name": "browserbase-mcp",
+  "title": "Browserbase",
+  "summary": "Cloud browser automation for AI agents - navigate, act, observe, and extract from live web pages, powered by Browserbase and Stagehand.",
+  "description": "Browserbase is the hosted MCP server for AI-powered web browser automation, built on Browserbase's cloud browser infrastructure and the Stagehand framework. It lets agents create managed cloud browser sessions and drive real websites using natural language: navigate to URLs, perform actions, observe actionable elements, and extract structured data. Sessions run on stealth browsers with automatic CAPTCHA solving, residential proxies, and anti-bot evasion, so agents can reliably interact with JavaScript-heavy and protected sites. The server exposes six tools - start, end, navigate, act, observe, and extract - and authenticates with a Browserbase API key passed as a bearer token.",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://github.com/browserbase/mcp-server-browserbase/blob/main/LICENSE"
+  },
+  "icon": "https://avatars.githubusercontent.com/u/158221360?v=4",
+  "externalDocumentation": {
+    "title": "Browserbase MCP Documentation",
+    "url": "https://docs.browserbase.com/integrations/mcp/introduction"
+  },
+  "repository": {
+    "url": "https://github.com/browserbase/mcp-server-browserbase",
+    "source": "github"
+  },
+  "remote": "https://mcp.browserbase.com/mcp",
+  "remoteType": "streamable-http",
+  "supportContactInfo": {
+    "name": "Browserbase Support",
+    "url": "https://docs.browserbase.com"
+  },
+  "visibility": "public",
+  "categories": "Developer Tools",
+  "tags": ["browser-automation", "web-scraping", "stagehand", "browserbase", "web"],
+  "packages": [],
+  "useCases": [
+    {
+      "name": "Web navigation and browsing",
+      "description": "Spin up a managed cloud browser session and navigate to any URL, following links and moving through multi-step web flows on the agent's behalf."
+    },
+    {
+      "name": "Form filling and actions",
+      "description": "Perform natural-language actions on a page - click, type, submit, select - to complete forms, logins, bookings, and other interactive workflows."
+    },
+    {
+      "name": "Structured data extraction",
+      "description": "Extract structured data from live web pages such as prices, listings, tables, and article content for research, monitoring, and downstream processing."
+    },
+    {
+      "name": "Element observation",
+      "description": "Observe the actionable elements on a page so the agent can decide the next best action before acting."
+    },
+    {
+      "name": "Automation on protected sites",
+      "description": "Interact with JavaScript-heavy and bot-protected sites using Browserbase stealth browsers with automatic CAPTCHA solving and residential proxies."
+    }
+  ],
+  "securitySchemes": {
+    "browserbaseBearerAuth": {
+      "type": "http",
+      "description": "Authenticate with Browserbase using your Browserbase API key as a bearer token.",
+      "scheme": "bearer",
+      "bearerFormat": "Browserbase API key"
+    }
+  },
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": false }
+}
