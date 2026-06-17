@@ -1,8 +1,8 @@
 {
   "name": "browserbase-mcp",
   "title": "Browserbase",
-  "summary": "Cloud browser automation for AI agents — navigate, act, observe, and extract from live web pages on Browserbase's verified browser platform, powered by Stagehand.",
-  "description": "Browserbase is the hosted MCP server for AI-powered web browser automation, built on the Browserbase platform and the Stagehand framework. It lets agents create managed cloud browser sessions and drive real websites using natural language: navigate to URLs, perform actions, observe actionable elements, and extract structured data. Sessions run on Browserbase's verified browsers, so agents can reliably interact with JavaScript-heavy and dynamic sites at scale. The server exposes six tools — start, end, navigate, act, observe, and extract — and authenticates with a Browserbase API key passed as a bearer token.",
+  "summary": "Browse and act on the live web from your AI agent — navigate, act, observe, and extract from real pages on Browserbase's verified browsers, via the Stagehand SDK.",
+  "description": "Browse and act on the live web from your AI agent — navigate, act, observe, and extract from real pages on Browserbase's verified browsers, via the Stagehand SDK.",
   "kind": "mcp",
   "vendor": "Partner",
   "license": {
@@ -26,28 +26,24 @@
   },
   "visibility": "public",
   "categories": "Developer Tools",
-  "tags": ["browser-automation", "web-scraping", "stagehand", "browserbase", "web"],
+  "tags": ["browser-agents", "ai-agents", "stagehand", "browserbase", "web"],
   "packages": [],
   "useCases": [
     {
-      "name": "Web navigation and browsing",
-      "description": "Spin up a managed cloud browser session and navigate to any URL, following links and moving through multi-step web flows on the agent's behalf."
+      "name": "Web navigation",
+      "description": "Open URLs and move through multi-step web flows."
     },
     {
-      "name": "Form filling and actions",
-      "description": "Perform natural-language actions on a page — click, type, submit, select — to complete forms, logins, bookings, and other interactive workflows."
+      "name": "Actions and forms",
+      "description": "Click, type, submit, and select with natural language to complete interactive workflows."
     },
     {
       "name": "Structured data extraction",
-      "description": "Extract structured data from live web pages such as prices, listings, tables, and article content for research, monitoring, and downstream processing."
+      "description": "Pull prices, listings, tables, and article content from live pages."
     },
     {
-      "name": "Element observation",
-      "description": "Observe the actionable elements on a page so the agent can decide the next best action before acting."
-    },
-    {
-      "name": "Reliable automation at scale",
-      "description": "Interact with JavaScript-heavy and dynamic sites using Browserbase's verified browsers, so agents can complete real workflows reliably across the open web."
+      "name": "Agents on the real web",
+      "description": "Reliably reach JavaScript-heavy, authenticated, and protected sites using verified browsers with Agent Identity."
     }
   ],
   "securitySchemes": {
