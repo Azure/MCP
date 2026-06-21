@@ -6,6 +6,7 @@
   "vendor": "Partner",
   "kind": "mcp",
   "remote": "https://ontoramp-graph-query.fly.dev/mcp",
+  "remoteType": "streamable-http",
   "icon": "https://raw.githubusercontent.com/MatthewDavisAIArchitect/ontoramp-graph-query/main/logo.png",
   "externalDocumentation": {
     "title": "OntoRamp connect documentation",
@@ -40,7 +41,7 @@
     "name": "OntoRamp Support",
     "email": "m@ontoramp.com"
   },
-  "versionName": "1.0.1",
+  "versionName": "Original",
   "securitySchemes": {
     "ontorampBearerAuth": {
       "type": "http",
