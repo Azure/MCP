@@ -1,0 +1,51 @@
+{
+    "name": "brightdata-mcp",
+    "title": "Bright Data MCP",
+    "summary": "Search, scrape, and extract live web data with automatic bot and CAPTCHA bypass.",
+    "description": "Give agents real-time access to public web data. Run web searches, scrape any page as clean markdown, pull structured data from 40+ sites like Amazon and LinkedIn, and drive a remote browser. Bot detection and CAPTCHAs are handled for you.",
+    "kind": "mcp",
+    "vendor": "Partner",
+    "license": {
+      "name": "MIT",
+      "url": "https://github.com/brightdata/brightdata-mcp/blob/main/LICENSE"
+    },
+    "icon": "https://brightdata.com/wp-content/themes/brightdata/assets/images/favicon.png",
+    "externalDocumentation": {
+      "title": "Bright Data MCP docs",
+      "url": "https://docs.brightdata.com/ai/mcp-server/overview"
+    },
+    "remote": "https://mcp.brightdata.com/mcp",
+    "supportContactInfo": {
+      "name": "Bright Data support",
+      "email": "support@brightdata.com"},
+    "visibility": "true",
+    "categories": "Web",
+    "useCases": [
+      {
+        "name": "Web search",
+        "description": "Query Google, Bing, or Yandex and return SERP results with URLs and snippets for agents to act on."
+      },
+      {
+        "name": "Web fetch",
+        "description": "Fetch any URL as clean markdown or HTML, getting past bot detection and CAPTCHAs."
+      },
+      {
+        "name": "Structured data",
+        "description": "Pull ready-to-use JSON from 40+ platforms including Amazon, LinkedIn, Instagram, TikTok, and YouTube."
+      },
+      {
+        "name": "Browser automation",
+        "description": "Control a remote browser to navigate, click, and extract content from dynamic, JavaScript-heavy sites."
+      }
+    ],
+    "securitySchemes": {
+      "brightDataBearerAuth": {
+          "type": "http",
+          "description": "Authenticate with Bright Data using your API token.",
+          "scheme": "bearer",
+          "bearerFormat": "your api key"
+      }
+    },
+    "versionName": "original",
+    "customProperties": { "x-ms-preview": false }
+  }
