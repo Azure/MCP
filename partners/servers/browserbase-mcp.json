@@ -1,8 +1,8 @@
 {
   "name": "browserbase-mcp",
   "title": "Browserbase",
-  "summary": "Browse and act on the live web from your AI agent — navigate, act, observe, and extract from real pages on Browserbase's verified browsers, via the Stagehand SDK.",
-  "description": "Browse and act on the live web from your AI agent — navigate, act, observe, and extract from real pages on Browserbase's verified browsers, via the Stagehand SDK.",
+  "summary": "Quickly search the web and extract structured data from web pages or fully interact with the websites using headless browsers.",
+  "description": "Quickly search the web and extract structured data from web pages or fully interact with the websites using headless browsers.",
   "kind": "mcp",
   "vendor": "Partner",
   "license": {
@@ -30,8 +30,8 @@
   "packages": [],
   "useCases": [
     {
-      "name": "Web navigation",
-      "description": "Open URLs and move through multi-step web flows."
+      "name": "Web search and navigation",
+      "description": "Open URLs, search, and move through multi-step web flows."
     },
     {
       "name": "Actions and forms",
@@ -42,8 +42,8 @@
       "description": "Pull prices, listings, tables, and article content from live pages."
     },
     {
-      "name": "Agents on the real web",
-      "description": "Reliably reach JavaScript-heavy, authenticated, and protected sites using verified browsers with Agent Identity."
+      "name": "Full site interaction",
+      "description": "Reliably reach JavaScript-heavy, authenticated, and protected sites using headless browsers."
     }
   ],
   "securitySchemes": {
