@@ -1,0 +1,88 @@
+{
+  "name": "alpha-vantage-mcp-server",
+  "title": "Alpha Vantage MCP Server",
+  "summary": "Access real-time and historical financial market data via the Alpha Vantage API.",
+  "description": "The Alpha Vantage MCP Server provides AI agents and applications with access to comprehensive financial market data including real-time stock quotes, historical price data, technical indicators, fundamental data, forex rates, cryptocurrency prices, and economic indicators. Alpha Vantage is an official licensed NASDAQ data vendor. Developers and enterprises use this server to build AI-powered financial analysis tools, trading research platforms, and market intelligence applications.",
+  "kind": "mcp",
+  "license": {
+    "name": "Commercial",
+    "url": "https://www.alphavantage.co/terms_of_service/"
+  },
+  "icon": "https://www.alphavantage.co/logo.png",
+  "externalDocumentation": {
+    "title": "Alpha Vantage MCP Documentation",
+    "url": "https://mcp.alphavantage.co/"
+  },
+  "repository": {
+    "url": "https://github.com/alphavantage/alpha_vantage_mcp",
+    "source": "/"
+  },
+  "useCases": [
+    {
+      "name": "Real-Time Equity & Market Monitoring",
+      "description": "Access real-time and historical stock quotes, intraday OHLCV time series, realtime bulk quotes (up to 100 symbols), and global market status to power live trading dashboards, price alerts, and time-sensitive AI trading agents."
+    },
+    {
+      "name": "Advanced US Options Analysis & Trading",
+      "description": "Retrieve realtime and historical options chains with full Greeks, implied volatility, put-call ratios, and volume-to-open-interest metrics (premium) to build, analyze, and execute options strategies and volatility-based trading systems."
+    },
+    {
+      "name": "Technical Analysis & Algorithmic Trading",
+      "description": "Utilize over 50 technical indicators (SMA, EMA, MACD, RSI, Bollinger Bands, VWAP, etc.) across intraday, daily, weekly, and monthly timeframes to develop, backtest, and run algorithmic trading strategies."
+    },
+    {
+      "name": "Deep Fundamental & Financial Modeling",
+      "description": "Pull comprehensive company fundamentals including income statements, balance sheets, cash flows, earnings history/estimates, financial ratios, dividends, and splits to support valuation models and equity research."
+    },
+    {
+      "name": "Market Sentiment & Alpha Intelligence™",
+      "description": "Analyze real-time and historical news sentiment, earnings call transcripts with LLM-enriched signals, insider transactions, institutional holdings, and top gainers/losers to generate alternative-data-driven insights."
+    },
+    {
+      "name": "Portfolio Risk & Quantitative Analytics",
+      "description": "Perform advanced fixed-window and sliding-window portfolio analytics (returns, variance, correlation matrices, covariance, maximum drawdown, etc.) across multiple assets for risk management and optimization."
+    },
+    {
+      "name": "Macroeconomic & Cross-Asset Research",
+      "description": "Track major indices, economic indicators (GDP, CPI, unemployment, Treasury yields), forex rates, cryptocurrencies, and commodities (gold, oil, etc.) for global macro analysis and multi-asset class monitoring."
+    },
+    {
+      "name": "Earnings Events & Corporate Calendar Intelligence",
+      "description": "Combine earnings calendars, IPO calendars, historical EPS data, analyst estimates, surprise metrics, and full earnings call transcripts to anticipate and analyze market-moving corporate events."
+    }
+  ],
+  "tags": [
+    "finance",
+    "stocks",
+    "market-data",
+    "trading",
+    "forex",
+    "crypto",
+    "financial-api",
+    "technical-indicators",
+    "nasdaq",
+    "options",
+    "fundamentals"
+  ],
+  "vendor": "Partner",
+  "categories": "Finance",
+  "versionName": "original",
+  "remote": "https://mcp.alphavantage.co/mcp",
+  "remoteType": "streamable-http",
+  "securitySchemes": {
+    "apiKey": {
+      "type": "apiKey",
+      "description": "API key required for authentication. Obtain a free or premium key at https://www.alphavantage.co/support/#api-key",
+      "in": "query",
+      "name": "apikey"
+    }
+  },
+  "supportContactInfo": {
+    "name": "Alpha Vantage Support",
+    "email": "support@alphavantage.co",
+    "url": "https://www.alphavantage.co/support/"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}

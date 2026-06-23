@@ -2,11 +2,11 @@
   "name": "infa-cdgc-mcp-server",
   "title": "Informatica CDGC Metadata Search MCP Server",
   "summary": "Informatica's MCP server exposing CLAIRE-powered CDGC metadata for AI agents to perform semantic asset search, lineage, and compliance checks via standardized MCP tools and natural language prompts",
-  "description": "Informatica's MCP server exposing CLAIRE-powered CDGC metadata for AI agents to perform semantic asset search, lineage, and compliance checks via standardized MCP tools and natural language prompts.",
+  "description": "Informatica (A Salesforce company)'s MCP server exposing CLAIRE-powered CDGC metadata for AI agents to perform semantic asset search, lineage, and compliance checks via standardized MCP tools and natural language prompts.",
   "vendor": "Partner",
   "kind": "mcp",
   "remote": "https://{pod-name}/mcp-servers/public/cdgcsearchmetadata",
-  "icon": "https://www.informatica.com/content/dam/informatica-com/en/image/misc/informatica-logo.png",
+  "icon": "https://www.informatica.com/content/dam/informatica-com/en/informatica-logo.svg",
   "externalDocumentation": {
     "title": "Informatica documentation",
     "url": "https://onlinehelp.informatica.com/IICS/prod/agentic-ui/en/index.htm#page/dd-aiae-mcp-servers/Available_MCP_servers.html"
