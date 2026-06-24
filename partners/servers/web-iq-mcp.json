@@ -1,8 +1,8 @@
 {
-  "name": "microsoft-web-iq-mcp",
-  "title": "Microsoft Web IQ",
+  "name": "web-iq-mcp",
+  "title": "Web IQ",
   "summary": "Ground agents with up-to-date, authoritative content from the live web, news, images, videos, and webpage browse.",
-  "description": "Microsoft Web IQ provides AI agents with up-to-date, accurate, and authoritative grounding content across the live web, news, images, videos, and more for use in LLM-powered responses and actions. The Microsoft Web IQ MCP server exposes these capabilities as MCP tools so agents and MCP-compatible clients such as VS Code, Copilot Studio, Azure AI Foundry, and others can retrieve real-time content for grounding and citation. The endpoint includes webpage browse for specific URLs, enabling safe, fast retrieval. The server is backed by the Microsoft Web IQ v3 REST API and supports API key authentication. To learn more about how to get access to Microsoft Web IQ, contact your AE. Warning: Microsoft Web IQ is not a Microsoft Azure Online Service. Use of Microsoft Web IQ is governed by your organization's Microsoft Web IQ Agreement and the [Microsoft Privacy Statement](https://www.microsoft.com/en-us/privacy/privacystatement). The Microsoft [Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) doesn't apply to data sent to Microsoft Web IQ. When you use Microsoft Web IQ, your data flows outside the Azure compliance and Geo boundary. This also means use of these services waives all elevated Government Community Cloud security and compliance commitments, including data sovereignty and screened/citizenship-based support, as applicable. Use of Microsoft Web IQ incurs costs. See your Microsoft Web IQ Agreement for details. Follow Microsoft security guidance for MCP servers, see [Microsoft Security Documentation](https://learn.microsoft.com/en-us/azure/api-management/secure-mcp-servers) for details.",
+  "description": "Web IQ provides AI agents with up-to-date, accurate, and authoritative grounding content across the live web, news, images, videos, and more for use in LLM-powered responses and actions. The Web IQ MCP server exposes these capabilities as MCP tools so agents and MCP-compatible clients such as VS Code, Copilot Studio, Azure AI Foundry, and others can retrieve real-time content for grounding and citation. The endpoint includes webpage browse for specific URLs, enabling safe, fast retrieval. The server is backed by the Web IQ v3 REST API and supports API key authentication. To learn more about how to get access to Web IQ, contact your AE.",
   "kind": "mcp",
   "vendor": "Microsoft",
   "license": {
@@ -11,13 +11,13 @@
   },
   "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/WebIQMCPServer.svg",
   "externalDocumentation": {
-    "title": "Microsoft Web IQ access",
+    "title": "Web IQ access",
     "url": "https://aka.ms/webiq-access"
   },
   "remote": "https://api.microsoft.ai/v3/mcp",
   "remoteType": "streamable-http",
   "supportContactInfo": {
-    "name": "Microsoft Web IQ Support",
+    "name": "Web IQ Support",
     "email": "WebIQ-Support@microsoft.com",
     "url": "https://support.microsoft.com"
   },
@@ -55,7 +55,7 @@
   "securitySchemes": {
     "microsoftGroundingApiKey": {
       "type": "apiKey",
-      "description": "API key issued from the Microsoft Web IQ portal under API Keys.",
+      "description": "API key issued from the Web IQ portal under API Keys.",
       "in": "header",
       "name": "x-apikey"
     }
