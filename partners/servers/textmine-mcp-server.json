@@ -1,0 +1,71 @@
+{
+  "name": "textmine-mcp-server",
+  "title": "TextMine MCP",
+  "summary": "Search, read, and automate TextMine Vault documents, records, integrations, and agent tasks through Public API V3.",
+  "description": "The TextMine MCP server is the hosted Streamable HTTP MCP surface for external agent clients. It exposes TextMine tools backed by Public API V3 so agents can discover and call TextMine capabilities without learning every API endpoint first: searching, reading, and downloading Vault documents and their extracted text and metadata; managing document types, record schemas, and record values for typed extraction; running integrations and folder/file imports; and orchestrating Workbench agent tasks.",
+  "kind": "mcp",
+  "license": {
+    "name": "TextMine Terms and Conditions",
+    "url": "https://textmine.com/legal-pages/terms-and-conditions"
+  },
+  "externalDocumentation": {
+    "title": "TextMine MCP Documentation",
+    "url": "https://docs.textmine.com/integrations/textmine-mcp-server"
+  },
+  "remote": "https://app.textmine.com/mcp",
+  "remoteType": "streamable-http",
+  "versionName": "original",
+  "packages": [],
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/TextMine.svg",
+  "useCases": [
+    {
+      "name": "Document search and retrieval",
+      "description": "List and search Vault documents and fetch their extracted text, tags, metadata, and time-limited download URLs."
+    },
+    {
+      "name": "Document upload and processing",
+      "description": "Upload documents to a Vault, wait for processing to complete, and rename or reprocess existing documents."
+    },
+    {
+      "name": "Structured data extraction",
+      "description": "Browse and search document types and record schemas, then query records and record values for typed, field-labelled extraction."
+    },
+    {
+      "name": "Vault question answering",
+      "description": "Ask natural-language questions across a Vault's documents and receive answers grounded in their content."
+    },
+    {
+      "name": "Integrations and imports",
+      "description": "List connected integrations and browse provider folders and files, then import provider files directly into a Vault."
+    },
+    {
+      "name": "Agent task automation",
+      "description": "Create, start, monitor, message, approve, reject, and cancel Workbench agent tasks to run end-to-end document workflows."
+    }
+  ],
+  "tags": [],
+  "categories": "Developer Tools",
+  "vendor": "Partner",
+  "visibility": "true",
+  "securitySchemes": {
+    "textmineApiKey": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "Authorization",
+      "description": "Bearer TextMine API key, for example 'Bearer tm_<key>'. Create or request a key through agent self-service signup or TextMine support."
+    },
+    "textmineApiKeyHeader": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "X-TextMine-Api-Key",
+      "description": "Alternative for platforms that own the Authorization header (e.g. Power Platform custom connectors). Send the key directly as 'tm_<key>'."
+    }
+  },
+  "supportContactInfo": {
+    "name": "TextMine Developer Support",
+    "email": "developers@textmine.com"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
