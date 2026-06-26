@@ -12,7 +12,7 @@
     "title": "TextMine MCP Documentation",
     "url": "https://docs.textmine.com/integrations/textmine-mcp-server"
   },
-  "remote": "https://app.textmine.com/mcp",
+  "remote": "https://mcp.textmine.com/mcp",
   "remoteType": "streamable-http",
   "versionName": "original",
   "packages": [],
