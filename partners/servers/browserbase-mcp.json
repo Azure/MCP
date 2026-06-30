@@ -1,0 +1,59 @@
+{
+  "name": "browserbase-mcp",
+  "title": "Browserbase",
+  "summary": "Quickly search the web and extract structured data from web pages or fully interact with the websites using headless browsers.",
+  "description": "Quickly search the web and extract structured data from web pages or fully interact with the websites using headless browsers.",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://github.com/browserbase/mcp-server-browserbase/blob/main/LICENSE"
+  },
+  "icon": "https://avatars.githubusercontent.com/u/158221360?v=4",
+  "externalDocumentation": {
+    "title": "Browserbase MCP Documentation",
+    "url": "https://docs.browserbase.com/integrations/mcp/introduction"
+  },
+  "repository": {
+    "url": "https://github.com/browserbase/mcp-server-browserbase",
+    "source": "github"
+  },
+  "remote": "https://mcp.browserbase.com/mcp",
+  "remoteType": "streamable-http",
+  "supportContactInfo": {
+    "name": "Browserbase Support",
+    "url": "https://docs.browserbase.com"
+  },
+  "visibility": "public",
+  "categories": "Developer Tools",
+  "tags": ["browser-agents", "ai-agents", "stagehand", "browserbase", "web"],
+  "packages": [],
+  "useCases": [
+    {
+      "name": "Web search and navigation",
+      "description": "Open URLs, search, and move through multi-step web flows."
+    },
+    {
+      "name": "Actions and forms",
+      "description": "Click, type, submit, and select with natural language to complete interactive workflows."
+    },
+    {
+      "name": "Structured data extraction",
+      "description": "Pull prices, listings, tables, and article content from live pages."
+    },
+    {
+      "name": "Full site interaction",
+      "description": "Reliably reach JavaScript-heavy, authenticated, and protected sites using headless browsers."
+    }
+  ],
+  "securitySchemes": {
+    "browserbaseBearerAuth": {
+      "type": "http",
+      "description": "Authenticate with Browserbase using your Browserbase API key as a bearer token.",
+      "scheme": "bearer",
+      "bearerFormat": "Browserbase API key"
+    }
+  },
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": false }
+}

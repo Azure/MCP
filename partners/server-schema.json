@@ -37,7 +37,7 @@
     },
     "description": {
       "type": "string",
-      "maxLength": 2000,
+      "maxLength": 1000,
       "description": "Detailed description of the MCP server's functionality, features, and use cases."
     },
     "kind": {
