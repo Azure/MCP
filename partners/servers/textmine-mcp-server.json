@@ -48,17 +48,22 @@
   "vendor": "Partner",
   "visibility": "true",
   "securitySchemes": {
-    "textmineApiKey": {
-      "type": "apiKey",
-      "in": "header",
-      "name": "Authorization",
-      "description": "Bearer TextMine API key, for example 'Bearer tm_<key>'. Create or request a key through agent self-service signup or TextMine support."
-    },
     "textmineApiKeyHeader": {
       "type": "apiKey",
       "in": "header",
       "name": "X-TextMine-Api-Key",
-      "description": "Alternative for platforms that own the Authorization header (e.g. Power Platform custom connectors). Send the key directly as 'tm_<key>'."
+      "description": "TextMine API key sent directly as 'tm_<key>'. Create or request a key through agent self-service signup or TextMine support."
+    },
+    "textmineOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with TextMine using OAuth 2.1 authorization code flow with PKCE.",
+      "authorizationUrl": "https://login.textmine.com/authorize",
+      "tokenUrl": "https://login.textmine.com/oauth/token",
+      "refreshUrl": "https://login.textmine.com/oauth/token",
+      "scopes": [],
+      "flows": [
+        "authorizationCode"
+      ]
     }
   },
   "supportContactInfo": {
