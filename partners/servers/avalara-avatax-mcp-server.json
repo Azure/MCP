@@ -1,0 +1,77 @@
+{
+  "name": "avalara-avatax",
+  "title": "Avalara AvaTax",
+  "summary": "Access Avalara AvaTax API for tax calculation, transactions, nexus management, and compliance",
+  "description": "Connect to Avalara AvaTax to access tax calculation, transaction, nexus management, and compliance capabilities. Use AvaTax to calculate sales and use tax, validate addresses, manage transaction records, evaluate nexus obligations, retrieve tax rates and jurisdiction data, and support tax automation workflows for finance, accounting, ecommerce, and enterprise applications.",
+  "kind": "mcp",
+  "license": {
+    "name": "Avalara Service Terms",
+    "url": "https://www.avalara.com/terms"
+  },
+  "icon": "https://cdn.brandfolder.io/RCCBED7V/at/9qjjss7hq47h22mvvf2x/A-Check-RGB.png",
+  "externalDocumentation": {
+    "title": "Avalara AvaTax MCP Docs",
+    "url": "https://developer.avalara.com/mcp-servers/avatax"
+  },
+  "repository": {
+    "url": "https://github.com/avadev/mcp",
+    "source": "github"
+  },
+  "useCases": [
+    {
+      "name": "Transaction Tax Calculation",
+      "description": "Create tax transactions and calculate tax using transaction details, addresses, and line items."
+    },
+    {
+      "name": "Transaction Lookup",
+      "description": "Retrieve a specific transaction or search transaction lists for a company using filters."
+    },
+    {
+      "name": "Nexus and Registration Management",
+      "description": "Retrieve nexus definitions, view company-specific nexus information, and create nexus records for jurisdictions."
+    },
+    {
+      "name": "Tax Code Discovery",
+      "description": "Retrieve tax code definitions and get ranked tax code recommendations based on product details."
+    },
+    {
+      "name": "Address Validation",
+      "description": "Validate and resolve addresses to improve tax jurisdiction determination accuracy."
+    }
+  ],
+  "tags": [
+    "tax",
+    "sales-tax",
+    "compliance",
+    "tax-calculation",
+    "address-validation",
+    "finance",
+    "accounting",
+    "ai-agents",
+    "avalara",
+    "e-commerce",
+    "nexus",
+    "exemption-certificates",
+    "tax-determination",
+    "tax-automation",
+    "tax-rates",
+    "jurisdiction-data",
+    "api",
+    "saas",
+    "enterprise-software"
+  ],
+  "vendor": "Partner",
+  "categories": "Compliance & Legal",
+  "visibility": "true",
+  "remote": "https://mcp.avalara.com/avatax",
+  "remoteType": "streamable-http",
+  "versionName": "v1-0-1",
+  "versionTitle": "1.0.1",
+  "supportContactInfo": {
+    "name": "Avalara Developer Support",
+    "url": "https://developer.avalara.com"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
