@@ -18,6 +18,10 @@
     "customProperties"
   ],
   "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Allows the schema to be declared in the target JSON file."
+    },
     "name": {
       "type": "string",
       "pattern": "^[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*$",
