@@ -1,0 +1,87 @@
+{
+    "$schema": "../server-schema.json",
+    "name": "neo4j-mcp-server",
+    "title": "Neo4j",
+    "summary": "Neo4j is a graph database management system that uses graph structures for semantic queries with nodes, edges, and properties.",
+    "description": "Neo4j is a highly scalable, native graph database that leverages data relationships as first-class entities. It is designed to handle large-scale graph data and provides a powerful query language called Cypher for traversing and manipulating graph structures. Neo4j is widely used in various applications, including social networks, recommendation engines, fraud detection, and knowledge graphs.",
+    "kind": "mcp",
+    "license": {
+        "name": "Neo4j",
+        "url": "https://neo4j.com/legal-terms/"
+    },
+    "icon": "https://github.com/neo4j-partners/azure-resource-manager-neo4j/blob/main/marketplace/logo.png?raw=true",
+    "externalDocumentation": {
+        "title": "Neo4j MCP Documentation",
+        "url": "https://neo4j.com/docs/mcp"
+    },
+    "repository": {
+        "url": "https://github.com/neo4j/mcp",
+        "source": "src"
+    },
+    "useCases": [
+        {
+            "name": "Social Network Analysis",
+            "description": "Neo4j can be used to analyze social networks, identifying relationships and patterns among users, communities, and interactions."
+        },
+        {
+            "name": "Recommendation Engines",
+            "description": "Neo4j can power recommendation engines by analyzing user behavior and preferences to suggest relevant products or content."
+        },
+        {
+            "name": "Fraud Detection",
+            "description": "Neo4j can help detect fraudulent activities by analyzing transaction patterns and relationships between entities."
+        },
+        {
+            "name": "Knowledge Graphs",
+            "description": "Neo4j can be used to build knowledge graphs that represent complex relationships between concepts, entities, and data points."
+        }
+    ],
+    "tags": [
+        "graph database",
+        "neo4j",
+        "cypher",
+        "data relationships",
+        "social network analysis",
+        "recommendation engines",
+        "fraud detection",
+        "knowledge graphs"
+    ],
+    "vendor": "Partner",
+    "visibility": "public",
+    "categories": "Databases",
+    "connectorName": "Neo4jConnector",
+    "securitySchemes": {
+        "basicAuth": {
+            "type": "http",
+            "description": "Basic authentication using username and password.",
+            "scheme": "basic"
+        },
+        "oauth2": {
+            "type": "oauth2",
+            "description": "OAuth 2.0 authentication for secure access.",
+            "flows": [
+                "authorizationCode"
+            ],
+            "tokenUrl": "https://api.neo4j.io/oauth/token",
+            "scopes": [
+                "read",
+                "write"
+            ]
+        }
+    },
+    "packages": [],
+    "versionName": "original",
+    "versionTitle": "1",
+    "remote": "https://<INSTANCE_ID>.mcp-instances.neo4j.io",
+    "remoteType": "streamable-http",
+    "supportContact": "https://support.neo4j.com/",
+    "supportContactInfo": {
+      "name": "Neo4j Support",
+      "email": "support@neo4j.com",
+      "url": "https://support.neo4j.com/"
+    },
+    "authSchemas": ["OAuth2"],
+    "customProperties": {
+      "x-ms-preview": false
+    }
+  }
