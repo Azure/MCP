@@ -1,6 +1,6 @@
 {
   "name": "azure-devops-mcp",
-  "title": "Azure DevOps MCP Server (preview)",
+  "title": "Azure DevOps MCP Server",
   "summary": "Use Azure DevOps MCP Server to interact with Azure DevOps Work Items, Wiki, Repos and Pipelines.",
   "description": "Enables core Azre DevOps actions for work items, wiki, repos and piplines, enabling agentic workflows for your DevOps needs.",
   "kind": "mcp",
@@ -61,5 +61,5 @@
   "authSchemas":["OAuth2", "ManagedIdentity"],
   "audience": "api://2a72489c-aab2-4b65-b93a-a91edccf33b8",
   "versionName": "original",
-  "customProperties": { "x-ms-preview": true }
+  "customProperties": { "x-ms-preview": false }
 }
