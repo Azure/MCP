@@ -1,5 +1,4 @@
 {
-    "$schema": "../server-schema.json",
     "name": "neo4j-mcp-server",
     "title": "Neo4j",
     "summary": "Neo4j is a graph database management system that uses graph structures for semantic queries with nodes, edges, and properties.",
@@ -56,7 +55,7 @@
             "description": "Basic authentication using username and password.",
             "scheme": "basic"
         },
-        "oauth2": {
+        "neo4j-oauth2": {
             "type": "oauth2",
             "description": "OAuth 2.0 authentication for secure access.",
             "flows": [
