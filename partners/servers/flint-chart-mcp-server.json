@@ -1,0 +1,57 @@
+{
+  "name": "flint-chart-mcp-server",
+  "title": "Flint Chart MCP Server",
+  "summary": "Use Flint, a semantic chart authoring library, to create interactive visualizations and render or compile chart artifacts for agents.",
+  "description": "Flint is a semantic-level visualization library that helps agents author charts from data, field meanings, and chart specifications. The Flint Chart MCP Server lets MCP clients turn Flint chart inputs into interactive MCP App views with live previews and chart options, validate inputs, list supported chart types and encoding channels, render PNG or SVG artifacts, and compile backend-native specs for Vega-Lite, ECharts, or Chart.js. The hosted remote server enables clients to use Flint without local installation.",
+  "kind": "mcp",
+  "vendor": "Microsoft",
+  "license": {
+    "name": "MIT",
+    "url": "https://github.com/microsoft/flint-chart/blob/main/LICENSE"
+  },
+  "icon": "https://microsoft.github.io/flint-chart/favicon.svg",
+  "externalDocumentation": {
+    "title": "Flint MCP docs",
+    "url": "https://microsoft.github.io/flint-chart/#/mcp"
+  },
+  "repository": {
+    "url": "https://github.com/microsoft/flint-chart",
+    "source": "packages/flint-mcp"
+  },
+  "remote": "https://flint.data-formulator.ai/mcp",
+  "remoteType": "streamable-http",
+  "supportContactInfo": {
+    "name": "Flint Chart support",
+    "url": "https://github.com/microsoft/flint-chart/issues"
+  },
+  "visibility": "true",
+  "categories": "Analytics",
+  "useCases": [
+    {
+      "name": "Interactive chart views",
+      "description": "Open a live Flint chart preview with chart options so users can review and refine visualizations directly from an MCP host."
+    },
+    {
+      "name": "Static chart rendering",
+      "description": "Render Flint chart inputs as PNG or SVG artifacts when a host needs an image output instead of an interactive app."
+    },
+    {
+      "name": "Chart validation and discovery",
+      "description": "Validate Flint chart inputs, inspect warnings and computed chart sizes, and list available chart types and encoding channels."
+    },
+    {
+      "name": "Backend spec compilation",
+      "description": "Compile Flint charts into backend-native visualization specifications for Vega-Lite, ECharts, or Chart.js."
+    }
+  ],
+  "tags": [
+    "charts",
+    "visualization",
+    "analytics",
+    "mcp-apps"
+  ],
+  "versionName": "original",
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
