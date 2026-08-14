@@ -1,0 +1,73 @@
+{
+  "name": "avalara-returns",
+  "title": "Avalara Returns",
+  "summary": "Provides access to Avalara Global Returns APIs for tax returns, filing calendars, and compliance data",
+  "description": "Avalara Returns MCP server gives AI agents access to Avalara Global Returns / Managed Returns capabilities including supported countries and tax types, tax forms, and filing calendars. Use it to automate returns discovery and filing preparation over streamable HTTP with OAuth 2.1.",
+  "kind": "mcp",
+  "license": {
+    "name": "Proprietary",
+    "url": "https://www.avalara.com/us/en/legal/terms.html"
+  },
+  "icon": "https://cdn.brandfolder.io/RCCBED7V/at/9qjjss7hq47h22mvvf2x/A-Check-RGB.png",
+  "externalDocumentation": {
+    "title": "Avalara Returns Docs",
+    "url": "https://developer.avalara.com/mcp-servers/returns"
+  },
+  "repository": {
+    "url": "https://github.com/avadev/mcp",
+    "source": "servers/returns"
+  },
+  "useCases": [
+    {
+      "name": "Supported returns countries and tax types",
+      "description": "Discover which countries, regions, and tax types Managed Returns supports so agents can guide filing scope decisions."
+    },
+    {
+      "name": "Tax form discovery",
+      "description": "List tax forms with codes, regions, and associated tax types for a country or region to prepare returns work."
+    },
+    {
+      "name": "Filing calendar retrieval",
+      "description": "Retrieve filing calendars for a company to understand upcoming return due dates and filing obligations."
+    }
+  ],
+  "tags": [
+    "tax-returns",
+    "returns-filing",
+    "managed-returns",
+    "global-returns",
+    "filing-calendars",
+    "tax-forms",
+    "vat-returns",
+    "property-tax",
+    "excise-tax",
+    "lodging-tax",
+    "liability-reports",
+    "tax-reporting",
+    "compliance",
+    "accounting",
+    "ai-agents",
+    "avalara",
+    "api",
+    "saas",
+    "enterprise-software"
+  ],
+  "vendor": "Partner",
+  "visibility": "public",
+  "categories": "Finance",
+  "versionName": "1-0-1",
+  "versionTitle": "Version 1.0.1",
+  "remote": "https://mcp.avalara.com/returns",
+  "remoteType": "streamable-http",
+  "supportContact": "https://developer.avalara.com",
+  "supportContactInfo": {
+    "name": "Avalara Developer Support",
+    "url": "https://developer.avalara.com"
+  },
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}

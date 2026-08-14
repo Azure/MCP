@@ -1,0 +1,73 @@
+{
+  "name": "avalara-communications",
+  "title": "Avalara Communications",
+  "summary": "Provides access to Avalara Communications tax calculation for voice, data, VoIP, and messaging",
+  "description": "Avalara Communications MCP server provides AI agents with communications tax calculation for voice, data, VoIP, messaging, and related telecom services. It supports jurisdiction coding, geocoding, address validation, and tax reporting workflows over streamable HTTP with OAuth 2.1.",
+  "kind": "mcp",
+  "license": {
+    "name": "Proprietary",
+    "url": "https://www.avalara.com/us/en/legal/terms.html"
+  },
+  "icon": "https://cdn.brandfolder.io/RCCBED7V/at/9qjjss7hq47h22mvvf2x/A-Check-RGB.png",
+  "externalDocumentation": {
+    "title": "Avalara Communications Docs",
+    "url": "https://developer.avalara.com/mcp-servers/communications"
+  },
+  "repository": {
+    "url": "https://github.com/avadev/mcp",
+    "source": "servers/communications"
+  },
+  "useCases": [
+    {
+      "name": "Telecom tax calculation",
+      "description": "Calculate communications taxes for voice, data, VoIP, wireless, and messaging transactions so billing systems and agents apply the correct tax types."
+    },
+    {
+      "name": "Jurisdiction and geocoding support",
+      "description": "Resolve jurisdiction codes and validate service addresses to determine which communications taxes apply for a given location."
+    },
+    {
+      "name": "Communications tax reporting",
+      "description": "Retrieve tax calculation outputs needed for communications tax reporting and compliance reviews."
+    }
+  ],
+  "tags": [
+    "communications-tax",
+    "telecom-tax",
+    "telecom",
+    "tax-calculation",
+    "voip",
+    "messaging",
+    "wireless",
+    "tax-types",
+    "jurisdiction-codes",
+    "geocoding",
+    "address-validation",
+    "tax-reporting",
+    "compliance",
+    "accounting",
+    "ai-agents",
+    "avalara",
+    "api",
+    "saas",
+    "enterprise-software"
+  ],
+  "vendor": "Partner",
+  "visibility": "public",
+  "categories": "Finance",
+  "versionName": "1-0-0",
+  "versionTitle": "Version 1.0.0",
+  "remote": "https://mcp.avalara.com/comms",
+  "remoteType": "streamable-http",
+  "supportContact": "https://developer.avalara.com",
+  "supportContactInfo": {
+    "name": "Avalara Developer Support",
+    "url": "https://developer.avalara.com"
+  },
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}

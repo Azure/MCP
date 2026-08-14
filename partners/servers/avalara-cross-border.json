@@ -1,0 +1,72 @@
+{
+  "name": "avalara-cross-border",
+  "title": "Avalara Cross-Border",
+  "summary": "Cross-border duty-rate and Trade & Tariff content lookups with product compliance and restrictions",
+  "description": "Avalara Cross-Border MCP server enables AI agents to look up duty rates and Trade & Tariff content, including punitive duties, product compliance status, restrictions, and regulatory requirements for import and export lanes. Connect via streamable HTTP with OAuth 2.1.",
+  "kind": "mcp",
+  "license": {
+    "name": "Proprietary",
+    "url": "https://www.avalara.com/us/en/legal/terms.html"
+  },
+  "icon": "https://cdn.brandfolder.io/RCCBED7V/at/9qjjss7hq47h22mvvf2x/A-Check-RGB.png",
+  "externalDocumentation": {
+    "title": "Avalara Cross-Border Docs",
+    "url": "https://developer.avalara.com/mcp-servers/cross-border"
+  },
+  "repository": {
+    "url": "https://github.com/avadev/mcp",
+    "source": "servers/cross-border"
+  },
+  "useCases": [
+    {
+      "name": "Duty rate lookup by HS code and date",
+      "description": "Retrieve tariff and duty information for HS codes across date ranges so agents can estimate landed cost for cross-border shipments."
+    },
+    {
+      "name": "Current trade compliance status",
+      "description": "Get current-day compliance, restrictions, and regulatory requirements for products moving between countries."
+    },
+    {
+      "name": "Punitive duty and restriction checks",
+      "description": "Identify punitive duties and trade restrictions that may block or surcharge specific import/export combinations."
+    }
+  ],
+  "tags": [
+    "cross-border",
+    "international-trade",
+    "duty-rates",
+    "punitive-duty",
+    "trade-tariff",
+    "trade-restrictions",
+    "regulatory-requirements",
+    "hs-codes",
+    "customs",
+    "import",
+    "export",
+    "compliance",
+    "e-commerce",
+    "ai-agents",
+    "avalara",
+    "api",
+    "saas",
+    "enterprise-software"
+  ],
+  "vendor": "Partner",
+  "visibility": "public",
+  "categories": "Compliance & Legal",
+  "versionName": "1-0-0",
+  "versionTitle": "Version 1.0.0",
+  "remote": "https://mcp.avalara.com/cross-border",
+  "remoteType": "streamable-http",
+  "supportContact": "https://developer.avalara.com",
+  "supportContactInfo": {
+    "name": "Avalara Developer Support",
+    "url": "https://developer.avalara.com"
+  },
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}

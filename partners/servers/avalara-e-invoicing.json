@@ -1,0 +1,73 @@
+{
+  "name": "avalara-e-invoicing",
+  "title": "Avalara E-Invoicing and Live Reporting",
+  "summary": "Provides access to Avalara E-Invoicing and Live Reporting APIs for document statuses and compliance",
+  "description": "Avalara E-Invoicing & Live Reporting MCP server lets AI agents retrieve document statuses and lifecycle events, download legal/compliant electronic documents, analyze failed transactions, search trading partners, and semantically search e-invoicing documents across jurisdictions via streamable HTTP with OAuth 2.1.",
+  "kind": "mcp",
+  "license": {
+    "name": "Proprietary",
+    "url": "https://www.avalara.com/us/en/legal/terms.html"
+  },
+  "icon": "https://cdn.brandfolder.io/RCCBED7V/at/9qjjss7hq47h22mvvf2x/A-Check-RGB.png",
+  "externalDocumentation": {
+    "title": "Avalara E-Invoicing and Live Reporting Docs",
+    "url": "https://developer.avalara.com/mcp-servers/E-Invoicing"
+  },
+  "repository": {
+    "url": "https://github.com/avadev/mcp",
+    "source": "servers/e-invoicing"
+  },
+  "useCases": [
+    {
+      "name": "E-invoice status tracking",
+      "description": "Check processing status and lifecycle events for submitted e-invoices or related documents to support compliance operations."
+    },
+    {
+      "name": "Compliant document retrieval",
+      "description": "Download previously submitted electronic documents such as invoices or credit notes in formats like XML or UBL."
+    },
+    {
+      "name": "Failure analysis and partner search",
+      "description": "Analyze failed e-invoicing transactions and search the trading partner directory to resolve compliance issues faster."
+    }
+  ],
+  "tags": [
+    "e-invoicing",
+    "live-reporting",
+    "real-time-reporting",
+    "electronic-invoicing",
+    "invoice",
+    "credit-notes",
+    "electronic-documents",
+    "document-status",
+    "document-lifecycle",
+    "global-compliance",
+    "compliance",
+    "regulatory-reporting",
+    "accounting",
+    "finance",
+    "ai-agents",
+    "avalara",
+    "api",
+    "saas",
+    "enterprise-software"
+  ],
+  "vendor": "Partner",
+  "visibility": "public",
+  "categories": "Compliance & Legal",
+  "versionName": "1-0-0",
+  "versionTitle": "Version 1.0.0",
+  "remote": "https://mcp.avalara.com/elr",
+  "remoteType": "streamable-http",
+  "supportContact": "https://developer.avalara.com",
+  "supportContactInfo": {
+    "name": "Avalara Developer Support",
+    "url": "https://developer.avalara.com"
+  },
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}

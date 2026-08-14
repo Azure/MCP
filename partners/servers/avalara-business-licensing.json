@@ -1,0 +1,73 @@
+{
+  "name": "avalara-business-licensing",
+  "title": "Avalara Tax Registrations & Licenses",
+  "summary": "Provides access to Avalara Tax Registration and Business Licenses APIs for filings and registrations",
+  "description": "Avalara Tax Registrations and Business Licenses MCP server provides AI agents with license guidance, sales and payroll tax registration insights, questionnaire schema support, industry keyword lookup, location validation, and business activity mapping through Avalara Licensing Guidance APIs over streamable HTTP with OAuth 2.1.",
+  "kind": "mcp",
+  "license": {
+    "name": "Proprietary",
+    "url": "https://www.avalara.com/us/en/legal/terms.html"
+  },
+  "icon": "https://cdn.brandfolder.io/RCCBED7V/at/9qjjss7hq47h22mvvf2x/A-Check-RGB.png",
+  "externalDocumentation": {
+    "title": "Avalara Tax Registrations & Licenses Docs",
+    "url": "https://developer.avalara.com/mcp-servers/business_licensing"
+  },
+  "repository": {
+    "url": "https://github.com/avadev/mcp",
+    "source": "servers/business-licensing"
+  },
+  "useCases": [
+    {
+      "name": "License requirements by jurisdiction",
+      "description": "Estimate how many business licenses are needed for a location and business context so agents can guide onboarding and expansion workflows."
+    },
+    {
+      "name": "Location and activity validation",
+      "description": "Validate business addresses and map activity terms to Avalara licensing guidance to prepare accurate registration and filing requests."
+    },
+    {
+      "name": "Registration questionnaire mapping",
+      "description": "Retrieve questionnaire schemas and industry keywords so agents can collect the right fields for tax registration and licensing orders."
+    }
+  ],
+  "tags": [
+    "tax-registration",
+    "business-licensing",
+    "license-filing",
+    "license-guidance",
+    "sales-tax-registration",
+    "payroll-tax-registration",
+    "unemployment-insurance-registration",
+    "questionnaire-management",
+    "industry-regulation",
+    "jurisdiction",
+    "compliance",
+    "regulatory",
+    "finance",
+    "accounting",
+    "ai-agents",
+    "avalara",
+    "api",
+    "saas",
+    "enterprise-software"
+  ],
+  "vendor": "Partner",
+  "visibility": "public",
+  "categories": "Compliance & Legal",
+  "versionName": "1-0-0",
+  "versionTitle": "Version 1.0.0",
+  "remote": "https://mcp.avalara.com/bl",
+  "remoteType": "streamable-http",
+  "supportContact": "https://developer.avalara.com",
+  "supportContactInfo": {
+    "name": "Avalara Developer Support",
+    "url": "https://developer.avalara.com"
+  },
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
