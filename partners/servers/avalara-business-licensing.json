@@ -2,7 +2,7 @@
   "name": "avalara-business-licensing",
   "title": "Avalara Tax Registrations & Licenses",
   "summary": "Provides access to Avalara Tax Registration and Business Licenses APIs for filings and registrations",
-  "description": "Avalara Tax Registrations and Business Licenses MCP server provides AI agents with license guidance, sales and payroll tax registration insights, questionnaire schema support, industry keyword lookup, location validation, and business activity mapping through Avalara Licensing Guidance APIs over streamable HTTP with OAuth 2.1.",
+  "description": "Avalara Tax Registrations and Business Licenses MCP server provides AI agents with license guidance, sales and payroll tax registration insights, questionnaire schema support, industry keyword lookup, location validation, and business activity mapping through Avalara Licensing Guidance APIs.",
   "kind": "mcp",
   "license": {
     "name": "Proprietary",
@@ -53,7 +53,7 @@
     "enterprise-software"
   ],
   "vendor": "Partner",
-  "visibility": "public",
+  "visibility": "true",
   "categories": "Compliance & Legal",
   "versionName": "1-0-0",
   "versionTitle": "Version 1.0.0",
@@ -67,6 +67,18 @@
   "authSchemas": [
     "OAuth2"
   ],
+  "securitySchemes": {
+    "avalaraBusinessLicensingOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with Avalara using OAuth2 authorization code flow.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://identity.avalara.com/connect/authorize",
+      "tokenUrl": "https://identity.avalara.com/connect/token",
+      "scopes": [
+        "avalara_mcp"
+      ]
+    }
+  },
   "customProperties": {
     "x-ms-preview": false
   }

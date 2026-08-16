@@ -2,7 +2,7 @@
   "name": "avalara-e-invoicing",
   "title": "Avalara E-Invoicing and Live Reporting",
   "summary": "Provides access to Avalara E-Invoicing and Live Reporting APIs for document statuses and compliance",
-  "description": "Avalara E-Invoicing & Live Reporting MCP server lets AI agents retrieve document statuses and lifecycle events, download legal/compliant electronic documents, analyze failed transactions, search trading partners, and semantically search e-invoicing documents across jurisdictions via streamable HTTP with OAuth 2.1.",
+  "description": "Avalara E-Invoicing & Live Reporting MCP server lets AI agents retrieve document statuses and lifecycle events, download legal/compliant electronic documents, analyze failed transactions, search trading partners, and semantically search e-invoicing documents across jurisdictions.",
   "kind": "mcp",
   "license": {
     "name": "Proprietary",
@@ -53,7 +53,7 @@
     "enterprise-software"
   ],
   "vendor": "Partner",
-  "visibility": "public",
+  "visibility": "true",
   "categories": "Compliance & Legal",
   "versionName": "1-0-0",
   "versionTitle": "Version 1.0.0",
@@ -67,6 +67,18 @@
   "authSchemas": [
     "OAuth2"
   ],
+  "securitySchemes": {
+    "avalaraEInvoicingOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with Avalara using OAuth2 authorization code flow.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://identity.avalara.com/connect/authorize",
+      "tokenUrl": "https://identity.avalara.com/connect/token",
+      "scopes": [
+        "avalara_mcp"
+      ]
+    }
+  },
   "customProperties": {
     "x-ms-preview": false
   }

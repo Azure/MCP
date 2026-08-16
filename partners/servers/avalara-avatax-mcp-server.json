@@ -2,7 +2,7 @@
   "name": "avalara-avatax",
   "title": "Avalara AvaTax",
   "summary": "Access Avalara AvaTax APIs for tax calculation, transactions, nexus management, and compliance",
-  "description": "Connect to Avalara AvaTax to access tax calculation, transaction, nexus management, and compliance capabilities. Use AvaTax to calculate sales and use tax, validate addresses, manage transaction records, evaluate nexus obligations, retrieve tax rates and jurisdiction data, and support tax automation workflows for finance, accounting, ecommerce, and enterprise applications. ",
+  "description": "Connect to Avalara AvaTax to access tax calculation, transaction, nexus management, and compliance capabilities. Use AvaTax to calculate sales and use tax, validate addresses, manage transaction records, evaluate nexus obligations, retrieve tax rates and jurisdiction data, and support tax automation workflows for finance, accounting, ecommerce, and enterprise applications.",
   "kind": "mcp",
   "license": {
     "name": "Avalara Service Terms",
@@ -70,6 +70,21 @@
   "supportContactInfo": {
     "name": "Avalara Developer Support",
     "url": "https://developer.avalara.com"
+  },
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "securitySchemes": {
+    "avalaraAvataxOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with Avalara using OAuth2 authorization code flow.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://identity.avalara.com/connect/authorize",
+      "tokenUrl": "https://identity.avalara.com/connect/token",
+      "scopes": [
+        "avalara_mcp"
+      ]
+    }
   },
   "customProperties": {
     "x-ms-preview": false

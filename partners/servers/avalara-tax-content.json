@@ -1,8 +1,8 @@
 {
   "name": "avalara-tax-content",
   "title": "Avalara Tax Content",
-  "summary": "Provides access to Avalara Tax Content: TTE configs, jobs, communications, lodging, autorental",
-  "description": "Avalara Tax Content MCP server provides AI agents access to Avalara Tax Content capabilities including Transaction Tax Export (TTE) configurations and jobs, communications and notifications, user-defined fields, and lodging/autorental content over streamable HTTP with OAuth 2.1.",
+  "summary": "Provides access to Avalara Tax Content: TTE configs, jobs, communications, lodging, and autorental",
+  "description": "Avalara Tax Content MCP server provides AI agents access to Avalara Tax Content capabilities including Transaction Tax Export (TTE) configurations and jobs, communications and notifications, user-defined fields, and lodging/autorental content.",
   "kind": "mcp",
   "license": {
     "name": "Proprietary",
@@ -53,7 +53,7 @@
     "enterprise-software"
   ],
   "vendor": "Partner",
-  "visibility": "public",
+  "visibility": "true",
   "categories": "Finance",
   "versionName": "1-0-1",
   "versionTitle": "Version 1.0.1",
@@ -67,6 +67,18 @@
   "authSchemas": [
     "OAuth2"
   ],
+  "securitySchemes": {
+    "avalaraTaxContentOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with Avalara using OAuth2 authorization code flow.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://identity.avalara.com/connect/authorize",
+      "tokenUrl": "https://identity.avalara.com/connect/token",
+      "scopes": [
+        "avalara_mcp"
+      ]
+    }
+  },
   "customProperties": {
     "x-ms-preview": false
   }

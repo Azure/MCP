@@ -2,7 +2,7 @@
   "name": "avalara-dev-docs",
   "title": "Avalara Developer Documentation",
   "summary": "Provides access to Avalara developer documentation, integration guides, and code examples",
-  "description": "Avalara Developer Documentation MCP server gives AI agents access to Avalara developer docs, integration guides, how-to content, API references, and code examples so they can answer product and integration questions accurately while building against Avalara APIs. Available over streamable HTTP with OAuth 2.1.",
+  "description": "Avalara Developer Documentation MCP server gives AI agents access to Avalara developer docs, integration guides, how-to content, API references, and code examples so they can answer product and integration questions accurately while building against Avalara APIs.",
   "kind": "mcp",
   "license": {
     "name": "Proprietary",
@@ -53,7 +53,7 @@
     "enterprise-software"
   ],
   "vendor": "Partner",
-  "visibility": "public",
+  "visibility": "true",
   "categories": "Developer Tools",
   "versionName": "1-0-1",
   "versionTitle": "Version 1.0.1",
@@ -67,6 +67,19 @@
   "authSchemas": [
     "OAuth2"
   ],
+  "securitySchemes": {
+    "avalaraDevDocsOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with Avalara using OAuth2 authorization code flow.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://identity.avalara.com/connect/authorize",
+      "tokenUrl": "https://identity.avalara.com/connect/token",
+      "scopes": [
+        "avalara_mcp",
+        "offline_access"
+      ]
+    }
+  },
   "customProperties": {
     "x-ms-preview": false
   }

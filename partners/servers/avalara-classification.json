@@ -2,7 +2,7 @@
   "name": "avalara-classification",
   "title": "Avalara Classification",
   "summary": "Classify, validate & verify HS codes and access tariff compliance data for cross-border trade",
-  "description": "Avalara Classification MCP server helps AI agents classify, validate, and verify Harmonized System (HS) codes and access tariff compliance content for cross-border trade. It supports import/export workflows that need consistent product classification and duty-related compliance data via streamable HTTP with OAuth 2.1.",
+  "description": "Avalara Classification MCP server helps AI agents classify, validate, and verify Harmonized System (HS) codes and access tariff compliance content for cross-border trade. It supports import/export workflows that need consistent product classification and duty-related compliance data.",
   "kind": "mcp",
   "license": {
     "name": "Proprietary",
@@ -53,7 +53,7 @@
     "enterprise-software"
   ],
   "vendor": "Partner",
-  "visibility": "public",
+  "visibility": "true",
   "categories": "Compliance & Legal",
   "versionName": "1-0-0",
   "versionTitle": "Version 1.0.0",
@@ -67,6 +67,19 @@
   "authSchemas": [
     "OAuth2"
   ],
+  "securitySchemes": {
+    "avalaraClassificationOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with Avalara using OAuth2 authorization code flow.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://identity.avalara.com/connect/authorize",
+      "tokenUrl": "https://identity.avalara.com/connect/token",
+      "scopes": [
+        "avalara_mcp",
+        "offline_access"
+      ]
+    }
+  },
   "customProperties": {
     "x-ms-preview": false
   }
