@@ -1,0 +1,80 @@
+{
+  "name": "amperity-mcp-server",
+  "title": "Amperity",
+  "summary": "Connect AI applications to identity-resolved customer profiles — query, activate, and operate against trusted customer context.",
+  "description": "Amperity MCP Server makes a brand's identity-resolved customer profiles directly available to any tool that supports the protocol, without rebuilding the underlying data model and without bypassing existing governance. AI applications query live, resolved customer data at query time rather than receiving an export, so answers reflect what is true right now and no new copy of the customer record sits in another environment. Access happens under the authenticated user's own Amperity identity: whatever a user is permissioned to access in the Amperity application is what they can access through the server, with the same role-based controls, consent rules, and data usage policies. More than 200 tools span analysis, sources, transformations, identity resolution, activation, predictive, and operations — giving an agent the same operational surface a person has inside Amperity.",
+  "kind": "mcp",
+  "packages": [],
+  "icon": "https://images.ctfassets.net/5vqt5w81x2im/7n5upbNMWlRTDhnwTZ3Nuu/72f83bb4655a6074b8215ddde4bbc0be/Amperity_icon.png",
+  "useCases": [
+    {
+      "name": "Analysis",
+      "description": "Ask questions of the customer 360 in natural language and let the agent resolve them into queries against tenant databases — ad-hoc queries, database schemas and stats, validation outputs. An analyst asks which segments are underperforming this quarter and gets an answer grounded in resolved customer data rather than a stale synced list."
+    },
+    {
+      "name": "Activation",
+      "description": "Segmentation, campaigns, orchestrations, destinations. A marketer builds segments and ships campaigns from their AI surface of choice, without handoffs or waiting on a data team."
+    },
+    {
+      "name": "Identity Resolution",
+      "description": "Stitch settings, benchmarks, record lookup, pair explanation. Inspect why two records did or did not resolve to the same customer, and review the benchmarks that grade resolution quality."
+    },
+    {
+      "name": "Predictive",
+      "description": "Predictive customer lifetime value (pCLV) and product affinity — configure, validate, and run models, then use the resulting scores in segments and analyses."
+    },
+    {
+      "name": "Sources and Transformations",
+      "description": "Bridge, couriers, and feeds on the ingest side; database tables, custom domain tables (CDT), and core tables on the modeling side — inspect and configure how customer data lands and is shaped."
+    },
+    {
+      "name": "Operations",
+      "description": "Sandbox management, workflows, config history and revert, Spark introspection, and table run history — monitor and troubleshoot the customer data pipeline from the agent."
+    },
+    {
+      "name": "Customer service context",
+      "description": "Instead of stitching together purchase history, support touches, loyalty status, and recent campaign exposure across three systems, a service agent reads one verified profile inside the existing ticket workflow."
+    }
+  ],
+  "tags": [
+    "customer data cloud",
+    "customer data platform",
+    "cdp",
+    "customer 360",
+    "identity resolution",
+    "segmentation",
+    "marketing"
+  ],
+  "categories": "Analytics",
+  "vendor": "Partner",
+  "visibility": "true",
+  "remote": "https://mcp.amperity.com",
+  "remoteType": "streamable-http",
+  "versionName": "original",
+  "externalDocumentation": {
+    "title": "Amperity MCP server",
+    "url": "https://docs.amperity.com/api/mcp_overview.html"
+  },
+  "securitySchemes": {
+    "amperityOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with existing Amperity credentials using OAuth 2.1 authorization code flow with PKCE. Public client, no client secret.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://mcp.amperity.com/authorize",
+      "tokenUrl": "https://mcp.amperity.com/oauth/token",
+      "refreshUrl": "https://mcp.amperity.com/oauth/token",
+      "scopes": ["openid", "email"]
+    }
+  },
+  "authSchemas": ["OAuth2"],
+  "license": {
+    "name": "Amperity Terms of Service",
+    "url": "https://amperity.com/legal"
+  },
+  "supportContactInfo": {
+    "name": "Amperity Support",
+    "email": "support@amperity.com",
+    "url": "https://help.amperity.com"
+  },
+  "customProperties": { "x-ms-preview": false }
+}
