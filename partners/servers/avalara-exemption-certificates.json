@@ -1,0 +1,85 @@
+{
+  "name": "avalara-exemption-certificates",
+  "title": "Avalara Exemption Certificates",
+  "summary": "Provides access to Avalara Exemption Certificate Management for certificates, profiles, and company data",
+  "description": "Avalara Exemption Certificate Management MCP server provides AI agents access to exemption certificates, customer profiles, and company data. Agents can list or filter certificates and customers, and search companies to obtain IDs required for ECM operations.",
+  "kind": "mcp",
+  "license": {
+    "name": "Proprietary",
+    "url": "https://www.avalara.com/us/en/legal/terms.html"
+  },
+  "icon": "https://cdn.brandfolder.io/RCCBED7V/at/9qjjss7hq47h22mvvf2x/A-Check-RGB.png",
+  "externalDocumentation": {
+    "title": "Avalara Exemption Certificates Docs",
+    "url": "https://developer.avalara.com/mcp-servers/exemption-certificate-management"
+  },
+  "repository": {
+    "url": "https://github.com/avadev/mcp",
+    "source": "servers/exemption-certificates"
+  },
+  "useCases": [
+    {
+      "name": "Certificate inventory management",
+      "description": "List and filter exemption certificates for a company, including validity status, to support sales tax exemption compliance."
+    },
+    {
+      "name": "Customer profile lookup",
+      "description": "Retrieve customer profiles and related certificate information for exemption validation during sales or audit workflows."
+    },
+    {
+      "name": "Company search for ECM operations",
+      "description": "Search companies by name to obtain company IDs required for certificate and customer management operations."
+    }
+  ],
+  "tags": [
+    "exemption-certificates",
+    "certificate-management",
+    "ecm",
+    "customer-management",
+    "customer-profiles",
+    "company-management",
+    "tax-exemption",
+    "sales-tax-exemption",
+    "resale-certificates",
+    "certificate-validation",
+    "compliance",
+    "e-commerce",
+    "accounting",
+    "finance",
+    "ai-agents",
+    "avalara",
+    "api",
+    "saas",
+    "enterprise-software"
+  ],
+  "vendor": "Partner",
+  "visibility": "true",
+  "categories": "Finance",
+  "versionName": "1-0-0",
+  "versionTitle": "Version 1.0.0",
+  "remote": "https://mcp.avalara.com/ecm",
+  "remoteType": "streamable-http",
+  "supportContact": "https://developer.avalara.com",
+  "supportContactInfo": {
+    "name": "Avalara Developer Support",
+    "url": "https://developer.avalara.com"
+  },
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "securitySchemes": {
+    "avalaraExemptionCertificatesOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with Avalara using OAuth2 authorization code flow.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://identity.avalara.com/connect/authorize",
+      "tokenUrl": "https://identity.avalara.com/connect/token",
+      "scopes": [
+        "avalara_mcp"
+      ]
+    }
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
