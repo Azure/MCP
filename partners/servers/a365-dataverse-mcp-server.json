@@ -2,14 +2,14 @@
   "name": "microsoft-dataverse-mcp-frontier",
   "title": "Microsoft Dataverse",
   "summary": "Enables Dataverse data and schema operations (query, table & record management, API invocation).",
-  "description": "Enables Dataverse data and schema operations (query, table & record management, API invocation). This feature is in preview and is part of the Work IQ tools, providing shared work intelligence and actions for agents. Availability and capabilities are subject to change. Learn more: https://aka.ms/AboutWorkIQ",
+  "description": "Enables Dataverse data and schema operations (query, table & record management, API invocation). This feature is in preview and is part of the Work IQ tools, providing shared work intelligence and actions for agents. Availability and capabilities are subject to change. Learn more: https://aka.ms/AboutWorkIQ. You need to publish your Dataverse MCP server with [Agent365 CLI](https://learn.microsoft.com/en-us/microsoft-agent-365/developer/reference/cli/develop-mcp#develop-mcp-publish) and get admin approval in Microsoft365 Admin Center.",
   "kind": "mcp",
   "vendor": "Microsoft",
   "externalDocumentation": {
     "title": "Work IQ MCP Servers",
     "url": "https://aka.ms/AboutWorkIQ"
   },
-  "remote": "https://agent365.svc.cloud.microsoft/agents/servers/Dataverse/{DataverseMCPServerId}",
+  "remote": "https://agent365.svc.cloud.microsoft/agents/servers/Dataverse/{DataverseMCPServerName}",
   "supportContactInfo": {
     "name": "customer support contact",
     "url": "https://aka.ms/WorkIQToolsSupport"
