@@ -1,0 +1,56 @@
+{
+  "name": "druva-mcp-server",
+  "title": "Druva",
+  "summary": "Manage backups, audit logs, and environment metrics across the Druva Resilience Cloud using natural language.",
+  "description": "The official Druva MCP Server connects AI agents to the Druva Resilience Cloud over a secure remote HTTP connection. Agents can discover Druva capabilities as skills, fetch data from your environment, and perform non-destructive actions to manage backup and data protection. Use it to query backup and recovery status across endpoints, SaaS apps, and cloud workloads. Also, review audit logs, and monitor environment metrics through natural language.",
+  "kind": "mcp",
+  "license": {
+    "name": "Druva Terms of Service",
+    "url": "https://www.druva.com/terms-of-service"
+  },
+  "icon": "https://avatars.githubusercontent.com/druvainc?s=64",
+  "externalDocumentation": {
+    "title": "Complete Guide to Druva MCP Server",
+    "url": "https://help.druva.com/en/articles/15654265-complete-guide-to-druva-mcp-server"
+  },
+  "remote": "https://mcp-us.druva.com/mcp",
+  "remoteType": "streamable-http",
+  "useCases": [
+    {
+      "name": "Backup & Recovery Insights",
+      "description": "Query backup coverage, job outcomes, and recovery status across endpoints, Microsoft 365, and cloud workloads using natural language."
+    },
+    {
+      "name": "Environment Management",
+      "description": "Perform non-destructive management actions in your Druva environment via read and write skills; the server cannot delete configurations or backup data."
+    },
+    {
+      "name": "Audit & Compliance",
+      "description": "Review audit logs and activity across the Druva Resilience Cloud to support governance, compliance, and investigation workflows."
+    },
+    {
+      "name": "Monitoring & Reporting",
+      "description": "Monitor environment metrics such as protection health and storage consumption, and surface reporting insights on demand."
+    }
+  ],
+  "tags": [
+    "backup",
+    "data-protection",
+    "recovery",
+    "ransomware",
+    "cyber-resilience",
+    "audit-logs"
+  ],
+  "vendor": "Partner",
+  "categories": "Storage, Security",
+  "visibility": "true",
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "versionName": "original",
+  "supportContactInfo": {
+    "name": "Druva Support",
+    "url": "https://support.druva.com/"
+  },
+  "customProperties": { "x-ms-preview": false }
+}
