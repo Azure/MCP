@@ -2,7 +2,7 @@
   "name": "amperity-mcp-server",
   "title": "Amperity",
   "summary": "Connect AI applications to identity-resolved customer profiles — query, activate, and operate against trusted customer context.",
-  "description": "Amperity MCP Server makes a brand's identity-resolved customer profiles directly available to any tool that supports the protocol, without rebuilding the underlying data model and without bypassing existing governance. AI applications query live, resolved customer data at query time rather than receiving an export, so answers reflect what is true right now and no new copy of the customer record sits in another environment. Access happens under the authenticated user's own Amperity identity: whatever a user is permissioned to access in the Amperity application is what they can access through the server, with the same role-based controls, consent rules, and data usage policies. More than 200 tools span analysis, sources, transformations, identity resolution, activation, predictive, and operations — giving an agent the same operational surface a person has inside Amperity.",
+  "description": "Amperity MCP Server makes a brand's identity-resolved customer profiles directly available to any tool that supports the protocol, without rebuilding the underlying data model. Access happens under the authenticated user's own Amperity identity, so existing permissions and governance carry through. More than 200 tools span analysis, sources, transformations, identity resolution, activation, predictive, and operations — giving an agent the same operational surface a person has inside Amperity.",
   "kind": "mcp",
   "packages": [],
   "icon": "https://images.ctfassets.net/5vqt5w81x2im/7n5upbNMWlRTDhnwTZ3Nuu/72f83bb4655a6074b8215ddde4bbc0be/Amperity_icon.png",
@@ -63,7 +63,7 @@
       "authorizationUrl": "https://mcp.amperity.com/authorize",
       "tokenUrl": "https://mcp.amperity.com/oauth/token",
       "refreshUrl": "https://mcp.amperity.com/oauth/token",
-      "scopes": ["openid", "email"]
+      "scopes": ["openid", "email", "offline_access"]
     }
   },
   "authSchemas": ["OAuth2"],
