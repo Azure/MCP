@@ -1,0 +1,86 @@
+{
+  "name": "avalara-classification",
+  "title": "Avalara Classification",
+  "summary": "Classify, validate & verify HS codes and access tariff compliance data for cross-border trade",
+  "description": "Avalara Classification MCP server helps AI agents classify, validate, and verify Harmonized System (HS) codes and access tariff compliance content for cross-border trade. It supports import/export workflows that need consistent product classification and duty-related compliance data.",
+  "kind": "mcp",
+  "license": {
+    "name": "Proprietary",
+    "url": "https://www.avalara.com/us/en/legal/terms.html"
+  },
+  "icon": "https://cdn.brandfolder.io/RCCBED7V/at/9qjjss7hq47h22mvvf2x/A-Check-RGB.png",
+  "externalDocumentation": {
+    "title": "Avalara Classification Docs",
+    "url": "https://developer.avalara.com/mcp-servers/classification"
+  },
+  "repository": {
+    "url": "https://github.com/avadev/mcp",
+    "source": "servers/classification"
+  },
+  "useCases": [
+    {
+      "name": "HS code classification",
+      "description": "Classify products into Harmonized System codes so agents can prepare customs documentation and duty estimates for cross-border shipments."
+    },
+    {
+      "name": "HS code validation and verification",
+      "description": "Validate or verify proposed HS codes against Avalara classification content to reduce misclassification risk before import or export."
+    },
+    {
+      "name": "Tariff compliance lookups",
+      "description": "Access tariff and trade compliance data tied to product classification for e-commerce and logistics decisioning."
+    }
+  ],
+  "tags": [
+    "classification",
+    "hs-codes",
+    "harmonized-system",
+    "product-classification",
+    "hs-code-validation",
+    "hs-code-verification",
+    "cross-border",
+    "import-export",
+    "duty-rates",
+    "trade-tariff",
+    "trade-compliance",
+    "customs",
+    "compliance",
+    "e-commerce",
+    "ai-agents",
+    "avalara",
+    "api",
+    "saas",
+    "enterprise-software"
+  ],
+  "vendor": "Partner",
+  "visibility": "true",
+  "categories": "Compliance & Legal",
+  "versionName": "1-0-0",
+  "versionTitle": "Version 1.0.0",
+  "remote": "https://mcp.avalara.com/classification",
+  "remoteType": "streamable-http",
+  "supportContact": "https://developer.avalara.com",
+  "supportContactInfo": {
+    "name": "Avalara Developer Support",
+    "url": "https://developer.avalara.com"
+  },
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "securitySchemes": {
+    "avalaraClassificationOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with Avalara using OAuth2 authorization code flow.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://identity.avalara.com/connect/authorize",
+      "tokenUrl": "https://identity.avalara.com/connect/token",
+      "scopes": [
+        "avalara_mcp",
+        "offline_access"
+      ]
+    }
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
