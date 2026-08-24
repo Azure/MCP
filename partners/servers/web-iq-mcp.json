@@ -63,6 +63,6 @@
   "authSchemas": [],
   "versionName": "original",
   "customProperties": {
-    "x-ms-preview": true
+    "x-ms-preview": false
   }
 }
