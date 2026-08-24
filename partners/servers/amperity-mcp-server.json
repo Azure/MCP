@@ -1,39 +1,31 @@
 {
   "name": "amperity-mcp-server",
   "title": "Amperity",
-  "summary": "Connect AI applications to identity-resolved customer profiles — query, activate, and operate against trusted customer context.",
-  "description": "Amperity MCP Server makes a brand's identity-resolved customer profiles directly available to any tool that supports the protocol, without rebuilding the underlying data model. Access happens under the authenticated user's own Amperity identity, so existing permissions and governance carry through. More than 200 tools span analysis, sources, transformations, identity resolution, activation, predictive, and operations — giving an agent the same operational surface a person has inside Amperity.",
+  "summary": "Explore insights and take action on unified customer data using natural language.",
+  "description": "Amperity combines unified customer data with real-time behavioral and intent signals to create the trusted customer context your brand needs to act in every moment that matters. Use Amperity to explore insights and take action on customer data using natural language. More than 200 tools span analysis, sources, transformations, identity resolution, activation, predictive, and operations — giving an agent the same operational surface a person has inside Amperity, under that user's own permissions.",
   "kind": "mcp",
   "packages": [],
   "icon": "https://images.ctfassets.net/5vqt5w81x2im/7n5upbNMWlRTDhnwTZ3Nuu/72f83bb4655a6074b8215ddde4bbc0be/Amperity_icon.png",
   "useCases": [
     {
-      "name": "Analysis",
-      "description": "Ask questions of the customer 360 in natural language and let the agent resolve them into queries against tenant databases — ad-hoc queries, database schemas and stats, validation outputs. An analyst asks which segments are underperforming this quarter and gets an answer grounded in resolved customer data rather than a stale synced list."
+      "name": "Exploring and querying unified customer data",
+      "description": "Ask questions of the customer 360 in natural language — profile lookup, ad-hoc queries against tenant databases, schemas and stats, validation outputs."
     },
     {
-      "name": "Activation",
-      "description": "Segmentation, campaigns, orchestrations, destinations. A marketer builds segments and ships campaigns from their AI surface of choice, without handoffs or waiting on a data team."
+      "name": "Building and activating audience segments",
+      "description": "Build, edit, and run segments over unified profiles, then activate them through campaigns and destinations from the AI surface the team already uses."
     },
     {
-      "name": "Identity Resolution",
-      "description": "Stitch settings, benchmarks, record lookup, pair explanation. Inspect why two records did or did not resolve to the same customer, and review the benchmarks that grade resolution quality."
+      "name": "Investigating identity resolution results",
+      "description": "Inspect Stitch settings, benchmarks, and record lookups, and explain why two records did or did not resolve to the same customer."
     },
     {
-      "name": "Predictive",
-      "description": "Predictive customer lifetime value (pCLV) and product affinity — configure, validate, and run models, then use the resulting scores in segments and analyses."
+      "name": "Running and monitoring data orchestrations",
+      "description": "Kick off and track couriers, feeds, workflows, and table runs, and inspect the underlying Spark jobs when something is slow or failing."
     },
     {
-      "name": "Sources and Transformations",
-      "description": "Bridge, couriers, and feeds on the ingest side; database tables, custom domain tables (CDT), and core tables on the modeling side — inspect and configure how customer data lands and is shaped."
-    },
-    {
-      "name": "Operations",
-      "description": "Sandbox management, workflows, config history and revert, Spark introspection, and table run history — monitor and troubleshoot the customer data pipeline from the agent."
-    },
-    {
-      "name": "Customer service context",
-      "description": "Instead of stitching together purchase history, support touches, loyalty status, and recent campaign exposure across three systems, a service agent reads one verified profile inside the existing ticket workflow."
+      "name": "Managing campaigns and predictive models",
+      "description": "Create and schedule campaigns, and configure, validate, and run predictive models such as predicted customer lifetime value and product affinity."
     }
   ],
   "tags": [
@@ -48,7 +40,7 @@
   "categories": "Analytics",
   "vendor": "Partner",
   "visibility": "true",
-  "remote": "https://mcp.amperity.com",
+  "remote": "https://mcp.amperity.com/mcp",
   "remoteType": "streamable-http",
   "versionName": "original",
   "externalDocumentation": {
@@ -59,22 +51,32 @@
     "amperityOauth": {
       "type": "oauth2",
       "description": "Authenticate with existing Amperity credentials using OAuth 2.1 authorization code flow with PKCE. Public client, no client secret.",
-      "flows": ["authorizationCode"],
+      "flows": [
+        "authorizationCode"
+      ],
       "authorizationUrl": "https://mcp.amperity.com/authorize",
       "tokenUrl": "https://mcp.amperity.com/oauth/token",
       "refreshUrl": "https://mcp.amperity.com/oauth/token",
-      "scopes": ["openid", "email", "offline_access"]
+      "scopes": [
+        "openid",
+        "email",
+        "offline_access"
+      ]
     }
   },
-  "authSchemas": ["OAuth2"],
+  "authSchemas": [
+    "OAuth2"
+  ],
   "license": {
-    "name": "Amperity Terms of Service",
-    "url": "https://amperity.com/legal"
+    "name": "Amperity Online Terms and Conditions",
+    "url": "https://images.ctfassets.net/5vqt5w81x2im/2xZdr5ADwi3el1WkOCBWTN/be67669fea1dc163b3803fa2d8bbd006/Amperity_Online_Terms_and_Conditions__2025-12-10_.pdf"
   },
   "supportContactInfo": {
     "name": "Amperity Support",
     "email": "support@amperity.com",
-    "url": "https://help.amperity.com"
+    "url": "https://help.amperity.com/hc/en-us"
   },
-  "customProperties": { "x-ms-preview": false }
+  "customProperties": {
+    "x-ms-preview": false
+  }
 }
