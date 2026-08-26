@@ -1,0 +1,72 @@
+{
+    "name": "mongodb-atlas-mcp-remote",
+    "title": "MongoDB Atlas Remote MCP Server",
+    "summary": "MongoDB Atlas Remote MCP Server allows any MCP-aware LLM to connect to the hosted MongoDB Atlas Remote MCP server using credentials from your Atlas MCP configuration.",
+    "description": "MongoDB Atlas Remote MCP Server enables MCP clients to connect to the cloud-hosted MongoDB Atlas Remote MCP server using dedicated Client ID and Client Secret credentials from your MongoDB Atlas MCP configuration.",
+    "kind": "mcp",
+    "externalDocumentation": {
+      "title": "GitHub",
+      "url": "https://github.com/mongodb-js/mongodb-mcp-server/tree/main/packages/mongodb-atlas-mcp-remote#readme"
+    },
+    "repository": {
+      "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+      "source": "github"
+    },
+    "license": {
+      "name": "Apache-2.0",
+      "url": "https://github.com/mongodb-js/mongodb-mcp-server/blob/main/LICENSE"
+    },
+    "packages": [
+      {
+        "registry_name": "npm",
+        "name": "mongodb-atlas-mcp-remote",
+        "version": "latest",
+        "runtime_hint": "npx",
+        "runtime_arguments": [
+          {
+            "type": "positional",
+            "value_hint": "mongodb_server_binary",
+            "is_repeated": false,
+            "is_required": true,
+            "format": "string",
+            "value": "mongodb-atlas-mcp-remote@latest",
+            "is_secret": false
+          }
+        ],
+        "package_arguments": [],
+        "environment_variables": [
+          {
+            "name": "MDB_MCP_API_CLIENT_ID",
+            "description": "The Client ID from your MongoDB Atlas MCP configuration.",
+            "is_required": true,
+            "is_secret": false
+          },
+          {
+            "name": "MDB_MCP_API_CLIENT_SECRET",
+            "description": "The Client Secret from your MongoDB Atlas MCP configuration.",
+            "is_required": true,
+            "is_secret": true
+          }
+        ]
+      }
+    ],
+    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/mongodb.svg",
+    "useCases": [
+      {
+        "name": "Data and Analytics",
+        "description": "Collect, process, and analyze data to generate insights, detect trends, and support decision-making through visualization and reporting tools."
+      }
+    ],
+    "tags": ["knowledge", "databases", "atlas"],
+    "vendor": "Partner",
+    "categories": "Databases",
+    "visibility": "true",
+    "versionName": "Original",
+    "supportContactInfo": {
+      "name": "customer support contact",
+      "url": "https://www.mongodb.com/company/contact"
+    },
+    "customProperties": {
+      "x-ms-preview": false
+    }
+  }
