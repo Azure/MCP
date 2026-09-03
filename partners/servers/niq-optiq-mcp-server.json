@@ -1,0 +1,54 @@
+{
+  "name": "niq-optiq-mcp-server",
+  "title": "NIQ Optiq MCP Server",
+  "summary": "Accelerate insight discovery and data-driven decisions by embedding NIQ intelligence into AI workflows.",
+  "description": "Optiq Bridge securely connects NIQ data to MCP-compatible AI platforms such as Microsoft Copilot. It enables authenticated users to access approved datasets while maintaining enterprise permissions and governance. This allows teams to accelerate insight discovery, automate tasks, and make faster, data-driven decisions by embedding NIQ intelligence directly into AI-driven workflows.",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "license": {
+    "name": "NIQ Terms",
+    "url": "https://nielseniq.com/global/en/legal/product-platforms-privacy-notice"
+  },
+  "icon": "https://nielseniq.com/wp-content/uploads/sites/4/2023/03/cropped-favicon-512x512-1.png?w=192",
+  "externalDocumentation": {
+    "title": "NIQ Optiq MCP docs",
+    "url": "https://api.connectai.nielseniq.io/mcp/docs"
+  },
+  "remote": "https://api.connectai.nielseniq.com/optiq-us-prod/mcp",
+  "remoteType": "streamable-http",
+  "supportContactInfo": {
+    "name": "NIQ account representative",
+    "url": "https://api.connectai.nielseniq.io/mcp/docs"
+  },
+  "visibility": "true",
+  "connectorName": "niqoptiqmcp",
+  "categories": "Analytics",
+  "useCases": [
+    {
+      "name": "Discover accessible datasets",
+      "description": "Retrieve the NIQ datasets that the authenticated user is authorized to access."
+    }
+  ],
+  "securitySchemes": {
+    "niqoptiqmcpOauth": {
+      "type": "oauth2",
+      "description": "OAuth 2.0 authorization code flow with PKCE for delegated user authentication.",
+      "authorizationUrl": "https://login.identity.nielseniq.com/oauth2/default/v1/authorize",
+      "tokenUrl": "https://login.identity.nielseniq.com/oauth2/default/v1/token",
+      "refreshUrl": "https://login.identity.nielseniq.com/oauth2/default/v1/token",
+      "scopes": [
+        "offline_access",
+        "openid",
+        "profile",
+        "email"
+      ],
+      "flows": [
+        "authorizationCode"
+      ]
+    }
+  },
+  "versionName": "original",
+  "customProperties": {
+    "x-ms-preview": true
+  }
+}
