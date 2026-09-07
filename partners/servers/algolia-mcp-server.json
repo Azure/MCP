@@ -9,7 +9,7 @@
     "name": "Algolia Terms of Service",
     "url": "https://www.algolia.com/policies/terms"
   },
-  "icon": "https://www.algolia.com/algolia-logo-blue.svg",
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Algolia.svg",
   "externalDocumentation": {
     "title": "Algolia MCP documentation",
     "url": "https://www.algolia.com/doc/guides/model-context-protocol/productivity-mcp"
