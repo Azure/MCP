@@ -1,12 +1,12 @@
 {
-    "name": "mongodb-atlas-mcp-remote",
-    "title": "MongoDB Atlas Remote MCP Server",
-    "summary": "MongoDB Atlas Remote MCP Server allows any MCP-aware LLM to connect to the hosted MongoDB Atlas Remote MCP server using credentials from your Atlas MCP configuration.",
-    "description": "MongoDB Atlas Remote MCP Server enables MCP clients to connect to the cloud-hosted MongoDB Atlas Remote MCP server using dedicated Client ID and Client Secret credentials from your MongoDB Atlas MCP configuration.",
+    "name": "mongodb-atlas-mcp-server",
+    "title": "MongoDB Atlas MCP Server",
+    "summary": "MongoDB Atlas MCP Server is the cloud-hosted MongoDB Atlas MCP server. MCP clients connect over HTTP and authenticate with OAuth 2.1 authorization-code flow with PKCE.",
+    "description": "MongoDB Atlas MCP Server is the Atlas-hosted remote MCP server. MCP-aware LLMs connect to the hosted endpoint at https://mcp.mongodb.com and authenticate using OAuth 2.1 Authorization Code flow with PKCE, so the server acts with the authorizing user's Atlas permissions. Static API keys are not supported on the remote HTTP endpoint.",
     "kind": "mcp",
     "externalDocumentation": {
-      "title": "GitHub",
-      "url": "https://github.com/mongodb-js/mongodb-mcp-server/tree/main/packages/mongodb-atlas-mcp-remote#readme"
+      "title": "MongoDB MCP Server Docs",
+      "url": "https://www.mongodb.com/docs/mcp-server/get-started/"
     },
     "repository": {
       "url": "https://github.com/mongodb-js/mongodb-mcp-server",
@@ -16,40 +16,20 @@
       "name": "Apache-2.0",
       "url": "https://github.com/mongodb-js/mongodb-mcp-server/blob/main/LICENSE"
     },
-    "packages": [
-      {
-        "registry_name": "npm",
-        "name": "mongodb-atlas-mcp-remote",
-        "version": "latest",
-        "runtime_hint": "npx",
-        "runtime_arguments": [
-          {
-            "type": "positional",
-            "value_hint": "mongodb_server_binary",
-            "is_repeated": false,
-            "is_required": true,
-            "format": "string",
-            "value": "mongodb-atlas-mcp-remote@latest",
-            "is_secret": false
-          }
-        ],
-        "package_arguments": [],
-        "environment_variables": [
-          {
-            "name": "MDB_MCP_API_CLIENT_ID",
-            "description": "The Client ID from your MongoDB Atlas MCP configuration.",
-            "is_required": true,
-            "is_secret": false
-          },
-          {
-            "name": "MDB_MCP_API_CLIENT_SECRET",
-            "description": "The Client Secret from your MongoDB Atlas MCP configuration.",
-            "is_required": true,
-            "is_secret": true
-          }
-        ]
+    "remote": "https://mcp.mongodb.com",
+    "remoteType": "streamable-http",
+    "securitySchemes": {
+      "mongodbOAuth2": {
+        "type": "oauth2",
+        "description": "OAuth 2.1 authorization-code flow with PKCE for MongoDB Atlas.",
+        "flows": ["authorizationCode"],
+        "authorizationUrl": "https://cloud.mongodb.com/oauth/authorize",
+        "tokenUrl": "https://authorize.mongodb.com/tokens",
+        "refreshUrl": "https://authorize.mongodb.com/tokens",
+        "scopes": []
       }
-    ],
+    },
+    "authSchemas": ["OAuth2"],
     "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/mongodb.svg",
     "useCases": [
       {
