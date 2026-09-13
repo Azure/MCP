@@ -1,0 +1,85 @@
+{
+  "name": "avalara-tax-content",
+  "title": "Avalara Tax Content",
+  "summary": "Provides access to Avalara Tax Content: TTE configs, jobs, communications, lodging, and autorental",
+  "description": "Avalara Tax Content MCP server provides AI agents access to Avalara Tax Content capabilities including Transaction Tax Export (TTE) configurations and jobs, communications and notifications, user-defined fields, and lodging/autorental content.",
+  "kind": "mcp",
+  "license": {
+    "name": "Proprietary",
+    "url": "https://www.avalara.com/us/en/legal/terms.html"
+  },
+  "icon": "https://cdn.brandfolder.io/RCCBED7V/at/9qjjss7hq47h22mvvf2x/A-Check-RGB.png",
+  "externalDocumentation": {
+    "title": "Avalara Tax Content Docs",
+    "url": "https://developer.avalara.com/mcp-servers/atc"
+  },
+  "repository": {
+    "url": "https://github.com/avadev/mcp",
+    "source": "servers/tax-content"
+  },
+  "useCases": [
+    {
+      "name": "TTE configuration and job management",
+      "description": "Work with Transaction Tax Export configurations, jobs, and job runs to support tax data extract workflows."
+    },
+    {
+      "name": "Communications and notifications",
+      "description": "Access tax content communications and notification settings relevant to tax data operations."
+    },
+    {
+      "name": "Lodging and autorental tax content",
+      "description": "Retrieve lodging and autorental related tax content for specialized industry compliance scenarios."
+    }
+  ],
+  "tags": [
+    "tax-content",
+    "atc",
+    "transaction-tax-export",
+    "tte",
+    "tte-configurations",
+    "tax-data",
+    "jobs",
+    "job-runs",
+    "communications",
+    "notifications",
+    "user-defined-fields",
+    "lodging",
+    "autorental",
+    "compliance",
+    "ai-agents",
+    "avalara",
+    "api",
+    "saas",
+    "enterprise-software"
+  ],
+  "vendor": "Partner",
+  "visibility": "true",
+  "categories": "Finance",
+  "versionName": "1-0-1",
+  "versionTitle": "Version 1.0.1",
+  "remote": "https://mcp.avalara.com/atc",
+  "remoteType": "streamable-http",
+  "supportContact": "https://developer.avalara.com",
+  "supportContactInfo": {
+    "name": "Avalara Developer Support",
+    "url": "https://developer.avalara.com"
+  },
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "securitySchemes": {
+    "avalaraTaxContentOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with Avalara using OAuth2 authorization code flow.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://identity.avalara.com/connect/authorize",
+      "tokenUrl": "https://identity.avalara.com/connect/token",
+      "scopes": [
+        "avalara_mcp"
+      ]
+    }
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
