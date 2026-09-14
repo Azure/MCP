@@ -2,7 +2,7 @@
   "name": "parallel-search-mcp-server",
   "title": "Parallel Search MCP",
   "summary": "Web search and page extraction for AI agents, with free, rate-limited access and no account or API key required.",
-  "description": "Parallel Search MCP gives AI agents web_search for current information and web_fetch for token-efficient Markdown from specific URLs. The hosted server uses Streamable HTTP. Anonymous access requires no Parallel account or API key and is free with rate limits. Tool calls send queries, requested URLs, and any supplied objectives or context to Parallel. See the setup documentation for optional authentication and higher limits.",
+  "description": "Parallel Search MCP gives AI agents web_search for current information and web_fetch for token-efficient Markdown from specific URLs. The hosted server uses Streamable HTTP. Anonymous access requires no Parallel account or API key and is free with rate limits. Tool calls send queries, requested URLs, any supplied objectives or context, and any supplied metadata to Parallel. See the setup documentation for optional authentication and higher limits.",
   "kind": "mcp",
   "license": {
     "name": "Parallel Customer Terms",
