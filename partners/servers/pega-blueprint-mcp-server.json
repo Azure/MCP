@@ -1,0 +1,44 @@
+{
+  "name": "pega-blueprint",
+  "title": "Pega GenAI Blueprint",
+  "summary": "Design enterprise application Blueprints with AI",
+  "description": "Pega GenAI Blueprint enables you to instantly prototype and turbocharge your development. Make impossible happen with AI-infused workflow design. Try Pega GenAI Blueprint now! Pega Blueprint is an AI-powered design tool that lets business and IT teams visually map out software applications and workflows. By simply typing a description of an idea or uploading legacy documents, the tool's generative AI instantly creates a structured, production-ready app foundation in minutes rather than months.",
+  "kind": "mcp",
+  "packages": [],
+  "icon": "https://www.pega.com/themes/custom/pegawww_theme/images/pega-logo.svg",
+  "license": {
+    "name": "Pegasystems Terms of Use",
+    "url": "https://www.pega.com/blueprint/agreement"
+  },
+  "useCases": [
+    {
+      "name": "Rapid application prototyping",
+      "description": "Instantly generate a structured, production-ready application foundation from a natural language description of an idea."
+    },
+    {
+      "name": "AI-infused workflow design",
+      "description": "Visually map out business processes and workflows with generative AI assistance instead of manual diagramming."
+    },
+    {
+      "name": "Legacy documentation modernization",
+      "description": "Upload legacy documents and have the tool's generative AI convert them into modern, structured application blueprints."
+    }
+  ],
+  "externalDocumentation": {
+    "title": "Pega Blueprint",
+    "url": "https://www.pega.com/blueprint"
+  },
+  "tags": [],
+  "vendor": "Partner",
+  "categories": "Developer Tools",
+  "visibility": "true",
+  "remote": "https://mcp.pega.com/prweb/app/dcoai/api/service/v1/mcp/default", 
+  "remoteType": "streamable-http",
+  "versionName": "1-0-0",
+  "versionTitle": "1.0.0",
+  "supportContactInfo": {
+    "name": "Pega Blueprint Team",
+    "url": "https://www.pega.com/blueprint"
+  },
+  "customProperties": { "x-ms-preview": false }
+}
