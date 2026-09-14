@@ -1,0 +1,82 @@
+{
+  "name": "amperity-mcp-server",
+  "title": "Amperity",
+  "summary": "Explore insights and take action on unified customer data using natural language.",
+  "description": "Amperity combines unified customer data with real-time behavioral and intent signals to create the trusted customer context your brand needs to act in every moment that matters. Use Amperity to explore insights and take action on customer data using natural language. More than 200 tools span analysis, sources, transformations, identity resolution, activation, predictive, and operations — giving an agent the same operational surface a person has inside Amperity, under that user's own permissions.",
+  "kind": "mcp",
+  "packages": [],
+  "icon": "https://images.ctfassets.net/5vqt5w81x2im/7n5upbNMWlRTDhnwTZ3Nuu/72f83bb4655a6074b8215ddde4bbc0be/Amperity_icon.png",
+  "useCases": [
+    {
+      "name": "Exploring and querying unified customer data",
+      "description": "Ask questions of the customer 360 in natural language — profile lookup, ad-hoc queries against tenant databases, schemas and stats, validation outputs."
+    },
+    {
+      "name": "Building and activating audience segments",
+      "description": "Build, edit, and run segments over unified profiles, then activate them through campaigns and destinations from the AI surface the team already uses."
+    },
+    {
+      "name": "Investigating identity resolution results",
+      "description": "Inspect Stitch settings, benchmarks, and record lookups, and explain why two records did or did not resolve to the same customer."
+    },
+    {
+      "name": "Running and monitoring data orchestrations",
+      "description": "Kick off and track couriers, feeds, workflows, and table runs, and inspect the underlying Spark jobs when something is slow or failing."
+    },
+    {
+      "name": "Managing campaigns and predictive models",
+      "description": "Create and schedule campaigns, and configure, validate, and run predictive models such as predicted customer lifetime value and product affinity."
+    }
+  ],
+  "tags": [
+    "customer data cloud",
+    "customer data platform",
+    "cdp",
+    "customer 360",
+    "identity resolution",
+    "segmentation",
+    "marketing"
+  ],
+  "categories": "Analytics",
+  "vendor": "Partner",
+  "visibility": "true",
+  "remote": "https://mcp.amperity.com/mcp",
+  "remoteType": "streamable-http",
+  "versionName": "original",
+  "externalDocumentation": {
+    "title": "Amperity MCP server",
+    "url": "https://docs.amperity.com/api/mcp_overview.html"
+  },
+  "securitySchemes": {
+    "amperityOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with existing Amperity credentials using OAuth 2.1 authorization code flow with PKCE. Public client, no client secret.",
+      "flows": [
+        "authorizationCode"
+      ],
+      "authorizationUrl": "https://mcp.amperity.com/authorize",
+      "tokenUrl": "https://mcp.amperity.com/oauth/token",
+      "refreshUrl": "https://mcp.amperity.com/oauth/token",
+      "scopes": [
+        "openid",
+        "email",
+        "offline_access"
+      ]
+    }
+  },
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "license": {
+    "name": "Amperity Online Terms and Conditions",
+    "url": "https://images.ctfassets.net/5vqt5w81x2im/2xZdr5ADwi3el1WkOCBWTN/be67669fea1dc163b3803fa2d8bbd006/Amperity_Online_Terms_and_Conditions__2025-12-10_.pdf"
+  },
+  "supportContactInfo": {
+    "name": "Amperity Support",
+    "email": "support@amperity.com",
+    "url": "https://help.amperity.com/hc/en-us"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
