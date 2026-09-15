@@ -1,0 +1,66 @@
+{
+  "name": "snowflake-mcp-server",
+  "title": "Snowflake MCP Server",
+  "summary": "Connect AI agents to governed Snowflake data and tools through Snowflake's managed Model Context Protocol server.",
+  "description": "Snowflake's managed MCP server lets AI agents securely discover and invoke governed tools without separate server infrastructure. A server can expose Cortex Agents, Cortex Analyst semantic views, Cortex Search services, controlled SQL execution, and custom functions or procedures. Access remains subject to Snowflake role-based access control. Customers authenticate with Snowflake OAuth using a preconfigured confidential OAuth security integration.",
+  "kind": "mcp",
+  "packages": [],
+  "license": {
+    "name": "Snowflake Terms of Service",
+    "url": "https://www.snowflake.com/en/legal/terms-of-service/"
+  },
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Snowflake.png",
+  "externalDocumentation": {
+    "title": "Snowflake managed MCP documentation",
+    "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp"
+  },
+  "useCases": [
+    {
+      "name": "Governed data agents",
+      "description": "Expose a Cortex Agent as a governed interface for business questions across its configured Cortex Analyst, Cortex Search, and custom tools."
+    },
+    {
+      "name": "Natural language analytics",
+      "description": "Use Cortex Analyst semantic views and Cortex Search services to answer structured and unstructured data questions."
+    },
+    {
+      "name": "Controlled SQL and custom tools",
+      "description": "Run permission-scoped SQL and invoke approved Snowflake functions or procedures through a standard MCP client."
+    }
+  ],
+  "tags": [
+    "Analytics",
+    "Databases",
+    "Cortex",
+    "Data governance"
+  ],
+  "vendor": "Partner",
+  "visibility": "true",
+  "categories": "Analytics",
+  "remote": "https://{ACCOUNT_URL}/api/v2/databases/{DATABASE}/schemas/{SCHEMA}/mcp-servers/{NAME}",
+  "remoteType": "streamable-http",
+  "securitySchemes": {
+    "snowflakeMcpOAuth": {
+      "type": "oauth2",
+      "description": "Snowflake OAuth authorization code flow using a preconfigured confidential client.",
+      "flows": [
+        "authorizationCode"
+      ],
+      "authorizationUrl": "https://ACCOUNTURL.snowflakecomputing.com/oauth/authorize",
+      "tokenUrl": "https://ACCOUNTURL.snowflakecomputing.com/oauth/token-request",
+      "refreshUrl": "https://ACCOUNTURL.snowflakecomputing.com/oauth/token-request",
+      "scopes": []
+    }
+  },
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "versionName": "original",
+  "supportContactInfo": {
+    "name": "Snowflake Support",
+    "url": "https://www.snowflake.com/en/support/"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
