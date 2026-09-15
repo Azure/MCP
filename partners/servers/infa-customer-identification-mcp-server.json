@@ -51,13 +51,13 @@
   "securitySchemes": {
     "idmcOauthCustomerId": {
       "type": "oauth2",
-      "description": "Authenticate with Informatica OAuth2 authorization server using the client credentials flow.",
-      "flows": [
-        "clientCredentials"
-      ],
-      "tokenUrl": "https://dm-us.informaticacloud.com/authz-service/oauth/token",
-      "authorizationUrl": "https://dm-us.informaticacloud.com/authz-service/oauth/token",
-      "scopes": []
+      "description": "Authenticate using Microsoft Entra ID OAuth2.",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
+      "tokenUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+      "scopes": [],
+      "flows": ["authorizationCode"]
     }
-  }
+  },
+  "authSchemas": ["OAuth2"],
+  "audience": "api://{org-id}.{domain-name}"
 }
