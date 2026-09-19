@@ -9,7 +9,7 @@
     "name": "Snowflake Terms of Service",
     "url": "https://www.snowflake.com/en/legal/terms-of-service/"
   },
-  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Snowflake.png",
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/snowflake.svg",
   "externalDocumentation": {
     "title": "Snowflake managed MCP documentation",
     "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp"
