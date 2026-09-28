@@ -1,0 +1,91 @@
+{
+  "name": "stilingue-social-listening-mcp",
+  "title": "Stilingue Social Listening",
+  "summary": "Social listening MCP server by Stilingue (Blip): query public and panel social media data, audit panel setup and pull customer service (SAC) reports from your AI agent.",
+  "description": "Stilingue Social Listening MCP Server gives AI agents secure, real-time access to Stilingue (a Blip company), a Brazilian social listening and customer care platform. Agents can search the public Radar base (posts, volume trends, sentiment, top influencers), query a customer's dedicated Warroom panels, list the panels and connected social pages the signed-in user can access, audit panel configuration (groups, themes, tags, automation rules) and, only after an explicit dry-run confirmation, edit collection descriptors. Beta tools report customer service (Smartcare/SAC) cases, SLA and response times. A Stilingue account is required; all data is scoped to the signed-in user's permissions.",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "externalDocumentation": {
+    "title": "Stilingue MCP Documentation",
+    "url": "https://mcp.stilingue.com.br/home"
+  },
+  "remote": "https://mcp.stilingue.com.br/mcp",
+  "remoteType": "streamable-http",
+  "supportContactInfo": {
+    "name": "Stilingue Support",
+    "email": "suporte.sti@blip.ai",
+    "url": "https://mcp.stilingue.com.br/home"
+  },
+  "license": {
+    "name": "Proprietary",
+    "url": "https://stilingue.com.br/termos-de-uso/"
+  },
+  "visibility": "true",
+  "categories": "Analytics",
+  "icon": "https://digital.blip.ai/wp-content/uploads/2025/12/logo_stilingue_preto_azul-300x85.webp",
+  "useCases": [
+    {
+      "name": "Brand and topic monitoring",
+      "description": "Search public social media conversations about a brand, product or topic using boolean queries, and retrieve posts, volume over time, breakdowns by channel, gender, device and sentiment, and the most relevant influencers (Radar)."
+    },
+    {
+      "name": "Panel analytics",
+      "description": "Query a customer's dedicated Warroom panel: publications, time-series trends, sentiment, interactions and top posts, with filters by channel, connected page, service type and date range."
+    },
+    {
+      "name": "Panel and connected page discovery",
+      "description": "List the accounts and panels the signed-in user can access, with their permissions, and list connected proprietary social pages (Facebook, Instagram, TikTok, YouTube, LinkedIn and others), flagging pages whose connection has expired."
+    },
+    {
+      "name": "Panel setup audit and improvement",
+      "description": "Review a panel's configuration (collection groups, classification themes, tags, automation rules and collection limits), get a critical assessment, and create, rename or edit group and theme descriptors. Every change runs as a dry-run preview first and is applied only after explicit user confirmation."
+    },
+    {
+      "name": "Customer service (SAC) reporting (beta)",
+      "description": "Report on Smartcare customer service cases: case volume, handling and response times, SLA, status history and backlog, and list service operators."
+    },
+    {
+      "name": "Executive summaries, one-pagers and presentations",
+      "description": "Ground reports, slides and executive summaries in real social listening data instead of manual exports and screenshots."
+    },
+    {
+      "name": "Crisis response and campaign planning",
+      "description": "Quickly assess volume, sentiment and the posts gaining the most traction around a crisis or a campaign topic, and use that evidence to guide a response or a creative direction."
+    },
+    {
+      "name": "Interactive Radar dashboard",
+      "description": "In hosts that support MCP Apps, optionally open an interactive dashboard with the same Radar query after the text answer has been given."
+    }
+  ],
+  "securitySchemes": {
+    "stilingueoauth2": {
+      "type": "oauth2",
+      "description": "Sign in with a Stilingue account using the OAuth 2.1 authorization code flow with PKCE. Supports dynamic client registration.",
+      "flows": [
+        "authorizationCode"
+      ],
+      "authorizationUrl": "https://mcp.stilingue.com.br/oauth/authorize",
+      "tokenUrl": "https://mcp.stilingue.com.br/oauth/token",
+      "refreshUrl": "https://mcp.stilingue.com.br/oauth/token",
+      "scopes": []
+    }
+  },
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "versionName": "original",
+  "versionTitle": "Initial release",
+  "customProperties": {
+    "x-ms-preview": false
+  },
+  "tags": [
+    "stilingue",
+    "blip",
+    "social-listening",
+    "social-media",
+    "brand-monitoring",
+    "analytics",
+    "customer-service",
+    "sentiment-analysis"
+  ]
+}
