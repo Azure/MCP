@@ -1,0 +1,69 @@
+{
+  "name": "algolia-mcp-server",
+  "title": "Algolia MCP",
+  "summary": "Connect AI clients to Algolia and explore search, analytics, and recommendation data through natural language.",
+  "description": "Algolia MCP is a hosted Model Context Protocol server that lets AI clients work with Algolia accounts through user-scoped access. It exposes read-only tools for application and index discovery, search, facet exploration, recommendations, settings inspection, and search analytics. Users can investigate top searches, no-result queries, click behavior, filters, countries, and trends while retaining their existing Algolia permissions.",
+  "kind": "mcp",
+  "packages": [],
+  "license": {
+    "name": "Algolia Terms of Service",
+    "url": "https://www.algolia.com/policies/terms"
+  },
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Algolia.svg",
+  "externalDocumentation": {
+    "title": "Algolia MCP documentation",
+    "url": "https://www.algolia.com/doc/guides/model-context-protocol/productivity-mcp"
+  },
+  "useCases": [
+    {
+      "name": "Search and retrieval",
+      "description": "Search permitted Algolia indices, retrieve matching records, and explore facet values through natural-language workflows."
+    },
+    {
+      "name": "Search analytics",
+      "description": "Analyze top searches, no-result queries, click behavior, filters, countries, user activity, and search trends."
+    },
+    {
+      "name": "Application and index exploration",
+      "description": "Discover accessible Algolia applications and indices and inspect their data and settings without modifying records or configuration."
+    }
+  ],
+  "tags": [
+    "Search",
+    "Analytics",
+    "Recommendations",
+    "Developer Tools"
+  ],
+  "vendor": "Partner",
+  "visibility": "true",
+  "categories": "Developer Tools",
+  "remote": "https://mcp.algolia.com/mcp",
+  "remoteType": "streamable-http",
+  "securitySchemes": {
+    "algoliaMcpOAuth": {
+      "type": "oauth2",
+      "description": "Authenticate with an Algolia account using OAuth 2.1 authorization code flow with PKCE S256.",
+      "flows": [
+        "authorizationCode"
+      ],
+      "authorizationUrl": "https://dashboard.algolia.com/2/oauth/authorize",
+      "tokenUrl": "https://dashboard.algolia.com/2/oauth/token",
+      "refreshUrl": "https://dashboard.algolia.com/2/oauth/token",
+      "scopes": [
+        "public"
+      ]
+    }
+  },
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "versionName": "original",
+  "supportContactInfo": {
+    "name": "Algolia Support",
+    "email": "support@algolia.com",
+    "url": "https://support.algolia.com/hc/en-us"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
