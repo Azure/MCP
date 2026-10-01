@@ -1,0 +1,52 @@
+{
+  "name": "agentpay-tools-mcp-server",
+  "title": "AgentPay Doc Tools",
+  "summary": "PDF to per-page text, RSS/Atom/JSON Feed to normalized JSON, and sitemaps to URL lists for AI agents. Listing tools is free; tool calls are paid per call.",
+  "description": "AgentPay Doc Tools is a remote MCP server (Streamable HTTP, stateless) with three tools: tools_pdf_text (per-page text from a PDF URL up to 20 MB, $0.01), tools_feed (RSS, Atom or JSON Feed parsed into normalized JSON items, $0.005) and tools_sitemap (a site's URLs from its sitemaps, following robots.txt and sitemap indexes, $0.005). Each tool fetches the URL you provide at request time. Connecting, initialize and tools/list are free and need no account or API key. Tool calls are priced in USDC and paid either per call with x402 (USDC on Base, eip155:8453, or on Algorand) passed in the tool call's _meta field, or by sending an optional Authorization: Bearer header with a prepaid credits key bought at https://agentpay.agentpay-apis.workers.dev/credits/buy. Tool calls send the requested URL and any supplied options to AgentPay.",
+  "kind": "mcp",
+  "license": {
+    "name": "MIT (documentation and example clients)",
+    "url": "https://github.com/noah-silver/agentpay/blob/main/LICENSE"
+  },
+  "icon": "https://agentpay.agentpay-apis.workers.dev/icon.svg",
+  "externalDocumentation": {
+    "title": "AgentPay documentation",
+    "url": "https://github.com/noah-silver/agentpay"
+  },
+  "remote": "https://agentpay-tools.agentpay-apis.workers.dev/mcp",
+  "remoteType": "streamable-http",
+  "useCases": [
+    {
+      "name": "PDF text extraction",
+      "description": "Extract per-page text from a PDF at a public URL (up to 20 MB) for summarization or question answering."
+    },
+    {
+      "name": "Feed monitoring",
+      "description": "Parse RSS, Atom or JSON Feed URLs into normalized JSON items to track news, blogs or release notes."
+    },
+    {
+      "name": "Site discovery",
+      "description": "List a site's URLs from its sitemaps, following robots.txt and sitemap indexes, to plan crawls or content audits."
+    }
+  ],
+  "tags": [
+    "x402",
+    "USDC",
+    "pay-per-call",
+    "PDF",
+    "RSS",
+    "feeds",
+    "sitemap"
+  ],
+  "vendor": "Partner",
+  "visibility": "true",
+  "categories": "Web",
+  "versionName": "original",
+  "supportContactInfo": {
+    "name": "AgentPay Support",
+    "url": "https://github.com/noah-silver/agentpay/issues"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}

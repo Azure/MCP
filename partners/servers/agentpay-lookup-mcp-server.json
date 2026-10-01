@@ -1,0 +1,57 @@
+{
+  "name": "agentpay-lookup-mcp-server",
+  "title": "AgentPay Domain & Network Lookup",
+  "summary": "DNS records, WHOIS/RDAP registration, IP ownership and one-call domain reports for AI agents. Listing tools is free; tool calls are paid per call.",
+  "description": "AgentPay Domain & Network Lookup is a remote MCP server (Streamable HTTP, stateless) with four tools: lookup_dns (A, AAAA, CNAME, MX, NS, TXT, SOA, CAA, PTR and SRV records, $0.005), lookup_whois (registrar, dates, status and nameservers via RDAP, $0.01), lookup_ip (network owner, range, country and reverse DNS, $0.01) and lookup_domain_report (registration, DNS, email provider, SPF/DMARC and hosting in one call, $0.02). Data comes from DNS over HTTPS, registry RDAP servers and the regional internet registries. Connecting, initialize and tools/list are free and need no account or API key. Tool calls are priced in USDC and paid either per call with x402 (USDC on Base, eip155:8453, or on Algorand) passed in the tool call's _meta field, or by sending an optional Authorization: Bearer header with a prepaid credits key bought at https://agentpay.agentpay-apis.workers.dev/credits/buy.",
+  "kind": "mcp",
+  "license": {
+    "name": "MIT (documentation and example clients)",
+    "url": "https://github.com/noah-silver/agentpay/blob/main/LICENSE"
+  },
+  "icon": "https://agentpay.agentpay-apis.workers.dev/icon.svg",
+  "externalDocumentation": {
+    "title": "AgentPay documentation",
+    "url": "https://github.com/noah-silver/agentpay"
+  },
+  "remote": "https://agentpay-lookup.agentpay-apis.workers.dev/mcp",
+  "remoteType": "streamable-http",
+  "useCases": [
+    {
+      "name": "Domain due diligence",
+      "description": "Check a domain's registrar, registration and expiry dates, nameservers, hosting and email provider in a single call."
+    },
+    {
+      "name": "Email security checks",
+      "description": "Inspect a domain's MX, SPF and DMARC configuration."
+    },
+    {
+      "name": "IP attribution",
+      "description": "Identify the network owner, address range, country and reverse DNS for an IP address."
+    },
+    {
+      "name": "DNS troubleshooting",
+      "description": "Resolve specific record types (A, AAAA, CNAME, MX, NS, TXT, SOA, CAA, PTR, SRV) for a hostname."
+    }
+  ],
+  "tags": [
+    "x402",
+    "USDC",
+    "pay-per-call",
+    "DNS",
+    "WHOIS",
+    "RDAP",
+    "IP lookup",
+    "domain intelligence"
+  ],
+  "vendor": "Partner",
+  "visibility": "true",
+  "categories": "Networking",
+  "versionName": "original",
+  "supportContactInfo": {
+    "name": "AgentPay Support",
+    "url": "https://github.com/noah-silver/agentpay/issues"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
