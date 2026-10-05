@@ -1,0 +1,53 @@
+{
+  "name": "skyaccess-mcp-server",
+  "title": "SkyAccess",
+  "summary": "Search 5,000+ live empty leg flights, get charter price estimates and booking links. No account or API key.",
+  "description": "SkyAccess is the world's largest empty leg marketplace by listing volume. This hosted MCP server lets AI agents search 5,000+ live empty leg flights from 900+ FAA Part 135 (and international equivalent) certified charter operators, often 25 to 75% below a comparable full charter. search_empty_legs, get_flight, get_charter_estimate and booking_handoff are read-only. request_booking sends the traveler's name, email and trip details to SkyAccess so the team can follow up. Prices are for the whole aircraft, with taxes and fees shown at checkout. The server uses Streamable HTTP and requires no account or API key.",
+  "kind": "mcp",
+  "license": {
+    "name": "MIT",
+    "url": "https://github.com/sky-access/skyaccess-mcp/blob/main/LICENSE"
+  },
+  "icon": "https://raw.githubusercontent.com/sky-access/skyaccess-mcp/main/assets/icon.png",
+  "externalDocumentation": {
+    "title": "SkyAccess MCP server setup",
+    "url": "https://github.com/sky-access/skyaccess-mcp"
+  },
+  "repository": {
+    "url": "https://github.com/sky-access/skyaccess-mcp",
+    "source": "github"
+  },
+  "remote": "https://mcp.skyaccess.com/mcp",
+  "remoteType": "streamable-http",
+  "useCases": [
+    {
+      "name": "Empty leg flight search",
+      "description": "Find available empty leg flights by origin, destination, date range, passenger count and an optional price ceiling."
+    },
+    {
+      "name": "Charter price estimates",
+      "description": "Return an indicative price range for a private charter between two locations, optionally filtered by aircraft category and passenger count."
+    },
+    {
+      "name": "Booking handoff",
+      "description": "Return the SkyAccess booking page link for a specific flight so the traveler can review and book it themselves."
+    }
+  ],
+  "tags": [
+    "travel",
+    "private jet",
+    "empty legs",
+    "charter"
+  ],
+  "vendor": "Partner",
+  "visibility": "true",
+  "categories": "Commerce",
+  "versionName": "original",
+  "supportContactInfo": {
+    "name": "SkyAccess Support",
+    "email": "contact@skyaccess.com"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
