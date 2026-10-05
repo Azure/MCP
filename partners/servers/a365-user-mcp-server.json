@@ -54,11 +54,10 @@
       "scopes": ["ea9ffc3e-8a23-4a7d-836d-234d7c7565c1/McpServers.Me.All"]
     }
   },
-  "authSchemas":["OAuth2"],
+  "authSchemas":["OAuth2", "UserEntraToken", "AgentOnBehalfOfUser"],
   "audience": "ea9ffc3e-8a23-4a7d-836d-234d7c7565c1",
   "versionName": "original",
   "customProperties": { "x-ms-preview": true },
   "tags": ["a365"]
 }
-
 

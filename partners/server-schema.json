@@ -370,6 +370,8 @@
         "description": "Authentication schemas. Turned into x-ms-auth-schemas.",
         "enum": [
           "OAuth2",
+          "UserEntraToken",
+          "AgentOnBehalfOfUser",
           "ManagedIdentity",
           "AgentIdentity"
         ]
