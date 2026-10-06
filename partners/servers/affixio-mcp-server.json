@@ -1,0 +1,98 @@
+{
+  "name": "affixio-mcp-server",
+  "title": "AffixIO MCP",
+  "summary": "Local stdio MCP wrapping the affixio SDK for host-side signed ACTION yes/no attestation. PII never leaves the host.",
+  "description": "AffixIO MCP is a local stdio Model Context Protocol server that wraps the affixio SDK. It exposes three tools: attest_action (signed host-side ACTION yes/no with ML-DSA-65), verify_action (check an attestation or receipt), and gate_tool_call (allow/deny privileged agent tool calls before they run). Tool arguments are hashed on the host and never stored as raw PII. This is not person/age/KYC identity and not the Hub OAuth cloud MCP. Install with npx -y @affixio/mcp@0.1.0. Depends on the affixio SDK; it does not replace it.",
+  "kind": "mcp",
+  "packages": [
+    {
+      "registry_name": "npm",
+      "name": "@affixio/mcp",
+      "version": "0.1.0",
+      "runtime_hint": "npx",
+      "runtime_arguments": [
+        {
+          "type": "positional",
+          "value_hint": "npx_yes",
+          "is_repeated": false,
+          "is_required": true,
+          "format": "string",
+          "value": "-y",
+          "is_secret": false
+        },
+        {
+          "type": "positional",
+          "value_hint": "affixio_mcp_package",
+          "is_repeated": false,
+          "is_required": true,
+          "format": "string",
+          "value": "@affixio/mcp@0.1.0",
+          "is_secret": false
+        }
+      ],
+      "package_arguments": [],
+      "environment_variables": [
+        {
+          "name": "AFFIX_API_KEY",
+          "description": "Licence key; defaults to local_operator for offline host-side use",
+          "is_required": false,
+          "is_secret": true,
+          "default": "local_operator"
+        },
+        {
+          "name": "AFFIX_MCP_HOME",
+          "description": "State directory for local MCP data",
+          "is_required": false,
+          "is_secret": false,
+          "default": "~/.affix-mcp"
+        }
+      ]
+    }
+  ],
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://github.com/AffixIO/affixio-mcp/blob/master/LICENSE"
+  },
+  "icon": "https://avatars.githubusercontent.com/u/249193704?s=200&v=4",
+  "externalDocumentation": {
+    "title": "AffixIO MCP README",
+    "url": "https://github.com/AffixIO/affixio-mcp"
+  },
+  "repository": {
+    "url": "https://github.com/AffixIO/affixio-mcp",
+    "source": "github"
+  },
+  "useCases": [
+    {
+      "name": "Host-side ACTION attestation",
+      "description": "Record a signed yes/no that an agent action happened on the host without sending PII off-box."
+    },
+    {
+      "name": "Verify receipts offline",
+      "description": "Validate an attestation or receipt locally before trusting an agent decision."
+    },
+    {
+      "name": "Gate privileged tool calls",
+      "description": "Call gate_tool_call before sensitive tools so allow/deny is signed and fail-closed on the host."
+    }
+  ],
+  "tags": [
+    "security",
+    "attestation",
+    "agent-trust",
+    "local-first",
+    "mcp"
+  ],
+  "vendor": "Partner",
+  "visibility": "true",
+  "categories": "Security",
+  "versionName": "original",
+  "supportContactInfo": {
+    "name": "AffixIO Support",
+    "email": "kris@affix-io.com",
+    "url": "https://www.affix-io.com"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
