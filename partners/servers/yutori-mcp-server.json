@@ -1,0 +1,72 @@
+{
+    "name": "yutori-mcp-server",
+    "title": "Yutori MCP",
+    "summary": "Web monitoring, deep research, and browser automation tools powered by Yutori.",
+    "description": "Yutori MCP gives AI agents access to Yutori's web automation platform through a hosted MCP server. It supports continuous web monitoring with Scouts, one-time deep web research tasks, and browser automation for websites that require clicking, typing, scrolling, or extracting structured results. The hosted server is available over streamable HTTP and supports OAuth authentication to Yutori.",
+    "kind": "mcp",
+    "license": {
+        "name": "Apache-2.0",
+        "url": "https://github.com/yutori-ai/yutori-mcp/blob/main/LICENSE"
+    },
+    "icon": "https://yutori.com/logo.svg",
+    "externalDocumentation": {
+        "title": "Yutori MCP Docs",
+        "url": "https://github.com/yutori-ai/yutori-mcp"
+    },
+    "repository": {
+        "url": "https://github.com/yutori-ai/yutori-mcp",
+        "source": "github"
+    },
+    "packages": [],
+    "remote": "https://mcp.yutori.com/mcp",
+    "remoteType": "streamable-http",
+    "useCases": [
+        {
+            "name": "Continuous web monitoring",
+            "description": "Create and manage Yutori Scouts that repeatedly monitor the web for product updates, competitor news, changelogs, pricing changes, funding announcements, and other recurring signals."
+        },
+        {
+            "name": "Deep web research",
+            "description": "Run one-time research tasks that search, read, and synthesize information from across the web, with optional structured output and webhook delivery."
+        },
+        {
+            "name": "Browser automation",
+            "description": "Automate browser tasks on websites, including data extraction, form workflows, logged-in desktop sessions through Yutori Local, and structured result collection."
+        }
+    ],
+    "tags": [
+        "web-monitoring",
+        "research",
+        "browser-automation",
+        "scouts"
+    ],
+    "vendor": "Partner",
+    "visibility": "true",
+    "categories": "Web",
+    "securitySchemes": {
+        "yutoriOAuth": {
+            "type": "oauth2",
+            "description": "Authenticate with Yutori using OAuth2 authorization code flow with PKCE support.",
+            "authorizationUrl": "https://clerk.yutori.com/oauth/authorize",
+            "tokenUrl": "https://clerk.yutori.com/oauth/token",
+            "refreshUrl": "https://clerk.yutori.com/oauth/token",
+            "scopes": [
+                "openid",
+                "profile",
+                "email",
+                "offline_access"
+            ],
+            "flows": [
+                "authorizationCode"
+            ]
+        }
+    },
+    "versionName": "original",
+    "supportContactInfo": {
+        "name": "Yutori Support",
+        "email": "support@yutori.com"
+    },
+    "customProperties": {
+        "x-ms-preview": true
+    }
+}

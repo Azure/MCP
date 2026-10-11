@@ -1,0 +1,86 @@
+{
+  "name": "avalara-dev-docs",
+  "title": "Avalara Developer Documentation",
+  "summary": "Provides access to Avalara developer documentation, integration guides, and code examples",
+  "description": "Avalara Developer Documentation MCP server gives AI agents access to Avalara developer docs, integration guides, how-to content, API references, and code examples so they can answer product and integration questions accurately while building against Avalara APIs.",
+  "kind": "mcp",
+  "license": {
+    "name": "Proprietary",
+    "url": "https://www.avalara.com/us/en/legal/terms.html"
+  },
+  "icon": "https://cdn.brandfolder.io/RCCBED7V/at/9qjjss7hq47h22mvvf2x/A-Check-RGB.png",
+  "externalDocumentation": {
+    "title": "Avalara Developer Documentation Docs",
+    "url": "https://developer.avalara.com/mcp-servers/docs"
+  },
+  "repository": {
+    "url": "https://github.com/avadev/mcp",
+    "source": "servers/dev-docs"
+  },
+  "useCases": [
+    {
+      "name": "Integration guidance for Avalara APIs",
+      "description": "Retrieve how-to guides and integration documentation so agents can help developers connect applications to Avalara products."
+    },
+    {
+      "name": "API and SDK discovery",
+      "description": "Find API reference material, SDK notes, and code examples relevant to a developer question or implementation task."
+    },
+    {
+      "name": "Product documentation answers",
+      "description": "Answer technical questions using Avalara product documentation without leaving the AI client workflow."
+    }
+  ],
+  "tags": [
+    "developer-documentation",
+    "avalara-docs",
+    "dev-docs",
+    "integration-guides",
+    "how-to-guides",
+    "technical-documentation",
+    "product-documentation",
+    "code-examples",
+    "api-reference",
+    "sdk",
+    "developer-resources",
+    "developer-tools",
+    "integration",
+    "tutorials",
+    "ai-agents",
+    "avalara",
+    "api",
+    "saas",
+    "enterprise-software"
+  ],
+  "vendor": "Partner",
+  "visibility": "true",
+  "categories": "Developer Tools",
+  "versionName": "1-0-1",
+  "versionTitle": "Version 1.0.1",
+  "remote": "https://mcp.avalara.com/docs",
+  "remoteType": "streamable-http",
+  "supportContact": "https://developer.avalara.com",
+  "supportContactInfo": {
+    "name": "Avalara Developer Support",
+    "url": "https://developer.avalara.com"
+  },
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "securitySchemes": {
+    "avalaraDevDocsOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with Avalara using OAuth2 authorization code flow.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://identity.avalara.com/connect/authorize",
+      "tokenUrl": "https://identity.avalara.com/connect/token",
+      "scopes": [
+        "avalara_mcp",
+        "offline_access"
+      ]
+    }
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}

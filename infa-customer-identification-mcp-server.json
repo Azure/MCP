@@ -1,0 +1,63 @@
+{
+  "name": "infa-customer-identification-mcp-server",
+  "title": "Informatica Customer Identification MCP Server",
+  "summary": "Informatica (A Salesforce company) Provides an MCP server that Searches and retrieves consolidated, high-confidence master records from Customer360 by Informatica Master Data Management (MDM)",
+  "description": "Informatica (A Salesforce company) Provides an MCP server that Searches and retrieves consolidated, high-confidence master records from Customer360 by Informatica Master Data Management (MDM)",
+  "vendor": "Partner",
+  "kind": "mcp",
+  "remote": "https://{pod-name}/mcp-servers/public/searchcustomer",
+  "icon": "https://www.informatica.com/content/dam/informatica-com/en/informatica-logo.svg",
+  "externalDocumentation": {
+    "title": "Informatica documentation",
+    "url": "https://onlinehelp.informatica.com/IICS/prod/agentic-ui/en/index.htm#page/dd-aiae-mcp-servers/Available_MCP_servers.html"
+  },
+  "license": {
+    "name": "User License Terms",
+    "url": "https://www.informatica.com/legal/informatica-license-services-agreement.html"
+  },
+  "visibility": "true",
+  "useCases": [
+    {
+      "name": "Customer 360 Inquiries",
+      "description": "Agents can provide a complete, unified view of a customer's profile by fetching the consolidated Master Record."
+    },
+    {
+      "name": "Data Deduplication",
+      "description": "Identifies whether a new lead already exists in MDM SaaS to prevent duplicate record creation."
+    },
+    {
+      "name": "Service Personalization",
+      "description": "Provides AI agents with accurate, master record information to improve the quality of customer interactions."
+    },
+    {
+      "name": "Identity Verification",
+      "description": "Validates customer identities against the master records in MDM SaaS during high-value transactions or account updates."
+    }
+  ],
+  "categories": "Integration",
+  "tags": [
+    "MDM",
+    "Master-Record",
+    "Master-Data"
+  ],
+  "supportContactInfo": {
+    "name": "Informatica Support",
+    "email": "support@informatica.com"
+  },
+  "versionName": "original",
+  "customProperties": {
+    "x-ms-preview": false
+  },
+  "securitySchemes": {
+    "idmcOauthCustomerId": {
+      "type": "oauth2",
+      "description": "Authenticate with Informatica OAuth2 authorization server using the client credentials flow.",
+      "flows": [
+        "clientCredentials"
+      ],
+      "tokenUrl": "https://dm-us.informaticacloud.com/authz-service/oauth/token",
+      "authorizationUrl": "https://dm-us.informaticacloud.com/authz-service/oauth/token",
+      "scopes": []
+    }
+  }
+}

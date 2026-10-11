@@ -1,0 +1,39 @@
+{
+  "name": "parallel-search-mcp-server",
+  "title": "Parallel Search MCP",
+  "summary": "Web search and page extraction for AI agents, with free, rate-limited access and no account or API key required.",
+  "description": "Parallel Search MCP gives AI agents web_search for current information and web_fetch for token-efficient Markdown from specific URLs. The hosted server uses Streamable HTTP. Anonymous access requires no Parallel account or API key and is free with rate limits. Tool calls send queries, requested URLs, any supplied objectives or context, and any supplied metadata to Parallel. See the setup documentation for optional authentication and higher limits.",
+  "kind": "mcp",
+  "license": {
+    "name": "Parallel Customer Terms",
+    "url": "https://parallel.ai/customer-terms"
+  },
+  "icon": "https://docs.parallel.ai/mintlify-assets/_mintlify/favicons/parallel-6fabab31-mtje7p526we/ZNRH8iM_vWv_wJYk/_generated/favicon/apple-touch-icon.png",
+  "externalDocumentation": {
+    "title": "Parallel Search MCP setup",
+    "url": "https://docs.parallel.ai/integrations/mcp/search-mcp"
+  },
+  "remote": "https://search.parallel.ai/mcp",
+  "remoteType": "streamable-http",
+  "useCases": [
+    {
+      "name": "Web research",
+      "description": "Search the public web for current information and source URLs to ground agent responses."
+    },
+    {
+      "name": "Page extraction",
+      "description": "Retrieve token-efficient Markdown from specific web pages for further research and analysis."
+    }
+  ],
+  "vendor": "Partner",
+  "visibility": "true",
+  "categories": "Web",
+  "versionName": "original",
+  "supportContactInfo": {
+    "name": "Parallel Support",
+    "url": "https://docs.parallel.ai/integrations/mcp/search-mcp"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}

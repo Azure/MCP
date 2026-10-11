@@ -1,0 +1,63 @@
+{
+  "name": "infa-data-provisioning-mcp-server",
+  "title": "Informatica Data Provisioning MCP Server",
+  "summary": "Informatica (A Salesforce company) Automates the provisioning and management of enterprise data assets leveraging Cloud Data Marketplace (CDMP)",
+  "description": "Informatica (A Salesforce company) Automates the provisioning and management of enterprise data assets leveraging Cloud Data Marketplace (CDMP).",
+  "vendor": "Partner",
+  "kind": "mcp",
+  "remote": "https://{pod-name}/mcp-servers/public/dataprovisioning",
+  "icon": "https://www.informatica.com/content/dam/informatica-com/en/informatica-logo.svg",
+  "externalDocumentation": {
+    "title": "Informatica documentation",
+    "url": "https://onlinehelp.informatica.com/IICS/prod/agentic-ui/en/index.htm#page/dd-aiae-mcp-servers/Available_MCP_servers.html"
+  },
+  "license": {
+    "name": "User License Terms",
+    "url": "https://www.informatica.com/legal/informatica-license-services-agreement.html"
+  },
+  "visibility": "true",
+  "useCases": [
+    {
+      "name": "Just-in-Time Data Access",
+      "description": "Allows users to ask queries like, 'Get me access to the Q3 Sales dataset,' and the agent initiates the request immediately."
+    },
+    {
+      "name": "Compliance-First Sourcing",
+      "description": "Ensures that sensitive data is only provisioned after the proper approvals and justifications are recorded."
+    },
+    {
+      "name": "Self-Service Analytics",
+      "description": "Empowers business users to obtain the data they need for their BI tools without opening manual IT tickets."
+    },
+    {
+      "name": "Automated Onboarding",
+      "description": "Automatically requests access to necessary data bundles for new team members based on their roles."
+    }
+  ],
+  "categories": "Integration",
+  "tags": [
+    "Access",
+    "CDMP",
+    "Provisioning"
+  ],
+  "supportContactInfo": {
+    "name": "Informatica Support",
+    "email": "support@informatica.com"
+  },
+  "versionName": "original",
+  "customProperties": {
+    "x-ms-preview": false
+  },
+  "securitySchemes": {
+    "idmcOauthDataProvisioning": {
+      "type": "oauth2",
+      "description": "Authenticate with Informatica OAuth2 authorization server using the client credentials flow.",
+      "flows": [
+        "clientCredentials"
+      ],
+      "tokenUrl": "https://dm-us.informaticacloud.com/authz-service/oauth/token",
+      "authorizationUrl": "https://dm-us.informaticacloud.com/authz-service/oauth/token",
+      "scopes": []
+    }
+  }
+}

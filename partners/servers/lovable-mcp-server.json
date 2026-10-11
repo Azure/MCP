@@ -1,0 +1,74 @@
+{
+    "name": "lovable-mcp-server",
+    "title": "Lovable",
+    "summary": "Create, edit, deploy, and manage Lovable full-stack apps from your AI client.",
+    "description": "The official MCP server for Lovable, the AI-powered full-stack app builder. Connect your AI client to Lovable to build and ship complete web applications through natural language. Create and manage projects and workspaces, send build instructions to the Lovable agent, inspect generated code via diffs and file trees, read and write project and workspace knowledge, manage external connectors (Linear, Notion, Slack, custom MCP, and more), browse templates and library projects, and deploy apps. Lovable provisions authentication, PostgreSQL databases, file storage, edge functions, and integrations such as Stripe and Resend on its default full-stack TypeScript + Tailwind CSS + shadcn/ui stack.",
+    "kind": "mcp",
+    "license": {
+        "name": "Apache-2.0",
+        "url": "https://github.com/lovablelabs/mcp/blob/main/LICENSE"
+    },
+    "packages": [],
+    "icon": "https://lovable.dev/icon.svg",
+    "useCases": [
+        {
+            "name": "Web",
+            "description": "Tools and services that enable building, deploying, and optimizing websites or web applications, including content delivery, hosting, and web performance."
+        },
+        {
+            "name": "Developer Tools",
+            "description": "Build, edit, and ship full-stack applications by sending natural-language instructions to the Lovable agent, then review generated code, manage connectors, and deploy directly from your AI client."
+        }
+    ],
+    "tags": [
+        "lovable",
+        "app-builder",
+        "full-stack",
+        "code-generation",
+        "deployment"
+    ],
+    "externalDocumentation": {
+        "title": "Lovable MCP Server",
+        "url": "https://docs.lovable.dev/integrations/lovable-mcp-server"
+    },
+    "repository": {
+        "url": "https://github.com/lovablelabs/mcp",
+        "source": "server.json"
+    },
+    "vendor": "Partner",
+    "categories": "Developer Tools",
+    "visibility": "true",
+    "remote": "https://mcp.lovable.dev",
+    "remoteType": "streamable-http",
+    "versionName": "Original",
+    "authSchemas": [
+        "OAuth2"
+    ],
+    "securitySchemes": {
+        "lovableOauth": {
+            "type": "oauth2",
+            "description": "Authenticate with Lovable using OAuth 2.1 authorization code flow with PKCE.",
+            "authorizationUrl": "https://lovable.dev/oauth/authorize",
+            "tokenUrl": "https://lovable.dev/oauth/token",
+            "refreshUrl": "https://lovable.dev/oauth/token",
+            "scopes": [
+                "offline",
+                "projects:read",
+                "projects:write",
+                "projects:create",
+                "workspaces:read",
+                "workspaces:write"
+            ],
+            "flows": [
+                "authorizationCode"
+            ]
+        }
+    },
+    "supportContactInfo": {
+        "name": "Lovable support",
+        "url": "https://docs.lovable.dev/integrations/lovable-mcp-server"
+    },
+    "customProperties": {
+        "x-ms-preview": true
+    }
+}

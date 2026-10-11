@@ -1,0 +1,60 @@
+{
+  "name": "ms-sentinel-memory",
+  "title": "Microsoft Sentinel Memory (PrPr)",
+  "summary": "Sentinel Memory MCP tool collection lets agents store, search, retrieve, and delete security memories using natural language to recall prior investigations. This collection is in testing mode.",
+  "description": "Sentinel Memory MCP tool collection lets security agents persist and recall knowledge across investigations. Agents can search memory with natural language, retrieve or delete a memory by its identifier, and upsert observations that are automatically summarized and embedded for future recall. Memories span categories such as Incidents, Alerts, Cases, AnalystNotes, StandardOperatingProcedures, and AgentArtifacts. This collection is in testing mode. Learn more: https://aka.ms/mcp/sentinel-memory",
+  "vendor": "Microsoft",
+  "kind": "mcp",
+  "remote": "https://sentinel.microsoft.com/mcp/memory",
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Sentinel.svg",
+  "externalDocumentation": {
+    "title": "Microsoft Sentinel Memory documentation",
+    "url": "https://aka.ms/mcp/sentinel-memory"
+  },
+  "license": {
+    "name": "Microsoft License",
+    "url": "https://www.microsoft.com/licensing/terms/welcome/welcomepage"
+  },
+  "useCases": [
+    {
+      "name": "Recall Prior Investigations",
+      "description": "Build security agents that search organizational memory with natural-language queries to surface previously investigated incidents, alerts, and cases ranked by relevance, so analysts can reuse prior findings and recognize recurring patterns instead of starting each investigation from scratch."
+    },
+    {
+      "name": "Persist Investigation Findings",
+      "description": "Build security agents that capture observations, conclusions, and contextual notes from an investigation and upsert them as durable memories—automatically summarized and embedded by the memory service—so knowledge gained during one incident benefits later response efforts."
+    },
+    {
+      "name": "Apply Standard Operating Procedures",
+      "description": "Build security agents that retrieve stored standard operating procedures and analyst notes when triaging incidents, alerts, or cases, ensuring investigations consistently apply organizational best practices and institutional knowledge."
+    },
+    {
+      "name": "Inspect a Specific Memory",
+      "description": "Build security agents that fetch a single memory object by its unique identifier to review the full content, tags, and metadata—useful when a search result or prior step references a memory that must be examined in detail before acting on it."
+    },
+    {
+      "name": "Curate and Maintain Memory Quality",
+      "description": "Build security agents that prune outdated, incorrect, or superseded memories by deleting them, keeping the memory store accurate so future recall is not polluted by stale knowledge."
+    }
+  ],
+  "categories": "Security",
+  "tags": ["security", "sentinel", "memory"],
+  "supportContactInfo": {
+    "name": "Microsoft Customer Support",
+    "email": "support@microsoft.com"},
+  "versionName": "original",
+  "securitySchemes": {
+    "sentinelMemoryOAuth": {
+      "type": "oauth2",
+      "description": "Authenticate with Microsoft Sentinel using OAuth2 authorization code flow with PKCE support.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://login.microsoftonline.com",
+      "tokenUrl": "https://login.microsoftonline.com",
+      "scopes": ["4500ebfb-89b6-4b14-a480-7f749797bfcd"]
+    }
+  },
+  "visibility": "true",
+  "authSchemas":["OAuth2","AgentIdentity"],
+  "audience": "4500ebfb-89b6-4b14-a480-7f749797bfcd",
+  "customProperties": { "x-ms-preview": true }
+}

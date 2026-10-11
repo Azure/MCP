@@ -1,0 +1,56 @@
+{
+  "name": "twilio-developer-kit",
+  "title": "Twilio MCP",
+  "summary": "Build powerful communications and customer engagement experiences with Twilio.",
+  "description": "Search Twilio's APIs and build customer engagement experiences directly from VS Code and Copilot Studio. Across more than 1,800 endpoints, Twilio MCP surfaces the exact specs and code patterns you need for channels like voice, email, and SMS/RCS, as well as user identity, customer data, contact center, and conversational AI. Get straight to the right API details and implementation guidance without loading full API docs into context or leaving your IDE.",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "remote": "https://mcp.twilio.com/docs",
+  "remoteType": "streamable-http",
+  "icon": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://twilio.com&size=64",
+  "license": {
+    "name": "MIT",
+    "url": "https://github.com/twilio/ai/blob/main/LICENSE"
+  },
+  "repository": {
+    "url": "https://github.com/twilio/ai",
+    "source": "https://github.com/twilio/ai"
+  },
+  "externalDocumentation": {
+    "title": "Twilio MCP Documentation",
+    "url": "https://www.twilio.com/docs/ai/mcp"
+  },
+  "supportContactInfo": {
+    "name": "Twilio MCP Team",
+    "email": "questions-mcp@twilio.com"
+  },
+  "visibility": "public",
+  "categories": "Developer Tools",
+  "useCases": [
+    {
+      "name": "Search & Discover APIs",
+      "description": "Find the right Twilio endpoint to send a WhatsApp message."
+    },
+    {
+      "name": "Generate Integration Code",
+      "description": "Write me a Python snippet to set up Email with Twilio."
+    },
+    {
+      "name": "Explore API Capabilities",
+      "description": "What Twilio APIs can I use to build a two-factor authentication flow?"
+    },
+    {
+      "name": "Compare & Choose Endpoints",
+      "description": "What's the difference between Twilio Conversations and Messaging for a chat feature?"
+    },
+    {
+      "name": "Debug & Troubleshoot",
+      "description": "Find the correct parameters for the Twilio Verify API check call."
+    }
+  ],
+  "tags": ["twilio", "sendgrid", "communications", "sms", "voice", "email", "api-search"],
+  "versionName": "original",
+  "customProperties": {
+    "x-ms-preview": true
+  }
+}
