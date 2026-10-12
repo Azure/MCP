@@ -1,0 +1,52 @@
+{
+    "name": "mongodb-atlas-mcp-server",
+    "title": "MongoDB Atlas MCP Server",
+    "summary": "MongoDB Atlas MCP Server is the cloud-hosted MongoDB Atlas MCP server. MCP clients connect over HTTP and authenticate with OAuth 2.1 authorization-code flow with PKCE.",
+    "description": "MongoDB Atlas MCP Server is the Atlas-hosted remote MCP server. MCP-aware LLMs connect to the hosted endpoint at https://mcp.mongodb.com and authenticate using OAuth 2.1 Authorization Code flow with PKCE, so the server acts with the authorizing user's Atlas permissions. Static API keys are not supported on the remote HTTP endpoint.",
+    "kind": "mcp",
+    "externalDocumentation": {
+      "title": "MongoDB MCP Server Docs",
+      "url": "https://www.mongodb.com/docs/mcp-server/get-started/"
+    },
+    "repository": {
+      "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+      "source": "github"
+    },
+    "license": {
+      "name": "Apache-2.0",
+      "url": "https://github.com/mongodb-js/mongodb-mcp-server/blob/main/LICENSE"
+    },
+    "remote": "https://mcp.mongodb.com",
+    "remoteType": "streamable-http",
+    "securitySchemes": {
+      "mongodbOAuth2": {
+        "type": "oauth2",
+        "description": "OAuth 2.1 authorization-code flow with PKCE for MongoDB Atlas.",
+        "flows": ["authorizationCode"],
+        "authorizationUrl": "https://cloud.mongodb.com/oauth/authorize",
+        "tokenUrl": "https://authorize.mongodb.com/tokens",
+        "refreshUrl": "https://authorize.mongodb.com/tokens",
+        "scopes": []
+      }
+    },
+    "authSchemas": ["OAuth2"],
+    "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/mongodb.svg",
+    "useCases": [
+      {
+        "name": "Data and Analytics",
+        "description": "Collect, process, and analyze data to generate insights, detect trends, and support decision-making through visualization and reporting tools."
+      }
+    ],
+    "tags": ["knowledge", "databases", "atlas"],
+    "vendor": "Partner",
+    "categories": "Databases",
+    "visibility": "true",
+    "versionName": "Original",
+    "supportContactInfo": {
+      "name": "customer support contact",
+      "url": "https://www.mongodb.com/company/contact"
+    },
+    "customProperties": {
+      "x-ms-preview": false
+    }
+  }

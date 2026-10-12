@@ -1,0 +1,55 @@
+{
+  "name": "insilicotrials-mcp-server",
+  "title": "InSilicoTrials Platform",
+  "summary": "Discover and run pharmaceutical PKPD, QSP and in-silico simulation models, then retrieve and share their results.",
+  "description": "Connects agents to the InSilicoTrials Platform, a cloud platform for in-silico medicine and pharmaceutical modelling & simulation. The server exposes the user's workspaces and the simulation applications available to them (PKPD, QSP, cardiovascular, orthopaedic and other validated models), including AI-generated manifests that describe each model's purpose, input parameters and expected outputs in plain language. Agents can submit simulation jobs with scalar inputs, hand the user an upload link when a model requires input files, poll job status, and retrieve completed results rendered as markdown with tables and charts. Job lineage shows which runs fed a given job's inputs and which consumed its outputs, and shareable public links can be generated for completed reports. Authentication uses a bearer token scoped to the calling user, so all existing platform permissions apply unchanged.",
+  "kind": "mcp",
+  "license": {
+    "name": "Proprietary",
+    "url": "https://www.insilicotrials.com/mcp-terms-of-use"
+  },
+  "icon": "https://www.insilicotrials.com/favicon.ico",
+  "externalDocumentation": {
+    "title": "InSilicoTrials Documentation",
+    "url": "https://discovery.insilicotrials.com/docs/"
+  },
+  "useCases": [
+    {
+      "name": "Run a PKPD dose simulation from a conversation",
+      "description": "A pharmacologist asks the agent to simulate a dosing regimen. The agent lists available apps, reads the app manifest to learn the parameter names and units, submits the job with the requested dose and subject parameters, polls until completion, and presents the concentration-time profile and derived PK metrics."
+    },
+    {
+      "name": "Explore available validated models",
+      "description": "A researcher new to the platform asks what simulation models they can access. The agent lists the user's workspaces and apps and summarises each model's purpose, inputs and outputs from its manifest, without the user needing to browse the web interface."
+    },
+    {
+      "name": "Share simulation results with collaborators",
+      "description": "After a simulation completes, the agent retrieves the formatted report and generates a public share link so the results can be reviewed by colleagues or regulators who do not have a platform account."
+    },
+    {
+      "name": "Trace how a result was produced",
+      "description": "For an audit or submission, the agent retrieves a job's lineage to show which upstream runs supplied its inputs and which downstream analyses consumed its outputs."
+    }
+  ],
+  "tags": ["simulation", "pharmaceutical", "pkpd", "qsp", "in-silico", "clinical-trials", "modelling", "life-sciences"],
+  "vendor": "Partner",
+  "categories": "Analytics",
+  "versionName": "original",
+  "remote": "https://mcp.discovery.insilicotrials.com/mcp",
+  "remoteType": "streamable-http",
+  "securitySchemes": {
+    "bearerAuth": {
+      "type": "http",
+      "description": "Platform API key issued to the calling user, sent as an Authorization bearer token. Platform permissions apply unchanged.",
+      "scheme": "bearer"
+    }
+  },
+  "supportContactInfo": {
+    "name": "InSilicoTrials Support",
+    "email": "devs@insilicotrials.com",
+    "url": "https://www.insilicotrials.com/contact"
+  },
+  "customProperties": {
+    "x-ms-preview": true
+  }
+}
