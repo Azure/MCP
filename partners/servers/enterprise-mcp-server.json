@@ -59,6 +59,8 @@
             "flows": ["authorizationCode"]                
         }
     },
+    "authSchemas": ["OAuth2", "AgentIdentity"],
+    "audience": "api://e8c77dc2-69b3-43f4-bc51-3213c9d915b4",
     "supportContactInfo": {
         "name": "Luca Spolidoro",
         "email": "lucaspol@microsoft.com"},
