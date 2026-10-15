@@ -1,0 +1,77 @@
+{
+  "name": "druva-mcp-server",
+  "title": "Druva MCP Server",
+  "summary": "Connect AI agents to Druva Cloud to monitor backups, investigate risks, and run governed data protection workflows in natural language.",
+  "description": "The Druva MCP server securely connects AI agents to backup, recovery, and governance intelligence in the Druva Cloud. Administrators can check protection status and backup health across endpoints, SaaS applications, and cloud workloads, review audit logs, inspect legal hold state, and run governed workflows without leaving their agent. Every call runs on behalf of the signed-in user through OAuth 2.1 (authorization code with PKCE and dynamic client registration), so existing Druva role-based access control applies to every request. The server can read and modify configuration settings but cannot delete Druva Cloud configurations or backup data.",
+  "kind": "mcp",
+  "packages": [],
+  "license": {
+    "name": "Druva Terms of Use",
+    "url": "https://www.druva.com/terms-of-use"
+  },
+  "icon": "https://www.druva.com/content/dam/druvaincprogram/logos/druva-logos/png/druva_logo_color.png",
+  "externalDocumentation": {
+    "title": "Complete Guide to Druva MCP Server",
+    "url": "https://help.druva.com/en/articles/15654265-complete-guide-to-druva-mcp-server"
+  },
+  "useCases": [
+    {
+      "name": "Backup health monitoring",
+      "description": "Summarize backup success rates across regions and workloads, produce daily health overviews with data volumes and active critical alerts, and report on endpoint and SaaS application backup status."
+    },
+    {
+      "name": "Protection gap and risk investigation",
+      "description": "Find resources that are unprotected or failing backups, identify the resources consuming the most storage and what they contain, and surface issues for follow-up by an operations or SRE agent."
+    },
+    {
+      "name": "Audit and admin activity review",
+      "description": "Query historical audit logs to identify unusual activity by a specific administrator or across the environment."
+    },
+    {
+      "name": "Legal hold and governance",
+      "description": "List users currently on legal hold and how much of their data is backed up, without switching to the Druva administration console."
+    },
+    {
+      "name": "Governed operational workflows",
+      "description": "Discover and run supported Druva skills that change configuration on behalf of the signed-in user, constrained by that user's Druva role and permissions."
+    }
+  ],
+  "tags": [
+    "Backup",
+    "Data protection",
+    "Recovery",
+    "Governance",
+    "Security"
+  ],
+  "vendor": "Partner",
+  "visibility": "true",
+  "categories": "IT & Management Tools",
+  "remote": "https://mcp.druva.com/mcp",
+  "remoteType": "streamable-http",
+  "securitySchemes": {
+    "druvaMcpOAuth": {
+      "type": "oauth2",
+      "description": "OAuth 2.1 authorization code flow with PKCE (S256) and dynamic client registration. Users sign in with their Druva Console credentials.",
+      "flows": [
+        "authorizationCode"
+      ],
+      "authorizationUrl": "https://login.druva.com/login",
+      "tokenUrl": "https://mcp.druva.com/token",
+      "refreshUrl": "https://mcp.druva.com/token",
+      "scopes": [
+        "all:all"
+      ]
+    }
+  },
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "versionName": "original",
+  "supportContactInfo": {
+    "name": "Druva Support",
+    "url": "https://www.druva.com/support"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
