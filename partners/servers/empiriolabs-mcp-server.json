@@ -1,0 +1,44 @@
+{
+  "name": "empiriolabs-mcp-server",
+  "title": "EmpirioLabs AI MCP",
+  "summary": "200+ AI models as tools: chat, image, video, speech, music and 3D generation, web search, batches and async jobs.",
+  "description": "EmpirioLabs AI MCP gives AI agents the EmpirioLabs AI platform as tools: chat with 200+ models, generate images, video, speech, music and 3D, search the web with citations, run batches and async jobs, and manage GPU Cloud instances and hosted agents. The hosted server uses Streamable HTTP. Users sign in with an EmpirioLabs AI account through OAuth 2.1 (dynamic client registration and PKCE) or send an API key as a Bearer token, and usage is billed to that account. Tool calls send prompts, files and parameters to EmpirioLabs AI.",
+  "kind": "mcp",
+  "license": {
+    "name": "EmpirioLabs AI Terms of Service",
+    "url": "https://empiriolabs.ai/terms-of-service"
+  },
+  "icon": "https://empiriolabs.ai/images/icon-dark-512.png",
+  "externalDocumentation": {
+    "title": "EmpirioLabs AI MCP server",
+    "url": "https://docs.empiriolabs.ai/mcp"
+  },
+  "remote": "https://mcp.empiriolabs.ai/mcp",
+  "remoteType": "streamable-http",
+  "useCases": [
+    {
+      "name": "Media generation",
+      "description": "Generate images, video, speech, music and 3D assets with the model of your choice and get the results back as files."
+    },
+    {
+      "name": "Model access",
+      "description": "Chat with any of 200+ models, compare them, and look up model details and prices from the live catalog."
+    },
+    {
+      "name": "Grounded research",
+      "description": "Search the web with citations and summarize the results with a model in the same agent session."
+    }
+  ],
+  "vendor": "Partner",
+  "visibility": "true",
+  "categories": "Machine Learning",
+  "versionName": "original",
+  "supportContactInfo": {
+    "name": "EmpirioLabs AI Support",
+    "email": "support@empiriolabs.ai",
+    "url": "https://docs.empiriolabs.ai/support"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
