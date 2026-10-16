@@ -1,0 +1,97 @@
+{
+  "name": "tako-mcp-server",
+  "title": "Tako Knowledge Layer and Web Search",
+  "summary": "The knowledge layer for agents: proprietary structured data from trusted providers plus full web search, returning typed values with named sources, as-of dates, charts, and exportable rows.",
+  "description": "The knowledge layer for agents, grounding your AI with the most accurate proprietary data and web content. Tako grounds an agent in two kinds of knowledge at once: proprietary structured data from trusted providers, and full web search. One API returns typed values with named sources when curated data exists, and agent-ready web results and page text for everything else. Domains Tako covers with proprietary data: finance and markets, company KPIs and earnings, macroeconomics (inflation, unemployment, GDP, policy rates), website and app traffic, sports, weather, elections, prediction markets, demographics, energy, and real estate. Because Tako searches the live web too, it is a superset of a web-search tool rather than another one. Ask what the web says about X and you get web results. Ask what X's number is and you also get the value, the source it came from, its as-of date, a renderable chart, and exportable rows, rather than excerpts to parse.",
+  "kind": "mcp",
+  "license": {
+    "name": "MIT",
+    "url": "https://github.com/TakoData/tako-mcp/blob/main/LICENSE"
+  },
+  "icon": "https://raw.githubusercontent.com/TakoData/tako-mcp/main/docs/branding/tako-icon-180.png",
+  "externalDocumentation": {
+    "title": "Tako MCP Server Documentation",
+    "url": "https://docs.tako.com/documentation/integrations/mcp-server"
+  },
+  "repository": {
+    "url": "https://github.com/TakoData/tako-mcp",
+    "source": "github"
+  },
+  "remote": "https://mcp.tako.com/mcp",
+  "remoteType": "streamable-http",
+  "useCases": [
+    {
+      "name": "Company financials and equity research",
+      "description": "Pull revenue, earnings versus estimates, margins, valuation multiples, and stock performance for public companies, and compare competitors head to head. Results come back as citation-backed charts with the underlying series attached, so agents can reason over the numbers instead of scraping filings."
+    },
+    {
+      "name": "Macroeconomic monitoring and briefings",
+      "description": "Track inflation (CPI and PCE), unemployment, GDP, policy and interest rates, and other indicators across countries from sources such as FRED, OECD, and BIS. Useful for automated economic briefings, market commentary, and macro-aware forecasting agents."
+    },
+    {
+      "name": "Web and app traffic benchmarking",
+      "description": "Retrieve monthly visits, traffic trends, and top-site rankings for any domain to power competitive analysis, share-of-attention reporting, and market sizing without standing up a separate analytics integration."
+    },
+    {
+      "name": "Live web search and page extraction",
+      "description": "Run real-time web searches and read the full text behind any result URL. Because a single Tako call searches both the proprietary data graph and the live web, one tool call covers questions that mix hard numbers with narrative context."
+    },
+    {
+      "name": "Data coverage discovery",
+      "description": "Ask, at no cost, what proprietary data Tako holds for a given entity or metric and get the exact measure names back. Agents use this to ground a question in data that actually exists before spending a priced call, which cuts hallucinated metrics and wasted retries."
+    },
+    {
+      "name": "Chart generation and embedding",
+      "description": "Turn Tako results, or an agent's own structured data, into an embeddable interactive chart. Downstream applications can render the visualization inline in chat, dashboards, or reports."
+    }
+  ],
+  "tags": [
+    "search",
+    "web-search",
+    "finance",
+    "market-data",
+    "macroeconomics",
+    "economic-indicators",
+    "web-traffic",
+    "sports",
+    "weather",
+    "data-visualization",
+    "charts",
+    "real-time-data",
+    "grounding",
+    "research"
+  ],
+  "vendor": "Partner",
+  "visibility": "public",
+  "categories": "Finance",
+  "versionName": "original",
+  "securitySchemes": {
+    "takoOauth2": {
+      "type": "oauth2",
+      "description": "OAuth 2.1 authorization code flow with PKCE and Dynamic Client Registration for delegated user sign-in to a Tako account.",
+      "authorizationUrl": "https://mcp.tako.com/authorize",
+      "tokenUrl": "https://mcp.tako.com/token",
+      "refreshUrl": "https://mcp.tako.com/token",
+      "scopes": [
+        "mcp"
+      ],
+      "flows": [
+        "authorizationCode"
+      ]
+    },
+    "takoBearerAuth": {
+      "type": "http",
+      "description": "Authenticate with a Tako API key, issued at https://tako.com/console/api-keys, sent as a bearer token.",
+      "scheme": "bearer",
+      "bearerFormat": "Tako API key"
+    }
+  },
+  "supportContactInfo": {
+    "name": "Tako Support",
+    "email": "hello@tako.com",
+    "url": "https://docs.tako.com/documentation/integrations/mcp-server"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
