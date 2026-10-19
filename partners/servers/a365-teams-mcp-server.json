@@ -1,22 +1,22 @@
 {
   "name": "microsoft-teams-mcp-frontier",
   "title": "Teams",
-  "summary": "MCP server for Microsoft Teams operations. Learn more at https://aka.ms/AboutWorkIQ",
-  "description": "Teams MCP Server which enables core Microsoft Teams actions, including chat, channel, and team management, and message creation/retrieval. This feature is in preview and is part of the Agent 365 tools, providing shared work intelligence and actions for agents. Availability and capabilities are subject to change. Learn more: https://aka.ms/AboutWorkIQ",
+  "summary": "MCP server for Microsoft Teams operations. Learn more at https://aka.ms/a365mcpservers",
+  "description": "Teams MCP Server which enables core Microsoft Teams actions, including chat, channel, and team management, and message creation/retrieval. This feature is in preview and is part of the Agent 365 tools, providing shared work intelligence and actions for agents. Availability and capabilities are subject to change. Learn more: https://aka.ms/a365mcpservers",
   "kind": "mcp",
   "vendor": "Microsoft",
   "externalDocumentation": {
     "title": "Agent 365 MCP Servers",
-    "url": "https://aka.ms/AboutWorkIQ"
+    "url": "https://aka.ms/a365mcpservers"
   },
   "remote": "https://agent365.svc.cloud.microsoft/agents/servers/mcp_TeamsServer",
   "supportContactInfo": {
     "name": "customer support contact",
-    "url": "https://aka.ms/WorkIQToolsSupport"
+    "url": "https://aka.ms/a365mcpsupport"
   },
   "license": {
         "name": "Agent 365",
-        "url": "https://aka.ms/AboutWorkIQ"
+        "url": "https://aka.ms/a365mcpservers"
   },
   "visibility": "true",
   "categories": "Productivity",
