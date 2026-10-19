@@ -1,0 +1,39 @@
+{
+  "name": "keenable-mcp-server",
+  "title": "Keenable Web Search",
+  "summary": "Web search and page content fetching for AI agents, with rate-limited access that requires no account or API key.",
+  "description": "Keenable Web Search gives AI agents search_web_pages for current web results and fetch_page_content for reading specific pages. search_web_pages takes a query with optional site, published_after and published_before (YYYY-MM-DD) and max_results (1-50) filters. fetch_page_content takes a URL and an optional extraction prompt. The hosted server uses Streamable HTTP. Anonymous access requires no Keenable account or API key and is rate limited. An optional X-API-Key header lifts the rate limits, and an optional X-Keenable-Title header identifies the calling app. Tool calls send queries, requested URLs and any supplied extraction prompts to Keenable. See the documentation for optional authentication.",
+  "kind": "mcp",
+  "license": {
+    "name": "Keenable Terms of Service",
+    "url": "https://keenable.ai/terms"
+  },
+  "icon": "https://raw.githubusercontent.com/keenableai/keenable-mcp/main/assets/logo.png",
+  "externalDocumentation": {
+    "title": "Keenable documentation",
+    "url": "https://docs.keenable.ai"
+  },
+  "remote": "https://api.keenable.ai/mcp",
+  "remoteType": "streamable-http",
+  "useCases": [
+    {
+      "name": "Web research",
+      "description": "Search the public web for current pages, optionally filtered by site and publication date, and return titles, URLs and snippets to ground agent responses."
+    },
+    {
+      "name": "Page reading",
+      "description": "Fetch the content of a specific URL, optionally guided by an extraction prompt, for further research and analysis."
+    }
+  ],
+  "vendor": "Partner",
+  "visibility": "true",
+  "categories": "Web",
+  "versionName": "original",
+  "supportContactInfo": {
+    "name": "Keenable Support",
+    "url": "https://docs.keenable.ai"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
