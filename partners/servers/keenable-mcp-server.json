@@ -10,8 +10,8 @@
   },
   "icon": "https://raw.githubusercontent.com/keenableai/keenable-mcp/main/assets/logo.png",
   "externalDocumentation": {
-    "title": "Keenable documentation",
-    "url": "https://docs.keenable.ai"
+    "title": "Keenable MCP server docs",
+    "url": "https://docs.keenable.ai/mcp-server"
   },
   "remote": "https://api.keenable.ai/mcp",
   "remoteType": "streamable-http",
@@ -31,7 +31,8 @@
   "versionName": "original",
   "supportContactInfo": {
     "name": "Keenable Support",
-    "url": "https://docs.keenable.ai"
+    "email": "support@keenable.ai",
+    "url": "https://docs.keenable.ai/mcp-server"
   },
   "customProperties": {
     "x-ms-preview": false
