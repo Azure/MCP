@@ -1,0 +1,51 @@
+{
+  "name": "azure-databricks-genieone",
+  "title": "Azure Databricks Genie One (beta)",
+  "summary": "Access workspace-wide Azure Databricks Genie One through its legacy beta MCP endpoint, scheduled to retire on October 31, 2026.",
+  "description": "Azure Databricks Genie One provides workspace-wide natural-language analytics through the legacy workspace MCP endpoint. Unlike the Genie Space connector, it does not require a Genie space ID. This beta endpoint is deprecated and scheduled to retire on October 31, 2026. It does not use Unity Gateway.",
+  "vendor": "Microsoft",
+  "kind": "mcp",
+  "remote": "https://{workspace-hostname}/api/2.0/mcp/genie",
+  "remoteType": "streamable-http",
+  "icon": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/hero-icon-product-azure-databricks-24x24-328736?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85",
+  "externalDocumentation": {
+    "title": "Azure Databricks Genie One MCP docs",
+    "url": "https://learn.microsoft.com/en-us/azure/databricks/agents/mcp-tools/genie-mcp"
+  },
+  "license": {
+    "name": "User License Terms",
+    "url": "https://azure.microsoft.com/en-us/support/legal"
+  },
+  "useCases": [
+    {
+      "name": "Workspace-wide analytics",
+      "description": "Ask natural-language business questions across Azure Databricks workspace data without selecting a single Genie space."
+    }
+  ],
+  "categories": "Analytics",
+  "tags": ["knowledge", "analytics", "databricks"],
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://azure.microsoft.com/en-us/support/"
+  },
+  "versionName": "original",
+  "visibility": "true",
+  "securitySchemes": {
+    "databricksGenieOneOauth": {
+      "type": "oauth2",
+      "description": "Microsoft Entra ID user authentication for Azure Databricks Genie One.",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
+      "tokenUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+      "refreshUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+      "scopes": [
+        "2ff814a6-3304-4ab8-85cb-cd0e6f879c1d/user_impersonation",
+        "offline_access"
+      ],
+      "flows": ["authorizationCode"]
+    }
+  },
+  "connectorName": "foundrydatabricksgenieonemcp",
+  "authSchemas": ["OAuth2"],
+  "audience": "2ff814a6-3304-4ab8-85cb-cd0e6f879c1d",
+  "customProperties": { "x-ms-preview": true }
+}
