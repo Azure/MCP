@@ -70,9 +70,6 @@
       "scopes": []
     }
   },
-  "authSchemas": [
-    "OAuth2"
-  ],
   "versionName": "original",
   "versionTitle": "Initial release",
   "customProperties": {

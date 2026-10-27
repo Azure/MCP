@@ -41,9 +41,6 @@
     "remote": "https://mcp.lovable.dev",
     "remoteType": "streamable-http",
     "versionName": "Original",
-    "authSchemas": [
-        "OAuth2"
-    ],
     "securitySchemes": {
         "lovableOauth": {
             "type": "oauth2",

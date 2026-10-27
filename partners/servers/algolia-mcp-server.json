@@ -54,9 +54,6 @@
       ]
     }
   },
-  "authSchemas": [
-    "OAuth2"
-  ],
   "versionName": "original",
   "supportContactInfo": {
     "name": "Algolia Support",
