@@ -1,0 +1,78 @@
+{
+  "name": "project-perception",
+  "title": "Project Perception",
+  "summary": "Connect AI agents to specialized security workflows for investigation, threat intelligence, reconnaissance, posture analysis, and identity risk assessment.",
+  "description": "The Project Perception MCP server connects MCP-compatible AI agents and orchestration platforms to specialized Perception security workflows. Agents can discover available playbooks, launch and monitor asynchronous investigation sessions, provide follow-up guidance, and retrieve summaries and generated Markdown reports. Sessions remain available in Microsoft Defender.",
+  "vendor": "Microsoft",
+  "kind": "mcp",
+  "remote": "https://perception.microsoft.com/mcp",
+  "icon": "https://res.public.onecdn.static.microsoft/scc-resources/resources/ww/msec/medeina/static/31fd0f1d4203f32507cdceae48edbb14e1b20cbc_hash/PerceptionColor.svg",
+  "externalDocumentation": {
+    "title": "Project Perception documentation",
+    "url": "https://learn.microsoft.com/en-us/security/agentic-security/"
+  },
+  "license": {
+    "name": "Microsoft License",
+    "url": "https://www.microsoft.com/licensing/terms/welcome/welcomepage"
+  },
+  "useCases": [
+    {
+      "name": "Recon Agent",
+      "description": "Performs attacker scouting activities to map your environment, surface attack paths, choke points, valuable assets, configuration issues, and excess permissions."
+    },
+    {
+      "name": "Triage Agent",
+      "description": "Classifies and resolves alerts as true or false positives, with detailed explanations behind its conclusions. It learns from context and feedback to improve accuracy over time."
+    },
+    {
+      "name": "Threat Intelligence Agent",
+      "description": "Extracts attack patterns, indicators, and key threat intelligence objects, then analyzes them to identify how to defend against or respond to a threat."
+    },
+    {
+      "name": "Attack Investigation Agent",
+      "description": "Reconstructs the full attack story by correlating alerts, incidents, and security signals. It provides analyst-ready insights, including verdicts, timelines, techniques, indicators of compromise, and affected entities."
+    },
+    {
+      "name": "Detection Authoring Agent",
+      "description": "Identifies gaps in threat coverage and creates detection rules to improve defenses as threats evolve."
+    },
+    {
+      "name": "Posture Prioritization Agent",
+      "description": "Ranks posture issues by real-world risk, exposure, exploitability, and asset criticality. It provides focused guidance on what to fix first and why."
+    }
+  ],
+  "categories": "Security",
+  "tags": [
+    "security",
+    "perception",
+    "agentic-security"
+  ],
+  "supportContactInfo": {
+    "name": "Microsoft Customer Support",
+    "email": "support@microsoft.com"
+  },
+  "versionName": "original",
+  "securitySchemes": {
+    "perceptionOAuth": {
+      "type": "oauth2",
+      "description": "Authenticate with the Microsoft identity platform using OAuth2 authorization code flow with PKCE support.",
+      "flows": [
+        "authorizationCode"
+      ],
+      "authorizationUrl": "https://login.microsoftonline.com",
+      "tokenUrl": "https://login.microsoftonline.com",
+      "scopes": [
+        "https://api.medeina.defender.microsoft.com/Perception.Operate.All"
+      ]
+    }
+  },
+  "visibility": "true",
+  "authSchemas": [
+    "OAuth2",
+    "AgentIdentity"
+  ],
+  "audience": "https://api.medeina.defender.microsoft.com",
+  "customProperties": {
+    "x-ms-preview": true
+  }
+}
