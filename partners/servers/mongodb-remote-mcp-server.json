@@ -41,6 +41,7 @@
     "categories": "Databases",
     "visibility": "true",
     "versionName": "Original",
+    "connectorName": "foundrymongodbmcp",
     "supportContactInfo": {
       "name": "customer support contact",
       "url": "https://www.mongodb.com/company/contact"
