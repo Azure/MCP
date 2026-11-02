@@ -1,15 +1,15 @@
 {
-  "name": "azure-databricks-geniespace",
-  "title": "Azure Databricks Genie Space",
-  "summary": "Query a curated Azure Databricks Genie space using natural language and Unity Catalog-governed data.",
-  "description": "Connect Foundry agents to one Azure Databricks Genie space at its workspace MCP endpoint. The space translates natural-language questions into SQL over its curated data, with access governed by Unity Catalog permissions. A workspace administrator must enable Managed MCP Servers, and the Genie space must be shared with the connecting identity. This endpoint is read-only and does not carry conversation history.",
+  "name": "azure-databricks-genieagent",
+  "title": "Azure Databricks Genie Agent",
+  "summary": "Query a curated Azure Databricks Genie agent using natural language and Unity Catalog-governed data.",
+  "description": "Connect Foundry agents to one Azure Databricks Genie agent at its workspace MCP endpoint. The agent translates natural-language questions into SQL over its curated data, with access governed by Unity Catalog permissions. A workspace administrator must enable Managed MCP Servers, and the Genie agent must be shared with the connecting identity. This endpoint is read-only and does not carry conversation history.",
   "vendor": "Microsoft",
   "kind": "mcp",
   "remote": "https://{workspace-hostname}/api/2.0/mcp/genie/{genie_space_id}",
   "remoteType": "streamable-http",
   "icon": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/hero-icon-product-azure-databricks-24x24-328736?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85",
   "externalDocumentation": {
-    "title": "Azure Databricks Genie Space MCP docs",
+    "title": "Azure Databricks Genie Agent MCP docs",
     "url": "https://learn.microsoft.com/en-us/azure/databricks/agents/mcp-tools/genie-agent"
   },
   "license": {
@@ -18,8 +18,8 @@
   },
   "useCases": [
     {
-      "name": "Genie space analytics",
-      "description": "Ask natural-language business questions against the curated data in a specific Genie space, such as average monthly revenue by region."
+      "name": "Genie agent analytics",
+      "description": "Ask natural-language business questions against the curated data in a specific Genie agent, such as average monthly revenue by region."
     }
   ],
   "categories": "Analytics",
@@ -31,9 +31,9 @@
   "versionName": "original",
   "visibility": "true",
   "securitySchemes": {
-    "databricksGenieSpaceOauth": {
+    "databricksGenieAgentOauth": {
       "type": "oauth2",
-      "description": "Microsoft Entra ID user authentication for Azure Databricks Genie Space.",
+      "description": "Microsoft Entra ID user authentication for Azure Databricks Genie Agent.",
       "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
       "tokenUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
       "refreshUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
@@ -44,7 +44,7 @@
       "flows": ["authorizationCode"]
     }
   },
-  "connectorName": "foundrydatabricksgeniespacemcp",
+  "connectorName": "foundrydatabricksgenieagentmcp",
   "authSchemas": ["OAuth2"],
   "audience": "2ff814a6-3304-4ab8-85cb-cd0e6f879c1d",
   "customProperties": { "x-ms-preview": true }
