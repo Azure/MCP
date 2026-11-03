@@ -9,7 +9,7 @@
     "name": "ScrapingBee Terms and Conditions",
     "url": "https://www.scrapingbee.com/terms-and-conditions/"
   },
-  "icon": "https://raw.githubusercontent.com/ScrapingBee/scrapingbee-cli/main/plugins/scrapingbee-antigravity/assets/icon.png",
+  "icon": "https://www.scrapingbee.com/images/favico.png",
   "externalDocumentation": {
     "title": "ScrapingBee MCP server docs",
     "url": "https://mcp.scrapingbee.com/"
