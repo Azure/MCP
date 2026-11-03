@@ -1,0 +1,53 @@
+{
+  "name": "scrapingbee-mcp",
+  "title": "ScrapingBee MCP",
+  "summary": "Fetch any web page as text, markdown, HTML or a screenshot, extract structured data, and get JSON from Google, Amazon, Walmart and YouTube.",
+  "description": "Give agents reliable access to live web content. ScrapingBee renders JavaScript and handles CAPTCHAs and anti-bot blocking automatically, so pages that fail with plain HTTP come back as clean text, markdown or HTML. Tools cover page fetch and screenshots, AI-driven extraction of fields described in plain English, file download, and ready-to-use JSON from Google search, Amazon product and pricing, Walmart, YouTube metadata and subtitles, ChatGPT and Gemini. Authentication is a ScrapingBee API key sent as a bearer token; each call spends credits from the user's plan.",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "license": {
+    "name": "ScrapingBee Terms and Conditions",
+    "url": "https://www.scrapingbee.com/terms-and-conditions/"
+  },
+  "icon": "https://raw.githubusercontent.com/ScrapingBee/scrapingbee-cli/main/plugins/scrapingbee-antigravity/assets/icon.png",
+  "externalDocumentation": {
+    "title": "ScrapingBee MCP server docs",
+    "url": "https://mcp.scrapingbee.com/"
+  },
+  "remote": "https://mcp.scrapingbee.com/mcp",
+  "remoteType": "streamable-http",
+  "supportContactInfo": {
+    "name": "ScrapingBee support",
+    "email": "contact@scrapingbee.com"
+  },
+  "visibility": "true",
+  "categories": "Web",
+  "useCases": [
+    {
+      "name": "Web fetch",
+      "description": "Fetch any URL as text, markdown, HTML or a screenshot, with JavaScript rendering and anti-bot handling done for you."
+    },
+    {
+      "name": "Structured extraction",
+      "description": "Describe the fields you need in plain English and get them back as JSON from any page, without CSS selectors."
+    },
+    {
+      "name": "Search results",
+      "description": "Get Google search results as JSON, with organic results, news, maps and shopping."
+    },
+    {
+      "name": "E-commerce and video data",
+      "description": "Pull Amazon product details and pricing, Walmart products, and YouTube search, metadata and subtitles as JSON."
+    }
+  ],
+  "securitySchemes": {
+    "scrapingBeeBearerAuth": {
+      "type": "http",
+      "description": "Authenticate with your ScrapingBee API key as a bearer token.",
+      "scheme": "bearer",
+      "bearerFormat": "your api key"
+    }
+  },
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": false }
+}
