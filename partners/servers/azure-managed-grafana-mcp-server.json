@@ -54,5 +54,5 @@
     "AgentIdentity"
   ],
   "audience": "ce34e7e5-485f-4d76-964f-b3d2b16d1e4f",
-  "customProperties": { "x-ms-preview": true }
+  "customProperties": { "x-ms-preview": false }
 }
