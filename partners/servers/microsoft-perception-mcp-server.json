@@ -68,8 +68,7 @@
   },
   "visibility": "true",
   "authSchemas": [
-    "OAuth2",
-    "AgentIdentity"
+    "OAuth2"
   ],
   "audience": "https://api.medeina.defender.microsoft.com",
   "customProperties": {
