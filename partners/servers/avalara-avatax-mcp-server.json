@@ -71,9 +71,6 @@
     "name": "Avalara Developer Support",
     "url": "https://developer.avalara.com"
   },
-  "authSchemas": [
-    "OAuth2"
-  ],
   "securitySchemes": {
     "avalaraAvataxOauth": {
       "type": "oauth2",
