@@ -1,14 +1,14 @@
 {
-  "name": "project-perception",
-  "title": "Project Perception",
+  "name": "microsoft-perception",
+  "title": "Microsoft Perception",
   "summary": "Connect AI agents to specialized security workflows for investigation, threat intelligence, reconnaissance, posture analysis, and identity risk assessment.",
-  "description": "The Project Perception MCP server connects MCP-compatible AI agents and orchestration platforms to specialized Perception security workflows. Agents can discover available playbooks, launch and monitor asynchronous investigation sessions, provide follow-up guidance, and retrieve summaries and generated Markdown reports. Sessions remain available in Microsoft Defender.",
+  "description": "The Microsoft Perception MCP server connects MCP-compatible AI agents and orchestration platforms to specialized Perception security workflows. Agents can discover available playbooks, launch and monitor asynchronous investigation sessions, provide follow-up guidance, and retrieve summaries and generated Markdown reports. Sessions remain available in Microsoft Defender.",
   "vendor": "Microsoft",
   "kind": "mcp",
   "remote": "https://perception.microsoft.com/mcp",
   "icon": "https://res.public.onecdn.static.microsoft/scc-resources/resources/ww/msec/medeina/static/31fd0f1d4203f32507cdceae48edbb14e1b20cbc_hash/PerceptionColor.svg",
   "externalDocumentation": {
-    "title": "Project Perception documentation",
+    "title": "Microsoft Perception documentation",
     "url": "https://learn.microsoft.com/en-us/security/agentic-security/"
   },
   "license": {
