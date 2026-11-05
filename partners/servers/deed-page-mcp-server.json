@@ -1,0 +1,65 @@
+{
+  "name": "deed-page-mcp-server",
+  "title": "deed.page",
+  "summary": "Publish HTML pages and static sites written by an agent to permanent public HTTPS URLs, with no account needed for the first publish.",
+  "description": "deed.page is static web hosting for AI agents. Its remote MCP server lets an agent publish files it wrote (a single HTML page, a report, a prototype or a small static site) to a permanent HTTPS URL at a slug it chooses, then update that page in place, check whether a slug is live, list its versions and restore an earlier one, or delete the site. The first publish needs no account: it returns an owner token, which the client keeps privately and sends as a Bearer token for later updates, listing and deletion. Everything published is public, so agents should not publish secrets or private data. Free and paid plans are described in the documentation.",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "externalDocumentation": {
+    "title": "deed.page documentation",
+    "url": "https://deed.page/docs"
+  },
+  "remote": "https://deed.page/mcp",
+  "remoteType": "streamable-http",
+  "supportContactInfo": {
+    "name": "deed.page support",
+    "email": "hello@deed.page",
+    "url": "https://deed.page/support"
+  },
+  "license": {
+    "name": "deed.page Terms",
+    "url": "https://deed.page/terms"
+  },
+  "visibility": "true",
+  "categories": "Web",
+  "icon": "https://deed.page/icon.svg",
+  "useCases": [
+    {
+      "name": "Share agent output as a web page",
+      "description": "Turn a report, summary, dashboard or document the agent generated as HTML into a public URL the user can open and share, instead of pasting long output into chat."
+    },
+    {
+      "name": "Publish prototypes and small static sites",
+      "description": "Publish several files at once (HTML, CSS, JavaScript, images) or a single-page app, and update the same URL as the work changes. Larger sites use a manifest upload so unchanged files are not sent again."
+    },
+    {
+      "name": "Versioned updates",
+      "description": "Each publish creates a new version of the slug. The agent can check what is live, list retained versions and restore an earlier one without uploading the files again."
+    },
+    {
+      "name": "Temporary previews",
+      "description": "Set an expiry on a publish to share a preview link that removes itself, or delete a site when it is no longer needed."
+    }
+  ],
+  "securitySchemes": {
+    "deedpageBearer": {
+      "type": "http",
+      "description": "Optional for a first publish. The owner token it returns is sent as a Bearer token to update, list, version or delete the owner's sites.",
+      "scheme": "bearer",
+      "bearerFormat": "deed.page owner token"
+    }
+  },
+  "versionName": "original",
+  "versionTitle": "Initial release",
+  "customProperties": {
+    "x-ms-preview": false
+  },
+  "tags": [
+    "deed-page",
+    "static-hosting",
+    "web-publishing",
+    "html",
+    "websites",
+    "ai-agents"
+  ]
+}
