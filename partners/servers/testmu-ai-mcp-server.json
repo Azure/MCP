@@ -1,0 +1,49 @@
+{
+  "name": "testmu-ai-mcp-server",
+  "title": "TestMu AI MCP Server",
+  "summary": "Run, debug and triage tests from your IDE with TestMu AI's MCP server for HyperExecute, Automation, Native App Automation, SmartUI, Accessibility and Test Manager.",
+  "description": "The TestMu AI MCP Server brings six testing tools into MCP clients such as Cursor, Claude Code, GitHub Copilot and OpenAI Codex, so teams can run, debug and triage tests in natural language. It generates HyperExecute YAML and runner commands and monitors jobs, pulls command, network and console logs to find the root cause of failed automation and native app tests, explains SmartUI pixel, layout and DOM differences, runs accessibility checks with remediation guidance, and covers the Test Manager lifecycle from AI test case generation to coverage tracking.\n\nTestMu AI (Formerly LambdaTest) is an Agentic AI Quality Engineering platform that assures AI deployments across the enterprise and the real world. It runs agentic testing for web and mobile apps on 3,000+ browsers and 50,000+ real devices, and for chat, voice, IVR, video, and image agents.",
+  "kind": "mcp",
+  "remote": "https://mcp.lambdatest.com/mcp",
+  "remoteType": "streamable-http",
+  "license": {
+    "name": "TestMu AI Terms of Service",
+    "url": "https://www.testmuai.com/legal/terms-of-service/"
+  },
+  "icon": "https://www.testmuai.com/favicon.png",
+  "externalDocumentation": {
+    "title": "TestMu AI MCP Server Docs",
+    "url": "https://www.testmuai.com/support/docs/testmu-mcp-server/"
+  },
+  "useCases": [
+    { "name": "Test orchestration with HyperExecute", "description": "Generate HyperExecute YAML and test runner commands, monitor jobs and fetch session details from the IDE." },
+    { "name": "Automation failure triage", "description": "Pull execution data and command, network and console logs into one chat to find the root cause of a failed automation test." },
+    { "name": "Native app test debugging", "description": "Triage native mobile app tests and drive real or virtual devices live with the Appium MCP server." },
+    { "name": "Visual regression debugging", "description": "Get natural language summaries of pixel, layout, DOM and perceptual differences from any SmartUI comparison run." },
+    { "name": "Accessibility audits", "description": "Run accessibility checks on hosted URLs or local React apps and get detailed remediation guidance." },
+    { "name": "Test management", "description": "Generate test cases with AI, build configured test runs, record results in bulk, and track milestones and coverage." }
+  ],
+  "tags": ["testing", "test-automation", "accessibility", "visual-testing", "qa"],
+  "vendor": "Partner",
+  "visibility": "public",
+  "categories": "Developer Tools",
+  "versionName": "original",
+  "supportContactInfo": {
+    "name": "TestMu AI Support",
+    "email": "support@testmuai.com",
+    "url": "https://www.testmuai.com/contact-us/"
+  },
+  "securitySchemes": {
+    "oauth": {
+      "type": "oauth2",
+      "description": "Sign in with your TestMu AI account through OAuth.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://accounts.lambdatest.com/oauth2",
+      "tokenUrl": "https://auth.lambdatest.com/oauth2/token",
+      "refreshUrl": "https://auth.lambdatest.com/oauth2/token",
+      "scopes": []
+    }
+  },
+  "packages": [],
+  "customProperties": { "x-ms-preview": false }
+}
