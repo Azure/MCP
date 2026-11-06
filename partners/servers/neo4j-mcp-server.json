@@ -79,7 +79,6 @@
       "email": "support@neo4j.com",
       "url": "https://support.neo4j.com/"
     },
-    "authSchemas": ["OAuth2"],
     "customProperties": {
       "x-ms-preview": false
     }

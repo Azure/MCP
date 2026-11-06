@@ -29,7 +29,6 @@
         "scopes": []
       }
     },
-    "authSchemas": ["OAuth2"],
     "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/mongodb.svg",
     "useCases": [
       {
@@ -42,6 +41,7 @@
     "categories": "Databases",
     "visibility": "true",
     "versionName": "Original",
+    "connectorName": "foundrymongodbmcp",
     "supportContactInfo": {
       "name": "customer support contact",
       "url": "https://www.mongodb.com/company/contact"
