@@ -1,8 +1,8 @@
 {
   "name": "amg-mcp",
   "title": "Azure Managed Grafana",
-  "summary": "Query ANY data that Grafana has access to, e.g. Azure Monitor Logs, Metrics, and more.",
-  "description": "Query ANY data that Grafana has access to, e.g. Azure Monitor Logs, Metrics, and more.",
+  "summary": "Query Kusto, Azure Monitor, Application Insights, Prometheus, and Loki through Azure Managed Grafana, and manage its dashboards and alerts.",
+  "description": "Query Kusto, Azure Monitor metrics and logs, Application Insights, Prometheus, and Loki through the data sources connected to your Azure Managed Grafana workspace. Search, read, and update dashboards and alert rules, and check Azure resource health, activity logs, and cost. Agents authenticate only to Grafana; every query runs through the workspace's existing data source connections. Also covers SQL Server, PostgreSQL, MySQL, and ClickHouse data sources and Azure Resource Graph.",
   "vendor": "Microsoft",
   "kind": "mcp",
   "remote": "https://{workspace-hostname}/api/azure-mcp",
