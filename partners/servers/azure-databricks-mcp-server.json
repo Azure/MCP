@@ -1,0 +1,46 @@
+{
+  "name": "azure-databricks",
+  "title": "Azure Databricks Genie Agents",
+  "summary": "Azure Databricks Genie Agents MCP lets AI agents query a curated Genie agent using natural language to get answers from their data.",
+  "description": "Azure Databricks Genie Agents MCP server lets AI agents query a specific Genie agent using natural language. Each Genie agent answers questions over its curated data, with Unity Catalog permissions enforced.",
+  "vendor": "Microsoft",
+  "kind": "mcp",
+  "remote": "https://{workspace-hostname}/api/2.0/mcp/genie/{genie_space_id}",
+  "icon": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/hero-icon-product-azure-databricks-24x24-328736?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85",
+  "externalDocumentation": {
+    "title": "Azure Databricks Genie Agent MCP docs",
+    "url": "https://learn.microsoft.com/en-us/azure/databricks/agents/mcp-tools/genie-agent"
+  },
+  "license": {
+    "name": "User License Terms",
+    "url": "https://azure.microsoft.com/en-us/support/legal"
+  },
+  "useCases": [
+    {
+      "name": "Genie agent Q&A",
+      "description": "Ask a Genie agent natural-language questions about its curated data. For example, ask for average monthly revenue; the Genie agent translates the question into SQL and returns the answer."
+    }
+  ],
+  "categories": "Productivity",
+  "tags": ["knowledge"],
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://azure.microsoft.com/en-us/support/"},
+  "versionName": "original",
+  "visibility": "true",
+  "securitySchemes": {
+    "databricksOauth": {
+      "type": "oauth2",
+      "description": "Managed Microsoft Entra OAuth (user context) for Azure DatabricksGenie MCP",
+      "authorizationUrl": "http://workspaceurl/oidc/v1/authorize",
+      "tokenUrl": "http://workspaceurl/oidc/v1/token",
+      "scopes": [
+        "2ff814a6-3304-4ab8-85cb-cd0e6f879c1d/user_impersonation",
+        "2ff814a6-3304-4ab8-85cb-cd0e6f879c1d/.default"
+      ],
+      "flows": ["authorizationCode"]
+    }
+  },
+  "connectorName": "foundrydatabricksmcp",
+  "customProperties": { "x-ms-preview": true }
+}
