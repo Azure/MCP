@@ -1,0 +1,78 @@
+{
+  "name": "sonarqube-cloud-mcp-server",
+  "title": "SonarQube Cloud",
+  "summary": "Explore SonarQube Cloud projects, code quality and security issues, quality gates, and measures from AI assistants.",
+  "description": "The hosted SonarQube Cloud MCP service lets AI assistants retrieve existing code quality and security information from projects accessible to the signed-in user. Discover organizations and projects, investigate issues and rules, explain quality gate failures, and inspect measures such as coverage. Connect over Streamable HTTP using OAuth or a SonarQube Cloud user token. This entry uses the EU endpoint; US-region setup is documented in the linked guide. Use of the hosted service is subject to SonarQube Cloud terms of service.",
+  "kind": "mcp",
+  "license": {
+    "name": "SonarQube Cloud Terms of Service",
+    "url": "https://www.sonarsource.com/legal/sonarcloud/terms-of-service/"
+  },
+  "icon": "https://assets-eu-01.kc-usercontent.com/ef593040-b591-0198-9506-ed88b30bc023/82c13eba-d95c-4bb8-8007-7ce77c14e043/Sonar_Logo_Light%20Backgrounds.svg",
+  "externalDocumentation": {
+    "title": "SonarQube Cloud hosted MCP setup",
+    "url": "https://docs.sonarsource.com/sonarqube-mcp-server/setup/sonarqube-cloud-hosted"
+  },
+  "repository": {
+    "url": "https://github.com/SonarSource/sonarqube-mcp-server",
+    "source": "README.md"
+  },
+  "useCases": [
+    {
+      "name": "Discover accessible projects",
+      "description": "List organizations and projects available to the signed-in user to establish the context for code quality investigations."
+    },
+    {
+      "name": "Explain quality gate failures",
+      "description": "Retrieve quality gate status and related measures to understand why an existing project fails its quality gate."
+    },
+    {
+      "name": "Investigate code quality and security issues",
+      "description": "Explore existing project issues and rule details to understand findings and plan remediation."
+    },
+    {
+      "name": "Inspect coverage and project measures",
+      "description": "Retrieve measures such as coverage to identify areas that need further investigation."
+    }
+  ],
+  "vendor": "Partner",
+  "categories": "Developer Tools",
+  "tags": [
+    "sonarqube",
+    "code-quality",
+    "security",
+    "quality-gates",
+    "coverage"
+  ],
+  "versionName": "original",
+  "remote": "https://api.sonarcloud.io/mcp",
+  "remoteType": "streamable-http",
+  "securitySchemes": {
+    "sonarqubeCloudOAuth": {
+      "type": "oauth2",
+      "description": "OAuth authorization code flow with PKCE. Scopes control tool access, subject to the user's SonarQube Cloud permissions.",
+      "flows": [
+        "authorizationCode"
+      ],
+      "authorizationUrl": "https://auth.sonarcloud.io/authorize",
+      "tokenUrl": "https://auth.sonarcloud.io/oauth/token",
+      "refreshUrl": "https://auth.sonarcloud.io/oauth/token",
+      "scopes": [
+        "mcp:tools:read",
+        "mcp:tools:write"
+      ]
+    },
+    "sonarqubeCloudUserToken": {
+      "type": "http",
+      "description": "A SonarQube Cloud user token sent in the Authorization header using the Bearer scheme.",
+      "scheme": "bearer"
+    }
+  },
+  "supportContactInfo": {
+    "name": "Sonar Community",
+    "url": "https://community.sonarsource.com/"
+  },
+  "customProperties": {
+    "x-ms-preview": true
+  }
+}
