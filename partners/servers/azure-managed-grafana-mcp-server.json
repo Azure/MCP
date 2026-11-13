@@ -50,7 +50,9 @@
     }
   },
   "authSchemas": [
+    "OAuth2",
     "UserEntraToken",
+    "AgentOnBehalfOfUser",
     "ManagedIdentity",
     "AgentIdentity"
   ],
