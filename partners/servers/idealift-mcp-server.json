@@ -67,9 +67,6 @@
       "bearerFormat": "il_live_..."
     }
   },
-  "authSchemas": [
-    "OAuth2"
-  ],
   "audience": "api://7734d6d3-8257-4a2b-a35e-1702ddbeeb6f",
   "versionName": "v1",
   "versionTitle": "IdeaLift MCP v1 (Foundry OBO GA)",
