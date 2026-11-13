@@ -73,7 +73,7 @@
     "OAuth2"
   ],
   "securitySchemes": {
-    "oauth2": {
+    "pagerdutyOAuth2": {
       "type": "oauth2",
       "description": "PagerDuty OAuth 2.0 authorization code flow with PKCE. Users sign in at identity.pagerduty.com and grant the app access to their account.",
       "authorizationUrl": "https://identity.pagerduty.com/oauth/authorize",
