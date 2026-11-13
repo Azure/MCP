@@ -86,12 +86,6 @@
       "flows": [
         "authorizationCode"
       ]
-    },
-    "apiToken": {
-      "type": "apiKey",
-      "description": "PagerDuty User API token, sent as: Token token=<token>",
-      "in": "header",
-      "name": "Authorization"
     }
   },
   "supportContactInfo": {
