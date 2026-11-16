@@ -1,0 +1,99 @@
+{
+  "name": "pagerduty-mcp",
+  "title": "PagerDuty",
+  "summary": "AI-first incident detection, triage and response",
+  "description": "The PagerDuty MCP server connects third party AI agents to existing PagerDuty accounts. With appropriate permissions from the authenticated PagerDuty user, agents can list and triage incidents, check who is on call, look up services, teams, and escalation policies, review change events, and take actions such as acknowledging, resolving, or adding notes to incidents. When entitled, agents can also communicate and coordinate directly with Paige, PagerDuty's SRE agent, for collaborative investigation and remediation. US and EU service regions are supported.",
+  "kind": "mcp",
+  "license": {
+    "name": "PagerDuty Developer Agreement",
+    "url": "https://docs.pagerduty.com/developer/pagerduty-developer-agreement"
+  },
+  "icon": "https://cdn.brandfolder.io/YX9ETPCP/at/266537g8kh6mmvt24jvsjb/P-GreenRGB.svg",
+  "externalDocumentation": {
+    "title": "PagerDuty MCP Tooling & Remote Server",
+    "url": "https://docs.pagerduty.com/developer/mcp-tooling-remote-server"
+  },
+  "useCases": [
+    {
+      "name": "Real-time Alert Triage",
+      "description": "Triage incoming alerts, acknowledge notifications, and cut alert noise with Signal Intelligence, which uses machine learning, AI, and automation to improve incident visibility."
+    },
+    {
+      "name": "On-Call & Escalation Visibility",
+      "description": "Check on-call schedules, user assignments, escalation policies, and team structures directly inside AI workspaces without switching tools."
+    },
+    {
+      "name": "Telemetry & Signal Analysis",
+      "description": "Query production telemetry, analyze critical service health, and inspect application logs across connected tools using natural language."
+    },
+    {
+      "name": "Root Cause Identification",
+      "description": "Leverage shared operational memory and historical incident data to investigate failure modes, trace issues, and surface root causes quickly."
+    },
+    {
+      "name": "Lifecycle Orchestration",
+      "description": "Declare incidents, track follow-ups, update incident statuses, and coordinate responses without tab juggling."
+    },
+    {
+      "name": "Blended Team Collaboration",
+      "description": "Human responders and AI agents, including Paige, PagerDuty’s SRE agent, work incidents together across chat tools and developer environments."
+    },
+    {
+      "name": "Automated Remediation Actions",
+      "description": "Run automated actions, restart services, and execute Kubernetes remediations across cloud, hybrid, and on-prem infrastructure with automation native to PD Reliability Platform."
+    },
+    {
+      "name": "Post-Incident Review & Prevention",
+      "description": "Conduct structured operational reviews, generate post-incident reviews automatically, and feed what you learn back to developers and responders so every incident helps prevent the next one."
+    }
+  ],
+  "tags": [
+    "mcp",
+    "pagerduty",
+    "pdrp",
+    "incident-management",
+    "sre",
+    "triage",
+    "investigation",
+    "resolution",
+    "remediation",
+    "autonomous-actions",
+    "paige-sre-agent",
+    "ai-coding-tools",
+    "claude",
+    "cursor",
+    "signal-intelligence"
+  ],
+  "vendor": "Partner",
+  "categories": "Monitoring & Diagnostics",
+  "versionName": "original",
+  "remote": "https://mcp.pagerduty.com/mcp",
+  "remoteType": "streamable-http",
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "securitySchemes": {
+    "pagerdutyOAuth2": {
+      "type": "oauth2",
+      "description": "PagerDuty OAuth 2.0 authorization code flow with PKCE. Users sign in at identity.pagerduty.com and grant the app access to their account.",
+      "authorizationUrl": "https://identity.pagerduty.com/oauth/authorize",
+      "tokenUrl": "https://identity.pagerduty.com/oauth/token",
+      "refreshUrl": "https://identity.pagerduty.com/oauth/token",
+      "scopes": [
+        "read",
+        "write"
+      ],
+      "flows": [
+        "authorizationCode"
+      ]
+    }
+  },
+  "supportContactInfo": {
+    "name": "PagerDuty Support",
+    "email": "support@pagerduty.com",
+    "url": "https://support.pagerduty.com"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
