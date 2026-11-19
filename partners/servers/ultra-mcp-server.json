@@ -1,0 +1,73 @@
+{
+  "name": "ultra-mcp-server",
+  "title": "Ultra Connector",
+  "summary": "Connect AI agents to Ultra in the cloud. Every tool call is recorded, checked against your policy, and routed to the right connector.",
+  "description": "Ultra is a hosted Model Context Protocol (MCP) gateway that sits between AI agents and the tools they call. Point your agent at https://mcp.ultra.security/mcp, sign in with OAuth, and Ultra routes traffic to your organization's connectors. Every action is recorded in Ultra Hub, checked against your governance and guardrails, and available for activity, alerts, and export. The remote Ultra Connector is meant for apps that run in the browser or the cloud, including Microsoft Foundry, Microsoft 365 Copilot, Claude, ChatGPT, VS Code, and Cursor.",
+  "kind": "mcp",
+  "packages": [],
+  "license": {
+    "name": "Ultra Terms of Service",
+    "url": "https://ultra.security/terms"
+  },
+  "icon": "https://ultra.security/icon.svg",
+  "externalDocumentation": {
+    "title": "Ultra Connector docs",
+    "url": "https://docs.ultra.security/getting-started/ultra-connector"
+  },
+  "useCases": [
+    {
+      "name": "Connect cloud and browser agents",
+      "description": "Point Microsoft Foundry, Microsoft 365 Copilot, Claude, ChatGPT, VS Code, Cursor, and other MCP clients at https://mcp.ultra.security/mcp. Users sign in with OAuth, and the workspace comes from that sign-in."
+    },
+    {
+      "name": "Govern agent tool access",
+      "description": "Use Ultra Hub to set organization-wide allow and deny rules for connectors, tools, and agents, and enforce security policies on every MCP tool call with guardrails."
+    },
+    {
+      "name": "Observe and record every tool call",
+      "description": "Review MCP operations and security events in Activity, get alerts, and export telemetry so security teams can monitor how agents use tools."
+    },
+    {
+      "name": "Inventory agents, connectors, and identities",
+      "description": "See the agents, MCP connectors, tools, devices, and identities in your organization from Ultra Hub, without installing Ultra on every machine for cloud-hosted agents."
+    }
+  ],
+  "tags": [
+    "Security",
+    "MCP",
+    "Gateway",
+    "OAuth",
+    "Governance",
+    "Observability",
+    "AI Agents"
+  ],
+  "vendor": "Partner",
+  "visibility": "true",
+  "categories": "Security",
+  "remote": "https://mcp.ultra.security/mcp",
+  "remoteType": "streamable-http",
+  "securitySchemes": {
+    "ultraMcpOAuth": {
+      "type": "oauth2",
+      "description": "Authenticate with Ultra using OAuth 2.0 authorization code flow. Refresh tokens use the same token endpoint.",
+      "flows": [
+        "authorizationCode"
+      ],
+      "authorizationUrl": "https://oauth.ultra.security/oauth2/auth",
+      "tokenUrl": "https://oauth.ultra.security/oauth2/token",
+      "refreshUrl": "https://oauth.ultra.security/oauth2/token",
+      "scopes": [
+        "offline_access"
+      ]
+    }
+  },
+  "versionName": "original",
+  "supportContactInfo": {
+    "name": "Ultra Support",
+    "email": "support@ultra.security",
+    "url": "https://ultra.security/contact"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
