@@ -1,13 +1,13 @@
 {
   "name": "carbone-mcp-server",
   "title": "Carbone",
-  "summary": "Generate and convert documents (PDF, DOCX, XLSX, PPTX, 100+ formats) from templates and JSON data using the Carbone API.",
-  "description": "Carbone MCP Server connects AI agents to the Carbone document generation and conversion API. Agents can generate production-ready documents in 100+ formats (PDF, DOCX, XLSX, PPTX, ODT, ODS, ODP, ODG, HTML, MD, CSV, and more) by merging templates with JSON data, convert existing files between formats, and manage templates (upload, list, delete). It supports multi-language output, custom formatters for dates, numbers and currencies, and bulk generation. Open-source (Apache 2.0), supports the hosted endpoint and self-hosted deployments. Free API key at https://account.carbone.io.",
+  "summary": "Generate PDF, Word, Excel and PowerPoint documents from templates and JSON data, and convert files between 36 formats, with the official Carbone MCP server.",
+  "description": "The official Carbone MCP server lets AI agents automate document generation and file conversion. Fill DOCX, XLSX, PPTX, ODT, HTML or Markdown templates with JSON data, or fill existing PDF forms, to produce invoices, contracts, reports, quotes and certificates as PDF, Word, Excel, PowerPoint and more. Convert files between 36 formats: DOCX to PDF, HTML to PDF, Markdown to PDF, XLSX to CSV and others. Ask which data a template expects, then manage a versioned template library: upload, categorize, tag, deploy and download templates. Finish PDFs with passwords, watermarks, PDF/A and page ranges, generate up to 100 documents per batch delivered to a webhook, and localize output with translations, time zones and currency conversion. The hosted server at https://mcp.carbone.io signs you in with your Carbone account over OAuth 2.1. You can also self-host it with npx or Docker, against Carbone Cloud or Carbone On-premise. Open source (Apache-2.0). Free account at https://account.carbone.io.",
   "kind": "mcp",
   "vendor": "Partner",
   "categories": "Developer Tools",
   "license": {
-    "name": "Apache 2.0",
+    "name": "Apache-2.0",
     "url": "https://github.com/carboneio/carbone-mcp/blob/master/LICENSE"
   },
   "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/Carbone.svg",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "url": "https://github.com/carboneio/carbone-mcp",
-    "source": "https://github.com/carboneio/carbone-mcp"
+    "source": "github"
   },
   "packages": [
     {
@@ -37,9 +37,81 @@
       "environment_variables": [
         {
           "name": "CARBONE_API_KEY",
-          "description": "Your Carbone API key, obtainable for free at https://account.carbone.io",
-          "is_required": true,
+          "description": "Your Carbone API key, free at https://account.carbone.io. stdio: required for Carbone Cloud. HTTP: optional, leave it unset so each client sends its own Authorization: Bearer key; when set, requests without a key spend it. With Carbone On-premise, set your instance's token when its authentication is enabled, or leave it empty otherwise.",
+          "is_required": false,
           "is_secret": true
+        },
+        {
+          "name": "CARBONE_BASE_URL",
+          "description": "Carbone API base URL. Keep the default for Carbone Cloud, or set the URL of your Carbone On-premise instance.",
+          "default": "https://api.carbone.io",
+          "is_required": false,
+          "is_secret": false
+        },
+        {
+          "name": "CARBONE_TIMEOUT",
+          "description": "Timeout of each Carbone API request, in milliseconds. Carbone Cloud's synchronous API has its own 60-second limit.",
+          "default": "60000",
+          "is_required": false,
+          "is_secret": false
+        },
+        {
+          "name": "CARBONE_MAX_FILE_BYTES",
+          "description": "Largest input file the server accepts from a local path, URL or base64 string, in bytes (default 100 MB).",
+          "default": "104857600",
+          "is_required": false,
+          "is_secret": false
+        },
+        {
+          "name": "CARBONE_ALLOW_PRIVATE_NETWORK",
+          "description": "Set to true to let URL inputs resolve to private and internal addresses. Off by default to block SSRF; enable it only on a trusted deployment with internal template hosts.",
+          "default": "false",
+          "choices": ["true", "false"],
+          "is_required": false,
+          "is_secret": false
+        },
+        {
+          "name": "MCP_TRANSPORT",
+          "description": "stdio for local MCP clients, or http to run a Streamable HTTP server. The Docker image sets http.",
+          "default": "stdio",
+          "choices": ["stdio", "http"],
+          "is_required": false,
+          "is_secret": false
+        },
+        {
+          "name": "MCP_PORT",
+          "description": "HTTP only. Listening port.",
+          "default": "3000",
+          "is_required": false,
+          "is_secret": false
+        },
+        {
+          "name": "MCP_PATH",
+          "description": "HTTP only. MCP endpoint path. Must start with / and cannot be /health (reserved for the health check).",
+          "default": "/",
+          "is_required": false,
+          "is_secret": false
+        },
+        {
+          "name": "MCP_MAX_BODY_BYTES",
+          "description": "Largest incoming MCP message in bytes (default 60 MB, Carbone Cloud's JSON data limit). Larger HTTP requests get 413.",
+          "default": "62914560",
+          "is_required": false,
+          "is_secret": false
+        },
+        {
+          "name": "MCP_ALLOWED_ORIGINS",
+          "description": "HTTP only. Comma-separated browser Origin hostnames allowed in addition to localhost, without scheme or port (e.g. app.example.com). Other origins get 403.",
+          "is_required": false,
+          "is_secret": false
+        },
+        {
+          "name": "CARBONE_REQUIRE_CLIENT_AUTH_HEADER",
+          "description": "HTTP only. Set to true to require Authorization: Bearer on every request instead of falling back to the server-level CARBONE_API_KEY. Recommended when CARBONE_API_KEY is set on a shared server.",
+          "default": "false",
+          "choices": ["true", "false"],
+          "is_required": false,
+          "is_secret": false
         }
       ]
     }
@@ -48,7 +120,7 @@
   "remoteType": "streamable-http",
   "supportContactInfo": {
     "name": "Carbone support",
-    "email": "contact@carbone.io",
+    "email": "support@carbone.io",
     "url": "https://help.carbone.io"
   },
   "visibility": "true",
@@ -75,7 +147,7 @@
     },
     {
       "name": "Document format conversion",
-      "description": "Convert any existing document to a different format — DOCX to PDF, XLSX to CSV, PPTX to ODP, and 100+ other combinations — without needing a template. Useful for standardising document formats across systems or preparing files for archiving."
+      "description": "Convert any existing document to a different format — DOCX to PDF, HTML to PDF, Markdown to PDF, XLSX to CSV, PPTX to ODP, across 36 formats — without needing a template. Useful for standardising document formats across systems or preparing files for archiving."
     },
     {
       "name": "Data-driven spreadsheet generation",
@@ -83,7 +155,7 @@
     },
     {
       "name": "Presentation generation",
-      "description": "Automatically populate PPTX or ODP slide decks with live data — KPIs, charts labels, and narrative text — from a master template. Ideal for recurring business reviews, client reports, or automated dashboards that need a polished output."
+      "description": "Automatically populate PPTX or ODP slide decks with live data — KPIs, chart labels, and narrative text — from a master template. Ideal for recurring business reviews, client reports, or automated dashboards that need a polished output."
     },
     {
       "name": "Template management",
@@ -94,12 +166,22 @@
       "description": "Generate thousands of personalised documents — certificates, statements, contracts — from a single template and a list of records. Each output is uniquely populated with the recipient's data, with no infrastructure to manage beyond the API call."
     }
   ],
+  "authSchemas": [
+    "OAuth2"
+  ],
   "securitySchemes": {
-    "carboneBearerAuth": {
-      "type": "http",
-      "description": "Authenticate to the Carbone MCP Server using a Bearer API key. Obtain your free API key at https://account.carbone.io.",
-      "scheme": "bearer",
-      "bearerFormat": "API key"
+    "carboneOAuth2": {
+      "type": "oauth2",
+      "description": "Sign in with your Carbone account. OAuth 2.1 authorization code flow with PKCE (S256), dynamic client registration and refresh tokens. The doc_rwd scope grants template and document access.",
+      "flows": [
+        "authorizationCode"
+      ],
+      "authorizationUrl": "https://account.carbone.io/authorize",
+      "tokenUrl": "https://account.carbone.io/api/oauth/token",
+      "refreshUrl": "https://account.carbone.io/api/oauth/token",
+      "scopes": [
+        "doc_rwd"
+      ]
     }
   },
   "tags": [
@@ -110,12 +192,8 @@
     "xlsx",
     "pptx",
     "odt",
-    "ods",
-    "odp",
-    "odg",
     "markdown",
     "html",
-    "csv",
     "templates",
     "template-engine",
     "reporting",
@@ -123,11 +201,16 @@
     "office-documents",
     "spreadsheet-generation",
     "json-to-pdf",
-    "automation",
     "carbone",
-    "open-source",
-    "typescript"
+    "pdf-generation",
+    "pdf-forms",
+    "docx-to-pdf",
+    "html-to-pdf",
+    "markdown-to-pdf",
+    "word",
+    "excel",
+    "powerpoint"
   ],
   "versionName": "original",
-  "customProperties": { "x-ms-preview": true }
+  "customProperties": { "x-ms-preview": false }
 }
