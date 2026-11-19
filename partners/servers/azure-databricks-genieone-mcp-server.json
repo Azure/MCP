@@ -1,0 +1,34 @@
+{
+  "name": "azure-databricks-genieone",
+  "title": "Azure Databricks Genie One",
+  "summary": "Ask natural-language questions across Azure Databricks workspace data through Genie One and Unity Gateway, with access governed by Unity Catalog.",
+  "description": "Connect Foundry agents to Azure Databricks Genie One through Unity Gateway for natural-language analytics across workspace data. Genie One uses Genie Ontology to interpret business terms and relationships, generates SQL, and returns answers with links to Azure Databricks sources. Access requires EXECUTE on system.ai.genie_one_mcp and the underlying data permissions. Configure the workspace hostname and workspace ID; no Genie agent ID is required.",
+  "vendor": "Microsoft",
+  "kind": "mcp",
+  "remote": "https://{workspace-hostname}/ai-gateway/mcp-services/system.ai.genie_one_mcp?o={workspace-id}",
+  "remoteType": "streamable-http",
+  "icon": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/hero-icon-product-azure-databricks-24x24-328736?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85",
+  "externalDocumentation": {
+    "title": "Azure Databricks Genie One MCP docs",
+    "url": "https://learn.microsoft.com/en-us/azure/databricks/agents/mcp-tools/genie-mcp"
+  },
+  "license": {
+    "name": "User License Terms",
+    "url": "https://azure.microsoft.com/en-us/support/legal"
+  },
+  "useCases": [
+    {
+      "name": "Workspace-wide analytics",
+      "description": "Ask natural-language business questions across Azure Databricks workspace data without selecting a single Genie agent."
+    }
+  ],
+  "categories": "Analytics",
+  "tags": ["knowledge", "analytics", "databricks"],
+  "supportContactInfo": {
+    "name": "customer support contact",
+    "url": "https://azure.microsoft.com/en-us/support/"
+  },
+  "versionName": "original",
+  "visibility": "true",
+  "customProperties": { "x-ms-preview": true }
+}
