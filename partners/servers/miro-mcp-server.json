@@ -1,0 +1,66 @@
+{
+  "name": "miro-mcp-server",
+  "title": "Miro",
+  "summary": "Official Miro MCP server for visual collaboration - create diagrams, docs, and tables. Manage and extract context from Miro boards.",
+  "description": "Official Miro MCP server that enables AI assistants to interact with Miro's visual collaboration platform. Supports board management, AI-powered diagram generation, context extraction for code generation, and board insights. Connects to Miro's remote MCP endpoint using streamable HTTP transport with OAuth2 authentication.",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "icon": "https://avatars.githubusercontent.com/miroapp?s=64",
+  "license": {
+    "name": "Miro Terms of Service",
+    "url": "https://miro.com/legal/terms-of-service/"
+  },
+  "externalDocumentation": {
+    "title": "Miro MCP Server Documentation",
+    "url": "https://developers.miro.com/docs/miro-mcp"
+  },
+  "repository": {
+    "url": "https://github.com/miroapp/miro-ai",
+    "source": "github"
+  },
+  "remote": "https://mcp.miro.com",
+  "remoteType": "streamable-http",
+  "supportContactInfo": {
+    "name": "Miro Developer Support",
+    "url": "https://developers.miro.com"
+  },
+  "visibility": "true",
+  "categories": "Collaboration",
+  "useCases": [
+    {
+      "name": "AI diagram generation",
+      "description": "Generate diagrams, flowcharts, and visual representations on Miro boards using AI-powered tools for architecture planning and documentation."
+    },
+    {
+      "name": "Context to code",
+      "description": "Extract structured context from Miro boards to inform code generation, enabling developers to translate visual designs and documentation into implementation."
+    },
+    {
+      "name": "Board insights and analysis",
+      "description": "Analyze board content and structure to generate insights, summaries, and actionable information from visual collaboration artifacts."
+    },
+    {
+      "name": "Brainstorming facilitation",
+      "description": "Guide brainstorming sessions by creating and organizing content on Miro boards, helping teams ideate and structure their ideas visually."
+    }
+  ],
+  "tags": [
+    "collaboration",
+    "whiteboard",
+    "diagrams",
+    "visual-collaboration",
+    "brainstorming"
+  ],
+  "securitySchemes": {
+    "miroOAuth": {
+      "type": "oauth2",
+      "description": "Authenticate with Miro using OAuth2 authorization code flow.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://mcp.miro.com/authorize",
+      "tokenUrl": "https://mcp.miro.com/token",
+      "scopes": ["boards:read", "boards:write"]
+    }
+  },
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": true }
+}
