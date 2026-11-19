@@ -1,6 +1,6 @@
 {
   "name": "niq-optiq-mcp-server",
-  "title": "NIQ Optiq MCP Server",
+  "title": "Optiq Bridge US",
   "summary": "Accelerate insight discovery and data-driven decisions by embedding NIQ intelligence into AI workflows.",
   "description": "Optiq Bridge securely connects NIQ data to MCP-compatible AI platforms such as Microsoft Copilot. It enables authenticated users to access approved datasets while maintaining enterprise permissions and governance. This allows teams to accelerate insight discovery, automate tasks, and make faster, data-driven decisions by embedding NIQ intelligence directly into AI-driven workflows.",
   "kind": "mcp",
