@@ -43,7 +43,9 @@
         "url": "https://azure.microsoft.com/en-us/support/"
     },
     "authSchemas": [
-        "OAuth2"
+        "OAuth2",
+        "UserEntraToken",
+        "AgentOnBehalfOfUser"
     ],
     "audience": "https://mcp.ai.azure.com",
     "customProperties": { "x-ms-preview": true }

@@ -64,9 +64,6 @@
       ]
     }
   },
-  "authSchemas": [
-    "OAuth2"
-  ],
   "license": {
     "name": "Amperity Online Terms and Conditions",
     "url": "https://images.ctfassets.net/5vqt5w81x2im/2xZdr5ADwi3el1WkOCBWTN/be67669fea1dc163b3803fa2d8bbd006/Amperity_Online_Terms_and_Conditions__2025-12-10_.pdf"

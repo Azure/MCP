@@ -63,9 +63,6 @@
     "name": "Avalara Developer Support",
     "url": "https://developer.avalara.com"
   },
-  "authSchemas": [
-    "OAuth2"
-  ],
   "securitySchemes": {
     "avalaraCrossBorderOauth": {
       "type": "oauth2",
