@@ -72,5 +72,5 @@
     "supportContactInfo": {
         "name": "Luca Spolidoro",
         "email": "lucaspol@microsoft.com"},
-  "customProperties": { "x-ms-preview": true }
+  "customProperties": { "x-ms-preview": false }
 }
