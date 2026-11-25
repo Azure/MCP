@@ -1,0 +1,78 @@
+{
+  "name": "wisdomai",
+  "title": "WisdomAI",
+  "summary": "Connect AI clients to WisdomAI domains to ask governed data questions and get text, tables, and charts.",
+  "description": "WisdomAI provides a hosted Model Context Protocol (MCP) server that lets AI tools such as Claude, ChatGPT, Cursor, and VS Code connect directly to your WisdomAI domains. Once connected, you can ask natural language questions about your data and receive structured responses including text, tables, and interactive charts. Access works as it does in the WisdomAI app: the connected client acts as the signed-in user, so their role, domain access, row-level security, and column-level security all apply unchanged. Queries made through MCP appear in the audit trail alongside activity from the app. The common entry point is https://mcp.wisdom.ai/mcp. For custom, private-network, or staging instances, append /mcp to the address you sign in at, for example https://{your-instance}.askwisdom.ai/mcp. Authenticate with OAuth, or with an API key for clients that cannot complete an interactive sign-in.",
+  "kind": "mcp",
+  "license": {
+    "name": "Wisdom AI Master Service Agreement",
+    "url": "https://www.wisdom.ai/msa"
+  },
+  "icon": "https://docs.wisdom.ai/mintlify-assets/_mintlify/favicons/wisdomai/Cx8QYUo27h7RhKZc/_generated/favicon/android-chrome-192x192.png",
+  "externalDocumentation": {
+    "title": "WisdomAI MCP Server docs",
+    "url": "https://docs.wisdom.ai/integrations/mcp-server"
+  },
+  "useCases": [
+    {
+      "name": "Ask governed business questions",
+      "description": "Ask natural language questions of WisdomAI domains and receive complete responses, including text, tables, and charts, subject to the signed-in user's existing permissions."
+    },
+    {
+      "name": "Follow-up analysis in context",
+      "description": "Refine an answer with follow-up questions in the same conversation, keeping the context of everything asked before, and continue or cancel long-running responses."
+    },
+    {
+      "name": "Inspect the source of an answer",
+      "description": "See the query behind an answer and the metric or business definitions it used, then give feedback or ask a domain admin for help."
+    },
+    {
+      "name": "Manage domain context",
+      "description": "With permission to edit and manage context, inspect and update metric definitions, business knowledge, synonyms, table relationships, reviewed queries, and related domain settings. Edits go into a draft and take effect after they are published."
+    }
+  ],
+  "tags": [
+    "Analytics",
+    "Business Intelligence",
+    "Data governance",
+    "MCP"
+  ],
+  "vendor": "Partner",
+  "visibility": "true",
+  "categories": "Analytics",
+  "remote": "https://mcp.wisdom.ai/mcp",
+  "remoteType": "streamable-http",
+  "securitySchemes": {
+    "wisdomaiMcpOAuth": {
+      "type": "oauth2",
+      "description": "OAuth 2.1 authorization code with PKCE S256. Scope is mcp:*. Metadata: https://mcp.wisdom.ai/.well-known/oauth-authorization-server.",
+      "authorizationUrl": "https://mcp.wisdom.ai/mcp/oauth/authorize",
+      "tokenUrl": "https://mcp.wisdom.ai/mcp/oauth/token",
+      "refreshUrl": "https://mcp.wisdom.ai/mcp/oauth/token",
+      "scopes": [
+        "mcp:*"
+      ],
+      "flows": [
+        "authorizationCode"
+      ]
+    },
+    "wisdomaiMcpBearer": {
+      "type": "http",
+      "description": "API key or access token sent as a bearer token in the Authorization header. API key authentication is supported on instance-specific MCP URLs and does not require an OAuth flow.",
+      "scheme": "bearer",
+      "bearerFormat": "API Key"
+    }
+  },
+  "authSchemas": [
+    "OAuth2"
+  ],
+  "versionName": "original",
+  "supportContactInfo": {
+    "name": "WisdomAI Support",
+    "email": "support@wisdom.ai",
+    "url": "https://docs.wisdom.ai/manage-account/contact-support"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
