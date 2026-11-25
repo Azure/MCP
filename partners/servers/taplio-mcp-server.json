@@ -1,0 +1,71 @@
+{
+  "name": "taplio-mcp-server",
+  "title": "Taplio for LinkedIn MCP Server",
+  "summary": "Find leads, write, schedule and analyze LinkedIn posts, and manage comments and replies, through your Taplio account.",
+  "description": "Taplio connects AI agents to a user's LinkedIn through their Taplio account. Agents can research what performs in the user's niche, draft posts in their voice, attach images or video, schedule or publish posts, and read post and account analytics. They can also search Taplio's lead database for prospects that match the user's ideal customer, find posts worth commenting on, draft comments and replies, like posts and send connection requests. Every action reaching LinkedIn is created only after the user asks for it, is queued in Taplio with the time it goes out, and can be cancelled until then. Requires a Taplio account with LinkedIn connected.",
+  "kind": "mcp",
+  "license": {
+    "name": "Taplio Terms",
+    "url": "https://taplio.com/terms-of-service"
+  },
+  "icon": "https://cdn.jsdelivr.net/gh/Azure/MCP/community/registry/icons/taplio.svg",
+  "externalDocumentation": {
+    "title": "Taplio MCP docs",
+    "url": "https://taplio.com/taplio-linkedin-mcp"
+  },
+  "remote": "https://mcp.taplio.com/",
+  "remoteType": "streamable-http",
+  "supportContactInfo": {
+    "name": "Taplio support",
+    "url": "https://intercom.help/taplio"
+  },
+  "visibility": "true",
+  "categories": "Productivity",
+  "useCases": [
+    {
+      "name": "Write and schedule LinkedIn posts",
+      "description": "Draft posts in the user's voice from an idea, a document or a transcript, attach media, and schedule or publish them through Taplio."
+    },
+    {
+      "name": "LinkedIn analytics",
+      "description": "Read impressions, engagement and follower growth per post and per period, and explain what performed and what to post next."
+    },
+    {
+      "name": "Content research",
+      "description": "Search high-performing LinkedIn posts in a niche to find angles and hooks before drafting."
+    },
+    {
+      "name": "Engagement",
+      "description": "Find posts worth commenting on and comments under the user's posts that need a reply, then draft comments and replies for the user to approve."
+    },
+    {
+      "name": "Lead search",
+      "description": "Search Taplio's lead database by role, seniority, department, industry, country, company and company size to build a prospect list, then queue the connection requests the user approves."
+    }
+  ],
+  "tags": [
+    "linkedin",
+    "social-media",
+    "content",
+    "marketing",
+    "analytics"
+  ],
+  "vendor": "Partner",
+  "securitySchemes": {
+    "taplioOauth2": {
+      "type": "oauth2",
+      "description": "OAuth 2.1 authorization code flow with PKCE (S256) and dynamic client registration (https://mcp.taplio.com/register). The user signs in with their Taplio account.",
+      "authorizationUrl": "https://mcp.taplio.com/authorize",
+      "tokenUrl": "https://mcp.taplio.com/token",
+      "refreshUrl": "https://mcp.taplio.com/token",
+      "scopes": [
+        "taplio:mcp"
+      ],
+      "flows": [
+        "authorizationCode"
+      ]
+    }
+  },
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": false }
+}
