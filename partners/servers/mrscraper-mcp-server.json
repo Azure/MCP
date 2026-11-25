@@ -1,0 +1,67 @@
+{
+  "name": "mrscraper-mcp",
+  "title": "MrScraper MCP",
+  "summary": "Scrape public web pages as HTML, Markdown, or screenshots, run Google searches with parsed results, and check MrScraper account usage.",
+  "description": "MrScraper MCP gives AI agents live web data through MrScraper's hosted scraping service. The scraperAPI tool fetches a public URL and returns the page as HTML, Markdown, or a screenshot, with automatic or forced browser rendering for JavaScript-heavy sites, geo-targeted proxies, wait-for-selector, and retries. The webSearch tool runs a Google search from query text or a Google search URL, with region, language, and page controls, and returns parsed organic results as JSON or the raw result page. The status tool reports the account's subscription status, token usage and remaining balance, and rate limits so agents can plan their calls. The hosted server uses Streamable HTTP. It accepts a MrScraper API key as a bearer token, or OAuth 2.1 sign-in for MCP clients that support dynamic client registration. Tool calls send the requested URLs, search queries, and any supplied options to MrScraper, and usage is counted against the account's MrScraper tokens.",
+  "kind": "mcp",
+  "vendor": "Partner",
+  "license": {
+    "name": "MIT",
+    "url": "https://github.com/mrscraper-com/mrscraper-mcp/blob/main/LICENSE"
+  },
+  "icon": "https://raw.githubusercontent.com/mrscraper-com/mrscraper-claude-plugin/main/plugins/mrscraper/assets/mrscraper-plugin-logo.png",
+  "externalDocumentation": {
+    "title": "MrScraper MCP docs",
+    "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server"
+  },
+  "repository": {
+    "url": "https://github.com/mrscraper-com/mrscraper-mcp",
+    "source": "github"
+  },
+  "remote": "https://mcp.mrscraper.com/mcp",
+  "remoteType": "streamable-http",
+  "supportContactInfo": {
+    "name": "MrScraper Support",
+    "email": "support@mrscraper.com"
+  },
+  "visibility": "true",
+  "categories": "Web",
+  "tags": ["web-scraping", "web-search", "markdown", "screenshots", "serp", "mrscraper"],
+  "useCases": [
+    {
+      "name": "Web page scraping",
+      "description": "Fetch any public URL as clean Markdown or raw HTML for agents to read, summarize, or extract from, with browser rendering for JavaScript-heavy pages and geo-targeted proxies."
+    },
+    {
+      "name": "Page screenshots",
+      "description": "Capture a screenshot of a URL, rendered in a real browser, so agents can check layout, visual content, or what a page looked like at a point in time."
+    },
+    {
+      "name": "Google web search",
+      "description": "Run Google searches by query text or search URL, with region, language, and page controls, and get parsed organic results with titles, links, and snippets to ground agent answers."
+    },
+    {
+      "name": "Account usage",
+      "description": "Report the MrScraper subscription status, token usage, remaining balance, rate limits, and subscription end date so agents can budget scraping and search calls."
+    }
+  ],
+  "securitySchemes": {
+    "mrscraperBearerAuth": {
+      "type": "http",
+      "description": "Authenticate with MrScraper using your API key as a bearer token (Authorization: Bearer <key>). Create a key at https://app.mrscraper.com/api-tokens.",
+      "scheme": "bearer",
+      "bearerFormat": "MrScraper API key"
+    },
+    "mrscraperOAuth": {
+      "type": "oauth2",
+      "description": "OAuth 2.1 authorization code flow with PKCE (S256) for MCP clients that support dynamic client registration or client ID metadata documents. Users sign in with their MrScraper account.",
+      "flows": ["authorizationCode"],
+      "authorizationUrl": "https://api.app.mrscraper.com/oauth/authorize",
+      "tokenUrl": "https://api.app.mrscraper.com/oauth/token",
+      "refreshUrl": "https://api.app.mrscraper.com/oauth/token",
+      "scopes": ["scrape:read", "account:read", "offline_access"]
+    }
+  },
+  "versionName": "original",
+  "customProperties": { "x-ms-preview": false }
+}
