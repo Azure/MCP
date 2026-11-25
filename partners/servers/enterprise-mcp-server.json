@@ -68,9 +68,9 @@
         }
     },
     "authSchemas": ["OAuth2", "AgentOnBehalfOfUser", "AgentIdentity"],
-    "audience": "api://e8c77dc2-69b3-43f4-bc51-3213c9d915b4",
+    "audience": "https://mcp.svc.cloud.microsoft/admin",
     "supportContactInfo": {
         "name": "Luca Spolidoro",
         "email": "lucaspol@microsoft.com"},
-  "customProperties": { "x-ms-preview": true }
+  "customProperties": { "x-ms-preview": false }
 }
