@@ -373,7 +373,8 @@
           "UserEntraToken",
           "AgentOnBehalfOfUser",
           "ManagedIdentity",
-          "AgentIdentity"
+          "AgentIdentity",
+          "ClientCredential"
         ]
       }
     },
