@@ -32,24 +32,15 @@ Add your server's JSON file to [`partners/servers`](partners/servers). All partn
 
 `authSchemas` accepts `OAuth2`, `UserEntraToken`, `AgentOnBehalfOfUser`, `ManagedIdentity`, `AgentIdentity`, and `ClientCredential`. Include only the methods your server supports.
 
-To declare OAuth 2.0 client credentials (app-only authentication), include these authentication fields in your server submission:
+To declare client credentials authentication, add this field to your server submission:
 
 ```json
 {
-  "authSchemas": ["ClientCredential"],
-  "securitySchemes": {
-    "exampleClientCredentials": {
-      "type": "oauth2",
-      "description": "Authenticate using the OAuth 2.0 client credentials flow.",
-      "flows": ["clientCredentials"],
-      "tokenUrl": "https://example.com/oauth2/token",
-      "scopes": ["read"]
-    }
-  }
+  "authSchemas": ["ClientCredential"]
 }
 ```
 
-`ClientCredential` is the case-sensitive `authSchemas` value; `clientCredentials` is the OAuth flow name. Replace the example scheme name, token URL, and scopes with your server's values. The scheme name must be unique across the registry.
+The `ClientCredential` value is case-sensitive. No `securitySchemes` entry, authorization URL, token URL, or scopes are required for this declaration.
 
 ## 3. Integration with Azure AI Gateway (Azure API Management)
 
