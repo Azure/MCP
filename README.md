@@ -26,6 +26,31 @@ Becoming an official partner and being featured on the Azure MCP discovery page 
 
 We are actively looking for partners to expand Azure's remote MCP server ecosystem. If you're interested in connecting with our business team to explore becoming an officially featured partner, please feel free to create a Pull Request (PR) in this repository. We will review your PR and get in contact with you to discuss the approval process.
 
+### Submitting authentication metadata
+
+Add your server's JSON file to [`partners/servers`](partners/servers). All partner submissions are validated against [`partners/server-schema.json`](partners/server-schema.json).
+
+`authSchemas` accepts `OAuth2`, `UserEntraToken`, `AgentOnBehalfOfUser`, `ManagedIdentity`, `AgentIdentity`, and `ClientCredential`. Include only the methods your server supports.
+
+To declare OAuth 2.0 client credentials (app-only authentication), include these authentication fields in your server submission:
+
+```json
+{
+  "authSchemas": ["ClientCredential"],
+  "securitySchemes": {
+    "exampleClientCredentials": {
+      "type": "oauth2",
+      "description": "Authenticate using the OAuth 2.0 client credentials flow.",
+      "flows": ["clientCredentials"],
+      "tokenUrl": "https://example.com/oauth2/token",
+      "scopes": ["read"]
+    }
+  }
+}
+```
+
+`ClientCredential` is the case-sensitive `authSchemas` value; `clientCredentials` is the OAuth flow name. Replace the example scheme name, token URL, and scopes with your server's values. The scheme name must be unique across the registry.
+
 ## 3. Integration with Azure AI Gateway (Azure API Management)
 
 Azure API Management serves as your robust AI Gateway, providing comprehensive support for Model Context Protocol (MCP) servers. It's a critical component for managing and securing your remote MCP server deployments.
