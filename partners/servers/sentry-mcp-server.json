@@ -1,0 +1,86 @@
+{
+  "name": "sentry-mcp-server",
+  "title": "Sentry MCP Server",
+  "summary": "Sentry MCP gives AI agents access to Sentry issues, errors, traces, releases, and Seer root cause analysis to debug production problems.",
+  "description": "The Sentry MCP server connects AI agents and coding assistants to Sentry's application monitoring platform. Agents can search and inspect issues, errors, events, and traces, look up projects, teams, and releases, run Seer AI root cause analysis on an issue, update issue status and assignment, and set up new projects and DSNs. It uses natural language search across Sentry data, so developers can investigate and fix production problems without leaving their editor or agent.",
+  "kind": "mcp",
+  "license": {
+    "name": "Sentry Terms of Service",
+    "url": "https://sentry.io/terms/"
+  },
+  "icon": "https://avatars.githubusercontent.com/getsentry?s=64",
+  "externalDocumentation": {
+    "title": "Sentry MCP",
+    "url": "https://mcp.sentry.dev"
+  },
+  "repository": {
+    "url": "https://github.com/getsentry/sentry-mcp",
+    "source": "github"
+  },
+  "useCases": [
+    {
+      "name": "Issue Investigation",
+      "description": "Search for issues and errors in natural language and get full details, including stack traces, tags, and affected users."
+    },
+    {
+      "name": "Root Cause Analysis",
+      "description": "Run Seer, Sentry's AI debugging agent, on an issue to get a root cause analysis and a suggested code fix."
+    },
+    {
+      "name": "Trace and Performance Analysis",
+      "description": "Inspect distributed traces and query events, spans, and logs to find slow operations and failing requests."
+    },
+    {
+      "name": "Release Tracking",
+      "description": "Find releases and check which issues appeared or regressed after a deploy."
+    },
+    {
+      "name": "Issue Triage",
+      "description": "Resolve, ignore, or assign issues to people and teams directly from the agent."
+    },
+    {
+      "name": "Project Setup",
+      "description": "Create teams, projects, and DSNs, and search Sentry documentation to instrument an application with a Sentry SDK."
+    }
+  ],
+  "tags": [
+    "Error Monitoring",
+    "Tracing",
+    "Debugging",
+    "Observability",
+    "Root Cause Analysis"
+  ],
+  "vendor": "Partner",
+  "visibility": "true",
+  "categories": "Monitoring & Diagnostics",
+  "remote": "https://mcp.sentry.dev/mcp",
+  "remoteType": "streamable-http",
+  "packages": [],
+  "versionName": "original",
+  "securitySchemes": {
+    "sentryOauth": {
+      "type": "oauth2",
+      "description": "Authenticate with Sentry using OAuth2 authorization code flow with PKCE.",
+      "authorizationUrl": "https://mcp.sentry.dev/oauth/authorize",
+      "tokenUrl": "https://mcp.sentry.dev/oauth/token",
+      "refreshUrl": "https://mcp.sentry.dev/oauth/token",
+      "scopes": [
+        "org:read",
+        "project:write",
+        "team:write",
+        "event:write",
+        "alerts:write"
+      ],
+      "flows": [
+        "authorizationCode"
+      ]
+    }
+  },
+  "supportContactInfo": {
+    "name": "Sentry Support",
+    "url": "https://sentry.io/support/"
+  },
+  "customProperties": {
+    "x-ms-preview": false
+  }
+}
